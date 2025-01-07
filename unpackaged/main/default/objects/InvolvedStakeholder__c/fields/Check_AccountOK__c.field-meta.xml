@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_AccountOK__c</fullName>
+    <formula>IF(AND( 
+        LEN(InvolvedAccount__r.BillingStreet) &lt;= 60,
+        LEN(InvolvedAccount__r.BillingPostalCode) &lt;= 10,
+        LEN(InvolvedAccount__r.BillingCity) &lt;= 40,
+        LEN(Name) &lt;= 40,
+        LEN(TEXT(InvolvedAccount__r.TypeIdentifiantNational__c)) &lt;= 80
+      ), true, false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Compte OK</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

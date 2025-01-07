@@ -1,0 +1,11 @@
+<p>Bonjour,</p>
+<p>&nbsp;</p>
+<p>Merci de traiter la demande de chiffrage pour le client {!SBQQ__Quote__c.Account_Name__c} :</p>
+<p>&nbsp;</p>
+<p>- Lien <a href="{!SBQQ__Quote__c.Link}">{!SBQQ__Quote__c.Name}</a></p>
+<p>&nbsp;</p>
+<p>Cordialement,</p>
+<p>&nbsp;</p>
+<p> Commercial : {!SBQQ__Quote__c.OwnerFullName}&nbsp;</p>
+<p> Adresse mail : {!SBQQ__Quote__c.OwnerEmail}</p>
+<p> Téléphone : {!SBQQ__Quote__c.OwnerPhone}</p>

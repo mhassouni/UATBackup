@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FilterCriteriaId</fullName>
+    <inlineHelpText>Sélectionnez le critère de filtrage utilisé pour les membres du paquet. Seuls les rendez-vous de service qui remplissent les critères peuvent être empaquetés.</inlineHelpText>
+    <type>Lookup</type>
+</CustomField>

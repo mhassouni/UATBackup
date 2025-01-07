@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo di fonti</label>
+        <name>TypeSourcing__c</name>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation>Noleggio con conducente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation>Noleggio senza conducente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation>Proprietà</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur dernier kilomètre</masterLabel>
+            <translation>Portaerei dell&#39;ultimo miglio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation>Carriera Comune</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

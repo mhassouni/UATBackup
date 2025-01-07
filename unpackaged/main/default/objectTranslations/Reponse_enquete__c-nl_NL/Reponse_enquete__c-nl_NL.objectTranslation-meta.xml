@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Enquete - Réponse --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Enquete - Réponse --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Présentation Enquete - Réponse</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Enquete - Réponse NPS</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Information système --></label>
+            <section>Information système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom de l&apos;enquete --></nameFieldLabel>
+    <recordTypes>
+        <description><!-- Type d&apos;enregistrement pour une enquête transactionnelle (CSAT) --></description>
+        <label><!-- Réponse CSAT --></label>
+        <name>Reponse_CSAT</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Type d&apos;enregistrement pour une enquête relationnelle (NPS) --></description>
+        <label><!-- Réponse NPS --></label>
+        <name>Reponse_NPS</name>
+    </recordTypes>
+</CustomObjectTranslation>

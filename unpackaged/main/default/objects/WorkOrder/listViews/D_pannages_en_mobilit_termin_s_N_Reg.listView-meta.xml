@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_pannages_en_mobilit_termin_s_N_Reg</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Agence_parc__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Asset</columns>
+    <columns>Account</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>Etape_actuelle__c</columns>
+    <columns>Derniere_etape_realisee__c</columns>
+    <columns>Parc_Relais__c</columns>
+    <columns>Duree_Intervention__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ressource_Interne__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Agence_Intervenante__c</field>
+        <operation>greaterThan</operation>
+    </filters>
+    <filters>
+        <field>Account</field>
+        <operation>startsWith</operation>
+    </filters>
+    <filters>
+        <field>Duree_Intervention__c</field>
+        <operation>greaterThan</operation>
+    </filters>
+    <filters>
+        <field>Intervention_nuit__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Terminé,Annulé,Provisoire,Non abouti</value>
+    </filters>
+    <filters>
+        <field>Intervention_nuit__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>006-Dépannages terminés ma région NUIT</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

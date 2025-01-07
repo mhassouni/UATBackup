@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>ROLLE</label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Détracteur</masterLabel>
+            <translation>Verleumder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indifférent</masterLabel>
+            <translation>Unerheblich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsor</masterLabel>
+            <translation>Sponsor</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

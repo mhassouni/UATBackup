@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV10_NiveauRailArrimage_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si le niveau de rail d&#39;arrimage par face est renseigné,la position rail d&#39;arrimage est obligatoire</description>
+    <errorConditionFormula>AND
+(
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISBLANK(  Niveau_de_rail_d_arrimage_par_face__c))
+,
+ISBLANK(   Position_rail_d_arrimage__c )
+)</errorConditionFormula>
+    <errorDisplayField>Position_rail_d_arrimage__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner la &quot;Arrimage(s) sup.(Hauteur / plancher)&quot; si &quot;Arrimage(s) sup.(Qté par face)&quot;	 est renseigné</errorMessage>
+</ValidationRule>

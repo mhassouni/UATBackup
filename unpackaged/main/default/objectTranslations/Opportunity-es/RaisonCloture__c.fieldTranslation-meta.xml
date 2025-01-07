@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Motivo de cierre</label>
+        <name>RaisonCloture__c</name>
+        <picklistValues>
+            <masterLabel>Annulation</masterLabel>
+            <translation>Cancelación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refus (Interne)</masterLabel>
+            <translation>Rechazo (Interno)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation>Aplazamiento</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

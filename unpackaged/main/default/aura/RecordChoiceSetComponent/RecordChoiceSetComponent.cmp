@@ -1,0 +1,13 @@
+<aura:component description="RecordChoiceSetComponent" access="global" controller="RCSC_GetCalendrierAstreinte" implements="lightning:availableForFlowScreens">
+    <aura:attribute name="agencePf" type="String" access="global" />
+    <aura:attribute name="result" type="String[]" default="[]" access="global" />
+    <aura:attribute name="weeks" type="String[]" default="[]" access="global" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:checkboxGroup name="Weeks"
+                             label=""
+                             options="{!v.weeks}"
+                             value="{!v.result}"
+                             onchange="{!c.handleChange}"/>
+
+</aura:component>

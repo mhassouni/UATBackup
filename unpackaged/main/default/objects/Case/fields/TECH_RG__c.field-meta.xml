@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_RG__c</fullName>
+    <formula>if 
+( 
+AND( 
+$User.Division == TEXT(Agence_Intervenante__r.Territoire__c ), 
+NOT(ISBLANk($User.Division)), 
+NOT(ISBLANK(TEXT(Agence_Intervenante__r.Territoire__c))) 
+) 
+, 
+true 
+, 
+false 
+)</formula>
+    <label>TECH_RG</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enregistreur_T__c</fullName>
+    <label>Enregistreur T°</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A DISQUE</fullName>
+                <default>false</default>
+                <label>A DISQUE</label>
+            </value>
+            <value>
+                <fullName>DATACOLD 100  - Clé USB</fullName>
+                <default>false</default>
+                <label>DATACOLD 100  - Clé USB</label>
+            </value>
+            <value>
+                <fullName>DATACOLD 300 R - avec imprimante</fullName>
+                <default>false</default>
+                <label>DATACOLD 300 R - avec imprimante</label>
+            </value>
+            <value>
+                <fullName>DATACOLD 600 R - avec imprimante</fullName>
+                <default>false</default>
+                <label>DATACOLD 600 R - avec imprimante</label>
+            </value>
+            <value>
+                <fullName>DATACOLD 600 T - avec imprimante</fullName>
+                <default>false</default>
+                <label>DATACOLD 600 T - avec imprimante</label>
+            </value>
+            <value>
+                <fullName>GEOLOCALISATION AVEC REMONTEE DE T°</fullName>
+                <default>false</default>
+                <label>GEOLOCALISATION AVEC REMONTEE DE T°</label>
+            </value>
+            <value>
+                <fullName>TOUCHPRINT PREMIUM - avec imprimante</fullName>
+                <default>false</default>
+                <label>TOUCHPRINT PREMIUM - avec imprimante</label>
+            </value>
+            <value>
+                <fullName>TOUCHPRINT standard  - avec imprimante</fullName>
+                <default>false</default>
+                <label>TOUCHPRINT standard  - avec imprimante</label>
+            </value>
+            <value>
+                <fullName>TRANSCAN ADVANCE</fullName>
+                <default>false</default>
+                <label>TRANSCAN ADVANCE</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements GROUPE</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements GROUPE</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

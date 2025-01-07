@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alerte</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alerte</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Alerte - Coupure basse pression A01</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Alerte - Tension batterie basse</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Alerte - Voyant Moteur</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Améliorer l&apos;alerte --></label>
+        <name>Ameliorer_alerte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Eteindre l&apos;alerte --></label>
+        <name>Eteindre_alerte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle requête --></label>
+        <name>Nouvelle_requete</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Coupure basse pression --></label>
+        <name>Coupure_basse_pression</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tension batterie basse --></label>
+        <name>Tension_batterie_basse</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Voyant moteur --></label>
+        <name>Voyant_moteur</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;étes pas autorisé à créer des alertes. --></errorMessage>
+        <name>VR_Alert_CreationAdminOnly</name>
+    </validationRules>
+</CustomObjectTranslation>

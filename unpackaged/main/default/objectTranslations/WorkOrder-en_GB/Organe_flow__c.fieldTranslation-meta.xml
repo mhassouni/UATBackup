@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Organe --></label>
+        <name>Organe_flow__c</name>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation><!-- Cabine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation><!-- Châssis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Electricity</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe</masterLabel>
+            <translation><!-- Groupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation><!-- Hayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Tires</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

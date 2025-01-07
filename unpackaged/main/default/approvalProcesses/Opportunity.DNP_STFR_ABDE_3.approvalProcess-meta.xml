@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>Tarification</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>AgencePF__c</field>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Agrement__c</field>
+        <field>Quantite__c</field>
+        <field>CodePF__c</field>
+        <field>LoyerMensuel__c</field>
+        <field>Kilometrage__c</field>
+        <field>DureeContrat__c</field>
+        <field>TypeProduit__c</field>
+        <field>RYF_pourcentage__c</field>
+        <field>PAT__c</field>
+        <field>Ratio_CC_PAT__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>User.Fonction__c</field>
+                <operation>equals</operation>
+                <value>Commercial territorial (CT)</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Soumis par : CT [STFR]</label>
+        <name>Etape1</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>User.Fonction__c</field>
+                <operation>equals</operation>
+                <value>Directeur de Site (DS)</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Soumis par : DS [STFR]</label>
+        <name>Etape_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>User.Profile</field>
+                <operation>equals</operation>
+                <value>PF Tarification</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Soumis par : Service Tarification [STFR]</label>
+        <name>Soumis_par_Service_Tarification_STFR</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>User.Fonction__c</field>
+                <operation>equals</operation>
+                <value>Chef des ventes (CV)</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Soumis par : Chef des ventes[STFR]</label>
+        <name>Soumis_par_CV_STFR</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>GFC-505 GFC-527</description>
+    <emailTemplate>Divers/Demande_DNP</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+OR
+(
+LEFT(TEXT(StageName),1) = &#39;3&#39;,
+LEFT(TEXT(StageName),1) = &#39;4&#39;,
+LEFT(TEXT(StageName),1) = &#39;5&#39;
+),
+Left(Text( PaysRegionPF__c ),4) = &#39;STFR&#39;,
+OR
+(
+Text(TypeProduit__c)=&#39;A&#39;,
+Text(TypeProduit__c)=&#39;B&#39;,
+Text(TypeProduit__c)=&#39;D&#39;,
+Text(TypeProduit__c)=&#39;E&#39;
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Approbateur_DNP</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Date_Approbation_final</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Notification_DNP_Approuvee_Stricher</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Statut_5_3</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_valid</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Date_Rejet_final</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Notification_DNP_Rejetee_Stricher</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Rejeteur_DNP</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_refus</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Date_soumission_DNP</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Email_Initiateur_DNP</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Nom_Initiateur_DNP</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_en_attentee</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>DNP - [STFR] - ABDE</label>
+    <processOrder>5</processOrder>
+    <recallActions>
+        <action>
+            <name>Statut_Annul</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Type of penalties - exit clause</label>
+        <name>TypePenalitesPorteSortie__c</name>
+        <picklistValues>
+            <masterLabel>Dépôt de garantie non restitué</masterLabel>
+            <translation>Security deposit not returned</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nombre de mois de loyer</masterLabel>
+            <translation>Number of months of rental</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

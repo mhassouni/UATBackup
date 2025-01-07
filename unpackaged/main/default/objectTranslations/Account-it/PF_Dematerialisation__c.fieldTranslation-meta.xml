@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de dématerialisation --></label>
+        <name>PF_Dematerialisation__c</name>
+        <picklistValues>
+            <masterLabel>Chorus</masterLabel>
+            <translation><!-- Chorus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI</masterLabel>
+            <translation><!-- EDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non</masterLabel>
+            <translation><!-- Non --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF Signés</masterLabel>
+            <translation><!-- PDF Signés --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

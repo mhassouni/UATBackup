@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FD_sign_es</fullName>
+    <columns>DateSignatureContrat__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>DNP_Date_Approbation__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>TypeProduit__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>TypeProduits__c</columns>
+    <columns>CodePF__c</columns>
+    <columns>SousCategorie__c</columns>
+    <columns>Quantite__c</columns>
+    <columns>N_Parc_s_attribu_s__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>Approuvée</value>
+    </filters>
+    <filters>
+        <field>DateSignatureContrat__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>DNP_Date_Approbation__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>10/19/2020</value>
+    </filters>
+    <label>Flux Amonts - FD signées</label>
+</ListView>

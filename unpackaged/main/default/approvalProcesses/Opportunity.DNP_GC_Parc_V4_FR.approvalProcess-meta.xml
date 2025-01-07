@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Type_de_devis__c</field>
+        <field>Owner</field>
+        <field>TypeProduit__c</field>
+        <field>AgencePF__c</field>
+        <field>CodePF__c</field>
+        <field>Account</field>
+        <field>TotalOpportunityQuantity</field>
+        <field>Agrement__c</field>
+        <field>LoyerMensuel__c</field>
+        <field>GradeAllianz__c</field>
+        <field>Kilometrage__c</field>
+        <field>Activite_Principale_Exercee__c</field>
+        <field>DureeContrat__c</field>
+        <field>Name</field>
+        <field>RYF__c</field>
+        <field>Derogation_contractuelle__c</field>
+        <field>PAT__c</field>
+        <field>Nombre_de_mois_de_caution__c</field>
+        <field>Ratio_CC_PAT__c</field>
+    </approvalPageFields>
+    
+    
+    
+    <description>GFC-1432</description>
+    <emailTemplate>WFC/Demande_DNP_V2</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+OrdersIn__c = true,
+Left(Text( PaysRegionPF__c ),3) = &#39;DRO&#39;,
+OR(LEFT(TEXT(StageName),1) = &#39;3&#39;,LEFT(TEXT(StageName),1) = &#39;4&#39;,LEFT(TEXT(StageName),1) = &#39;5&#39;),
+
+Opportunite_Grand_Compte__c = TRUE,
+ TECH_NB_Devis_Parc__c = 1,
+
+NOT(ISBLANK( CodePF__c )),
+NOT(ISBLANK( Quantite__c )),
+NOT(ISBLANK( TEXT(TypeProduits__c) )),
+NOT(ISBLANK( DureeContrat__c )),
+NOT(ISBLANK( TEXT(SousFamille__c) )),
+NOT(ISBLANK( LoyerMensuel__c )),
+NOT(ISBLANK( TEXT(Categorie__c) )),
+NOT(ISBLANK( Kilometrage__c )),
+NOT(ISBLANK( TEXT(SousCategorie__c) )),
+NOT(ISBLANK( Prix_du_Km_supplementaire__c )),
+NOT(ISBLANK( TEXT(TypeProduit__c) )),
+OR(NOT(ISBLANK( Nombre_de_mois_de_caution__c )), Dispense_de_caution__c = TRUE),
+OR(ISPICKVAL(Account.Statut__c,&#39;Validé CM&#39;), ISPICKVAL(Account.Statut__c,&#39;Validé&#39;)),
+NOT(ISPICKVAL( DNP_Statut__c , &#39;Approuvée&#39;) )
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Approbateur_DNP_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Date_Approbation_final_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Notification_DNP_Approuve_GCHorsStandard</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Passage_5_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_valide_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Date_Rejet_final_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Notification_DNP_Rejetee_GC_HorsStandard</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Rejeteur_DNP_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_refuse_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Date_soumission_DNP_GCHorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Email_Initiateur_DNP_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Nom_Initiateur_DNP_GC_HorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Nom_processus4</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Statut_en_attente_GCHorsStandard</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>DNP GC Parc FR</label>
+    <processOrder>6</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

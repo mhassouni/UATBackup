@@ -1,0 +1,196 @@
+<apex:page controller="RDD_SADController" action="{!init}" lightningStylesheets="true">
+    <apex:sectionHeader title="RDD SAD"/>
+    <apex:form >
+        <apex:pageMessages />
+        
+ 
+    <table width="100%">
+        <tr>
+        <td>Initialisation SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD"/></i>
+            <apex:inputField value="{!accInit.PaysRegionPF__c}" id="filterInitSAD"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerInitSAD}" reRender="numberOfAccounts_InitSAD" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD}" id="numberOfAccounts_InitSAD" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         
+               <tr>
+        <td>Initialisation Statut SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitStatutSAD"/></i>
+            <apex:inputField value="{!SADInit.PFRegion__c}" id="filterInitStatutSAD"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerStatutSAD}" reRender="numberOfSAD_StatutSAD" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfSAD_StatutSAD}" id="numberOfSAD_StatutSAD" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitStatutSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         <tr>
+        <td>Migration Opportunités - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_Opp"/></i>
+            <apex:inputField value="{!accInitOpp.PaysRegionPF__c}" id="filterInitSAD_Opp"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerInitOppSAD}" reRender="numberOfAccounts_InitSAD_Opp" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_Opp}" id="numberOfAccounts_InitSAD_Opp" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitOppSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         <tr>
+        <td>Migration Contrats - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_Ctr"/></i>
+            <apex:inputField value="{!accInitCtr.PaysRegionPF__c}" id="filterInitSAD_Ctr"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerContactsSAD}" reRender="numberOfAccounts_InitSAD_Ctr" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_Ctr}" id="numberOfAccounts_InitSAD_Ctr" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitCtsSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         <tr>
+        <td>Migration Factures - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_Fact"/></i>
+            <apex:inputField value="{!accInitFact.PaysRegionPF__c}" id="filterInitSAD_Fact"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerInitFacturesSAD}" reRender="numberOfAccounts_InitSAD_Fact" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_Fact}" id="numberOfAccounts_InitSAD_Fact" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitFactSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         <tr>
+        <td>Migration Activités - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_Act"/></i>
+            <apex:inputField value="{!accInitAct.PaysRegionPF__c}" id="filterInitSAD_Act"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerInitSAD}" reRender="numberOfAccounts_InitSAD_Act" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_Act}" id="numberOfAccounts_InitSAD_Act" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+          <tr>
+        <td>Migration Conditions Financières - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_CondFi"/></i>
+            <apex:inputField value="{!accInitCondFi.PaysRegionPF__c}" id="filterInitSAD_CondFi"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerCondFiSAD}" reRender="numberOfAccounts_InitSAD_CondFi" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_CondFi}" id="numberOfAccounts_InitSAD_CondFi" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitCondFiSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+         <tr>
+        <td>Migration DERO - SAD</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_DERO"/></i>
+            <apex:inputField value="{!accInitDERO.PaysRegionPF__c}" id="filterInitSAD_DERO"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerDEROSAD}" reRender="numberOfAccounts_InitSAD_DERO" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_DERO}" id="numberOfAccounts_InitSAD_DERO" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitDeroSAD}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+        <tr>
+        <td>Gestion territoires</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterInitSAD_Territoire"/></i>
+            <apex:inputField value="{!accInitTerritoire.PaysRegionPF__c}" id="filterInitSAD_Territoire"/>
+            </td>
+            <td>
+            <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerTerritoire}" reRender="numberOfAccounts_InitSAD_Territoire" />
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfAccounts_InitSAD_Territoire}" id="numberOfAccounts_InitSAD_Territoire" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchIdInitTerritoire}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+        <tr>
+        <td>Note globale du secteur</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterNoteGlobaleSecteur"/></i>
+            <apex:inputField value="{!accInitTerritoire.PaysRegionPF__c}" id="filterNoteGlobaleSecteur"/>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchSADSegmentationSyncBatch}" value="Segmentation Sync"/>
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfSegmentations}" id="numberOfSegmentations" /></b>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchSectorOverallRating}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+        <tr>
+        <td>Note potentiel d’extension</td>
+            <td>
+            <i><apex:outputlabel value="Pays/région PF" for="filterNoteGlobaleSecteur"/></i>
+            <apex:inputField value="{!accInitTerritoire.PaysRegionPF__c}" id="filterNotePotentielExtension"/>
+            </td>
+            <td>
+            <apex:commandButton action="{!executeBatchAccountSegmentationSyncBatch}" value="Segmentation Sync"/>
+            </td>
+            <td>
+            <b><apex:outputText value="{!numberOfSegmentations}" id="Account_numberOfSegmentations" /></b>
+            </td>
+        </tr>
+        <tr>
+        <td>Note poids du CA</td>
+            <td> 
+            <apex:commandButton action="{!executeBatchNotePoidsCABatch}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+        <tr>
+        <td>Note effectif des comptes</td>
+            <td>
+            <apex:commandButton action="{!executeBatchEmployeeCountNoteUpdateBatch}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+            </td>
+        </tr>
+    </table>    
+    </apex:form>
+</apex:page>

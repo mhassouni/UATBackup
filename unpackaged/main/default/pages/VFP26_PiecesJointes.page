@@ -1,0 +1,23 @@
+<apex:page standardController="Piece_Jointe__c" extensions="VFE26_PiecesJointes" action="{!Redirect}">
+    <apex:form >
+    <apex:sectionHeader title="{!$Label.VFP_SendEmailPJPrivee} {!Piece_Jointe__c.Name}"/>
+        <apex:pageblock >
+        <apex:pageMessages />
+            <br/>
+            <b>{!$Label.VFP_SelectUserEmails}</b>
+            <br/>
+            <br/>
+            <apex:pageBlockTable id="table" value="{!WrapperList}" var="cont">
+                  <apex:column headerValue="{!$Label.VFP_Utilisateur}" value="{!cont.User.UserOrGroupId}"/>
+                  <apex:column headerValue="{!$Label.VFP_NotificationEmail}">
+                      <apex:inputCheckbox value="{!cont.checkBoxEmail}"/> 
+                  </apex:column>
+            </apex:pageBlockTable>
+            <br/>
+            <div style="padding-left:11px;">
+                <apex:commandButton value="{!$Label.VFP_Continue}" action="{!Partage}"/>
+            </div>
+            <br/>
+        </apex:pageblock>        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_de_satisfaction__c</fullName>
+    <label>Note de satisfaction</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ObjetAction__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+                <label>Excellent</label>
+            </value>
+            <value>
+                <fullName>Bon</fullName>
+                <default>false</default>
+                <label>Bon</label>
+            </value>
+            <value>
+                <fullName>Moyen</fullName>
+                <default>false</default>
+                <label>Moyen</label>
+            </value>
+            <value>
+                <fullName>Insuffisant</fullName>
+                <default>false</default>
+                <label>Insuffisant</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Synthèse de prestations</controllingFieldValue>
+            <valueName>Excellent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Synthèse de prestations</controllingFieldValue>
+            <valueName>Bon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Synthèse de prestations</controllingFieldValue>
+            <valueName>Moyen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Synthèse de prestations</controllingFieldValue>
+            <valueName>Insuffisant</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

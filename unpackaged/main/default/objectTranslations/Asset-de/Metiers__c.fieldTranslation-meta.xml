@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Berufe</label>
+        <name>Metiers__c</name>
+        <picklistValues>
+            <masterLabel>Brasseur</masterLabel>
+            <translation>Brauer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Froid</masterLabel>
+            <translation>Gekühlt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation>Hygiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sec</masterLabel>
+            <translation>Trocken</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

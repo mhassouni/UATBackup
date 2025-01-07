@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Puissance Plateforme (Kg) --></label>
+        <name>Puissance_Plateforme__c</name>
+        <picklistValues>
+            <masterLabel>1000 KGS</masterLabel>
+            <translation><!-- 1000 KGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1200 KGS</masterLabel>
+            <translation><!-- 1200 KGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1500 KGS</masterLabel>
+            <translation><!-- 1500 KGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2000 KGS</masterLabel>
+            <translation><!-- 2000 KGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2500 kg</masterLabel>
+            <translation><!-- 2500 kg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300 kg</masterLabel>
+            <translation><!-- 300 kg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3000 kg</masterLabel>
+            <translation><!-- 3000 kg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 kg</masterLabel>
+            <translation><!-- 500 kg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>750 KGS</masterLabel>
+            <translation><!-- 750 KGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir Aménagement HAYON</masterLabel>
+            <translation><!-- HORS STANDARD - voir Aménagement HAYON --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

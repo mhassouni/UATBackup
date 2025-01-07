@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kraftstoff</label>
+        <name>Energie__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE -  voir Equipements chassis</masterLabel>
+            <translation>außer Standard - siehe Fahrgestelleinrichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B100</masterLabel>
+            <translation>B100</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIESEL</masterLabel>
+            <translation>Diesel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRIQUE</masterLabel>
+            <translation>Strom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESSENCE</masterLabel>
+            <translation>Benzin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNC</masterLabel>
+            <translation>CNG/Komprimiertes Erdgas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNL</masterLabel>
+            <translation>LNG/Flüssigerdgas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNV</masterLabel>
+            <translation><!-- GNV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYBRIDE</masterLabel>
+            <translation>Hybrid</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

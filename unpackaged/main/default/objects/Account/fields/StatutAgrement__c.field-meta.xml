@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatutAgrement__c</fullName>
+    <label>Statut d&#39;agrément</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Refusé</fullName>
+                <default>false</default>
+                <label>Refusé</label>
+            </value>
+            <value>
+                <fullName>Suspendu</fullName>
+                <default>false</default>
+                <label>Suspendu</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

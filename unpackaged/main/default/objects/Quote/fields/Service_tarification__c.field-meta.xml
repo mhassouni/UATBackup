@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_tarification__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Service Tarification</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Merci de soumettre à votre service de tarification.</errorMessage>
+        <filterItems>
+            <field>User.Profile.Id</field>
+            <operation>equals</operation>
+            <value>00e0O0000026uMEQAY</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Quote LD - Hors Standard, Quote LD - Hors Standard - Lecture seule, Quote LD - Parc, Quote LD - Parc - Lecture Seule</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Devis</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

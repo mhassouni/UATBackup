@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_geographique__c</fullName>
+    <label>Zone géographique</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>D01 – Atelier Villepinte</fullName>
+                <default>false</default>
+                <label>D01 – Atelier Villepinte</label>
+            </value>
+            <value>
+                <fullName>D261 – Hub Sarreguemines</fullName>
+                <default>false</default>
+                <label>D261 – Hub Sarreguemines</label>
+            </value>
+            <value>
+                <fullName>D295 – Hub Macon</fullName>
+                <default>false</default>
+                <label>D295 – Hub Macon</label>
+            </value>
+            <value>
+                <fullName>D197 – Atelier Pierrelate</fullName>
+                <default>false</default>
+                <label>D197 – Atelier Pierrelate</label>
+            </value>
+            <value>
+                <fullName>D236 – Hub Toulouse St Sauveur</fullName>
+                <default>false</default>
+                <label>D236 – Hub Toulouse St Sauveur</label>
+            </value>
+            <value>
+                <fullName>D05 – Hub le Hallain</fullName>
+                <default>false</default>
+                <label>D05 – Hub le Hallain</label>
+            </value>
+            <value>
+                <fullName>D301 – Atelier St Nazaire</fullName>
+                <default>false</default>
+                <label>D301 – Atelier St Nazaire</label>
+            </value>
+            <value>
+                <fullName>D296 – Hub Chartres</fullName>
+                <default>false</default>
+                <label>D296 – Hub Chartres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Leads_Mes_Pistes</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>AgencePF_Picklist__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Particulier_Professionnel__c</columns>
+    <columns>Produits_Icons__c</columns>
+    <columns>Besoin__c</columns>
+    <columns>Message__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Mes Pistes - En cours</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurCommercialFrance</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PIBE_Belgique</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PICH_Suisse</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PILU_Luxembourg</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,212 @@
+<apex:page standardController="Case" sidebar="false" showHeader="false" standardStylesheets="false" lightningStylesheets="true" cache="false">
+    <apex:includeScript value="{!$Resource.JS}"/>
+
+    <script 
+    src="/soap/ajax/33.0/connection.js" type="text/javascript"></script>
+<script 
+    src="/soap/ajax/33.0/apex.js" type="text/javascript"></script>
+
+  
+
+  
+
+
+<html>
+  <head>
+      
+
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+      <meta charset="utf-8"/>
+    <title>Draggable directions</title>
+    <style>
+      #right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 600px;
+        float: left;
+        width: 63%;
+      }
+      #right-panel {
+        float: right;
+        width: 34%;
+        height: 600px;
+      }
+      .panel {
+        height: 100%;
+        overflow: auto;
+      }
+    </style>
+    </head>
+  <body>
+    <div id="map"></div>
+    <div id="right-panel">
+      <p> <span id="total"></span></p>
+
+    </div>
+      
+   <script >
+      var markers = [];
+      function initMap() {
+        
+ 		//**************Create Google Map **************
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: 48.8534, lng: 2.3488},
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        //**************User Language and metric/Imperial system **************
+
+        var lg = '{!$User.Current_User_Language__c}';
+        var sysImperialMetric = '';
+		if (lg == 'en_GB') {sysImperialMetric=google.maps.UnitSystem.IMPERIAL;} else {sysImperialMetric=google.maps.UnitSystem.METRIC;}
+     
+        //**************Init MAP / Compute Distance / Display Route **************
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);  
+
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          draggable: true,
+          map: map
+            //panel: document.getElementById('right-panel')
+        });
+		directionsDisplay.addListener('directions_changed', function() {
+        computeTotalDistance(directionsDisplay.getDirections());
+        });
+        // displayRoute("{!Case.Rue_Lieu__c}, " + "{!Case.Ville__c}, " + "{!Case.Code_postal__c}"+"{!Case.Pays__c}", "{!Case.Adresse_agence_intervenante__c}, " , directionsService,directionsDisplay);
+          displayRoute("{!Case.Adresse_agence_intervenante__c}, " ,"{!Case.Rue_Lieu__c}, " + "{!Case.Ville__c}, " + "{!Case.Code_postal__c}"+"{!Case.Pays__c}",  directionsService,directionsDisplay,sysImperialMetric);
+           for (var i = 0; i < markers.length; i++) {markers[i].setMap(null);}
+          
+//**************Populate the map with PF DEPOTS **************
+
+try
+{
+   
+sforce.connection.sessionId = '{!$Api.Session_ID}';
+var recordtypeAgence='0120O0000003cw4QAA';
+var queryString = "select Id,Code__c,Exploitation_VEH_PFLO__c,Name,ShippingLongitude,ShippingLatitude from Account where RecordTypeId='"+ recordtypeAgence +"' AND ShippingLongitude != null ORDER BY Code__c ASC";
+var qr = sforce.connection.query(queryString) ;
+var records = qr.getArray("records");
+    //alert(records.length);
+}
+catch (error)
+{
+    //alert(error.faultstring);
+}
+if (records.length > 0)
+{
+var MarkerIcon="";
+var MarkerIcon_Green = "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
+var MarkerIcon_Red = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";    
+for (var i=0;i<records.length;i++) 
+{
+   
+    if((records[i].get("Exploitation_VEH_PFLO__c"))=="true")
+        {MarkerIcon=MarkerIcon_Green;}else{MarkerIcon=MarkerIcon_Red;}
+        {
+            var myLatLng = { lat: parseFloat(records[i].get("ShippingLatitude")), lng: parseFloat(records[i].get("ShippingLongitude")) };
+					 marker = new google.maps.Marker(
+					{
+                    
+                    map : map,
+                    position: myLatLng,
+                    icon : {url:MarkerIcon},
+                    title: records[i].get("Name"),
+                    label: 
+                    {
+                    Class: 'labels',
+                    fontWeight: 'bold',
+                    text: records[i].get("Code__c"),
+                    x: '0',
+                    y: '0'
+                    }});
+        }
+    
+    
+					
+    				
+                      
+    				markers.push(marker);
+                    marker.setMap(map);
+    				//Change the Depot
+  					google.maps.event.addListener(marker, 'click', function() {
+                        
+                        displayRoute(this.position,"{!Case.Rue_Lieu__c}, " + "{!Case.Ville__c}, " + "{!Case.Code_postal__c}"+"{!Case.Pays__c}",   directionsService,directionsDisplay,sysImperialMetric);
+                      
+                    });//END listener
+}//END FOR
+}//ENd if
+else
+{
+    //alert("Query to populate picklist failed. No Rows.");
+}
+
+                    }//end initmap
+      
+         //**************Display Route between Intervention address and Agence intervenante **************     
+
+      function displayRoute(origin, destination, service, display,Sys) {
+        service.route({
+          origin: origin,
+          destination: destination,
+          travelMode: 'DRIVING',
+          unitSystem: Sys,
+          avoidTolls: true}, 
+          function(response, status) {
+          if (status === 'OK') {
+              document.getElementById('total').innerHTML=
+                  '<b>{!$Label.MAP_Depart}</b> : '+response.routes[0].legs[0].start_address+
+                  '<br>'+
+                  '<b>{!$Label.MAP_Arrivee}</b> : '+response.routes[0].legs[0].end_address+
+                  '<br>'+
+                  '<b>{!$Label.MAP_Distance} : </b>'+response.routes[0].legs[0].distance.text+
+                  '<br>'+
+                  '<b>{!$Label.MAP_TempsDeTrajet}: </b> '+response.routes[0].legs[0].duration.text;
+              display.setDirections(response);
+          } else {
+              //alert('Could not display directions due to: ' + status);
+          }
+        });
+      }
+
+      function computeTotalDistance(result) {
+       
+        var total = 0;
+        var myroute = result.routes[0];
+        for (var i = 0; i < myroute.legs.length; i++) {
+          total += myroute.legs[i].distance.value;
+        }
+        total = total / 1000;
+          //document.getElementById('total').innerHTML = total + ' km';
+      }
+    </script>
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANl_xzJcEYaItw6TNeqTJ-CRHeuYjLjp8&callback=initMap">
+</script>
+
+
+  
+  </body>
+</html> 
+</apex:page>

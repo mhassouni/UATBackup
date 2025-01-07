@@ -1,0 +1,11 @@
+Bonjour,
+
+Votre demande de dérogation sur le devis {!SBQQ__Quote__c.Name} pour le client {!SBQQ__Quote__c.SBQQ__Account__c} a été rejetée.Vous trouverez ci-après les motifs du refus :
+
+Commentaires : {!ApprovalRequest.Comments}
+
+Merci de modifier votre demande et de soumettre une nouvelle approbation.
+
+Lien direct vers le devis :
+
+{!SBQQ__Quote__c.Link}

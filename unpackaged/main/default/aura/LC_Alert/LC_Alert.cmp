@@ -1,0 +1,57 @@
+<aura:component >
+    <!--
+        0 : pas d'alerte
+        1 : information
+        2 : warning
+        3 : erreur
+    -->
+    
+    <!-- Attributes -->
+    <aura:attribute name="messages" type="List" />
+    <aura:attribute name="alert" type="Integer" />
+    <aura:attribute name="close" type="Boolean" default="true" />
+
+    <aura:if isTrue="{!v.alert != 0}">    
+        <div class="{! v.alert == 3 ? 'slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error' : (v.alert == 2 ? 'slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning' : 'slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_success')}" 
+             role="alert">
+            <span class="slds-assistive-text">
+                <aura:if isTrue="{!v.alert == 2}">
+                	Attention
+                </aura:if>
+                <aura:if isTrue="{!v.alert == 1}">
+                	Réussite
+                </aura:if>
+            </span>
+            <aura:if isTrue="{!v.alert == 1}">
+                <span class="slds-icon_container slds-icon-utility-following slds-m-right_x-small">
+                    <lightning:icon iconName="utility:check" size="x-small" class="white" />
+                </span>
+            </aura:if>
+            <aura:if isTrue="{!v.alert == 2}">
+                <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small">
+                    <lightning:icon iconName="utility:warning" size="x-small" class="white" />
+                </span>
+            </aura:if>
+            <aura:if isTrue="{!v.alert == 3}">
+                <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small">
+                    <lightning:icon iconName="utility:error" size="x-small" class="white" />
+                </span>
+            </aura:if>
+            
+            <div class="slds-grid slds-wrap">
+                <aura:iteration items="{!v.messages}" var="message">
+                    <div class="slds-col slds-size_12-of-12">
+                        <h2>{!message}</h2>
+                    </div>
+                </aura:iteration>
+            </div>
+
+            <aura:if isTrue="{!v.close}">
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Fermer" onclick="{!c.closeError}">
+                    <lightning:icon iconName="utility:close" size="x-small" class="white" />
+                    <span class="slds-assistive-text">Fermer</span>
+                </button>
+			</aura:if>
+        </div>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Is related to</label>
+        <lookupFilter>
+            <errorMessage>Contact can not be linked itself</errorMessage>
+        </lookupFilter>
+        <name>ContactRelie__c</name>
+        <relationshipLabel>Contact&#39;s network</relationshipLabel>
+    </CustomFieldTranslation>

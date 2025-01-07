@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif de remise --></label>
+        <name>Motif_de_remise__c</name>
+        <picklistValues>
+            <masterLabel>Concurrence</masterLabel>
+            <translation><!-- Concurrence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur catégorie</masterLabel>
+            <translation><!-- Erreur catégorie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geste Commercial</masterLabel>
+            <translation><!-- Geste Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand compte</masterLabel>
+            <translation><!-- Grand compte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personnel PF</masterLabel>
+            <translation><!-- Personnel PF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saison basse</masterLabel>
+            <translation><!-- Saison basse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule hors catégorie</masterLabel>
+            <translation><!-- Véhicule hors catégorie --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

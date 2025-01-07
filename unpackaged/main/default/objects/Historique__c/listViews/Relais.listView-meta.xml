@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relais</fullName>
+    <columns>NAME</columns>
+    <columns>Client__c</columns>
+    <columns>N_Parc_sur_contrat__c</columns>
+    <columns>Parc__c</columns>
+    <columns>N_Parc_misAdisposition__c</columns>
+    <columns>Contrat__c</columns>
+    <columns>Statut_Contrat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_miseAdisposition__c</field>
+        <operation>equals</operation>
+        <value>RELAIS</value>
+    </filters>
+    <label>Relais</label>
+</ListView>

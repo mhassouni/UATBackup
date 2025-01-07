@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Résolution problème --></label>
+        <name>Resolution_probleme__c</name>
+        <picklistValues>
+            <masterLabel>En cours de résolution</masterLabel>
+            <translation><!-- En cours de résolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non résolu: escalade manager</masterLabel>
+            <translation><!-- Non résolu: escalade manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Résolu</masterLabel>
+            <translation><!-- Résolu --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

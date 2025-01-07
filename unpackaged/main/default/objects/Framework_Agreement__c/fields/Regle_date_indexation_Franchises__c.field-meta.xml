@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regle_date_indexation_Franchises__c</fullName>
+    <label>Règle sur la date indexation franchises</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a chaque date anniversaire de mise a disposition du vehicule</fullName>
+                <default>false</default>
+                <label>à chaque date anniversaire de mise à disposition du véhicule</label>
+            </value>
+            <value>
+                <fullName>01 Janvier</fullName>
+                <default>false</default>
+                <label>01 Janvier</label>
+            </value>
+            <value>
+                <fullName>01 Juillet</fullName>
+                <default>false</default>
+                <label>01 Juillet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

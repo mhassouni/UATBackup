@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiche_Depannage_2</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Fiche Dépannage 2</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/forceDownloadPDF?Id={!WorkOrderLineItem.Id}&amp;pdf=true&amp;force_download=true&amp;filename=FicheDepannage_{!WorkOrderLineItem.Nom_de_la_Mission__c}</url>
+</WebLink>

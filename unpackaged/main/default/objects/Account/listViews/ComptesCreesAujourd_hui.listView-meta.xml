@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComptesCreesAujourd_hui</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>Type_compte__c</columns>
+    <columns>Statut__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>CotationPF__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Créé aujourd&#39;hui / Created today</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

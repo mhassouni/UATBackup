@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Fridge Spec Setup</label>
+        <name>Configuration__c</name>
+        <picklistValues>
+            <masterLabel>Bi-température</masterLabel>
+            <translation>Multi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mono-température</masterLabel>
+            <translation>Mono</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri-température</masterLabel>
+            <translation>Tri</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_Mail_Opportunit_echue</fullName>
+        <description>Alerte Mail Opportunité echue</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Divers/Modele_Notification_Opportunit_Echue</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Approuv_e_International</fullName>
+        <description>Notification DNP Approuvée International</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Service_Tarification_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Approuve_GCHorsStandard</fullName>
+        <description>Notification DNP Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Approuvee_GC_parc</fullName>
+        <description>Notification DNP Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Approuvee_GC_std</fullName>
+        <description>Notification DNP Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Approuvee_Stricher</fullName>
+        <description>Notification DNP Approuvée Stricher</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Rejetee_GC_HorsStandard</fullName>
+        <description>Notification DNP Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Rejetee_GC_parc</fullName>
+        <description>Notification DNP Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Rejetee_GC_std</fullName>
+        <description>Notification DNP Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Rejetee_Stricher</fullName>
+        <description>Notification DNP Rejetée Stricher</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_DNP_Rejetee_international</fullName>
+        <description>Notification DNP Rejetée international</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initiateur_DNP__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Service_Tarification_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_DNP_Rejetee</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Annule</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Anuulé</literalValue>
+        <name>Annulé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Approbateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP_GC_HorsStandard</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Approbateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP_GC_parc</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Approbateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP_GC_std</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Approbateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP_Name_Approuve</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Approbateur DNP Name Approuvé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approbateur_DNP_Name_Rejete</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>$User.FirstName &amp; BR()&amp; $User.LastName</formula>
+        <name>Approbateur DNP Name_Rejeté</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Changer_RecordType</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Opportunite_Containe_EN_COURS</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Changer RecordType</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cloure_opportunit_vehicule</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Opportunite_Vehicule_Fermee</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Clôture opportunité véhicule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>NOW()</formula>
+        <name>Date Approbation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation_2</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>NOW()</formula>
+        <name>Date Approbation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation_final</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Approbation final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation_final_GC_HorsStandard</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>TODAY()</formula>
+        <name>Date Approbation final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation_final_GC_parc</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Approbation final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Approbation_final_GC_std</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Approbation final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Rejet_final</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Rejet final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Rejet_final_GC_HorsStandard</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>TODAY()</formula>
+        <name>Date Rejet final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Rejet_final_GC_parc</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Rejet final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Rejet_final_GC_std</fullName>
+        <field>DNP_Date_Approbation__c</field>
+        <formula>now()</formula>
+        <name>Date Rejet final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Soumission</fullName>
+        <field>DNP_Date_Soumission__c</field>
+        <formula>Now()</formula>
+        <name>Date Soumission</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_soumission_DNP</fullName>
+        <field>DNP_Date_Soumission__c</field>
+        <formula>TODAY()</formula>
+        <name>Date soumission DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_soumission_DNP_GCHorsStandard</fullName>
+        <field>DNP_Date_Soumission__c</field>
+        <formula>TODAY()</formula>
+        <name>Date soumission DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_soumission_DNP_GC_parc</fullName>
+        <field>DNP_Date_Soumission__c</field>
+        <formula>today()</formula>
+        <name>Date soumission DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_soumission_DNP_GC_std</fullName>
+        <field>DNP_Date_Soumission__c</field>
+        <formula>TODAY()</formula>
+        <name>Date soumission DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Decocher_sans_concurrent</fullName>
+        <field>Sans_Concurrent__c</field>
+        <literalValue>0</literalValue>
+        <name>Décocher sans concurrent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Initiateur_DNP</fullName>
+        <description>Sauvegarder le mail de l&#39;initiateur de la DNP afin de lui envoyer un mail de confirmation une fois la demande traitée.</description>
+        <field>Initiateur_DNP__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Initiateur_DNP_GC_HorsStandard</fullName>
+        <field>Initiateur_DNP__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Initiateur_DNP_GC_parc</fullName>
+        <field>Initiateur_DNP__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Initiateur_DNP_GC_std</fullName>
+        <field>Initiateur_DNP__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_attente_DG</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente DG</literalValue>
+        <name>En attente DG</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Initiateur_Mail_DNP</fullName>
+        <description>Sauvegarder le mail de l&#39;initiateur de la DNP afin de lui envoyer un mail de confirmation une fois la demande traitée.</description>
+        <field>Initiateur_DNP__c</field>
+        <formula>$User.Email</formula>
+        <name>Initiateur Mail  DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_Probablitity</fullName>
+        <description>Mettre à jour la valeur de probability standard avec celle de probabilité signature</description>
+        <field>Probability</field>
+        <formula>CASE(TEXT( Probabilite_signature__c ), 
+&#39;0% (Perdu)&#39;, 0, 
+&#39;20% (Peu probable)&#39;, 0.2, 
+&#39;50% (Probable)&#39;, 0.5, 
+&#39;80% (Très probable)&#39;, 0.8, 
+&#39;100% (Signé)&#39;, 1, 0)</formula>
+        <name>MAJ Probablitity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NomProcessus_USA</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP USA&#39;</formula>
+        <name>NomProcessus_USA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_Initiateur</fullName>
+        <field>DNP_Nom_Initiateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Nom Initiateur</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_Initiateur_DNP</fullName>
+        <field>DNP_Nom_Initiateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Nom Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_Initiateur_DNP_GC_HorsStandard</fullName>
+        <field>DNP_Nom_Initiateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Nom Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_Initiateur_DNP_GC_parc</fullName>
+        <field>DNP_Nom_Initiateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Nom Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_Initiateur_DNP_GC_std</fullName>
+        <field>DNP_Nom_Initiateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Nom Initiateur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus1</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Standard&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus10</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Standard&#39;</formula>
+        <name>Nom processus 10</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus11</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Hors Standard FR&#39;</formula>
+        <name>Nom processus11</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus12</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Hors Standard INTER&#39;</formula>
+        <name>Nom processus12</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus13</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Parc FR&#39;</formula>
+        <name>Nom processus13</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus14</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Parc INTER&#39;</formula>
+        <name>Nom processus14</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus15</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [FR] - ABDE&#39;</formula>
+        <name>Nom processus15</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus16</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [FR] - CF&#39;</formula>
+        <name>Nom processus16</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus2</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Hors Standard FR&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus20</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP PL&#39;</formula>
+        <name>Nom processus20</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus3</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Hors Standard INTER&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus4</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Parc FR&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus5</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP GC Parc INTER&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus6</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [FR] - ABDE&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus7</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [FR] - PRG&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus8</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP PL&#39;</formula>
+        <name>Nom processus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus_INTER</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP INTER&#39;</formula>
+        <name>Nom processus INTER</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus_INTER_PRG</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP INTER PRG&#39;</formula>
+        <name>Nom processus INTER PRG</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_proecessus19</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [STFR] (GC et Diffus)&#39;</formula>
+        <name>Nom proecessus19</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_proecessus9</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DNP - [STFR] (GC et Diffus)&#39;</formula>
+        <name>Nom proecessus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateCarnetDeCommandeBrut</fullName>
+        <field>Amount</field>
+        <formula>TECH_CarnetCommandeBrut__c</formula>
+        <name>OPP_UpdateCarnetDeCommandeBrut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateCloseDate</fullName>
+        <field>CloseDate</field>
+        <formula>TECH_DateCloture__c</formula>
+        <name>OPP_UpdateCloseDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDatCloEffDeAppOff</fullName>
+        <description>OPP-RG-005</description>
+        <field>DateClotureEffective__c</field>
+        <formula>Date_cloture_appel_offre__c</formula>
+        <name>OPP_UpdateDatCloEffDeAppOff</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDateClotEff</fullName>
+        <description>OPP-RG-003</description>
+        <field>DateClotureEffective__c</field>
+        <formula>TODAY()</formula>
+        <name>OPP_UpdateDateClotEff</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDateClotOpp</fullName>
+        <description>OPP-RG-005</description>
+        <field>CloseDate</field>
+        <formula>Date_cloture_appel_offre__c</formula>
+        <name>OPP_UpdateDateClotOpp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDateClotPrev</fullName>
+        <description>OPP-RG-003</description>
+        <field>CloseDate</field>
+        <formula>Priorvalue(CloseDate)</formula>
+        <name>OPP_UpdateDateClotPrev</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDateCloture</fullName>
+        <description>OPP-RG-003</description>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>OPP_UpdateDateCloture</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDateStatusActuel</fullName>
+        <field>TECH_DateStatutActuel__c</field>
+        <formula>Today()</formula>
+        <name>OPP_UpdateDateStatusActuel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateDureeContrat</fullName>
+        <field>DureeContrat__c</field>
+        <formula>1</formula>
+        <name>OPP_UpdateDureeContrat</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateMonoRTCloturee</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Opportunite_Container_FERMEE</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>OPP UpdateMonoRTCloturee</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateStatutCreee</fullName>
+        <field>StageName</field>
+        <literalValue>1 - Opportunité créée</literalValue>
+        <name>OPP_UpdateStatutCreee</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateStatutPropRemise</fullName>
+        <field>StageName</field>
+        <literalValue>3 - Proposition remise</literalValue>
+        <name>OPP_UpdateStatutPropRemise</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OPP_UpdateStatutQualifiee</fullName>
+        <field>StageName</field>
+        <literalValue>2 - Opportunité qualifiée</literalValue>
+        <name>OPP_UpdateStatutQualifiee</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OppIsWon</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>OppIsWon</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opp_Statut_5</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Opp Statut 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Passage_5</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Passage 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Passage_5_1</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Passage 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Passage_5_GC_HorsStandard</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Passage 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Passage_5_GC_parc</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Passage 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Passage_5_GC_std</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Passage 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rappel</fullName>
+        <description>Mettre le statut de la dnp en annulé</description>
+        <field>DNP_Statut__c</field>
+        <literalValue>Anuulé</literalValue>
+        <name>Rappel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejeteur_DNP</fullName>
+        <field>DNP_Nom_Approbteur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Rejeteur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejeteur_DNP_GC_HorsStandard</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Rejeteur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejeteur_DNP_GC_parc</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Rejeteur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejeteur_DNP_GC_std</fullName>
+        <field>DNP_Nom_Approbateur__c</field>
+        <formula>UPPER($User.FirstName) &amp; BR() &amp; UPPER($User.LastName)</formula>
+        <name>Rejeteur DNP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_1</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Statut 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_2</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Statut 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_5_2</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Statut 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_5_3</fullName>
+        <field>StageName</field>
+        <literalValue>5 - Gagnée</literalValue>
+        <name>Statut 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_Annul</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Anuulé</literalValue>
+        <name>Statut Annulé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_En_attente</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>Statut En attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_en_attente_GCHorsStandard</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>Statut en attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_en_attente_GC_Std</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>Statut en attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_en_attente_GC_parc</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>Statut en attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_en_attentee</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>En attente</literalValue>
+        <name>Statut en attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_refus</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Statut refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_refus_GC_parc</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Statut refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_refuse_GC_HorsStandard</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Statut refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_refuse_GC_std</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Statut refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_valid</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Statut validé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_valide_GC_HorsStandard</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Statut validé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_valide_GC_parc</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Statut validé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_valide_GC_std</fullName>
+        <field>DNP_Statut__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Statut validé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>OPP_WF03_Probablility_Update</fullName>
+        <actions>
+            <name>MAJ_Probablitity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Mettre à jour la probabilité standard avec la valeur de la probabilité signature</description>
+        <formula>OR(ISCHANGED( Probabilite_signature__c),ISCHANGED( Probability ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WF19_StageChanged</fullName>
+        <actions>
+            <name>OPP_UpdateDateStatusActuel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT($Setup.Bypass__c.BypassWorkflowRules__c), ISCHANGED(StageName))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WF20_Acteur_concurrent</fullName>
+        <actions>
+            <name>Decocher_sans_concurrent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Nb_Concurrents__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>décocher sans concurrent quand on ajoute un acteur de l&#39;opportunité</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WFC002_Cloture_OPP_ContainerMeuble</fullName>
+        <actions>
+            <name>OPP_UpdateMonoRTCloturee</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Changer le statut de l&#39;opportunité Véhicule une fois le statut passe en 6,7 ou 8.</description>
+        <formula>AND  (  RecordTypeId = $Label.OPP_RecordType_ContainerMeuble_ENCOURS_15 , OR ( TEXT(StageName)  =  $Label.OPP_StageName_ContratSigne , TEXT(StageName)  =  $Label.OPP_StageName_Perdue ,  TEXT(StageName)  =  $Label.OPP_StageName_Inactive )   ,   $Setup.Bypass__c.BypassWorkflowRules__c  = false )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WFC003_Container_OpportuniteQualifiee</fullName>
+        <actions>
+            <name>Changer_RecordType</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>OPP_UpdateStatutQualifiee</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Cycle de vie d&#39;une opportunité Container
+Statut 1-&gt;2</description>
+        <formula>AND (       
+RecordTypeId=LEFT($Label.OPP_RecordType_Container_DRAFT,15),  
+TEXT(StageName) = $Label.OPP_StageName_OpportuniteCreee ,
+NOT(ISPICKVAL(TypeProduit__c,&quot;&quot;)) , 
+NOT(ISPICKVAL(Categorie__c,&quot;&quot;)) , 
+NOT(ISPICKVAL(SousCategorie__c,&quot;&quot;))  , 
+NOT(ISPICKVAL(SousFamille__c,&quot;&quot;))  , 
+NOT(ISBLANK(Quantite__c)) , 
+NOT(ISBLANK(DureeContrat__c)) ,  
+NOT(ISBLANK(LoyerMensuel__c)) , 
+TECHNombreDeRoles__c&gt;0     )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WFC004_Probablility_Update</fullName>
+        <actions>
+            <name>MAJ_Probablitity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Mettre à jour la probabilité standard avec la valeur de la probabilité signature</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WFC006_StageChanged</fullName>
+        <actions>
+            <name>OPP_UpdateDateStatusActuel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>WHy?</description>
+        <formula>AND(NOT($Setup.Bypass__c.BypassWorkflowRules__c), ISCHANGED(StageName))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_WFC007_Acteur_concurrent</fullName>
+        <actions>
+            <name>Decocher_sans_concurrent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Nb_Concurrents__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>décocher sans concurrent quand on ajoute un acteur de l&#39;opportunité</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

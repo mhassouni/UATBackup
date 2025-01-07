@@ -1,0 +1,20 @@
+<aura:component implements="lightning:availableForFlowscreens,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride" access="global" controller="QuoteDocumentController" >
+  <aura:attribute name="experience" type="String" default="lightning"/>
+  <aura:attribute name="sobjectid" type="String" default=""/>
+        <aura:attribute name="RequiredField_QuoteID" type="String" default="" />
+	
+  <aura:attribute name="sfClassicToastMessageSetup" 
+                  type="Object" 
+                  default="{'hasToastMessage': false,  
+                            'messageTitle': 'Error!', 
+                            'messageSeverity': 'error', 
+                            'message': 'An unknown error has occurred.'}"/>
+  <lightning:notificationsLibrary aura:id="notifyId"/>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+  
+  <aura:if isTrue="{!v.sfClassicToastMessageSetup.hasToastMessage}">
+      <ui:message title="{!v.sfClassicToastMessageSetup.messageTitle}" severity="{!v.sfClassicToastMessageSetup.messageSeverity}" closable="true">
+        {!v.sfClassicToastMessageSetup.message}
+      </ui:message>
+  </aura:if>
+</aura:component>

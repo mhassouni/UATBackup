@@ -1,0 +1,4 @@
+La Date de clôture prévue de l'opportunité suivante est dépassée sans qu'elle ne soit clôturée (statut Contrat signé, Perdue ou Inactive).
+Nom de l'opportunité: {!Opportunity.Name}
+Propriétaire: {!Opportunity.OwnerFullName}
+Lien: https://greenforce.my.salesforce.com/{!Opportunity.Id}

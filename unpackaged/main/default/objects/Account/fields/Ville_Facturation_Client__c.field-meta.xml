@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ville_Facturation_Client__c</fullName>
+    <externalId>false</externalId>
+    <formula>Compte_de_facturation__r.Ville__c</formula>
+    <label>Ville (Facturation)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

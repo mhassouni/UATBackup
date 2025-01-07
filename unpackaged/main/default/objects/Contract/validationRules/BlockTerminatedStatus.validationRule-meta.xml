@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BlockTerminatedStatus</fullName>
+    <active>true</active>
+    <description>Vr utilisé pour permettre le statut résilié uniquement quand toutes les infos nécessaire sont renseignées.</description>
+    <errorConditionFormula>ISPICKVAL(Status, &#39;Contrat Résilié&#39;	)
+	&amp;&amp;
+TechTerminated__c = FALSE</errorConditionFormula>
+    <errorMessage>Vous devez soumettre le contrat à une approbation si vous voulez le résilier.</errorMessage>
+</ValidationRule>

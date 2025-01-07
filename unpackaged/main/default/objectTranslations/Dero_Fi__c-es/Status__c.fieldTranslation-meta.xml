@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Aceptado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>Cancelado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>Creado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused</masterLabel>
+            <translation>Rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation>Solicitado</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

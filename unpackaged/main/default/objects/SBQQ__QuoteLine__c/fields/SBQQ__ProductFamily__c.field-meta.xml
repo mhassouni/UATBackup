@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__ProductFamily__c</fullName>
+    <deprecated>false</deprecated>
+    <description>How you would categorize/group/organize this within Salesforce (whether it&#39;s a new or existing Product Family). Additionally, this field can be used during product selection to filter to the correct product or product SKU.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(SBQQ__Product__r.Family)</formula>
+    <inlineHelpText>Méth. de class./regroup./org. dans Salesforce (selon qu&#39;il s&#39;agit d&#39;une famille de produits nouvelle ou existante). De plus, ce champ peut être utilisé lors de la sélect. des prod. pour filtrer le prod. ou l&#39;unité de gestion de stock produit approprié.</inlineHelpText>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

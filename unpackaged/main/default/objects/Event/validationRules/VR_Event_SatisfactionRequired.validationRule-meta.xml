@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Event_SatisfactionRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+					ISPICKVAL(ObjetAction__c,&#39;Synthèse de prestations&#39;),
+					ISPICKVAL(Note_de_satisfaction__c,&#39;&#39;)
+						)</errorConditionFormula>
+    <errorMessage>Merci de bien vouloir saisir une note de satisfaction.</errorMessage>
+</ValidationRule>

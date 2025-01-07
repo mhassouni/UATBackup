@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Option_Telematique</fullName>
+    <active>true</active>
+    <label>Option - Télématique</label>
+    <picklistValues>
+        <picklist>Cameras__c</picklist>
+        <values>
+            <fullName>Caméra embarquée - Double objectifs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caméra embarquée - Simple objectif</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Configuration__c</picklist>
+        <values>
+            <fullName>Bi-température</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mono-température</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tri-température</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

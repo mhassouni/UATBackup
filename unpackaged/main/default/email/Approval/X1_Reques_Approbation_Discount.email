@@ -1,0 +1,13 @@
+Bonjour,
+
+Vous avez reçu une dérogation de {!Quote.OwnerFullName} sur le devis  {!SBQQ__Quote__c.Name} pour le client {!SBQQ__Quote__c.SBQQ__Account__c}.
+
+Les raisons sont : {!SBQQ__Quote__c.Quote_Approval_Reason__c}
+
+Dans le cas d'une remise tarifaire, le pourcentage de remise est de {!SBQQ__Quote__c.SBQQ__AverageCustomerDiscount__c}, soit 
+ {!SBQQ__Quote__c.SBQQ__TotalCustomerDiscountAmount__c}.
+
+
+Lien direct pour l'approbation : {!ApprovalRequest.External_URL}
+
+Lien direct vers le devis : {!SBQQ__Quote__c.Link}

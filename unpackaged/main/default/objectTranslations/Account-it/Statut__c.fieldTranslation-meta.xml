@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Stato</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Attente Validation CM</masterLabel>
+            <translation>In attesa della convalida Gestione del credito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué</masterLabel>
+            <translation>Bloccato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué CM</masterLabel>
+            <translation><!-- Bloqué CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Bozza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente analyse CM</masterLabel>
+            <translation><!-- En attente analyse CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur EH</masterLabel>
+            <translation>Errore EH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactif</masterLabel>
+            <translation>Inattivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé</masterLabel>
+            <translation>Rifiutato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé CM</masterLabel>
+            <translation><!-- Refusé CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé DC</masterLabel>
+            <translation><!-- Refusé DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation>Convalidato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé CM</masterLabel>
+            <translation>Gestione del credito convalidata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé DC</masterLabel>
+            <translation><!-- Validé DC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

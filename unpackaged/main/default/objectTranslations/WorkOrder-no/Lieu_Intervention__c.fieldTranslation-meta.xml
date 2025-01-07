@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Lieu d’intervention --></label>
+        <name>Lieu_Intervention__c</name>
+        <picklistValues>
+            <masterLabel>Atelier</masterLabel>
+            <translation><!-- Atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre adresse</masterLabel>
+            <translation><!-- Autre adresse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site client</masterLabel>
+            <translation><!-- Site client --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

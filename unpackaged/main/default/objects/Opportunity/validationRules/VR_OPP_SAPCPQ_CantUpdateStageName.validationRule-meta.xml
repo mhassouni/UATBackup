@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_OPP_SAPCPQ_CantUpdateStageName</fullName>
+    <active>true</active>
+    <description>Seuls les utilisateurs autorisés peuvent modifier le statut de l&#39;opportunité</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;PF Administrateur Système&quot;,
+				$Profile.Name &lt;&gt; &quot;Support PF&quot;,
+      !$Setup.Bypass__c.ByPass_UpdateOpportunityStageName__c,
+       OR(
+         AND(
+            ISCHANGED(StageName),
+            !ISPICKVAL(StageName, &#39;7 - Perdue&#39;),
+            !ISNEW()
+         ),
+         AND(
+             ISNEW(),
+             NOT(ISPICKVAL(StageName, &#39;1 - Opportunité créée&#39;))
+            )
+        ),
+       OR(
+           RecordType.DeveloperName = &#39;Opportunity_CPQ_CDMD&#39;,
+           RecordType.DeveloperName = &#39;Opportunity_CPQ_LD&#39;
+       )      
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Vous n&#39;êtes pas autorisé à modifier l&#39;étape d&#39;opportunité</errorMessage>
+</ValidationRule>

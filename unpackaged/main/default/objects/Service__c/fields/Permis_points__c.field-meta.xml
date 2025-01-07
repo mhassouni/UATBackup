@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permis_points__c</fullName>
+    <formula>IF
+(
+OR(ispickval(Formule__c,&#39;Smart Protect +&#39;),ispickval(Formule__c,&#39;Sérénité +&#39;))
+,
+TRUE
+,
+False
+
+)</formula>
+    <label>Permis à points</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

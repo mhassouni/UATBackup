@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_compacte_Parc_interne</fullName>
+    <fields>Name</fields>
+    <fields>IMMAT__c</fields>
+    <fields>Date_IMMAT__c</fields>
+    <fields>Status</fields>
+    <fields>Agence_Localisation__c</fields>
+    <fields>Carburant__c</fields>
+    <label>Presentation_compacte_Parc_interne</label>
+</CompactLayout>

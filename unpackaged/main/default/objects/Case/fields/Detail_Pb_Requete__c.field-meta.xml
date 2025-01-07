@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detail_Pb_Requete__c</fullName>
+    <description>Détail Problème picklist</description>
+    <label>Détail Problème</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Qualification__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accès</fullName>
+                <default>false</default>
+                <label>Accès</label>
+            </value>
+            <value>
+                <fullName>Accessoires</fullName>
+                <default>false</default>
+                <label>Accessoires</label>
+            </value>
+            <value>
+                <fullName>Accessoires (Etagères, rails )</fullName>
+                <default>false</default>
+                <label>Accessoires (Etagères, rails )</label>
+            </value>
+            <value>
+                <fullName>Accident véhicule</fullName>
+                <default>false</default>
+                <label>Accident véhicule</label>
+            </value>
+            <value>
+                <fullName>Armoire électrique</fullName>
+                <default>false</default>
+                <label>Armoire électrique</label>
+            </value>
+            <value>
+                <fullName>Bruit anormal</fullName>
+                <default>false</default>
+                <label>Bruit anormal</label>
+            </value>
+            <value>
+                <fullName>BV/Transmission</fullName>
+                <default>false</default>
+                <label>BV/Transmission</label>
+            </value>
+            <value>
+                <fullName>Casse Pare Brise</fullName>
+                <default>false</default>
+                <label>Casse Pare Brise</label>
+            </value>
+            <value>
+                <fullName>Casse Retroviseur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Casse Retroviseur</label>
+            </value>
+            <value>
+                <fullName>Choc</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Choc</label>
+            </value>
+            <value>
+                <fullName>Cloison</fullName>
+                <default>false</default>
+                <label>Cloison</label>
+            </value>
+            <value>
+                <fullName>Code alarme (à préciser sur les commentaires)</fullName>
+                <default>false</default>
+                <label>Code alarme (à préciser sur les commentaires)</label>
+            </value>
+            <value>
+                <fullName>Compresseur</fullName>
+                <default>false</default>
+                <label>Compresseur</label>
+            </value>
+            <value>
+                <fullName>Coupure moteur</fullName>
+                <default>false</default>
+                <label>Coupure moteur</label>
+            </value>
+            <value>
+                <fullName>Crevaison</fullName>
+                <default>false</default>
+                <label>Crevaison</label>
+            </value>
+            <value>
+                <fullName>Défaut Froid</fullName>
+                <default>false</default>
+                <label>Défaut Froid</label>
+            </value>
+            <value>
+                <fullName>Défaut Hayon</fullName>
+                <default>false</default>
+                <label>Défaut Hayon</label>
+            </value>
+            <value>
+                <fullName>Démarrage</fullName>
+                <default>false</default>
+                <label>Démarrage</label>
+            </value>
+            <value>
+                <fullName>Démarrage / Batterie</fullName>
+                <default>false</default>
+                <label>Démarrage / Batterie</label>
+            </value>
+            <value>
+                <fullName>Descend Tout Seul</fullName>
+                <default>false</default>
+                <label>Descend Tout Seul</label>
+            </value>
+            <value>
+                <fullName>Direction</fullName>
+                <default>false</default>
+                <label>Direction</label>
+            </value>
+            <value>
+                <fullName>Eclairage</fullName>
+                <default>false</default>
+                <label>Eclairage</label>
+            </value>
+            <value>
+                <fullName>Eclairage / Signalisation</fullName>
+                <default>false</default>
+                <label>Eclairage / Signalisation</label>
+            </value>
+            <value>
+                <fullName>Electricité</fullName>
+                <default>false</default>
+                <label>Electricité</label>
+            </value>
+            <value>
+                <fullName>Eléctricité Châssis</fullName>
+                <default>false</default>
+                <label>Eléctricité Châssis</label>
+            </value>
+            <value>
+                <fullName>Enregistreur</fullName>
+                <default>false</default>
+                <label>Enregistreur</label>
+            </value>
+            <value>
+                <fullName>Erreur carburant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Erreur carburant</label>
+            </value>
+            <value>
+                <fullName>Erreur carburant / adblue / lubrifiant</fullName>
+                <default>false</default>
+                <label>Erreur carburant / adblue / lubrifiant</label>
+            </value>
+            <value>
+                <fullName>Erreur Utilisation / Casse Rétroviseur</fullName>
+                <default>false</default>
+                <label>Erreur Utilisation / Casse Rétroviseur</label>
+            </value>
+            <value>
+                <fullName>Fluide frigorigene</fullName>
+                <default>false</default>
+                <label>Fluide frigorigene</label>
+            </value>
+            <value>
+                <fullName>Fonctionne mais ne manœuvre pas</fullName>
+                <default>false</default>
+                <label>Fonctionne mais ne manœuvre pas</label>
+            </value>
+            <value>
+                <fullName>Fonctionne tout seul</fullName>
+                <default>false</default>
+                <label>Fonctionne tout seul</label>
+            </value>
+            <value>
+                <fullName>Freins</fullName>
+                <default>false</default>
+                <label>Freins</label>
+            </value>
+            <value>
+                <fullName>Fuite d&#39;air</fullName>
+                <default>false</default>
+                <label>Fuite d&#39;air</label>
+            </value>
+            <value>
+                <fullName>Fuite Gaz</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuite Gaz</label>
+            </value>
+            <value>
+                <fullName>Hayon bloqué position ouverte</fullName>
+                <default>false</default>
+                <label>Hayon bloqué position ouverte</label>
+            </value>
+            <value>
+                <fullName>Jante</fullName>
+                <default>false</default>
+                <label>Jante</label>
+            </value>
+            <value>
+                <fullName>Mise en Froid sur site</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mise en Froid sur site</label>
+            </value>
+            <value>
+                <fullName>Moteur / BV / Pont</fullName>
+                <default>false</default>
+                <label>Moteur / BV / Pont</label>
+            </value>
+            <value>
+                <fullName>Moteur condenseur</fullName>
+                <default>false</default>
+                <label>Moteur condenseur</label>
+            </value>
+            <value>
+                <fullName>Moteur evaporateur</fullName>
+                <default>false</default>
+                <label>Moteur evaporateur</label>
+            </value>
+            <value>
+                <fullName>Ne fonctionne pas</fullName>
+                <default>false</default>
+                <label>Ne fonctionne pas</label>
+            </value>
+            <value>
+                <fullName>Ne s’allume pas sur route</fullName>
+                <default>false</default>
+                <label>Ne s’allume pas sur route</label>
+            </value>
+            <value>
+                <fullName>Ne s’allume pas sur secteur</fullName>
+                <default>false</default>
+                <label>Ne s’allume pas sur secteur</label>
+            </value>
+            <value>
+                <fullName>Ouverture/Fermeture</fullName>
+                <default>false</default>
+                <label>Ouverture/Fermeture</label>
+            </value>
+            <value>
+                <fullName>Ouvrant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ouvrant</label>
+            </value>
+            <value>
+                <fullName>Ouvrant (portes, Fenetres)</fullName>
+                <default>false</default>
+                <label>Ouvrant (portes, Fenetres)</label>
+            </value>
+            <value>
+                <fullName>Panne AdBlue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Panne AdBlue</label>
+            </value>
+            <value>
+                <fullName>Panne carburant / AdBlue</fullName>
+                <default>false</default>
+                <label>Panne carburant / AdBlue</label>
+            </value>
+            <value>
+                <fullName>Panne GO</fullName>
+                <default>false</default>
+                <label>Panne GO</label>
+            </value>
+            <value>
+                <fullName>Perte casse Clé</fullName>
+                <default>false</default>
+                <label>Perte / Casse de clé</label>
+            </value>
+            <value>
+                <fullName>Perte Clé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perte Clé</label>
+            </value>
+            <value>
+                <fullName>Perte roue / roue déserrée</fullName>
+                <default>false</default>
+                <label>Perte roue / roue déserrée</label>
+            </value>
+            <value>
+                <fullName>Plancher</fullName>
+                <default>false</default>
+                <label>Plancher</label>
+            </value>
+            <value>
+                <fullName>Prise en glace</fullName>
+                <default>false</default>
+                <label>Prise en glace</label>
+            </value>
+            <value>
+                <fullName>Problème de phase</fullName>
+                <default>false</default>
+                <label>Problème de phase</label>
+            </value>
+            <value>
+                <fullName>Problème de prise</fullName>
+                <default>false</default>
+                <label>Problème de prise</label>
+            </value>
+            <value>
+                <fullName>Puissance</fullName>
+                <default>false</default>
+                <label>Puissance</label>
+            </value>
+            <value>
+                <fullName>Suspensions</fullName>
+                <default>false</default>
+                <label>Suspensions</label>
+            </value>
+            <value>
+                <fullName>S’allume mais ne démarre pas</fullName>
+                <default>false</default>
+                <label>S’allume mais ne démarre pas</label>
+            </value>
+            <value>
+                <fullName>S’allume mais ne descend pas en température</fullName>
+                <default>false</default>
+                <label>S’allume mais ne descend pas en température</label>
+            </value>
+            <value>
+                <fullName>Usure</fullName>
+                <default>false</default>
+                <label>Usure</label>
+            </value>
+            <value>
+                <fullName>Véhicule embourbé</fullName>
+                <default>false</default>
+                <label>Véhicule embourbé</label>
+            </value>
+            <value>
+                <fullName>Ventilation</fullName>
+                <default>false</default>
+                <label>Ventilation</label>
+            </value>
+            <value>
+                <fullName>Voyant/Message d&#39;alerte au tableau de bord</fullName>
+                <default>false</default>
+                <label>Voyant/Message d&#39;alerte au tableau de bord</label>
+            </value>
+            <value>
+                <fullName>Voyant tableau de bord</fullName>
+                <default>false</default>
+                <label>Voyant tableau de bord</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Accès</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <valueName>Accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <valueName>Accessoires (Etagères, rails )</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <valueName>Cloison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <valueName>Eclairage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <valueName>Ouverture/Fermeture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Ouvrant (portes, Fenetres)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Caisse/Cellule isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Plancher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>BV/Transmission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Démarrage / Batterie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Direction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Eclairage / Signalisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Eléctricité Châssis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Freins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Fuite d&#39;air</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Moteur / BV / Pont</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Suspensions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Voyant tableau de bord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Bruit anormal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Code alarme (à préciser sur les commentaires)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Compresseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Défaut Froid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Electricité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Enregistreur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Fluide frigorigene</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Moteur condenseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Moteur evaporateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Ne s’allume pas sur route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Ne s’allume pas sur secteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Prise en glace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>S’allume mais ne démarre pas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>S’allume mais ne descend pas en température</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Frigo</controllingFieldValue>
+            <valueName>Ventilation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon</controllingFieldValue>
+            <valueName>Défaut Hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatique</controllingFieldValue>
+            <valueName>Crevaison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatique</controllingFieldValue>
+            <valueName>Jante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatique</controllingFieldValue>
+            <valueName>Perte roue / roue déserrée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatique</controllingFieldValue>
+            <valueName>Usure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Accident véhicule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Casse Pare Brise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Erreur carburant / adblue / lubrifiant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Panne carburant / AdBlue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Panne GO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Perte casse Clé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Erreur D&#39;utilisation / Casse / Accident</controllingFieldValue>
+            <valueName>Véhicule embourbé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branchement</controllingFieldValue>
+            <valueName>Armoire électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branchement</controllingFieldValue>
+            <valueName>Problème de phase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branchement</controllingFieldValue>
+            <valueName>Problème de prise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/système de levage</controllingFieldValue>
+            <valueName>Descend Tout Seul</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/système de levage</controllingFieldValue>
+            <valueName>Fonctionne mais ne manœuvre pas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/système de levage</controllingFieldValue>
+            <valueName>Fonctionne tout seul</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/système de levage</controllingFieldValue>
+            <valueName>Hayon bloqué position ouverte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/système de levage</controllingFieldValue>
+            <valueName>Ne fonctionne pas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Coupure moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Démarrage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Puissance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Voyant/Message d&#39;alerte au tableau de bord</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

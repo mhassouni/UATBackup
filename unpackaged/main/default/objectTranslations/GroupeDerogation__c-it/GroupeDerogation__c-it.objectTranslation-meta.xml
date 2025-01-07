@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gruppo di deroga</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gruppo di deroga</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Groupe de dérogation</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Niveau 1 --></label>
+            <section>Niveau 1</section>
+        </sections>
+        <sections>
+            <label><!-- Niveau 2 --></label>
+            <section>Niveau 2</section>
+        </sections>
+        <sections>
+            <label><!-- Niveau 3 --></label>
+            <section>Niveau 3</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome del gruppo di deroga</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

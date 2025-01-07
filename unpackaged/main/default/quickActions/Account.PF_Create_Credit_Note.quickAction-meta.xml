@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create Standalone Credit Note</description>
+    <fieldOverrides>
+        <field>blng__Account__c</field>
+        <formula>Account.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>blng__CreditNoteDate__c</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>blng__EffectiveTaxDate__c</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>blng__TaxCountry__c</field>
+        <formula>&#39;France&#39;</formula>
+    </fieldOverrides>
+    <label>Create Credit Note</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>blng__Account__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>blng__CreditNoteDate__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>PF_Motif_d_avoir__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns />
+    </quickActionLayout>
+    <targetObject>blng__CreditNote__c</targetObject>
+    <targetParentField>blng__Account__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

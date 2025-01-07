@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Inconnu</masterLabel>
+        <translation>Unbekannt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non</masterLabel>
+        <translation>Nein</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oui</masterLabel>
+        <translation>Ja</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

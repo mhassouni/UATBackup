@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Probabilite signature --></label>
+        <name>Probabilite_signature__c</name>
+        <picklistValues>
+            <masterLabel>20% (Peu probable)</masterLabel>
+            <translation><!-- 20% (Peu probable) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% (Probable)</masterLabel>
+            <translation><!-- 50% (Probable) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80% (Très probable)</masterLabel>
+            <translation><!-- 80% (Très probable) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Account_Hierarchy</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Name_2__c</columns>
+    <columns>Code_de_gestion__c</columns>
+    <columns>Ligne1__c</columns>
+    <columns>Ville_Facturation__pc</columns>
+    <columns>Ligne1Exploitation__c</columns>
+    <columns>VilleExploitation__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Org_Account_Hierarchy</label>
+</ListView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PostWorkSummary</fullName>
+    <inlineHelpText>Saisissez un résumé manuellement. Alternativement, si vous utilisez Einstein Copilot, votre copilote peut remplir le résumé pour vous.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kérés státusza</label>
+        <name>Statut_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>DONE</masterLabel>
+            <translation>Szerződés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS</masterLabel>
+            <translation>Folyamatban</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS QUOTATION LECAPITAINE</masterLabel>
+            <translation>Folyamatban - Lecapitaine árképzés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - LECAPITAINE - IN PRICING</masterLabel>
+            <translation>Folyamatban - Lecapitaine - Árképzés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</masterLabel>
+            <translation>Függőben - Termékszolgálat - Visszavásárlás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING - PRODUCT SERVICE &amp; PURCHASING</masterLabel>
+            <translation>Függőben - Termékszolgálat és beszerzés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</masterLabel>
+            <translation>Függőben - Lecapitaine &amp; beszerzés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - BACK TO PURCHASES</masterLabel>
+            <translation>Függőben - Lecapitaine - Visszavásárlási visszatérítés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - DRAWN</masterLabel>
+            <translation>Függőben - Lecapitaine - Vontatva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - IN DRAWING</masterLabel>
+            <translation>Függőben - Lecapitaine - Rajzolás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - TO BE DRAWN</masterLabel>
+            <translation>Függőleges - Lecapitaine - Sorsolásra váró</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING DDT</masterLabel>
+            <translation>Függőben - DDT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FOR THE SALESPERSON</masterLabel>
+            <translation>Kereskedelmi forgalomra váró</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FRIOVAL QUOTATION</masterLabel>
+            <translation>Függőben - Coldcar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING IGLOOCAR</masterLabel>
+            <translation>Várható - Igloocar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING KEY ACCOUNTS</masterLabel>
+            <translation>Függőben - Key accounts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING LECAPITAINE</masterLabel>
+            <translation>Várható - Lecapitaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING PURCHASE SERVICE</masterLabel>
+            <translation>Várható - Beszerzés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</masterLabel>
+            <translation>Függőben - Termékosztály - Értékelés alatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</masterLabel>
+            <translation>Függőben - Termékszolgálat - Felülvizsgálat alatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING UK QUOTATION</masterLabel>
+            <translation>Függőben - UK Purchasing</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

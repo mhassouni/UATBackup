@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Anti-sponsor</masterLabel>
+        <translation><!-- Anti-sponsor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Coach</masterLabel>
+        <translation><!-- Coach --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Détracteur</masterLabel>
+        <translation>Detractor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sponsor</masterLabel>
+        <translation><!-- Sponsor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Technique</masterLabel>
+        <translation>Technical</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Utilisateur</masterLabel>
+        <translation>User</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Économique</masterLabel>
+        <translation>Economical</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

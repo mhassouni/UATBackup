@@ -1,0 +1,3 @@
+<p>Date d'ouverture = {!Case.CreatedDate}</p>
+<p><br />Veuillez trouver ici les informations sur la demande ouverte par le client :</p>
+<p>Objet de l'intervention : {!Case.Link}</p>

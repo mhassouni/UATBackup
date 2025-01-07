@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condiciones financieras</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condiciones financieras</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Dero. Fi Layout</layout>
+        <sections>
+            <label>Condiciones deseadas</label>
+            <section>Conditions souhaitées</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexación</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dero. Fi Standard Layout</layout>
+        <sections>
+            <label>Términos</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexación</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Courte durée</layout>
+        <sections>
+            <label>Términos</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Moyenne durée</layout>
+        <sections>
+            <label>Términos</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de la exención financiera</nameFieldLabel>
+    <recordTypes>
+        <label>Contenedor - Depósito Financiero - Específico</label>
+        <name>Specific_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contenedor - Dero. Financiero – Estándar</label>
+        <name>Standard_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehículo – Corto Plazo</label>
+        <name>VehiculeCourteDuree</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehículo - Duración media</label>
+        <name>VehiculeMoyenneDuree</name>
+    </recordTypes>
+</CustomObjectTranslation>

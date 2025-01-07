@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Ströme kontrollieren</label>
+        <name>Organe_flux__c</name>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Kabine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation>Kühlkoffer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Fahrgestell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Strom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe</masterLabel>
+            <translation>Gruppe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Reifen</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

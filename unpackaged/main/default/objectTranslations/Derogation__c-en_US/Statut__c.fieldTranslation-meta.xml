@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Acceptée</masterLabel>
+            <translation><!-- Acceptée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendée</masterLabel>
+            <translation><!-- Amendée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annulée</masterLabel>
+            <translation><!-- Annulée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crée</masterLabel>
+            <translation><!-- Crée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demandée</masterLabel>
+            <translation><!-- Demandée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusée</masterLabel>
+            <translation><!-- Refusée --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,86 @@
+.THIS {
+}
+
+.THIS .slds-combobox_container {
+  width: 100%;
+}
+.THIS .input-container-multi {
+  margin-top: 3.75px !important;
+  height: 60px;
+}
+
+.THIS .spinner-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 999;
+}
+
+.THIS.asset-name {
+  font-size: 1.2rem;
+  text-decoration: uppercase;
+  font-weight: 700;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.THIS.filter-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.THIS.filter-form .custom-background {
+  background-color: white;
+}
+
+.THIS.filter-form .fieldset {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove;
+  display: block;
+}
+
+.THIS.filter-form .fieldsetLegend {
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+  display: block;
+}
+
+.THIS.filter-form .result_container {
+  padding: 10px;
+  overflow: scroll;
+  height: 450px;
+}
+
+.THIS.filter-form .input-container {
+  width: 23%;
+  margin: 0 1%;
+}
+
+.THIS.filter-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.THIS.filter-form .slds-button_neutral:focus {
+  border-color: #05954f;
+}
+
+.THIS.filter-form .edit-reservation .slds-button_neutral {
+  padding-right: 15px !important;
+  padding-left: 20px !important;
+}
+.THIS.filter-form .search-btn button {
+  background-color: #05954f;
+  border-color: #05954f;
+}

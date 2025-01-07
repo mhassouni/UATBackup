@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ModeCreation__c</fullName>
+    <label>Mode de création</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Création manuelle</fullName>
+                <default>true</default>
+                <label>Création manuelle</label>
+            </value>
+            <value>
+                <fullName>Import en masse</fullName>
+                <default>false</default>
+                <label>Import en masse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

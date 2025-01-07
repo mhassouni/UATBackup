@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Champ_Annee</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNUMBER(Annee__c) ),
+NOT(ISBLANK(Annee__c) )
+)</errorConditionFormula>
+    <errorDisplayField>Annee__c</errorDisplayField>
+    <errorMessage>Le Champ Année doit contenir que des chiffres</errorMessage>
+</ValidationRule>

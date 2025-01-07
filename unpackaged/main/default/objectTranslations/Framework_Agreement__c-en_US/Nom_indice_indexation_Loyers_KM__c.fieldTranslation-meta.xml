@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Name rent indexation index and KM</label>
+        <name>Nom_indice_indexation_Loyers_KM__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNL</masterLabel>
+            <translation><!-- CNL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

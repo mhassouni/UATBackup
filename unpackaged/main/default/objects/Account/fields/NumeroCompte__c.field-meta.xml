@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumeroCompte__c</fullName>
+    <displayFormat>GF-CPT-{0000000000}</displayFormat>
+    <externalId>true</externalId>
+    <inlineHelpText>System number (auto)</inlineHelpText>
+    <label>Numéro du compte</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

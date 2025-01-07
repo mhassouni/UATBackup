@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>blng__BilledAmountwithouttax__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>La somme de toutes les factures pour cette commande (hors taxes).</inlineHelpText>
+    <label>Billed Amount (without tax)</label>
+    <summarizedField>OrderItem.blng__BilledAmountwithouttax__c</summarizedField>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

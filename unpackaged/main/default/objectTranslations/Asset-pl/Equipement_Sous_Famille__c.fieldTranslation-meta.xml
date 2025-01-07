@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Teljes megrakodott súly</label>
+        <name>Equipement_Sous_Famille__c</name>
+        <picklistValues>
+            <masterLabel>ACCES ARRIERE</masterLabel>
+            <translation><!-- ACCES ARRIERE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCES AVANT</masterLabel>
+            <translation><!-- ACCES AVANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCES LATERAL</masterLabel>
+            <translation><!-- ACCES LATERAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARRIMAGE RAIL</masterLabel>
+            <translation><!-- ARRIMAGE RAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARRIMAGE TUBE</masterLabel>
+            <translation><!-- ARRIMAGE TUBE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSE INCONNU</masterLabel>
+            <translation><!-- CAISSE INCONNU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHASSIS INCONNU</masterLabel>
+            <translation><!-- CHASSIS INCONNU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON FIXE</masterLabel>
+            <translation><!-- CLOISON FIXE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON MOBILE</masterLabel>
+            <translation><!-- CLOISON MOBILE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIVERS (OG)</masterLabel>
+            <translation><!-- DIVERS (OG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIVERS (OH)</masterLabel>
+            <translation><!-- DIVERS (OH) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR. TEMP. DISQUE</masterLabel>
+            <translation><!-- ENR. TEMP. DISQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR. TEMP. ELECTRONIQUE</masterLabel>
+            <translation><!-- ENR. TEMP. ELECTRONIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERE AMOVIBLE</masterLabel>
+            <translation><!-- ETAGERE AMOVIBLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERE FIXE</masterLabel>
+            <translation><!-- ETAGERE FIXE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERE RELEVABLE</masterLabel>
+            <translation><!-- ETAGERE RELEVABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETHYLOTEST</masterLabel>
+            <translation><!-- ETHYLOTEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLUIDES</masterLabel>
+            <translation><!-- FLUIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FROID</masterLabel>
+            <translation><!-- FROID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPS</masterLabel>
+            <translation><!-- GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE AUTONOME</masterLabel>
+            <translation><!-- GROUPE AUTONOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE ELECTRIQUE</masterLabel>
+            <translation><!-- GROUPE ELECTRIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE EUTECT.+ PM</masterLabel>
+            <translation><!-- GROUPE EUTECT.+ PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE EUTECTIQUE</masterLabel>
+            <translation><!-- GROUPE EUTECTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE INCONNU</masterLabel>
+            <translation><!-- GROUPE INCONNU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE POULIE MOTEUR</masterLabel>
+            <translation><!-- GROUPE POULIE MOTEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON A COLONNES</masterLabel>
+            <translation><!-- HAYON A COLONNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON CASSETTE</masterLabel>
+            <translation><!-- HAYON CASSETTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON INTERNE</masterLabel>
+            <translation><!-- HAYON INTERNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON ISOTHERME</masterLabel>
+            <translation><!-- HAYON ISOTHERME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON RABATTABLE</masterLabel>
+            <translation><!-- HAYON RABATTABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON RETRACTABLE</masterLabel>
+            <translation><!-- HAYON RETRACTABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON RETRACTABLE (H)</masterLabel>
+            <translation><!-- HAYON RETRACTABLE (H) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON RETRACTABLE (OH)</masterLabel>
+            <translation><!-- HAYON RETRACTABLE (OH) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE ARRIERE</masterLabel>
+            <translation><!-- OUVERTURE ARRIERE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE LATERALE</masterLabel>
+            <translation><!-- OUVERTURE LATERALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE AIGUILLAGE</masterLabel>
+            <translation><!-- PENDERIE AIGUILLAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE BI-RAILS</masterLabel>
+            <translation><!-- PENDERIE BI-RAILS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE FIXE</masterLabel>
+            <translation><!-- PENDERIE FIXE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE RAIL C</masterLabel>
+            <translation><!-- PENDERIE RAIL C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE TOIT PORTEUR</masterLabel>
+            <translation><!-- PENDERIE TOIT PORTEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIE TUBULAIRE</masterLabel>
+            <translation><!-- PENDERIE TUBULAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEC</masterLabel>
+            <translation><!-- SEC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

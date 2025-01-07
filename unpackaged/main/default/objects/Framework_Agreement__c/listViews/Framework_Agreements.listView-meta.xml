@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Framework_Agreements</fullName>
+    <columns>NAME</columns>
+    <columns>Compte__c</columns>
+    <columns>Groupement__c</columns>
+    <columns>Business_Line__c</columns>
+    <columns>Marque__c</columns>
+    <columns>Pays__c</columns>
+    <columns>FrameworkAgreementPrevious__c</columns>
+    <columns>Organisation_Commerciale__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Active__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Framework Agreements</label>
+</ListView>

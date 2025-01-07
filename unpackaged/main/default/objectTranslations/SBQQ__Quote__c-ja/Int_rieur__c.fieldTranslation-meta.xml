@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Intérieur --></label>
+        <name>Int_rieur__c</name>
+        <picklistValues>
+            <masterLabel>Bouche égouts (ou autres)</masterLabel>
+            <translation><!-- Bouche égouts (ou autres) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distance Roulage</masterLabel>
+            <translation><!-- Distance Roulage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hauteur Hangar</masterLabel>
+            <translation><!-- Hauteur Hangar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type sol</masterLabel>
+            <translation><!-- Type sol --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

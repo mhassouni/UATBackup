@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Depósito de garantia MD (Grau 1 a 6)</label>
+        <name>DepotGarantieMD__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation>1 mês</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation>2 meses</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation>3 meses</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Outros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation>Dispensado</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

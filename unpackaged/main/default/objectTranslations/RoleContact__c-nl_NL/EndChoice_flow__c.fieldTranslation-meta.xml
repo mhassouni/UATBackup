@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- EndChoice flow --></label>
+        <name>EndChoice_flow__c</name>
+        <picklistValues>
+            <masterLabel>Créer un nouveau rôle de contact</masterLabel>
+            <translation><!-- Créer un nouveau rôle de contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminer</masterLabel>
+            <translation><!-- Terminer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

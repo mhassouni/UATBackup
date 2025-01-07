@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Primary__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox which if checked designates the quote as the Primary Quote</description>
+    <inlineHelpText>Sélectionnez cette case pour désigner ce devis en tant que principal dans l&#39;opportunité, et synchroniser les éléments de ligne du devis avec les éléments de ligne de l&#39;opportunité.</inlineHelpText>
+    <label>Primary</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

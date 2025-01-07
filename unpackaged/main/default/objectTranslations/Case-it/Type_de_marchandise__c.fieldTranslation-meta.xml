@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo di merce</label>
+        <name>Type_de_marchandise__c</name>
+        <picklistValues>
+            <masterLabel>Frais</masterLabel>
+            <translation>Prodotti freschi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frais &amp; Surgelé</masterLabel>
+            <translation>Prodotti freschi e surgelati</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sec</masterLabel>
+            <translation>Prodotti asciutti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgelé</masterLabel>
+            <translation>Prodotti surgelati</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

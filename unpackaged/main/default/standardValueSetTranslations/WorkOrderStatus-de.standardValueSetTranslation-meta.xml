@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation>Storniert</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours</masterLabel>
+        <translation>Läufend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non abouti</masterLabel>
+        <translation>Nicht abgeschlossen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nouveau</masterLabel>
+        <translation>Neu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Provisoire</masterLabel>
+        <translation>Provisorisch</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminé</masterLabel>
+        <translation>Beendet</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>À replanifier</masterLabel>
+        <translation>Für weitere Plannung</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

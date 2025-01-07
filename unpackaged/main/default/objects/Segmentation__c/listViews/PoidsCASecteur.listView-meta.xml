@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PoidsCASecteur</fullName>
+    <columns>NAME</columns>
+    <columns>Notation__c</columns>
+    <columns>NotationPotentielExtension__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Segmentation__c.NoteCodesNACE</value>
+    </filters>
+    <label>Poids du CA Secteur</label>
+</ListView>

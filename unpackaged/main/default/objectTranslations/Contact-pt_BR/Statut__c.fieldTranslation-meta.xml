@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Estado</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Actif</masterLabel>
+            <translation>Ativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactif</masterLabel>
+            <translation>Inativo</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

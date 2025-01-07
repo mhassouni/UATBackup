@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SummaryDisplay__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies how line items rendered by this section are summarized.</description>
+    <inlineHelpText>Sélectionnez « Toujours » pour afficher le sous-total, les remises et le total général, quels que soient les autres paramètres. Sélectionnez « Jamais » pour ne jamais afficher, quels que soient les autres paramètres. Laissez ce champ vide pour afficher le résumé tel que défini dans les champs du modèle.</inlineHelpText>
+    <label>Summary Display</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Always</fullName>
+                <default>false</default>
+                <label>Always</label>
+            </value>
+            <value>
+                <fullName>Never</fullName>
+                <default>false</default>
+                <label>Never</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

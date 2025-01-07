@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR_WFC_05_Parcs_confirmes</fullName>
+    <active>true</active>
+    <description>Nb des parcs attribués confirmés doit être égale à la quantité de l&#39;opportunité</description>
+    <errorConditionFormula>AND
+(
+LEFT( text(StageName) , 1) = &#39;6&#39;
+,
+ Quantite__c &lt;&gt;  NB_Parcs_confirmes__c
+,
+Text( PaysRegionPF__c )&lt;&gt; &#39;USA&#39;
+,
+Text(PaysRegionPF__c) &lt;&gt; &#39;Reways&#39;,
+
+ RecordType.Id  ==  $Label.OPP_RecordType_Vehicule_ENCOURS_15 
+)</errorConditionFormula>
+    <errorDisplayField>Quantite__c</errorDisplayField>
+    <errorMessage>La quantité de véhicules de l&#39;opportunité doit être égale aux parcs confirmés</errorMessage>
+</ValidationRule>

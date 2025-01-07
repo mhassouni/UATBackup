@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Courte durée</fullName>
+        <default>false</default>
+        <label>Courte durée</label>
+    </customValue>
+    <customValue>
+        <fullName>CDM - 1 mois</fullName>
+        <default>false</default>
+        <label>CDM - 1 mois</label>
+    </customValue>
+    <customValue>
+        <fullName>CDM_ 2 - 5 mois</fullName>
+        <default>false</default>
+        <label>CDM_ 2 - 5 mois</label>
+    </customValue>
+    <customValue>
+        <fullName>CDM_ 6 - 11 mois</fullName>
+        <default>false</default>
+        <label>CDM_ 6 - 11 mois</label>
+    </customValue>
+    <customValue>
+        <fullName>LD - ≥ 1 an</fullName>
+        <default>false</default>
+        <label>LD - ≥ 1 an</label>
+    </customValue>
+    <customValue>
+        <fullName>LD - ≥ 2 ans</fullName>
+        <default>false</default>
+        <label>LD - ≥ 2 ans</label>
+    </customValue>
+    <customValue>
+        <fullName>LD - ≥ 3 ans</fullName>
+        <default>false</default>
+        <label>LD - ≥ 3 ans</label>
+    </customValue>
+    <customValue>
+        <fullName>LD - ≥ 4 ans</fullName>
+        <default>false</default>
+        <label>LD - ≥ 4 ans</label>
+    </customValue>
+    <customValue>
+        <fullName>LD - ≥ 5 ans</fullName>
+        <default>false</default>
+        <label>LD - ≥ 5 ans</label>
+    </customValue>
+    <description>Courte durée
+CDM - 1 mois
+CDM_ 2 - 5 mois
+CDM_ 6 - 11 mois
+LD - ≥ 1 an
+LD - ≥ 2 ans
+LD - ≥ 3 ans
+LD - ≥ 4 ans
+LD - ≥ 5 ans</description>
+    <masterLabel>Type de Location Détaillé</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

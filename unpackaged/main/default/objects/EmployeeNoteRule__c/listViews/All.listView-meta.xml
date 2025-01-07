@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Code_Nace__c</columns>
+    <columns>Maximum_Percentage__c</columns>
+    <columns>Minimum_Percentage__c</columns>
+    <columns>Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Code_Nace__c</field>
+        <operation>equals</operation>
+        <value>4690</value>
+    </filters>
+    <label>All</label>
+</ListView>

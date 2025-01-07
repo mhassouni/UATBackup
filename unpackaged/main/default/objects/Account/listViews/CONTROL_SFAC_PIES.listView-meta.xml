@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CONTROL_SFAC_PIES</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>CotationPF__c</columns>
+    <columns>DateCotationPF__c</columns>
+    <columns>AgrementSFAC__c</columns>
+    <columns>DateAgrementEH__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PIES,PIPT</value>
+    </filters>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Validé</value>
+    </filters>
+    <filters>
+        <field>CotationPF__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>8</value>
+    </filters>
+    <label>CONTROL SFAC PIES/PIPT</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

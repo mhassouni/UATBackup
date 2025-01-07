@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alertes_mes_agences</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>Parc__c</columns>
+    <columns>Nom_Commercial_Client_LookUp__c</columns>
+    <columns>Picto_Alerte__c</columns>
+    <columns>Etat__c</columns>
+    <columns>Commentaires_CAT__c</columns>
+    <columns>Voyant_moteur_description__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Niveau_batterie_actuel__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_ALERTES_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Alerte_traitee__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Alertes mes agences - A traiter</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurCommercialFrance</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PIBE_Belgique</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PILU_Luxembourg</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

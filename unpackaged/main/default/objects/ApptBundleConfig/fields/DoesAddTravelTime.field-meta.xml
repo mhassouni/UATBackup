@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoesAddTravelTime</fullName>
+    <inlineHelpText>Si les rendez-vous de service du membre du paquet ne sont pas au même emplacement, ajoutez le temps de trajet entre les rendez-vous à la durée du paquet, en respectant leur ordre.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Nb_Deros_Synched__c</fullName>
+    <description>Nombre de dérogation synchronisés</description>
+    <label>TECH_Nb_Deros_Synched</label>
+    <summaryFilterItems>
+        <field>Derogation__c.Synchronise__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Derogation__c.Opportunite__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

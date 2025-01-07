@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partie_carrosserie_Pneus</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>WOLI_Compact_layout_TDP</compactLayoutAssignment>
+    <label>CARROSSERIE / PNEUS / FREINS</label>
+    <picklistValues>
+        <picklist>Operation__c</picklist>
+        <values>
+            <fullName>Achat Pièces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convoyage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépannage</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Réparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>A faire</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Impossible de terminer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non contrôlé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réalisé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_EOE__c</picklist>
+        <values>
+            <fullName>PF %2F ST</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Sous-traitance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

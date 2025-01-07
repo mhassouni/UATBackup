@@ -1,0 +1,2005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Subcategoría</label>
+        <name>SousCategorie__c</name>
+        <picklistValues>
+            <masterLabel>AC-S</masterLabel>
+            <translation><!-- AC-S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADMIRAL</masterLabel>
+            <translation><!-- ADMIRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA 250</masterLabel>
+            <translation><!-- ALASKA 250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTIGUA-200</masterLabel>
+            <translation><!-- ANTIGUA-200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AREA NLS125 (GALILEO-100-125)</masterLabel>
+            <translation><!-- AREA NLS125 (GALILEO-100-125) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARTICO 155-145</masterLabel>
+            <translation><!-- ARTICO 155-145 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARTICO 285</masterLabel>
+            <translation><!-- ARTICO 285 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARTICO 306</masterLabel>
+            <translation><!-- ARTICO 306 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSOLO 185</masterLabel>
+            <translation><!-- ASSOLO 185 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVANCASSA VERSIONE 1</masterLabel>
+            <translation><!-- AVANCASSA VERSIONE 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVANCASSA VERSIONE 2</masterLabel>
+            <translation><!-- AVANCASSA VERSIONE 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZIMUT-200</masterLabel>
+            <translation><!-- AZIMUT-200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire Porte Pleine Froid (+)</masterLabel>
+            <translation>Armario con puerta frío (+)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire Porte Pleine Froid (-)</masterLabel>
+            <translation>Armario con puerta frío (-)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire Vitrée Champignon</masterLabel>
+            <translation>Armario Acristalado Champiñon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire de stockage 400 L</masterLabel>
+            <translation>Armario de almacenaje 400 L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire double vitrée 875L (+)</masterLabel>
+            <translation>Armario Doble acristalado 875 L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire porte pleine (+) 640L</masterLabel>
+            <translation>Armario con puerta frío (+) 640L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire porte pleine (+/-)640L</masterLabel>
+            <translation>Armario con puerta frío (+/-) 640L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire réfrigérée P.Pleine</masterLabel>
+            <translation>Armario refrigerado con puerta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire à Boissons Visicooler</masterLabel>
+            <translation>Armario de bebidas viscooler</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANCO 1352</masterLabel>
+            <translation><!-- BANCO 1352 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANCO EFB 100</masterLabel>
+            <translation><!-- BANCO EFB 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac 1m mixte standard</masterLabel>
+            <translation>Isla mixta estándar de 1m</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac 1m positif standard</masterLabel>
+            <translation>Isla estándar positiva 1m</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac BLS110 mixte</masterLabel>
+            <translation>Isla BLS110 mixta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac Service Arrière standard</masterLabel>
+            <translation>Isla de servicio posterior estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 1m50 mixte</masterLabel>
+            <translation>Isla libre servicio 1m50 mixta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 1m50 positif</masterLabel>
+            <translation>Isla libre servicio 1m50 positiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 2m00 mixte</masterLabel>
+            <translation>Isla libre servicio 2m00 mixta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 2m00 négatif</masterLabel>
+            <translation>Isla libre servicio 2m00 negativa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 2m00 positif</masterLabel>
+            <translation>Isla libre servicio 2m00 positiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bac libre service 2m50 mixte</masterLabel>
+            <translation>Isla libre servicio 2m50 mixta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22D</masterLabel>
+            <translation><!-- C22D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22DL</masterLabel>
+            <translation><!-- C22DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22F</masterLabel>
+            <translation><!-- C22F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22FL</masterLabel>
+            <translation><!-- C22FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22I</masterLabel>
+            <translation><!-- C22I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22IL</masterLabel>
+            <translation><!-- C22IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22M</masterLabel>
+            <translation><!-- C22M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22ML</masterLabel>
+            <translation><!-- C22ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22X</masterLabel>
+            <translation><!-- C22X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C22XL</masterLabel>
+            <translation><!-- C22XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24D</masterLabel>
+            <translation><!-- C24D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24DL</masterLabel>
+            <translation><!-- C24DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24F</masterLabel>
+            <translation><!-- C24F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24FL</masterLabel>
+            <translation><!-- C24FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24I</masterLabel>
+            <translation><!-- C24I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24IL</masterLabel>
+            <translation><!-- C24IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24M</masterLabel>
+            <translation><!-- C24M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24ML</masterLabel>
+            <translation><!-- C24ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24X</masterLabel>
+            <translation><!-- C24X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C24XL</masterLabel>
+            <translation><!-- C24XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26D</masterLabel>
+            <translation><!-- C26D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26DL</masterLabel>
+            <translation><!-- C26DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26F</masterLabel>
+            <translation><!-- C26F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26FL</masterLabel>
+            <translation><!-- C26FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26I</masterLabel>
+            <translation><!-- C26I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26IL</masterLabel>
+            <translation><!-- C26IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26M</masterLabel>
+            <translation><!-- C26M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26ML</masterLabel>
+            <translation><!-- C26ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26X</masterLabel>
+            <translation><!-- C26X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C26XL</masterLabel>
+            <translation><!-- C26XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28D</masterLabel>
+            <translation><!-- C28D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28DL</masterLabel>
+            <translation><!-- C28DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28I</masterLabel>
+            <translation><!-- C28I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28IL</masterLabel>
+            <translation><!-- C28IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28M</masterLabel>
+            <translation><!-- C28M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28ML</masterLabel>
+            <translation><!-- C28ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28X</masterLabel>
+            <translation><!-- C28X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C28XL</masterLabel>
+            <translation><!-- C28XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29D</masterLabel>
+            <translation><!-- C29D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29DL</masterLabel>
+            <translation><!-- C29DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29I</masterLabel>
+            <translation><!-- C29I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29IL</masterLabel>
+            <translation><!-- C29IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29M</masterLabel>
+            <translation><!-- C29M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29ML</masterLabel>
+            <translation><!-- C29ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29X</masterLabel>
+            <translation><!-- C29X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C29XL</masterLabel>
+            <translation><!-- C29XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAN COOLER 65 ESTATE</masterLabel>
+            <translation><!-- CAN COOLER 65 ESTATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANTINA 111</masterLabel>
+            <translation><!-- CANTINA 111 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARD BOARD VERTICALE</masterLabel>
+            <translation><!-- CARD BOARD VERTICALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERVINO 1200</masterLabel>
+            <translation><!-- CERVINO 1200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERVINO 700</masterLabel>
+            <translation><!-- CERVINO 700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERVINO 700S</masterLabel>
+            <translation><!-- CERVINO 700S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERVINO 900</masterLabel>
+            <translation><!-- CERVINO 900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF10</masterLabel>
+            <translation><!-- CF10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF110</masterLabel>
+            <translation><!-- CF110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF20</masterLabel>
+            <translation><!-- CF20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF25</masterLabel>
+            <translation><!-- CF25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF30</masterLabel>
+            <translation><!-- CF30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF35</masterLabel>
+            <translation><!-- CF35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF50</masterLabel>
+            <translation><!-- CF50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF55</masterLabel>
+            <translation><!-- CF55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF85</masterLabel>
+            <translation><!-- CF85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF90</masterLabel>
+            <translation><!-- CF90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHORUS</masterLabel>
+            <translation><!-- CHORUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBI VDTT 202</masterLabel>
+            <translation><!-- COMBI VDTT 202 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONCERTO 150</masterLabel>
+            <translation><!-- CONCERTO 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONCERTO 200</masterLabel>
+            <translation><!-- CONCERTO 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COUNTER COOLER</masterLabel>
+            <translation><!-- COUNTER COOLER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRISTAL 190</masterLabel>
+            <translation><!-- CRISTAL 190 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUCINA DUOGASCOOKE R900</masterLabel>
+            <translation><!-- CUCINA DUOGASCOOKE R900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congelateur Ice Cream 7 bacs.</masterLabel>
+            <translation>Congelador de helados 7 cubetas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congél vitré couv relevab 550L</masterLabel>
+            <translation>Congelador acristalado elevable 550L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congél. coffre vitre coul 405L</masterLabel>
+            <translation>Congelador. caja de vidrio color 405L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congél. couv. relevable 518L</masterLabel>
+            <translation>Congelador cov. elevable 518 L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur Ice Cream 9 Bacs</masterLabel>
+            <translation>Congelador de helados 9 cubetas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur coffre 468 litres</masterLabel>
+            <translation>Congelador caja 468 litros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur counter 50L</masterLabel>
+            <translation>Congelador contenedor 50L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur porte coulis. 664L</masterLabel>
+            <translation>Congelador porta salsas 664L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur porte vitrée 119 L</masterLabel>
+            <translation>Congelador con puerta acristalada 119 L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congélateur pte vit. rel. 570L</masterLabel>
+            <translation>Congelador pte vit. rel. 570L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUETTO 1</masterLabel>
+            <translation><!-- DUETTO 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUETTO 2</masterLabel>
+            <translation><!-- DUETTO 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY COOL</masterLabel>
+            <translation><!-- EASY COOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY COOL 41</masterLabel>
+            <translation><!-- EASY COOL 41 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY COOL 65-66</masterLabel>
+            <translation><!-- EASY COOL 65-66 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY COOL 85</masterLabel>
+            <translation><!-- EASY COOL 85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY GO</masterLabel>
+            <translation><!-- EASY GO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECLETTICO E CARTONATI</masterLabel>
+            <translation><!-- ECLETTICO E CARTONATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etal Poissons Inox 2M20x1M10</masterLabel>
+            <translation>Puesto/ Stand de pescado Inox 2M20X1M10</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etal Poissons Réfrigéré 2m</masterLabel>
+            <translation>Puesto/ Stand de pescado refrigerado 2m</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORNI ELETTRICI</masterLabel>
+            <translation><!-- FORNI ELETTRICI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FROST SD 400</masterLabel>
+            <translation><!-- FROST SD 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEISER</masterLabel>
+            <translation><!-- GEISER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEISER 8070 CON MONITOR</masterLabel>
+            <translation><!-- GEISER 8070 CON MONITOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEISER BUMPER</masterLabel>
+            <translation><!-- GEISER BUMPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEISER BUMPER CON MONITOR</masterLabel>
+            <translation><!-- GEISER BUMPER CON MONITOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHIACCIO 100</masterLabel>
+            <translation><!-- GHIACCIO 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHIACCIO 30</masterLabel>
+            <translation><!-- GHIACCIO 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHIACCIO 45</masterLabel>
+            <translation><!-- GHIACCIO 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLOBAL LIGHT</masterLabel>
+            <translation><!-- GLOBAL LIGHT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICEBERG 95</masterLabel>
+            <translation><!-- ICEBERG 95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDRO SAILOR</masterLabel>
+            <translation><!-- IDRO SAILOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISLANDA 6550</masterLabel>
+            <translation><!-- ISLANDA 6550 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISLANDA 6550 BUMPER</masterLabel>
+            <translation><!-- ISLANDA 6550 BUMPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISLANDA 8070</masterLabel>
+            <translation><!-- ISLANDA 8070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISLANDA 8070 CON MONITOR</masterLabel>
+            <translation><!-- ISLANDA 8070 CON MONITOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOLA 150 LED</masterLabel>
+            <translation><!-- ISOLA 150 LED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOLA 200</masterLabel>
+            <translation><!-- ISOLA 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOLA-100</masterLabel>
+            <translation><!-- ISOLA-100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KILIFAST 60</masterLabel>
+            <translation><!-- KILIFAST 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KILIFAST-45 L H.167</masterLabel>
+            <translation><!-- KILIFAST-45 L H.167 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KILIFAST-45 M H.137</masterLabel>
+            <translation><!-- KILIFAST-45 M H.137 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIT 100</masterLabel>
+            <translation><!-- KIT 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIT 160</masterLabel>
+            <translation><!-- KIT 160 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12D</masterLabel>
+            <translation><!-- L12D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12DL</masterLabel>
+            <translation><!-- L12DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12I</masterLabel>
+            <translation><!-- L12I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12IL</masterLabel>
+            <translation><!-- L12IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12M</masterLabel>
+            <translation><!-- L12M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12ML</masterLabel>
+            <translation><!-- L12ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12X</masterLabel>
+            <translation><!-- L12X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L12XL</masterLabel>
+            <translation><!-- L12XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14D</masterLabel>
+            <translation><!-- L14D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14DL</masterLabel>
+            <translation><!-- L14DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14I</masterLabel>
+            <translation><!-- L14I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14IL</masterLabel>
+            <translation><!-- L14IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14M</masterLabel>
+            <translation><!-- L14M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14ML</masterLabel>
+            <translation><!-- L14ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14X</masterLabel>
+            <translation><!-- L14X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L14XL</masterLabel>
+            <translation><!-- L14XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16D</masterLabel>
+            <translation><!-- L16D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16DL</masterLabel>
+            <translation><!-- L16DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16I</masterLabel>
+            <translation><!-- L16I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16IL</masterLabel>
+            <translation><!-- L16IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16M</masterLabel>
+            <translation><!-- L16M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16ML</masterLabel>
+            <translation><!-- L16ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16X</masterLabel>
+            <translation><!-- L16X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L16XL</masterLabel>
+            <translation><!-- L16XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18D</masterLabel>
+            <translation><!-- L18D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18DL</masterLabel>
+            <translation><!-- L18DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18I</masterLabel>
+            <translation><!-- L18I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18IL</masterLabel>
+            <translation><!-- L18IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18M</masterLabel>
+            <translation><!-- L18M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18ML</masterLabel>
+            <translation><!-- L18ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18X</masterLabel>
+            <translation><!-- L18X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L18XL</masterLabel>
+            <translation><!-- L18XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20D</masterLabel>
+            <translation><!-- L20D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20DL</masterLabel>
+            <translation><!-- L20DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20I</masterLabel>
+            <translation><!-- L20I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20IL</masterLabel>
+            <translation><!-- L20IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20M</masterLabel>
+            <translation><!-- L20M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20ML</masterLabel>
+            <translation><!-- L20ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20X</masterLabel>
+            <translation><!-- L20X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L20XL</masterLabel>
+            <translation><!-- L20XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22D</masterLabel>
+            <translation><!-- L22D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22DL</masterLabel>
+            <translation><!-- L22DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22I</masterLabel>
+            <translation><!-- L22I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22IL</masterLabel>
+            <translation><!-- L22IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22M</masterLabel>
+            <translation><!-- L22M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22ML</masterLabel>
+            <translation><!-- L22ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22X</masterLabel>
+            <translation><!-- L22X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L22XL</masterLabel>
+            <translation><!-- L22XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24D</masterLabel>
+            <translation><!-- L24D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24DL</masterLabel>
+            <translation><!-- L24DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24F</masterLabel>
+            <translation><!-- L24F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24FL</masterLabel>
+            <translation><!-- L24FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24I</masterLabel>
+            <translation><!-- L24I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24IL</masterLabel>
+            <translation><!-- L24IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24M</masterLabel>
+            <translation><!-- L24M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24ML</masterLabel>
+            <translation><!-- L24ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24X</masterLabel>
+            <translation><!-- L24X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L24XL</masterLabel>
+            <translation><!-- L24XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26D</masterLabel>
+            <translation><!-- L26D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26DL</masterLabel>
+            <translation><!-- L26DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26F</masterLabel>
+            <translation><!-- L26F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26FL</masterLabel>
+            <translation><!-- L26FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26I</masterLabel>
+            <translation><!-- L26I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26IL</masterLabel>
+            <translation><!-- L26IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26M</masterLabel>
+            <translation><!-- L26M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26ML</masterLabel>
+            <translation><!-- L26ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26X</masterLabel>
+            <translation><!-- L26X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L26XL</masterLabel>
+            <translation><!-- L26XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAGO 110</masterLabel>
+            <translation><!-- LAGO 110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAGO 90</masterLabel>
+            <translation><!-- LAGO 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONVISO 100</masterLabel>
+            <translation><!-- MONVISO 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONVISO 140-NEW</masterLabel>
+            <translation><!-- MONVISO 140-NEW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONVISO 190</masterLabel>
+            <translation><!-- MONVISO 190 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONVISO 7</masterLabel>
+            <translation><!-- MONVISO 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONVISO 70</masterLabel>
+            <translation><!-- MONVISO 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble Semi-vertical 1.30m</masterLabel>
+            <translation>Mueble semi vertical 1.30m</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble Showmaster,Rond,1m10</masterLabel>
+            <translation>Meuble Showmaster  circular 1m10</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble Showmaster,Rond,1m47</masterLabel>
+            <translation>Meuble Showmaster  circular 1m47</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OFC 220</masterLabel>
+            <translation><!-- OFC 220 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OFC 70</masterLabel>
+            <translation><!-- OFC 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTF-90</masterLabel>
+            <translation><!-- OTF-90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0E</masterLabel>
+            <translation><!-- P0E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0M</masterLabel>
+            <translation><!-- P0M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0MH</masterLabel>
+            <translation><!-- P0MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0P</masterLabel>
+            <translation><!-- P0P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0PH</masterLabel>
+            <translation><!-- P0PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0S</masterLabel>
+            <translation><!-- P0S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0SH</masterLabel>
+            <translation><!-- P0SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0X</masterLabel>
+            <translation><!-- P0X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0XH</masterLabel>
+            <translation><!-- P0XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10E</masterLabel>
+            <translation><!-- P10E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10EH</masterLabel>
+            <translation><!-- P10EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10I</masterLabel>
+            <translation><!-- P10I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10IH</masterLabel>
+            <translation><!-- P10IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10M</masterLabel>
+            <translation><!-- P10M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10MH</masterLabel>
+            <translation><!-- P10MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10P</masterLabel>
+            <translation><!-- P10P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10PH</masterLabel>
+            <translation><!-- P10PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10S</masterLabel>
+            <translation><!-- P10S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10SH</masterLabel>
+            <translation><!-- P10SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10X</masterLabel>
+            <translation><!-- P10X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10XH</masterLabel>
+            <translation><!-- P10XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15E</masterLabel>
+            <translation><!-- P15E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15EH</masterLabel>
+            <translation><!-- P15EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15I</masterLabel>
+            <translation><!-- P15I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15IH</masterLabel>
+            <translation><!-- P15IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15M</masterLabel>
+            <translation><!-- P15M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15MH</masterLabel>
+            <translation><!-- P15MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15P</masterLabel>
+            <translation><!-- P15P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15PH</masterLabel>
+            <translation><!-- P15PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15S</masterLabel>
+            <translation><!-- P15S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15SH</masterLabel>
+            <translation><!-- P15SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15X</masterLabel>
+            <translation><!-- P15X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15XH</masterLabel>
+            <translation><!-- P15XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16E</masterLabel>
+            <translation><!-- P16E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16EH</masterLabel>
+            <translation><!-- P16EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16IH</masterLabel>
+            <translation><!-- P16IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16M</masterLabel>
+            <translation><!-- P16M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16MH</masterLabel>
+            <translation><!-- P16MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16P</masterLabel>
+            <translation><!-- P16P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16PH</masterLabel>
+            <translation><!-- P16PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16X</masterLabel>
+            <translation><!-- P16X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P16XH</masterLabel>
+            <translation><!-- P16XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18E</masterLabel>
+            <translation><!-- P18E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18EH</masterLabel>
+            <translation><!-- P18EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18I</masterLabel>
+            <translation><!-- P18I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18IH</masterLabel>
+            <translation><!-- P18IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18M</masterLabel>
+            <translation><!-- P18M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18MH</masterLabel>
+            <translation><!-- P18MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18P</masterLabel>
+            <translation><!-- P18P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18PH</masterLabel>
+            <translation><!-- P18PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18S</masterLabel>
+            <translation><!-- P18S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18SH</masterLabel>
+            <translation><!-- P18SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18X</masterLabel>
+            <translation><!-- P18X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18XH</masterLabel>
+            <translation><!-- P18XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21E</masterLabel>
+            <translation><!-- P21E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21EH</masterLabel>
+            <translation><!-- P21EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21I</masterLabel>
+            <translation><!-- P21I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21IH</masterLabel>
+            <translation><!-- P21IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21M</masterLabel>
+            <translation><!-- P21M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21MH</masterLabel>
+            <translation><!-- P21MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21P</masterLabel>
+            <translation><!-- P21P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21PH</masterLabel>
+            <translation><!-- P21PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21S</masterLabel>
+            <translation><!-- P21S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21SH</masterLabel>
+            <translation><!-- P21SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21X</masterLabel>
+            <translation><!-- P21X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21XH</masterLabel>
+            <translation><!-- P21XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23E</masterLabel>
+            <translation><!-- P23E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23EH</masterLabel>
+            <translation><!-- P23EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23I</masterLabel>
+            <translation><!-- P23I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23IH</masterLabel>
+            <translation><!-- P23IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23M</masterLabel>
+            <translation><!-- P23M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23MH</masterLabel>
+            <translation><!-- P23MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23P</masterLabel>
+            <translation><!-- P23P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23PH</masterLabel>
+            <translation><!-- P23PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23S</masterLabel>
+            <translation><!-- P23S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23SH</masterLabel>
+            <translation><!-- P23SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23X</masterLabel>
+            <translation><!-- P23X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23XH</masterLabel>
+            <translation><!-- P23XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6E</masterLabel>
+            <translation><!-- P6E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6M</masterLabel>
+            <translation><!-- P6M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6MH</masterLabel>
+            <translation><!-- P6MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6P</masterLabel>
+            <translation><!-- P6P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6S</masterLabel>
+            <translation><!-- P6S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6SH</masterLabel>
+            <translation><!-- P6SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6X</masterLabel>
+            <translation><!-- P6X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6XH</masterLabel>
+            <translation><!-- P6XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8E</masterLabel>
+            <translation><!-- P8E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8EH</masterLabel>
+            <translation><!-- P8EH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8I</masterLabel>
+            <translation><!-- P8I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8IH</masterLabel>
+            <translation><!-- P8IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8M</masterLabel>
+            <translation><!-- P8M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8MH</masterLabel>
+            <translation><!-- P8MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8P</masterLabel>
+            <translation><!-- P8P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8PH</masterLabel>
+            <translation><!-- P8PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8S</masterLabel>
+            <translation><!-- P8S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8SH</masterLabel>
+            <translation><!-- P8SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8X</masterLabel>
+            <translation><!-- P8X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8XH</masterLabel>
+            <translation><!-- P8XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIASTRE DI COTTURA BASALTO 4232</masterLabel>
+            <translation><!-- PIASTRE DI COTTURA BASALTO 4232 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLIFONIA 150</masterLabel>
+            <translation><!-- POLIFONIA 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLIFONIA-200</masterLabel>
+            <translation><!-- POLIFONIA-200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLO 440CSV</masterLabel>
+            <translation><!-- POLO 440CSV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLO 500</masterLabel>
+            <translation><!-- POLO 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTETTO 200</masterLabel>
+            <translation><!-- QUARTETTO 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R4M</masterLabel>
+            <translation><!-- R4M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R9M</masterLabel>
+            <translation><!-- R9M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RONER COTTURA</masterLabel>
+            <translation><!-- RONER COTTURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réfrigérateur + freezer 97+11L</masterLabel>
+            <translation>Refrigerador + congelador 97 + 11L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réfrigérateur 140L</masterLabel>
+            <translation>Refrigerador 140L</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1I</masterLabel>
+            <translation><!-- S1I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1IH</masterLabel>
+            <translation><!-- S1IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1M</masterLabel>
+            <translation><!-- S1M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1MH</masterLabel>
+            <translation><!-- S1MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1P</masterLabel>
+            <translation><!-- S1P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1PH</masterLabel>
+            <translation><!-- S1PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1X</masterLabel>
+            <translation><!-- S1X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1XH</masterLabel>
+            <translation><!-- S1XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2D</masterLabel>
+            <translation><!-- S2D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2DL</masterLabel>
+            <translation><!-- S2DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2F</masterLabel>
+            <translation><!-- S2F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2FL</masterLabel>
+            <translation><!-- S2FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2I</masterLabel>
+            <translation><!-- S2I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2IH</masterLabel>
+            <translation><!-- S2IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2IL</masterLabel>
+            <translation><!-- S2IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2M</masterLabel>
+            <translation><!-- S2M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2MH</masterLabel>
+            <translation><!-- S2MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2ML</masterLabel>
+            <translation><!-- S2ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2X</masterLabel>
+            <translation><!-- S2X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2XH</masterLabel>
+            <translation><!-- S2XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2XL</masterLabel>
+            <translation><!-- S2XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALSA</masterLabel>
+            <translation><!-- SALSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHELF COOLER</masterLabel>
+            <translation><!-- SHELF COOLER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINFONIA 150</masterLabel>
+            <translation><!-- SINFONIA 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINFONIA 200</masterLabel>
+            <translation><!-- SINFONIA 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 180</masterLabel>
+            <translation><!-- SOPRAZERO 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 21</masterLabel>
+            <translation><!-- SOPRAZERO 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 216</masterLabel>
+            <translation><!-- SOPRAZERO 216 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 236</masterLabel>
+            <translation><!-- SOPRAZERO 236 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 260 MONITOR</masterLabel>
+            <translation><!-- SOPRAZERO 260 MONITOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 286</masterLabel>
+            <translation><!-- SOPRAZERO 286 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 330</masterLabel>
+            <translation><!-- SOPRAZERO 330 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 360 MONITOR</masterLabel>
+            <translation><!-- SOPRAZERO 360 MONITOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 367</masterLabel>
+            <translation><!-- SOPRAZERO 367 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 381</masterLabel>
+            <translation><!-- SOPRAZERO 381 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 400</masterLabel>
+            <translation><!-- SOPRAZERO 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 421</masterLabel>
+            <translation><!-- SOPRAZERO 421 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 423 SMARTVIDEO</masterLabel>
+            <translation><!-- SOPRAZERO 423 SMARTVIDEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 51</masterLabel>
+            <translation><!-- SOPRAZERO 51 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 601</masterLabel>
+            <translation><!-- SOPRAZERO 601 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 605</masterLabel>
+            <translation><!-- SOPRAZERO 605 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 62</masterLabel>
+            <translation><!-- SOPRAZERO 62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 79</masterLabel>
+            <translation><!-- SOPRAZERO 79 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO 81</masterLabel>
+            <translation><!-- SOPRAZERO 81 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOPRAZERO VETRINA 200</masterLabel>
+            <translation><!-- SOPRAZERO VETRINA 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO 217</masterLabel>
+            <translation><!-- SOTTOZERO 217 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO 470</masterLabel>
+            <translation><!-- SOTTOZERO 470 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO 76</masterLabel>
+            <translation><!-- SOTTOZERO 76 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO 870</masterLabel>
+            <translation><!-- SOTTOZERO 870 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO IQ 5_BASE (IQ EMD)</masterLabel>
+            <translation><!-- SOTTOZERO IQ 5_BASE (IQ EMD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO VETRINA 93</masterLabel>
+            <translation><!-- SOTTOZERO VETRINA 93 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTTOZERO-450 GLEE 45 LITE BT</masterLabel>
+            <translation><!-- SOTTOZERO-450 GLEE 45 LITE BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation><!-- T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1</masterLabel>
+            <translation><!-- T1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2</masterLabel>
+            <translation><!-- T2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2S</masterLabel>
+            <translation><!-- T2S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tour patissière 2p - granite</masterLabel>
+            <translation>Torre de repostería 2p - granito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tour patissière 2p - inox</masterLabel>
+            <translation>Torre de repostería 2p - acero inoxidable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10D</masterLabel>
+            <translation><!-- V10D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10DL</masterLabel>
+            <translation><!-- V10DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10I</masterLabel>
+            <translation><!-- V10I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10IL</masterLabel>
+            <translation><!-- V10IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10M</masterLabel>
+            <translation><!-- V10M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10ML</masterLabel>
+            <translation><!-- V10ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10X</masterLabel>
+            <translation><!-- V10X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V10XL</masterLabel>
+            <translation><!-- V10XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11E</masterLabel>
+            <translation><!-- V11E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11I</masterLabel>
+            <translation><!-- V11I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11IH</masterLabel>
+            <translation><!-- V11IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11M</masterLabel>
+            <translation><!-- V11M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11MH</masterLabel>
+            <translation><!-- V11MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11P</masterLabel>
+            <translation><!-- V11P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11PH</masterLabel>
+            <translation><!-- V11PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11S</masterLabel>
+            <translation><!-- V11S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11SH</masterLabel>
+            <translation><!-- V11SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11X</masterLabel>
+            <translation><!-- V11X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11XH</masterLabel>
+            <translation><!-- V11XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12D</masterLabel>
+            <translation><!-- V12D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12DL</masterLabel>
+            <translation><!-- V12DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12I</masterLabel>
+            <translation><!-- V12I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12IL</masterLabel>
+            <translation><!-- V12IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12M</masterLabel>
+            <translation><!-- V12M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12ML</masterLabel>
+            <translation><!-- V12ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12X</masterLabel>
+            <translation><!-- V12X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V12XL</masterLabel>
+            <translation><!-- V12XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15I</masterLabel>
+            <translation><!-- V15I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15IH</masterLabel>
+            <translation><!-- V15IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15M</masterLabel>
+            <translation><!-- V15M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15MH</masterLabel>
+            <translation><!-- V15MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15P</masterLabel>
+            <translation><!-- V15P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15PH</masterLabel>
+            <translation><!-- V15PH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15S</masterLabel>
+            <translation><!-- V15S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15SH</masterLabel>
+            <translation><!-- V15SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15X</masterLabel>
+            <translation><!-- V15X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15XH</masterLabel>
+            <translation><!-- V15XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V1M</masterLabel>
+            <translation><!-- V1M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20I</masterLabel>
+            <translation><!-- V20I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20IH</masterLabel>
+            <translation><!-- V20IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20M</masterLabel>
+            <translation><!-- V20M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20MH</masterLabel>
+            <translation><!-- V20MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20S</masterLabel>
+            <translation><!-- V20S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20SH</masterLabel>
+            <translation><!-- V20SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20X</masterLabel>
+            <translation><!-- V20X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20XH</masterLabel>
+            <translation><!-- V20XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3E</masterLabel>
+            <translation><!-- V3E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3I</masterLabel>
+            <translation><!-- V3I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3M</masterLabel>
+            <translation><!-- V3M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3P</masterLabel>
+            <translation><!-- V3P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3S</masterLabel>
+            <translation><!-- V3S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3X</masterLabel>
+            <translation><!-- V3X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5E</masterLabel>
+            <translation><!-- V5E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5I</masterLabel>
+            <translation><!-- V5I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5M</masterLabel>
+            <translation><!-- V5M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5P</masterLabel>
+            <translation><!-- V5P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5S</masterLabel>
+            <translation><!-- V5S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5X</masterLabel>
+            <translation><!-- V5X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8D</masterLabel>
+            <translation><!-- V8D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8DL</masterLabel>
+            <translation><!-- V8DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8I</masterLabel>
+            <translation><!-- V8I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8IL</masterLabel>
+            <translation><!-- V8IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8M</masterLabel>
+            <translation><!-- V8M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8ML</masterLabel>
+            <translation><!-- V8ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8X</masterLabel>
+            <translation><!-- V8X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V8XL</masterLabel>
+            <translation><!-- V8XL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9E</masterLabel>
+            <translation><!-- V9E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9I</masterLabel>
+            <translation><!-- V9I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9IH</masterLabel>
+            <translation><!-- V9IH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9M</masterLabel>
+            <translation><!-- V9M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9MH</masterLabel>
+            <translation><!-- V9MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9P</masterLabel>
+            <translation><!-- V9P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9S</masterLabel>
+            <translation><!-- V9S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9X</masterLabel>
+            <translation><!-- V9X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9XH</masterLabel>
+            <translation><!-- V9XH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VASETTO</masterLabel>
+            <translation><!-- VASETTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vit Nég Gris</masterLabel>
+            <translation>Vitrina 4 lados vitr negativa gris</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vitr Gris</masterLabel>
+            <translation>Vitrina 4 lados vitr gris</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vitrées (+) AC</masterLabel>
+            <translation>Vitrina de 4 lados acristalados (+) AC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vitrées (-) AC</masterLabel>
+            <translation>Vitrina 4 lados acrsitalados (-) AC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vitrées Négat</masterLabel>
+            <translation>Vitrina de 4 lados acristalados negativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 4 Faces Vitrées froid+</masterLabel>
+            <translation>Vitrina de 4 lados acristalados frío (+)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 6 Faces Froid négatif</masterLabel>
+            <translation>Vitrina de 6 lados frío negativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 6 Faces Froid positif</masterLabel>
+            <translation>Vitrina de 6 lados frío positivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine 6 Faces positif gris</masterLabel>
+            <translation>Vitrina de 6 lados positivo gris</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Libre-Service 0m50 Positif Noir</masterLabel>
+            <translation>Escaparate de autoservicio 0m50 Negro positivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Libre-Service 1m40 Négative</masterLabel>
+            <translation>Escaparate de autoservicio 1m40 Negativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Porte Vitrée Négatif 0m67</masterLabel>
+            <translation>Vitrina de puerta de vidrio negativo 0m67</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Porte Vitrée Positif 0m67</masterLabel>
+            <translation>Vitrina de puerta de vidrio Positi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Semi Verticale 1m00 Noir</masterLabel>
+            <translation>Vitrina Semi Vertical 1m00 Negro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Semi Verticale 1m55 Noir</masterLabel>
+            <translation>Vitrina Semi Vertical 1m55 Negro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Traiteur 2m</masterLabel>
+            <translation>Vitrina expositora 2m</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine Traiteur droite noire</masterLabel>
+            <translation>Vitrina expositora negra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine patissière ventilée 91</masterLabel>
+            <translation>Vitrina de pastelería ventilada 91</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine patissière ventilée106</masterLabel>
+            <translation>Vitrina de pastelería ventilada 106</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine patissière ventilée136</masterLabel>
+            <translation>Vitrina de pastelería ventilada 136</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine patissière ventilée141</masterLabel>
+            <translation>Vitrina de pastelería ventilada 141</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine patissière ventilée166</masterLabel>
+            <translation>Vitrina de pastelería ventilada 166</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine service arrière 134(-)</masterLabel>
+            <translation>Vitrina de servicio posterior 134(-)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine traiteur 1m30 standard</masterLabel>
+            <translation>Vitrina expositora 1m30 estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine traiteur 2m00 standard</masterLabel>
+            <translation>Vitrina expositora 2m00 estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine verticale 0m70 standard</masterLabel>
+            <translation>Vitrina vertical 0m70 estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine verticale 0m90 standard</masterLabel>
+            <translation>Vitrina vertical 0m90 estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine verticale 1m 30 standard</masterLabel>
+            <translation>Vitrina vertical 1m30 estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrine verticale 1m 90 standard</masterLabel>
+            <translation>Vitrina vertical 1m90 estándar</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

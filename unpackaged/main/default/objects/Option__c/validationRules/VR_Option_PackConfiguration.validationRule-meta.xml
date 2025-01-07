@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Option_PackConfiguration</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL( Nom_du_pack__c , &quot;Télématique - Evolution&quot;) 
+, ISBLANK( TEXT(Configuration__c)) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Configuration__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner le champ Configuration pour un pack de type Evolution</errorMessage>
+</ValidationRule>

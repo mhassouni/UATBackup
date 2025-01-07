@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Seitliche Öffnung</label>
+        <name>Ouverture_laterale__c</name>
+        <picklistValues>
+            <masterLabel>BATTANTE</masterLabel>
+            <translation>normale Seitentür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COULISSANTE</masterLabel>
+            <translation>Schiebetür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE BATTANTE</masterLabel>
+            <translation>2-teilige Flügeltür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIXTE (PANNEAU D + BACHE G)</masterLabel>
+            <translation><!-- MIXTE (PANNEAU D + BACHE G) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIXTE (PANNEAU G + BACHE D)</masterLabel>
+            <translation><!-- MIXTE (PANNEAU G + BACHE D) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE</masterLabel>
+            <translation>normale Seitentür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE (sans rail d&#39;arrimage)</masterLabel>
+            <translation>normale Seitentür (ohne Ankerschiene)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE COULISSANTE (sans rail d&#39;arrimage)</masterLabel>
+            <translation>Schiebetür (ohne Ankerschiene an der Tür)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT MANUEL ALUMINIUM</masterLabel>
+            <translation>Manuelles Rolltor Alu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

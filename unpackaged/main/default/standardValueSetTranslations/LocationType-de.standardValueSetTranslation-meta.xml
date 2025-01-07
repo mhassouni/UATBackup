@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Entrepôt</masterLabel>
+        <translation>Depot</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fourgonnette</masterLabel>
+        <translation>Nutzfahrzeug</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site</masterLabel>
+        <translation>Standort</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Usine</masterLabel>
+        <translation>Fabrik</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virtual</masterLabel>
+        <translation>Virtuell</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

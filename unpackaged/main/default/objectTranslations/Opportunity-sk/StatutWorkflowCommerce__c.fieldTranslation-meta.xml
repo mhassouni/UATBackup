@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut Workflow Commerce --></label>
+        <name>StatutWorkflowCommerce__c</name>
+        <picklistValues>
+            <masterLabel>Analyse en cours</masterLabel>
+            <translation><!-- Analyse en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiffrage en cours</masterLabel>
+            <translation><!-- Chiffrage en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours sauvegardé</masterLabel>
+            <translation><!-- En cours sauvegardé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fermé</masterLabel>
+            <translation><!-- Fermé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour analyse</masterLabel>
+            <translation><!-- Soumis pour analyse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage au SP</masterLabel>
+            <translation><!-- Soumis pour chiffrage au SP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage à LC</masterLabel>
+            <translation><!-- Soumis pour chiffrage à LC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour tarification</masterLabel>
+            <translation><!-- Soumis pour tarification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sélection du tarif en cours</masterLabel>
+            <translation><!-- Sélection du tarif en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification en cours</masterLabel>
+            <translation><!-- Tarification en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification soumise</masterLabel>
+            <translation><!-- Tarification soumise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation><!-- Validé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Approval_delai_reglement__c</fullName>
+    <formula>IF( text( Delai_reglement__c )= text(  Tech_Delai_reglement__c  ), false, true)</formula>
+    <label>Tech Approval delai reglement</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

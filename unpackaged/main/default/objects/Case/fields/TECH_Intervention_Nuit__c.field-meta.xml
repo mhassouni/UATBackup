@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Intervention_Nuit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Déclarer la requête comme intervention de nuit manuellement</description>
+    <label>TECH_Intervention_Nuit</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

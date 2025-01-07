@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Warrington_In_Progress</fullName>
+    <booleanFilter>1 AND 6 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BB1,BB2,BB6,BB3,BB4,BB5,BB7,BB8,BB9,BL0,BL1,BL2,BL3,BL4,BL5,BL6,BL7,BL8,BL9,CH1,CH2,CH3,CH4,CH5,CH6,CH7,CH8,CH9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>CW1,CW2,CW3,CW4,CW5,CW6,CW7,CW8,CW9,FY0,FY1,FY2,FY3,FY4,FY5,FY6,FY7,FY8,IM1,IM2,IM3,IM4,IM5,IM6,IM7,IM8,IM9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>L1,L2,L3,L4,L5,L6,L7,L8,L9,LA1,LA2,LA3,LA4,LA5,LA6. LA7,LA8,LA9,LL1,LL2,LL3,LL4,LL5,LL6,LL7,LL8,LL9,M1,M2,M3,M4,M5,M6,M7,M8,M9,OL1,OL2,OL3,OL4,OL5,OL6,OL7,OL8,OL9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>PR0,PR1,PR2,PR3,PR4,PR5,PR6,PR7,PR8,PR9,SK1,SK2,SK3,SK4,SK5,SK6,SK7,SK8,SK9,WA1,WA2,WA3,WA4,WA5,WA6,WA7,WA8,WA9,WN1,WN2,WN3,WN4,WN5,WN6,WN7,WN8</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Leads PFUK Warrington - In Progress</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

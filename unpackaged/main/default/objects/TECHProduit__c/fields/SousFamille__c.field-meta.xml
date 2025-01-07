@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousFamille__c</fullName>
+    <label>Sous-famille</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>R</label>
+            </value>
+            <value>
+                <fullName>V (Frigo)</fullName>
+                <default>false</default>
+                <label>V (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P (Frigo)</fullName>
+                <default>false</default>
+                <label>P (Frigo)</label>
+            </value>
+            <value>
+                <fullName>S (Frigo)</fullName>
+                <default>false</default>
+                <label>S (Frigo)</label>
+            </value>
+            <value>
+                <fullName>T (Frigo)</fullName>
+                <default>false</default>
+                <label>T (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V (Sec)</fullName>
+                <default>false</default>
+                <label>V (Sec)</label>
+            </value>
+            <value>
+                <fullName>P (Sec)</fullName>
+                <default>false</default>
+                <label>P (Sec)</label>
+            </value>
+            <value>
+                <fullName>T (Sec)</fullName>
+                <default>false</default>
+                <label>T (Sec)</label>
+            </value>
+            <value>
+                <fullName>N/A (Containers)</fullName>
+                <default>false</default>
+                <label>N/A (Containers)</label>
+            </value>
+            <value>
+                <fullName>BAC</fullName>
+                <default>false</default>
+                <label>BAC</label>
+            </value>
+            <value>
+                <fullName>VITRINE</fullName>
+                <default>false</default>
+                <label>VITRINE</label>
+            </value>
+            <value>
+                <fullName>AUTRE</fullName>
+                <default>false</default>
+                <label>AUTRE</label>
+            </value>
+            <value>
+                <fullName>N/A (Carrosseries)</fullName>
+                <default>false</default>
+                <label>N/A (Carrosseries)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

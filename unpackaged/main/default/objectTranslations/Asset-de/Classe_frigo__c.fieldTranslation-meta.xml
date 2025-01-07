@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kühlklasse</label>
+        <name>Classe_frigo__c</name>
+        <picklistValues>
+            <masterLabel>FNA</masterLabel>
+            <translation><!-- FNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA-FNA</masterLabel>
+            <translation><!-- FNA-FNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA-FRC</masterLabel>
+            <translation><!-- FNA-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA-IN</masterLabel>
+            <translation><!-- FNA-IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA-IR</masterLabel>
+            <translation><!-- FNA-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNAX</masterLabel>
+            <translation><!-- FNAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNAX-FNAX</masterLabel>
+            <translation><!-- FNAX-FNAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNAX-IN</masterLabel>
+            <translation><!-- FNAX-IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA</masterLabel>
+            <translation><!-- FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-FRA</masterLabel>
+            <translation><!-- FRA-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-FRC</masterLabel>
+            <translation><!-- FRA-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-FRC-FRC</masterLabel>
+            <translation><!-- FRA-FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-FRC-IR</masterLabel>
+            <translation><!-- FRA-FRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-IR</masterLabel>
+            <translation><!-- FRA-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-RRC</masterLabel>
+            <translation><!-- FRA-RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA-RRC-IR</masterLabel>
+            <translation><!-- FRA-RRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX</masterLabel>
+            <translation><!-- FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX-FRAX</masterLabel>
+            <translation><!-- FRAX-FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX-FRCX</masterLabel>
+            <translation><!-- FRAX-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX-IR</masterLabel>
+            <translation><!-- FRAX-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB</masterLabel>
+            <translation><!-- FRB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB-FRA</masterLabel>
+            <translation><!-- FRB-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB-FRC-FRC</masterLabel>
+            <translation><!-- FRB-FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB-IR</masterLabel>
+            <translation><!-- FRB-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRBX</masterLabel>
+            <translation><!-- FRBX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRBX-FRAX</masterLabel>
+            <translation><!-- FRBX-FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRBX-FRBX</masterLabel>
+            <translation><!-- FRBX-FRBX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRBX-FRCX</masterLabel>
+            <translation><!-- FRBX-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRBX-IR</masterLabel>
+            <translation><!-- FRBX-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC</masterLabel>
+            <translation><!-- FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRA</masterLabel>
+            <translation><!-- FRC-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRA-FRA</masterLabel>
+            <translation><!-- FRC-FRA-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRA-IR</masterLabel>
+            <translation><!-- FRC-FRA-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRB</masterLabel>
+            <translation><!-- FRC-FRB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRB-FRA</masterLabel>
+            <translation><!-- FRC-FRB-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRB-IR</masterLabel>
+            <translation><!-- FRC-FRB-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRC</masterLabel>
+            <translation><!-- FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRC-FRA</masterLabel>
+            <translation><!-- FRC-FRC-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRC-FRC</masterLabel>
+            <translation><!-- FRC-FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-FRC-IR</masterLabel>
+            <translation><!-- FRC-FRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-IR</masterLabel>
+            <translation><!-- FRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-IR-FRC</masterLabel>
+            <translation><!-- FRC-IR-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-IR-IR</masterLabel>
+            <translation><!-- FRC-IR-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-RRC</masterLabel>
+            <translation><!-- FRC-RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC-RRC-IR</masterLabel>
+            <translation><!-- FRC-RRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX</masterLabel>
+            <translation><!-- FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-FRAX</masterLabel>
+            <translation><!-- FRCX-FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-FRBX</masterLabel>
+            <translation><!-- FRCX-FRBX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-FRCX</masterLabel>
+            <translation><!-- FRCX-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-FRCX-FRAX</masterLabel>
+            <translation><!-- FRCX-FRCX-FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-FRCX-FRCX</masterLabel>
+            <translation><!-- FRCX-FRCX-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-IR</masterLabel>
+            <translation><!-- FRCX-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX-IR-FRCX</masterLabel>
+            <translation><!-- FRCX-IR-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRA</masterLabel>
+            <translation><!-- IR-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRAX</masterLabel>
+            <translation><!-- IR-FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRB</masterLabel>
+            <translation><!-- IR-FRB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRBX</masterLabel>
+            <translation><!-- IR-FRBX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRC</masterLabel>
+            <translation><!-- IR-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRC-FRC</masterLabel>
+            <translation><!-- IR-FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRCX</masterLabel>
+            <translation><!-- IR-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-FRCX-FRCX</masterLabel>
+            <translation><!-- IR-FRCX-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-IR</masterLabel>
+            <translation><!-- IR-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-IR-FRC-FRC</masterLabel>
+            <translation><!-- IR-IR-FRC-FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR-IR-FRCX</masterLabel>
+            <translation><!-- IR-IR-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNA-IN</masterLabel>
+            <translation><!-- RNA-IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRA</masterLabel>
+            <translation><!-- RRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRA-IR</masterLabel>
+            <translation><!-- RRA-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRB</masterLabel>
+            <translation><!-- RRB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC</masterLabel>
+            <translation><!-- RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC-FRA</masterLabel>
+            <translation><!-- RRC-FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC-FRCX</masterLabel>
+            <translation><!-- RRC-FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC-IR</masterLabel>
+            <translation><!-- RRC-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC-RRA</masterLabel>
+            <translation><!-- RRC-RRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRCX</masterLabel>
+            <translation><!-- RRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRCX-FRAX</masterLabel>
+            <translation><!-- RRCX-FRAX --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derogation_contractuelle__c</fullName>
+    <formula>IF(
+AND(
+CONTAINS( Conditions_Dero__r.RecordType.Name , &quot;Dérogation contractuelle&quot;) ,
+ISPICKVAL(Conditions_Dero__r.Statut_Derogation__c , &quot;Approuvée&quot;)
+),
+true,
+false
+)</formula>
+    <label>Dérogation contractuelle</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

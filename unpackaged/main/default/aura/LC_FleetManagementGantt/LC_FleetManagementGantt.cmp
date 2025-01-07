@@ -1,0 +1,114 @@
+<aura:component
+  controller="FleetManagementController"
+  implements="flexipage:availableForAllPageTypes"
+>
+  <!-- LIBRARIES -->
+  <ltng:require
+    styles="{!$Resource.fullCalendar + '/node_modules/fullcalendar/dist/fullcalendar.min.css'}"
+    scripts="{!join(',',
+            $Resource.fullCalendar + '/node_modules/jquery/dist/jquery.min.js',
+            $Resource.fullCalendar + '/node_modules/moment/min/moment.min.js',
+            $Resource.fullCalendar + '/node_modules/jquery-ui-dist/jquery-ui.min.js',
+            $Resource.fullCalendar + '/node_modules/fullcalendar/dist/fullcalendar.min.js',
+            $Resource.fullCalendar + '/node_modules/fullcalendar/dist/locale-all.js')}"
+    afterScriptsLoaded="{!c.jsLoaded}"
+  />
+
+  <!-- HANDLERS -->
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <!-- METHODS -->
+  <aura:method name="reloadEvents" action="{!c.doReloadEvents}" />
+
+  <!-- ATTRIBUTES -->
+  <aura:attribute name="assetId" type="String" access="global" />
+  <aura:attribute name="assetName" type="String" access="global" />
+  <aura:attribute name="headerDate" type="String" />
+  <aura:attribute name="view" type="String" default="month" />
+  <aura:attribute name="holidays" type="Holiday[]" default="[]" />
+  <aura:attribute
+    name="events"
+    type="Reservation__c[]"
+    description="A list of events to display on the calendar"
+  />
+
+  <!-- EVENTS -->
+  <aura:handler name="change" value="{!v.events}" action="{!c.loadEvents}" />
+
+  <!-- BODY -->
+  <div class="slds slds-box slds-m-around--small">
+    <div class="slds-grid slds-wrap">
+      <div
+        class="
+          slds-col
+          slds-order--3
+          slds-medium-order--1
+          slds-size--1-of-1
+          slds-medium-size--1-of-3
+          slds-p-bottom--small
+        "
+      >
+        <lightning:buttonGroup class="">
+          <lightning:button
+            iconName="utility:chevronleft"
+            onclick="{!c.prev}"
+          />
+          <lightning:button
+            iconName="utility:chevronright"
+            onclick="{!c.next}"
+          />
+          <lightning:button label="Aujourd'hui" onclick="{!c.today}" />
+        </lightning:buttonGroup>
+      </div>
+      <div
+        class="
+          slds-col
+          slds-order--2
+          slds-medium-order--2
+          slds-align--absolute-center
+          slds-p-bottom--small
+        "
+      >
+        <ui:outputText class="header-date" value="{!v.headerDate}" />
+      </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div id="calendar" />
+    <!-- /CALENDAR -->
+
+    <!-- LEGEND -->
+    <section class="legend-section">
+      <div class="legends">
+        <div class="legend">
+          <div class="color-box" style="background-color: #ef7e33"></div>
+          <div class="record-type">Atelier - Confirmée</div>
+        </div>
+        <div class="legend">
+          <div class="color-box" style="background-color: #01af50"></div>
+          <div class="record-type">Transport - Confirmée</div>
+        </div>
+        <div class="legend">
+          <div class="color-box" style="background-color: #0170c1"></div>
+          <div class="record-type">Location - Confirmée</div>
+        </div>
+      </div>
+      <div class="legends">
+        <div class="legend">
+          <div class="color-box atelierP"></div>
+          <div class="record-type">Atelier - Planifiée</div>
+        </div>
+        <div class="legend">
+          <div class="color-box transportP"></div>
+          <div class="record-type">Transport - Planifiée</div>
+        </div>
+        <div class="legend">
+          <div class="color-box locationP"></div>
+          <div class="record-type">Location - Planifiée</div>
+        </div>
+      </div>
+    </section>
+    <!-- /LEGEND -->
+  </div>
+  <!-- /BODY -->
+</aura:component>

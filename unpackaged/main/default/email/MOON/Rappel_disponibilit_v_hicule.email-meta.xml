@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Rappel disponibilité véhicule</name>
+    <style>none</style>
+    <subject>RAPPEL - VOTRE VEHICULE EST DISPONIBLE CHEZ PETIT FORESTIER</subject>
+    <textOnly>Cher client bonjour,
+
+
+Votre véhicule immatriculé {!WorkOrder.TECH_Parc_IMMAT__c} et portant le numéro de parc {!WorkOrder.Asset} qui était en atelier est terminé.
+
+
+Nous vous remercions de bien vouloir vous rapprocher de notre responsable d&#39;exploitation afin de convenir de votre passage en vue de sa récupération par vos soins et de la dépose du véhicule relais numéro de parc {!WorkOrder.Parc_Relais__c} qui a été mis en place.
+
+
+Pour rappel, comme indiqué à l&#39;Article 2-02 du contrat de location, ce véhicule de remplacement doit nous être restitué sous deux jours ouvrables. A défaut, nous pouvons être amenés à vous le facturer sur la base d&#39;une location courte durée. Nous comptons sur votre collaboration et restons à votre entière disposition pour tout renseignement complémentaire.
+
+Bien cordialement,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

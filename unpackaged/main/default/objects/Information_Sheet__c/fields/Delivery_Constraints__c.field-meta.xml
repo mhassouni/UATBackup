@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Constraints__c</fullName>
+    <inlineHelpText>Précisez au maximum les contraintes de livraison, d&#39;installation ou d&#39;accès au site</inlineHelpText>
+    <label>Contraintes à la Livraison</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

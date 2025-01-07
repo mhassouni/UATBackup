@@ -1,0 +1,282 @@
+[
+  {
+    "Name": "D-U-N-S Number",
+    "Value": "DUNS_NBR"
+  },
+  {
+    "Name": "Enquiry D-U-N-S Number",
+    "Value": "ENQ_DUNS"
+  },
+  {
+    "Name": "Primary Name",
+    "Value": "PRIM_NME"
+  },
+  {
+    "Name": " ADDRESS LINE",
+    "Value": "ADR_LINE"
+  },
+  {
+    "Name": "Postal Town",
+    "Value": "POST_TOWN"
+  },
+  {
+    "Name": "Non-Postal Town",
+    "Value": "NON_POST_TOWN"
+  },
+  {
+    "Name": "Primary Geographic Area (State/Province)",
+    "Value": "PRIM_GEO_AREA"
+  },
+  {
+    "Name": "Secondary Geographic Area (County)",
+    "Value": "SCDY_GEO_AREA"
+  },
+  {
+    "Name": "POST CODE",
+    "Value": "POST_CODE"
+  },
+  {
+    "Name": "Country Code",
+    "Value": "CONS_IND"
+  },
+  {
+    "Name": "Telephone Number",
+    "Value": "TLCM_NBR"
+  },
+  {
+    "Name": "Facsimile Number",
+    "Value": "TLCM_NBR"
+  },
+  {
+    "Name": "International Dialing Code",
+    "Value": "INTL_DLNG_CD"
+  },
+  {
+    "Name": "LOCAL BUSINESS ID NUMBER",
+    "Value": "BUS_REGN_NBR"
+  },
+  {
+    "Name": "LOCAL BUSINESS ID TYPE",
+    "Value": "BUS_REGN_NBR_TYPE_CD"
+  },
+  {
+    "Name": "Default Currency Code",
+    "Value": "CRCY_CD"
+  },
+  {
+    "Name": "Control Year",
+    "Value": "CURR_CNTL_YR"
+  },
+  {
+    "Name": "Incorporation Year",
+    "Value": "INCN_YR"
+  },
+  {
+    "Name": "Year Started",
+    "Value": "STRT_YR"
+  },
+  {
+    "Name": "TOTAL EMPLOYEES",
+    "Value": "TOT_EMPL"
+  },
+  {
+    "Name": "Total Employees Text",
+    "Value": "TOT_EMPL_TEXT"
+  },
+  {
+    "Name": "Total Employees Indicator",
+    "Value": "TOT_EMPL_IND"
+  },
+  {
+    "Name": "Total Employees Est Indicator",
+    "Value": "TOT_EMPL_ESTD_IND"
+  },
+  {
+    "Name": "Total Employees Min Indicator",
+    "Value": "TOT_EMPL_MIN_IND"
+  },
+  {
+    "Name": "Employees Here",
+    "Value": "TOT_EMPL_TEXT"
+  },
+  {
+    "Name": "Employees Here Text",
+    "Value": "TOT_EMPL_TEXT"
+  },
+  {
+    "Name": "Employees Here Est Indicator",
+    "Value": "TOT_EMPL_ESTD_IND"
+  },
+  {
+    "Name": "Employees Here Min Indicator",
+    "Value": "TOT_EMPL_MIN_IND"
+  },
+  {
+    "Name": "Primary SIC (4 digit)",
+    "Value": "PRIM_SIC"
+  },
+  {
+    "Name": "Primary SIC Type",
+    "Value": "PRIM_SIC_TYPE_CD"
+  },
+  {
+    "Name": "Local Activity Code",
+    "Value": "LCL_ACTV_CD"
+  },
+  {
+    "Name": "Local Activity Code Type",
+    "Value": "LCL_ACTV_CD_TYPE"
+  },
+  {
+    "Name": "Legal Structure",
+    "Value": "LGL_FORM"
+  },
+  {
+    "Name": "Chief Executive Name",
+    "Value": "CEO_NME"
+  },
+  {
+    "Name": "Chief Executive Title",
+    "Value": "CEO_TITL"
+  },
+  {
+    "Name": "Principal Name",
+    "Value": "PRIN_NME"
+  },
+  {
+    "Name": "Principal Title",
+    "Value": "PRIN_TTL"
+  },
+  {
+    "Name": "D&B Paydex",
+    "Value": "PAYD_SCR"
+  },
+  {
+    "Name": "D&B Paydex Norm",
+    "Value": "PAYD_NORM"
+  },
+  {
+    "Name": "Financial Embarrassment Indicator",
+    "Value": "FINL_EMBT_IND"
+  },
+  {
+    "Name": "Out of Business Indicator",
+    "Value": "OUT_BUS_IND"
+  },
+  {
+    "Name": "Criminal Indicator",
+    "Value": "CR_IND"
+  },
+  {
+    "Name": "Disaster Special Events Indicator",
+    "Value": "DSTR_IND"
+  },
+  {
+    "Name": "Financial/Legal Special Events Indicator",
+    "Value": "FISC_IND"
+  },
+  {
+    "Name": "Operational Special Events Indicator",
+    "Value": "OPRG_SPEC_EVNT_IND"
+  },
+  {
+    "Name": "Other Special Events Indicator",
+    "Value": "OTHR_SPEC_EVNT_IND"
+  },
+  {
+    "Name": "History Indicator",
+    "Value": "HIST_IND"
+  },
+  {
+    "Name": "Suit and/or Judgment Indicator",
+    "Value": "SUIT_JDGT_IND"
+  },
+  {
+    "Name": "Claim Indicator",
+    "Value": "CLM_IND"
+  },
+  {
+    "Name": "Secured Filings Indicator",
+    "Value": "SCRD_FLNG_IND"
+  },
+  {
+    "Name": "Net Worth",
+    "Value": "NET_WRTH"
+  },
+  {
+    "Name": "Intangible Assets",
+    "Value": "ITNG_ASET"
+  },
+  {
+    "Name": "Tangible Net Worth",
+    "Value": "TANG_NET_WRTH"
+  },
+  {
+    "Name": "Tangible Net Worth Text",
+    "Value": "TANG_NET_WRTH_TEXT"
+  },
+  {
+    "Name": "Tangible Net Worth Indicator",
+    "Value": "TANG_NET_WRTH_ESTD_IND"
+  },
+  {
+    "Name": "Tangible Net Worth Currency Code",
+    "Value": "TANG_NET_WRTH_CRCY_CD"
+  },
+  {
+    "Name": "Previous Net Worth",
+    "Value": "PREV_NET_WRTH"
+  },
+  {
+    "Name": "Sales",
+    "Value": "SLS"
+  },
+  {
+    "Name": "Annual Sales Volume",
+    "Value": "ANN_SALE_VOL"
+  },
+  {
+    "Name": "Annual Sales Volume Text",
+    "Value": "ANN_SALE_VOL_TEXT"
+  },
+  {
+    "Name": "Annual Sales Estimated Indicator",
+    "Value": "ANN_SALE_ESTD_IND"
+  },
+  {
+    "Name": "Annual Sales Consolidated Indicator",
+    "Value": "ANN_SALE_CONS_IND"
+  },
+  {
+    "Name": "Annual Sales Currency Code",
+    "Value": "ANN_SALE_CRCY_CD"
+  },
+  {
+    "Name": "Statement Currency Code",
+    "Value": "STMT_CRCY_CD"
+  },
+  {
+    "Name": "D&B Rating",
+    "Value": "DNB_RATG"
+  },
+  {
+    "Name": "Maximum Credit Recommendation",
+    "Value": "MAX_CR"
+  },
+  {
+    "Name": "Maximum Credit Currency Code",
+    "Value": "CRCY_CD"
+  },
+  {
+    "Name": "Income/Profit & Loss Statement date",
+    "Value": "INCM_STMT_DT"
+  },
+  {
+    "Name": "Start Income/Profit & Loss Statement date",
+    "Value": "STMT_DT"
+  },
+  {
+    "Name": "End Income/Profit & Loss Statement date",
+    "Value": "STMT_TO_DT"
+  } 
+]

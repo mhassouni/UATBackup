@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AddToBundleStatuses</fullName>
+    <inlineHelpText>Sélectionnez les statuts de rendez-vous de service qui peuvent être empaquetés. Utilisez une valeur vide pour empaqueter des rendez-vous de service de n&#39;importe quel statut.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

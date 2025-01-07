@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ChatterNotification__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  TEXT(Statut__c)=$Label.CPT_Statut_Inactif,
+  $Label.CPT_ChatterNotif_CompteInactif,
+  IF(
+    TEXT(Statut__c)=$Label.CPT_Statut_Bloque, 
+    $Label.CPT_ChatterNotif_CompteBloque, 
+    IF(
+      TEXT(Statut__c)=$Label.CPT_Statut_Erreur_EH, 
+      $Label.CPT_ChatterNotif_CompteErreurEH,
+      TEXT(Statut__c)
+    )
+  )
+)
+ + &quot;: &quot; 
+ + SUBSTITUTE($Label.NewLine , &quot;-&quot;, &quot;&quot;)
+ + $Label.VFP_CompteRaisonSocial 
+ + &quot;: &quot; 
+ + Name 
+ + SUBSTITUTE($Label.NewLine , &quot;-&quot;, &quot;&quot;) 
+ + $Label.VFP_Owner 
+ + &quot;: &quot; 
+ + Owner.FirstName 
+ + &quot; &quot; 
+ + Owner.LastName 
+ + SUBSTITUTE($Label.NewLine , &quot;-&quot;, &quot;&quot;)
+ + $Label.VFP_Link 
+ + &quot;: &quot; 
+ + TECHLienSF__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Chatter Notification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

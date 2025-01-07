@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PerimetreActivite__c</fullName>
+    <label>Périmètre d&#39;activité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Local</fullName>
+                <default>false</default>
+                <label>Local</label>
+            </value>
+            <value>
+                <fullName>Régional</fullName>
+                <default>false</default>
+                <label>Régional</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

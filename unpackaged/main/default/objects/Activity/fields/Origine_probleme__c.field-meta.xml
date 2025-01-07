@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origine_probleme__c</fullName>
+    <description>Permet de déterminer les causes du mécontentement</description>
+    <label>Origine du problème</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entrée en relation avec Petit Forestier</fullName>
+                <default>false</default>
+                <label>Entrée en relation avec Petit Forestier</label>
+            </value>
+            <value>
+                <fullName>Négociation et proposition commerciale</fullName>
+                <default>false</default>
+                <label>Négociation et proposition commerciale</label>
+            </value>
+            <value>
+                <fullName>Mise_disposition_produit</fullName>
+                <default>false</default>
+                <label>Mise à disposition du produit</label>
+            </value>
+            <value>
+                <fullName>Equipement camion</fullName>
+                <default>false</default>
+                <label>Equipement du camion</label>
+            </value>
+            <value>
+                <fullName>Livraison</fullName>
+                <default>false</default>
+                <label>Livraison</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Entretien et maintenance</fullName>
+                <default>false</default>
+                <label>Entretien et maintenance</label>
+            </value>
+            <value>
+                <fullName>Assistance &amp; relais</fullName>
+                <default>false</default>
+                <label>Assistance &amp; relais</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Relation administrative et contractualisation</fullName>
+                <default>false</default>
+                <label>Relation administrative et contractualisation</label>
+            </value>
+            <value>
+                <fullName>Récupération camion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Récupération camion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qte_Opp_Signees_VF__c</fullName>
+    <description>Qte opportunités signés VF</description>
+    <label>Qte Opp Signées VF</label>
+    <summaryFilterItems>
+        <field>Opportunity.TypeProduits__c</field>
+        <operation>equals</operation>
+        <value>Véhicules Frigorifiques</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>6 - Gagnée, 6 - Contrat signé, 6 - Gagnée</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<p>Bonjour {!SBQQ__Quote__c.OwnerFullName},</p>
+<p><br />Votre demande de chiffrage pour le client {!SBQQ__Quote__c.Account_Name__c} a bien &eacute;t&eacute; chiffr&eacute;e.</p>
+<p>Vous pouvez &agrave; pr&eacute;sent g&eacute;n&eacute;rer votre devis et l'envoyer &agrave; votre client.</p>
+<p><a href="{!SBQQ__Quote__c.Link}">Lien devis</a></p>
+<p>Pour plus d'informations,vous pouvez nous contacter aux coordonn&eacute;es ci-dessous :<br />Florian VALLOD - fvallod@petitforestier.com - 06 26 48 62 28 <br />Vincent BASSETTO - vbassetto@petitforestier.com - 06 13 46 71 80</p>
+<p>&nbsp;</p>
+<p>Cordialement,</p>
+<p>L'&eacute;quipe Assemblage</p>

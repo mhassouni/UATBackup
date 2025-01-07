@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Maps fields --></label>
+        <name>Maps_fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label>Informazioni sullo sviluppo</label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Dates &amp; Rappel --></label>
+            <section>Dates &amp; Rappel</section>
+        </sections>
+        <sections>
+            <label>Descrizione</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>Associato a</label>
+            <section>Participants</section>
+        </sections>
+        <sections>
+            <label>Monitoraggio dell&#39;evento</label>
+            <section>Suivi de l&#39;événement</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Ajouter un membre --></label>
+        <name>Inviter</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- RecordtypeEnvenement_PF --></label>
+        <name>RecordtypeEnvenement_PF</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>È necessario selezionare un contesto, se il tipo di azione è Appuntamento.</errorMessage>
+        <name>EVN_VR04_Type_de_lieu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de bien vouloir saisir une note de satisfaction. --></errorMessage>
+        <name>VR_Event_SatisfactionRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

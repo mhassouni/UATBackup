@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Qualificazione problema</label>
+        <name>Qualification__c</name>
+        <picklistValues>
+            <masterLabel>Branchement</masterLabel>
+            <translation>Collegamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Caisse/Cellule isotherme</masterLabel>
+            <translation>Cassone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Telaio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur D&#39;utilisation / Casse / Accident</masterLabel>
+            <translation>Utilizzo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Frigo</masterLabel>
+            <translation>Gruppo Frigo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Portellone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/système de levage</masterLabel>
+            <translation>Sponda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Motore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>Pneumatico</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

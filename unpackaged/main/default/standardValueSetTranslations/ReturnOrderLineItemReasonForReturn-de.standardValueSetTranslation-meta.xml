@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Autre</masterLabel>
+        <translation>Andere</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande dupliquée</masterLabel>
+        <translation>Doppelte Bestellung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Défectueux</masterLabel>
+        <translation>Defekt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Endommagé</masterLabel>
+        <translation>?</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Insatisfait</masterLabel>
+        <translation>Unzufriedenstellend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Périmé</masterLabel>
+        <translation>Abgelaufen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quantité incorrecte</masterLabel>
+        <translation>Falsche Menge</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Élément incorrect</masterLabel>
+        <translation>Falsches Produkt</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Services_MarchandiseVL</fullName>
+    <active>true</active>
+    <description>on peut cocher Marchandise transportée = true que si type de véhicule = VL</description>
+    <errorConditionFormula>AND
+(
+ Marchandises_transportees__c = true 
+,
+ NOT(ISPICKVAL( Type_de_vehicule__c , &#39;VL&#39;) )
+)</errorConditionFormula>
+    <errorDisplayField>Marchandises_transportees__c</errorDisplayField>
+    <errorMessage>Marchandise transportée n&#39;est pas autorisé pour ce type de véhicule</errorMessage>
+</ValidationRule>

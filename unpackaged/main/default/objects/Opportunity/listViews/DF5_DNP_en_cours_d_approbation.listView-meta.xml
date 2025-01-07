@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DF5_DNP_en_cours_d_approbation</fullName>
+    <columns>PaysRegionPF__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>TypeOpportunite__c</columns>
+    <columns>N_Parc_renouvele__c</columns>
+    <columns>CodePF__c</columns>
+    <columns>DureeContrat__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Quantite__c</columns>
+    <columns>CarnetCommande__c</columns>
+    <columns>Kilometrage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>En attente</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>DO5A,DO5B</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>10/15/2020 12:00 AM</value>
+    </filters>
+    <label>DF5 - DNP en cours d&#39;approbation 2021</label>
+</ListView>

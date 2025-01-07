@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Gewünschte Mietdauer</label>
+        <name>Duree_location_souhaitee__c</name>
+        <picklistValues>
+            <masterLabel>1 à 11 mois</masterLabel>
+            <translation>CDM (von 1 bis 11 Monate)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 à 30 jours</masterLabel>
+            <translation>CD (von 1 bis 30 Tage)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 12 mois</masterLabel>
+            <translation>1 bis 12 Monate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 25 jours</masterLabel>
+            <translation>1 bis 25 Tage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue durée</masterLabel>
+            <translation>LD (ab 12 Monate)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 12 mois</masterLabel>
+            <translation>Mehr als 12 Monate</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

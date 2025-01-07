@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SvcApptGenerationMethod</fullName>
+    <inlineHelpText>Spécifie la méthode de génération de rendez-vous de service lorsque plusieurs actifs sont associés à un plan de maintenance et lorsque la méthode de génération des ordres de travail est Un élément de ligne d&#39;ordre de travail par actif.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

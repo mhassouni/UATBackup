@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif du refus --></label>
+        <name>Motif_du_refus__c</name>
+        <picklistValues>
+            <masterLabel>Devis techniquement impossible à réaliser</masterLabel>
+            <translation><!-- Devis techniquement impossible à réaliser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privilégier un Devis Assemblage</masterLabel>
+            <translation><!-- Privilégier un Devis Assemblage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Privilégier un Devis Standard</masterLabel>
+            <translation><!-- Privilégier un Devis Standard --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

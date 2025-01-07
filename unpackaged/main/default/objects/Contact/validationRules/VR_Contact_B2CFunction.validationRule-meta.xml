@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Contact_B2CFunction</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (RecordType.DeveloperName = &#39;Particulier_B2C&#39;, NOT(ISPICKVAL(Fonction__c,&#39;Particulier&#39;)))</errorConditionFormula>
+    <errorMessage>Lorsqu&#39;un contact particulier est créé, sa fonction doit être égale à &quot;particulier&quot;</errorMessage>
+</ValidationRule>

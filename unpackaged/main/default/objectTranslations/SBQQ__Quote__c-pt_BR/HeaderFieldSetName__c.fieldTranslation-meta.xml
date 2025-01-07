@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- HeaderFieldSetName --></label>
+        <name>HeaderFieldSetName__c</name>
+        <picklistValues>
+            <masterLabel>AssemblyFS</masterLabel>
+            <translation><!-- AssemblyFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detailed Standard Quote</masterLabel>
+            <translation><!-- Detailed Standard Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hors_standard_Quote</masterLabel>
+            <translation><!-- Hors_standard_Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Quote</masterLabel>
+            <translation><!-- Standard Quote --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>modifier l&#39;opportunité en cours d&#39;approbation</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Greenforce_Approvals_modifyAll</label>
+</PermissionSet>

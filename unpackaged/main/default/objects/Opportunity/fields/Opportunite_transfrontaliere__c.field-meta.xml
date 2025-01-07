@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunite_transfrontaliere__c</fullName>
+    <description>GFC-2921</description>
+    <formula>SalesAreaData__r.SAD_etrangere__c</formula>
+    <label>Opportunité transfrontalière</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

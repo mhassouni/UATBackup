@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunite_Grand_Compte__c</fullName>
+    <formula>if ( OR(Account.Grand_Compte__c = true, Account.Est_un_grand_compte__c = true),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opportunité Grand Compte</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

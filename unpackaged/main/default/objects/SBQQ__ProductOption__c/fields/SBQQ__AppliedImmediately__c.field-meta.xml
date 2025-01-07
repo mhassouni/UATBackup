@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__AppliedImmediately__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that indicates changes to this option should apply immediately.</description>
+    <inlineHelpText>Sélectionnez la case pour appliquer immédiatement les modifications à cette option. À utiliser avec précaution afin d&#39;éviter de ralentir l&#39;expérience utilisateur.</inlineHelpText>
+    <label>Apply Immediately</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

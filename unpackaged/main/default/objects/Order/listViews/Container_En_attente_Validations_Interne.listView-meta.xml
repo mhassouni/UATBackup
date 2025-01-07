@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Container_En_attente_Validations_Interne</fullName>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>ORDERS.TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Validations Internes</value>
+    </filters>
+    <filters>
+        <field>StartDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023</value>
+    </filters>
+    <label>Container - Attente Validation Interne</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

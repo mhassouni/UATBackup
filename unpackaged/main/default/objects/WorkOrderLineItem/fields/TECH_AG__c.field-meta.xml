@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_AG__c</fullName>
+    <formula>IF
+(
+ OR(
+AND(TEXT($User.AgencePF__c) ==  Agence_Intervenante__r.Name,TEXT($User.AgencePF__c)&lt;&gt; NULL),
+AND(Contains( $User.Liste_Agences__c , Agence_Intervenante__r.Name ),NOT(ISBLANK(Agence_Intervenante__c))) 
+)
+,
+ TRUE
+,
+False
+)</formula>
+    <label>TECH_AG</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

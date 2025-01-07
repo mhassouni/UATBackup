@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Anomalie</label>
+        <name>Anomalie__c</name>
+        <picklistValues>
+            <masterLabel>AEBS</masterLabel>
+            <translation>AEBS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accastillage</masterLabel>
+            <translation>Türbeschlag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessoires (enregistreur, contacteur de porte, sonde piqueuse, etc)</masterLabel>
+            <translation>Zubehör</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alarme personne enfermée</masterLabel>
+            <translation>Alarm aufgrund einer eingesperrten Person</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation</masterLabel>
+            <translation>Strom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation Carburant</masterLabel>
+            <translation>Kraftstoffzufuhr</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation électrique</masterLabel>
+            <translation>Stromversorgung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternateur</masterLabel>
+            <translation>Lichtmaschine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amortisseur</masterLabel>
+            <translation>Stoßdämpfer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auvent</masterLabel>
+            <translation>Vordach</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Axes grippés</masterLabel>
+            <translation>Achsen blockiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV bloquée</masterLabel>
+            <translation>Getriebe blockiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie De Puissance Groupe Électrique</masterLabel>
+            <translation>Batterieleistung / elektrische Einheit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie De Traction Véhicule Électrique</masterLabel>
+            <translation>Batterieleistung / elektrische Einheit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Déchargée</masterLabel>
+            <translation>Batterie entladen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Frigo</masterLabel>
+            <translation>Batterie der Kühlung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Hayon</masterLabel>
+            <translation>Batterie der Hebebühne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloc Moteur (Trous/Fuite)</masterLabel>
+            <translation>Motorblock (Undichtigkeit)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloque (Serrage Moteur)</masterLabel>
+            <translation>Block (Motorklemme)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouteilles d&#39;air</masterLabel>
+            <translation>Luftflaschen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine / Multimédia</masterLabel>
+            <translation>Kabine / Multimedia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine / équipements</masterLabel>
+            <translation>Kabine / Ausrüstung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre</masterLabel>
+            <translation>Rahmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calage</masterLabel>
+            <translation>Positionierung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calandre</masterLabel>
+            <translation>Kühlergrill</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capteur D&#39;usure</masterLabel>
+            <translation>Verschleißsensor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargeur Hayon</masterLabel>
+            <translation>Hecklader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Carrosserie Ou Pare-brise</masterLabel>
+            <translation>Karosserie- oder Windschutzscheibenschaden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Cellule Isotherme (Caisse)</masterLabel>
+            <translation>Kühlkofferschaden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc En Hauteur</masterLabel>
+            <translation>Höhenschaden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Pare-choc Ou Éclairage</masterLabel>
+            <translation>Schaden an Stoßstange oder Beleuchtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Piece Mecanique (Radiateur, Compresseur, Etc)</masterLabel>
+            <translation>Mechanischerschaden (Kühlung, Kompressor, etc.)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Rétroviseur</masterLabel>
+            <translation>Rückspiegelschaden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc caisse</masterLabel>
+            <translation>Kofferbeschädigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc groupe</masterLabel>
+            <translation>Beschädigung Kühlaggregat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc trottoir</masterLabel>
+            <translation>Aufprall Bürgersteig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chronotachygraphe</masterLabel>
+            <translation>Tachograph</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circuit électrique</masterLabel>
+            <translation>Elektrischer Schaltkreis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claquement</masterLabel>
+            <translation>Klappern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloison</masterLabel>
+            <translation>Trennwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code clé</masterLabel>
+            <translation>Schlüsselcode</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commande</masterLabel>
+            <translation>Steuerung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commande ( micro, cartes etc..)</masterLabel>
+            <translation>Bedienung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commandes</masterLabel>
+            <translation>Steuerungen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commandes Bv</masterLabel>
+            <translation>Getriebesteuerung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur</masterLabel>
+            <translation>Kompressor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur Pneumatique</masterLabel>
+            <translation>Druckluftkompressor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur route</masterLabel>
+            <translation>Kompressor Fahrt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur secteur</masterLabel>
+            <translation>Kompressor Netz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courroie</masterLabel>
+            <translation>Treibriemen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courroies / Galet</masterLabel>
+            <translation>Riemen / Rolle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crevaison</masterLabel>
+            <translation>Reifenpanne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crémone grippée</masterLabel>
+            <translation>Festsitzende Treibriegelstange</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction</masterLabel>
+            <translation>Lenkung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disjoncteur</masterLabel>
+            <translation>Leistungsschalter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disques</masterLabel>
+            <translation>Scheiben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation>Ventilsteuerung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage Par Câbles</masterLabel>
+            <translation>Start durch Kabel (Überbrücken)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage du groupe</masterLabel>
+            <translation>Gruppe starten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage mode ROUTE</masterLabel>
+            <translation>Straßenmodus starten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage mode SECTEUR</masterLabel>
+            <translation>Sektormodus starten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarreur</masterLabel>
+            <translation>Anlasser</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Détendeur</masterLabel>
+            <translation>Druckminderer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECU (Calculateur)</masterLabel>
+            <translation>ECU (Berechnung)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echangeurs (Condenseur, Évaporateur)</masterLabel>
+            <translation>Wärmetauscher (Kondensator, Verdampfer)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echappement</masterLabel>
+            <translation>Auspuffanlage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echauffement</masterLabel>
+            <translation>Auspuffanlage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage</masterLabel>
+            <translation>Beleuchtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Strom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité 12v / 24v</masterLabel>
+            <translation>Elektrij 12V/24V</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrovanne</masterLabel>
+            <translation>Elektroventil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Embrayage</masterLabel>
+            <translation>Kupplung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emetteur</masterLabel>
+            <translation>Sender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enregistreur électronique</masterLabel>
+            <translation>Elektronischer Recorder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipement ( Climatisation, Etc…)</masterLabel>
+            <translation>Ausrüstung (Klimaanlage, etc...)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipements</masterLabel>
+            <translation>Ausrüstung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essuie-glace / Moteur Essuie-glace</masterLabel>
+            <translation>Scheibenwischer / Motor Scheibenwischer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etancheité</masterLabel>
+            <translation>Dichtigkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etriers</masterLabel>
+            <translation>Sättel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face Avant</masterLabel>
+            <translation>Vorderseite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faisceau Electrique</masterLabel>
+            <translation>Elektrisches Bündel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faisceaux</masterLabel>
+            <translation>Stromkabel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faux - châssis</masterLabel>
+            <translation>Hilfsrahmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filtre à particules</masterLabel>
+            <translation>Partikelfilter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fissure châssis</masterLabel>
+            <translation>Bruch Fahrgestell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frein A Main</masterLabel>
+            <translation>Handbremse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite Au Circuit Hydraulique</masterLabel>
+            <translation>Leck im Hydrauliksystem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite D&#39;air</masterLabel>
+            <translation>Luftleck</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite D&#39;huile</masterLabel>
+            <translation>Ölleck</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite De Carburant</masterLabel>
+            <translation>Treibstoffleck</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite Pont Arrière</masterLabel>
+            <translation>Leck an der Hinterachse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite de fluide</masterLabel>
+            <translation>Kältemittelverlust</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite huile</masterLabel>
+            <translation>Austreten von Öl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite liquide de frein</masterLabel>
+            <translation>Austreten von Bremsflüssigkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite liquide de refroidissement</masterLabel>
+            <translation>Austreten von Kühlflüssigkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fusible</masterLabel>
+            <translation>Sicherung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe froid / échangeurs</masterLabel>
+            <translation>Kühlaggregat / Wärmetauscher</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Génératrice</masterLabel>
+            <translation>Generator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Géométrie train AV/ARR</masterLabel>
+            <translation>Fahrwerk Vorder-/Hinterachse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon / Fuite au circuit hydrau</masterLabel>
+            <translation>Heckklappe / Leck im Hydraulikkreislauf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incendie</masterLabel>
+            <translation>Brandschaden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injection</masterLabel>
+            <translation>Einspritzung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interrupteur</masterLabel>
+            <translation>Schalter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jante</masterLabel>
+            <translation>Felge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation>Dichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kit poulie - moteur</masterLabel>
+            <translation>Set Scheibe - Motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LDWS</masterLabel>
+            <translation>LDWS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquide de refroidissement</masterLabel>
+            <translation>Kühlflüssigkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchepied</masterLabel>
+            <translation>Trittbrett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvais branchement du container</masterLabel>
+            <translation>Nicht richtig angesteckt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique)</masterLabel>
+            <translation>Falsche Beladung des Fahrzeug (Elektrofahrzeug)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Niveau Lave Glace</masterLabel>
+            <translation>Falsche Benutzung / Scheibenwischer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Niveau Liquide Refroidissement</masterLabel>
+            <translation>Falsche Benutzung / Kühlmittelstand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Panne Carburant</masterLabel>
+            <translation>Falsche Benutzung / Falschbetankung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation Commande Frigo</masterLabel>
+            <translation>Falsche Benutzung / Einstellung Kühlmaschine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation Hayon</masterLabel>
+            <translation>Falsche Benutzung / Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise utilisation groupe</masterLabel>
+            <translation>Nicht richtig benutzt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micro / Carte imprimée</masterLabel>
+            <translation>Mikro/gedruckte Karte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montage</masterLabel>
+            <translation>Montage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur Véhicule Électrique</masterLabel>
+            <translation>Elektromotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur thermique</masterLabel>
+            <translation>Verbrennungsmotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur électrique</masterLabel>
+            <translation>Elektromotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite)</masterLabel>
+            <translation>Multimedia ( Autoradio, Kamera, Bildschirm, Geolokalisierung, Anschlussmöglichkeiten)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neiman</masterLabel>
+            <translation>Neiman</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau D&#39;huile (Niveau Bas)</masterLabel>
+            <translation>Ölstand (Niedriger Stand)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau Liquide De Refroidissement</masterLabel>
+            <translation>Kühlflüssigkeitsstand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau Liquide Lave-glace</masterLabel>
+            <translation>Scheibenwischwasserstand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau d’huile</masterLabel>
+            <translation>Ölstand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouverture/Fermeture</masterLabel>
+            <translation>Öffnung / Schließen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paliers</masterLabel>
+            <translation>Lager</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne Adblue</masterLabel>
+            <translation>AD-Blue Panne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne Carburant</masterLabel>
+            <translation>Panne / Falscher Kraftstoff</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne De Carburant</masterLabel>
+            <translation>Panne / Falscher Kraftstoff</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne batterie Hayon</masterLabel>
+            <translation>Panne Batterie Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panneau latéral</masterLabel>
+            <translation>Seitenwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pare - chocs</masterLabel>
+            <translation>Stoßstange</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pavillon</masterLabel>
+            <translation>Dach</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte / casse de clé</masterLabel>
+            <translation>Schlüsslverlust</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte clé de hayon</masterLabel>
+            <translation>Verlust Schlüssel Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte de puissance</masterLabel>
+            <translation>Leistungsverlust</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte de roue</masterLabel>
+            <translation>Radverlust</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pièce électrique (condensateur, pont de diode, VEM, etc)</masterLabel>
+            <translation>elektrische Teile ( Kondensator,Diodenbrücke...)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plancher</masterLabel>
+            <translation>Boden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaquettes</masterLabel>
+            <translation>Plaketten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plateforme / Portique</masterLabel>
+            <translation>Ladefläche/Portal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques / Crevaison</masterLabel>
+            <translation>Reifen / Reifenpanne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pompe A Eau</masterLabel>
+            <translation>Wasserpumpe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pompe Direction Assistée</masterLabel>
+            <translation>Servolenkungspumpe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte ARR relevante</masterLabel>
+            <translation>Hebetür hinten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte Arrière</masterLabel>
+            <translation>Hintere Türe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte latérale</masterLabel>
+            <translation>Seitentür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portes ARR</masterLabel>
+            <translation>Hintertüren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poumon De Frein</masterLabel>
+            <translation>Bremskraftverstärker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise En Glace Évaporateur</masterLabel>
+            <translation>Gefrorener Verdampfer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise de courant (option)</masterLabel>
+            <translation>Steckdose</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise en glace</masterLabel>
+            <translation>Gefrorener Verdampfer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème batterie suite négligence client</masterLabel>
+            <translation>Batterieprobleme / Kundenverschulden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de démarrage</masterLabel>
+            <translation>Problem beim Start</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail/crémone grippé</masterLabel>
+            <translation>Schiene/Stulpschraube festgefressen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge électrique</masterLabel>
+            <translation>elektrische Erweiterung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge/ Prise Électrique 230 / 380v</masterLabel>
+            <translation>Verlängerungskabel/ Elektrische Steckdose 230 / 380v</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge/ Prise Électrique 230/380v Client</masterLabel>
+            <translation>Verlängerungskabel/ Elektrische Steckdose 230 / 380v</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remplacement Batterie</masterLabel>
+            <translation>Batterie tauschen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resistance chauffante</masterLabel>
+            <translation>Heizelement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robot de commande</masterLabel>
+            <translation>Steuerungsroboter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roue Desserrée</masterLabel>
+            <translation>Rad locker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roulements</masterLabel>
+            <translation>Kugellager</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réamorçage Gasoil</masterLabel>
+            <translation>Kraftstoff auffüllen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Récepteur</masterLabel>
+            <translation>Empfänger</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réservoir Ad Blue</masterLabel>
+            <translation>Behälter AdBlue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réservoir gazole</masterLabel>
+            <translation>Behälter Diesel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sellerie</masterLabel>
+            <translation>Sattel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sellette</masterLabel>
+            <translation>Sattel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solénoïde</masterLabel>
+            <translation>Solenoid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonde / Capteur</masterLabel>
+            <translation>Sensor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonde/Pressostats/Sécurité</masterLabel>
+            <translation>Sonde/Druckschalter/Sicherheit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surcharge Véhicule</masterLabel>
+            <translation>Fahrzeugüberladung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surchauffe Moteur</masterLabel>
+            <translation>Motorüberhitzung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspension</masterLabel>
+            <translation>Federung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synchros</masterLabel>
+            <translation>Synchros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Système EGR</masterLabel>
+            <translation>EGR-System</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau De Bord</masterLabel>
+            <translation>Armaturenbrett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission</masterLabel>
+            <translation>Getriebe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tringlerie</masterLabel>
+            <translation>Gestänge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turbo</masterLabel>
+            <translation><!-- Turbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télécommande</masterLabel>
+            <translation>Fernbedienung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usure</masterLabel>
+            <translation>Verschleiß</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilisation roue de secours</masterLabel>
+            <translation>Benutzung Reserverad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vandalisme</masterLabel>
+            <translation>Vandalismus</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilation</masterLabel>
+            <translation>Lüftung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilations condenseur</masterLabel>
+            <translation>Kondensatorbelüftung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilations évaporateur</masterLabel>
+            <translation>Belüftung Verdampfer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verrouillage cabine</masterLabel>
+            <translation>Verriegelung Kabine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitesse Saute / Craquement</masterLabel>
+            <translation>Fahrzeug &quot;springt&quot; und &quot;knackt&quot; bei Geschwindigkeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrages</masterLabel>
+            <translation>Verglasung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vol</masterLabel>
+            <translation>Diebstahl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vol (véhicule ou accessoire)</masterLabel>
+            <translation>Diebstahl (Fahrzeug oder Zubehör)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volant Moteur</masterLabel>
+            <translation>Motorschwungrad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant ABS allumé</masterLabel>
+            <translation>ABS-Lampe leuchtet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule embourbé</masterLabel>
+            <translation>Mired Fahrzeug</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vérins</masterLabel>
+            <translation>Winde</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

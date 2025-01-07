@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>VERMIETUNGSAKTIVITÄTEN</help>
+        <label>Aktueller Mieter</label>
+        <lookupFilter>
+            <errorMessage>BITTE MITBEWERBER AUSWÄHLEN</errorMessage>
+        </lookupFilter>
+        <name>LoueurActuel__c</name>
+        <relationshipLabel>Opportunitäten (aktueller Vermieter/Anbieter)</relationshipLabel>
+    </CustomFieldTranslation>

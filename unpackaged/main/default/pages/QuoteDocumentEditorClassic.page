@@ -1,0 +1,13 @@
+<apex:page standardController="Quote">
+    <apex:includeLightning />
+    <div id="frame" />
+    <script>
+        $Lightning.use("c:quoteDocumentEditorApp", function() {
+            $Lightning.createComponent("c:quoteDocumentEditor",
+                { experience: 'classic', sobjectid: '{!Quote}' },
+                "frame",
+                function(cmp) {}
+            );
+        });
+    </script>
+</apex:page>

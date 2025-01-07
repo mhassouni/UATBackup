@@ -1,0 +1,84 @@
+<aura:component controller="OptionsPickerController"
+                implements="flexipage:availableForRecordHome,force:hasRecordId"
+                access="global" >
+    
+    <!-- EVENT HANDLER -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="String" />
+
+    <aura:attribute name="options" type="List" default="[]" />
+    <aura:attribute name="selectedOptions" type="List" default="[]" />
+    <aura:attribute name="selectedOptions_string" type="String" default="" />
+
+    <aura:attribute name="spinner" type="Boolean" default="false" />
+    
+    <!-- Dev =>  Ticket : GFC-1270 -->
+    <aura:attribute name="IsPFAdministrateurSysteme" type="String"  default = "PF Administrateur Système" />
+    <aura:attribute name="IsPFCommercial" type="String"  default = "PF Commercial" />
+    <aura:attribute name="IsPFCommercialInter" type="String"  default = "PF Commercial - Inter" />
+    <aura:attribute name="IsPFManagementCommercial" type="String"  default = "PF Management Commercial" />
+    <aura:attribute name="IsPFManagementCommercialHybrid" type="String"  default = "PF Management Commercial - Hybrid" />
+    <aura:attribute name="IsPFManagementServiceCloud" type="String"  default = "PF Management Service Cloud" />
+    <aura:attribute name="CurrentUser" type="Object"/>
+    <force:recordData recordId="{!$SObjectType.CurrentUser.Id}"
+                      fields="Profile.Name"
+                      targetFields="{!v.CurrentUser}"/>
+    <!-- Dev =>  Ticket : GFC-1270 -->
+    
+    <!-- /ATTRIBUTES -->
+   
+    
+    <!-- CONTENT -->
+    <div class="slds-container--center container slds-box slds-theme_default">
+
+        <!-- SPINNER -->
+        <aura:if isTrue="{!v.spinner}">
+            <lightning:spinner alternativeText="Loading" />
+        </aura:if>
+        <!-- /SPINNER -->
+
+        <div class="picker">
+    <!-- Dev =>  Ticket : GFC-1270 -->
+            <aura:if isTrue="{! (v.CurrentUser.Profile.Name == v.IsPFCommercial)  || 
+                             	(v.CurrentUser.Profile.Name == v.IsPFCommercialInter) ||
+                             	(v.CurrentUser.Profile.Name == v.IsPFManagementCommercial) ||
+                             	(v.CurrentUser.Profile.Name == v.IsPFManagementCommercialHybrid) ||
+                             	(v.CurrentUser.Profile.Name == v.IsPFManagementServiceCloud)
+                             }">
+            	<lightning:dualListbox name="optionsInstallees" label= "Options" max="8"
+                                       sourceLabel="Disponible(s)" selectedLabel="Sélectionnée(s)"
+                                       fieldLevelHelp="Sélectionner les options amovibles"
+                                       options="{!v.options}" value="{!v.selectedOptions}"
+                                       disabled = "true" />
+            	<aura:set attribute="else">
+    				<!-- Dev =>  Ticket : GFC-1270 -->
+                    <lightning:recordEditForm aura:id="assetOptionsForm" objectApiName="Asset" recordId="{!v.recordId}"
+                                            onsubmit="{!c.handleSubmit}" onsuccess="{!c.handleSuccess}" onerror="{!c.handleError}">
+        
+                        <!-- MULTI-SELECT -->
+                        <lightning:dualListbox name="optionsInstallees" label= "Options" max="8"
+                                    sourceLabel="Disponible(s)" selectedLabel="Sélectionnée(s)"
+                                    fieldLevelHelp="Sélectionner les options amovibles"
+                                    options="{!v.options}" value="{!v.selectedOptions}"
+                                    onchange="{!c.handleOptionChange}"/>
+        
+                        <lightning:inputField fieldName="Options__c" value="{!v.selectedOptions_string}" class="slds-hidden"
+                                    variant="label-hidden" />
+                        <!-- /MULTI-SELECT -->
+        
+                        <!-- SUBMIT BUTTON -->
+                        <div class="slds-align_absolute-center">
+                            <lightning:button variant="brand" type="submit" name="enregistrer" label="Enregistrer" />
+                        </div>
+                        <!-- /SUBMIT BUTTON -->
+                	</lightning:recordEditForm>
+            	</aura:set>   
+			</aura:if>
+
+        </div>
+
+    </div>
+	
+</aura:component>

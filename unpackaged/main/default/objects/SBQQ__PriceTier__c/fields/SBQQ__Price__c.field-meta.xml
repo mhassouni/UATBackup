@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Price__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The actual price of this Price Tier. This field will be populated when a new set of Price Schedules are created for a new Order record.</description>
+    <inlineHelpText>Prix actuel de ce niveau de prix. Ce champ est renseigné lors de la création d&#39;un ensemble de barèmes de remise pour un nouvel enregistrement de commande.</inlineHelpText>
+    <label>Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>7</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

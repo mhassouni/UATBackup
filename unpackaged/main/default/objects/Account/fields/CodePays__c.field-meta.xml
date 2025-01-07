@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CodePays__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    BEGINS(TEXT(PaysRegionPF__c), &quot;DRO&quot;), 
+    &#39;FR&#39;,
+    IF(
+        BEGINS(TEXT(PaysRegionPF__c), &quot;STFR&quot;),
+        &#39;FR&#39;,
+        CASE(
+            TEXT(PaysRegionPF__c),
+            &#39;PFUK&#39;, &#39;GB&#39;,
+            &#39;PIRL&#39;, &#39;IE&#39;,
+            &#39;PIMA&#39;, &#39;MA&#39;,
+            &#39;PITA&#39;, &#39;IT&#39;,
+            &#39;PIND&#39;, &#39;NL&#39;,
+            &#39;PIAT&#39;, &#39;AT&#39;,
+            &#39;PIPL&#39;, &#39;PL&#39;,
+            &#39;PIPT&#39;, &#39;PT&#39;,
+            &#39;PILU&#39;, &#39;LU&#39;,
+            &#39;PIES&#39;, &#39;ES&#39;,
+            &#39;PIDE&#39;, &#39;DE&#39;,
+            &#39;PIBE&#39;, &#39;BE&#39;,
+            &#39;PICZ&#39;, &#39;SK&#39;,
+            &#39;PICH&#39;, &#39;CH&#39;,
+            &#39;PIAE&#39;, &#39;AE&#39;,
+            &#39;PIBU&#39;, &#39;BU&#39;,
+            &#39;PIZA&#39;, &#39;ZA&#39;,
+
+
+            &#39;-&#39;
+        )
+    )
+)</formula>
+    <label>CodePays</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

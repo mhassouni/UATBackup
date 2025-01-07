@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>blng__PeriodTreatmentForBTDO__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Uniquement lorsqu’un prod. commandé a une valeur Date fin fact. rempl. pendant un cycle de factu. Combinez une pér. de factu. part. avec la pér. compl. précé. lors de la création d&#39;une ligne de fact. ou laissez la pér. part. comme ligne de fact. distincte</inlineHelpText>
+    <label>Period Treatment for BTDO</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>blng__PeriodTreatmentForBTDO</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entite__c</fullName>
+    <description>Variable récupérée du contact qui a remplit l&#39;enquête.  Nécessaire dans le flow pour la création et l&#39;affection des tâches de suivi</description>
+    <externalId>false</externalId>
+    <label>Entité</label>
+    <length>10</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

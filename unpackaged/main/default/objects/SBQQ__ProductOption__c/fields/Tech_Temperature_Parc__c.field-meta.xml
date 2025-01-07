@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Temperature_Parc__c</fullName>
+    <formula>Text(CurrencyIsoCode) = &quot;Euro&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech Temperature Parc</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

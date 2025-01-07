@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commandes_Confirmees</fullName>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>ORDERS.TYPE</columns>
+    <columns>Icon_commande__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Commande à Traiter</value>
+    </filters>
+    <label>Container - Commande à traiter</label>
+</ListView>

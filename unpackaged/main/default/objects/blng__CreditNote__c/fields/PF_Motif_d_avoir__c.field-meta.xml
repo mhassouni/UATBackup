@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Motif_d_avoir__c</fullName>
+    <description>This field has been created to capture the reason why a credit note has been given</description>
+    <label>Motif d&#39;avoir</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Avoir Retour contractuel</fullName>
+                <default>false</default>
+                <label>Avoir Retour contractuel</label>
+            </value>
+            <value>
+                <fullName>Geste Commercial</fullName>
+                <default>false</default>
+                <label>Geste Commercial</label>
+            </value>
+            <value>
+                <fullName>N° de compte / libellé clients</fullName>
+                <default>false</default>
+                <label>N° de compte / libellé clients</label>
+            </value>
+            <value>
+                <fullName>Litige Commercial</fullName>
+                <default>false</default>
+                <label>Litige Commercial</label>
+            </value>
+            <value>
+                <fullName>RFA</fullName>
+                <default>false</default>
+                <label>RFA</label>
+            </value>
+            <value>
+                <fullName>Interne</fullName>
+                <default>false</default>
+                <label>Interne</label>
+            </value>
+            <value>
+                <fullName>Erreur Exploitation</fullName>
+                <default>false</default>
+                <label>Erreur Exploitation</label>
+            </value>
+            <value>
+                <fullName>Automatique</fullName>
+                <default>false</default>
+                <label>Automatique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Présentation Carte Grise</layout>
+        <sections>
+            <label><!-- Carte grise --></label>
+            <section>Carte grise</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicule --></label>
+            <section>Vehicule</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Carte Grise - Community</layout>
+        <sections>
+            <label><!-- Carte grise --></label>
+            <section>Carte grise</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicule --></label>
+            <section>Vehicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro de Carte Grise --></nameFieldLabel>
+    <webLinks>
+        <label><!-- T_l_charger_carte_grise --></label>
+        <name>T_l_charger_carte_grise</name>
+    </webLinks>
+</CustomObjectTranslation>

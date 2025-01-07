@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Direction_Contrat_Assemblage_Signe_v2</fullName>
+        <description>Email Direction Contrat Assemblage Signé v2</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Assemblage_Signature</recipient>
+            <type>group</type>
+        </recipients>
+        
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Approval/Contrat_signe</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Contrat_Sign_Docusign</fullName>
+        <description>Si le champ Date de signature du client est complété alors basculer le statut en Contrat Signé</description>
+        <field>Status</field>
+        <literalValue>Contrat Signé</literalValue>
+        <name>Contrat Signé Docusign</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Checkbox</fullName>
+        <field>TechTerminated__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Statut_Terminated</fullName>
+        <field>Status</field>
+        <literalValue>Contrat Résilié</literalValue>
+        <name>Update Statut = Terminated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Waiting_For_Approval</fullName>
+        <field>Status</field>
+        <literalValue>En attente d&#39;approbation</literalValue>
+        <name>Waiting For Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contrat - Signature Client</fullName>
+        <actions>
+            <name>Contrat_Sign_Docusign</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.CustomerSignedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Si la date de signature est rempli alors le statut du contrat passe en contrat signé</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

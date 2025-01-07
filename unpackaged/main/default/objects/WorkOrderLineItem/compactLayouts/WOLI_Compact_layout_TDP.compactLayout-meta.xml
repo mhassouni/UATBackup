@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOLI_Compact_layout_TDP</fullName>
+    <fields>LineItemNumber</fields>
+    <fields>Nom_de_la_Mission__c</fields>
+    <fields>Status</fields>
+    <fields>AssetId</fields>
+    <fields>Parc_Intervention__c</fields>
+    <fields>Parc_Relais__c</fields>
+    <label>WOLI Compact layout - TDP</label>
+</CompactLayout>

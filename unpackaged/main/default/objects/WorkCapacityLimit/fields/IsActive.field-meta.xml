@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsActive</fullName>
+    <inlineHelpText>Saisissez l&#39;enregistrement, puis activez-le. Vous ne pouvez pas mettre à jour des champs dans un enregistrement actif.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

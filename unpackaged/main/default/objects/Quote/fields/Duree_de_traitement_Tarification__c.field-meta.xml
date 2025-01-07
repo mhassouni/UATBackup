@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_de_traitement_Tarification__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(NOT(ISBLANK(EnAttenteLecapitaineEntarification_Stamp__c )),
+((EnAttenteLecapitaineEntarification_Stamp__c-EnAttenteDDT_Stamp__c)+(DevisTarife_Stamp__c-EnAttenteDDT2_Stamp__c))*24 ,
+(( EnAttenteServiceProduit_Stamp__c-EnAttenteDDT_Stamp__c)+(DevisTarife_Stamp__c-EnAttenteDDT2_Stamp__c))*24)</formula>
+    <label>Durée de traitement Tarification</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

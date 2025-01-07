@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Image__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				Rollup_Discount_QLG_Manager__c &gt;=1,
+				IMAGE(&quot;/resource/1649153114000/CircleRed&quot;, &quot;Red&quot; , 20, 20) &amp;&quot; &quot;&amp; &quot;Approbation Directeur&quot;,
+				IF(
+								 Approval_required__c = TRUE,
+								IMAGE(&quot;/resource/1649153081000/CircleOrange?&quot;, &quot;Orange&quot; , 20, 20) &amp;&quot; &quot;&amp; &quot;Approbation Manager&quot;,
+								IMAGE(&quot;/resource/1649153059000/CircleGreen?&quot;, &quot;Orange&quot; , 20, 20) &amp;&quot; &quot;&amp; &quot;Pas d&#39;approbation&quot;
+								
+								
+				))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Approbation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

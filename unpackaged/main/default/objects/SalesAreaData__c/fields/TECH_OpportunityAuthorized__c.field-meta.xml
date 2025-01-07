@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_OpportunityAuthorized__c</fullName>
+    <formula>AND(
+Account__r.RecordType.DeveloperName &lt;&gt; &#39;Particulier_B2C&#39;,
+OR(
+ISPICKVAL(Account__r.Statut_du_grade__c, &#39;Processed&#39;),
+ISPICKVAL(Account__r.Statut_du_grade__c, &#39;Error&#39;),
+AND(
+ISPICKVAL(Account__r.Statut_du_grade__c,&#39;&#39;),
+OR(
+ISPICKVAL( Account__r.Statut__c, &#39;Validé&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé DC&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé CM&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Attente Validation CM&#39;)
+)
+)
+),
+
+OR(
+AND(
+Account__r.CotationPF__c &lt;= 9,
+Account__r.CotationPF__c &gt;= 1,
+OR(
+ISPICKVAL( Account__r.Statut__c, &#39;Validé&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé DC&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé CM&#39; )
+)
+),
+AND(
+Account__r.CotationPF__c = 10,
+OR(
+ISPICKVAL( Account__r.Statut__c, &#39;Validé&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé DC&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé CM&#39; )
+)
+),
+AND(
+Account__r.CotationPF__c &lt; 1,
+OR(
+ISPICKVAL( Account__r.Statut__c, &#39;Validé&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé DC&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;Validé CM&#39; ),
+ISPICKVAL( Account__r.Statut__c, &#39;En attente analyse CM&#39;)
+)
+),
+ISBLANK(Account__r.CotationPF__c)
+)
+)</formula>
+    <label>TECH_OpportunityAuthorized</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Sortiment</label>
+        <name>Gamme__c</name>
+        <picklistValues>
+            <masterLabel>Brasseurs</masterLabel>
+            <translation><!-- Brasseurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environnement</masterLabel>
+            <translation><!-- Environnement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Froid</masterLabel>
+            <translation>Kalt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation>Hygiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sec</masterLabel>
+            <translation>Trocken</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

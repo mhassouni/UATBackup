@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR01_InvolvedStakeholder_PayerReadOnly</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+!$Setup.Bypass__c.BypassValidationRules__c,
+ISPICKVAL(Role__c, &#39;Payeur&#39;),
+InvolvedAccount__c &lt;&gt; Opportunity__r.AccountId,
+ischanged(InvolvedAccount__c)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>BP_Conforme_checkbox__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier le compte payeur sur cette opportunité. Pour utiliser ce compte en tant que payeur, créez une nouvelle opportunité sur ce compte.</errorMessage>
+</ValidationRule>

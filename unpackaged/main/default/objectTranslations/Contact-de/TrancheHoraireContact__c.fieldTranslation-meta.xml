@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>IDEALER ZEITSPANE FÜR KONTAKTAUFNAHME</label>
+        <name>TrancheHoraireContact__c</name>
+        <picklistValues>
+            <masterLabel>Après-midi</masterLabel>
+            <translation>Nachmittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Début de Matinée</masterLabel>
+            <translation>Morgen in der Früh</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de Matinée</masterLabel>
+            <translation>Ende des Vormittags</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indifférent</masterLabel>
+            <translation>Unerheblich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midi</masterLabel>
+            <translation>Mittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soirée</masterLabel>
+            <translation>Abend</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

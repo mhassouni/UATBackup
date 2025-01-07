@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Cuenta</label>
+        <lookupFilter>
+            <errorMessage>La cuenta elegidatiene que ser una cuenta cliente potencial / cliente</errorMessage>
+        </lookupFilter>
+        <name>Compte__c</name>
+        <relationshipLabel>Asociaciones</relationshipLabel>
+    </CustomFieldTranslation>

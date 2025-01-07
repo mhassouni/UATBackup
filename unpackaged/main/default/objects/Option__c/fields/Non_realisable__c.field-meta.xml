@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_realisable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>GFC-478</description>
+    <label>Non réalisable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

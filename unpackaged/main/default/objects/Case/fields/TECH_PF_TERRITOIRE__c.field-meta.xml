@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_PF_TERRITOIRE__c</fullName>
+    <description>Vrai si le territoire de l&#39;agence intervenante et agence prope!étaire de la requête est inclus dans les territoire de l&#39;utilsateur</description>
+    <formula>IF 
+(
+OR(
+AND(Contains( $User.PF_Territoire__c , text(Agence_Intervenante__r.Territoire__c) ),NOT(ISBLANK(Agence_Intervenante__c)),NOT(ISBLANK($User.PF_Territoire__c))),
+AND(Contains( $User.PF_Territoire__c , text( Agence_proprietaire__r.Territoire__c ) ),NOT(ISBLANK( Agence_proprietaire__c )),NOT(ISBLANK($User.PF_Territoire__c))) 
+), 
+TRUE 
+, 
+FALSE 
+)</formula>
+    <label>TECH_PF_TERRITOIRE</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

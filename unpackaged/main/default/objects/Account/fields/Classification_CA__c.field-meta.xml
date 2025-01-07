@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_CA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ClassificationCA_K1__c &gt;=1,&quot;K1&quot;,IF(ClassificationCA_K2__c &gt;=1,&quot;K2&quot;,IF(ClassificationCA_K3__c &gt;=1,&quot;K3&quot;,IF(ClassificationCA_K__c &gt;=1,&quot;K&quot;,IF(ClassificationCA_M__c &gt;=1, &quot;M&quot;,IF(ClassificationCA_S__c&gt;=1,&quot;S&quot;,&quot;&quot;))))))</formula>
+    <label>Classification - CA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatutWorkflowCommerce__c</fullName>
+    <label>Statut Workflow Commerce</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Soumis pour analyse</fullName>
+                <default>false</default>
+                <label>Soumis pour analyse</label>
+            </value>
+            <value>
+                <fullName>Analyse en cours</fullName>
+                <default>false</default>
+                <label>Analyse en cours</label>
+            </value>
+            <value>
+                <fullName>Soumis pour chiffrage à LC</fullName>
+                <default>false</default>
+                <label>Soumis pour chiffrage à LC</label>
+            </value>
+            <value>
+                <fullName>Soumis pour chiffrage au SP</fullName>
+                <default>false</default>
+                <label>Soumis pour chiffrage au SP</label>
+            </value>
+            <value>
+                <fullName>Chiffrage en cours</fullName>
+                <default>false</default>
+                <label>Chiffrage en cours</label>
+            </value>
+            <value>
+                <fullName>Tarification soumise</fullName>
+                <default>false</default>
+                <label>Tarification soumise</label>
+            </value>
+            <value>
+                <fullName>Fermé</fullName>
+                <default>false</default>
+                <label>Fermé</label>
+            </value>
+            <value>
+                <fullName>Sélection du tarif en cours</fullName>
+                <default>false</default>
+                <label>Sélection du tarif en cours</label>
+            </value>
+            <value>
+                <fullName>Validé</fullName>
+                <default>false</default>
+                <label>Validé</label>
+            </value>
+            <value>
+                <fullName>En cours sauvegardé</fullName>
+                <default>false</default>
+                <label>En cours sauvegardé</label>
+            </value>
+            <value>
+                <fullName>Soumis pour tarification</fullName>
+                <default>false</default>
+                <label>Soumis pour tarification</label>
+            </value>
+            <value>
+                <fullName>Tarification en cours</fullName>
+                <default>false</default>
+                <label>Tarification en cours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

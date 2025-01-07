@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relations</value>
+    </caseValues>
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Relation</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Les champs obligatoires doivent être remplis. --></errorMessage>
+        <name>REL_VR01_RequiredImport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Un contact devenu « Inactif » ne peut plus être associé à d’autres contacts. --></errorMessage>
+        <name>REL_VR03_ContactInactif</name>
+    </validationRules>
+</CustomObjectTranslation>

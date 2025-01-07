@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_Plateforme__c</fullName>
+    <label>Plateforme (Type + Profondeur)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACIER/ALU 1500 mm</fullName>
+                <default>false</default>
+                <label>ACIER/ALU 1500 mm</label>
+            </value>
+            <value>
+                <fullName>ACIER/ALU 1700 mm</fullName>
+                <default>false</default>
+                <label>ACIER/ALU 1700 mm</label>
+            </value>
+            <value>
+                <fullName>ACIER/ALU 1800 mm</fullName>
+                <default>false</default>
+                <label>ACIER/ALU 1800 mm</label>
+            </value>
+            <value>
+                <fullName>ALU/ALU 1500 mm</fullName>
+                <default>false</default>
+                <label>ALU/ALU 1500 mm</label>
+            </value>
+            <value>
+                <fullName>ALU/ALU 1700 mm</fullName>
+                <default>false</default>
+                <label>ALU/ALU 1700 mm</label>
+            </value>
+            <value>
+                <fullName>ALU/ALU 1800 mm</fullName>
+                <default>false</default>
+                <label>ALU/ALU 1800 mm</label>
+            </value>
+            <value>
+                <fullName>ALU 1250 mm</fullName>
+                <default>false</default>
+                <label>ALU 1250 mm</label>
+            </value>
+            <value>
+                <fullName>ALU 1300 mm (Fourgon)</fullName>
+                <default>false</default>
+                <label>ALU 1300 mm (Fourgon)</label>
+            </value>
+            <value>
+                <fullName>ALU 1450 mm</fullName>
+                <default>false</default>
+                <label>ALU 1450 mm</label>
+            </value>
+            <value>
+                <fullName>ALU 1550 mm  (Fourgon)</fullName>
+                <default>false</default>
+                <label>ALU 1550 mm  (Fourgon)</label>
+            </value>
+            <value>
+                <fullName>ALU 1600 mm</fullName>
+                <default>false</default>
+                <label>ALU 1600 mm</label>
+            </value>
+            <value>
+                <fullName>ALU 1700 mm</fullName>
+                <default>false</default>
+                <label>ALU 1700 mm</label>
+            </value>
+            <value>
+                <fullName>ALU 1800 mm</fullName>
+                <default>false</default>
+                <label>ALU 1800 mm</label>
+            </value>
+            <value>
+                <fullName>FERMETURE TOTALE</fullName>
+                <default>false</default>
+                <label>FERMETURE TOTALE</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME 1600 mm (classe A)</fullName>
+                <default>false</default>
+                <label>ISOTHERME 1600 mm (classe A)</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir Aménagement HAYON</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir Aménagement HAYON</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

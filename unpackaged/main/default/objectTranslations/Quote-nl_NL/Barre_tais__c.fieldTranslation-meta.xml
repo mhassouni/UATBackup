@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Grijpstang</label>
+        <name>Barre_tais__c</name>
+        <picklistValues>
+            <masterLabel>Horizontale</masterLabel>
+            <translation><!-- Horizontale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verticale</masterLabel>
+            <translation><!-- Verticale --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

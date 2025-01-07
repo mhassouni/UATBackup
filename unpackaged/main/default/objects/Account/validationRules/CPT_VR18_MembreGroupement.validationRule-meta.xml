@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR18_MembreGroupement</fullName>
+    <active>false</active>
+    <description>Evol 7</description>
+    <errorConditionFormula>AND( EstMembreGroupement__c, ISBLANK (GroupementAssocie__c), $Setup.Bypass__c.BypassValidationRules__c = false )</errorConditionFormula>
+    <errorMessage>Il faut choisir un groupement si ce compte est membre d&#39;un groupement.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type</fullName>
+    <inlineHelpText>Basé sur le calendrier définit un schéma de récurrence, par exemple une planification le premier lundi de chaque mois. Basé sur des critères sélectionne un critère de filtrage de recordset qui définit des conditions, par exemple si la température du moteur dépasse 90° ou le kilométrage dépasse 16 000 km.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

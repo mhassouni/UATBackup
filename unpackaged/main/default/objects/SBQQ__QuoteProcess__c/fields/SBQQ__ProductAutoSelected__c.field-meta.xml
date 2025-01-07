@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__ProductAutoSelected__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that determines if product is auto selected if it&#39;s the only one returned by a search.</description>
+    <inlineHelpText>Sélectionnez cette case pour sélectionner automatiquement le produit lorsqu&#39;il est le seul élément renvoyé dans une recherche.</inlineHelpText>
+    <label>Auto Select Product?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

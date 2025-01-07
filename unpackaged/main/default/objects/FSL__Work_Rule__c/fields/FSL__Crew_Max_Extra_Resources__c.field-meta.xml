@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__Crew_Max_Extra_Resources__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Saisissez une valeur si vous souhaitez limiter le nombre de ressources de service supplémentaires qui peuvent être ajoutées à l’équipe. Laissez vide si n’importe quel nombre de ressources de service peut être ajouté.</inlineHelpText>
+    <label>Maximum Additional Service Resources</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

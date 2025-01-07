@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R_capitulatif_opportunit</fullName>
+    <booleanFilter>1 AND 2 and 3 and 4 and 5 and 6</booleanFilter>
+    <columns>DNP_Date_Approbation__c</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Quantite__c</columns>
+    <columns>TypeProduit__c</columns>
+    <columns>CodePF__c</columns>
+    <columns>RYF__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Kilometrage__c</columns>
+    <columns>DureeContrat__c</columns>
+    <columns>Prix_du_Km_supplementaire__c</columns>
+    <columns>Nombre_de_mois_de_caution__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>contains</operation>
+        <value>5 - Gagnée,6 - Contrat signé</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>RYF__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>Approuvée</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PITA</value>
+    </filters>
+    <filters>
+        <field>CodePF__c</field>
+        <operation>contains</operation>
+        <value>MRCF E</value>
+    </filters>
+    <label>Opportunity validated head office</label>
+</ListView>

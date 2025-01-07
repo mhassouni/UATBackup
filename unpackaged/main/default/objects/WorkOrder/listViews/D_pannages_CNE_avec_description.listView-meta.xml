@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_pannages_CNE_avec_description</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Agence_parc__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Asset</columns>
+    <columns>Account</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>type_OE__c</columns>
+    <columns>Origine__c</columns>
+    <columns>Anomalie__c</columns>
+    <columns>Ressource_Interne__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ressource_Interne__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours,Terminé,Annulé,Provisoire,Non abouti</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Dépannages CNE avec description</label>
+    <sharedTo>
+        <group>GroupePartage_PIBE</group>
+    </sharedTo>
+</ListView>

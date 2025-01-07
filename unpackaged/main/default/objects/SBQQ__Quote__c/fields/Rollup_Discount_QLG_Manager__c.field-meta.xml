@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rollup_Discount_QLG_Manager__c</fullName>
+    <description>Rollup technique pour approval process des discounts supérieurs à 10%.</description>
+    <label>Rollup Discount QLG Manager</label>
+    <summaryFilterItems>
+        <field>SBQQ__QuoteLineGroup__c.QLGAverageCustomerDiscount__c</field>
+        <operation>greaterThan</operation>
+        <value>10</value>
+    </summaryFilterItems>
+    <summaryForeignKey>SBQQ__QuoteLineGroup__c.SBQQ__Quote__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

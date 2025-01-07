@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNP_traiter</fullName>
+    <booleanFilter>(1 AND 2 AND 4 AND (5 or 3)) or (1 AND 2 AND 7 AND 6 AND (5 or 3))</booleanFilter>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>Dnp_Date_d_approbation__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>QUOTE.NAME</columns>
+    <columns>Origine_du_produit__c</columns>
+    <columns>N_Parc__c</columns>
+    <columns>Parc_renouvele__c</columns>
+    <columns>Parc_pressenti__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>Agence_PF__c</columns>
+    <columns>Type_de_produit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Commande_fournisseur</value>
+    </filters>
+    <filters>
+        <field>Dnp_Statut__c</field>
+        <operation>equals</operation>
+        <value>Approuvée</value>
+    </filters>
+    <filters>
+        <field>Statut_de_l_opportunit__c</field>
+        <operation>equals</operation>
+        <value>5 - Gagnée</value>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée</value>
+    </filters>
+    <filters>
+        <field>Statut_de_l_opportunit__c</field>
+        <operation>equals</operation>
+        <value>6 - Contrat signé</value>
+    </filters>
+    <filters>
+        <field>N_Parc__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Draft,Activé,Créée,Confirmée,En cours Flux Amonts,En cours Lecapitaine,Traitée,Confirmé,Commande traitée</value>
+    </filters>
+    <label>1 - DNP à traiter</label>
+    <sharedTo>
+        <role>AG_Flux_Amont</role>
+        <role>DirectionGenerale</role>
+    </sharedTo>
+</ListView>

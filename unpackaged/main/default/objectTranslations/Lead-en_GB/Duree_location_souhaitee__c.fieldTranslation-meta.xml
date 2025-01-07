@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Wished rental time</label>
+        <name>Duree_location_souhaitee__c</name>
+        <picklistValues>
+            <masterLabel>1 à 11 mois</masterLabel>
+            <translation>1 to 11 Months</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 à 30 jours</masterLabel>
+            <translation>1 to 30 days</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 12 mois</masterLabel>
+            <translation>1 to 12 Months</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 25 jours</masterLabel>
+            <translation>1 to 25 Days</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue durée</masterLabel>
+            <translation>Long duration</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 12 mois</masterLabel>
+            <translation>More than 12 Months</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

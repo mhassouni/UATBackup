@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_quality_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Data quality</label>
+    <queue>Data_quality</queue>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

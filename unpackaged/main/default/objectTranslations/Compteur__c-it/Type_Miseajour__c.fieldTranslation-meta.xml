@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo di aggiornamento</label>
+        <name>Type_Miseajour__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Otra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de mois</masterLabel>
+            <translation>Km a fine mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Géolocalisation</masterLabel>
+            <translation><!-- Géolocalisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mouvement</masterLabel>
+            <translation>Movimento Igloo</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

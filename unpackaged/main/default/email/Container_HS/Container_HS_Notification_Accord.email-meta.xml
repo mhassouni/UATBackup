@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Container_HS_Notification_Accord</name>
+    <style>none</style>
+    <subject>Besoin Hors Standard {!SBQQ__Quote__c.Account_Name__c} accordé</subject>
+    <textOnly>Bonjour {!SBQQ__Quote__c.OwnerFullName},
+
+Le besoin Hors Standard pour le client {!SBQQ__Quote__c.Account_Name__c} n’a pas été accordée.
+
+Pour en découvrir les raisons, merci de cliquer sur le lien ci-dessous :
+
+Lien devis
+
+Merci</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,48 @@
+<apex:page standardcontroller="Quote" extensions="CatalogueController" lightningStylesheets="true">
+
+    <apex:form >
+       
+       <div >
+        <apex:pageMessage rendered="{!DisplayErrorDM}" summary="{!$Label.Catalogue_DisplayErrorDM}" title="{!$Label.Catalogue_DisplayErrorDM_title}" severity="warning" strength="3" />
+        <apex:pageMessage rendered="{!DisplayInfo}" summary="{!$Label.Catalogue_DisplayInfo}" severity="info" strength="3" />
+        <apex:pageMessage rendered="{!DisplayNotFound}" summary="{!$Label.Catalogue_DisplayNotFound}" severity="warning" strength="3" />
+        <apex:pageMessage rendered="{!DisplayCreated}" summary="{!$Label.Catalogue_DisplayCreated}" severity="confirm" strength="3" />
+        <apex:pageMessage rendered="{!DisplayError}" summary="{!$Label.Catalogue_DisplayError}" severity="error" strength="3" />
+        <apex:pageMessage rendered="{!DisplayNotAllowed}" summary="{!$Label.Catalogue_DisplayNotAllowed}" severity="error" strength="3" />
+		<apex:pageMessage rendered="{!CatalogueNotAllowed}" summary="{!$Label.Catalogue_CatalogueNotAllowed}" severity="error" strength="3" />
+
+        
+        </div>
+        
+        <apex:pageBlock >
+         
+            
+            <span>{!$Label.Catalogue_Label_CodePays} :  </span> <apex:selectList size="1" value="{!CodePaysParam}" > 
+            <apex:selectOptions value="{!CODEPAYSValues}"/>  
+            </apex:selectList> 
+            <br/><br/>
+            <span>{!$Label.Catalogue_Label_CataloguePF} : </span> <apex:selectList size="1" value="{!CatalogueParam}"> 
+            <apex:selectOptions value="{!CATALOGUEValues}"/>  
+            </apex:selectList>
+            <br/><br/>
+            <span>{!$Label.Catalogue_Label_CodePF} :    </span><apex:selectList size="1" value="{!CodePFParam}"> 
+            <apex:selectOptions value="{!CODEPFValues}"/>  
+            </apex:selectList>
+            <br/><br/>
+            <span>{!$Label.Catalogue_Label_StandardPF} : </span><apex:selectList size="1" value="{!StandardPFParam}"> 
+            <apex:selectOptions value="{!STANDARDPFValues}"/>  
+            </apex:selectList>
+            
+            </apex:pageBlock>
+             
+            <div >
+       <center><apex:commandButton value="Chercher" action="{!SearchCatalogue}" /></center> 
+            <apex:param name="CodePaysParamName" value="{!currentQuote.Code_Pays_FlowInput__c}" assignTo="{!CodePaysParam}"/>
+             <apex:param name="CodePFParamName" value="{!currentQuote.Code_PF_FlowInput__c}" assignTo="{!CodePFParam}"/>
+             <apex:param name="StandardPFParamName" value="{!currentQuote.Standard_PF_FlowInput__c}" assignTo="{!StandardPFParam}"/>
+            <apex:param name="CatalogueParamName" value="{!currentQuote.Catalogue_FlowInput__c}" assignTo="{!CatalogueParam}"/>
+        </div>
+            
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>STRICHER_NOUVELLE_DDT_A_TRAITER</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>Date_Heure_Demande_de_tarification__c</columns>
+    <columns>QUOTE.RECORDTYPE</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>QUOTE.NAME</columns>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>Statut_de_la_demande__c</columns>
+    <columns>Statut_compte__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Code_PF__c</columns>
+    <columns>Somme_PAT__c</columns>
+    <columns>CreatedBy</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>Service_tarification__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>A Tarifer</value>
+    </filters>
+    <filters>
+        <field>Statut_de_la_demande__c</field>
+        <operation>equals</operation>
+        <value>WAITING DDT</value>
+    </filters>
+    <filters>
+        <field>Service_tarification__c</field>
+        <operation>contains</operation>
+        <value>STRICHER</value>
+    </filters>
+    <filters>
+        <field>Somme_PAT__c</field>
+        <operation>equals</operation>
+        <value>EUR 0</value>
+    </filters>
+    <label>STRICHER - NOUVELLE DDT A TRAITER</label>
+</ListView>

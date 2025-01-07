@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marque_Modele_Chassis__c</fullName>
+    <label>Marque /  Modèle (Châssis)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AUTRE -  voir Equipements chassis</fullName>
+                <default>false</default>
+                <label>AUTRE -  voir Equipements chassis</label>
+            </value>
+            <value>
+                <fullName>CHEREAU / REMORQUE</fullName>
+                <default>false</default>
+                <label>CHEREAU / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>CHEREAU / SEMIREMORQUE</fullName>
+                <default>false</default>
+                <label>CHEREAU / SEMIREMORQUE</label>
+            </value>
+            <value>
+                <fullName>CITROEN / BERLINGO</fullName>
+                <default>false</default>
+                <label>CITROEN / BERLINGO</label>
+            </value>
+            <value>
+                <fullName>CITROEN / E-JUMPY</fullName>
+                <default>false</default>
+                <label>CITROEN / E-JUMPY</label>
+            </value>
+            <value>
+                <fullName>CITROEN / JUMPER</fullName>
+                <default>false</default>
+                <label>CITROEN / JUMPER</label>
+            </value>
+            <value>
+                <fullName>CITROEN / JUMPY</fullName>
+                <default>false</default>
+                <label>CITROEN / JUMPY</label>
+            </value>
+            <value>
+                <fullName>DAF / CF</fullName>
+                <default>false</default>
+                <label>DAF / CF</label>
+            </value>
+            <value>
+                <fullName>DAF / LF</fullName>
+                <default>false</default>
+                <label>DAF / LF</label>
+            </value>
+            <value>
+                <fullName>DAF / XF</fullName>
+                <default>false</default>
+                <label>DAF / XF</label>
+            </value>
+            <value>
+                <fullName>FIAT / DOBLO</fullName>
+                <default>false</default>
+                <label>FIAT / DOBLO</label>
+            </value>
+            <value>
+                <fullName>FIAT / DUCATO</fullName>
+                <default>false</default>
+                <label>FIAT / DUCATO</label>
+            </value>
+            <value>
+                <fullName>FIAT / FIORINO</fullName>
+                <default>false</default>
+                <label>FIAT / FIORINO</label>
+            </value>
+            <value>
+                <fullName>FIAT / TALENTO</fullName>
+                <default>false</default>
+                <label>FIAT / TALENTO</label>
+            </value>
+            <value>
+                <fullName>FORD / TRANSIT</fullName>
+                <default>false</default>
+                <label>FORD / TRANSIT</label>
+            </value>
+            <value>
+                <fullName>FORD / TRANSIT CONNECT</fullName>
+                <default>false</default>
+                <label>FORD / TRANSIT CONNECT</label>
+            </value>
+            <value>
+                <fullName>FORD / TRANSIT CUSTOM</fullName>
+                <default>false</default>
+                <label>FORD / TRANSIT CUSTOM</label>
+            </value>
+            <value>
+                <fullName>FRAPPA / REMORQUE</fullName>
+                <default>false</default>
+                <label>FRAPPA / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>FRAPPA / SEMI</fullName>
+                <default>false</default>
+                <label>FRAPPA / SEMI</label>
+            </value>
+            <value>
+                <fullName>FRAPPA / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>FRAPPA / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>FREEGONES / TRICYCLE</fullName>
+                <default>false</default>
+                <label>FREEGONES / TRICYCLE</label>
+            </value>
+            <value>
+                <fullName>FREIGHTLINER / M2-106</fullName>
+                <default>false</default>
+                <label>FREIGHTLINER / M2-106</label>
+            </value>
+            <value>
+                <fullName>FREIGHTLINER / M2-112</fullName>
+                <default>false</default>
+                <label>FREIGHTLINER / M2-112</label>
+            </value>
+            <value>
+                <fullName>FREIGHTLINER / SPRINTER</fullName>
+                <default>false</default>
+                <label>FREIGHTLINER / SPRINTER</label>
+            </value>
+            <value>
+                <fullName>FRUEHAUF / REM</fullName>
+                <default>false</default>
+                <label>FRUEHAUF / REM</label>
+            </value>
+            <value>
+                <fullName>FRUEHAUF / REMORQUE</fullName>
+                <default>false</default>
+                <label>FRUEHAUF / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>FRUEHAUF / SEMI</fullName>
+                <default>false</default>
+                <label>FRUEHAUF / SEMI</label>
+            </value>
+            <value>
+                <fullName>FRUEHAUF / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>FRUEHAUF / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>FRUEHAUF / TRAILER</fullName>
+                <default>false</default>
+                <label>FRUEHAUF / TRAILER</label>
+            </value>
+            <value>
+                <fullName>FUSO / CANTER</fullName>
+                <default>false</default>
+                <label>FUSO / CANTER</label>
+            </value>
+            <value>
+                <fullName>FUSO / E-CANTER</fullName>
+                <default>false</default>
+                <label>FUSO / E-CANTER</label>
+            </value>
+            <value>
+                <fullName>GOUPIL / G</fullName>
+                <default>false</default>
+                <label>GOUPIL / G</label>
+            </value>
+            <value>
+                <fullName>GOUPIL / G4</fullName>
+                <default>false</default>
+                <label>GOUPIL / G4</label>
+            </value>
+            <value>
+                <fullName>GOUPIL / G5</fullName>
+                <default>false</default>
+                <label>GOUPIL / G5</label>
+            </value>
+            <value>
+                <fullName>GOUPIL / G6</fullName>
+                <default>false</default>
+                <label>GOUPIL / G6</label>
+            </value>
+            <value>
+                <fullName>GROSSE EQUIPEMENT / REMORQUE</fullName>
+                <default>false</default>
+                <label>GROSSE EQUIPEMENT / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>GROSSE EQUIPEMENT / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>GROSSE EQUIPEMENT / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>HINO / L6</fullName>
+                <default>false</default>
+                <label>HINO / L6</label>
+            </value>
+            <value>
+                <fullName>HINO / L7</fullName>
+                <default>false</default>
+                <label>HINO / L7</label>
+            </value>
+            <value>
+                <fullName>HINO / M4</fullName>
+                <default>false</default>
+                <label>HINO / M4</label>
+            </value>
+            <value>
+                <fullName>HINO / M5</fullName>
+                <default>false</default>
+                <label>HINO / M5</label>
+            </value>
+            <value>
+                <fullName>HINO / SERIES 300</fullName>
+                <default>false</default>
+                <label>HINO / SERIES 300</label>
+            </value>
+            <value>
+                <fullName>HINO / SERIES 500</fullName>
+                <default>false</default>
+                <label>HINO / SERIES 500</label>
+            </value>
+            <value>
+                <fullName>HINO / SERIES 600</fullName>
+                <default>false</default>
+                <label>HINO / SERIES 600</label>
+            </value>
+            <value>
+                <fullName>HINO / SERIES 700</fullName>
+                <default>false</default>
+                <label>HINO / SERIES 700</label>
+            </value>
+            <value>
+                <fullName>HINO / XL7</fullName>
+                <default>false</default>
+                <label>HINO / XL7</label>
+            </value>
+            <value>
+                <fullName>HINO / XL8</fullName>
+                <default>false</default>
+                <label>HINO / XL8</label>
+            </value>
+            <value>
+                <fullName>HYUNDAI / H100</fullName>
+                <default>false</default>
+                <label>HYUNDAI / H100</label>
+            </value>
+            <value>
+                <fullName>HYUNDAI / HYUNDAI</fullName>
+                <default>false</default>
+                <label>HYUNDAI / HYUNDAI</label>
+            </value>
+            <value>
+                <fullName>ISUZU / F11</fullName>
+                <default>false</default>
+                <label>ISUZU / F11</label>
+            </value>
+            <value>
+                <fullName>ISUZU / F14</fullName>
+                <default>false</default>
+                <label>ISUZU / F14</label>
+            </value>
+            <value>
+                <fullName>ISUZU / FRR</fullName>
+                <default>false</default>
+                <label>ISUZU / FRR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / FSR</fullName>
+                <default>false</default>
+                <label>ISUZU / FSR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / FTR</fullName>
+                <default>false</default>
+                <label>ISUZU / FTR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / FVM</fullName>
+                <default>false</default>
+                <label>ISUZU / FVM</label>
+            </value>
+            <value>
+                <fullName>ISUZU / FVR</fullName>
+                <default>false</default>
+                <label>ISUZU / FVR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / ISUZU</fullName>
+                <default>false</default>
+                <label>ISUZU / ISUZU</label>
+            </value>
+            <value>
+                <fullName>ISUZU / L35</fullName>
+                <default>false</default>
+                <label>ISUZU / L35</label>
+            </value>
+            <value>
+                <fullName>ISUZU / M21</fullName>
+                <default>false</default>
+                <label>ISUZU / M21</label>
+            </value>
+            <value>
+                <fullName>ISUZU / M55</fullName>
+                <default>false</default>
+                <label>ISUZU / M55</label>
+            </value>
+            <value>
+                <fullName>ISUZU / NLR</fullName>
+                <default>false</default>
+                <label>ISUZU / NLR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / NPR</fullName>
+                <default>false</default>
+                <label>ISUZU / NPR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / NQR</fullName>
+                <default>false</default>
+                <label>ISUZU / NQR</label>
+            </value>
+            <value>
+                <fullName>ISUZU / P65</fullName>
+                <default>false</default>
+                <label>ISUZU / P65</label>
+            </value>
+            <value>
+                <fullName>ISUZU / P75</fullName>
+                <default>false</default>
+                <label>ISUZU / P75</label>
+            </value>
+            <value>
+                <fullName>ISUZU / Q95</fullName>
+                <default>false</default>
+                <label>ISUZU / Q95</label>
+            </value>
+            <value>
+                <fullName>IVECO / DAILY</fullName>
+                <default>false</default>
+                <label>IVECO / DAILY</label>
+            </value>
+            <value>
+                <fullName>IVECO / EUROCARGO</fullName>
+                <default>false</default>
+                <label>IVECO / EUROCARGO</label>
+            </value>
+            <value>
+                <fullName>IVECO / STRALIS</fullName>
+                <default>false</default>
+                <label>IVECO / STRALIS</label>
+            </value>
+            <value>
+                <fullName>IVECO / S-WAY</fullName>
+                <default>false</default>
+                <label>IVECO / S-WAY</label>
+            </value>
+            <value>
+                <fullName>KENWORTH / KENWORTH</fullName>
+                <default>false</default>
+                <label>KENWORTH / KENWORTH</label>
+            </value>
+            <value>
+                <fullName>KIA / K2500</fullName>
+                <default>false</default>
+                <label>KIA / K2500</label>
+            </value>
+            <value>
+                <fullName>KIA / K2700</fullName>
+                <default>false</default>
+                <label>KIA / K2700</label>
+            </value>
+            <value>
+                <fullName>KIESLING / KIESLING</fullName>
+                <default>false</default>
+                <label>KIESLING / KIESLING</label>
+            </value>
+            <value>
+                <fullName>KIESLING / REMORQUE</fullName>
+                <default>false</default>
+                <label>KIESLING / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>KIESLING / SEMI</fullName>
+                <default>false</default>
+                <label>KIESLING / SEMI</label>
+            </value>
+            <value>
+                <fullName>KRONE / REMORQUE</fullName>
+                <default>false</default>
+                <label>KRONE / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>KRONE / SEMI</fullName>
+                <default>false</default>
+                <label>KRONE / SEMI</label>
+            </value>
+            <value>
+                <fullName>KRONE / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>KRONE / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LAMBERET / REMORQUE</fullName>
+                <default>false</default>
+                <label>LAMBERET / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LAMBERET / SEMI</fullName>
+                <default>false</default>
+                <label>LAMBERET / SEMI</label>
+            </value>
+            <value>
+                <fullName>LAMBERET / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>LAMBERET / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LECAPITAINE / REMORQUE</fullName>
+                <default>false</default>
+                <label>LECAPITAINE / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LE ROUIC / REMORQUE</fullName>
+                <default>false</default>
+                <label>LE ROUIC / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LE ROUIC / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>LE ROUIC / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LIBNER / REMORQUE</fullName>
+                <default>false</default>
+                <label>LIBNER / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LIBNER / SEMI</fullName>
+                <default>false</default>
+                <label>LIBNER / SEMI</label>
+            </value>
+            <value>
+                <fullName>LIBNER / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>LIBNER / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>LIGIER / PULSE 4</fullName>
+                <default>false</default>
+                <label>LIGIER / PULSE 4</label>
+            </value>
+            <value>
+                <fullName>MACK / MACK</fullName>
+                <default>false</default>
+                <label>MACK / MACK</label>
+            </value>
+            <value>
+                <fullName>MAN / E-TGE</fullName>
+                <default>false</default>
+                <label>MAN / E-TGE</label>
+            </value>
+            <value>
+                <fullName>MAN / TGE</fullName>
+                <default>false</default>
+                <label>MAN / TGE</label>
+            </value>
+            <value>
+                <fullName>MAN / TGL</fullName>
+                <default>false</default>
+                <label>MAN / TGL</label>
+            </value>
+            <value>
+                <fullName>MAN / TGM</fullName>
+                <default>false</default>
+                <label>MAN / TGM</label>
+            </value>
+            <value>
+                <fullName>MAN / TGX</fullName>
+                <default>false</default>
+                <label>MAN / TGX</label>
+            </value>
+            <value>
+                <fullName>MAXICARGO / REMORQUE</fullName>
+                <default>false</default>
+                <label>MAXICARGO / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / ACTROS</fullName>
+                <default>false</default>
+                <label>MERCEDES / ACTROS</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / ANTOS</fullName>
+                <default>false</default>
+                <label>MERCEDES / ANTOS</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / AROCS</fullName>
+                <default>false</default>
+                <label>MERCEDES / AROCS</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / ATEGO</fullName>
+                <default>false</default>
+                <label>MERCEDES / ATEGO</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / CITAN</fullName>
+                <default>false</default>
+                <label>MERCEDES / CITAN</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / SPRINTER</fullName>
+                <default>false</default>
+                <label>MERCEDES / SPRINTER</label>
+            </value>
+            <value>
+                <fullName>MERCEDES / VITO</fullName>
+                <default>false</default>
+                <label>MERCEDES / VITO</label>
+            </value>
+            <value>
+                <fullName>MITSUBISHI / CANTER</fullName>
+                <default>false</default>
+                <label>MITSUBISHI / CANTER</label>
+            </value>
+            <value>
+                <fullName>MITSUBISHI / FUSO</fullName>
+                <default>false</default>
+                <label>MITSUBISHI / FUSO</label>
+            </value>
+            <value>
+                <fullName>MITSUBISHI / L200</fullName>
+                <default>false</default>
+                <label>MITSUBISHI / L200</label>
+            </value>
+            <value>
+                <fullName>MITSUBISHI / MITSUBISHI</fullName>
+                <default>false</default>
+                <label>MITSUBISHI / MITSUBISHI</label>
+            </value>
+            <value>
+                <fullName>NFORCECARGO / NFORCECARGO</fullName>
+                <default>false</default>
+                <label>NFORCECARGO / NFORCECARGO</label>
+            </value>
+            <value>
+                <fullName>NISSAN / E-NV200</fullName>
+                <default>false</default>
+                <label>NISSAN / E-NV200</label>
+            </value>
+            <value>
+                <fullName>NISSAN / NISSAN</fullName>
+                <default>false</default>
+                <label>NISSAN / NISSAN</label>
+            </value>
+            <value>
+                <fullName>NISSAN / NT400</fullName>
+                <default>false</default>
+                <label>NISSAN / NT400</label>
+            </value>
+            <value>
+                <fullName>NISSAN / NV250</fullName>
+                <default>false</default>
+                <label>NISSAN / NV250</label>
+            </value>
+            <value>
+                <fullName>NISSAN / NV300</fullName>
+                <default>false</default>
+                <label>NISSAN / NV300</label>
+            </value>
+            <value>
+                <fullName>NISSAN / NV400</fullName>
+                <default>false</default>
+                <label>NISSAN / NV400</label>
+            </value>
+            <value>
+                <fullName>NISSAN / URVAN</fullName>
+                <default>false</default>
+                <label>NISSAN / URVAN</label>
+            </value>
+            <value>
+                <fullName>OPEL / COMBO</fullName>
+                <default>false</default>
+                <label>OPEL / COMBO</label>
+            </value>
+            <value>
+                <fullName>OPEL / MOVANO</fullName>
+                <default>false</default>
+                <label>OPEL / MOVANO</label>
+            </value>
+            <value>
+                <fullName>OPEL / VIVARO</fullName>
+                <default>false</default>
+                <label>OPEL / VIVARO</label>
+            </value>
+            <value>
+                <fullName>PEUGEOT / BOXER</fullName>
+                <default>false</default>
+                <label>PEUGEOT / BOXER</label>
+            </value>
+            <value>
+                <fullName>PEUGEOT / EXPERT</fullName>
+                <default>false</default>
+                <label>PEUGEOT / EXPERT</label>
+            </value>
+            <value>
+                <fullName>PEUGEOT / PARTNER</fullName>
+                <default>false</default>
+                <label>PEUGEOT / PARTNER</label>
+            </value>
+            <value>
+                <fullName>RAM / PROMASTER</fullName>
+                <default>false</default>
+                <label>RAM / PROMASTER</label>
+            </value>
+            <value>
+                <fullName>RENAULT / EXPRESS</fullName>
+                <default>false</default>
+                <label>RENAULT / EXPRESS</label>
+            </value>
+            <value>
+                <fullName>RENAULT / KANGOO</fullName>
+                <default>false</default>
+                <label>RENAULT / KANGOO</label>
+            </value>
+            <value>
+                <fullName>RENAULT / KANGOO ZE</fullName>
+                <default>false</default>
+                <label>RENAULT / KANGOO ZE</label>
+            </value>
+            <value>
+                <fullName>RENAULT / MASTER</fullName>
+                <default>false</default>
+                <label>RENAULT / MASTER</label>
+            </value>
+            <value>
+                <fullName>RENAULT / MASTER ZE</fullName>
+                <default>false</default>
+                <label>RENAULT / MASTER ZE</label>
+            </value>
+            <value>
+                <fullName>RENAULT / MAXITY</fullName>
+                <default>false</default>
+                <label>RENAULT / MAXITY</label>
+            </value>
+            <value>
+                <fullName>RENAULT / TRAFIC</fullName>
+                <default>false</default>
+                <label>RENAULT / TRAFIC</label>
+            </value>
+            <value>
+                <fullName>RENAULT TRUCKS / GAMME C</fullName>
+                <default>false</default>
+                <label>RENAULT TRUCKS / GAMME C</label>
+            </value>
+            <value>
+                <fullName>RENAULT TRUCKS / GAMME D</fullName>
+                <default>false</default>
+                <label>RENAULT TRUCKS / GAMME D</label>
+            </value>
+            <value>
+                <fullName>RENAULT TRUCKS / GAMME T</fullName>
+                <default>false</default>
+                <label>RENAULT TRUCKS / GAMME T</label>
+            </value>
+            <value>
+                <fullName>SAMRO / REM</fullName>
+                <default>false</default>
+                <label>SAMRO / REM</label>
+            </value>
+            <value>
+                <fullName>SAMRO / SEMI</fullName>
+                <default>false</default>
+                <label>SAMRO / SEMI</label>
+            </value>
+            <value>
+                <fullName>SCANIA / PORTEUR</fullName>
+                <default>false</default>
+                <label>SCANIA / PORTEUR</label>
+            </value>
+            <value>
+                <fullName>SCANIA / SCP</fullName>
+                <default>false</default>
+                <label>SCANIA / SCP</label>
+            </value>
+            <value>
+                <fullName>SCANIA / SCR</fullName>
+                <default>false</default>
+                <label>SCANIA / SCR</label>
+            </value>
+            <value>
+                <fullName>SCANIA / TRACTEUR</fullName>
+                <default>false</default>
+                <label>SCANIA / TRACTEUR</label>
+            </value>
+            <value>
+                <fullName>SCHMITZ / REMORQUE</fullName>
+                <default>false</default>
+                <label>SCHMITZ / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>SCHMITZ / SEMI</fullName>
+                <default>false</default>
+                <label>SCHMITZ / SEMI</label>
+            </value>
+            <value>
+                <fullName>SCHMITZ CARGOBULL / REMORQUE</fullName>
+                <default>false</default>
+                <label>SCHMITZ CARGOBULL / REMORQUE</label>
+            </value>
+            <value>
+                <fullName>SCHMITZ CARGOBULL / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>SCHMITZ CARGOBULL / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>SOR IBERICA / SEMI</fullName>
+                <default>false</default>
+                <label>SOR IBERICA / SEMI</label>
+            </value>
+            <value>
+                <fullName>SOR IBERICA / SEMI-REMORQUE</fullName>
+                <default>false</default>
+                <label>SOR IBERICA / SEMI-REMORQUE</label>
+            </value>
+            <value>
+                <fullName>TOYOTA / HIACE</fullName>
+                <default>false</default>
+                <label>TOYOTA / HIACE</label>
+            </value>
+            <value>
+                <fullName>TOYOTA / HILUX</fullName>
+                <default>false</default>
+                <label>TOYOTA / HILUX</label>
+            </value>
+            <value>
+                <fullName>TOYOTA / PROACE</fullName>
+                <default>false</default>
+                <label>TOYOTA / PROACE</label>
+            </value>
+            <value>
+                <fullName>TOYOTA / PROACE CITY</fullName>
+                <default>false</default>
+                <label>TOYOTA / PROACE CITY</label>
+            </value>
+            <value>
+                <fullName>UD TRUCKS / UD TRUCKS</fullName>
+                <default>false</default>
+                <label>UD TRUCKS / UD TRUCKS</label>
+            </value>
+            <value>
+                <fullName>VOLKSWAGEN / CADDY</fullName>
+                <default>false</default>
+                <label>VOLKSWAGEN / CADDY</label>
+            </value>
+            <value>
+                <fullName>VOLKSWAGEN / CRAFTER</fullName>
+                <default>false</default>
+                <label>VOLKSWAGEN / CRAFTER</label>
+            </value>
+            <value>
+                <fullName>VOLKSWAGEN / E-CRAFTER</fullName>
+                <default>false</default>
+                <label>VOLKSWAGEN / E-CRAFTER</label>
+            </value>
+            <value>
+                <fullName>VOLKSWAGEN / TRANSPORTER</fullName>
+                <default>false</default>
+                <label>VOLKSWAGEN / TRANSPORTER</label>
+            </value>
+            <value>
+                <fullName>VOLVO / FE</fullName>
+                <default>false</default>
+                <label>VOLVO / FE</label>
+            </value>
+            <value>
+                <fullName>VOLVO / FH</fullName>
+                <default>false</default>
+                <label>VOLVO / FH</label>
+            </value>
+            <value>
+                <fullName>VOLVO / FL</fullName>
+                <default>false</default>
+                <label>VOLVO / FL</label>
+            </value>
+            <value>
+                <fullName>VOLVO / FM</fullName>
+                <default>false</default>
+                <label>VOLVO / FM</label>
+            </value>
+            <value>
+                <fullName>VOLVO / FMX</fullName>
+                <default>false</default>
+                <label>VOLVO / FMX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

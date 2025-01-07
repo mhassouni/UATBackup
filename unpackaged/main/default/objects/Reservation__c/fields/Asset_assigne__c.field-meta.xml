@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_assigne__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Conteneur sélectionné</description>
+    <label>Asset assigné</label>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Réservations</relationshipLabel>
+    <relationshipName>R_servations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

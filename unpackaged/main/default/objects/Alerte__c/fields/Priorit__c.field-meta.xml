@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priorit__c</fullName>
+    <defaultValue>(&quot;Urgente&quot;)</defaultValue>
+    <label>Priorité 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inutile</fullName>
+                <default>false</default>
+                <label>Inutile</label>
+            </value>
+            <value>
+                <fullName>Basse</fullName>
+                <default>false</default>
+                <label>Basse</label>
+            </value>
+            <value>
+                <fullName>Moyenne</fullName>
+                <default>false</default>
+                <label>Moyenne</label>
+            </value>
+            <value>
+                <fullName>Haute</fullName>
+                <default>false</default>
+                <label>Haute</label>
+            </value>
+            <value>
+                <fullName>Critique</fullName>
+                <default>false</default>
+                <label>Critique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

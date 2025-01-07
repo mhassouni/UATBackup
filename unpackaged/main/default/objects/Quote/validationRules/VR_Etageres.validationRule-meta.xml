@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Etageres</fullName>
+    <active>true</active>
+    <description>lorsque le champ &quot;Etagère (Qté par face)&quot; est non vide, l&#39;enregistrement doit amener un contrôle sur les champs associés : 
+
+Etagère (Type)
+
+Etagère (Hauteur / plancher)Ces deux autres champs doivent être renseignés ou il faut afficher un message</description>
+    <errorConditionFormula>AND
+(
+ NOT(ISBLANK(Qte_etagere_par_face_a_preciser__c ))
+,
+OR
+( ISPICKVAL(Etageres__c,&quot;&quot; ) , ISBLANK(Positions_des_etageres__c) )
+,
+CreatedDate &gt; DATETIMEVALUE( &quot;2022-11-21 00:00:00&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Qte_etagere_par_face_a_preciser__c</errorDisplayField>
+    <errorMessage>Si le champ Etagère (Qté par face) est renseigné, vous devez renseigner &quot;Etagère (Type)&#39; et &quot;Etagère (Hauteur / plancher)&quot;</errorMessage>
+</ValidationRule>

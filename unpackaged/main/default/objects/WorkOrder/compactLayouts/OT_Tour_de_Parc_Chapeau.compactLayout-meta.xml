@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OT_Tour_de_Parc_Chapeau</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Status</fields>
+    <fields>Agence_Intervenante__c</fields>
+    <fields>Date_de_realisation__c</fields>
+    <label>OT - Tour de Parc Chapeau</label>
+</CompactLayout>

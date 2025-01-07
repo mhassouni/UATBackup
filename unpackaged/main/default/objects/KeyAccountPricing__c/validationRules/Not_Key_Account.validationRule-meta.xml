@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Key_Account</fullName>
+    <active>true</active>
+    <description>The account have to be a Key account to be create in this table.</description>
+    <errorConditionFormula>Key_Account__c = false</errorConditionFormula>
+    <errorMessage>This account is not refered as a Key Account. Please, double check you selected the right one.</errorMessage>
+</ValidationRule>

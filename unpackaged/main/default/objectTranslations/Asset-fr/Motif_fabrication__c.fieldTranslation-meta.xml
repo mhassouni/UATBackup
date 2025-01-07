@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif fabrication --></label>
+        <name>Motif_fabrication__c</name>
+        <picklistValues>
+            <masterLabel>FAB CF MARITIME ASSEMBLAGE</masterLabel>
+            <translation><!-- FAB CF MARITIME ASSEMBLAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB CF MARITIME SPECIAL</masterLabel>
+            <translation><!-- FAB CF MARITIME SPECIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB CF PREMIUM LCT</masterLabel>
+            <translation><!-- FAB CF PREMIUM LCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB CF PREMIUM LECAPITAINE</masterLabel>
+            <translation><!-- FAB CF PREMIUM LECAPITAINE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

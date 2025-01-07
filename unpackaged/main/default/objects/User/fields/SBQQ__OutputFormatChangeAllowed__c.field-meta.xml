@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__OutputFormatChangeAllowed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that indicates whether this user is allowed to change output format of quote documents.</description>
+    <inlineHelpText>Sélectionnez cette case pour autoriser cet utilisateur à changer le format de sortie des documents de devis.</inlineHelpText>
+    <label>Allow Output Format Change</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

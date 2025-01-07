@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X010_Tours_de_parcs_planifi_s_ma_r_gion</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Name</columns>
+    <columns>Asset</columns>
+    <columns>Nom_commercial__c</columns>
+    <columns>Avancement_TDP_Parent__c</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <columns>Due_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouveau,Planifié,En cours</value>
+    </filters>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Tour_de_parc_Chapeau</value>
+    </filters>
+    <filters>
+        <field>ParentWorkOrder</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>010-Tours de parcs planifiés ma région</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

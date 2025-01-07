@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tour_de_parcs_planifi_s_Community</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Status</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Tour_de_parc_Chapeau</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours</value>
+    </filters>
+    <filters>
+        <field>Date_de_realisation__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2020 12:00 AM</value>
+    </filters>
+    <label>Community - Tour de parcs planifiés</label>
+    <sharedTo>
+        <allCustomerPortalUsers />
+    </sharedTo>
+</ListView>

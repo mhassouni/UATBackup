@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Indicar de que manera la oportunidad ha sido identificada y subida en el pipeline</help>
+        <label>Fuente de la oportunidad</label>
+        <name>SourceOpportunite__c</name>
+        <picklistValues>
+            <masterLabel>Achat Fichier</masterLabel>
+            <translation>Compra fichero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuaire</masterLabel>
+            <translation>Anuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appel Entrant</masterLabel>
+            <translation>Llamada entrante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Otro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation>Comercial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mailing</masterLabel>
+            <translation>Mailing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magazine</masterLabel>
+            <translation>Revista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailing / Courrier</masterLabel>
+            <translation>Mailing / Correo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opération Prospection</masterLabel>
+            <translation>Operación prospección</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pages Jaunes</masterLabel>
+            <translation>Páginas amarillas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repérage</masterLabel>
+            <translation>Localización</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation>Feria</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation>Delegación PF</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

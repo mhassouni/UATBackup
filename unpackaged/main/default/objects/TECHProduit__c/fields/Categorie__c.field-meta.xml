@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorie__c</fullName>
+    <label>Catégorie</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>R4</fullName>
+                <default>false</default>
+                <label>R4</label>
+            </value>
+            <value>
+                <fullName>R9</fullName>
+                <default>false</default>
+                <label>R9</label>
+            </value>
+            <value>
+                <fullName>V1</fullName>
+                <default>false</default>
+                <label>V1</label>
+            </value>
+            <value>
+                <fullName>V3 (Frigo)</fullName>
+                <default>false</default>
+                <label>V3 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V5 (Frigo)</fullName>
+                <default>false</default>
+                <label>V5 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V9 (Frigo)</fullName>
+                <default>false</default>
+                <label>V9 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V11 (Frigo)</fullName>
+                <default>false</default>
+                <label>V11 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V15 (Frigo)</fullName>
+                <default>false</default>
+                <label>V15 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V20 (Frigo)</fullName>
+                <default>false</default>
+                <label>V20 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P0 (Frigo)</fullName>
+                <default>false</default>
+                <label>P0 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P6 (Frigo)</fullName>
+                <default>false</default>
+                <label>P6 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P8 (Frigo)</fullName>
+                <default>false</default>
+                <label>P8 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P10 (Frigo)</fullName>
+                <default>false</default>
+                <label>P10 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P15 (Frigo)</fullName>
+                <default>false</default>
+                <label>P15 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P18 (Frigo)</fullName>
+                <default>false</default>
+                <label>P18 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P21 (Frigo)</fullName>
+                <default>false</default>
+                <label>P21 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P23 (Frigo)</fullName>
+                <default>false</default>
+                <label>P23 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>S1 (Frigo)</fullName>
+                <default>false</default>
+                <label>S1 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>S2 (Frigo)</fullName>
+                <default>false</default>
+                <label>S2 (Frigo)</label>
+            </value>
+            <value>
+                <fullName>T (Frigo)</fullName>
+                <default>false</default>
+                <label>T (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V3 (Sec)</fullName>
+                <default>false</default>
+                <label>V3 (Sec)</label>
+            </value>
+            <value>
+                <fullName>V5 (Sec)</fullName>
+                <default>false</default>
+                <label>V5 (Sec)</label>
+            </value>
+            <value>
+                <fullName>V9 (Sec)</fullName>
+                <default>false</default>
+                <label>V9 (Sec)</label>
+            </value>
+            <value>
+                <fullName>V11 (Sec)</fullName>
+                <default>false</default>
+                <label>V11 (Sec)</label>
+            </value>
+            <value>
+                <fullName>V15 (Sec)</fullName>
+                <default>false</default>
+                <label>V15 (Sec)</label>
+            </value>
+            <value>
+                <fullName>V20 (Sec)</fullName>
+                <default>false</default>
+                <label>V20 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P0 (Sec)</fullName>
+                <default>false</default>
+                <label>P0 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P6 (Sec)</fullName>
+                <default>false</default>
+                <label>P6 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P8 (Sec)</fullName>
+                <default>false</default>
+                <label>P8 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P10 (Sec)</fullName>
+                <default>false</default>
+                <label>P10 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P15 (Sec)</fullName>
+                <default>false</default>
+                <label>P15 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P18 (Sec)</fullName>
+                <default>false</default>
+                <label>P18 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P21 (Sec)</fullName>
+                <default>false</default>
+                <label>P21 (Sec)</label>
+            </value>
+            <value>
+                <fullName>P23 (Sec)</fullName>
+                <default>false</default>
+                <label>P23 (Sec)</label>
+            </value>
+            <value>
+                <fullName>T (Sec)</fullName>
+                <default>false</default>
+                <label>T (Sec)</label>
+            </value>
+            <value>
+                <fullName>CF10</fullName>
+                <default>false</default>
+                <label>CF10</label>
+            </value>
+            <value>
+                <fullName>CF25</fullName>
+                <default>false</default>
+                <label>CF25</label>
+            </value>
+            <value>
+                <fullName>CF30</fullName>
+                <default>false</default>
+                <label>CF30</label>
+            </value>
+            <value>
+                <fullName>CF35</fullName>
+                <default>false</default>
+                <label>CF35</label>
+            </value>
+            <value>
+                <fullName>CF50</fullName>
+                <default>false</default>
+                <label>CF50</label>
+            </value>
+            <value>
+                <fullName>CF55</fullName>
+                <default>false</default>
+                <label>CF55</label>
+            </value>
+            <value>
+                <fullName>CF85</fullName>
+                <default>false</default>
+                <label>CF85</label>
+            </value>
+            <value>
+                <fullName>CF110</fullName>
+                <default>false</default>
+                <label>CF110</label>
+            </value>
+            <value>
+                <fullName>ARM PV</fullName>
+                <default>false</default>
+                <label>ARM PV</label>
+            </value>
+            <value>
+                <fullName>BAC 100</fullName>
+                <default>false</default>
+                <label>BAC 100</label>
+            </value>
+            <value>
+                <fullName>BAC 150</fullName>
+                <default>false</default>
+                <label>BAC 150</label>
+            </value>
+            <value>
+                <fullName>BAC 200</fullName>
+                <default>false</default>
+                <label>BAC 200</label>
+            </value>
+            <value>
+                <fullName>BAC SERVA</fullName>
+                <default>false</default>
+                <label>BAC SERVA</label>
+            </value>
+            <value>
+                <fullName>TRAIT 130</fullName>
+                <default>false</default>
+                <label>TRAIT 130</label>
+            </value>
+            <value>
+                <fullName>TRAIT 200</fullName>
+                <default>false</default>
+                <label>TRAIT 200</label>
+            </value>
+            <value>
+                <fullName>VITR 050</fullName>
+                <default>false</default>
+                <label>VITR 050</label>
+            </value>
+            <value>
+                <fullName>VITR 070</fullName>
+                <default>false</default>
+                <label>VITR 070</label>
+            </value>
+            <value>
+                <fullName>VITR 090</fullName>
+                <default>false</default>
+                <label>VITR 090</label>
+            </value>
+            <value>
+                <fullName>VITR 100</fullName>
+                <default>false</default>
+                <label>VITR 100</label>
+            </value>
+            <value>
+                <fullName>VITR 120</fullName>
+                <default>false</default>
+                <label>VITR 120</label>
+            </value>
+            <value>
+                <fullName>VITR 130</fullName>
+                <default>false</default>
+                <label>VITR 130</label>
+            </value>
+            <value>
+                <fullName>VITR 190</fullName>
+                <default>false</default>
+                <label>VITR 190</label>
+            </value>
+            <value>
+                <fullName>VITR SV 070</fullName>
+                <default>false</default>
+                <label>VITR SV 070</label>
+            </value>
+            <value>
+                <fullName>VITR SV 100</fullName>
+                <default>false</default>
+                <label>VITR SV 100</label>
+            </value>
+            <value>
+                <fullName>VITR SV 130</fullName>
+                <default>false</default>
+                <label>VITR SV 130</label>
+            </value>
+            <value>
+                <fullName>VITR SV 155</fullName>
+                <default>false</default>
+                <label>VITR SV 155</label>
+            </value>
+            <value>
+                <fullName>AUTRE</fullName>
+                <default>false</default>
+                <label>AUTRE</label>
+            </value>
+            <value>
+                <fullName>COMPLET</fullName>
+                <default>false</default>
+                <label>COMPLET</label>
+            </value>
+            <value>
+                <fullName>EFAS</fullName>
+                <default>false</default>
+                <label>EFAS</label>
+            </value>
+            <value>
+                <fullName>KIT</fullName>
+                <default>false</default>
+                <label>KIT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

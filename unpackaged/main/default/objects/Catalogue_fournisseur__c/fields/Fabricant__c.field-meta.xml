@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fabricant__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Permet d&#39;indiquer le fabricant des produits dans le cas d&#39;un revendeur indépendant.
+(Ex : Vendeur de pièce détaché Renault et Iveco, alors indiquez ici le nom du fabricant).</inlineHelpText>
+    <label>Fabricant</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Catalogues fournisseur (Compte)</relationshipLabel>
+    <relationshipName>Catalogues_fournisseur1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

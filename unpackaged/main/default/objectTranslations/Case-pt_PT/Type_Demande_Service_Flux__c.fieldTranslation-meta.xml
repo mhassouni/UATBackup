@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type_Demande_Service_Flux --></label>
+        <name>Type_Demande_Service_Flux__c</name>
+        <picklistValues>
+            <masterLabel>Demande de service</masterLabel>
+            <translation><!-- Demande de service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestion du portail</masterLabel>
+            <translation><!-- Gestion du portail --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

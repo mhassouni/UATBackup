@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Key__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This column represents a unique key column.</description>
+    <inlineHelpText>Sélectionnez cette case si cette colonne doit être une colonne de clé unique.</inlineHelpText>
+    <label>Key</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

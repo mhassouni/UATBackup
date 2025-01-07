@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Lead_Account_Map</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Connector__Authorization__c</field>
+        <value xsi:type="xsd:string">Basic ZG5idWtfMzAxMDpiNEpKNVBXYWQzZU0=</value>
+    </values>
+    <values>
+        <field>API_Connector__Case_Key__c</field>
+        <value xsi:type="xsd:string">e4b3dc0d-0533-405f-868a-ebfa6aa1c692</value>
+    </values>
+    <values>
+        <field>API_Connector__Endpoint__c</field>
+        <value xsi:type="xsd:string">https://api.dqbox.com/api/duplicatecheck</value>
+    </values>
+    <values>
+        <field>API_Connector__Mapping_Fields__c</field>
+        <value xsi:type="xsd:string">[{&quot;name&quot;:&quot;company&quot;,&quot;value&quot;:&quot;Company1&quot;},{&quot;name&quot;:&quot;city&quot;,&quot;value&quot;:&quot;City1&quot;},{&quot;name&quot;:&quot;street&quot;,&quot;value&quot;:&quot;Address1a&quot;},{&quot;name&quot;:&quot;country&quot;,&quot;value&quot;:&quot;Country1&quot;},{&quot;name&quot;:&quot;postalcode&quot;,&quot;value&quot;:&quot;Zipcode1&quot;},{&quot;name&quot;:&quot;companydunsnumber&quot;,&quot;value&quot;:&quot;DUNS&quot;}]</value>
+    </values>
+    <values>
+        <field>API_Connector__Mapping_Output_Fields__c</field>
+        <value xsi:type="xsd:string">[{&quot;name&quot;:&quot;company&quot;,&quot;value&quot;:&quot;company_key&quot;}]</value>
+    </values>
+</CustomMetadata>

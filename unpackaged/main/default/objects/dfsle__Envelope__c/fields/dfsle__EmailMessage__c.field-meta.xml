@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dfsle__EmailMessage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Email Message</description>
+    <inlineHelpText>Modifier l’objet de cet e‑mail (jusqu’à 2 000 caractères) pour qu’il apparaisse dans la notification à signer par le destinataire DocuSign.
+		</inlineHelpText>
+    <label>Email message</label>
+    <length>2000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

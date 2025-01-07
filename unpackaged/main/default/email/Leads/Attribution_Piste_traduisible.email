@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="Notification attribution de piste" recipientType="User" relatedToType="Lead" language="{!recipient.LanguageLocaleKey}">
+ <messaging:htmlEmailBody >
+
+<h3>{!$Label.Modele_Email_NOTIFICATION_ATTRIBUTION_NOUVELLE_PISTE_Partie_01}</h3>
+
+<h4>{!$Label.Modele_Email_NOTIFICATION_ATTRIBUTION_NOUVELLE_PISTE_Partie_02}</h4>
+<h4>{!$Label.Modele_Email_NOTIFICATION_ATTRIBUTION_NOUVELLE_PISTE_Partie_03} {!relatedTo.Company} </h4>
+<h4>{!$Label.Modele_Email_NOTIFICATION_ATTRIBUTION_NOUVELLE_PISTE_Partie_004} {!relatedTo.Name} </h4>
+<h4>{!$Label.Mod_le_Email_NOTIFICATION_D_ATTRIBUTION_D_UNE_NOUVELLE_PISTE_Partie_005} {!relatedTo.Agence_depart_retour__r.Name}</h4>
+<h4>{!$Label.Mod_le_Email_NOTIFICATION_D_ATTRIBUTION_D_UNE_NOUVELLE_PISTE_Partie_006} {!relatedTo.CodePostal__c}</h4>
+<h4>{!$Label.Mod_le_Email_NOTIFICATION_D_ATTRIBUTION_D_UNE_NOUVELLE_PISTE_Partie_007} {!relatedTo.Ville__c}</h4>
+
+
+<h4>{!$Label.Mod_le_Email_NOTIFICATION_D_ATTRIBUTION_D_UNE_NOUVELLE_PISTE_Partie_008}  <a href= "https://greenforce.lightning.force.com/lightning/r/Lead/{!relatedTo.id}/view">{!relatedTo.Name}</a></h4>
+
+
+ </messaging:htmlEmailBody>
+</messaging:emailTemplate>

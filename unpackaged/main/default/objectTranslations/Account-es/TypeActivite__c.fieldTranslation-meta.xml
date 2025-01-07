@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Según la clasificación PF</help>
+        <label>Tipo de la actividad</label>
+        <name>TypeActivite__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation>administración</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentaire Non Frigorifique</masterLabel>
+            <translation>Alimentos no refrigerados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation>Asociación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Otro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beurre, Œufs, Fromage</masterLabel>
+            <translation>Mantequilla, Huevos, Quesos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boulangerie - Pâtisserie</masterLabel>
+            <translation>Panaderia-Pasteleria</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crèmes Glacées, Surgelés</masterLabel>
+            <translation>Helados, congelados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuisine Centrale</masterLabel>
+            <translation>Cocina central</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de boissons</masterLabel>
+            <translation>Distribuidor de bebidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de produits frais et surgelés</masterLabel>
+            <translation>Distribuidor de productos frescos y congelados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Déménagement</masterLabel>
+            <translation>Traslado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenementiel</masterLabel>
+            <translation>Eventos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivités</masterLabel>
+            <translation>Festividades</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleuriste</masterLabel>
+            <translation>Florista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fruits et Légumes</masterLabel>
+            <translation>Frutas y verduras</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandes et Moyennes Surfaces</masterLabel>
+            <translation>Grandes y medianas superficies</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Service</masterLabel>
+            <translation>Servicio a domicilio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation>Higiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôtelier</masterLabel>
+            <translation>Hotelero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loueur</masterLabel>
+            <translation>Arrendador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marée</masterLabel>
+            <translation>Pescados y mariscos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médicaments / Laboratoires pharma</masterLabel>
+            <translation>Medicamentos / Laboratorios farma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ostréiculteur</masterLabel>
+            <translation>Ostricultor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panification (producteur avec distrib. Intégrée)</masterLabel>
+            <translation>Panificación (productor con distrib. Integrada)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Particulier</masterLabel>
+            <translation>Particular</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portage de repas (CCAS-CPAS etc…)</masterLabel>
+            <translation>Entrega comida a domicilio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteur</masterLabel>
+            <translation>Fabricante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteurs Industriels</masterLabel>
+            <translation>Fabricantes industriales</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurateur</masterLabel>
+            <translation>Restaurador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Collective</masterLabel>
+            <translation>Restauración Colectiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Rapide</masterLabel>
+            <translation>Restauración rapido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salaisons, Plats Préparés</masterLabel>
+            <translation>Salazones, Platos preparados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Station Service</masterLabel>
+            <translation>Gasolinera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traiteurs</masterLabel>
+            <translation>Catering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Public Frigorifique</masterLabel>
+            <translation>Transporte público Frigorífico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur</masterLabel>
+            <translation>Transportista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travaux Publics - BTP</masterLabel>
+            <translation>Trabajos públicos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viandes, Volailles</masterLabel>
+            <translation>Carnes, Aves</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viticulteur</masterLabel>
+            <translation>Viticultor</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

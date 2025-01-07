@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV_18_Delegation_Tarification</fullName>
+    <active>true</active>
+    <description>Les champs de la section &quot;Tarif délégation&quot; du devis, ne peuvent être modifiés que lorsqu&#39;une ligne de tarification est synchronisée.</description>
+    <errorConditionFormula>AND
+ (
+   ISBLANK(Loyer__c),
+   OR
+     (   
+      NOT(ISBLANK(Loyer_DO_DF__c)),
+      NOT(ISBLANK(Loyer_Directeur_de_site__c))
+     )
+ )</errorConditionFormula>
+    <errorMessage>Assurez vous d&#39;avoir un loyer avant de saisir le Loyer Depot Manager ou Loyer Country Manager</errorMessage>
+</ValidationRule>

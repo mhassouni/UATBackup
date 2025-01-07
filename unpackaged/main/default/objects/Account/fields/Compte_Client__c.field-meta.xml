@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compte_Client__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Compte_Client</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Statut__c</field>
+            <operation>notEqual</operation>
+            <value>Inactif</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Comptes (Compte_Client)</relationshipLabel>
+    <relationshipName>Compte_Client</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

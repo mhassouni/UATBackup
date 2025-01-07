@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kopia_RZA_do_zrobienia</fullName>
+    <columns>Date_Heure_Demande_de_tarification__c</columns>
+    <columns>OPPORTUNITY.OWNER</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>QUOTE.NAME</columns>
+    <columns>N_Parc__c</columns>
+    <columns>PTAC_kgs__c</columns>
+    <columns>Marque__c</columns>
+    <columns>Mod_le__c</columns>
+    <columns>Code_PF__c</columns>
+    <columns>Classe__c</columns>
+    <columns>Longueur_Interieur__c</columns>
+    <columns>Largeur_Interieur__c</columns>
+    <columns>Hauteur_Interieur__c</columns>
+    <columns>Marque_Modele_Groupe__c</columns>
+    <columns>Modele_Hayon__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>A Tarifer</value>
+    </filters>
+    <filters>
+        <field>Pays_Region_PF__c</field>
+        <operation>equals</operation>
+        <value>PIPL</value>
+    </filters>
+    <label>Kopia RZA - do zrobienia</label>
+</ListView>

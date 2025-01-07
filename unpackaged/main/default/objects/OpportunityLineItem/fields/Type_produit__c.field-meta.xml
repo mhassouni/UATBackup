@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_produit__c</fullName>
+    <label>Type de contrat</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LD Neuf</fullName>
+                <default>false</default>
+                <label>LD Neuf</label>
+            </value>
+            <value>
+                <fullName>LD Parc</fullName>
+                <default>false</default>
+                <label>LD Parc</label>
+            </value>
+            <value>
+                <fullName>CD/MD</fullName>
+                <default>false</default>
+                <label>CD/MD</label>
+            </value>
+            <value>
+                <fullName>HS</fullName>
+                <default>false</default>
+                <label>HS</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Container</fullName>
+                <default>false</default>
+                <label>Container</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Entity_Sector_Overall_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+DB_DUNS_DU__c != &#39;&#39;,
+Compte_Parent_legal__r.Note_globale_secteur__c,
+Note_globale_secteur__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Legal Entity Sector Overall Rating</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

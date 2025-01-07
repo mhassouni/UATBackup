@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Send Reminder On --></label>
+        <name>Cal__Send_Reminder_for_Today_or_TomorrowEvent__c</name>
+        <picklistValues>
+            <masterLabel>Day Before Meeting</masterLabel>
+            <translation><!-- Day Before Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Day Of Meeting</masterLabel>
+            <translation><!-- Day Of Meeting --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

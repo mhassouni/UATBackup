@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Compte de livraison --></label>
+        <lookupFilter>
+            <errorMessage><!-- Le compte sélectionné doit être de type Site --></errorMessage>
+        </lookupFilter>
+        <name>Compte_de_livraison__c</name>
+        <relationshipLabel><!-- Commandes (Compte de livraison) --></relationshipLabel>
+    </CustomFieldTranslation>

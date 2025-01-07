@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CapacityLimitRelaxation</fullName>
+    <inlineHelpText>Définissez quand cette limite est remplacée.
+            Si la politique de remplacement de la limite est définie par limite dans les Paramètres Field Service :
+            Valeur vide - aucun remplacement.
+            0 - le remplacement commence à minuit le jour du service.
+            Entier positif - le remplacement commence à ce nombre d’heures après minuit.
+            Entier négatif - le remplacement commence à ce nombre d’heures avant minuit.
+            Si la politique de remplacement de la limite n’est pas définie par limite, cette valeur est ignorée.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

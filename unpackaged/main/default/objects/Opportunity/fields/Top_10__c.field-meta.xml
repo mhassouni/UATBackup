@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_10__c</fullName>
+    <formula>if(
+(
+AND 
+(
+OR(LEFT(TEXT(StageName),1) = &#39;3&#39;,LEFT(TEXT(StageName),1) = &#39;4&#39;,LEFT(TEXT(StageName),1) = &#39;5&#39;)
+,
+ CloseDate - TODAY() &lt; 60
+,
+OR( text(TypeOpportunite__c) = &#39;NCT&#39;,text(TypeOpportunite__c) = &#39;SUP&#39;)
+)
+)
+, true,false)</formula>
+    <label>Top 10</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

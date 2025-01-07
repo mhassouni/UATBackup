@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Nouvelle</fullName>
+        <default>true</default>
+        <label>Nouvelle</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En_Cours</fullName>
+        <default>false</default>
+        <label>En Cours</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminee</fullName>
+        <default>false</default>
+        <label>Terminée</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

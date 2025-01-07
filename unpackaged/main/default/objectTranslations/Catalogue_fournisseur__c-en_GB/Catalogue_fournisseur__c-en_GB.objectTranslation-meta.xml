@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Catalogue fournisseur --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Catalogue fournisseur --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Catalogue fournisseur</layout>
+        <sections>
+            <label>Customised links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro du Catalogue fournisseur --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

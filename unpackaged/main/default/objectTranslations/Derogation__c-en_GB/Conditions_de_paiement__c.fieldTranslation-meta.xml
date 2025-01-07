@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Invoicing</label>
+        <name>Conditions_de_paiement__c</name>
+        <picklistValues>
+            <masterLabel>Début de mois</masterLabel>
+            <translation>Beginning of the month</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de mois</masterLabel>
+            <translation>End of the month</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

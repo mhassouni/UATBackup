@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Trennwand</label>
+        <name>Cloison__c</name>
+        <picklistValues>
+            <masterLabel>1 GRILLE AMOVIBLE (Brasseur)</masterLabel>
+            <translation><!-- 1 GRILLE AMOVIBLE (Brasseur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 GRILLES AMOVIBLES (Brasseur)</masterLabel>
+            <translation><!-- 2 GRILLES AMOVIBLES (Brasseur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIXE LONGITUDINALE</masterLabel>
+            <translation>feste Längstrennwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIXE TRANSVERSALE</masterLabel>
+            <translation>feste Quertrennwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation>außer Standard - siehe Einrichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE RELEVABLE</masterLabel>
+            <translation>mobile und aufklappbare Trennwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand (ohne Lüfter)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE 1/2 - 1/2</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand (1/2 - 1/2)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE 1/3 - 2/3</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand (1/3 - 2/3)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE 2/3 - 1/3</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand (2/3 - 1/3)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC ELECTRO-VENTILATEUR</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand (mit Lüfter)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE DOUBLE CENTREE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand mit doppelter zentraler Flügeltür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE SIMPLE CENTREE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand mit einfacher zentraler Tür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE DOUBLE CENTREE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand mit doppelter zentraler Schiebetür</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A DROITE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand mit einfacher Schiebetür (rechts)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A GAUCHE</masterLabel>
+            <translation>Mobile und hochklappbare Quertrennwand mit einfacher Schiebetür (links)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOUSSE</masterLabel>
+            <translation><!-- MOUSSE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

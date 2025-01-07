@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ADM</masterLabel>
+        <translation><!-- ADM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM12</masterLabel>
+        <translation><!-- ADM12 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM28</masterLabel>
+        <translation><!-- ADM28 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM32</masterLabel>
+        <translation><!-- ADM32 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM36</masterLabel>
+        <translation><!-- ADM36 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM39</masterLabel>
+        <translation><!-- ADM39 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM41</masterLabel>
+        <translation><!-- ADM41 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ADM58</masterLabel>
+        <translation><!-- ADM58 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AIE</masterLabel>
+        <translation><!-- AIE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>APCR</masterLabel>
+        <translation><!-- APCR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASBL</masterLabel>
+        <translation><!-- ASBL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASGER</masterLabel>
+        <translation><!-- ASGER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASS4</masterLabel>
+        <translation><!-- ASS4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASS6</masterLabel>
+        <translation><!-- ASS6 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASSFR</masterLabel>
+        <translation><!-- ASSFR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASSIT</masterLabel>
+        <translation><!-- ASSIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ASSO</masterLabel>
+        <translation><!-- ASSO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AUN</masterLabel>
+        <translation><!-- AUN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BT</masterLabel>
+        <translation><!-- BT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BV</masterLabel>
+        <translation><!-- BV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BVB2</masterLabel>
+        <translation><!-- BVB2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>BVBA</masterLabel>
+        <translation><!-- BVBA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CB</masterLabel>
+        <translation><!-- CB --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COM</masterLabel>
+        <translation><!-- COM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOP</masterLabel>
+        <translation><!-- COOP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COOP1</masterLabel>
+        <translation><!-- COOP1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COP07</masterLabel>
+        <translation><!-- COP07 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CV</masterLabel>
+        <translation><!-- CV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EARL</masterLabel>
+        <translation><!-- EARL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ECM2</masterLabel>
+        <translation><!-- ECM2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EM</masterLabel>
+        <translation><!-- EM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EN</masterLabel>
+        <translation><!-- EN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EURL</masterLabel>
+        <translation><!-- EURL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GAEC</masterLabel>
+        <translation><!-- GAEC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GIE</masterLabel>
+        <translation><!-- GIE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GOV</masterLabel>
+        <translation><!-- GOV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HUKFT</masterLabel>
+        <translation><!-- HUKFT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HUZRT</masterLabel>
+        <translation><!-- HUZRT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INC</masterLabel>
+        <translation><!-- INC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>INDIT</masterLabel>
+        <translation><!-- INDIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LLC</masterLabel>
+        <translation><!-- LLC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LV</masterLabel>
+        <translation><!-- LV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOM1</masterLabel>
+        <translation>COGNOME 1</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOM2</masterLabel>
+        <translation>COGNOME 2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOM3</masterLabel>
+        <translation>COGNOME 3</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOM4</masterLabel>
+        <translation>COGNOME 4</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOM6</masterLabel>
+        <translation>COGNOME 6</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NV</masterLabel>
+        <translation><!-- NV --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OCMW</masterLabel>
+        <translation><!-- OCMW --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTHER</masterLabel>
+        <translation>ALTRO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PAR</masterLabel>
+        <translation><!-- PAR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PF</masterLabel>
+        <translation><!-- PF --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PRLIB</masterLabel>
+        <translation><!-- PRLIB --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PTANO</masterLabel>
+        <translation><!-- PTANO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PTQUO</masterLabel>
+        <translation><!-- PTQUO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUB4</masterLabel>
+        <translation><!-- PUB4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PUB5</masterLabel>
+        <translation><!-- PUB5 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SA</masterLabel>
+        <translation><!-- SA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SA08</masterLabel>
+        <translation><!-- SA08 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SA16</masterLabel>
+        <translation><!-- SA16 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SA2</masterLabel>
+        <translation><!-- SA2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAIT</masterLabel>
+        <translation><!-- SAIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAL</masterLabel>
+        <translation><!-- SAL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARL</masterLabel>
+        <translation><!-- SARL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARL5</masterLabel>
+        <translation><!-- SARL5 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARLE</masterLabel>
+        <translation><!-- SARLE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARLI</masterLabel>
+        <translation><!-- SARLI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAS</masterLabel>
+        <translation><!-- SAS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SASU</masterLabel>
+        <translation><!-- SASU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAU</masterLabel>
+        <translation><!-- SAU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCA</masterLabel>
+        <translation><!-- SCA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCEA</masterLabel>
+        <translation><!-- SCEA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCES</masterLabel>
+        <translation><!-- SCES --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCI1A</masterLabel>
+        <translation><!-- SCI1A --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCIEA</masterLabel>
+        <translation><!-- SCIEA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCIM</masterLabel>
+        <translation><!-- SCIM --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCOES</masterLabel>
+        <translation><!-- SCOES --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCOP</masterLabel>
+        <translation><!-- SCOP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCORL</masterLabel>
+        <translation><!-- SCORL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCP</masterLabel>
+        <translation><!-- SCP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCRLP</masterLabel>
+        <translation><!-- SCRLP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SCSIT</masterLabel>
+        <translation><!-- SCSIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SICA4</masterLabel>
+        <translation><!-- SICA4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SL</masterLabel>
+        <translation><!-- SL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SLU</masterLabel>
+        <translation><!-- SLU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SNC</masterLabel>
+        <translation><!-- SNC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SNCIT</masterLabel>
+        <translation><!-- SNCIT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPR2</masterLabel>
+        <translation><!-- SPR2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPRL</masterLabel>
+        <translation><!-- SPRL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SPRU</masterLabel>
+        <translation><!-- SPRU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SRLU</masterLabel>
+        <translation><!-- SRLU --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SS</masterLabel>
+        <translation><!-- SS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SYN5</masterLabel>
+        <translation><!-- SYN5 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>UTE</masterLabel>
+        <translation><!-- UTE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VOF</masterLabel>
+        <translation><!-- VOF --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VZW</masterLabel>
+        <translation><!-- VZW --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

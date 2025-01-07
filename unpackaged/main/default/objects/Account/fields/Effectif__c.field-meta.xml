@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effectif__c</fullName>
+    <label>Effectif</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 à 9</fullName>
+                <default>false</default>
+                <label>1 à 9</label>
+            </value>
+            <value>
+                <fullName>10 à 49</fullName>
+                <default>false</default>
+                <label>10 à 49</label>
+            </value>
+            <value>
+                <fullName>50 à 99</fullName>
+                <default>false</default>
+                <label>50 à 99</label>
+            </value>
+            <value>
+                <fullName>100 à 499</fullName>
+                <default>false</default>
+                <label>100 à 499</label>
+            </value>
+            <value>
+                <fullName>500 à 999</fullName>
+                <default>false</default>
+                <label>500 à 999</label>
+            </value>
+            <value>
+                <fullName>1000 et plus</fullName>
+                <default>false</default>
+                <label>1000 et plus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

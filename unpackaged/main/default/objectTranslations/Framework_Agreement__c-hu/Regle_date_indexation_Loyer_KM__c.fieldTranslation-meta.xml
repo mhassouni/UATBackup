@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Bérleti/KM indexálási dátum szabály</label>
+        <name>Regle_date_indexation_Loyer_KM__c</name>
+        <picklistValues>
+            <masterLabel>à chaque date anniversaire de mise à disposition du véhicule</masterLabel>
+            <translation>a jármű rendelkezésre állásának minden évfordulóján</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>à date fixe</masterLabel>
+            <translation>meghatározott időpontban</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

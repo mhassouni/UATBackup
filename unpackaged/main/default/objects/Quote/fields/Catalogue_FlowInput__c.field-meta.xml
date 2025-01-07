@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catalogue_FlowInput__c</fullName>
+    <label>Catalogue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BR_ST</fullName>
+                <default>false</default>
+                <label>BR_ST</label>
+            </value>
+            <value>
+                <fullName>BR_ST_DOM TOM</fullName>
+                <default>false</default>
+                <label>BR_ST_DOM TOM</label>
+            </value>
+            <value>
+                <fullName>BR_ST_FRANCE BOISSON</fullName>
+                <default>false</default>
+                <label>BR_ST_FRANCE BOISSON</label>
+            </value>
+            <value>
+                <fullName>FS_PF</fullName>
+                <default>false</default>
+                <label>FS_PF</label>
+            </value>
+            <value>
+                <fullName>FS_PF_LA REUNION</fullName>
+                <default>false</default>
+                <label>FS_PF_LA REUNION</label>
+            </value>
+            <value>
+                <fullName>FS_PF_LES ANTILLES</fullName>
+                <default>false</default>
+                <label>FS_PF_LES ANTILLES</label>
+            </value>
+            <value>
+                <fullName>FS_ST</fullName>
+                <default>false</default>
+                <label>FS_ST</label>
+            </value>
+            <value>
+                <fullName>HY_ST</fullName>
+                <default>false</default>
+                <label>HY_ST</label>
+            </value>
+            <value>
+                <fullName>HY_ST_DOM TOM</fullName>
+                <default>false</default>
+                <label>HY_ST_DOM TOM</label>
+            </value>
+            <value>
+                <fullName>HY_ST_ELIS</fullName>
+                <default>false</default>
+                <label>HY_ST_ELIS</label>
+            </value>
+            <value>
+                <fullName>HY_ST_INITIAL</fullName>
+                <default>false</default>
+                <label>HY_ST_INITIAL</label>
+            </value>
+            <value>
+                <fullName>HY_ST_KALHYGE</fullName>
+                <default>false</default>
+                <label>HY_ST_KALHYGE</label>
+            </value>
+            <value>
+                <fullName>HY_ST_SDEZ</fullName>
+                <default>false</default>
+                <label>HY_ST_SDEZ</label>
+            </value>
+            <value>
+                <fullName>SE_ST</fullName>
+                <default>false</default>
+                <label>SE_ST</label>
+            </value>
+            <value>
+                <fullName>SE_ST_CHRONOPOST</fullName>
+                <default>false</default>
+                <label>SE_ST_CHRONOPOST</label>
+            </value>
+            <value>
+                <fullName>SE_ST_DOM TOM</fullName>
+                <default>false</default>
+                <label>SE_ST_DOM TOM</label>
+            </value>
+            <value>
+                <fullName>SE_ST_FRANCE BOISSON</fullName>
+                <default>false</default>
+                <label>SE_ST_FRANCE BOISSON</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

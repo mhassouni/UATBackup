@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>S</fullName>
+        <default>false</default>
+        <label>S</label>
+    </customValue>
+    <customValue>
+        <fullName>M</fullName>
+        <default>false</default>
+        <label>M</label>
+    </customValue>
+    <customValue>
+        <fullName>K</fullName>
+        <default>false</default>
+        <label>K</label>
+    </customValue>
+    <customValue>
+        <fullName>K1</fullName>
+        <default>false</default>
+        <label>K1</label>
+    </customValue>
+    <customValue>
+        <fullName>K2</fullName>
+        <default>false</default>
+        <label>K2</label>
+    </customValue>
+    <customValue>
+        <fullName>K3</fullName>
+        <default>false</default>
+        <label>K3</label>
+    </customValue>
+    <masterLabel>Classification - Type Client</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotifEchecPrincipal__c</fullName>
+    <label>Motif d&#39;échec principal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Délai de production</fullName>
+                <default>false</default>
+                <label>Délai de production</label>
+            </value>
+            <value>
+                <fullName>Distance géographique</fullName>
+                <default>false</default>
+                <label>Distance géographique</label>
+            </value>
+            <value>
+                <fullName>Etat d&#39;esprit</fullName>
+                <default>false</default>
+                <label>Etat d&#39;esprit</label>
+            </value>
+            <value>
+                <fullName>Prix</fullName>
+                <default>false</default>
+                <label>Prix</label>
+            </value>
+            <value>
+                <fullName>Produit</fullName>
+                <default>false</default>
+                <label>Produit</label>
+            </value>
+            <value>
+                <fullName>Relation</fullName>
+                <default>false</default>
+                <label>Relation</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Technique</fullName>
+                <default>false</default>
+                <label>Technique</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Délai de production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Distance géographique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Etat d&#39;esprit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Prix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Produit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Relation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <valueName>Technique</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

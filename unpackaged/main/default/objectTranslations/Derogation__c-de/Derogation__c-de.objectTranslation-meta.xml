@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ausnahmeregelung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ausnahmeregelungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ausnahmeregelung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ausnahmeregelungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ausnahmeregelung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ausnahmeregelungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ausnahmeregelung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Ausnahmeregelungen</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Dérogation contractuelle - DRAFT</layout>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label>Selbstbeteiligung und Versicherung</label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label>Kostenloser LD / Mulet</label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Bezahlung und AGBs</label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation contractuelle - En cours</layout>
+        <sections>
+            <label>Selbstbehalt und Versicherung</label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Selbstbeteiligung und Versicherung</label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label>Kostenloses LD / Ersatzfahrzeug</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Kostenloser LD / Mulet</label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label>neuer Abschnitt</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Vertragsbedingungen</label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Bezahlung und AGBs</label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation contractuelle - Lecture seule</layout>
+        <sections>
+            <label>Basis-Informationen</label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Selbstbeteiligung und Versicherung</label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label>Kostenloser LD / Mulet</label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label>AGBs</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Bezahlung und AGBs</label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - DRAFT</layout>
+        <sections>
+            <label>DDT-Preis vs Sondererlaubnis</label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - En cours</layout>
+        <sections>
+            <label>Einverständnis von der Geschäftsführung</label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label>DDT-Preis vs Sondererlaubnis</label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - Lecture seule</layout>
+        <sections>
+            <label>Einverständnis von der Geschäftsführung</label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label>DDT-Preis vs Sondererlaubnis</label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Dérogation</layout>
+        <sections>
+            <label>Einverständnis von der Geschäftsführung</label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label>Vertragsbedingungen</label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label>DDT-Preis vs Sondererlaubnis</label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label>Selbstbeteiligung und Versicherung</label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Kostenloser LD / Mulet</label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>neuer Abschnitt</label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Bezahlung und AGBs</label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Dérogation - Lecture seule</layout>
+        <sections>
+            <label>Einverständnis von der Geschäftsführung</label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label>Vertragsbedingungen</label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label>DDT-Preis vs Sondererlaubnis</label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label>Selbstbeteiligung und Versicherung</label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label>Allgemeine Informationen</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Kostenloser LD / Mulet</label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Bezahlung und AGBs</label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Num der Abweichung</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Bedingungen Derogation</label>
+        <name>Conditions_Dero</name>
+    </quickActions>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Synchronisierung erledigt</label>
+        <name>Synchroniser</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Synchronisieren</label>
+        <name>Synchroniser</name>
+    </quickActions>
+    <recordTypes>
+        <label>Sondererlaubnis</label>
+        <name>Derogation</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sondererlaubnis - nur Lesen</label>
+        <name>Derogation_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>vertragliche Derogation - Entwurf</label>
+        <name>Derogation_contractuelle_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label>vertragliche Derogation - in Bearbeitung</label>
+        <name>Derogation_contractuelle_En_cours</name>
+    </recordTypes>
+    <recordTypes>
+        <label>vertragliche Derogation - nur Lesen</label>
+        <name>Derogation_contractuelle_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preis Derogation - Entwurf</label>
+        <name>Derogation_tarifaire_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Tarifderogation - in Bearbeitung</label>
+        <name>Derogation_tarifaire_En_Cours</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Tarifderogation - nur Lesen</label>
+        <name>Derogation_tarifaire_Lecture_seule</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- La demande de dérogation doit se faire via le bouton Soumettre pour approbation --></errorMessage>
+        <name>VR_Bloquer_le_passage_au_statut_Demande</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wählen Sie bitte einen Mietpreis um eine Tarifderogation erstellen zu können</errorMessage>
+        <name>VR_WFC_Conditions_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas synchroniser la dérogation si elle est pas en statut acceptée ou amendée --></errorMessage>
+        <name>VR_WFC_Conditions_Synchro_Dero_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;étes pas autorisé à modifier le statut de la dérogation. --></errorMessage>
+        <name>VR_WFC_Modification_Statut_Bloque</name>
+    </validationRules>
+</CustomObjectTranslation>

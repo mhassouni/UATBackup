@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_Etude_Service_Produit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+AND(NOT(ISBLANK(EnAttenteDDT2_Stamp__c )),NOT(ISBLANK( EnAttenteServiceProduit_Stamp__c )),NOT(ISBLANK(EnAttenteServiceProduitAchat_Stamp__c)),NOT(ISBLANK(EnAttenteServiceProduitRetourAchat_Stamp__c  )))
+,
+( (EnAttenteDDT2_Stamp__c - EnAttenteServiceProduit_Stamp__c)-(EnAttenteServiceProduitRetourAchat_Stamp__c - EnAttenteServiceProduitAchat_Stamp__c) )*24
+,
+if(
+AND((ISBLANK(EnAttenteLecapitaineRetourAchat_Stamp__c)),(ISBLANK(EnAttenteLecapitaineServiceAchat_Stamp__c )))
+,
+(EnAttenteDDT2_Stamp__c - EnAttenteServiceProduit_Stamp__c)*24
+,
+null
+))</formula>
+    <label>Durée d’étude Service Produit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

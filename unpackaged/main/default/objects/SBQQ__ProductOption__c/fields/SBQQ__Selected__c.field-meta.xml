@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Selected__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates this option should be selected by default.</description>
+    <inlineHelpText>Sélectionnez cette case si cette option produit doit être automatiquement sélectionnée par défaut.</inlineHelpText>
+    <label>Selected</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

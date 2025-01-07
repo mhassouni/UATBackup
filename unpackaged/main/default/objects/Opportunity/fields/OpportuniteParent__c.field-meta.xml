@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportuniteParent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Opportunité parent</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5)</booleanFilter>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Opportunity.AccountId</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <valueField>Opportunity.PaysRegionPF__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.AgencePF__c</field>
+            <operation>equals</operation>
+            <valueField>Opportunity.AgencePF__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Opportunité Multi-Produits, Opportunité Multi-Produits (en cours), Opportunité Multi-Produits (clôturée)</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Opportunité Mono-Produit, Opportunité Mono-Produit (en cours), Opportunité Mono-Produit (clôturée)</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Opportunités enfants</relationshipLabel>
+    <relationshipName>OpportunitesEnfants</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

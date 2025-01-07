@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Containers</masterLabel>
+        <translation>Container</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Meubles</masterLabel>
+        <translation>Möbel</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Véhicules</masterLabel>
+        <translation>Fahrzeug</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

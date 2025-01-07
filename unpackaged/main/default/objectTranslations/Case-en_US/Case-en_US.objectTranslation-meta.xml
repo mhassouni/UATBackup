@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Case - Dépannage UK</layout>
+        <sections>
+            <label><!-- Chauffeur --></label>
+            <section>Chauffeur</section>
+        </sections>
+        <sections>
+            <label><!-- Concerne --></label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Dates &amp; Durées - Ne pas saisir --></label>
+            <section>Dates &amp; Durées - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- Description - Ne pas saisir --></label>
+            <section>Description - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- LA CARTE --></label>
+            <section>LA CARTE</section>
+        </sections>
+        <sections>
+            <label><!-- Lieu --></label>
+            <section>Lieu</section>
+        </sections>
+        <sections>
+            <label><!-- Marchandise --></label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Origine du problème --></label>
+            <section>Origine du problème</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Chauffeur --></label>
+            <section>Chauffeur</section>
+        </sections>
+        <sections>
+            <label><!-- Concerne --></label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Dates &amp; Durées - Ne pas saisir --></label>
+            <section>Dates &amp; Durées - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- Description - Ne pas saisir --></label>
+            <section>Description - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- LA CARTE --></label>
+            <section>LA CARTE</section>
+        </sections>
+        <sections>
+            <label><!-- Lieu --></label>
+            <section>Lieu</section>
+        </sections>
+        <sections>
+            <label><!-- Marchandise --></label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Origine du problème --></label>
+            <section>Origine du problème</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout  - Container</layout>
+        <sections>
+            <label><!-- Concerne --></label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Client --></label>
+            <section>Contact Client</section>
+        </sections>
+        <sections>
+            <label><!-- Dates &amp; Durées - Ne pas saisir --></label>
+            <section>Dates &amp; Durées - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- Description - Ne pas saisir --></label>
+            <section>Description - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- LA CARTE --></label>
+            <section>LA CARTE</section>
+        </sections>
+        <sections>
+            <label><!-- Lieu --></label>
+            <section>Lieu</section>
+        </sections>
+        <sections>
+            <label><!-- Marchandise --></label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Origine du problème --></label>
+            <section>Origine du problème</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Admin</layout>
+        <sections>
+            <label>Driver</label>
+            <section>Chauffeur</section>
+        </sections>
+        <sections>
+            <label>Regarding</label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label>Dates and Durations - Do not enter</label>
+            <section>Dates &amp; Durées - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- Description - Ne pas saisir --></label>
+            <section>Description - Ne pas saisir</section>
+        </sections>
+        <sections>
+            <label><!-- LA CARTE --></label>
+            <section>LA CARTE</section>
+        </sections>
+        <sections>
+            <label>Location</label>
+            <section>Lieu</section>
+        </sections>
+        <sections>
+            <label>Goods</label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Origin of problem</label>
+            <section>Origine du problème</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Community - Container</layout>
+        <sections>
+            <label><!-- 1 --></label>
+            <section>1</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Concerne --></label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Marchandise --></label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Origine du problème --></label>
+            <section>Origine du problème</section>
+        </sections>
+        <sections>
+            <label><!-- Situation géographique --></label>
+            <section>Situation géographique</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Community - Véhicule</layout>
+        <sections>
+            <label><!-- 1 --></label>
+            <section>1</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Regarding</label>
+            <section>Concerne</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Goods</label>
+            <section>Marchandise</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Origin of problem</label>
+            <section>Origine du problème</section>
+        </sections>
+        <sections>
+            <label><!-- Situation géographique --></label>
+            <section>Situation géographique</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Demande de service</layout>
+        <sections>
+            <label><!-- Contact Client --></label>
+            <section>Contact Client</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Demande de service - Community</layout>
+        <sections>
+            <label><!-- Contact Client --></label>
+            <section>Contact Client</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Demande de support compte</layout>
+        <sections>
+            <label><!-- Contact Client --></label>
+            <section>Contact Client</section>
+        </sections>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout - Demande de support compte - Community</layout>
+        <sections>
+            <label><!-- Contact Client --></label>
+            <section>Contact Client</section>
+        </sections>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>The request is on hold</label>
+        <name>Mettre_en_attente</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Put on hold</label>
+        <name>Mettre_en_attente</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Modify</label>
+        <name>Modifier</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Demande de service --></label>
+        <name>Demande_de_service</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dépannage - Container --></label>
+        <name>Depannage_Container</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dépannage - véhicule --></label>
+        <name>Depannage_Vehicule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gestion du portail --></label>
+        <name>Gestion_du_portail</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- &apos;Merci de clôturer le ou les ordres de travail associé(s) avant de clôturer l&apos;intervention&quot; --></errorMessage>
+        <name>Case_Cloture_OTSEncours</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La requête ne peut être modifié que par Petit Forestier --></errorMessage>
+        <name>VR_Case_StatutLectureSeule_Community</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label>New Work Order</label>
+        <name>Nouvel_Ordre_de_Travail</name>
+    </webLinks>
+</CustomObjectTranslation>

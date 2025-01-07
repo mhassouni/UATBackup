@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonnée</masterLabel>
+        <translation>Abgegeben</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours</masterLabel>
+        <translation>in Bearbeitung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Planifiée</masterLabel>
+        <translation>Geplant</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminée</masterLabel>
+        <translation>Erledigt</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

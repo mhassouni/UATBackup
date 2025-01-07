@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prix_unitaire_assurance_Formule__c</fullName>
+    <description>GFC-1859</description>
+    <externalId>false</externalId>
+    <formula>IF
+(
+AND(ISPICKVAL(Formule__c,&quot;&quot;),  Marchandises_transportees__c = TRUE ,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+8.825,
+IF
+(
+AND(ISPICKVAL(Formule__c,&quot;&quot;),  Marchandises_transportees__c = False,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+0,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect&quot;),ISPICKVAL(Formule__c,&quot;Sérénité&quot;)),  Marchandises_transportees__c = TRUE ,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+68.825,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect&quot;),ISPICKVAL(Formule__c,&quot;Sérénité&quot;)),  Marchandises_transportees__c = FALSE,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+60,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect +&quot;),ISPICKVAL(Formule__c,&quot;Sérénité +&quot;)),  Marchandises_transportees__c = TRUE ,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+86.495,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect +&quot;),ISPICKVAL(Formule__c,&quot;Sérénité +&quot;)),  Marchandises_transportees__c = FALSE,  ISPICKVAL(Type_de_vehicule__c,&quot;VL&quot;)),
+77.67,
+IF
+(
+AND(ISPICKVAL(Formule__c,&quot;&quot;),   ISPICKVAL(Type_de_vehicule__c,&quot;PL&quot;)),
+0,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect&quot;),ISPICKVAL(Formule__c,&quot;Sérénité&quot;)),  ISPICKVAL(Type_de_vehicule__c,&quot;PL&quot;)),
+77.5,
+IF
+(
+AND(OR(ISPICKVAL(Formule__c,&quot;Smart Protect +&quot;),ISPICKVAL(Formule__c,&quot;Sérénité +&quot;)),  ISPICKVAL(Type_de_vehicule__c,&quot;PL&quot;)),
+100.58,0
+)
+
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <label>Prix unitaire assurance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

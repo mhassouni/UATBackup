@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Services</fullName>
+        <default>false</default>
+        <label>Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Caisse</fullName>
+        <default>false</default>
+        <label>Caisse</label>
+    </customValue>
+    <customValue>
+        <fullName>Cabine</fullName>
+        <default>false</default>
+        <label>Cabine</label>
+    </customValue>
+    <masterLabel>Sous famille</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

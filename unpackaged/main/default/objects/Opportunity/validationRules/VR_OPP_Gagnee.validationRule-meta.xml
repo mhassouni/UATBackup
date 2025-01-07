@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_OPP_Gagnee</fullName>
+    <active>true</active>
+    <description>Statut 4 → 5</description>
+    <errorConditionFormula>AND(
+Text(PaysRegionPF__c)&lt;&gt;&#39;Reways&#39;,
+PRIORVALUE(StageName) = $Label.OPP_StageName_EnNegociation,
+ISPICKVAL(StageName,&#39;$Label.OPP_StageName_Gagnee&#39;),
+ISCHANGED(StageName),
+ISNULL( DateClotureEffective__c )
+)</errorConditionFormula>
+    <errorMessage>Veuillez renseigner une date de clôture effective.</errorMessage>
+</ValidationRule>

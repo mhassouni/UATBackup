@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Név lakbér indexálási index és KM</label>
+        <name>Nom_indice_indexation_Loyers_KM__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Más</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNL</masterLabel>
+            <translation><!-- CNL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

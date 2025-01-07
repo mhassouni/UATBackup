@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Le mot de passe de l&#39;utilisateur n&#39;expire jamais</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GreenForce_Mot de passe n&#39;expire pas</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PasswordNeverExpires</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+(
+OR(
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusSiteAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusUltimateAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusClientAccount)
+,
+IF
+(AND(ISPICKVAL(Status,&quot;Nouvelle&quot;), Requete_en_attente__c ==FALSE),IMAGE(&quot;/client/resource/1556207842000/Case_Nouvelle_V2?&quot;,&quot;Nouvelle&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;Nouvelle&quot;), Requete_en_attente__c ==TRUE),IMAGE(&quot;/client/resource/1556207856000/Case_Nouvelle_Attente_V2?&quot;,&quot;Attente&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;En_Cours&quot;), Requete_en_attente__c ==FALSE),IMAGE(&quot;/client/resource/1561547731000/Case_EnCours_V2?&quot;,&quot;En Cours&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;En_Cours&quot;), Requete_en_attente__c == TRUE),IMAGE(&quot;/client/resource/1556207885000/Case_EnCours_Attente_V2?&quot;,&quot;Attente&quot;,20,130),
+IF
+(ISPICKVAL(Status,&quot;Terminee&quot;),IMAGE(&quot;/client/resource/1556207905000/Case_Ferme_V2?&quot;,&quot;Terminée&quot;,20,130),&#39;&#39;)))))
+,
+IF
+(AND(ISPICKVAL(Status,&quot;Nouvelle&quot;), Requete_en_attente__c ==FALSE),IMAGE(&quot;/resource/1556207842000/Case_Nouvelle_V2?&quot;,&quot;Nouvelle&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;Nouvelle&quot;), Requete_en_attente__c ==TRUE),IMAGE(&quot;/resource/1556207856000/Case_Nouvelle_Attente_V2?&quot;,&quot;Attente&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;En_Cours&quot;), Requete_en_attente__c ==FALSE),IMAGE(&quot;/resource/1561547731000/Case_EnCours_V2?&quot;,&quot;En Cours&quot;,20,130),
+IF
+(AND(ISPICKVAL(Status,&quot;En_Cours&quot;), Requete_en_attente__c == TRUE),IMAGE(&quot;/resource/1556207885000/Case_EnCours_Attente_V2?&quot;,&quot;Attente&quot;,20,130),
+IF
+(ISPICKVAL(Status,&quot;Terminee&quot;),IMAGE(&quot;/resource/1556207905000/Case_Ferme_V2?&quot;,&quot;Terminée&quot;,20,130),&#39;&#39;)))))
+)</formula>
+    <label>Statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

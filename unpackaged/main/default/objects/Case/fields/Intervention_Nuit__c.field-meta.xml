@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervention_Nuit__c</fullName>
+    <formula>IF
+(
+ OR(Owner:User.ProfileId ==  $Label.USR_ProfileId_PFColdline , TECH_Intervention_Nuit__c =true)
+,
+TRUE
+,
+FALSE
+)</formula>
+    <label>Intervention Nuit</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

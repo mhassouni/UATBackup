@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transporteur__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Compte du trnasporteur assigné</description>
+    <label>Transporteur</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Réservations (Transporteur)</relationshipLabel>
+    <relationshipName>Reservations_Transporteur</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

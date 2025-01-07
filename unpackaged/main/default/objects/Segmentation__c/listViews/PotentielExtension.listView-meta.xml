@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PotentielExtension</fullName>
+    <columns>NAME</columns>
+    <columns>CodeNACE__c</columns>
+    <columns>BusinessLine__c</columns>
+    <columns>Notation__c</columns>
+    <columns>NotationPotentielExtension__c</columns>
+    <columns>TrancheBasse__c</columns>
+    <columns>TrancheHaute__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Segmentation__c.PotentielExtension</value>
+    </filters>
+    <label>Potentiel d&#39;extension</label>
+</ListView>

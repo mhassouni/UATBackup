@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif Transport inutile --></label>
+        <name>Motif_Transport_inutile__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L&#39;emplacement n&#39;est pas disponible</masterLabel>
+            <translation><!-- L&apos;emplacement n&apos;est pas disponible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le client n&#39;a pas été informé</masterLabel>
+            <translation><!-- Le client n&apos;a pas été informé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le container contient de la marchandise</masterLabel>
+            <translation><!-- Le container contient de la marchandise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le container est encore branché</masterLabel>
+            <translation><!-- Le container est encore branché --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le site n&#39;est pas accessible</masterLabel>
+            <translation><!-- Le site n&apos;est pas accessible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manque de matériels pour installation</masterLabel>
+            <translation><!-- Manque de matériels pour installation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

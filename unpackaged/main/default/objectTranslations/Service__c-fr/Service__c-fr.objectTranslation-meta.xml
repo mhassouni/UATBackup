@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Services</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Service - Assurance Affinitaire</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Service - Assurance Affinitaire - DRAFT</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Service - Assurance Affinitaire - Lecture Seule</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Assurance Affinitaire --></label>
+        <name>Assurance_Affinitaire</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assurance Affinitaire -  DRAFT --></label>
+        <name>Assurance_Affinitaire_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assurance Affinitaire - Lecture Seule --></label>
+        <name>Assurance_Affinitaire_Lecture_Seule</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- L&apos;ajout d&apos;un service n&apos;est pas autorisé pour les devis synchronisés --></errorMessage>
+        <name>VR_ServicesAffinitaires_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;avez pas le droit de modifier cet enregistrement. --></errorMessage>
+        <name>VR_Services_Droits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Marchandise transportée n&apos;est pas autorisé pour ce type de véhicule --></errorMessage>
+        <name>VR_Services_MarchandiseVL</name>
+    </validationRules>
+</CustomObjectTranslation>

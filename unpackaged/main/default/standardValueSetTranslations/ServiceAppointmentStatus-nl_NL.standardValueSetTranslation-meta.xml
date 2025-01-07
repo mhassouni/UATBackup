@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation>Geannuleerd</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aucun</masterLabel>
+        <translation>Geen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours</masterLabel>
+        <translation>Lopende</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expédié</masterLabel>
+        <translation>Verzonden</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Impossible de terminer</masterLabel>
+        <translation>Onmogelijk te voltooien</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Planifié</masterLabel>
+        <translation>Gepland</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminé</masterLabel>
+        <translation>Voltooien</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

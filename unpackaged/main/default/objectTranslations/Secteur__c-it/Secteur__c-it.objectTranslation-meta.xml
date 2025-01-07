@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Settore</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Settore</value>
+    </caseValues>
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Secteur Layout</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome del settore</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

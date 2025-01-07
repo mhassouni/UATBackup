@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>FAMILIE</help>
+        <label>Produkttyp</label>
+        <name>TypeProduits__c</name>
+        <picklistValues>
+            <masterLabel>Carrosseries</masterLabel>
+            <translation>Koffer / Kasten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation>Container</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dry vehicle</masterLabel>
+            <translation>Trockenfahrzeug</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meubles</masterLabel>
+            <translation>Kühlmöbel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refrigerated vehicle</masterLabel>
+            <translation><!-- Refrigerated vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Frigorifiques</masterLabel>
+            <translation>Kühlfahrzeug</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Secs</masterLabel>
+            <translation><!-- Véhicules Secs --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

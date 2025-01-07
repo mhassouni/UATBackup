@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonEndOfContract__c</fullName>
+    <label>Motif de la Demande fin de contrat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Achat</fullName>
+                <default>false</default>
+                <label>Achat</label>
+            </value>
+            <value>
+                <fullName>Concurrence</fullName>
+                <default>false</default>
+                <label>Concurrence</label>
+            </value>
+            <value>
+                <fullName>Réduction</fullName>
+                <default>false</default>
+                <label>Réduction</label>
+            </value>
+            <value>
+                <fullName>Parc Client</fullName>
+                <default>false</default>
+                <label>Parc Client</label>
+            </value>
+            <value>
+                <fullName>Cessation Relation</fullName>
+                <default>false</default>
+                <label>Cessation Relation</label>
+            </value>
+            <value>
+                <fullName>Cessation Active</fullName>
+                <default>false</default>
+                <label>Cessation Active</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>10</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Fin client</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fin client</label>
+            </value>
+            <value>
+                <fullName>Plus besoin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plus besoin</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>ll</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ll</label>
+            </value>
+            <value>
+                <fullName>try</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>try</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Standard pour l&#39;envoi de la facture de dépôt de garantie</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Facture Dépôt de Garantie</name>
+    <style>none</style>
+    <subject>PETIT FORESTIER - Facture Dépôt de Garantie</subject>
+    <textOnly>Bonjour, 
+
+Je vous prie de bien vouloir trouver, ci-joint, votre facture d&#39;acompte pour votre location démarrant le {{{Order.EffectiveDate}}}. 
+
+Nous vous remercions de bien vouloir nous faire parvenir votre règlement au plus tôt avant la livraison. 
+
+En vous remerciant par avance et restant à votre disposition.
+
+Bien cordialement, 
+
+	
+Nathalie WINCHENNE
+RESPONSABLE ADMINISTRATIVE ET FACTURATION
+07 62 44 73 39</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

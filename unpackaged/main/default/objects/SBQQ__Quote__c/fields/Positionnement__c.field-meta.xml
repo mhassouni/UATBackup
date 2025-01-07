@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Positionnement__c</fullName>
+    <label>Positionnement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A quai</fullName>
+                <default>false</default>
+                <label>A quai</label>
+            </value>
+            <value>
+                <fullName>Au sol</fullName>
+                <default>false</default>
+                <label>Au sol</label>
+            </value>
+            <value>
+                <fullName>En intérieur</fullName>
+                <default>false</default>
+                <label>En intérieur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

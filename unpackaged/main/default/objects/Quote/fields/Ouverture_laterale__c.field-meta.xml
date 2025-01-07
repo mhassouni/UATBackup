@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ouverture_laterale__c</fullName>
+    <label>Ouverture latérale (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BATTANTE</fullName>
+                <default>false</default>
+                <label>BATTANTE</label>
+            </value>
+            <value>
+                <fullName>COULISSANTE</fullName>
+                <default>false</default>
+                <label>COULISSANTE</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PORTE BATTANTE</fullName>
+                <default>false</default>
+                <label>DOUBLE PORTE BATTANTE</label>
+            </value>
+            <value>
+                <fullName>MIXTE (PANNEAU D + BACHE G)</fullName>
+                <default>false</default>
+                <label>MIXTE (PANNEAU D + BACHE G)</label>
+            </value>
+            <value>
+                <fullName>MIXTE (PANNEAU G + BACHE D)</fullName>
+                <default>false</default>
+                <label>MIXTE (PANNEAU G + BACHE D)</label>
+            </value>
+            <value>
+                <fullName>PORTE BATTANTE</fullName>
+                <default>false</default>
+                <label>PORTE BATTANTE</label>
+            </value>
+            <value>
+                <fullName>PORTE BATTANTE (sans rail d&#39;arrimage)</fullName>
+                <default>false</default>
+                <label>PORTE BATTANTE (sans rail d&#39;arrimage)</label>
+            </value>
+            <value>
+                <fullName>PORTE COULISSANTE (sans rail d&#39;arrimage)</fullName>
+                <default>false</default>
+                <label>PORTE COULISSANTE (sans rail d&#39;arrimage)</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVANT MANUEL ALUMINIUM</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVANT MANUEL ALUMINIUM</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

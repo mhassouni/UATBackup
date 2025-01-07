@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Secteur --></label>
+        <name>Secteur__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture et agroalimentaire</masterLabel>
+            <translation><!-- Agriculture et agroalimentaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce et artisanat</masterLabel>
+            <translation><!-- Commerce et artisanat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energie</masterLabel>
+            <translation><!-- Energie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance et assurance</masterLabel>
+            <translation><!-- Finance et assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrie</masterLabel>
+            <translation><!-- Industrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santé</masterLabel>
+            <translation><!-- Santé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tourisme</masterLabel>
+            <translation><!-- Tourisme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télécoms et internet</masterLabel>
+            <translation><!-- Télécoms et internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Énergie</masterLabel>
+            <translation><!-- Énergie --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

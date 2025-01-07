@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OT_OrdreDeReparation</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>AssetId</fields>
+    <fields>Agence_Intervenante__c</fields>
+    <fields>Status</fields>
+    <fields>RecordTypeId</fields>
+    <label>OT_OrdreDeRéparation</label>
+</CompactLayout>

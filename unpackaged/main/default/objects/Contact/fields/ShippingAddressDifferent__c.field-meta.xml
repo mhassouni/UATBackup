@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShippingAddressDifferent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Utilisé pour qu&#39;un automatisme alimente l&#39;adresse de livraison avec l&#39;adresse de facturation</description>
+    <label>Adresse de livraison différente</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

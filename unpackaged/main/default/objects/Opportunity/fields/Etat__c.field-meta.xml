@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etat__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+(
+AND((CloseDate -TODAY())&gt;=7, IsClosed =false)
+,
+IMAGE(&quot;/resource/1539516805000/Flag_green?&quot;, &quot;GreenFlag&quot;,35,35)
+,
+	if
+	(
+	AND( (CloseDate-Today())&lt;=6 ,CloseDate-TODAY()&gt;=0,IsClosed=false )
+	,
+	IMAGE(&quot;/resource/1539516821000/Flag_yellow?&quot;,&quot;YellowFlag&quot;,35,35)
+	,
+		IF
+		(
+		AND((CloseDate - TODAY())&lt;0 ,IsClosed=false)
+		,
+		IMAGE(&quot;/resource/1539516784000/Flag_red?&quot;,&quot;RedFlag&quot;,35,35)
+		,
+		IMAGE(&quot;/resource/1553031783000/Opp_ClosedLock?&quot;,&quot;Closed&quot;,35,35)
+		)
+	)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Vert : Plus d&#39;une semaine avant la date de clôture prévue /
+Jaune : Moins d&#39;une semaine avant la date de clôture prévue /
+Rouge : Date de clôture dépassée /
+Cadena : Opportunité clôturée.</inlineHelpText>
+    <label>Etat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

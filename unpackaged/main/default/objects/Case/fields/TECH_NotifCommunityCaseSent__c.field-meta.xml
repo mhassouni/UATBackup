@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NotifCommunityCaseSent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Coché si la notification &quot;création d&#39;une requête community&#39; est envoyée à l&#39;agence intervenante.</description>
+    <label>TECH_NotifCommunityCaseSent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAYTDTotal__c</fullName>
+    <description>Somme du chiffre d&#39;affaires de tous les contrats YTD sur tous types de produits</description>
+    <label>Chiffre d&#39;affaires YTD - Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

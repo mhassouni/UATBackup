@@ -1,0 +1,16 @@
+<apex:page docType="html-5.0" controller="dupcheck.plautiWebVfEntry" sidebar="false" title="DC Job Overall Results" lightningStylesheets="false" standardStylesheets="false">
+    <style>
+        body {
+            background-color: #b0c4e0;
+        }
+    </style>
+    <div id="app" data-startroute="/dc-onboarding/intro"></div>
+    <script>
+        window.__PLAUTI_KOALA_ORIGIN = 'ONBOARDING_VF';
+        window.__PLAUTI_KOALA_ORIGINTOKEN = 'ONBOARDING_VF'; 
+        window.__PLAUTI_KOALA_LANG = '{!TEXT($User.LanguageLocaleKey)}';
+        window.__PLAUTI_KOALA_TZ = "{!TEXT($User.TimeZoneSidKey)}";
+    </script>
+    <script type="module" src="{!URLFOR($Resource.dcUiPages,'')}/index.js" />
+    <apex:stylesheet value="{!URLFOR($Resource.dupcheck__dcUiPages,'')}/index.css" />
+</apex:page>

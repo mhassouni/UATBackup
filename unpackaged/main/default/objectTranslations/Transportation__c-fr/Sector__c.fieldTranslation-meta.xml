@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Secteur --></label>
+        <name>Sector__c</name>
+        <picklistValues>
+            <masterLabel>Corse</masterLabel>
+            <translation><!-- Corse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forfait 14 jours</masterLabel>
+            <translation><!-- Forfait 14 jours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forfait 21 jours</masterLabel>
+            <translation><!-- Forfait 21 jours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forfait 7 jours</masterLabel>
+            <translation><!-- Forfait 7 jours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDF</masterLabel>
+            <translation><!-- IDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Bretagne / Pays de Loire</masterLabel>
+            <translation><!-- Région Bretagne / Pays de Loire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Centre / Aquitaine / Midi Pyrénées</masterLabel>
+            <translation><!-- Région Centre / Aquitaine / Midi Pyrénées --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Est</masterLabel>
+            <translation><!-- Région Est --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Ile de France</masterLabel>
+            <translation><!-- Région Ile de France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Nord / Normandie</masterLabel>
+            <translation><!-- Région Nord / Normandie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Paca</masterLabel>
+            <translation><!-- Région Paca --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Région Rhônes Alpes</masterLabel>
+            <translation><!-- Région Rhônes Alpes --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

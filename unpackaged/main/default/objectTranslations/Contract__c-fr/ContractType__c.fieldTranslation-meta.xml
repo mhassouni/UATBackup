@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de contrat --></label>
+        <name>ContractType__c</name>
+        <picklistValues>
+            <masterLabel>Contrat Abonnement</masterLabel>
+            <translation><!-- Contrat Abonnement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat Container</masterLabel>
+            <translation><!-- Contrat Container --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat Courte Durée</masterLabel>
+            <translation><!-- Contrat Courte Durée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat Mobilier</masterLabel>
+            <translation><!-- Contrat Mobilier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat Moyenne Duré</masterLabel>
+            <translation><!-- Contrat Moyenne Duré --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat container CD</masterLabel>
+            <translation><!-- Contrat container CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat container LD</masterLabel>
+            <translation><!-- Contrat container LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat container MD</masterLabel>
+            <translation><!-- Contrat container MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat maintenance</masterLabel>
+            <translation><!-- Contrat maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat service</masterLabel>
+            <translation><!-- Contrat service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue Durée Neuf</masterLabel>
+            <translation><!-- Longue Durée Neuf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue Durée Parc</masterLabel>
+            <translation><!-- Longue Durée Parc --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

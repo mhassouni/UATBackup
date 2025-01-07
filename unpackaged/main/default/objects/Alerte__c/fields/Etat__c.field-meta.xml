@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etat__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+(TEXT(Priorite__c) = &#39;Inutile&#39; ,IMAGE(&quot;/resource/1629820056000/Icon_Flag_Black?&quot;, &quot;&quot;,32, 32),
+IF(TEXT(Priorite__c)= &#39;Basse&#39;,IMAGE(&quot;/resource/1623751189000/Icon_Flag_Green?&quot;, &quot;&quot;,32, 32),
+IF(TEXT(Priorite__c)= &#39;Moyenne&#39;,IMAGE(&quot;/resource/1623751255000/Icon_Flag_Yellow?&quot;, &quot;&quot;,32, 32),
+IF(TEXT(Priorite__c)= &#39;Critique&#39;,IMAGE(&quot;/resource/1623751238000/Icon_Flag_Red?&quot;, &quot;&quot;,32, 32), IMAGE(&quot;/resource/1623751222000/Icon_Flag_Null?&quot;, &quot;&quot;,32, 32)
+))))</formula>
+    <label>Etat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

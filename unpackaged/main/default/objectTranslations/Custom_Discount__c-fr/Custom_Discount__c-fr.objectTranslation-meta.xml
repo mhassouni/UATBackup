@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Discount</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Discounts</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Global Discount</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Promotion Produit</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Promotion globale à durée limitée. --></description>
+        <label><!-- Promotion Globale --></label>
+        <name>Promotion_Globale</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Promotion pour un produit pour une durée limitée. --></description>
+        <label><!-- Promotion Produit --></label>
+        <name>Promotion_Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

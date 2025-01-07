@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Reason for inactivity</label>
+        <name>RaisonInactivite__c</name>
+        <picklistValues>
+            <masterLabel>Changement société</masterLabel>
+            <translation>Company change</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doublon</masterLabel>
+            <translation>Duplicate entry</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Décès</masterLabel>
+            <translation>Death</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Désactivation</masterLabel>
+            <translation><!-- Désactivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retraite</masterLabel>
+            <translation>Retirement</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

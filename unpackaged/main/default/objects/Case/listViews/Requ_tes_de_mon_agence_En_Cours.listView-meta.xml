@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requ_tes_de_mon_agence_En_Cours</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Statut__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Agence_proprietaire__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouvelle,En_Cours</value>
+    </filters>
+    <filters>
+        <field>Agence_Intervenante__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>TECH_PF_TERRITOIRE__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Demande_de_service,Case.Depannage_Container,Case.Depannage_Vehicule</value>
+    </filters>
+    <label>02 - Requêtes de ma région - En Cours</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>GroupePartage_CONSTANTIN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>GroupePartage_CONSTANTIN</label>
+        <sharedTo>
+            <group>GroupePartage_CONSTANTIN</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>CONSTANTIN</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GroupePartage_DION</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>GroupePartage_DION</label>
+        <sharedTo>
+            <group>GroupePartage_DION</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DION</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GroupePartage_DRACULA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>GroupePartage_DRACULA</label>
+        <sharedTo>
+            <group>GroupePartage_DRACULA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DRACULA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GroupePartage_LEGO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>GroupePartage_LEGO</label>
+        <sharedTo>
+            <group>GroupePartage_LEGO</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>LEGO</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GroupePartage_ZEUS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>GroupePartage_ZEUS</label>
+        <sharedTo>
+            <group>GroupePartage_ZEUS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>ZEUS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_Agences</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage Agences</label>
+        <sharedTo>
+            <roleAndSubordinates>DirectionGenerale</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Agence PF</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_FFUK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage FFUK</label>
+        <sharedTo>
+            <group>GroupePartage_PFUK</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PFUK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>contains</operation>
+            <value>ROYAUME UNI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_FRANCE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Règle de partage FRANCE</description>
+        <label>Partage FRANCE</label>
+        <sharedTo>
+            <group>GroupePartage_FRANCE</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DRO NORD 5,DRO NORD 6,DRO NORD 7,DROM,DRO SUD 1,STFR1,DRO SUD 2,DRO IDF 1,DRO SUD 3,STFR2,DRO IDF 2,DRO SUD 4,STFR3,DRO NORD 1,DRO SUD 5,STFR4,DRO NORD 2,DRO SUD 6,STFR5,DRO NORD 3,DRO SUD 7,DRO NORD 4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>contains</operation>
+            <value>FRANCE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_Fournisseur</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Partage compte type fournisseurs pour Rôle Achat</description>
+        <label>Partage Fournisseur</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Direction_des_achats</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Fournisseur</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_International</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Partage des comptes hors France et US</description>
+        <label>Partage International</label>
+        <sharedTo>
+            <group>GroupePartage_International</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIPL,PICH,PIBU,PICZ,PIMA,PIAE,PIAT,PIHU,PIZA,PIES,PITA,PIPT,PIBE,PILU,PIND,PIDE,PIRL,PISK,PIRO,PFUK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Client,Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>notContain</operation>
+            <value>FRANCE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIAE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIAE</label>
+        <sharedTo>
+            <group>GroupePartage_PIAE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIAE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIAT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIAT</label>
+        <sharedTo>
+            <group>GroupePartage_PIAT</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>contains</operation>
+            <value>AUTRICHE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIBE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIBE</label>
+        <sharedTo>
+            <group>GroupePartage_PIBE</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIBE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>BELGIQUE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PICH</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PICH</label>
+        <sharedTo>
+            <group>GroupePartage_PICH</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PICH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>SUISSE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PICZ</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PICZ</label>
+        <sharedTo>
+            <group>GroupePartage_PICZ</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PICZ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>REPUBLIQUE TCHEQUE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIDE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIDE</label>
+        <sharedTo>
+            <group>GroupePartage_PIDE</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIDE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ALLEMAGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIES</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIES</label>
+        <sharedTo>
+            <group>GroupePartage_PIES</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIES</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ESPAGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIHU</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIHU</label>
+        <sharedTo>
+            <group>GroupePartage_PIHU</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIHU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>HONGRIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PILU</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PILU</label>
+        <sharedTo>
+            <group>GroupePartage_PILU</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PILU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>LUXEMBOURG</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIMA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIMA</label>
+        <sharedTo>
+            <group>GroupePartage_PIMA</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIMA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>MAROC</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIND</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIND</label>
+        <sharedTo>
+            <group>GroupePartage_PIND</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIND</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>PAYS - BAS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIPL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIPL</label>
+        <sharedTo>
+            <group>GroupePartage_PIPL</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIPL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>POLOGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIPT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage_PIPT</label>
+        <sharedTo>
+            <group>GroupePartage_PIPT</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>PORTUGAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIRL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIRL</label>
+        <sharedTo>
+            <group>GroupePartage_PIRL</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIRL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>IRLANDE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIRO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage_PIRO</label>
+        <sharedTo>
+            <group>GroupePartage_PIRO</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIRO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ROUMANIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PISK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage_PISK</label>
+        <sharedTo>
+            <group>GroupePartage_PISK</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PISK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>SLOVAQUIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PITA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PITA</label>
+        <sharedTo>
+            <group>GroupePartage_PITA</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PITA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ITALIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIZA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage PIZA</label>
+        <sharedTo>
+            <group>GroupePartage_PIZA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIZA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>AFRIQUE DU SUD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_Reways_Account</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share prospect, competitor, site, partner and customer with Reways</description>
+        <label>Partage Reways Account</label>
+        <sharedTo>
+            <group>GroupePartage_Reways</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Compte Concurrent,Prospect,Client,Compte Partenaire</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_STFR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Stricher</description>
+        <label>Partage STFR</label>
+        <sharedTo>
+            <group>GroupePartage_Zefirent</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DRO NORD 5,DRO NORD 6,DRO NORD 7,DRO SUD 1,DROM,STFR1,DRO SUD 2,DRO IDF 1,DRO SUD 3,DRO IDF 2,DRO SUD 4,STFR2,DRO NORD 1,DRO SUD 5,STFR3,DRO NORD 2,DRO SUD 6,STFR4,DRO NORD 3,DRO SUD 7,STFR5,DRO NORD 4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>FRANCE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_SV_noleggio</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Partage SV noleggio</label>
+        <sharedTo>
+            <group>GroupePartage_SVNOLEGGIO</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) or (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PITA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client,Site,Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ITALIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_USA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Règle de partage USA</description>
+        <label>Partage USA</label>
+        <sharedTo>
+            <group>GroupePartage_USA</group>
+        </sharedTo>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>USA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Site,Prospect,Client,Particulier (B2C)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>TECHPaysOperation__c</field>
+            <operation>equals</operation>
+            <value>ETATS UNIS D&#39;AMERIQUE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent,Particulier (B2C)</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>B2C</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>B2C</label>
+        <sharedTo>
+            <group>Tous_Utilisateurs</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tous_Utilisateurs</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CPT_SR02_VisibiliteParmiDirectionGenerale</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>CPT_SR02_VisibiliteParmiDirectionGenerale</label>
+        <sharedTo>
+            <role>DirectionGenerale</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DirectionGenerale</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

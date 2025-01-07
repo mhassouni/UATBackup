@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Parque Cliente Vehículo Isotermo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parques Cliente Vehículos Isotermos</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Parc Client Véhicules Secs</layout>
+        <sections>
+            <label>Comentarios</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>Datos generales</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Vehículo</label>
+            <section>Véhicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Identifiant --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACO_VR04_ProduitsConcurrent</fullName>
+    <active>true</active>
+    <description>Le produit de l&#39;opportunité doit faire partie des produits proposées par le compte concurrent</description>
+    <errorConditionFormula>IF 
+( 
+	ISPICKVAL(Opportunite__r.TypeProduits__c,&#39;Véhicules Frigorifiques&#39;)
+	, 
+	NOT INCLUDES(CompteRaisonSociale__r.Types_Produits_Concurrent__c ,&#39;Véhicules Frigorifiques&#39;) 
+	, 
+	IF 
+	( 
+		ISPICKVAL(Opportunite__r.TypeProduits__c,&#39;Véhicules Secs&#39;) 
+		, 
+		NOT INCLUDES(CompteRaisonSociale__r.Types_Produits_Concurrent__c ,&#39;Véhicules Secs&#39;) 
+, 
+IF 
+( 
+AND(ISPICKVAL(Opportunite__r.TypeProduits__c,&#39;Meubles&#39;) , Opportunite__r.RecordType.Id &lt;&gt; &#39;01220000000jkLmAAI&#39; )
+, 
+NOT INCLUDES(CompteRaisonSociale__r.Types_Produits_Concurrent__c ,&#39;Meubles&#39;) 
+, 
+IF 
+( 
+AND(ISPICKVAL(Opportunite__r.TypeProduits__c,&#39;Containers&#39;),Opportunite__r.RecordType.Id &lt;&gt; &#39;01220000000jkLmAAI&#39; )
+, 
+NOT INCLUDES(CompteRaisonSociale__r.Types_Produits_Concurrent__c ,&#39;Containers&#39;) 
+, 
+FALSE
+) 
+
+) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>CompteRaisonSociale__c</errorDisplayField>
+    <errorMessage>Vous devez choisir un compte concurrent qui propose le produit de votre opportunité</errorMessage>
+</ValidationRule>

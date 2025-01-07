@@ -1,0 +1,7 @@
+<aura:component controller="OpportunityWarningHeader"  implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="DisplayWarning" type="OpportunityWarningHeader"/>
+    <aura:if isTrue="{!v.DisplayWarning}">
+    	<div style="background-color:#FFB84C;text-align:center;font-size:16px;" >{!$Label.c.OPP_MessageErreur_WarningCotation}</div>
+    </aura:if> 
+</aura:component>

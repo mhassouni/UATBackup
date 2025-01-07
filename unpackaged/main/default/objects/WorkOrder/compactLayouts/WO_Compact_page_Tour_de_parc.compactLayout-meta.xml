@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WO_Compact_page_Tour_de_parc</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>AssetId</fields>
+    <fields>Status</fields>
+    <fields>Agence_Intervenante__c</fields>
+    <fields>Avancement__c</fields>
+    <label>WO Compact page - Tour de parc</label>
+</CompactLayout>

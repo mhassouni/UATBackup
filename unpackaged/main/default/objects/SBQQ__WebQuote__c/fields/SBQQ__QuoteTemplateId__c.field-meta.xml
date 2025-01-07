@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__QuoteTemplateId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>ID of quote template that must be used when generating documents from this quote.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stocke un ID de modèle de devis, si un ID doit être spécifié lors de la génération de documents PDF de devis.</inlineHelpText>
+    <label>Quote Template Id</label>
+    <length>18</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>This assignment has been created to automatically set the matching ID on the usage summary and the completion of unit of measure</description>
+        <name>Set_Matching_ID_Complete_Unit_of_Measure</name>
+        <label>Set Matching ID &amp; Complete Unit of Measure</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.blng__MatchingId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.blng__OrderProduct__r.OrderItemNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.blng__UnitOfMeasure__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Days</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>This flow has been created to automatically update the usage summary with some important information</description>
+    <interviewLabel>PF_Usage Summary Create Before Save Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PF_Usage Summary Create Before Save Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Matching_ID_Complete_Unit_of_Measure</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>blng__OrderProduct__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>blng__UsageSummary__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

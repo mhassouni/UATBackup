@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Rodzaj przetargu</label>
+        <name>TypeAppelOffre__c</name>
+        <picklistValues>
+            <masterLabel>Divers</masterLabel>
+            <translation><!-- Divers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Négocié</masterLabel>
+            <translation><!-- Négocié --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

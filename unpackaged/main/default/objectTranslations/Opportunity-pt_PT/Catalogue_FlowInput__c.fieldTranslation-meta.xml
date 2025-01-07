@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Catalogue --></label>
+        <name>Catalogue_FlowInput__c</name>
+        <picklistValues>
+            <masterLabel>BR_ST</masterLabel>
+            <translation><!-- BR_ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BR_ST_FRANCE BOISSON</masterLabel>
+            <translation><!-- BR_ST_FRANCE BOISSON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF</masterLabel>
+            <translation><!-- FS_PF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_API</masterLabel>
+            <translation><!-- FS_PF_API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_COMPASS</masterLabel>
+            <translation><!-- FS_PF_COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_DPT-REST.</masterLabel>
+            <translation><!-- FS_PF_DPT-REST. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_ELIOR</masterLabel>
+            <translation><!-- FS_PF_ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_EUROTRANS</masterLabel>
+            <translation><!-- FS_PF_EUROTRANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_PF_SODEXO</masterLabel>
+            <translation><!-- FS_PF_SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS_ST</masterLabel>
+            <translation><!-- FS_ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HY_ST</masterLabel>
+            <translation><!-- HY_ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HY_ST_KALHYGE</masterLabel>
+            <translation><!-- HY_ST_KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE_ST</masterLabel>
+            <translation><!-- SE_ST --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

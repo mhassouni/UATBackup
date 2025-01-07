@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Stav požiadavky</label>
+        <name>Statut_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>DONE</masterLabel>
+            <translation>Zmluva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS</masterLabel>
+            <translation>V procese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS QUOTATION LECAPITAINE</masterLabel>
+            <translation>V procese - Cenová politika Lecapitaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - LECAPITAINE - IN PRICING</masterLabel>
+            <translation>Čaká sa - Lecapitaine - Cenotvorba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</masterLabel>
+            <translation>Čaká sa - Produktový servis - Vrátenie nákupu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING - PRODUCT SERVICE &amp; PURCHASING</masterLabel>
+            <translation>Čaká sa - Produktové služby a nákup</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</masterLabel>
+            <translation>Čaká sa - Lecapitaine &amp; Nákup</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - BACK TO PURCHASES</masterLabel>
+            <translation>Čaká sa - Lecapitaine - Vrátenie nákupu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - DRAWN</masterLabel>
+            <translation>Čaká sa - Lecapitaine - Čerpané</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - IN DRAWING</masterLabel>
+            <translation>Čaká sa - Lecapitaine - Čerpanie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - TO BE DRAWN</masterLabel>
+            <translation>Čaká sa - Lecapitaine - Bude sa čerpať</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING DDT</masterLabel>
+            <translation>Čaká sa - DDT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FOR THE SALESPERSON</masterLabel>
+            <translation>Čaká sa na obchod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FRIOVAL QUOTATION</masterLabel>
+            <translation>Čaká na schválenie - Coldcar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING IGLOOCAR</masterLabel>
+            <translation>Čaká sa - Igloocar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING KEY ACCOUNTS</masterLabel>
+            <translation>Čaká sa - Kľúčoví zákazníci</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING LECAPITAINE</masterLabel>
+            <translation>Čaká sa - Lecapitaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING PURCHASE SERVICE</masterLabel>
+            <translation>Čaká sa - nákup</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</masterLabel>
+            <translation>Čaká sa - produktové oddelenie - v štádiu hodnotenia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</masterLabel>
+            <translation>Čaká sa - Produktový servis - v procese hodnotenia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING UK QUOTATION</masterLabel>
+            <translation>Čaká sa - Nákup vo Veľkej Británii</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

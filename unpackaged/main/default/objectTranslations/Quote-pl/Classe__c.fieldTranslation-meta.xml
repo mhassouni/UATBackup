@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Klasa</label>
+        <name>Classe__c</name>
+        <picklistValues>
+            <masterLabel>FNA</masterLabel>
+            <translation><!-- FNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA/FNA</masterLabel>
+            <translation><!-- FNA/FNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA/FRC</masterLabel>
+            <translation><!-- FNA/FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA/IN</masterLabel>
+            <translation><!-- FNA/IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNA/IR</masterLabel>
+            <translation><!-- FNA/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNAX</masterLabel>
+            <translation><!-- FNAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNAX/IN</masterLabel>
+            <translation><!-- FNAX/IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA</masterLabel>
+            <translation><!-- FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/FRA</masterLabel>
+            <translation><!-- FRA/FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/FRC</masterLabel>
+            <translation><!-- FRA/FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/FRC/IR</masterLabel>
+            <translation><!-- FRA/FRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/IR</masterLabel>
+            <translation><!-- FRA/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/RRC</masterLabel>
+            <translation><!-- FRA/RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA/RRC/IR</masterLabel>
+            <translation><!-- FRA/RRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX</masterLabel>
+            <translation><!-- FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX_FRAX</masterLabel>
+            <translation><!-- FRAX_FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAX_IR</masterLabel>
+            <translation><!-- FRAX_IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC</masterLabel>
+            <translation><!-- FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/FRC</masterLabel>
+            <translation><!-- FRC/FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/FRC/FRA</masterLabel>
+            <translation><!-- FRC/FRC/FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/FRC/FRC</masterLabel>
+            <translation><!-- FRC/FRC/FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/FRC/IR</masterLabel>
+            <translation><!-- FRC/FRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/IR</masterLabel>
+            <translation><!-- FRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/IR/IR</masterLabel>
+            <translation><!-- FRC/IR/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/RRC</masterLabel>
+            <translation><!-- FRC/RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC/RRC/IR</masterLabel>
+            <translation><!-- FRC/RRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX</masterLabel>
+            <translation><!-- FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX/FRCX/FRAX</masterLabel>
+            <translation><!-- FRCX/FRCX/FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX_FRAX</masterLabel>
+            <translation><!-- FRCX_FRAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX_FRCX</masterLabel>
+            <translation><!-- FRCX_FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCX_IR</masterLabel>
+            <translation><!-- FRCX_IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRC_FRA_FRA</masterLabel>
+            <translation><!-- FRC_FRA_FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements GROUPE</masterLabel>
+            <translation><!-- HORS STANDARD - voir aménagements GROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR/IR</masterLabel>
+            <translation><!-- IR/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR/IR/FRC/FRC</masterLabel>
+            <translation><!-- IR/IR/FRC/FRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRA</masterLabel>
+            <translation><!-- RRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRAX-IR</masterLabel>
+            <translation><!-- RRAX-IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC</masterLabel>
+            <translation><!-- RRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC/FRA</masterLabel>
+            <translation><!-- RRC/FRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC/FRCX</masterLabel>
+            <translation><!-- RRC/FRCX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC/IR</masterLabel>
+            <translation><!-- RRC/IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRC/RRA</masterLabel>
+            <translation><!-- RRC/RRA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

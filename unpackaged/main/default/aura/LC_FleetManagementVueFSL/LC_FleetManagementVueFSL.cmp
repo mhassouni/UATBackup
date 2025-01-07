@@ -1,0 +1,278 @@
+<aura:component
+  controller="FleetManagementController"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction,lightning:isUrlAddressable"
+>
+  <ltng:require
+    styles="{!join(',', 
+                          $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/fullcalendar.min.css',                           
+                          $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/scheduler.min.css')}"
+    scripts="{!join(',',
+                           $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/moment.min.js',
+                           $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/jquery.min.js',   
+                           $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/jquery-ui.min.js',                           
+                           $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/fullcalendar.min.js',
+                           $Resource.FullCalendarVueFSL + '/FullCalendarVueFSL/scheduler.min.js',
+                           $Resource.fullCalendar + '/node_modules/fullcalendar/dist/locale-all.js' )}"
+    afterScriptsLoaded="{!c.jsLoaded}"
+  />
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <aura:attribute name="asstes" type="List" />
+  <aura:attribute name="resources" type="List" />
+
+  <aura:attribute name="isFilterTransfered" type="boolean" default="true" />
+  <aura:attribute
+    name="reservation_filter"
+    type="Reservation__c"
+    default="{}"
+  />
+  <aura:attribute name="searchFields_reservation" type="List" />
+  <aura:attribute name="resultFields_reservation" type="List" />
+  <aura:attribute name="reservations_valuesMap" type="List" />
+
+  <aura:attribute name="holidays" type="Holiday[]" />
+
+  <aura:attribute name="searchFields_container" type="List" />
+  <aura:attribute name="resultFields_container" type="List" />
+  <aura:attribute name="containers" type="Asset[]" />
+  <aura:attribute name="containers_valuesMap" type="List" />
+  <aura:attribute name="containerId" type="String" />
+  <aura:attribute name="container_filter" type="Asset" default="{}" />
+  <aura:attribute name="container_Ids" type="String" />
+
+  <aura:attribute name="options" type="List" default="[]" />
+  <aura:attribute name="selectedOptions" type="List" default="[]" />
+  <aura:attribute name="selectedOptions_values" type="List" default="[]" />
+
+  <aura:attribute name="spinner" type="Boolean" default="true" />
+
+  <lightning:workspaceAPI aura:id="workspace" />
+  <div class="filter-form slds-card__body slds-card__body_inner">
+    <!-- SPINNER -->
+    <aura:if isTrue="{!v.spinner}">
+      <div class="spinner-container">
+        <lightning:spinner alternativeText="Loading" />
+      </div>
+    </aura:if>
+    <!-- FILTER -->
+    <fieldset class="fieldset">
+      <legend class="fieldsetLegend">Filtres sur les Conteneurs</legend>
+      <div>
+        <lightning:recordEditForm
+          aura:id="container_recordEditForm"
+          objectApiName="Asset"
+          recordId=""
+          onsubmit="{!c.search_containers}"
+        >
+          <aura:iteration items="{!v.searchFields_container}" var="field">
+            <aura:if isTrue="{!field.apiName == 'Name'}">
+              <div class="input-container input-32">
+                <lightning:input
+                  aura:id="assetName"
+                  name="assetName"
+                  label="Nom"
+                  value="{!v.container_filter.Name}"
+                  required="{!field.required}"
+                />
+              </div>
+              <aura:set attribute="else">
+                <div class="input-container input-32">
+                  <aura:if isTrue="{!field.apiName == 'Options__c'}">
+                    <!-- MULTI-SELECT -->
+                    <!--<lightning:dualListbox aura:id="container_Options" name="optionsInstallees" label= "Options" max="8" size="3"
+                                                                                   sourceLabel="Disponible(s)" selectedLabel="Sélectionnée(s)"
+                                                                                   options="{!v.options}" value="{!v.selectedOptions}"
+                                                                                   onchange="{!c.handleOptionChange}"/>-->
+                    <!--<c:LC_MultiPicklist label="{!field.label}" options="{!v.options}" required="{!field.required}" selectedOptions_values="{!field.value}" />
+                                        <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />-->
+
+                    <aura:if isTrue="{!v.isFilterTransfered}">
+                      <c:LC_MultiPicklist
+                        label="{!field.label}"
+                        takeDefault="false"
+                        aura:id="asset_inputField"
+                        apiName="{!field.apiName}"
+                        options="{!v.options}"
+                        required="{!field.required}"
+                        selectedOptions_labels=""
+                        selectedOptions_values="{!field.value}"
+                      />
+                      <lightning:inputField
+                        fieldName="{!field.apiName}"
+                        value="{!field.value}"
+                        required="{!field.required}"
+                        class="slds-hidden"
+                      />
+                      <aura:set attribute="else">
+                        <c:LC_MultiPicklist
+                          label="{!field.label}"
+                          apiName="{!field.apiName}"
+                          options="{!v.options}"
+                          required="{!field.required}"
+                          selectedOptions_values="{!field.value}"
+                        />
+                        <lightning:inputField
+                          fieldName="{!field.apiName}"
+                          value="{!field.value}"
+                          required="{!field.required}"
+                          class="slds-hidden"
+                        />
+                      </aura:set>
+                    </aura:if>
+
+                    <!-- /MULTI-SELECT -->
+
+                    <aura:set attribute="else">
+                      <aura:if
+                        isTrue="{!or(field.fieldType == 'PICKLIST', field.apiName == 'RecordTypeId')}"
+                      >
+                        <div class="input-container input-container-multi">
+                          <aura:if isTrue="{!v.isFilterTransfered}">
+                            <c:LC_MultiPicklist
+                              label="{!field.label}"
+                              takeDefault="false"
+                              aura:id="asset_inputField"
+                              apiName="{!field.apiName}"
+                              options="{!field.options}"
+                              required="{!field.required}"
+                              selectedOptions_labels=""
+                              selectedOptions_values="{!field.value}"
+                            />
+                            <lightning:inputField
+                              fieldName="{!field.apiName}"
+                              value="{!field.value}"
+                              required="{!field.required}"
+                              class="slds-hidden"
+                            />
+                            <aura:set attribute="else">
+                              <c:LC_MultiPicklist
+                                label="{!field.label}"
+                                apiName="{!field.apiName}"
+                                options="{!field.options}"
+                                required="{!field.required}"
+                                selectedOptions_values="{!field.value}"
+                              />
+                              <lightning:inputField
+                                fieldName="{!field.apiName}"
+                                value="{!field.value}"
+                                required="{!field.required}"
+                                class="slds-hidden"
+                              />
+                            </aura:set>
+                          </aura:if>
+                        </div>
+
+                        <aura:set attribute="else">
+                          <aura:if
+                            isTrue="{!and(field.apiName != 'Date_de_debut_asset__c', field.apiName != 'Date_de_fin_asset__c')}"
+                          >
+                            <lightning:inputField
+                              aura:id="asset_inputField"
+                              fieldName="{!field.apiName}"
+                              required="{!field.required}"
+                            />
+                          </aura:if>
+
+                          <!-- EXCEPTION -->
+                          <aura:if
+                            isTrue="{!field.apiName == 'Date_de_debut_asset__c'}"
+                          >
+                            <lightning:inputField
+                              style="display: none"
+                              aura:id="container_DateDebut"
+                              fieldName="{!field.apiName}"
+                              required="{!field.required}"
+                              format="dd/MM/yyyy"
+                              value="{!v.container_filter.Date_de_debut_asset__c}"
+                            />
+                            <ui:inputDate
+                              label="{!field.label}"
+                              value="{!v.container_filter.Date_de_debut_asset__c}"
+                              displayDatePicker="true"
+                              required="{!field.required}"
+                              format="dd/MM/yyyy"
+                            />
+                          </aura:if>
+                          <aura:if
+                            isTrue="{!field.apiName == 'Date_de_fin_asset__c'}"
+                          >
+                            <lightning:inputField
+                              style="display: none"
+                              aura:id="container_DateFin"
+                              fieldName="{!field.apiName}"
+                              required="{!field.required}"
+                              format="dd/MM/yyyy"
+                              value="{!v.container_filter.Date_de_fin_asset__c}"
+                            />
+                            <ui:inputDate
+                              label="{!field.label}"
+                              value="{!v.container_filter.Date_de_fin_asset__c}"
+                              displayDatePicker="true"
+                              required="{!field.required}"
+                              format="dd/MM/yyyy"
+                            />
+                          </aura:if>
+                          <!-- /EXCEPTION -->
+                        </aura:set>
+                      </aura:if>
+                    </aura:set>
+                  </aura:if>
+                </div>
+              </aura:set>
+            </aura:if>
+          </aura:iteration>
+
+          <div
+            aura:id="actionButtonBar"
+            class="slds-clearfix slds-p-top_medium btn-bottom-container"
+            style="width: 100%; text-align: end; margin-bottom: 12px"
+          >
+            <lightning:button
+              aura:id="btn_search_containers"
+              label="Rechercher"
+              variant="brand"
+              type="submit"
+            />
+          </div>
+        </lightning:recordEditForm>
+      </div>
+    </fieldset>
+    <!-- /FILTER -->
+  </div>
+
+  <div id="calendar"></div>
+
+  <!-- LEGEND -->
+  <section class="legend-section">
+    <div class="legends">
+      <div class="legend">
+        <div class="color-box" style="background-color: #ef7e33"></div>
+        <div class="record-type">Atelier</div>
+      </div>
+      <div class="legend">
+        <div class="color-box" style="background-color: #01af50"></div>
+        <div class="record-type">Transport</div>
+      </div>
+      <div class="legend">
+        <div class="color-box" style="background-color: #0170c1"></div>
+        <div class="record-type">Location</div>
+      </div>
+    </div>
+    <div class="legends">
+      <div class="legend">
+        <div class="color-box atelierP"></div>
+        <div class="record-type">Atelier - Planifiée</div>
+      </div>
+      <div class="legend">
+        <div class="color-box transportP"></div>
+        <div class="record-type">Transport - Planifiée</div>
+      </div>
+      <div class="legend">
+        <div class="color-box locationP"></div>
+        <div class="record-type">Location - Planifiée</div>
+      </div>
+    </div>
+  </section>
+  <!-- /LEGEND -->
+</aura:component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priorite_Icone__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+(ISPICKVAL( Priority , &#39;Faible&#39;), IMAGE(&quot;/resource/1623751189000/Icon_Flag_Green?&quot;, &quot;&quot;,32, 32),
+if
+(ISPICKVAL( Priority , &#39;Moyen&#39;), IMAGE(&quot;/resource/1623751255000/Icon_Flag_Yellow?&quot;, &quot;&quot;,32, 32),
+if
+(ISPICKVAL( Priority , &#39;Élevée&#39;), IMAGE(&quot;/resource/1623751238000/Icon_Flag_Red?&quot;, &quot;&quot;,32, 32), IMAGE(&quot;/resource/1623751165000/Icon_Flag_Black&quot;, &quot;&quot;,32, 32)
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Priorité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Basse</masterLabel>
+        <translation>Alacsony prioritás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Haute</masterLabel>
+        <translation>Magas prioritás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Moyenne</masterLabel>
+        <translation>Közepes prioritás</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

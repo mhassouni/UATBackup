@@ -1,0 +1,70 @@
+<aura:component>
+
+    <!-- EVENT HANDLER -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:registerEvent name="mutlipicklist" type="c:EVT_MultiPicklist"/> 
+
+    <aura:handler name="change" value="{!v.selectedOptions_values}" action="{!c.resetOptions}"/>
+
+
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="label" type="String" default=""/>
+    <aura:attribute name="required" type="Boolean" default="false"/>
+    <aura:attribute name="options" type="list" default="[]"/>
+
+    <aura:attribute name="takeDefault" type="boolean" default="true" />
+    
+    <aura:attribute name="apiName" type="String" default=""/>
+
+    <aura:attribute name="selectedOptions_values" type="String" default=""/>
+    <aura:attribute name="selectedOptions_labels" type="String" default=""/>
+    <!-- /ATTRIBUTES -->
+    
+    
+    <!-- CONTENT -->
+    <div class="slds-form-element">
+        <label class="lds-form-element__label" for="combobox-unique-id-3">{!v.label}</label>
+        
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container slds-size_small">
+                <div aura:id="dropdown" onmouseenter="{!c.openDropdown}" onmouseleave="{!c.closeDropDown}"
+                    class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-close" 
+                    aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                    
+                    <!-- SEARCH -->
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                        <input type="text" required="{!v.required}" class="slds-input slds-combobox__input slds-combobox__input-value"
+                                placeholder="Sélectionner une option" readonly="true"
+                                onfocus="{!c.openDropdown}" value="{!v.selectedOptions_labels}"/>
+                        <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right" title="Down icon">
+                            <lightning:icon iconName="utility:down" size="xx-small" class="slds-icon-text-default"/>
+                            <span class="slds-assistive-text">Down icon</span>
+                        </span>
+                    </div>
+
+                    <!-- OPTIONS -->
+                    <div id="listbox-unique-id" role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="presentation" style="max-height:200px; overflow-y:auto;">
+                            <aura:iteration items="{!v.options}" var="item" indexVar="ind">
+                                <li onclick="{!c.selectOption}" id="{!item.label+'#BP#'+item.isChecked}" role="presentation" class="slds-listbox__item">
+                                    <div id="{!'listbox-option-unique-id-'+(ind+1)}"
+                                        class="{!item.isChecked==true?'slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center slds-is-selected':'slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center'}" role="option">
+                                        <span class="slds-media__figure">
+                                            <lightning:icon iconName="utility:check" size="xx-small" class="slds-listbox__icon-selected"/>
+                                        </span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title="{!item.label}"> {!item.label}</span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </aura:iteration>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /CONTENT -->
+
+</aura:component>

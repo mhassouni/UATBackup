@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Start_Date</fullName>
+    <active>false</active>
+    <description>Effective Order Start Date (standard field) must be equal as the custom field Start Date</description>
+    <errorConditionFormula>StartDate__c  &lt;&gt;  EffectiveDate</errorConditionFormula>
+    <errorDisplayField>EffectiveDate</errorDisplayField>
+    <errorMessage>La date doit être identique au champ &quot;Start Date&quot;</errorMessage>
+</ValidationRule>

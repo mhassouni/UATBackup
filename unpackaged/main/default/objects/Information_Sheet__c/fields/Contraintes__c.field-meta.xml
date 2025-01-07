@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contraintes__c</fullName>
+    <defaultValue>&quot;Si contrainte de livraison, d&#39;installation ou d&#39;accès au site merci d&#39;attacher et préciser sur le plan&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Contraintes</label>
+    <length>225</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

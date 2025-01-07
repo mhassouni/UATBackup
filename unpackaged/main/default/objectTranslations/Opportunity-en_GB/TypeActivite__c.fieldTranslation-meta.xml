@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Opportunity reason</label>
+        <name>TypeActivite__c</name>
+        <picklistValues>
+            <masterLabel>1- Conquérir une (des) position(s) LD</masterLabel>
+            <translation>1 - Conquer long-term rental position(s)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2- Renouveler un (des) contrat(s) existant(s)</masterLabel>
+            <translation>2 - Renew existing contract(s)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3- Challenger un loueur concurrent en place</masterLabel>
+            <translation>3- Challenge incumbent rental provider</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4- Offrir une alternative à l&#39;achat/leasing</masterLabel>
+            <translation>4- Offer alternative to buying/leasing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5- Offrir une alternative à la sous-traitance (transporteur, dernier km, location avec chauffeur)</masterLabel>
+            <translation>5- Offer alternative to subcontracting (carrier, last km, rental with driver)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Meubles</masterLabel>
+            <translation>Display Unit Rental</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation>Hire with driver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation>Hire without driver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nouveau besoin</masterLabel>
+            <translation>New need</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation>Owner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport dernier kilomètre</masterLabel>
+            <translation>Last mile carrier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation>Public transport</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

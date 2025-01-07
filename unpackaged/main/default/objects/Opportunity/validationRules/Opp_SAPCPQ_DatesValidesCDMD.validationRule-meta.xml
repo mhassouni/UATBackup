@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_SAPCPQ_DatesValidesCDMD</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Setup.Bypass__c.BypassValidationRules__c =false,
+OR(
+RecordType.DeveloperName = &#39;Opportunity_CPQ_CDMD&#39;,
+RecordType.DeveloperName = &#39;Opportunity_CPQ_LD&#39;
+),
+OR(
+AND(EndDate__c &gt; StartDate__c+30,
+ISPICKVAL(TypeContrat__c,&#39;CD&#39;)
+),
+AND(EndDate__c &gt; ADDMONTHS(StartDate__c,12),
+ISPICKVAL(TypeContrat__c,&#39;CDM&#39;)
+),
+AND(EndDate__c &lt; ADDMONTHS(StartDate__c,12),
+!ISNULL(EndDate__c),
+ISPICKVAL(TypeContrat__c,&#39;LD&#39;)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>EndDate__c</errorDisplayField>
+    <errorMessage>Les dates saisies ne sont pas valides pour ce type de contrat.</errorMessage>
+</ValidationRule>

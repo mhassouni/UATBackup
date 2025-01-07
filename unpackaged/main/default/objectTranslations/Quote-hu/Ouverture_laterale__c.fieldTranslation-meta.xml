@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Ouverture latérale (Type) --></label>
+        <name>Ouverture_laterale__c</name>
+        <picklistValues>
+            <masterLabel>BATTANTE</masterLabel>
+            <translation><!-- BATTANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COULISSANTE</masterLabel>
+            <translation><!-- COULISSANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE BATTANTE</masterLabel>
+            <translation><!-- DOUBLE PORTE BATTANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIXTE (PANNEAU D + BACHE G)</masterLabel>
+            <translation><!-- MIXTE (PANNEAU D + BACHE G) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIXTE (PANNEAU G + BACHE D)</masterLabel>
+            <translation><!-- MIXTE (PANNEAU G + BACHE D) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE</masterLabel>
+            <translation><!-- PORTE BATTANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE (sans rail d&#39;arrimage)</masterLabel>
+            <translation><!-- PORTE BATTANTE (sans rail d&apos;arrimage) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE COULISSANTE (sans rail d&#39;arrimage)</masterLabel>
+            <translation><!-- PORTE COULISSANTE (sans rail d&apos;arrimage) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT MANUEL ALUMINIUM</masterLabel>
+            <translation><!-- RIDEAU RELEVANT MANUEL ALUMINIUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation><!-- SANS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

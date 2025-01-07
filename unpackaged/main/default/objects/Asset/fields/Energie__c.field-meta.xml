@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energie__c</fullName>
+    <label>Energie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gazole</fullName>
+                <default>false</default>
+                <label>Gazole</label>
+            </value>
+            <value>
+                <fullName>Électrique</fullName>
+                <default>false</default>
+                <label>Électrique</label>
+            </value>
+            <value>
+                <fullName>Essence</fullName>
+                <default>false</default>
+                <label>Essence</label>
+            </value>
+            <value>
+                <fullName>Hybride G/E</fullName>
+                <default>false</default>
+                <label>Hybride G/E</label>
+            </value>
+            <value>
+                <fullName>GNV</fullName>
+                <default>false</default>
+                <label>GNV</label>
+            </value>
+            <value>
+                <fullName>GPL</fullName>
+                <default>false</default>
+                <label>GPL</label>
+            </value>
+            <value>
+                <fullName>Biogazole B100</fullName>
+                <default>false</default>
+                <label>Biogazole B100</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

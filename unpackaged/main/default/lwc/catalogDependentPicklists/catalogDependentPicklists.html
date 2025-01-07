@@ -1,0 +1,96 @@
+<template>
+    <template if:true={showpicklist}>
+        <lightning-card>
+            <div class="slds-align_absolute-center" >
+                <lightning-icon icon-name="standard:catalog" alternative-text={Catalogue_Label_CataloguePF} title={Catalogue_Label_CataloguePF}></lightning-icon>   
+                <h3 class="slds-var-p-around_small" slot="title">
+                    {Catalogue_DisplayInfo}
+                </h3>
+            </div>
+            <div slot="footer">
+
+                <div style=" position: relative;
+                display: inline-block;
+                margin-left: 15px;
+                width: 55px;
+                vertical-align: middle;
+                white-space: nowrap;">
+                    <template if:true={LoadingSpinner}>
+                        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                    </template>
+                </div>
+                <lightning-button  class="slds-var-p-around_small" label={Catalogue_LWC_Chercher} title={Catalogue_LWC_Chercher} onclick={handleSearch} ></lightning-button>
+                <lightning-button  class="slds-var-p-around_small" label={Catalogue_LWC_Reset} title={Catalogue_LWC_Reset} onclick={handleReset} ></lightning-button>
+            </div>
+            <div class="slds-var-p-around_small">
+                <lightning-layout multiple-rows horizontal-align="center" vertical-align="center">
+                    <lightning-layout-item padding ="around-small"  size="12" medium-device-size="6" large-device-size="6">
+                        <lightning-combobox label={codePaysLabel}
+                            name={codePaysFieldName}
+                            options={CodePaysOptionsValue} 
+                            value={CodePaysSelectedValue}
+                            onchange={fetchDependentPicklistsValues}
+                            data-id="Code_Pays__c"   
+                            required   
+                            >
+                        </lightning-combobox>
+ 
+                       
+                        <lightning-combobox label={codePFLabel}
+                            name={codePFFieldName}
+                            options={CodePFOptionsValue} 
+                            value={CodePFSelectedValue}
+                            onchange={fetchDependentPicklistsValues}
+                            data-id="Code_PF__c"       
+                            required  
+                            >
+                        </lightning-combobox>
+
+                        <lightning-combobox label={marqueLabel}
+                            name={marqueFieldName}
+                            options={MarqueOptionsValue} 
+                            value={MarqueSelectedValue}
+                            onchange={fetchDependentPicklistsValues}
+                            data-id="Marque__c"  
+                            >
+                        </lightning-combobox>
+
+                    </lightning-layout-item>
+        
+                    <lightning-layout-item  padding ="around-small" size="12" medium-device-size="6" large-device-size="6">
+
+                        <lightning-combobox label={catalogueLabel}
+                        name={catalogueFieldName}
+                        options={CatalogueOptionsValue} 
+                        value={CatalogueSelectedValue}
+                        onchange={fetchDependentPicklistsValues}
+                        data-id="Catalogue__c" 
+                        required 
+                        >
+                    </lightning-combobox>
+                        <lightning-combobox label={standardPFLabel}
+                            name={standardPFFieldName}
+                            options={StandardPFOptionsValue} 
+                            value={StandardPFSelectedValue}
+                            onchange={fetchDependentPicklistsValues}
+                            data-id="Standard__c" 
+                            required 
+                            >
+                        </lightning-combobox>
+         
+                        
+         
+                        <lightning-combobox label={modeleLabel}
+                            name={modeleFieldName}
+                            options={ModeleOptionsValue} 
+                            value={ModeleSelectedValue}
+                            onchange={fetchDependentPicklistsValues}
+                            data-id="Modele__c" 
+                            >
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-card>
+    </template>
+</template>

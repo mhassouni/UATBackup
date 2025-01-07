@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Parchi cliente Attrezzato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parchi cliente Attrezzato</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Parc Client Meubles</layout>
+        <sections>
+            <label>Commenti</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Banco frigo</label>
+            <section>Meuble</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Identifiant --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

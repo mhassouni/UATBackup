@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Boden</label>
+        <name>Plancher__c</name>
+        <picklistValues>
+            <masterLabel>ALUMINIUM ANTIDERAPANT</masterLabel>
+            <translation>Rutschfestes Aluminium</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTIDERAPANT</masterLabel>
+            <translation>Antirutsch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVIATION</masterLabel>
+            <translation><!-- AVIATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOIS DUR + OMEGAS</masterLabel>
+            <translation><!-- BOIS DUR + OMEGAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAILLEBOTIS</masterLabel>
+            <translation>Gitterrost</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation>Außer Standard - siehe Einrichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LISSE</masterLabel>
+            <translation>Glatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS - TRACTEUR</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

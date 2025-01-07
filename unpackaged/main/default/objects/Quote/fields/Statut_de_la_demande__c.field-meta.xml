@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_de_la_demande__c</fullName>
+    <label>Statut de la demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>DONE</fullName>
+                <default>false</default>
+                <label>DONE</label>
+            </value>
+            <value>
+                <fullName>En attente-Grands comptes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>En attente-Grands comptes</label>
+            </value>
+            <value>
+                <fullName>IN PROGRESS</fullName>
+                <default>false</default>
+                <label>IN PROGRESS</label>
+            </value>
+            <value>
+                <fullName>IN PROGRESS QUOTATION LECAPITAINE</fullName>
+                <default>false</default>
+                <label>IN PROGRESS QUOTATION LECAPITAINE</label>
+            </value>
+            <value>
+                <fullName>ON HOLD - LECAPITAINE - IN PRICING</fullName>
+                <default>false</default>
+                <label>ON HOLD - LECAPITAINE - IN PRICING</label>
+            </value>
+            <value>
+                <fullName>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</fullName>
+                <default>false</default>
+                <label>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</label>
+            </value>
+            <value>
+                <fullName>PENDING - PRODUCT SERVICE &amp; PURCHASING</fullName>
+                <default>false</default>
+                <label>PENDING - PRODUCT SERVICE &amp; PURCHASING</label>
+            </value>
+            <value>
+                <fullName>WAITING DDT</fullName>
+                <default>false</default>
+                <label>WAITING DDT</label>
+            </value>
+            <value>
+                <fullName>WAITING FOR THE SALESPERSON</fullName>
+                <default>false</default>
+                <label>WAITING FOR THE SALESPERSON</label>
+            </value>
+            <value>
+                <fullName>WAITING FRIOVAL QUOTATION</fullName>
+                <default>false</default>
+                <label>WAITING FRIOVAL QUOTATION</label>
+            </value>
+            <value>
+                <fullName>WAITING IGLOOCAR</fullName>
+                <default>false</default>
+                <label>WAITING IGLOOCAR</label>
+            </value>
+            <value>
+                <fullName>WAITING KEY ACCOUNTS</fullName>
+                <default>false</default>
+                <label>WAITING KEY ACCOUNTS</label>
+            </value>
+            <value>
+                <fullName>WAITING LECAPITAINE</fullName>
+                <default>false</default>
+                <label>WAITING LECAPITAINE</label>
+            </value>
+            <value>
+                <fullName>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</fullName>
+                <default>false</default>
+                <label>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</label>
+            </value>
+            <value>
+                <fullName>WAITING - LECAPITAINE - BACK TO PURCHASES</fullName>
+                <default>false</default>
+                <label>WAITING - LECAPITAINE - BACK TO PURCHASES</label>
+            </value>
+            <value>
+                <fullName>WAITING - LECAPITAINE - DRAWN</fullName>
+                <default>false</default>
+                <label>WAITING - LECAPITAINE - DRAWN</label>
+            </value>
+            <value>
+                <fullName>WAITING - LECAPITAINE - IN DRAWING</fullName>
+                <default>false</default>
+                <label>WAITING - LECAPITAINE - IN DRAWING</label>
+            </value>
+            <value>
+                <fullName>WAITING - LECAPITAINE - TO BE DRAWN</fullName>
+                <default>false</default>
+                <label>WAITING - LECAPITAINE - TO BE DRAWN</label>
+            </value>
+            <value>
+                <fullName>WAITING PURCHASE SERVICE</fullName>
+                <default>false</default>
+                <label>WAITING PURCHASE SERVICE</label>
+            </value>
+            <value>
+                <fullName>WAITING QUOTATION SERVICE PRODUCT</fullName>
+                <default>false</default>
+                <label>WAITING QUOTATION SERVICE PRODUCT</label>
+            </value>
+            <value>
+                <fullName>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</fullName>
+                <default>false</default>
+                <label>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</label>
+            </value>
+            <value>
+                <fullName>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</fullName>
+                <default>false</default>
+                <label>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</label>
+            </value>
+            <value>
+                <fullName>WAITING UK QUOTATION</fullName>
+                <default>false</default>
+                <label>WAITING UK QUOTATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

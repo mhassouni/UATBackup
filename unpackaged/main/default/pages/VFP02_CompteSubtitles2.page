@@ -1,0 +1,4 @@
+<apex:page standardController="Account">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h3 style="padding-left:20%">{!$Label.VFP_AdresseExploitation}</h3>
+</apex:page>

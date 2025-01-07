@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LatePayment__c</fullName>
+    <description>Alimenté par l&#39;app SF Labs - Roll up qui COUNT le nb de SAD ayant un retard de paiement &gt; 0
+Utilisé pour la visibilité du bouton &quot;Nouvelle opportunité&quot; sur les SAD</description>
+    <externalId>false</externalId>
+    <label>Retard de paiement</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

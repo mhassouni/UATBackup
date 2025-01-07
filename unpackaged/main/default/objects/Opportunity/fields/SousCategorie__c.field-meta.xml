@@ -1,0 +1,4515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousCategorie__c</fullName>
+    <label>Sous-catégorie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Categorie__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>V1M</fullName>
+                <default>false</default>
+                <label>V1M</label>
+            </value>
+            <value>
+                <fullName>V3M</fullName>
+                <default>false</default>
+                <label>V3M</label>
+            </value>
+            <value>
+                <fullName>V3X</fullName>
+                <default>false</default>
+                <label>V3X</label>
+            </value>
+            <value>
+                <fullName>V3E</fullName>
+                <default>false</default>
+                <label>V3E</label>
+            </value>
+            <value>
+                <fullName>V3P</fullName>
+                <default>false</default>
+                <label>V3P</label>
+            </value>
+            <value>
+                <fullName>V3I</fullName>
+                <default>false</default>
+                <label>V3I</label>
+            </value>
+            <value>
+                <fullName>V3S</fullName>
+                <default>false</default>
+                <label>V3S</label>
+            </value>
+            <value>
+                <fullName>V5M</fullName>
+                <default>false</default>
+                <label>V5M</label>
+            </value>
+            <value>
+                <fullName>V5E</fullName>
+                <default>false</default>
+                <label>V5E</label>
+            </value>
+            <value>
+                <fullName>V5X</fullName>
+                <default>false</default>
+                <label>V5X</label>
+            </value>
+            <value>
+                <fullName>V5P</fullName>
+                <default>false</default>
+                <label>V5P</label>
+            </value>
+            <value>
+                <fullName>V5I</fullName>
+                <default>false</default>
+                <label>V5I</label>
+            </value>
+            <value>
+                <fullName>V5S</fullName>
+                <default>false</default>
+                <label>V5S</label>
+            </value>
+            <value>
+                <fullName>V9M</fullName>
+                <default>false</default>
+                <label>V9M</label>
+            </value>
+            <value>
+                <fullName>V9MH</fullName>
+                <default>false</default>
+                <label>V9MH</label>
+            </value>
+            <value>
+                <fullName>V9X</fullName>
+                <default>false</default>
+                <label>V9X</label>
+            </value>
+            <value>
+                <fullName>V9XH</fullName>
+                <default>false</default>
+                <label>V9XH</label>
+            </value>
+            <value>
+                <fullName>V9E</fullName>
+                <default>false</default>
+                <label>V9E</label>
+            </value>
+            <value>
+                <fullName>V9P</fullName>
+                <default>false</default>
+                <label>V9P</label>
+            </value>
+            <value>
+                <fullName>V9I</fullName>
+                <default>false</default>
+                <label>V9I</label>
+            </value>
+            <value>
+                <fullName>V9IH</fullName>
+                <default>false</default>
+                <label>V9IH</label>
+            </value>
+            <value>
+                <fullName>V9S</fullName>
+                <default>false</default>
+                <label>V9S</label>
+            </value>
+            <value>
+                <fullName>V11M</fullName>
+                <default>false</default>
+                <label>V11M</label>
+            </value>
+            <value>
+                <fullName>V11MH</fullName>
+                <default>false</default>
+                <label>V11MH</label>
+            </value>
+            <value>
+                <fullName>V11X</fullName>
+                <default>false</default>
+                <label>V11X</label>
+            </value>
+            <value>
+                <fullName>V11XH</fullName>
+                <default>false</default>
+                <label>V11XH</label>
+            </value>
+            <value>
+                <fullName>V11E</fullName>
+                <default>false</default>
+                <label>V11E</label>
+            </value>
+            <value>
+                <fullName>V11P</fullName>
+                <default>false</default>
+                <label>V11P</label>
+            </value>
+            <value>
+                <fullName>V11PH</fullName>
+                <default>false</default>
+                <label>V11PH</label>
+            </value>
+            <value>
+                <fullName>V11I</fullName>
+                <default>false</default>
+                <label>V11I</label>
+            </value>
+            <value>
+                <fullName>V11IH</fullName>
+                <default>false</default>
+                <label>V11IH</label>
+            </value>
+            <value>
+                <fullName>V11S</fullName>
+                <default>false</default>
+                <label>V11S</label>
+            </value>
+            <value>
+                <fullName>V11SH</fullName>
+                <default>false</default>
+                <label>V11SH</label>
+            </value>
+            <value>
+                <fullName>V15M</fullName>
+                <default>false</default>
+                <label>V15M</label>
+            </value>
+            <value>
+                <fullName>V15MH</fullName>
+                <default>false</default>
+                <label>V15MH</label>
+            </value>
+            <value>
+                <fullName>V15X</fullName>
+                <default>false</default>
+                <label>V15X</label>
+            </value>
+            <value>
+                <fullName>V15XH</fullName>
+                <default>false</default>
+                <label>V15XH</label>
+            </value>
+            <value>
+                <fullName>V15P</fullName>
+                <default>false</default>
+                <label>V15P</label>
+            </value>
+            <value>
+                <fullName>V15PH</fullName>
+                <default>false</default>
+                <label>V15PH</label>
+            </value>
+            <value>
+                <fullName>V15I</fullName>
+                <default>false</default>
+                <label>V15I</label>
+            </value>
+            <value>
+                <fullName>V15IH</fullName>
+                <default>false</default>
+                <label>V15IH</label>
+            </value>
+            <value>
+                <fullName>V15S</fullName>
+                <default>false</default>
+                <label>V15S</label>
+            </value>
+            <value>
+                <fullName>V15SH</fullName>
+                <default>false</default>
+                <label>V15SH</label>
+            </value>
+            <value>
+                <fullName>V20M</fullName>
+                <default>false</default>
+                <label>V20M</label>
+            </value>
+            <value>
+                <fullName>V20MH</fullName>
+                <default>false</default>
+                <label>V20MH</label>
+            </value>
+            <value>
+                <fullName>V20X</fullName>
+                <default>false</default>
+                <label>V20X</label>
+            </value>
+            <value>
+                <fullName>V20XH</fullName>
+                <default>false</default>
+                <label>V20XH</label>
+            </value>
+            <value>
+                <fullName>V20I</fullName>
+                <default>false</default>
+                <label>V20I</label>
+            </value>
+            <value>
+                <fullName>V20IH</fullName>
+                <default>false</default>
+                <label>V20IH</label>
+            </value>
+            <value>
+                <fullName>V20S</fullName>
+                <default>false</default>
+                <label>V20S</label>
+            </value>
+            <value>
+                <fullName>V20SH</fullName>
+                <default>false</default>
+                <label>V20SH</label>
+            </value>
+            <value>
+                <fullName>P0M</fullName>
+                <default>false</default>
+                <label>P0M</label>
+            </value>
+            <value>
+                <fullName>P0MH</fullName>
+                <default>false</default>
+                <label>P0MH</label>
+            </value>
+            <value>
+                <fullName>P0X</fullName>
+                <default>false</default>
+                <label>P0X</label>
+            </value>
+            <value>
+                <fullName>P0XH</fullName>
+                <default>false</default>
+                <label>P0XH</label>
+            </value>
+            <value>
+                <fullName>P0E</fullName>
+                <default>false</default>
+                <label>P0E</label>
+            </value>
+            <value>
+                <fullName>P0P</fullName>
+                <default>false</default>
+                <label>P0P</label>
+            </value>
+            <value>
+                <fullName>P0PH</fullName>
+                <default>false</default>
+                <label>P0PH</label>
+            </value>
+            <value>
+                <fullName>P0S</fullName>
+                <default>false</default>
+                <label>P0S</label>
+            </value>
+            <value>
+                <fullName>P0SH</fullName>
+                <default>false</default>
+                <label>P0SH</label>
+            </value>
+            <value>
+                <fullName>P6M</fullName>
+                <default>false</default>
+                <label>P6M</label>
+            </value>
+            <value>
+                <fullName>P6MH</fullName>
+                <default>false</default>
+                <label>P6MH</label>
+            </value>
+            <value>
+                <fullName>P6X</fullName>
+                <default>false</default>
+                <label>P6X</label>
+            </value>
+            <value>
+                <fullName>P6XH</fullName>
+                <default>false</default>
+                <label>P6XH</label>
+            </value>
+            <value>
+                <fullName>P6E</fullName>
+                <default>false</default>
+                <label>P6E</label>
+            </value>
+            <value>
+                <fullName>P6P</fullName>
+                <default>false</default>
+                <label>P6P</label>
+            </value>
+            <value>
+                <fullName>P6S</fullName>
+                <default>false</default>
+                <label>P6S</label>
+            </value>
+            <value>
+                <fullName>P6SH</fullName>
+                <default>false</default>
+                <label>P6SH</label>
+            </value>
+            <value>
+                <fullName>P8M</fullName>
+                <default>false</default>
+                <label>P8M</label>
+            </value>
+            <value>
+                <fullName>P8MH</fullName>
+                <default>false</default>
+                <label>P8MH</label>
+            </value>
+            <value>
+                <fullName>P8X</fullName>
+                <default>false</default>
+                <label>P8X</label>
+            </value>
+            <value>
+                <fullName>P8XH</fullName>
+                <default>false</default>
+                <label>P8XH</label>
+            </value>
+            <value>
+                <fullName>P8E</fullName>
+                <default>false</default>
+                <label>P8E</label>
+            </value>
+            <value>
+                <fullName>P8EH</fullName>
+                <default>false</default>
+                <label>P8EH</label>
+            </value>
+            <value>
+                <fullName>P8P</fullName>
+                <default>false</default>
+                <label>P8P</label>
+            </value>
+            <value>
+                <fullName>P8PH</fullName>
+                <default>false</default>
+                <label>P8PH</label>
+            </value>
+            <value>
+                <fullName>P8I</fullName>
+                <default>false</default>
+                <label>P8I</label>
+            </value>
+            <value>
+                <fullName>P8IH</fullName>
+                <default>false</default>
+                <label>P8IH</label>
+            </value>
+            <value>
+                <fullName>P8S</fullName>
+                <default>false</default>
+                <label>P8S</label>
+            </value>
+            <value>
+                <fullName>P8SH</fullName>
+                <default>false</default>
+                <label>P8SH</label>
+            </value>
+            <value>
+                <fullName>P10M</fullName>
+                <default>false</default>
+                <label>P10M</label>
+            </value>
+            <value>
+                <fullName>P10MH</fullName>
+                <default>false</default>
+                <label>P10MH</label>
+            </value>
+            <value>
+                <fullName>P10X</fullName>
+                <default>false</default>
+                <label>P10X</label>
+            </value>
+            <value>
+                <fullName>P10XH</fullName>
+                <default>false</default>
+                <label>P10XH</label>
+            </value>
+            <value>
+                <fullName>P10E</fullName>
+                <default>false</default>
+                <label>P10E</label>
+            </value>
+            <value>
+                <fullName>P10EH</fullName>
+                <default>false</default>
+                <label>P10EH</label>
+            </value>
+            <value>
+                <fullName>P10P</fullName>
+                <default>false</default>
+                <label>P10P</label>
+            </value>
+            <value>
+                <fullName>P10PH</fullName>
+                <default>false</default>
+                <label>P10PH</label>
+            </value>
+            <value>
+                <fullName>P10I</fullName>
+                <default>false</default>
+                <label>P10I</label>
+            </value>
+            <value>
+                <fullName>P10IH</fullName>
+                <default>false</default>
+                <label>P10IH</label>
+            </value>
+            <value>
+                <fullName>P10S</fullName>
+                <default>false</default>
+                <label>P10S</label>
+            </value>
+            <value>
+                <fullName>P10SH</fullName>
+                <default>false</default>
+                <label>P10SH</label>
+            </value>
+            <value>
+                <fullName>P15M</fullName>
+                <default>false</default>
+                <label>P15M</label>
+            </value>
+            <value>
+                <fullName>P15MH</fullName>
+                <default>false</default>
+                <label>P15MH</label>
+            </value>
+            <value>
+                <fullName>P15X</fullName>
+                <default>false</default>
+                <label>P15X</label>
+            </value>
+            <value>
+                <fullName>P15XH</fullName>
+                <default>false</default>
+                <label>P15XH</label>
+            </value>
+            <value>
+                <fullName>P15E</fullName>
+                <default>false</default>
+                <label>P15E</label>
+            </value>
+            <value>
+                <fullName>P15EH</fullName>
+                <default>false</default>
+                <label>P15EH</label>
+            </value>
+            <value>
+                <fullName>P15P</fullName>
+                <default>false</default>
+                <label>P15P</label>
+            </value>
+            <value>
+                <fullName>P15PH</fullName>
+                <default>false</default>
+                <label>P15PH</label>
+            </value>
+            <value>
+                <fullName>P15I</fullName>
+                <default>false</default>
+                <label>P15I</label>
+            </value>
+            <value>
+                <fullName>P15IH</fullName>
+                <default>false</default>
+                <label>P15IH</label>
+            </value>
+            <value>
+                <fullName>P15S</fullName>
+                <default>false</default>
+                <label>P15S</label>
+            </value>
+            <value>
+                <fullName>P15SH</fullName>
+                <default>false</default>
+                <label>P15SH</label>
+            </value>
+            <value>
+                <fullName>P18M</fullName>
+                <default>false</default>
+                <label>P18M</label>
+            </value>
+            <value>
+                <fullName>P18MH</fullName>
+                <default>false</default>
+                <label>P18MH</label>
+            </value>
+            <value>
+                <fullName>P18X</fullName>
+                <default>false</default>
+                <label>P18X</label>
+            </value>
+            <value>
+                <fullName>P18XH</fullName>
+                <default>false</default>
+                <label>P18XH</label>
+            </value>
+            <value>
+                <fullName>P18E</fullName>
+                <default>false</default>
+                <label>P18E</label>
+            </value>
+            <value>
+                <fullName>P18EH</fullName>
+                <default>false</default>
+                <label>P18EH</label>
+            </value>
+            <value>
+                <fullName>P18P</fullName>
+                <default>false</default>
+                <label>P18P</label>
+            </value>
+            <value>
+                <fullName>P18PH</fullName>
+                <default>false</default>
+                <label>P18PH</label>
+            </value>
+            <value>
+                <fullName>P18I</fullName>
+                <default>false</default>
+                <label>P18I</label>
+            </value>
+            <value>
+                <fullName>P18IH</fullName>
+                <default>false</default>
+                <label>P18IH</label>
+            </value>
+            <value>
+                <fullName>P18S</fullName>
+                <default>false</default>
+                <label>P18S</label>
+            </value>
+            <value>
+                <fullName>P18SH</fullName>
+                <default>false</default>
+                <label>P18SH</label>
+            </value>
+            <value>
+                <fullName>P21M</fullName>
+                <default>false</default>
+                <label>P21M</label>
+            </value>
+            <value>
+                <fullName>P21MH</fullName>
+                <default>false</default>
+                <label>P21MH</label>
+            </value>
+            <value>
+                <fullName>P21X</fullName>
+                <default>false</default>
+                <label>P21X</label>
+            </value>
+            <value>
+                <fullName>P21XH</fullName>
+                <default>false</default>
+                <label>P21XH</label>
+            </value>
+            <value>
+                <fullName>P21E</fullName>
+                <default>false</default>
+                <label>P21E</label>
+            </value>
+            <value>
+                <fullName>P21EH</fullName>
+                <default>false</default>
+                <label>P21EH</label>
+            </value>
+            <value>
+                <fullName>P21P</fullName>
+                <default>false</default>
+                <label>P21P</label>
+            </value>
+            <value>
+                <fullName>P21PH</fullName>
+                <default>false</default>
+                <label>P21PH</label>
+            </value>
+            <value>
+                <fullName>P21I</fullName>
+                <default>false</default>
+                <label>P21I</label>
+            </value>
+            <value>
+                <fullName>P21IH</fullName>
+                <default>false</default>
+                <label>P21IH</label>
+            </value>
+            <value>
+                <fullName>P21S</fullName>
+                <default>false</default>
+                <label>P21S</label>
+            </value>
+            <value>
+                <fullName>P21SH</fullName>
+                <default>false</default>
+                <label>P21SH</label>
+            </value>
+            <value>
+                <fullName>P23M</fullName>
+                <default>false</default>
+                <label>P23M</label>
+            </value>
+            <value>
+                <fullName>P23MH</fullName>
+                <default>false</default>
+                <label>P23MH</label>
+            </value>
+            <value>
+                <fullName>P23X</fullName>
+                <default>false</default>
+                <label>P23X</label>
+            </value>
+            <value>
+                <fullName>P23XH</fullName>
+                <default>false</default>
+                <label>P23XH</label>
+            </value>
+            <value>
+                <fullName>P23E</fullName>
+                <default>false</default>
+                <label>P23E</label>
+            </value>
+            <value>
+                <fullName>P23EH</fullName>
+                <default>false</default>
+                <label>P23EH</label>
+            </value>
+            <value>
+                <fullName>P23P</fullName>
+                <default>false</default>
+                <label>P23P</label>
+            </value>
+            <value>
+                <fullName>P23PH</fullName>
+                <default>false</default>
+                <label>P23PH</label>
+            </value>
+            <value>
+                <fullName>P23I</fullName>
+                <default>false</default>
+                <label>P23I</label>
+            </value>
+            <value>
+                <fullName>P23IH</fullName>
+                <default>false</default>
+                <label>P23IH</label>
+            </value>
+            <value>
+                <fullName>P23S</fullName>
+                <default>false</default>
+                <label>P23S</label>
+            </value>
+            <value>
+                <fullName>P23SH</fullName>
+                <default>false</default>
+                <label>P23SH</label>
+            </value>
+            <value>
+                <fullName>R4M</fullName>
+                <default>false</default>
+                <label>R4M</label>
+            </value>
+            <value>
+                <fullName>R9M</fullName>
+                <default>false</default>
+                <label>R9M</label>
+            </value>
+            <value>
+                <fullName>CF10</fullName>
+                <default>false</default>
+                <label>CF10</label>
+            </value>
+            <value>
+                <fullName>CF20</fullName>
+                <default>false</default>
+                <label>CF20</label>
+            </value>
+            <value>
+                <fullName>CF25</fullName>
+                <default>false</default>
+                <label>CF25</label>
+            </value>
+            <value>
+                <fullName>CF30</fullName>
+                <default>false</default>
+                <label>CF30</label>
+            </value>
+            <value>
+                <fullName>CF35</fullName>
+                <default>false</default>
+                <label>CF35</label>
+            </value>
+            <value>
+                <fullName>CF50</fullName>
+                <default>false</default>
+                <label>CF50</label>
+            </value>
+            <value>
+                <fullName>CF55</fullName>
+                <default>false</default>
+                <label>CF55</label>
+            </value>
+            <value>
+                <fullName>CF85</fullName>
+                <default>false</default>
+                <label>CF85</label>
+            </value>
+            <value>
+                <fullName>CF90</fullName>
+                <default>false</default>
+                <label>CF90</label>
+            </value>
+            <value>
+                <fullName>CF110</fullName>
+                <default>false</default>
+                <label>CF110</label>
+            </value>
+            <value>
+                <fullName>P16M</fullName>
+                <default>false</default>
+                <label>P16M</label>
+            </value>
+            <value>
+                <fullName>P16MH</fullName>
+                <default>false</default>
+                <label>P16MH</label>
+            </value>
+            <value>
+                <fullName>P16X</fullName>
+                <default>false</default>
+                <label>P16X</label>
+            </value>
+            <value>
+                <fullName>P16XH</fullName>
+                <default>false</default>
+                <label>P16XH</label>
+            </value>
+            <value>
+                <fullName>P16E</fullName>
+                <default>false</default>
+                <label>P16E</label>
+            </value>
+            <value>
+                <fullName>P16EH</fullName>
+                <default>false</default>
+                <label>P16EH</label>
+            </value>
+            <value>
+                <fullName>P16P</fullName>
+                <default>false</default>
+                <label>P16P</label>
+            </value>
+            <value>
+                <fullName>P16PH</fullName>
+                <default>false</default>
+                <label>P16PH</label>
+            </value>
+            <value>
+                <fullName>P16IH</fullName>
+                <default>false</default>
+                <label>P16IH</label>
+            </value>
+            <value>
+                <fullName>Bac 1m mixte standard</fullName>
+                <default>false</default>
+                <label>Bac 1m mixte standard</label>
+            </value>
+            <value>
+                <fullName>Bac 1m positif standard</fullName>
+                <default>false</default>
+                <label>Bac 1m positif standard</label>
+            </value>
+            <value>
+                <fullName>Bac BLS110 mixte</fullName>
+                <default>false</default>
+                <label>Bac BLS110 mixte</label>
+            </value>
+            <value>
+                <fullName>Bac Service Arrière standard</fullName>
+                <default>false</default>
+                <label>Bac Service Arrière standard</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 1m50 positif</fullName>
+                <default>false</default>
+                <label>Bac libre service 1m50 positif</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 1m50 mixte</fullName>
+                <default>false</default>
+                <label>Bac libre service 1m50 mixte</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 2m00 positif</fullName>
+                <default>false</default>
+                <label>Bac libre service 2m00 positif</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 2m00 mixte</fullName>
+                <default>false</default>
+                <label>Bac libre service 2m00 mixte</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 2m00 négatif</fullName>
+                <default>false</default>
+                <label>Bac libre service 2m00 négatif</label>
+            </value>
+            <value>
+                <fullName>Bac libre service 2m50 mixte</fullName>
+                <default>false</default>
+                <label>Bac libre service 2m50 mixte</label>
+            </value>
+            <value>
+                <fullName>Vitrine verticale 0m70 standard</fullName>
+                <default>false</default>
+                <label>Vitrine verticale 0m70 standard</label>
+            </value>
+            <value>
+                <fullName>Vitrine verticale 0m90 standard</fullName>
+                <default>false</default>
+                <label>Vitrine verticale 0m90 standard</label>
+            </value>
+            <value>
+                <fullName>Vitrine verticale 1m 30 standard</fullName>
+                <default>false</default>
+                <label>Vitrine verticale 1m 30 standard</label>
+            </value>
+            <value>
+                <fullName>Vitrine verticale 1m 90 standard</fullName>
+                <default>false</default>
+                <label>Vitrine verticale 1m 90 standard</label>
+            </value>
+            <value>
+                <fullName>Vitrine traiteur 1m30 standard</fullName>
+                <default>false</default>
+                <label>Vitrine traiteur 1m30 standard</label>
+            </value>
+            <value>
+                <fullName>Vitrine traiteur 2m00 standard</fullName>
+                <default>false</default>
+                <label>Vitrine traiteur 2m00 standard</label>
+            </value>
+            <value>
+                <fullName>Réfrigérateur + freezer 97+11L</fullName>
+                <default>false</default>
+                <label>Réfrigérateur + freezer 97+11L</label>
+            </value>
+            <value>
+                <fullName>Réfrigérateur 140L</fullName>
+                <default>false</default>
+                <label>Réfrigérateur 140L</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vitr Gris</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vitr Gris</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vit Nég Gris</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vit Nég Gris</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vitrées (-) AC</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vitrées (-) AC</label>
+            </value>
+            <value>
+                <fullName>Vitrine patissière ventilée 91</fullName>
+                <default>false</default>
+                <label>Vitrine patissière ventilée 91</label>
+            </value>
+            <value>
+                <fullName>Vitrine patissière ventilée141</fullName>
+                <default>false</default>
+                <label>Vitrine patissière ventilée141</label>
+            </value>
+            <value>
+                <fullName>Vitrine 6 Faces Froid négatif</fullName>
+                <default>false</default>
+                <label>Vitrine 6 Faces Froid négatif</label>
+            </value>
+            <value>
+                <fullName>Vitrine 6 Faces Froid positif</fullName>
+                <default>false</default>
+                <label>Vitrine 6 Faces Froid positif</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vitrées (+) AC</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vitrées (+) AC</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vitrées froid+</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vitrées froid+</label>
+            </value>
+            <value>
+                <fullName>Vitrine 6 Faces positif gris</fullName>
+                <default>false</default>
+                <label>Vitrine 6 Faces positif gris</label>
+            </value>
+            <value>
+                <fullName>Vitrine patissière ventilée166</fullName>
+                <default>false</default>
+                <label>Vitrine patissière ventilée166</label>
+            </value>
+            <value>
+                <fullName>Vitrine Traiteur 2m</fullName>
+                <default>false</default>
+                <label>Vitrine Traiteur 2m</label>
+            </value>
+            <value>
+                <fullName>Vitrine patissière ventilée136</fullName>
+                <default>false</default>
+                <label>Vitrine patissière ventilée136</label>
+            </value>
+            <value>
+                <fullName>Vitrine 4 Faces Vitrées Négat</fullName>
+                <default>false</default>
+                <label>Vitrine 4 Faces Vitrées Négat</label>
+            </value>
+            <value>
+                <fullName>Vitrine Traiteur droite noire</fullName>
+                <default>false</default>
+                <label>Vitrine Traiteur droite noire</label>
+            </value>
+            <value>
+                <fullName>Vitrine patissière ventilée106</fullName>
+                <default>false</default>
+                <label>Vitrine patissière ventilée106</label>
+            </value>
+            <value>
+                <fullName>Vitrine service arrière 134(-)</fullName>
+                <default>false</default>
+                <label>Vitrine service arrière 134(-)</label>
+            </value>
+            <value>
+                <fullName>Meuble Semi-vertical 1.30m</fullName>
+                <default>false</default>
+                <label>Meuble Semi-vertical 1.30m</label>
+            </value>
+            <value>
+                <fullName>Armoire Porte Pleine Froid (-)</fullName>
+                <default>false</default>
+                <label>Armoire Porte Pleine Froid (-)</label>
+            </value>
+            <value>
+                <fullName>Armoire porte pleine (+/-)640L</fullName>
+                <default>false</default>
+                <label>Armoire porte pleine (+/-)640L</label>
+            </value>
+            <value>
+                <fullName>Armoire porte pleine (+) 640L</fullName>
+                <default>false</default>
+                <label>Armoire porte pleine (+) 640L</label>
+            </value>
+            <value>
+                <fullName>Armoire Porte Pleine Froid (+)</fullName>
+                <default>false</default>
+                <label>Armoire Porte Pleine Froid (+)</label>
+            </value>
+            <value>
+                <fullName>Armoire de stockage 400 L</fullName>
+                <default>false</default>
+                <label>Armoire de stockage 400 L</label>
+            </value>
+            <value>
+                <fullName>Armoire Vitrée Champignon</fullName>
+                <default>false</default>
+                <label>Armoire Vitrée Champignon</label>
+            </value>
+            <value>
+                <fullName>Armoire double vitrée 875L (+)</fullName>
+                <default>false</default>
+                <label>Armoire double vitrée 875L (+)</label>
+            </value>
+            <value>
+                <fullName>Armoire à Boissons Visicooler</fullName>
+                <default>false</default>
+                <label>Armoire à Boissons Visicooler</label>
+            </value>
+            <value>
+                <fullName>Armoire réfrigérée P.Pleine</fullName>
+                <default>false</default>
+                <label>Armoire réfrigérée P.Pleine</label>
+            </value>
+            <value>
+                <fullName>Tour patissière 2p - inox</fullName>
+                <default>false</default>
+                <label>Tour patissière 2p - inox</label>
+            </value>
+            <value>
+                <fullName>Tour patissière 2p - granite</fullName>
+                <default>false</default>
+                <label>Tour patissière 2p - granite</label>
+            </value>
+            <value>
+                <fullName>Congélateur porte vitrée 119 L</fullName>
+                <default>false</default>
+                <label>Congélateur porte vitrée 119 L</label>
+            </value>
+            <value>
+                <fullName>Congél. couv. relevable 518L</fullName>
+                <default>false</default>
+                <label>Congél. couv. relevable 518L</label>
+            </value>
+            <value>
+                <fullName>Congélateur Ice Cream 9 Bacs</fullName>
+                <default>false</default>
+                <label>Congélateur Ice Cream 9 Bacs</label>
+            </value>
+            <value>
+                <fullName>Congelateur Ice Cream 7 bacs.</fullName>
+                <default>false</default>
+                <label>Congelateur Ice Cream 7 bacs.</label>
+            </value>
+            <value>
+                <fullName>Congélateur pte vit. rel. 570L</fullName>
+                <default>false</default>
+                <label>Congélateur pte vit. rel. 570L</label>
+            </value>
+            <value>
+                <fullName>Congélateur coffre 468 litres</fullName>
+                <default>false</default>
+                <label>Congélateur coffre 468 litres</label>
+            </value>
+            <value>
+                <fullName>Congél. coffre vitre coul 405L</fullName>
+                <default>false</default>
+                <label>Congél. coffre vitre coul 405L</label>
+            </value>
+            <value>
+                <fullName>Congél vitré couv relevab 550L</fullName>
+                <default>false</default>
+                <label>Congél vitré couv relevab 550L</label>
+            </value>
+            <value>
+                <fullName>Congélateur porte coulis. 664L</fullName>
+                <default>false</default>
+                <label>Congélateur porte coulis. 664L</label>
+            </value>
+            <value>
+                <fullName>Congélateur counter 50L</fullName>
+                <default>false</default>
+                <label>Congélateur counter 50L</label>
+            </value>
+            <value>
+                <fullName>Meuble Showmaster,Rond,1m47</fullName>
+                <default>false</default>
+                <label>Meuble Showmaster,Rond,1m47</label>
+            </value>
+            <value>
+                <fullName>Meuble Showmaster,Rond,1m10</fullName>
+                <default>false</default>
+                <label>Meuble Showmaster,Rond,1m10</label>
+            </value>
+            <value>
+                <fullName>Etal Poissons Réfrigéré 2m</fullName>
+                <default>false</default>
+                <label>Etal Poissons Réfrigéré 2m</label>
+            </value>
+            <value>
+                <fullName>Etal Poissons Inox 2M20x1M10</fullName>
+                <default>false</default>
+                <label>Etal Poissons Inox 2M20x1M10</label>
+            </value>
+            <value>
+                <fullName>Vitrine Libre-Service 0m50 Positif Noir</fullName>
+                <default>false</default>
+                <label>Vitrine Libre-Service 0m50 Positif Noir</label>
+            </value>
+            <value>
+                <fullName>Vitrine Porte Vitrée Positif 0m67</fullName>
+                <default>false</default>
+                <label>Vitrine Porte Vitrée Positif 0m67</label>
+            </value>
+            <value>
+                <fullName>Vitrine Porte Vitrée Négatif 0m67</fullName>
+                <default>false</default>
+                <label>Vitrine Porte Vitrée Négatif 0m67</label>
+            </value>
+            <value>
+                <fullName>Vitrine Semi Verticale 1m00 Noir</fullName>
+                <default>false</default>
+                <label>Vitrine Semi Verticale 1m00 Noir</label>
+            </value>
+            <value>
+                <fullName>Vitrine Libre-Service 1m40 Négative</fullName>
+                <default>false</default>
+                <label>Vitrine Libre-Service 1m40 Négative</label>
+            </value>
+            <value>
+                <fullName>Vitrine Semi Verticale 1m55 Noir</fullName>
+                <default>false</default>
+                <label>Vitrine Semi Verticale 1m55 Noir</label>
+            </value>
+            <value>
+                <fullName>V8D</fullName>
+                <default>false</default>
+                <label>V8D</label>
+            </value>
+            <value>
+                <fullName>V8DL</fullName>
+                <default>false</default>
+                <label>V8DL</label>
+            </value>
+            <value>
+                <fullName>V8I</fullName>
+                <default>false</default>
+                <label>V8I</label>
+            </value>
+            <value>
+                <fullName>V8IL</fullName>
+                <default>false</default>
+                <label>V8IL</label>
+            </value>
+            <value>
+                <fullName>V8M</fullName>
+                <default>false</default>
+                <label>V8M</label>
+            </value>
+            <value>
+                <fullName>V8ML</fullName>
+                <default>false</default>
+                <label>V8ML</label>
+            </value>
+            <value>
+                <fullName>V8X</fullName>
+                <default>false</default>
+                <label>V8X</label>
+            </value>
+            <value>
+                <fullName>V8XL</fullName>
+                <default>false</default>
+                <label>V8XL</label>
+            </value>
+            <value>
+                <fullName>V10I</fullName>
+                <default>false</default>
+                <label>V10I</label>
+            </value>
+            <value>
+                <fullName>V10IL</fullName>
+                <default>false</default>
+                <label>V10IL</label>
+            </value>
+            <value>
+                <fullName>V10D</fullName>
+                <default>false</default>
+                <label>V10D</label>
+            </value>
+            <value>
+                <fullName>V10DL</fullName>
+                <default>false</default>
+                <label>V10DL</label>
+            </value>
+            <value>
+                <fullName>V10M</fullName>
+                <default>false</default>
+                <label>V10M</label>
+            </value>
+            <value>
+                <fullName>V10ML</fullName>
+                <default>false</default>
+                <label>V10ML</label>
+            </value>
+            <value>
+                <fullName>V10X</fullName>
+                <default>false</default>
+                <label>V10X</label>
+            </value>
+            <value>
+                <fullName>V10XL</fullName>
+                <default>false</default>
+                <label>V10XL</label>
+            </value>
+            <value>
+                <fullName>V12D</fullName>
+                <default>false</default>
+                <label>V12D</label>
+            </value>
+            <value>
+                <fullName>V12DL</fullName>
+                <default>false</default>
+                <label>V12DL</label>
+            </value>
+            <value>
+                <fullName>V12I</fullName>
+                <default>false</default>
+                <label>V12I</label>
+            </value>
+            <value>
+                <fullName>V12IL</fullName>
+                <default>false</default>
+                <label>V12IL</label>
+            </value>
+            <value>
+                <fullName>V12M</fullName>
+                <default>false</default>
+                <label>V12M</label>
+            </value>
+            <value>
+                <fullName>V12ML</fullName>
+                <default>false</default>
+                <label>V12ML</label>
+            </value>
+            <value>
+                <fullName>V12X</fullName>
+                <default>false</default>
+                <label>V12X</label>
+            </value>
+            <value>
+                <fullName>V12XL</fullName>
+                <default>false</default>
+                <label>V12XL</label>
+            </value>
+            <value>
+                <fullName>L12D</fullName>
+                <default>false</default>
+                <label>L12D</label>
+            </value>
+            <value>
+                <fullName>L12DL</fullName>
+                <default>false</default>
+                <label>L12DL</label>
+            </value>
+            <value>
+                <fullName>L12M</fullName>
+                <default>false</default>
+                <label>L12M</label>
+            </value>
+            <value>
+                <fullName>L12ML</fullName>
+                <default>false</default>
+                <label>L12ML</label>
+            </value>
+            <value>
+                <fullName>L12X</fullName>
+                <default>false</default>
+                <label>L12X</label>
+            </value>
+            <value>
+                <fullName>L12XL</fullName>
+                <default>false</default>
+                <label>L12XL</label>
+            </value>
+            <value>
+                <fullName>L14D</fullName>
+                <default>false</default>
+                <label>L14D</label>
+            </value>
+            <value>
+                <fullName>L14DL</fullName>
+                <default>false</default>
+                <label>L14DL</label>
+            </value>
+            <value>
+                <fullName>L14M</fullName>
+                <default>false</default>
+                <label>L14M</label>
+            </value>
+            <value>
+                <fullName>L14ML</fullName>
+                <default>false</default>
+                <label>L14ML</label>
+            </value>
+            <value>
+                <fullName>L14X</fullName>
+                <default>false</default>
+                <label>L14X</label>
+            </value>
+            <value>
+                <fullName>L14XL</fullName>
+                <default>false</default>
+                <label>L14XL</label>
+            </value>
+            <value>
+                <fullName>L16D</fullName>
+                <default>false</default>
+                <label>L16D</label>
+            </value>
+            <value>
+                <fullName>L16DL</fullName>
+                <default>false</default>
+                <label>L16DL</label>
+            </value>
+            <value>
+                <fullName>L16M</fullName>
+                <default>false</default>
+                <label>L16M</label>
+            </value>
+            <value>
+                <fullName>L16ML</fullName>
+                <default>false</default>
+                <label>L16ML</label>
+            </value>
+            <value>
+                <fullName>L16X</fullName>
+                <default>false</default>
+                <label>L16X</label>
+            </value>
+            <value>
+                <fullName>L16XL</fullName>
+                <default>false</default>
+                <label>L16XL</label>
+            </value>
+            <value>
+                <fullName>L18D</fullName>
+                <default>false</default>
+                <label>L18D</label>
+            </value>
+            <value>
+                <fullName>L18DL</fullName>
+                <default>false</default>
+                <label>L18DL</label>
+            </value>
+            <value>
+                <fullName>L18M</fullName>
+                <default>false</default>
+                <label>L18M</label>
+            </value>
+            <value>
+                <fullName>L18ML</fullName>
+                <default>false</default>
+                <label>L18ML</label>
+            </value>
+            <value>
+                <fullName>L18X</fullName>
+                <default>false</default>
+                <label>L18X</label>
+            </value>
+            <value>
+                <fullName>L18XL</fullName>
+                <default>false</default>
+                <label>L18XL</label>
+            </value>
+            <value>
+                <fullName>L20D</fullName>
+                <default>false</default>
+                <label>L20D</label>
+            </value>
+            <value>
+                <fullName>L20DL</fullName>
+                <default>false</default>
+                <label>L20DL</label>
+            </value>
+            <value>
+                <fullName>L20M</fullName>
+                <default>false</default>
+                <label>L20M</label>
+            </value>
+            <value>
+                <fullName>L20ML</fullName>
+                <default>false</default>
+                <label>L20ML</label>
+            </value>
+            <value>
+                <fullName>L20X</fullName>
+                <default>false</default>
+                <label>L20X</label>
+            </value>
+            <value>
+                <fullName>L20XL</fullName>
+                <default>false</default>
+                <label>L20XL</label>
+            </value>
+            <value>
+                <fullName>L22D</fullName>
+                <default>false</default>
+                <label>L22D</label>
+            </value>
+            <value>
+                <fullName>L22DL</fullName>
+                <default>false</default>
+                <label>L22DL</label>
+            </value>
+            <value>
+                <fullName>L22M</fullName>
+                <default>false</default>
+                <label>L22M</label>
+            </value>
+            <value>
+                <fullName>L22ML</fullName>
+                <default>false</default>
+                <label>L22ML</label>
+            </value>
+            <value>
+                <fullName>L22X</fullName>
+                <default>false</default>
+                <label>L22X</label>
+            </value>
+            <value>
+                <fullName>L22XL</fullName>
+                <default>false</default>
+                <label>L22XL</label>
+            </value>
+            <value>
+                <fullName>L24D</fullName>
+                <default>false</default>
+                <label>L24D</label>
+            </value>
+            <value>
+                <fullName>L24DL</fullName>
+                <default>false</default>
+                <label>L24DL</label>
+            </value>
+            <value>
+                <fullName>L24F</fullName>
+                <default>false</default>
+                <label>L24F</label>
+            </value>
+            <value>
+                <fullName>L24FL</fullName>
+                <default>false</default>
+                <label>L24FL</label>
+            </value>
+            <value>
+                <fullName>L24M</fullName>
+                <default>false</default>
+                <label>L24M</label>
+            </value>
+            <value>
+                <fullName>L24ML</fullName>
+                <default>false</default>
+                <label>L24ML</label>
+            </value>
+            <value>
+                <fullName>L24X</fullName>
+                <default>false</default>
+                <label>L24X</label>
+            </value>
+            <value>
+                <fullName>L24XL</fullName>
+                <default>false</default>
+                <label>L24XL</label>
+            </value>
+            <value>
+                <fullName>L26D</fullName>
+                <default>false</default>
+                <label>L26D</label>
+            </value>
+            <value>
+                <fullName>L26DL</fullName>
+                <default>false</default>
+                <label>L26DL</label>
+            </value>
+            <value>
+                <fullName>L26F</fullName>
+                <default>false</default>
+                <label>L26F</label>
+            </value>
+            <value>
+                <fullName>L26FL</fullName>
+                <default>false</default>
+                <label>L26FL</label>
+            </value>
+            <value>
+                <fullName>L26M</fullName>
+                <default>false</default>
+                <label>L26M</label>
+            </value>
+            <value>
+                <fullName>L26ML</fullName>
+                <default>false</default>
+                <label>L26ML</label>
+            </value>
+            <value>
+                <fullName>L26X</fullName>
+                <default>false</default>
+                <label>L26X</label>
+            </value>
+            <value>
+                <fullName>L26XL</fullName>
+                <default>false</default>
+                <label>L26XL</label>
+            </value>
+            <value>
+                <fullName>C22D</fullName>
+                <default>false</default>
+                <label>C22D</label>
+            </value>
+            <value>
+                <fullName>C22DL</fullName>
+                <default>false</default>
+                <label>C22DL</label>
+            </value>
+            <value>
+                <fullName>C22F</fullName>
+                <default>false</default>
+                <label>C22F</label>
+            </value>
+            <value>
+                <fullName>C22FL</fullName>
+                <default>false</default>
+                <label>C22FL</label>
+            </value>
+            <value>
+                <fullName>C22M</fullName>
+                <default>false</default>
+                <label>C22M</label>
+            </value>
+            <value>
+                <fullName>C22ML</fullName>
+                <default>false</default>
+                <label>C22ML</label>
+            </value>
+            <value>
+                <fullName>C22X</fullName>
+                <default>false</default>
+                <label>C22X</label>
+            </value>
+            <value>
+                <fullName>C22XL</fullName>
+                <default>false</default>
+                <label>C22XL</label>
+            </value>
+            <value>
+                <fullName>C24D</fullName>
+                <default>false</default>
+                <label>C24D</label>
+            </value>
+            <value>
+                <fullName>C24DL</fullName>
+                <default>false</default>
+                <label>C24DL</label>
+            </value>
+            <value>
+                <fullName>C24F</fullName>
+                <default>false</default>
+                <label>C24F</label>
+            </value>
+            <value>
+                <fullName>C24FL</fullName>
+                <default>false</default>
+                <label>C24FL</label>
+            </value>
+            <value>
+                <fullName>C24M</fullName>
+                <default>false</default>
+                <label>C24M</label>
+            </value>
+            <value>
+                <fullName>C24ML</fullName>
+                <default>false</default>
+                <label>C24ML</label>
+            </value>
+            <value>
+                <fullName>C24X</fullName>
+                <default>false</default>
+                <label>C24X</label>
+            </value>
+            <value>
+                <fullName>C24XL</fullName>
+                <default>false</default>
+                <label>C24XL</label>
+            </value>
+            <value>
+                <fullName>C26D</fullName>
+                <default>false</default>
+                <label>C26D</label>
+            </value>
+            <value>
+                <fullName>C26DL</fullName>
+                <default>false</default>
+                <label>C26DL</label>
+            </value>
+            <value>
+                <fullName>C26F</fullName>
+                <default>false</default>
+                <label>C26F</label>
+            </value>
+            <value>
+                <fullName>C26FL</fullName>
+                <default>false</default>
+                <label>C26FL</label>
+            </value>
+            <value>
+                <fullName>C26M</fullName>
+                <default>false</default>
+                <label>C26M</label>
+            </value>
+            <value>
+                <fullName>C26ML</fullName>
+                <default>false</default>
+                <label>C26ML</label>
+            </value>
+            <value>
+                <fullName>C26X</fullName>
+                <default>false</default>
+                <label>C26X</label>
+            </value>
+            <value>
+                <fullName>C26XL</fullName>
+                <default>false</default>
+                <label>C26XL</label>
+            </value>
+            <value>
+                <fullName>T1</fullName>
+                <default>false</default>
+                <label>T1</label>
+            </value>
+            <value>
+                <fullName>T2</fullName>
+                <default>false</default>
+                <label>T2</label>
+            </value>
+            <value>
+                <fullName>S2ML</fullName>
+                <default>false</default>
+                <label>S2ML</label>
+            </value>
+            <value>
+                <fullName>S2XL</fullName>
+                <default>false</default>
+                <label>S2XL</label>
+            </value>
+            <value>
+                <fullName>S2D</fullName>
+                <default>false</default>
+                <label>S2D</label>
+            </value>
+            <value>
+                <fullName>S2DL</fullName>
+                <default>false</default>
+                <label>S2DL</label>
+            </value>
+            <value>
+                <fullName>S2F</fullName>
+                <default>false</default>
+                <label>S2F</label>
+            </value>
+            <value>
+                <fullName>S2FL</fullName>
+                <default>false</default>
+                <label>S2FL</label>
+            </value>
+            <value>
+                <fullName>C28M</fullName>
+                <default>false</default>
+                <label>C28M</label>
+            </value>
+            <value>
+                <fullName>C28ML</fullName>
+                <default>false</default>
+                <label>C28ML</label>
+            </value>
+            <value>
+                <fullName>C28X</fullName>
+                <default>false</default>
+                <label>C28X</label>
+            </value>
+            <value>
+                <fullName>C28XL</fullName>
+                <default>false</default>
+                <label>C28XL</label>
+            </value>
+            <value>
+                <fullName>C28D</fullName>
+                <default>false</default>
+                <label>C28D</label>
+            </value>
+            <value>
+                <fullName>C28DL</fullName>
+                <default>false</default>
+                <label>C28DL</label>
+            </value>
+            <value>
+                <fullName>C29M</fullName>
+                <default>false</default>
+                <label>C29M</label>
+            </value>
+            <value>
+                <fullName>C29ML</fullName>
+                <default>false</default>
+                <label>C29ML</label>
+            </value>
+            <value>
+                <fullName>C29X</fullName>
+                <default>false</default>
+                <label>C29X</label>
+            </value>
+            <value>
+                <fullName>C29XL</fullName>
+                <default>false</default>
+                <label>C29XL</label>
+            </value>
+            <value>
+                <fullName>C29D</fullName>
+                <default>false</default>
+                <label>C29D</label>
+            </value>
+            <value>
+                <fullName>C29DL</fullName>
+                <default>false</default>
+                <label>C29DL</label>
+            </value>
+            <value>
+                <fullName>L12I</fullName>
+                <default>false</default>
+                <label>L12I</label>
+            </value>
+            <value>
+                <fullName>L12IL</fullName>
+                <default>false</default>
+                <label>L12IL</label>
+            </value>
+            <value>
+                <fullName>L14I</fullName>
+                <default>false</default>
+                <label>L14I</label>
+            </value>
+            <value>
+                <fullName>L14IL</fullName>
+                <default>false</default>
+                <label>L14IL</label>
+            </value>
+            <value>
+                <fullName>L16I</fullName>
+                <default>false</default>
+                <label>L16I</label>
+            </value>
+            <value>
+                <fullName>L16IL</fullName>
+                <default>false</default>
+                <label>L16IL</label>
+            </value>
+            <value>
+                <fullName>L18I</fullName>
+                <default>false</default>
+                <label>L18I</label>
+            </value>
+            <value>
+                <fullName>L18IL</fullName>
+                <default>false</default>
+                <label>L18IL</label>
+            </value>
+            <value>
+                <fullName>L20I</fullName>
+                <default>false</default>
+                <label>L20I</label>
+            </value>
+            <value>
+                <fullName>L20IL</fullName>
+                <default>false</default>
+                <label>L20IL</label>
+            </value>
+            <value>
+                <fullName>L22I</fullName>
+                <default>false</default>
+                <label>L22I</label>
+            </value>
+            <value>
+                <fullName>L22IL</fullName>
+                <default>false</default>
+                <label>L22IL</label>
+            </value>
+            <value>
+                <fullName>L24I</fullName>
+                <default>false</default>
+                <label>L24I</label>
+            </value>
+            <value>
+                <fullName>L24IL</fullName>
+                <default>false</default>
+                <label>L24IL</label>
+            </value>
+            <value>
+                <fullName>L26I</fullName>
+                <default>false</default>
+                <label>L26I</label>
+            </value>
+            <value>
+                <fullName>L26IL</fullName>
+                <default>false</default>
+                <label>L26IL</label>
+            </value>
+            <value>
+                <fullName>C22I</fullName>
+                <default>false</default>
+                <label>C22I</label>
+            </value>
+            <value>
+                <fullName>C22IL</fullName>
+                <default>false</default>
+                <label>C22IL</label>
+            </value>
+            <value>
+                <fullName>C24I</fullName>
+                <default>false</default>
+                <label>C24I</label>
+            </value>
+            <value>
+                <fullName>C24IL</fullName>
+                <default>false</default>
+                <label>C24IL</label>
+            </value>
+            <value>
+                <fullName>C26I</fullName>
+                <default>false</default>
+                <label>C26I</label>
+            </value>
+            <value>
+                <fullName>C26IL</fullName>
+                <default>false</default>
+                <label>C26IL</label>
+            </value>
+            <value>
+                <fullName>C28I</fullName>
+                <default>false</default>
+                <label>C28I</label>
+            </value>
+            <value>
+                <fullName>C28IL</fullName>
+                <default>false</default>
+                <label>C28IL</label>
+            </value>
+            <value>
+                <fullName>C29I</fullName>
+                <default>false</default>
+                <label>C29I</label>
+            </value>
+            <value>
+                <fullName>C29IL</fullName>
+                <default>false</default>
+                <label>C29IL</label>
+            </value>
+            <value>
+                <fullName>S1M</fullName>
+                <default>false</default>
+                <label>S1M</label>
+            </value>
+            <value>
+                <fullName>S1MH</fullName>
+                <default>false</default>
+                <label>S1MH</label>
+            </value>
+            <value>
+                <fullName>S1X</fullName>
+                <default>false</default>
+                <label>S1X</label>
+            </value>
+            <value>
+                <fullName>S1XH</fullName>
+                <default>false</default>
+                <label>S1XH</label>
+            </value>
+            <value>
+                <fullName>S1P</fullName>
+                <default>false</default>
+                <label>S1P</label>
+            </value>
+            <value>
+                <fullName>S1PH</fullName>
+                <default>false</default>
+                <label>S1PH</label>
+            </value>
+            <value>
+                <fullName>S1I</fullName>
+                <default>false</default>
+                <label>S1I</label>
+            </value>
+            <value>
+                <fullName>S1IH</fullName>
+                <default>false</default>
+                <label>S1IH</label>
+            </value>
+            <value>
+                <fullName>S2I</fullName>
+                <default>false</default>
+                <label>S2I</label>
+            </value>
+            <value>
+                <fullName>S2IH</fullName>
+                <default>false</default>
+                <label>S2IH</label>
+            </value>
+            <value>
+                <fullName>S2IL</fullName>
+                <default>false</default>
+                <label>S2IL</label>
+            </value>
+            <value>
+                <fullName>S2M</fullName>
+                <default>false</default>
+                <label>S2M</label>
+            </value>
+            <value>
+                <fullName>S2MH</fullName>
+                <default>false</default>
+                <label>S2MH</label>
+            </value>
+            <value>
+                <fullName>S2X</fullName>
+                <default>false</default>
+                <label>S2X</label>
+            </value>
+            <value>
+                <fullName>S2XH</fullName>
+                <default>false</default>
+                <label>S2XH</label>
+            </value>
+            <value>
+                <fullName>T</fullName>
+                <default>false</default>
+                <label>T</label>
+            </value>
+            <value>
+                <fullName>T2S</fullName>
+                <default>false</default>
+                <label>T2S</label>
+            </value>
+            <value>
+                <fullName>AC-S</fullName>
+                <default>false</default>
+                <label>AC-S</label>
+            </value>
+            <value>
+                <fullName>ADMIRAL</fullName>
+                <default>false</default>
+                <label>ADMIRAL</label>
+            </value>
+            <value>
+                <fullName>ALASKA 250</fullName>
+                <default>false</default>
+                <label>ALASKA 250</label>
+            </value>
+            <value>
+                <fullName>ANTIGUA-200</fullName>
+                <default>false</default>
+                <label>ANTIGUA-200</label>
+            </value>
+            <value>
+                <fullName>AREA NLS125 (GALILEO-100-125)</fullName>
+                <default>false</default>
+                <label>AREA NLS125 (GALILEO-100-125)</label>
+            </value>
+            <value>
+                <fullName>ARTICO 155-145</fullName>
+                <default>false</default>
+                <label>ARTICO 155-145</label>
+            </value>
+            <value>
+                <fullName>ARTICO 285</fullName>
+                <default>false</default>
+                <label>ARTICO 285</label>
+            </value>
+            <value>
+                <fullName>ARTICO 306</fullName>
+                <default>false</default>
+                <label>ARTICO 306</label>
+            </value>
+            <value>
+                <fullName>ASSOLO 185</fullName>
+                <default>false</default>
+                <label>ASSOLO 185</label>
+            </value>
+            <value>
+                <fullName>AVANCASSA VERSIONE 1</fullName>
+                <default>false</default>
+                <label>AVANCASSA VERSIONE 1</label>
+            </value>
+            <value>
+                <fullName>AVANCASSA VERSIONE 2</fullName>
+                <default>false</default>
+                <label>AVANCASSA VERSIONE 2</label>
+            </value>
+            <value>
+                <fullName>AZIMUT-200</fullName>
+                <default>false</default>
+                <label>AZIMUT-200</label>
+            </value>
+            <value>
+                <fullName>BANCO 1352</fullName>
+                <default>false</default>
+                <label>BANCO 1352</label>
+            </value>
+            <value>
+                <fullName>BANCO EFB 100</fullName>
+                <default>false</default>
+                <label>BANCO EFB 100</label>
+            </value>
+            <value>
+                <fullName>CAN COOLER 65 ESTATE</fullName>
+                <default>false</default>
+                <label>CAN COOLER 65 ESTATE</label>
+            </value>
+            <value>
+                <fullName>CANTINA 111</fullName>
+                <default>false</default>
+                <label>CANTINA 111</label>
+            </value>
+            <value>
+                <fullName>CARD BOARD VERTICALE</fullName>
+                <default>false</default>
+                <label>CARD BOARD VERTICALE</label>
+            </value>
+            <value>
+                <fullName>CERVINO 1200</fullName>
+                <default>false</default>
+                <label>CERVINO 1200</label>
+            </value>
+            <value>
+                <fullName>CERVINO 700</fullName>
+                <default>false</default>
+                <label>CERVINO 700</label>
+            </value>
+            <value>
+                <fullName>CERVINO 700S</fullName>
+                <default>false</default>
+                <label>CERVINO 700S</label>
+            </value>
+            <value>
+                <fullName>CERVINO 900</fullName>
+                <default>false</default>
+                <label>CERVINO 900</label>
+            </value>
+            <value>
+                <fullName>CHORUS</fullName>
+                <default>false</default>
+                <label>CHORUS</label>
+            </value>
+            <value>
+                <fullName>COMBI VDTT 202</fullName>
+                <default>false</default>
+                <label>COMBI VDTT 202</label>
+            </value>
+            <value>
+                <fullName>CONCERTO 150</fullName>
+                <default>false</default>
+                <label>CONCERTO 150</label>
+            </value>
+            <value>
+                <fullName>CONCERTO 200</fullName>
+                <default>false</default>
+                <label>CONCERTO 200</label>
+            </value>
+            <value>
+                <fullName>COUNTER COOLER</fullName>
+                <default>false</default>
+                <label>COUNTER COOLER</label>
+            </value>
+            <value>
+                <fullName>CRISTAL 190</fullName>
+                <default>false</default>
+                <label>CRISTAL 190</label>
+            </value>
+            <value>
+                <fullName>CUCINA DUOGASCOOKE R900</fullName>
+                <default>false</default>
+                <label>CUCINA DUOGASCOOKE R900</label>
+            </value>
+            <value>
+                <fullName>DUETTO 1</fullName>
+                <default>false</default>
+                <label>DUETTO 1</label>
+            </value>
+            <value>
+                <fullName>DUETTO 2</fullName>
+                <default>false</default>
+                <label>DUETTO 2</label>
+            </value>
+            <value>
+                <fullName>EASY COOL</fullName>
+                <default>false</default>
+                <label>EASY COOL</label>
+            </value>
+            <value>
+                <fullName>EASY COOL 41</fullName>
+                <default>false</default>
+                <label>EASY COOL 41</label>
+            </value>
+            <value>
+                <fullName>EASY COOL 65-66</fullName>
+                <default>false</default>
+                <label>EASY COOL 65-66</label>
+            </value>
+            <value>
+                <fullName>EASY COOL 85</fullName>
+                <default>false</default>
+                <label>EASY COOL 85</label>
+            </value>
+            <value>
+                <fullName>EASY GO</fullName>
+                <default>false</default>
+                <label>EASY GO</label>
+            </value>
+            <value>
+                <fullName>ECLETTICO E CARTONATI</fullName>
+                <default>false</default>
+                <label>ECLETTICO E CARTONATI</label>
+            </value>
+            <value>
+                <fullName>FORNI ELETTRICI</fullName>
+                <default>false</default>
+                <label>FORNI ELETTRICI</label>
+            </value>
+            <value>
+                <fullName>FROST SD 400</fullName>
+                <default>false</default>
+                <label>FROST SD 400</label>
+            </value>
+            <value>
+                <fullName>GEISER</fullName>
+                <default>false</default>
+                <label>GEISER</label>
+            </value>
+            <value>
+                <fullName>GEISER 8070 CON MONITOR</fullName>
+                <default>false</default>
+                <label>GEISER 8070 CON MONITOR</label>
+            </value>
+            <value>
+                <fullName>GEISER BUMPER</fullName>
+                <default>false</default>
+                <label>GEISER BUMPER</label>
+            </value>
+            <value>
+                <fullName>GEISER BUMPER CON MONITOR</fullName>
+                <default>false</default>
+                <label>GEISER BUMPER CON MONITOR</label>
+            </value>
+            <value>
+                <fullName>GHIACCIO 100</fullName>
+                <default>false</default>
+                <label>GHIACCIO 100</label>
+            </value>
+            <value>
+                <fullName>GHIACCIO 30</fullName>
+                <default>false</default>
+                <label>GHIACCIO 30</label>
+            </value>
+            <value>
+                <fullName>GHIACCIO 45</fullName>
+                <default>false</default>
+                <label>GHIACCIO 45</label>
+            </value>
+            <value>
+                <fullName>GLOBAL LIGHT</fullName>
+                <default>false</default>
+                <label>GLOBAL LIGHT</label>
+            </value>
+            <value>
+                <fullName>ICEBERG 95</fullName>
+                <default>false</default>
+                <label>ICEBERG 95</label>
+            </value>
+            <value>
+                <fullName>IDRO SAILOR</fullName>
+                <default>false</default>
+                <label>IDRO SAILOR</label>
+            </value>
+            <value>
+                <fullName>ISLANDA 6550</fullName>
+                <default>false</default>
+                <label>ISLANDA 6550</label>
+            </value>
+            <value>
+                <fullName>ISLANDA 6550 BUMPER</fullName>
+                <default>false</default>
+                <label>ISLANDA 6550 BUMPER</label>
+            </value>
+            <value>
+                <fullName>ISLANDA 8070</fullName>
+                <default>false</default>
+                <label>ISLANDA 8070</label>
+            </value>
+            <value>
+                <fullName>ISLANDA 8070 CON MONITOR</fullName>
+                <default>false</default>
+                <label>ISLANDA 8070 CON MONITOR</label>
+            </value>
+            <value>
+                <fullName>ISOLA 150 LED</fullName>
+                <default>false</default>
+                <label>ISOLA 150 LED</label>
+            </value>
+            <value>
+                <fullName>ISOLA 200</fullName>
+                <default>false</default>
+                <label>ISOLA 200</label>
+            </value>
+            <value>
+                <fullName>ISOLA-100</fullName>
+                <default>false</default>
+                <label>ISOLA-100</label>
+            </value>
+            <value>
+                <fullName>KILIFAST 60</fullName>
+                <default>false</default>
+                <label>KILIFAST 60</label>
+            </value>
+            <value>
+                <fullName>KILIFAST-45 L H.167</fullName>
+                <default>false</default>
+                <label>KILIFAST-45 L H.167</label>
+            </value>
+            <value>
+                <fullName>KILIFAST-45 M H.137</fullName>
+                <default>false</default>
+                <label>KILIFAST-45 M H.137</label>
+            </value>
+            <value>
+                <fullName>KIT 100</fullName>
+                <default>false</default>
+                <label>KIT 100</label>
+            </value>
+            <value>
+                <fullName>KIT 160</fullName>
+                <default>false</default>
+                <label>KIT 160</label>
+            </value>
+            <value>
+                <fullName>LAGO 110</fullName>
+                <default>false</default>
+                <label>LAGO 110</label>
+            </value>
+            <value>
+                <fullName>LAGO 90</fullName>
+                <default>false</default>
+                <label>LAGO 90</label>
+            </value>
+            <value>
+                <fullName>MONVISO 100</fullName>
+                <default>false</default>
+                <label>MONVISO 100</label>
+            </value>
+            <value>
+                <fullName>MONVISO 140-NEW</fullName>
+                <default>false</default>
+                <label>MONVISO 140-NEW</label>
+            </value>
+            <value>
+                <fullName>MONVISO 190</fullName>
+                <default>false</default>
+                <label>MONVISO 190</label>
+            </value>
+            <value>
+                <fullName>MONVISO 7</fullName>
+                <default>false</default>
+                <label>MONVISO 7</label>
+            </value>
+            <value>
+                <fullName>MONVISO 70</fullName>
+                <default>false</default>
+                <label>MONVISO 70</label>
+            </value>
+            <value>
+                <fullName>OFC 220</fullName>
+                <default>false</default>
+                <label>OFC 220</label>
+            </value>
+            <value>
+                <fullName>OFC 70</fullName>
+                <default>false</default>
+                <label>OFC 70</label>
+            </value>
+            <value>
+                <fullName>OTF-90</fullName>
+                <default>false</default>
+                <label>OTF-90</label>
+            </value>
+            <value>
+                <fullName>PIASTRE DI COTTURA BASALTO 4232</fullName>
+                <default>false</default>
+                <label>PIASTRE DI COTTURA BASALTO 4232</label>
+            </value>
+            <value>
+                <fullName>POLIFONIA 150</fullName>
+                <default>false</default>
+                <label>POLIFONIA 150</label>
+            </value>
+            <value>
+                <fullName>POLIFONIA-200</fullName>
+                <default>false</default>
+                <label>POLIFONIA-200</label>
+            </value>
+            <value>
+                <fullName>POLO 440CSV</fullName>
+                <default>false</default>
+                <label>POLO 440CSV</label>
+            </value>
+            <value>
+                <fullName>POLO 500</fullName>
+                <default>false</default>
+                <label>POLO 500</label>
+            </value>
+            <value>
+                <fullName>QUARTETTO 200</fullName>
+                <default>false</default>
+                <label>QUARTETTO 200</label>
+            </value>
+            <value>
+                <fullName>RONER COTTURA</fullName>
+                <default>false</default>
+                <label>RONER COTTURA</label>
+            </value>
+            <value>
+                <fullName>SALSA</fullName>
+                <default>false</default>
+                <label>SALSA</label>
+            </value>
+            <value>
+                <fullName>SHELF COOLER</fullName>
+                <default>false</default>
+                <label>SHELF COOLER</label>
+            </value>
+            <value>
+                <fullName>SINFONIA 150</fullName>
+                <default>false</default>
+                <label>SINFONIA 150</label>
+            </value>
+            <value>
+                <fullName>SINFONIA 200</fullName>
+                <default>false</default>
+                <label>SINFONIA 200</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 180</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 180</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 21</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 21</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 216</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 216</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 236</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 236</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 260 MONITOR</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 260 MONITOR</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 286</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 286</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 330</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 330</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 360 MONITOR</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 360 MONITOR</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 367</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 367</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 381</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 381</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 400</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 400</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 421</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 421</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 423 SMARTVIDEO</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 423 SMARTVIDEO</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 51</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 51</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 601</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 601</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 605</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 605</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 62</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 62</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 79</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 79</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO 81</fullName>
+                <default>false</default>
+                <label>SOPRAZERO 81</label>
+            </value>
+            <value>
+                <fullName>SOPRAZERO VETRINA 200</fullName>
+                <default>false</default>
+                <label>SOPRAZERO VETRINA 200</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO 217</fullName>
+                <default>false</default>
+                <label>SOTTOZERO 217</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO 470</fullName>
+                <default>false</default>
+                <label>SOTTOZERO 470</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO 76</fullName>
+                <default>false</default>
+                <label>SOTTOZERO 76</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO 870</fullName>
+                <default>false</default>
+                <label>SOTTOZERO 870</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO IQ 5_BASE (IQ EMD)</fullName>
+                <default>false</default>
+                <label>SOTTOZERO IQ 5_BASE (IQ EMD)</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO VETRINA 93</fullName>
+                <default>false</default>
+                <label>SOTTOZERO VETRINA 93</label>
+            </value>
+            <value>
+                <fullName>SOTTOZERO-450 GLEE 45 LITE BT</fullName>
+                <default>false</default>
+                <label>SOTTOZERO-450 GLEE 45 LITE BT</label>
+            </value>
+            <value>
+                <fullName>VASETTO</fullName>
+                <default>false</default>
+                <label>VASETTO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>0m50</controllingFieldValue>
+            <valueName>Vitrine Libre-Service 0m50 Positif Noir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m55</controllingFieldValue>
+            <valueName>Vitrine Semi Verticale 1m55 Noir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12 (Dry)</controllingFieldValue>
+            <valueName>V12D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12 (Dry)</controllingFieldValue>
+            <valueName>V12DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12 (Dry)</controllingFieldValue>
+            <valueName>L12D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12 (Dry)</controllingFieldValue>
+            <valueName>L12DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14 (Dry)</controllingFieldValue>
+            <valueName>L14D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14 (Dry)</controllingFieldValue>
+            <valueName>L14DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16 (Dry)</controllingFieldValue>
+            <valueName>L16D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16 (Dry)</controllingFieldValue>
+            <valueName>L16DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18 (Dry)</controllingFieldValue>
+            <valueName>L18D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18 (Dry)</controllingFieldValue>
+            <valueName>L18DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20 (Dry)</controllingFieldValue>
+            <valueName>L20D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20 (Dry)</controllingFieldValue>
+            <valueName>L20DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22 (Dry)</controllingFieldValue>
+            <valueName>L22D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22 (Dry)</controllingFieldValue>
+            <valueName>L22DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8</controllingFieldValue>
+            <valueName>V8XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24 (Dry)</controllingFieldValue>
+            <valueName>L24D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24 (Dry)</controllingFieldValue>
+            <valueName>L24DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24 (Dry)</controllingFieldValue>
+            <valueName>L24F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24 (Dry)</controllingFieldValue>
+            <valueName>L24FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10</controllingFieldValue>
+            <valueName>V10XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26 (Dry)</controllingFieldValue>
+            <valueName>L26D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26 (Dry)</controllingFieldValue>
+            <valueName>L26DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26 (Dry)</controllingFieldValue>
+            <valueName>L26F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26 (Dry)</controllingFieldValue>
+            <valueName>L26FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V12</controllingFieldValue>
+            <valueName>V12XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22 (Dry)</controllingFieldValue>
+            <valueName>C22D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22 (Dry)</controllingFieldValue>
+            <valueName>C22DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22 (Dry)</controllingFieldValue>
+            <valueName>C22F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22 (Dry)</controllingFieldValue>
+            <valueName>C22FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L12</controllingFieldValue>
+            <valueName>L12IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L16</controllingFieldValue>
+            <valueName>L16IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L18</controllingFieldValue>
+            <valueName>L18IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L20</controllingFieldValue>
+            <valueName>L20IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L22</controllingFieldValue>
+            <valueName>L22IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Frigo)</controllingFieldValue>
+            <valueName>P0PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L24</controllingFieldValue>
+            <valueName>L24IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Frigo)</controllingFieldValue>
+            <valueName>P6P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L26</controllingFieldValue>
+            <valueName>L26IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Frigo)</controllingFieldValue>
+            <valueName>P8IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Frigo)</controllingFieldValue>
+            <valueName>P10IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Frigo)</controllingFieldValue>
+            <valueName>P15IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Frigo)</controllingFieldValue>
+            <valueName>P18IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Frigo)</controllingFieldValue>
+            <valueName>P21IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Frigo)</controllingFieldValue>
+            <valueName>P23IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S1 (Frigo)</controllingFieldValue>
+            <valueName>S1IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <valueName>S2IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <valueName>S2MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Frigo)</controllingFieldValue>
+            <valueName>S2XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24 (Dry)</controllingFieldValue>
+            <valueName>C24D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24 (Dry)</controllingFieldValue>
+            <valueName>C24DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24 (Dry)</controllingFieldValue>
+            <valueName>C24F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24 (Dry)</controllingFieldValue>
+            <valueName>C24FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26 (Dry)</controllingFieldValue>
+            <valueName>C26D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26 (Dry)</controllingFieldValue>
+            <valueName>C26DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26 (Dry)</controllingFieldValue>
+            <valueName>C26F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26 (Dry)</controllingFieldValue>
+            <valueName>C26FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R4</controllingFieldValue>
+            <valueName>R4M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28 (Dry)</controllingFieldValue>
+            <valueName>C28D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28 (Dry)</controllingFieldValue>
+            <valueName>C28DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R9</controllingFieldValue>
+            <valueName>R9M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29 (Dry)</controllingFieldValue>
+            <valueName>C29D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29 (Dry)</controllingFieldValue>
+            <valueName>C29DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V1</controllingFieldValue>
+            <valueName>V1M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Frigo)</controllingFieldValue>
+            <valueName>V3M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Frigo)</controllingFieldValue>
+            <valueName>V3X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Frigo)</controllingFieldValue>
+            <valueName>V3E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Frigo)</controllingFieldValue>
+            <valueName>V3P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Frigo)</controllingFieldValue>
+            <valueName>V3I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Dry)</controllingFieldValue>
+            <valueName>S2D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Dry)</controllingFieldValue>
+            <valueName>S2DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Dry)</controllingFieldValue>
+            <valueName>S2F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2 (Dry)</controllingFieldValue>
+            <valueName>S2FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Frigo)</controllingFieldValue>
+            <valueName>V5M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Frigo)</controllingFieldValue>
+            <valueName>V5E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Frigo)</controllingFieldValue>
+            <valueName>V5X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Frigo)</controllingFieldValue>
+            <valueName>V5P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Frigo)</controllingFieldValue>
+            <valueName>V5I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L14</controllingFieldValue>
+            <valueName>L14IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Frigo)</controllingFieldValue>
+            <valueName>V9IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF20</controllingFieldValue>
+            <valueName>CF20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Frigo)</controllingFieldValue>
+            <valueName>V11IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF90</controllingFieldValue>
+            <valueName>CF90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Frigo)</controllingFieldValue>
+            <valueName>V15IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Frigo)</controllingFieldValue>
+            <valueName>V20IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T (Frigo)</controllingFieldValue>
+            <controllingFieldValue>T (Sec)</controllingFieldValue>
+            <valueName>T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V3 (Sec)</controllingFieldValue>
+            <valueName>V3S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V5 (Sec)</controllingFieldValue>
+            <valueName>V5S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V9 (Sec)</controllingFieldValue>
+            <valueName>V9S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Sec)</controllingFieldValue>
+            <valueName>V11S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V11 (Sec)</controllingFieldValue>
+            <valueName>V11SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Sec)</controllingFieldValue>
+            <valueName>V15S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V15 (Sec)</controllingFieldValue>
+            <valueName>V15SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Sec)</controllingFieldValue>
+            <valueName>V20S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V20 (Sec)</controllingFieldValue>
+            <valueName>V20SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Sec)</controllingFieldValue>
+            <valueName>P0S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P0 (Sec)</controllingFieldValue>
+            <valueName>P0SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Sec)</controllingFieldValue>
+            <valueName>P6S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P6 (Sec)</controllingFieldValue>
+            <valueName>P6SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Sec)</controllingFieldValue>
+            <valueName>P8S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P8 (Sec)</controllingFieldValue>
+            <valueName>P8SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>AC-S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ADMIRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ALASKA 250</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ANTIGUA-200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>AREA NLS125 (GALILEO-100-125)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ARTICO 155-145</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ARTICO 285</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ARTICO 306</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>ASSOLO 185</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>AVANCASSA VERSIONE 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSERVATORI</controllingFieldValue>
+            <valueName>AVANCASSA VERSIONE 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>AZIMUT-200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>BANCO 1352</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>BANCO EFB 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CAN COOLER 65 ESTATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CANTINA 111</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CARD BOARD VERTICALE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CERVINO 1200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CERVINO 700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CERVINO 700S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CERVINO 900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CHORUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>COMBI VDTT 202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CONCERTO 150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CONCERTO 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>COUNTER COOLER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CRISTAL 190</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>CUCINA DUOGASCOOKE R900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI A POZZETTO</controllingFieldValue>
+            <valueName>DUETTO 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>DUETTO 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>EASY COOL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>EASY COOL 41</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>EASY COOL 65-66</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>EASY COOL 85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>EASY GO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ECLETTICO E CARTONATI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>FORNI ELETTRICI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>FROST SD 400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GEISER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GEISER 8070 CON MONITOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GEISER BUMPER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GEISER BUMPER CON MONITOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GHIACCIO 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GHIACCIO 30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GHIACCIO 45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>GLOBAL LIGHT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ICEBERG 95</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>IDRO SAILOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISLANDA 6550</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISLANDA 6550 BUMPER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISLANDA 8070</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISLANDA 8070 CON MONITOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISOLA 150 LED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISOLA 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>ISOLA-100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>KILIFAST 60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>KILIFAST-45 L H.167</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>KILIFAST-45 M H.137</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>KIT 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>KIT 160</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>LAGO 110</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>LAGO 90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>MONVISO 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>MONVISO 140-NEW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>MONVISO 190</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>MONVISO 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>MONVISO 70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>OFC 220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>OFC 70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESPOSITORI REFRIGERATI VERTICALI</controllingFieldValue>
+            <valueName>OTF-90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>PIASTRE DI COTTURA BASALTO 4232</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>POLIFONIA 150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>POLIFONIA-200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>POLO 440CSV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>POLO 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>QUARTETTO 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>RONER COTTURA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SALSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SHELF COOLER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SINFONIA 150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SINFONIA 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 180</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 216</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 236</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 260 MONITOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 286</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 330</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ISOLE</controllingFieldValue>
+            <valueName>SOPRAZERO 360 MONITOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 367</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 381</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 421</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 423 SMARTVIDEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 51</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 601</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 605</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 62</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 79</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO 81</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOPRAZERO VETRINA 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO 217</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO 470</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO 76</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO 870</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO IQ 5_BASE (IQ EMD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO VETRINA 93</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>SOTTOZERO-450 GLEE 45 LITE BT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECIALI</controllingFieldValue>
+            <valueName>VASETTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Sec)</controllingFieldValue>
+            <valueName>P10S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P10 (Sec)</controllingFieldValue>
+            <valueName>P10SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Sec)</controllingFieldValue>
+            <valueName>P15S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P15 (Sec)</controllingFieldValue>
+            <valueName>P15SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Sec)</controllingFieldValue>
+            <valueName>P18S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P18 (Sec)</controllingFieldValue>
+            <valueName>P18SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Sec)</controllingFieldValue>
+            <valueName>P21S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P21 (Sec)</controllingFieldValue>
+            <valueName>P21SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Sec)</controllingFieldValue>
+            <valueName>P23S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P23 (Sec)</controllingFieldValue>
+            <valueName>P23SH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF10</controllingFieldValue>
+            <valueName>CF10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF25</controllingFieldValue>
+            <valueName>CF25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF30</controllingFieldValue>
+            <valueName>CF30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF35</controllingFieldValue>
+            <valueName>CF35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF50</controllingFieldValue>
+            <valueName>CF50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF55</controllingFieldValue>
+            <valueName>CF55</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF85</controllingFieldValue>
+            <valueName>CF85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CF110</controllingFieldValue>
+            <valueName>CF110</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16MH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16XH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16EH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16PH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P16(Frigo)</controllingFieldValue>
+            <valueName>P16IH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m00</controllingFieldValue>
+            <valueName>Bac 1m mixte standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m00</controllingFieldValue>
+            <valueName>Bac 1m positif standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m00</controllingFieldValue>
+            <valueName>Vitrine Semi Verticale 1m00 Noir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m10</controllingFieldValue>
+            <valueName>Bac BLS110 mixte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m33</controllingFieldValue>
+            <valueName>Bac Service Arrière standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m50</controllingFieldValue>
+            <valueName>Bac libre service 1m50 positif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m50</controllingFieldValue>
+            <valueName>Bac libre service 1m50 mixte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2m00</controllingFieldValue>
+            <valueName>Bac libre service 2m00 positif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2m00</controllingFieldValue>
+            <valueName>Bac libre service 2m00 mixte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2m00</controllingFieldValue>
+            <valueName>Bac libre service 2m00 négatif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2m50</controllingFieldValue>
+            <valueName>Bac libre service 2m50 mixte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0m70</controllingFieldValue>
+            <valueName>Vitrine verticale 0m70 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0m70</controllingFieldValue>
+            <valueName>Vitrine Porte Vitrée Positif 0m67</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0m70</controllingFieldValue>
+            <valueName>Vitrine Porte Vitrée Négatif 0m67</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0m90</controllingFieldValue>
+            <valueName>Vitrine verticale 0m90 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m30</controllingFieldValue>
+            <valueName>Vitrine verticale 1m 30 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m90</controllingFieldValue>
+            <valueName>Vitrine verticale 1m 90 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T-1m30</controllingFieldValue>
+            <valueName>Vitrine traiteur 1m30 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T-2m00</controllingFieldValue>
+            <valueName>Vitrine traiteur 2m00 standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C22</controllingFieldValue>
+            <valueName>C22IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C24</controllingFieldValue>
+            <valueName>C24IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C26</controllingFieldValue>
+            <valueName>C26IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T</controllingFieldValue>
+            <valueName>T1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T</controllingFieldValue>
+            <valueName>T2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T</controllingFieldValue>
+            <valueName>T2S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <valueName>S2IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C28</controllingFieldValue>
+            <valueName>C28IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1m40</controllingFieldValue>
+            <valueName>Vitrine Libre-Service 1m40 Négative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29ML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C29</controllingFieldValue>
+            <valueName>C29IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réfrigerateur</controllingFieldValue>
+            <valueName>Réfrigérateur + freezer 97+11L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Réfrigerateur</controllingFieldValue>
+            <valueName>Réfrigérateur 140L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8 (Dry)</controllingFieldValue>
+            <valueName>V8D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V8 (Dry)</controllingFieldValue>
+            <valueName>V8DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vitr Gris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vit Nég Gris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vitrées (-) AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine patissière ventilée 91</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine patissière ventilée141</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 6 Faces Froid négatif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 6 Faces Froid positif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vitrées (+) AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vitrées froid+</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 6 Faces positif gris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine patissière ventilée166</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine Traiteur 2m</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine patissière ventilée136</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine 4 Faces Vitrées Négat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine Traiteur droite noire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine patissière ventilée106</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vitrine</controllingFieldValue>
+            <valueName>Vitrine service arrière 134(-)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10 (Dry)</controllingFieldValue>
+            <valueName>V10D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>V10 (Dry)</controllingFieldValue>
+            <valueName>V10DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire Porte Pleine Froid (-)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire porte pleine (+/-)640L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire porte pleine (+) 640L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire Porte Pleine Froid (+)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire de stockage 400 L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire Vitrée Champignon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire double vitrée 875L (+)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire à Boissons Visicooler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armoire</controllingFieldValue>
+            <valueName>Armoire réfrigérée P.Pleine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tour pâtissière</controllingFieldValue>
+            <valueName>Tour patissière 2p - inox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tour pâtissière</controllingFieldValue>
+            <valueName>Tour patissière 2p - granite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur porte vitrée 119 L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congél. couv. relevable 518L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur Ice Cream 9 Bacs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congelateur Ice Cream 7 bacs.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur pte vit. rel. 570L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur coffre 468 litres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congél. coffre vitre coul 405L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congél vitré couv relevab 550L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur porte coulis. 664L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Congélateur</controllingFieldValue>
+            <valueName>Congélateur counter 50L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Showmaster</controllingFieldValue>
+            <valueName>Meuble Showmaster,Rond,1m47</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Showmaster</controllingFieldValue>
+            <valueName>Meuble Showmaster,Rond,1m10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etal à poisson</controllingFieldValue>
+            <valueName>Etal Poissons Réfrigéré 2m</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etal à poisson</controllingFieldValue>
+            <valueName>Etal Poissons Inox 2M20x1M10</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

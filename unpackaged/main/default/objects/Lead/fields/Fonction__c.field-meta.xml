@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fonction__c</fullName>
+    <label>Fonction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Achats</fullName>
+                <default>false</default>
+                <label>Achats</label>
+            </value>
+            <value>
+                <fullName>Administration / Secrétariat</fullName>
+                <default>false</default>
+                <label>Administration / Secrétariat</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Comptabilité / Finance</fullName>
+                <default>false</default>
+                <label>Comptabilité / Finance</label>
+            </value>
+            <value>
+                <fullName>Informatique</fullName>
+                <default>false</default>
+                <label>Informatique</label>
+            </value>
+            <value>
+                <fullName>Juridique</fullName>
+                <default>false</default>
+                <label>Juridique</label>
+            </value>
+            <value>
+                <fullName>Logistique / Exploitation</fullName>
+                <default>false</default>
+                <label>Logistique / Exploitation</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Ressource Humaines</fullName>
+                <default>false</default>
+                <label>Ressource Humaines</label>
+            </value>
+            <value>
+                <fullName>Services Généraux / Immobilier</fullName>
+                <default>false</default>
+                <label>Services Généraux / Immobilier</label>
+            </value>
+            <value>
+                <fullName>Technique</fullName>
+                <default>false</default>
+                <label>Technique</label>
+            </value>
+            <value>
+                <fullName>- Séléctionner -</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>- Séléctionner -</label>
+            </value>
+            <value>
+                <fullName>Chef de projet digital senior</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chef de projet digital senior</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

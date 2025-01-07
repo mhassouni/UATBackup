@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moon_02_OT_Parc_Assistance_Relais</fullName>
+    <active>true</active>
+    <description>Le parc de l&#39;OT doit être différent du parc assistance et relais</description>
+    <errorConditionFormula>AND( 
+OR 
+( 
+AND( Asset.Id == Parc_Assistance__c,NOT(ISBLANK(Parc_Assistance__c) )) 
+, 
+AND(Asset.Id == Parc_Relais__c ,NOT(ISBLANK(Parc_Relais__c ))) 
+
+) 
+, 
+$Setup.Bypass__c.BypassValidationRules__c = false 
+
+
+)</errorConditionFormula>
+    <errorDisplayField>AssetId</errorDisplayField>
+    <errorMessage>Le parc assistance / relais ne peut pas être identique au véhicule en panne</errorMessage>
+</ValidationRule>

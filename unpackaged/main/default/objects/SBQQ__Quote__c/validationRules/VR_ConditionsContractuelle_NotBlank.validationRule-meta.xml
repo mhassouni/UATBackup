@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ConditionsContractuelle_NotBlank</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR
+(
+AND(ISCHANGED(Mode_reglement__c ),ISBLANK(text(Mode_reglement__c )))
+,
+AND(ISCHANGED(Mois_caution__c ),ISBLANK(text(Mois_caution__c) ))
+,
+AND(ISCHANGED(Dpt_garantie__c ),ISBLANK(text(Dpt_garantie__c )))
+,
+AND(ISCHANGED(Mode_facturation__c ),ISBLANK(text(Mode_facturation__c )))
+,
+AND(ISCHANGED(Delai_reglement__c ),ISBLANK(text(Delai_reglement__c )))
+
+)</errorConditionFormula>
+    <errorMessage>Les champs &quot; Condition contractuelle&quot; sont obligatoires</errorMessage>
+</ValidationRule>

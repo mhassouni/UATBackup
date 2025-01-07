@@ -1,0 +1,7 @@
+<apex:page lightningStylesheets="true" standardController="Asset">
+   <style>
+    body{background-color: #FFFFFF;font-weight: bold;font-color:#B22222 }
+   </style>
+  
+<center styleClass="myFormStyle"> <apex:image url="{!$Resource.FlowVar_CaseICon}" width="35" height="35"/> &nbsp;&nbsp;  <apex:outputLink value="/{!Asset.URL_Case_PF_Assist__c}">{!$Label.Alerte_PF_Assist_Text}</apex:outputLink></center>
+</apex:page>

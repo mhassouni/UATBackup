@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grands_Comptes_ADV</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ModificationDate__c</columns>
+    <columns>FieldName__c</columns>
+    <columns>NewValue__c</columns>
+    <columns>OldValue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Grand_compte__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>FieldisMonitored__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Grands Comptes - ADV</label>
+</ListView>

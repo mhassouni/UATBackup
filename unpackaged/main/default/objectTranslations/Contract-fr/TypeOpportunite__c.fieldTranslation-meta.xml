@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type d&apos;opportunité --></label>
+        <name>TypeOpportunite__c</name>
+        <picklistValues>
+            <masterLabel>NCT</masterLabel>
+            <translation><!-- NCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRG</masterLabel>
+            <translation><!-- PRG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNV</masterLabel>
+            <translation><!-- RNV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUP</masterLabel>
+            <translation><!-- SUP --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

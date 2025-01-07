@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeSourcing__c</fullName>
+    <label>Type sourcing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Location avec chauffeur</fullName>
+                <default>false</default>
+                <label>Location avec chauffeur</label>
+            </value>
+            <value>
+                <fullName>Location sans chauffeur</fullName>
+                <default>false</default>
+                <label>Location sans chauffeur</label>
+            </value>
+            <value>
+                <fullName>Propriété</fullName>
+                <default>false</default>
+                <label>Propriété</label>
+            </value>
+            <value>
+                <fullName>Transporteur dernier kilomètre</fullName>
+                <default>false</default>
+                <label>Transporteur dernier kilomètre</label>
+            </value>
+            <value>
+                <fullName>Transporteur public</fullName>
+                <default>false</default>
+                <label>Transporteur public</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

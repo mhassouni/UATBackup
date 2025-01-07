@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Effettivo</label>
+        <name>Effectif__c</name>
+        <picklistValues>
+            <masterLabel>1 à 9</masterLabel>
+            <translation>da 1 al 9</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 à 49</masterLabel>
+            <translation>da 10 a 49</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 à 499</masterLabel>
+            <translation>da 100 al 499</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000 et plus</masterLabel>
+            <translation>1000 o più</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 à 99</masterLabel>
+            <translation>da 50 a 99</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 à 999</masterLabel>
+            <translation>da 500 a 999</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

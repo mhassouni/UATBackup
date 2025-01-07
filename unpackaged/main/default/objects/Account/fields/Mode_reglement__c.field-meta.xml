@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_reglement__c</fullName>
+    <defaultValue>&quot;Prélèvement automatique&quot;</defaultValue>
+    <label>Mode de reglement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Mode_reglement</valueSetName>
+    </valueSet>
+</CustomField>

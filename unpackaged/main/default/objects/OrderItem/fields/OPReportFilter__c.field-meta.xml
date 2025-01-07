@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPReportFilter__c</fullName>
+    <formula>IF(ISBLANK(blng__OverrideNextBillingDate__c),
+ OR
+  ( AND( MONTH(  blng__NextBillingDate__c  ) &lt;= MONTH(TODAY())+1,YEAR(blng__NextBillingDate__c) = YEAR (TODAY()) ), 
+  YEAR(blng__NextBillingDate__c) &lt; YEAR (TODAY()),
+		AND(ISBLANK(blng__NextBillingDate__c), ISPICKVAL(SBQQ__ChargeType__c,&quot;Usage&quot;))
+  ),
+			
+			
+		
+  OR
+   ( AND( MONTH(  blng__OverrideNextBillingDate__c  ) &lt;= MONTH(TODAY())+1,YEAR(blng__OverrideNextBillingDate__c) = YEAR (TODAY()) ), 
+     YEAR(blng__OverrideNextBillingDate__c) &lt; YEAR (TODAY())
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OPReportFilter</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

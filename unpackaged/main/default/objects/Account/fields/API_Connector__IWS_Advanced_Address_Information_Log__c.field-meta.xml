@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__IWS_Advanced_Address_Information_Log__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to store the logs related to the IWS Advanced Address service.</description>
+    <label>IWS Advanced Address Information Log</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

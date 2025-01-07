@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Status</name>
+        <label>Status</label>
+        <locationX>314</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>R_alis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Réalisé</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_1</targetReference>
+            </connector>
+            <label>Réalisé</label>
+        </rules>
+        <rules>
+            <name>Non_contr_l</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non contrôlé</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_2</targetReference>
+            </connector>
+            <label>Non contrôlé</label>
+        </rules>
+    </decisions>
+    <description>When a WOLI status is set manually, change secondary status to display the WOLI in the right section (Non contrôlé or Contrôlé))</description>
+    <environments>Default</environments>
+    <interviewLabel>FluxTrigger_TDP_WOLI_Status_Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FluxTrigger_TDP_WOLI_Status_Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_1</name>
+        <label>Update 1</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Work_Order_Not_Controlled__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_2</name>
+        <label>Update 2</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Work_Order_Not_Controlled__c</field>
+            <value>
+                <elementReference>$Record.WorkOrderId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Work_Order_OK__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Status</targetReference>
+        </connector>
+        <object>WorkOrderLineItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

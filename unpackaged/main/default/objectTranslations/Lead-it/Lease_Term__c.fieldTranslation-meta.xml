@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Durata Leasing</label>
+        <name>Lease_Term__c</name>
+        <picklistValues>
+            <masterLabel>From 1 to 11 months</masterLabel>
+            <translation><!-- From 1 to 11 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From 1 to 30 days</masterLabel>
+            <translation><!-- From 1 to 30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long term</masterLabel>
+            <translation><!-- Long term --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

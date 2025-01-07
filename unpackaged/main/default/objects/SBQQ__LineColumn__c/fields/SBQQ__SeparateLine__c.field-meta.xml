@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SeparateLine__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that determines whether this field is printed on its own separate line.</description>
+    <inlineHelpText>Sélectionnez cette case pour imprimer ce champ sur sa propre ligne. Utilisée pour les champs de texte long tels que les descriptions de produits.</inlineHelpText>
+    <label>Separate Line</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

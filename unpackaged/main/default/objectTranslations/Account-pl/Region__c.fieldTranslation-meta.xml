@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Region</label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>DF1</masterLabel>
+            <translation><!-- DF1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF2</masterLabel>
+            <translation><!-- DF2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF3</masterLabel>
+            <translation><!-- DF3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF4</masterLabel>
+            <translation><!-- DF4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF5</masterLabel>
+            <translation><!-- DF5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTION RESEAU DROM</masterLabel>
+            <translation><!-- DIRECTION RESEAU DROM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTION RESEAU IDF</masterLabel>
+            <translation><!-- DIRECTION RESEAU IDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTION RESEAU NORD</masterLabel>
+            <translation><!-- DIRECTION RESEAU NORD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTION RESEAU SUD</masterLabel>
+            <translation><!-- DIRECTION RESEAU SUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DROM</masterLabel>
+            <translation><!-- DROM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCEE</masterLabel>
+            <translation><!-- NCEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEUS</masterLabel>
+            <translation><!-- NEUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFM</masterLabel>
+            <translation><!-- PFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR</masterLabel>
+            <translation><!-- STFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UMEA</masterLabel>
+            <translation><!-- UMEA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

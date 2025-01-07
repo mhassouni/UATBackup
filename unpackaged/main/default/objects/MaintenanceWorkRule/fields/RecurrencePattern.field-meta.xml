@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecurrencePattern</fullName>
+    <inlineHelpText>Définissez un schéma de récurrence uniquement pour une règle de travail basée sur le calendrier. La fréquence désigne le rythme auquel l&#39;événement se produit pendant la période sélectionnée. Par exemple, si vous sélectionnez une récurrence hebdomadaire et la fréquence 2, l&#39;événement se produit toutes les 2 semaines.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

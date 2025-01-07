@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stricher%2Efr</fullName>
+    <description>Processus de piste Stricher</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Abandonnée</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Clôturée</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Convertie</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Créée</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Gagnée</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualifiée</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

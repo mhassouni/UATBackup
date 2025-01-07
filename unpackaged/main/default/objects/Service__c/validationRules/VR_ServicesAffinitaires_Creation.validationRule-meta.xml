@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ServicesAffinitaires_Creation</fullName>
+    <active>true</active>
+    <description>Interdire de créer un record service si devis synchronisé</description>
+    <errorConditionFormula>AND 
+(
+ISNEW(),
+ Devis__r.Synchronise__c = True
+)</errorConditionFormula>
+    <errorMessage>L&#39;ajout d&#39;un service n&#39;est pas autorisé pour les devis synchronisés</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Account (business name)</label>
+        <lookupFilter>
+            <errorMessage>The Chosen Account Supposed To match The Selected Role and The Country Where it&#39;s Located</errorMessage>
+        </lookupFilter>
+        <name>CompteRaisonSociale__c</name>
+        <relationshipLabel><!-- Opportunités --></relationshipLabel>
+    </CustomFieldTranslation>

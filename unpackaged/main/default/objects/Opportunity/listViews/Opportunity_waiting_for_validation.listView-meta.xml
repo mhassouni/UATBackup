@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_waiting_for_validation</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Quantite__c</columns>
+    <columns>TypeProduit__c</columns>
+    <columns>CodePF__c</columns>
+    <columns>SousCategorie__c</columns>
+    <columns>RVB__c</columns>
+    <columns>PAT__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Kilometrage__c</columns>
+    <columns>DureeContrat__c</columns>
+    <columns>Prix_du_Km_supplementaire__c</columns>
+    <columns>Nombre_de_mois_de_caution__c</columns>
+    <columns>DNP_Date_Approbation__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>En attente,En attente DG</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>notEqual</operation>
+        <value>USA</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PFUK,PIAT,PIBE,PICH,PICZ,PIDE,PIES,PIHU,PILU,PIMA,PIND,PIPL,PIPT,PIRL,PIRO,PISK,PITA,PIZA</value>
+    </filters>
+    <label>Opportunity waiting for validation</label>
+</ListView>

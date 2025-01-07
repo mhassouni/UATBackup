@@ -1,0 +1,699 @@
+﻿<div>
+    <form name="detailForm">
+        <!--new account -->
+        <div ng-if="duplicateCheckAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+
+        <!--new account -->
+        <div ng-if="duplicateCheckContact">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+
+        <!--account dutch chamber-->
+
+        <div ng-if="accountKvk">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--dutch chamber lead-->
+        <div ng-if="leadKvk">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+
+        <div ng-if="creditCheck">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+
+        <div ng-if="vatCheck">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <div ng-if="toolkitErpManagement">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <div ng-if="toolkitQuickCheck">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--IWS Service-->
+        <div ng-if="iwsServiceAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--Start IWS Advanced Address Information Service-->
+        <div ng-if="iwsAdvancedAddressServiceAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--End IWS Advanced Address Information Service-->
+        <!--Start IWS Bankruptcy Information Service-->
+        <div ng-if="iwsBankruptcyInfoServiceAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--End IWS Bankruptcy Information Service-->
+        <div ng-if="leadGlobal">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Lowest_Confidence_Level" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objLeadGlobal.confidenceLowerLevel"
+                                        ng-options="item for item in confidenceLowerLevelOptions"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width-50">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Excluding_Entities" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label ng-repeat="item in exclusionCriteriaOptions" style="display: inherit;">
+                                            <input id="item.value" type="checkbox" ng-disabled="item.disabled"
+                                                value="{{item.value}}" ng-model="item.selected"
+                                                ng-checked="lstLeadGlobalExclusionCriteriaSelection.indexOf(item) > -1"
+                                                ng-click="exclusionCriteriaSelection(item, 'Lead')"> {{item.name}}<br>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div ng-if="accountGlobalMatch">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Lowest_Confidence_Level" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objAccountGlobal.confidenceLowerLevel"
+                                        ng-options="item for item in confidenceLowerLevelOptions"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width-50">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Excluding_Entities" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label ng-repeat="item in exclusionCriteriaOptions" style="display: inherit;">
+                                            <input id="item.value" type="checkbox" ng-disabled="item.disabled"
+                                                value="{{item.value}}" ng-model="item.selected"
+                                                ng-checked="lstAccountGlobalExclusionCriteriaSelection.indexOf(item) > -1"
+                                                ng-click="exclusionCriteriaSelection(item, 'Account')">
+                                            {{item.name}}<br>
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div ng-if="accountTradeCredit">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Trade_Up" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01" ng-model="objAccountTradeCredit.tradeUp"
+                                        ng-options="item.value as item.name for item in tradeUpOptions"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- alert-->
+
+        <!--Start Risk Datablock Service-->
+
+        <div ng-if="riskDatablocksServiceAccount">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Criteria_for_outputfield_mapping" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objRiskDatablockService.criteriaMapping"
+                                        ng-options="item.value as item.name for item in criteriaForOutputfieldMapping"
+                                        ng-change="criteriaMappingChange(objRiskDatablockService.criteriaMapping)"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Trade_Up" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objRiskDatablockService.tradeUp"
+                                        ng-options="item.value as item.name for item in tradeUpOptionsForRiskDatablock"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Customer_Reference" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="input-id-01" class="slds-input"
+                                        ng-model="objRiskDatablockService.customerReference" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Order_Reason" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objRiskDatablockService.orderReason"
+                                        ng-options="item.value as item.name for item in orderReasonOption"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--End Risk Datablock Service-->
+        <!--Start of Company Report Service-->
+        <div ng-if="companyReportServiceAccount">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Product_ID" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objCompanyReportService.Product_ID"
+                                        ng-options="item.value as item.name for item in productIdOptionsForCompanyReport"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.inLangage" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objCompanyReportService.inLangage"
+                                        ng-options="item.value as item.name for item in inLangageOptionsForCompanyReport"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Trade_Up" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objCompanyReportService.tradeUp"
+                                        ng-options="item.value as item.name for item in tradeUpOptionsForCompanyReport"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Customer_Reference" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="text" id="input-id-01" class="slds-input"
+                                        ng-model="objCompanyReportService.customerReference" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Order_Reason" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-select_container">
+                                    <select class="slds-select" id="select-01"
+                                        ng-model="objCompanyReportService.orderReason"
+                                        ng-options="item.value as item.name for item in orderReasonOptionForCompanyReport"
+                                        ng-change="onChange()"></select>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--End of Company Report Service-->
+        <!-- start Global Decision Maker Service-->
+
+        <div ng-if="gdmServiceAccount">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.Billing_Reference"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="text" class="slds-input" ng-model="objGDMService.billingReference" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width-50">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="input-id-01" class="slds-input"
+                                            ng-model="customLabel.Ruleset_name" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="objGDMService.rulesetName" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width-50">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.Ruleset_version"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="objGDMService.rulesetVersion" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--End Global Decision Maker Service-->
+        <!--Start of IndueD Service -->
+        <div ng-if="induedService">
+            <div>
+                <h3 class="slds-text-heading_small slds-m-bottom_medium">Due Diligence Step 2</h3>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title_caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="leadField">Input Labels</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="inputField">Input values</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.sanctions"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="number" class="slds-input" ng-model="objInduedService.sanctions" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.peps" readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="number" class="slds-input" ng-model="objInduedService.peps" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.adverse_medias"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="number" class="slds-input"
+                                        ng-model="objInduedService.adverse_medias" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.match_confidence"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="number" class="slds-input"
+                                        ng-model="objInduedService.match_confidence" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.ownership_threshold"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="number" class="slds-input"
+                                        ng-model="objInduedService.ownership_threshold" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.managers_scope"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="width-50">
+                                <div class="slds-form-element__control">
+                                    <input type="text" class="slds-input" ng-model="objInduedService.managers_scope" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Start IWS Standard Address Info -->
+        <div ng-if="isIWSStdAddInfoServiceForAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+
+        <!-- Start IWS Paydex information Service-->
+        <div ng-if="isIWSPaydexInfoServiceForAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!--End IWS Paydex Information Service-->
+        <!--Start of Risk Information Service-->
+        <div ng-if="isIWSRiskInfoServiceForAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!-- End of Risk information Service-->
+
+        <!-- Start IWS Balance Sheet -->
+        <div ng-if="isIWSBalanceSheetServiceForAccount">
+            <center>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="width: 50%;">
+                    <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                    <h2>{{customLabel.Input_Setting_Error_Message}}</h2>
+                </div>
+            </center>
+        </div>
+        <!-- End of Balance information Service-->
+    </form>
+</div>

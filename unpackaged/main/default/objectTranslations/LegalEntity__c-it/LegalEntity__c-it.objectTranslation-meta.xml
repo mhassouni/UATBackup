@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Persona giuridica</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Persone giuridiche</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Entité Légale</layout>
+        <sections>
+            <label>Indirizzo</label>
+            <section>Adresse</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Informazioni legali</label>
+            <section>informations juridiques</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome della persona giuridica</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

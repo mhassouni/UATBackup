@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Regra de data de indexação de aluguel/KM</label>
+        <name>Regle_date_indexation_Loyer_KM__c</name>
+        <picklistValues>
+            <masterLabel>à chaque date anniversaire de mise à disposition du véhicule</masterLabel>
+            <translation>em cada data de aniversário de disponibilidade do veículo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>à date fixe</masterLabel>
+            <translation>em uma data fixa</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

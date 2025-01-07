@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__WidthDiscardedWhenHidden__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that determines whether width of this column is re-allocated to another column or discarded when the column is dynamically hidden.</description>
+    <inlineHelpText>Sélectionnez la case lorsque les colonnes sont affichées de façon conditionnelle pour remplacer une ou plusieurs autres colonnes. Si cette case n&#39;est pas sélectionnée, lorsque cette colonne est masquée, sa largeur est réattribuée à une autre colonne et la largeur du tableau reste inchangée.</inlineHelpText>
+    <label>Discard Width When Hidden</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

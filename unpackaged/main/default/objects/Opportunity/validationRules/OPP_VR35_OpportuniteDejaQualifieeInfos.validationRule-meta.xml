@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR35_OpportuniteDejaQualifieeInfos</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$Setup.Bypass__c.BypassValidationRules__c = false, 
+OR( 
+RecordTypeId=$Label.OPP_RecordTypeId_OppMonoEnCours15, 
+RecordTypeId=$Label.OPP_RecordTypeId_OppMonoLectureSeule15, 
+RecordTypeId=$Label.OPP_RecordTypeId_OppMonoProduit15 
+), 
+OR(
+TEXT(StageName)=$Label.OPP_StageName_PropositionRemise,
+TEXT(StageName)=$Label.OPP_StageName_EnNegociation,
+TEXT(StageName)=$Label.OPP_StageName_Gagnee
+), 
+OR( 
+AND(TECHNombreDeRoles__c&lt;=0,OpportuniteParent__r.TECHNombreDeRoles__c &lt;=0, OpportuniteParent__c=null), 
+ISBLANK(TEXT(TypeContrat__c)),
+/*ISBLANK(TEXT(TypeActivite__c)),*/
+ISBLANK(TEXT(TypeOpportunite__c)), 
+ISBLANK(DureeContrat__c),
+ISBLANK(TEXT(TypeProduits__c)), 
+ISBLANK(Quantite__c), 
+ISBLANK(LoyerMensuel__c), 
+ISBLANK(TEXT(TypeProduit__c))
+) 
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Cette opportunité a déjà été qualifiée. Les informations de produit et de contact sont nécessaires.</errorMessage>
+</ValidationRule>

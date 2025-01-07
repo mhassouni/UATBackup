@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Containers_Devis_Courte_Dur_e</fullName>
+    <columns>NAME</columns>
+    <columns>SBQQ__Opportunity2__c</columns>
+    <columns>SumGroupsSpecialPrice__c</columns>
+    <columns>SumGroupsNetPrice__c</columns>
+    <columns>SBQQ__Status__c</columns>
+    <columns>SBQQ__Primary__c</columns>
+    <columns>SBQQ__Type__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Type_de_location__c</columns>
+    <columns>Quote_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Quote_Type__c</field>
+        <operation>equals</operation>
+        <value>Standard Quote</value>
+    </filters>
+    <filters>
+        <field>Type_de_location__c</field>
+        <operation>equals</operation>
+        <value>Courte Durée</value>
+    </filters>
+    <label>Containers Standard - Courte Durée</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Période de contact --></label>
+        <name>PeriodeDeContact__c</name>
+        <picklistValues>
+            <masterLabel>Début de semaine</masterLabel>
+            <translation><!-- Début de semaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de semaine</masterLabel>
+            <translation><!-- Fin de semaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indifférent</masterLabel>
+            <translation><!-- Indifférent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milieu de semaine</masterLabel>
+            <translation><!-- Milieu de semaine --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

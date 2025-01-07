@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Player</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Players</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Acteur de l&#39;opportunité</layout>
+        <sections>
+            <label>Comments</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Number</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage>Required fields must be filled.</errorMessage>
+        <name>ACO_VR01_RequiredImport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Please choose a validated Account</errorMessage>
+        <name>ACO_VR02_CompteDraftRefuseInactf</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>the selected account must operate on the same country from the opportunity account</errorMessage>
+        <name>ACO_VR03_Compte_pays_operation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>You have to choose a competitor which offers the product type of your opportunity</errorMessage>
+        <name>ACO_VR04_ProduitsConcurrent</name>
+    </validationRules>
+    <webLinks>
+        <label>Add Account</label>
+        <name>AjouterCompte</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_du_technicien_joker_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Nom du technicien joker 2</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Calendriers Astreintes (Nom du technicien joker 2)</relationshipLabel>
+    <relationshipName>Calendriers_Astreintes2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Leeds_Closed</fullName>
+    <booleanFilter>1 AND 5 AND (2 OR 3 OR 4)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BD1,BD2,BD3,BD4,BD5,BD6,BD7,BD8,BD9,CA1,CA2,CA3,CA4,CA5,CA6,CA7,CA8,CA9,DH1,DH2,DH3,DH4,DH5,DH6,DH7,DH8,DH9,DL1,DL2,DL3,DL4,DL5,DL6,DL7,DL8,DL9,DN1,DN2,DN3,DN4,DN5,DN6,DN7,DN8,DN9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>HD1,HD2,HD3,HD4,HD5,HD7,HD8,HD6,HD9,HG1,HG2,HG3,HG4,HG5,HU1,HU2,HU3,HU4,HU5,HU6,HU7,HU8,HU9,HX1,HX2,HX3,HX4,HX5,HX6,HX7,LN1,LN2,LN3,LN4,LN5,LN6,LN7,LN8,LN9,LS1,LS2,LS3,LS4,LS5,LS6,LS7,LS8,LS9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>NE1,NE2,NE3,NE4,NE5,NE6,NE7,NE8,NE9,S1,S2,S3,S4,S5,S6,S7,S8,S9,SR1,SR2,SR3,SR4,SR5,SR6,SR9,SR7,SR8,TS1,TS2,TS3,TS4,TS5,TS6,TS7,TS8,TS9,WF1,WF2,WF3,WF4,WF5,WF6,WF7,WF8,WF9,YO1,YO2,YO3,YO4,YO5,YO6,YO7,YO8,YO9</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Gagnée,Abandonnée,Clôturée</value>
+    </filters>
+    <label>Leads PFUK Leeds - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

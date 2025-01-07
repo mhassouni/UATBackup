@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Calendrier Astreinte --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Calendrier Astreinte --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Calendrier Astreinte Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Joker 1 --></label>
+            <section>Joker 1</section>
+        </sections>
+        <sections>
+            <label><!-- Joker 2 --></label>
+            <section>Joker 2</section>
+        </sections>
+        <sections>
+            <label><!-- Permanence --></label>
+            <section>Permanence</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Calendrier Astreinte Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Le Champ Année doit contenir que des chiffres --></errorMessage>
+        <name>Validation_Champ_Annee</name>
+    </validationRules>
+</CustomObjectTranslation>

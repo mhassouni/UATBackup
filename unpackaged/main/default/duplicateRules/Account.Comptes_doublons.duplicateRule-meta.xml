@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>Un compte client remplissant ces critères est déjà existant / A customer account fulfilling these criteria is already existing</alertText>
+    <description>pays / PF Région - Identifiant National - Code postal d&#39;exploitation</description>
+    <duplicateRuleFilter>
+        <booleanFilter xsi:nil="true" />
+        <duplicateRuleFilterItems>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>Compte - Client, Prospect</value>
+            <sortOrder>1</sortOrder>
+            <table>Account</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Username</field>
+            <operation>notEqual</operation>
+            <value>cfrejek@petitforestier.com</value>
+            <sortOrder>2</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Username</field>
+            <operation>notEqual</operation>
+            <value>irezzouk@petitforestier.fr</value>
+            <sortOrder>3</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Username</field>
+            <operation>notEqual</operation>
+            <value>tviger@petitforestier.fr</value>
+            <sortOrder>4</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Account</matchRuleSObjectType>
+        <matchingRule>Regle_comptes_doublons</matchingRule>
+        <objectMapping xsi:nil="true" />
+    </duplicateRuleMatchRules>
+    <isActive>false</isActive>
+    <masterLabel>Comptes doublons</masterLabel>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>2</sortOrder>
+</DuplicateRule>

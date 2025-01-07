@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preventing_Assign_Wrong_Asset</fullName>
+    <active>false</active>
+    <description>Empêche l&#39;utilisateur d&#39;assigner un container qui n&#39;est pas le bon type de container</description>
+    <errorConditionFormula>NOT(CONTAINS(Type_de_conteneur__r.ProductCode,TEXT(Asset_assigne__r.cat_ptc__c)))</errorConditionFormula>
+    <errorMessage>Le container sélectionné ne correspond pas au type de container de la réservation.</errorMessage>
+</ValidationRule>

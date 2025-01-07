@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reways</fullName>
+    <columns>NAME</columns>
+    <columns>Organisation_Commerciale__c</columns>
+    <columns>Commercial__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Reways</value>
+    </filters>
+    <label>Reways</label>
+</ListView>

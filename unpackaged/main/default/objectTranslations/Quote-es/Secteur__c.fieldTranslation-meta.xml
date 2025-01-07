@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Sector</label>
+        <name>Secteur__c</name>
+        <picklistValues>
+            <masterLabel>220 V Monophasé</masterLabel>
+            <translation>220 V Monofásico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380 V Triphasé</masterLabel>
+            <translation>380 V Trifásico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements GROUPE</masterLabel>
+            <translation>FUERA ESTÁNDAR - ver equipamientos GRUPO</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

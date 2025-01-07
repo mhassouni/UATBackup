@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pays_Region__c</fullName>
+    <description>Pays / Région de l&#39;agence</description>
+    <externalId>false</externalId>
+    <formula>text( Agence__r.Territoire__c )</formula>
+    <label>Pays / Région</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

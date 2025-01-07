@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Formule__c</fullName>
+    <label>Formule</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Marque__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Smart Protect</fullName>
+                <default>false</default>
+                <label>Smart Protect</label>
+            </value>
+            <value>
+                <fullName>Smart Protect +</fullName>
+                <default>false</default>
+                <label>Smart Protect +</label>
+            </value>
+            <value>
+                <fullName>Sérénité</fullName>
+                <default>false</default>
+                <label>Sérénité</label>
+            </value>
+            <value>
+                <fullName>Sérénité +</fullName>
+                <default>false</default>
+                <label>Sérénité +</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Petit Forestier</controllingFieldValue>
+            <valueName>Smart Protect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Petit Forestier</controllingFieldValue>
+            <valueName>Smart Protect +</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Stricher</controllingFieldValue>
+            <valueName>Sérénité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Stricher</controllingFieldValue>
+            <valueName>Sérénité +</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

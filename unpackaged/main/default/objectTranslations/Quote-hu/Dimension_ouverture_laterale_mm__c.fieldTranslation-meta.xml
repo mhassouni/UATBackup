@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Largeur utile ouverture latérale (mm) --></label>
+        <name>Dimension_ouverture_laterale_mm__c</name>
+        <picklistValues>
+            <masterLabel>1000 mm</masterLabel>
+            <translation><!-- 1000 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1300 mm</masterLabel>
+            <translation><!-- 1300 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>450 mm</masterLabel>
+            <translation><!-- 450 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>750 mm</masterLabel>
+            <translation><!-- 750 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation><!-- HORS STANDARD - voir aménagements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOTALE (Baché lat)</masterLabel>
+            <translation><!-- TOTALE (Baché lat) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

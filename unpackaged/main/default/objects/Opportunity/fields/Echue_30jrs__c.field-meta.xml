@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Echue_30jrs__c</fullName>
+    <description>coché si date cloture prévue est dans 30 jours</description>
+    <formula>IF(
+AND(CloseDate&lt;=Today()+30,Today()-30&lt;=CloseDate),
+true,
+false)</formula>
+    <label>Echue 30jrs</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

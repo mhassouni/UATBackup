@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <label>Rôle</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Avis de paiement</fullName>
+                <default>false</default>
+                <label>Avis de paiement</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>Comptabilité</fullName>
+                <default>false</default>
+                <label>Comptabilité</label>
+            </value>
+            <value>
+                <fullName>Donneur d&#39;ordre</fullName>
+                <default>false</default>
+                <label>Donneur d&#39;ordre</label>
+            </value>
+            <value>
+                <fullName>Exploitant</fullName>
+                <default>false</default>
+                <label>Exploitant</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Facture dématerialisée</fullName>
+                <default>false</default>
+                <label>Facture dématerialisée</label>
+            </value>
+            <value>
+                <fullName>Livré</fullName>
+                <default>false</default>
+                <label>Livré</label>
+            </value>
+            <value>
+                <fullName>Payeur</fullName>
+                <default>false</default>
+                <label>Payeur</label>
+            </value>
+            <value>
+                <fullName>PV</fullName>
+                <default>false</default>
+                <label>PV</label>
+            </value>
+            <value>
+                <fullName>Relance KM</fullName>
+                <default>false</default>
+                <label>Relance KM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

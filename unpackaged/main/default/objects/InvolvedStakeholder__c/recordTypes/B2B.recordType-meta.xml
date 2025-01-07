@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B</fullName>
+    <active>true</active>
+    <label>B2B</label>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>Donneur d%E2%80%99ordre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livré</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>PV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payeur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

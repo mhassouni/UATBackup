@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Notification_sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>coché automatiquement quand une notification est envoyé depuis la requête
+PB MOON_10_Notifications_Case</description>
+    <label>TECH_Notification_sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type d&apos;Atelier --></label>
+        <name>Type_Atelier__c</name>
+        <picklistValues>
+            <masterLabel>Gros Travaux</masterLabel>
+            <translation><!-- Gros Travaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Préparation Saison</masterLabel>
+            <translation><!-- Préparation Saison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Préparation départ container | PTI</masterLabel>
+            <translation><!-- Préparation départ container | PTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retour location (Estimation)</masterLabel>
+            <translation><!-- Retour location (Estimation) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réparation</masterLabel>
+            <translation><!-- Réparation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut Workflow Commerce --></label>
+        <name>StatutWorkflowCommerce__c</name>
+        <picklistValues>
+            <masterLabel>Analyse en cours</masterLabel>
+            <translation>Wird analysiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiffrage en cours</masterLabel>
+            <translation>Wird berechnet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours sauvegardé</masterLabel>
+            <translation>Gespeichert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fermé</masterLabel>
+            <translation>Geschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour analyse</masterLabel>
+            <translation>Zum analysieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage au SP</masterLabel>
+            <translation>Kosten zum berechnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage à LC</masterLabel>
+            <translation>Kosten zum berechnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour tarification</masterLabel>
+            <translation>Preis zum berechnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sélection du tarif en cours</masterLabel>
+            <translation>Preis wird ausgewählt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification en cours</masterLabel>
+            <translation>Preisberechnung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification soumise</masterLabel>
+            <translation>Preis berechnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation>Validiert</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

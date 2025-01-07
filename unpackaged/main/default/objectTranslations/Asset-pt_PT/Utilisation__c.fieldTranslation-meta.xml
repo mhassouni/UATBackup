@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Usar</label>
+        <name>Utilisation__c</name>
+        <picklistValues>
+            <masterLabel>CONT</masterLabel>
+            <translation><!-- CONT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location</masterLabel>
+            <translation><!-- Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC</masterLabel>
+            <translation><!-- VPC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,409 @@
+<aura:component controller="FleetManagementController"
+                implements="force:appHostable,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction,lightning:isUrlAddressable"
+                access="global" >	
+    <!-- EVENT HANDLER -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:handler event="force:showToast" action="{!c.search_reservations}"/>
+    
+    <aura:registerEvent name="EVT_MultiPicklist" type="c:EVT_MultiPicklist"/>
+    
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="refRecordId" type="String" />
+    <aura:attribute name="order" type="Order" default="{}" />
+    
+    <aura:attribute name="searchFields_reservation" type="List" />
+    <aura:attribute name="resultFields_reservation" type="List" />
+    
+    <aura:attribute name="searchFields_container" type="List" />
+    <aura:attribute name="resultFields_container" type="List" />
+    
+    <aura:attribute name="reservation_recordTypesById" type="List" default="" />
+    
+    <aura:attribute name="reservations" type="Reservation__c[]" />
+    <aura:attribute name="reservations_valuesMap" type="List" />
+    
+    <aura:attribute name="containers" type="Asset[]" />
+    <aura:attribute name="containers_valuesMap" type="List" />
+    <aura:attribute name="containerId" type="String" />
+    
+    <aura:attribute name="reservation_filter" type="Reservation__c" default="{}" />
+    <aura:attribute name="container_filter" type="Asset" default="{}" />
+    
+    <aura:attribute name="initReservationInputField" type="Boolean" default="false" />
+    
+    <aura:attribute name="options" type="List" default="[]" />
+    <aura:attribute name="selectedOptions" type="List" default="[]" />
+    
+    <aura:attribute name="disponibleDefault" type="String" />
+    
+    <aura:attribute name="spinner" type="Boolean" default="false" />
+    <aura:attribute name="OFFSET" type="Integer" default="0" />
+
+    <!-- /ATTRIBUTES -->
+    
+    
+    <!-- CONTENT -->
+    <div class="slds-container--center container custom-background">
+        
+        <lightning:workspaceAPI aura:id="workspace"/>
+        
+        
+        <!-- SPINNER -->
+        <aura:if isTrue="{!v.spinner}">
+            <lightning:spinner alternativeText="Loading" />
+        </aura:if>
+        <!-- /SPINNER -->
+        
+        
+        <!-- ORDER LOOKUP -->
+        <div></div>
+        <!-- /ORDER LOOKUP -->
+        
+        
+        <!-- SEARCH & RESULT -->
+        <div>
+            <div class="slds-grid slds-gutters_small">
+                
+                <!-- RESERVATIONS PANEL -->
+                <div class="slds-col slds-size_3-of-7">
+                    <div class="slds-card">
+                        <!-- TITLE -->
+                        <div class="slds-card__header slds-grid">
+                            <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">Réservations</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /TITLE -->
+                        
+                        <div class="slds-card__body slds-card__body_inner formReservations">
+                            <!-- FILTER -->
+                            <fieldset class="fieldset">
+                                <legend class="fieldsetLegend">Filtres</legend>
+                                <div>
+                                    <lightning:recordEditForm aura:id="reservation_recordEditForm" objectApiName="Reservation__c" recordId=""
+                                                              onsubmit="{!c.search_reservations}">
+                                        <aura:iteration items="{!v.searchFields_reservation}" var="field">
+                                            <!--<aura:if isTrue="{!field.apiName == 'RecordTypeId'}">
+                                                    <div class="input-container">
+                                                        <lightning:select aura:id="reservation_RecordType" name="reservationRecordType" label="Type d'enregistrement" required="{!field.required}"
+                                                                        value="{!v.reservation_filter.RecordTypeId}" onchange="">
+                                                            <aura:iteration items="{!v.reservation_recordTypesById}" var="recordType" indexVar="key">
+                                                                <option value="{!recordType.key}">{!recordType.value}</option>
+                                                            </aura:iteration>
+                                                        </lightning:select>
+                                                    </div>-->
+                                            
+                                            <aura:if isTrue="{!or(field.fieldType == 'PICKLIST', field.apiName == 'RecordTypeId')}">
+                                                <div class="input-container input-container-multi">
+                                                    <c:LC_MultiPicklist label="{!field.label}" options="{!field.options}" required="{!field.required}" selectedOptions_values="{!field.value}" />
+                                                    <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />
+                                                </div>
+                                                
+                                                <aura:set attribute="else">
+                                                    <!--<aura:if isTrue="{!field.apiName == 'Commande__c'}">
+                                                        <div class="input-container">
+                                                            <lightning:inputField fieldName="{!field.apiName}" value="{!v.order.Id}" required="{!field.required}" />
+                                                        </div>
+                                                        <aura:set attribute="else">-->
+                                                    <div class="input-container">
+                                                        <aura:if isTrue="{!and(field.apiName != 'Date_de_debut__c', field.apiName != 'Date_de_fin__c')}">
+                                                            <lightning:inputField aura:id="reservation_inputField" fieldName="{!field.apiName}" required="{!field.required}" />
+                                                        </aura:if>
+                                                        
+                                                        <!-- EXCEPTION -->
+                                                        <aura:if isTrue="{!field.apiName == 'Date_de_debut__c'}">
+                                                            <lightning:inputField style="display: none;" aura:id="reservation_DateDebut" fieldName="{!field.apiName}" value="{!v.reservation_filter.Date_de_debut__c}" required="{!field.required}" format="dd/MM/yyyy" />
+                                                            <ui:inputDate  label="{!field.label}" value="{!v.reservation_filter.Date_de_debut__c}" displayDatePicker="true" required="{!field.required}" format="dd/MM/yyyy"/>
+                                                        </aura:if>
+                                                        <aura:if isTrue="{!field.apiName == 'Date_de_fin__c'}">
+                                                            <lightning:inputField style="display: none;" aura:id="reservation_DateFin" fieldName="{!field.apiName}" value="{!v.reservation_filter.Date_de_fin__c}" required="{!field.required}" format="dd/MM/yyyy" />
+                                                            <ui:inputDate  label="{!field.label}" value="{!v.reservation_filter.Date_de_fin__c}" displayDatePicker="true" required="{!field.required}" format="dd/MM/yyyy"/>
+                                                        </aura:if>
+                                                        <!-- /EXCEPTION -->
+                                                        
+                                                    </div>
+                                                    <!--</aura:set>
+                                                    </aura:if>-->
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:iteration>
+                                        
+                                        <div aura:id="actionButtonBar" class="slds-clearfix slds-p-top_medium btn-bottom-container" style="width: 100%; text-align:end; margin-bottom: 12px;">
+                                            <lightning:button aura:id="btn_reset_reservations" label="Réinitialiser" onclick="{!c.reset_reservation_filter}" />
+                                            <lightning:button aura:id="btn_search_reservations" label="Rechercher" variant="brand" type="submit"  />
+                                        </div>
+                                    </lightning:recordEditForm>
+                                </div>
+                            </fieldset>
+                            <!-- /FILTER -->
+                        </div>
+                    </div>
+                    
+                    <!-- RESULT -->
+                    <div class="slds-card">
+                        <div class="slds-has-dividers_around-space result_reservation">
+                            <div style="display: flex;justify-content: space-between;align-items: center;">
+                                <lightning:badge label="{!v.reservations.length + ' Réservation(s)'}" class="badge" />
+                            </div>
+                            
+                            <aura:if isTrue="{!v.reservations.length == 30}">
+                                <div class="info-notif">
+                                    <lightning:icon iconName="utility:warning" alternativeText="" size="x-small" class=""/>
+                                    <span> Affichage des 30 premières Réservations. Merci de choisir des filtres plus restrictifs.</span>
+                                </div>
+                            </aura:if>
+                            
+                            <aura:iteration items="{!v.reservations_valuesMap}" var="reservation" indexVar="id">
+                                <div class="slds-item">
+                                    <div class="details-reservation">
+                                        <div class="details-reservation-left">
+                                            <aura:iteration items="{!reservation.record}" var="record" indexVar="field">
+                                                <aura:if isTrue="{!record.field.apiName == 'Name'}">
+                                                    <h2 class="result-title"><a href="{! '/' + reservation.id}" target="_blank">{!record.value}</a></h2>
+                                                    <aura:set attribute="else">
+                                                        <aura:if isTrue="{!record.field.apiName != 'Description_Gantt__c'}">
+                                                            <div style="padding-left: 5px;">
+                                                                <aura:if isTrue="{! and(
+                                                                                        record.field.apiName != 'Record_Type_Name__c',
+                                                                                        and(
+                                                                                        record.field.apiName != 'Date_de_debut__c', 
+                                                                                        record.field.apiName != 'Date_de_fin__c'
+                                                                                        )
+                                                                                        )}"
+                                                                                    >
+                                                                    <aura:if isTrue="{!record.field.fieldType == 'DATE'}">
+                                                                        <lightning:formattedDateTime value="{!record.value}" year="numeric" month="numeric" day="numeric" />
+                                                                        <aura:set attribute="else">
+                                                                            <aura:if isTrue="{!record.field.apiName == 'TECH_OrderHTMLOuput__c'}">
+                                                                                <aura:unescapedHtml value="{!record.value}"/>
+                                                                                <aura:set attribute="else">
+                                                                                    {!record.value}
+                                                                                </aura:set>
+                                                                            </aura:if>
+                                                                            
+                                                                        </aura:set>
+                                                                    </aura:if>
+                                                                </aura:if>
+                                                            </div>
+                                                        </aura:if>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </aura:iteration>
+                                        </div>
+                                        <div class="details-reservation-right">
+                                            <div class="edit-reservation">
+                                                <span onclick="{!c.edit_reservation}" data-value="{!reservation.id}">
+                                                    <lightning:button label="" iconName="utility:edit" iconPosition="left" variant="neutral" value="{!reservation.id}"/>
+                                                </span>
+                                            </div>
+                                            <aura:iteration items="{!reservation.record}" var="record" indexVar="field">
+                                                <aura:if isTrue="{!record.field.apiName == 'Date_de_debut__c'}">
+                                                    <div>
+                                                        <lightning:icon iconName="utility:date_input" alternativeText="" size="x-small" class="" style="padding-right: 3px;transform: translateY(-1px);"/>
+                                                        <lightning:formattedDateTime value="{!record.value}" year="numeric" month="numeric" day="numeric" />
+                                                    </div>
+                                                </aura:if>
+                                                <aura:if isTrue="{!record.field.apiName == 'Date_de_fin__c'}">
+                                                    <div>
+                                                        <div class="date-line"></div>
+                                                        <lightning:icon iconName="utility:date_input" alternativeText="" size="x-small" class="" style="padding-right: 3px;transform: translateY(-1px);"/>
+                                                        <lightning:formattedDateTime value="{!record.value}" year="numeric" month="numeric" day="numeric" />
+                                                    </div>
+                                                </aura:if>
+                                            </aura:iteration>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </aura:iteration>
+                        </div>
+                    </div>
+                    <!-- /RESULT -->
+                    
+                </div>
+                <!-- /RESERVATIONS PANEL -->
+                
+                <!-- CONTAINERS PANEL -->
+                <div class="slds-col slds-size_4-of-7">
+                    <div class="slds-card">
+                        <!-- TITLE -->
+                        <div class="slds-card__header slds-grid">
+                            <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">Conteneurs</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /TITLE -->
+                        
+                        <div class="slds-card__body slds-card__body_inner formAssetes">
+                            <!-- FILTER -->
+                            <fieldset class="fieldset">
+                                <legend class="fieldsetLegend">Filtres</legend>
+                                <div>
+                                    <lightning:recordEditForm aura:id="container_recordEditForm" objectApiName="Asset" recordId=""
+                                                              onsubmit="{!c.search_containers}">
+                                        <aura:iteration items="{!v.searchFields_container}" var="field">
+                                            <aura:if isTrue="{!field.apiName == 'Name'}">
+                                                <div class="input-container input-32">
+                                                    <lightning:input aura:id="assetName" name="assetName" label="Nom" value="{!v.container_filter.Name}" required="{!field.required}" />
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="input-container input-32">
+                                                        <aura:if isTrue="{!field.apiName == 'Options__c'}">
+                                                            
+                                                            <!-- MULTI-SELECT -->
+                                                            <!--<lightning:dualListbox aura:id="container_Options" name="optionsInstallees" label= "Options" max="8" size="3"
+                                                                                   sourceLabel="Disponible(s)" selectedLabel="Sélectionnée(s)"
+                                                                                   options="{!v.options}" value="{!v.selectedOptions}"
+                                                                                   onchange="{!c.handleOptionChange}"/>-->
+                                                            <c:LC_MultiPicklist label="{!field.label}" options="{!v.options}" required="{!field.required}" selectedOptions_values="{!field.value}" />
+                                                            <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />
+                                                            <!-- /MULTI-SELECT -->
+                                                            
+                                                            <aura:set attribute="else">
+                                                                <aura:if isTrue="{!or(field.fieldType == 'PICKLIST', field.apiName == 'RecordTypeId')}">
+                                                                    <aura:if isTrue="{!field.apiName == 'Status_de_location__c'}">
+                                                                        <div class="input-container input-container-multi">
+                                                                            <c:LC_MultiPicklist aura:id="reservation_status" label="{!field.label}" options="{!field.options}" takeDefault="false" required="{!field.required}" selectedOptions_values="{!field.value}" selectedOptions_labels="{!v.disponibleDefault}" />
+                                                                            <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />
+                                                                        </div>
+                                                                        <!-- <div class="input-container input-container-multi">
+                                                                            <c:LC_MultiPicklist label="{!field.label}" options="{!field.options}" required="{!field.required}" selectedOptions_values="{!field.value}" />
+                                                                            <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />
+                                                                        </div> -->
+                                                                        <aura:set attribute="else">
+                                                                            <div class="input-container input-container-multi">
+                                                                                <c:LC_MultiPicklist label="{!field.label}" options="{!field.options}" required="{!field.required}" selectedOptions_values="{!field.value}" />
+                                                                                <lightning:inputField fieldName="{!field.apiName}" value="{!field.value}" required="{!field.required}" class="slds-hidden" />
+                                                                            </div>
+                                                                        </aura:set>
+                                                                    </aura:if>
+                                                                    
+                                                                    
+                                                                    <aura:set attribute="else">
+                                                                        <aura:if isTrue="{!and(field.apiName != 'Date_de_debut_asset__c', field.apiName != 'Date_de_fin_asset__c')}">
+                                                                            <lightning:inputField aura:id="container_inputFields" fieldName="{!field.apiName}" required="{!field.required}" />
+                                                                        </aura:if>
+                                                                        
+                                                                        <!-- EXCEPTION -->
+                                                                        <aura:if isTrue="{!field.apiName == 'Date_de_debut_asset__c'}">
+                                                                            <lightning:inputField style="display:none;" aura:id="container_DateDebut" fieldName="{!field.apiName}" value="{!v.container_filter.Date_de_debut_asset__c}" required="{!field.required}"  format="dd/MM/yyyy" />
+                                                                            <ui:inputDate  label="{!field.label}" value="{!v.container_filter.Date_de_debut_asset__c}" displayDatePicker="true" required="{!field.required}" format="dd/MM/yyyy"/>
+                                                                        </aura:if>
+                                                                        <aura:if isTrue="{!field.apiName == 'Date_de_fin_asset__c'}">
+                                                                            <lightning:inputField style="display:none;" aura:id="container_DateFin" fieldName="{!field.apiName}" value="{!v.container_filter.Date_de_fin_asset__c}" required="{!field.required}"  format="dd/MM/yyyy" />
+                                                                            <ui:inputDate  label="{!field.label}" value="{!v.container_filter.Date_de_fin_asset__c}" displayDatePicker="true" required="{!field.required}" format="dd/MM/yyyy"/>
+                                                                        </aura:if>
+                                                                        <!-- /EXCEPTION -->
+                                                                    </aura:set>
+                                                                </aura:if>
+                                                                
+                                                            </aura:set>
+                                                            
+                                                        </aura:if>      
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:iteration>
+                                        
+                                        <div aura:id="actionButtonBar" class="slds-clearfix slds-p-top_medium btn-bottom-container" style="width: 100%; text-align:end; margin-bottom: 12px;">
+                                            <lightning:button aura:id="btn_reset_containers" label="Réinitialiser" onclick="{!c.reset_container_filter}" />
+                                            <lightning:button aura:id="btn_search_containers" label="Rechercher" variant="brand" type="submit"  />
+                                        </div>
+                                    </lightning:recordEditForm>
+                                </div>
+                            </fieldset>
+                            <!-- /FILTER -->
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- RESULT -->
+                    <div class="slds-card">
+                         
+                        <div class="slds-has-dividers_around-space result_container">
+                            <div style="display: flex;justify-content: space-between;align-items: center;">
+                                <div>
+                                    <lightning:badge label="{!v.containers.length + ' Conteneur(s) ' + (and(v.container_filter.Status_de_location__c != null, v.container_filter.Status_de_location__c != '')? (': ' + v.container_filter.Status_de_location__c) : ' : Disponible') + (or(v.container_filter.Date_de_debut_asset__c != null, v.container_filter.Date_de_fin_asset__c != null)? ' durant la période sélectionnée' : ' en ce moment')}"  
+                                                     class="badge" />
+                                </div>
+                                <div onclick="{!c.viewFSL}" style="padding-right: 10px;">
+                                    <lightning:button aura:id="btn_view_fsl" label="Voir Gantt" variant="brand" type="submit" />
+                                </div>
+                            </div>
+                            
+                            
+                           
+                            
+                            <aura:iteration items="{!v.containers_valuesMap}" var="container" indexVar="idx" start="{!v.OFFSET}" end="{!v.OFFSET + 19}" >
+                              
+                                <div class="slds-item">
+                                    <aura:iteration items="{!container.record}" var="record" indexVar="field">
+                                        <aura:if isTrue="{!record.field.apiName == 'Name'}">
+                                            <div class="head-containers">
+                                                <h2 class="result-title"><a href="{! '/' + container.id}" target="_blank">{!record.value}</a></h2>
+                                                <div data-container-name="{!record.value}" onclick="{!c.viewCalendar}" data-value="{!container.id}">
+                                                    <lightning:button aura:id="btn_view_in_calendar" label="Voir sur le calendrier" variant="brand" type="submit" />
+                                                </div>
+                                            </div>      
+                                            <aura:set attribute="else"> 
+                                                <!-- EXCEPTION -->
+                                                <aura:if isTrue="{!record.field.apiName == 'Status_de_location__c'}">
+                                                    <span class="details_container">
+                                                        <lightning:icon iconName="utility:record" alternativeText="" size="x-small" style="padding-right: 2px;"
+                                                                        class="{!record.value eq 'En Atelier'? 'status_En_Atelier' : record.value eq 'En Location'? 'status_En_Location' : record.value eq 'En Transport'? 'status_En_Transport' : record.value eq 'Disponible'? 'status_Disponible' : record.value eq 'Non disponible'? 'status_Non_Disponbile' : ''}" />
+                                                        {!record.value} <i style="font-size:10px;color:gray;"> (Actuellement)</i>
+                                                    </span>
+                                                </aura:if>
+                                                <aura:if isTrue="{!record.field.apiName == 'Agency_Location_Name__c'}">
+                                                    <span class="details_container">
+                                                        <lightning:icon iconName="utility:checkin" alternativeText="" size="x-small" class="" style="padding-right: 2px;" />
+                                                        {!record.value}
+                                                    </span>
+                                                </aura:if>
+                                                <!-- /EXCEPTION -->
+                                                
+                                                <aura:if isTrue="{! and(record.field != 'Equipement', record.field.apiName != 'Status_de_location__c', record.field.apiName != 'Agency_Location_Name__c')}">
+                                                    <div style="padding: 10px 0 0 10px;">
+                                                        <aura:if isTrue="{!record.field.apiName == 'Options__c'}">
+                                                            <span style="color: #444444;">{!record.field.label} : </span>{!record.value}
+                                                            <aura:set attribute="else"> 
+                                                                <span style="color: #444444;">{!record.field.label} : </span>{!record.value}
+                                                            </aura:set>
+                                                        </aura:if>                                                        
+                                                    </div>
+                                                </aura:if>
+                                                
+                                                <!-- EXCEPTION -->
+                                                <aura:if isTrue="{!and(record.field == 'Equipement')}">
+                                                    <div style="padding: 10px 0 0 10px;">
+                                                        <span style="color: #444444;">Equipement : </span>{!record.value}
+                                                    </div>                                                        
+                                                </aura:if>
+                                                <!-- /EXCEPTION -->
+                                                
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </div>   
+                            </aura:iteration>
+                        </div>
+                    </div>
+                    <!-- /RESULT -->
+                    <lightning:button label="Précédent" onclick="{!c.handlePrevPage}" disabled="{!v.OFFSET == 0}" />
+					<lightning:button label="Suivant" onclick="{!c.handleNextPage}" disabled="{!v.OFFSET + 20 >= v.containers_valuesMap.length}" />
+                </div>
+                <!-- /CONTAINERS PANEL -->
+                
+            </div>
+        </div>
+        <!-- SEARCH & RESULTs -->
+        
+    </div>
+    <!-- /CONTENT -->
+    
+    
+</aura:component>

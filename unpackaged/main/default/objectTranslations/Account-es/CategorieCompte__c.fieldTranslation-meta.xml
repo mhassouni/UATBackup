@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Categoría de cuenta</label>
+        <name>CategorieCompte__c</name>
+        <picklistValues>
+            <masterLabel>Compte Clé</masterLabel>
+            <translation>Cuenta clave</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte Standard</masterLabel>
+            <translation>Cuenta estandar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Compte</masterLabel>
+            <translation>Grande Cuenta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Compte Groupe</masterLabel>
+            <translation>Grande Cuenta Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Compte National</masterLabel>
+            <translation>Grande Cuenta Nacional</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Régions</masterLabel>
+            <translation>Multi-Zonas</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

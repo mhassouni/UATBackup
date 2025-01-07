@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_BV__c</fullName>
+    <label>Type BV</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mécanique</fullName>
+                <default>false</default>
+                <label>Mécanique</label>
+            </value>
+            <value>
+                <fullName>Automatique</fullName>
+                <default>false</default>
+                <label>Automatique</label>
+            </value>
+            <value>
+                <fullName>Robotisée</fullName>
+                <default>false</default>
+                <label>Robotisée</label>
+            </value>
+            <value>
+                <fullName>DSG</fullName>
+                <default>false</default>
+                <label>DSG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

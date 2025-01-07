@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fonction__c</fullName>
+    <label>Fonction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Administration des Ventes</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Administration des Ventes</label>
+            </value>
+            <value>
+                <fullName>Assistante / commercial GC</fullName>
+                <default>false</default>
+                <label>Assistante / commercial GC</label>
+            </value>
+            <value>
+                <fullName>Assistante d’Agence</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Assistante d’Agence</label>
+            </value>
+            <value>
+                <fullName>Atelier</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Atelier</label>
+            </value>
+            <value>
+                <fullName>Commercial territorial (CT)</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Commercial territorial (CT)</label>
+            </value>
+            <value>
+                <fullName>Directeur de Site (DS)</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Directeur de Site (DS)</label>
+            </value>
+            <value>
+                <fullName>Directeur Régional des Ventes (DRV)</fullName>
+                <default>false</default>
+                <label>Directeur Régional des Ventes (DRV)</label>
+            </value>
+            <value>
+                <fullName>Direction Commerciale</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Direction Commerciale</label>
+            </value>
+            <value>
+                <fullName>Responsable Comptes Clients Régionaux (RCCR)</fullName>
+                <default>false</default>
+                <label>Responsable Comptes Clients Régionaux (RCCR)</label>
+            </value>
+            <value>
+                <fullName>Service Grands Comptes</fullName>
+                <default>false</default>
+                <label>Service Grands Comptes</label>
+            </value>
+            <value>
+                <fullName>Service PARC</fullName>
+                <default>false</default>
+                <label>Service PARC</label>
+            </value>
+            <value>
+                <fullName>Support Technique</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Support Technique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

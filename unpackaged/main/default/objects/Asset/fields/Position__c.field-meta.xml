@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position__c</fullName>
+    <label>Position</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ADO</fullName>
+                <default>false</default>
+                <label>ADO</label>
+            </value>
+            <value>
+                <fullName>ADO-AN</fullName>
+                <default>false</default>
+                <label>ADO-AN</label>
+            </value>
+            <value>
+                <fullName>AFFECTATION</fullName>
+                <default>false</default>
+                <label>AFFECTATION</label>
+            </value>
+            <value>
+                <fullName>ALD</fullName>
+                <default>false</default>
+                <label>ALD</label>
+            </value>
+            <value>
+                <fullName>ALD-AG</fullName>
+                <default>false</default>
+                <label>ALD-AG</label>
+            </value>
+            <value>
+                <fullName>ALD-AN</fullName>
+                <default>false</default>
+                <label>ALD-AN</label>
+            </value>
+            <value>
+                <fullName>A RETIRER</fullName>
+                <default>false</default>
+                <label>A RETIRER</label>
+            </value>
+            <value>
+                <fullName>ATE -AAG</fullName>
+                <default>false</default>
+                <label>ATE -AAG</label>
+            </value>
+            <value>
+                <fullName>ATE -AAG-AG</fullName>
+                <default>false</default>
+                <label>ATE -AAG-AG</label>
+            </value>
+            <value>
+                <fullName>ATE -AAG-ATE</fullName>
+                <default>false</default>
+                <label>ATE -AAG-ATE</label>
+            </value>
+            <value>
+                <fullName>ATE CDM</fullName>
+                <default>false</default>
+                <label>ATE CDM</label>
+            </value>
+            <value>
+                <fullName>ATE CDM-AAG</fullName>
+                <default>false</default>
+                <label>ATE CDM-AAG</label>
+            </value>
+            <value>
+                <fullName>ATE CDM-AAG-AG</fullName>
+                <default>false</default>
+                <label>ATE CDM-AAG-AG</label>
+            </value>
+            <value>
+                <fullName>ATE CDM-AAG-ATE</fullName>
+                <default>false</default>
+                <label>ATE CDM-AAG-ATE</label>
+            </value>
+            <value>
+                <fullName>ATE EXT</fullName>
+                <default>false</default>
+                <label>ATE EXT</label>
+            </value>
+            <value>
+                <fullName>ATE EXT CDM</fullName>
+                <default>false</default>
+                <label>ATE EXT CDM</label>
+            </value>
+            <value>
+                <fullName>ATE EXT LD</fullName>
+                <default>false</default>
+                <label>ATE EXT LD</label>
+            </value>
+            <value>
+                <fullName>ATE EXT MU</fullName>
+                <default>false</default>
+                <label>ATE EXT MU</label>
+            </value>
+            <value>
+                <fullName>ATE EXT MULET</fullName>
+                <default>false</default>
+                <label>ATE EXT MULET</label>
+            </value>
+            <value>
+                <fullName>ATE EXT NEUT</fullName>
+                <default>false</default>
+                <label>ATE EXT NEUT</label>
+            </value>
+            <value>
+                <fullName>ATE LD</fullName>
+                <default>false</default>
+                <label>ATE LD</label>
+            </value>
+            <value>
+                <fullName>ATE LD-AAG</fullName>
+                <default>false</default>
+                <label>ATE LD-AAG</label>
+            </value>
+            <value>
+                <fullName>ATE LD-AAG-AG</fullName>
+                <default>false</default>
+                <label>ATE LD-AAG-AG</label>
+            </value>
+            <value>
+                <fullName>ATE LD-AAG-ATE</fullName>
+                <default>false</default>
+                <label>ATE LD-AAG-ATE</label>
+            </value>
+            <value>
+                <fullName>ATELIER</fullName>
+                <default>false</default>
+                <label>ATELIER</label>
+            </value>
+            <value>
+                <fullName>ATE MU-AAG</fullName>
+                <default>false</default>
+                <label>ATE MU-AAG</label>
+            </value>
+            <value>
+                <fullName>ATE MU-AAG-AG</fullName>
+                <default>false</default>
+                <label>ATE MU-AAG-AG</label>
+            </value>
+            <value>
+                <fullName>ATE MU-AAG-ATE</fullName>
+                <default>false</default>
+                <label>ATE MU-AAG-ATE</label>
+            </value>
+            <value>
+                <fullName>ATE MULET</fullName>
+                <default>false</default>
+                <label>ATE MULET</label>
+            </value>
+            <value>
+                <fullName>ATE NEUT</fullName>
+                <default>false</default>
+                <label>ATE NEUT</label>
+            </value>
+            <value>
+                <fullName>ATE NEUT-AAG</fullName>
+                <default>false</default>
+                <label>ATE NEUT-AAG</label>
+            </value>
+            <value>
+                <fullName>ATE NEUT-AAG-AG</fullName>
+                <default>false</default>
+                <label>ATE NEUT-AAG-AG</label>
+            </value>
+            <value>
+                <fullName>ATE NEUT-AAG-ATE</fullName>
+                <default>false</default>
+                <label>ATE NEUT-AAG-ATE</label>
+            </value>
+            <value>
+                <fullName>A VENDRE</fullName>
+                <default>false</default>
+                <label>A VENDRE</label>
+            </value>
+            <value>
+                <fullName>CD</fullName>
+                <default>false</default>
+                <label>CD</label>
+            </value>
+            <value>
+                <fullName>CDM</fullName>
+                <default>false</default>
+                <label>CDM</label>
+            </value>
+            <value>
+                <fullName>CDM-AG</fullName>
+                <default>false</default>
+                <label>CDM-AG</label>
+            </value>
+            <value>
+                <fullName>CDM-AN</fullName>
+                <default>false</default>
+                <label>CDM-AN</label>
+            </value>
+            <value>
+                <fullName>CDM DISPO</fullName>
+                <default>false</default>
+                <label>CDM DISPO</label>
+            </value>
+            <value>
+                <fullName>CDM DISPO-AN</fullName>
+                <default>false</default>
+                <label>CDM DISPO-AN</label>
+            </value>
+            <value>
+                <fullName>CD MULET</fullName>
+                <default>false</default>
+                <label>CD MULET</label>
+            </value>
+            <value>
+                <fullName>CODE_POSPF</fullName>
+                <default>false</default>
+                <label>CODE_POSPF</label>
+            </value>
+            <value>
+                <fullName>DISPO</fullName>
+                <default>false</default>
+                <label>DISPO</label>
+            </value>
+            <value>
+                <fullName>DISPO-AN</fullName>
+                <default>false</default>
+                <label>DISPO-AN</label>
+            </value>
+            <value>
+                <fullName>DISPO ATE CDM</fullName>
+                <default>false</default>
+                <label>DISPO ATE CDM</label>
+            </value>
+            <value>
+                <fullName>DISPO ATE LD</fullName>
+                <default>false</default>
+                <label>DISPO ATE LD</label>
+            </value>
+            <value>
+                <fullName>DISPO CLI</fullName>
+                <default>false</default>
+                <label>DISPO CLI</label>
+            </value>
+            <value>
+                <fullName>DISPO CONT</fullName>
+                <default>false</default>
+                <label>DISPO CONT</label>
+            </value>
+            <value>
+                <fullName>DISPO DEP</fullName>
+                <default>false</default>
+                <label>DISPO DEP</label>
+            </value>
+            <value>
+                <fullName>DISPO NEUT</fullName>
+                <default>false</default>
+                <label>DISPO NEUT</label>
+            </value>
+            <value>
+                <fullName>DISPO NEUT-AN</fullName>
+                <default>false</default>
+                <label>DISPO NEUT-AN</label>
+            </value>
+            <value>
+                <fullName>EN SERVICE</fullName>
+                <default>false</default>
+                <label>EN SERVICE</label>
+            </value>
+            <value>
+                <fullName>FAB AV</fullName>
+                <default>false</default>
+                <label>FAB AV</label>
+            </value>
+            <value>
+                <fullName>FAB AV-AN</fullName>
+                <default>false</default>
+                <label>FAB AV-AN</label>
+            </value>
+            <value>
+                <fullName>FAB AV EXT</fullName>
+                <default>false</default>
+                <label>FAB AV EXT</label>
+            </value>
+            <value>
+                <fullName>FAB AV EXT ATE</fullName>
+                <default>false</default>
+                <label>FAB AV EXT ATE</label>
+            </value>
+            <value>
+                <fullName>FAB AV EXT ATEEXT</fullName>
+                <default>false</default>
+                <label>FAB AV EXT ATEEXT</label>
+            </value>
+            <value>
+                <fullName>FAB LD</fullName>
+                <default>false</default>
+                <label>FAB LD</label>
+            </value>
+            <value>
+                <fullName>FAB LD-AN</fullName>
+                <default>false</default>
+                <label>FAB LD-AN</label>
+            </value>
+            <value>
+                <fullName>FAB LD EXT</fullName>
+                <default>false</default>
+                <label>FAB LD EXT</label>
+            </value>
+            <value>
+                <fullName>FAB LD EXT ATE</fullName>
+                <default>false</default>
+                <label>FAB LD EXT ATE</label>
+            </value>
+            <value>
+                <fullName>FAB LD EXT ATEEXT</fullName>
+                <default>false</default>
+                <label>FAB LD EXT ATEEXT</label>
+            </value>
+            <value>
+                <fullName>FIN NEUT</fullName>
+                <default>false</default>
+                <label>FIN NEUT</label>
+            </value>
+            <value>
+                <fullName>HORS PARC</fullName>
+                <default>false</default>
+                <label>HORS PARC</label>
+            </value>
+            <value>
+                <fullName>HS CLIENT</fullName>
+                <default>false</default>
+                <label>HS CLIENT</label>
+            </value>
+            <value>
+                <fullName>LD</fullName>
+                <default>false</default>
+                <label>LD</label>
+            </value>
+            <value>
+                <fullName>LD-AG</fullName>
+                <default>false</default>
+                <label>LD-AG</label>
+            </value>
+            <value>
+                <fullName>LD-AN</fullName>
+                <default>false</default>
+                <label>LD-AN</label>
+            </value>
+            <value>
+                <fullName>LD DISPO</fullName>
+                <default>false</default>
+                <label>LD DISPO</label>
+            </value>
+            <value>
+                <fullName>LD DISPO-AN</fullName>
+                <default>false</default>
+                <label>LD DISPO-AN</label>
+            </value>
+            <value>
+                <fullName>MULET</fullName>
+                <default>false</default>
+                <label>MULET</label>
+            </value>
+            <value>
+                <fullName>MULET-AG</fullName>
+                <default>false</default>
+                <label>MULET-AG</label>
+            </value>
+            <value>
+                <fullName>MULET-AN</fullName>
+                <default>false</default>
+                <label>MULET-AN</label>
+            </value>
+            <value>
+                <fullName>OCCASION</fullName>
+                <default>false</default>
+                <label>OCCASION</label>
+            </value>
+            <value>
+                <fullName>RELAIS</fullName>
+                <default>false</default>
+                <label>RELAIS</label>
+            </value>
+            <value>
+                <fullName>RELAIS MULET</fullName>
+                <default>false</default>
+                <label>RELAIS MULET</label>
+            </value>
+            <value>
+                <fullName>SER</fullName>
+                <default>false</default>
+                <label>SER</label>
+            </value>
+            <value>
+                <fullName>SER EXT FAB</fullName>
+                <default>false</default>
+                <label>SER EXT FAB</label>
+            </value>
+            <value>
+                <fullName>SER EXT OCC</fullName>
+                <default>false</default>
+                <label>SER EXT OCC</label>
+            </value>
+            <value>
+                <fullName>SURLOC CD</fullName>
+                <default>false</default>
+                <label>SURLOC CD</label>
+            </value>
+            <value>
+                <fullName>SURLOC CDM</fullName>
+                <default>false</default>
+                <label>SURLOC CDM</label>
+            </value>
+            <value>
+                <fullName>SURLOC CDM-AG</fullName>
+                <default>false</default>
+                <label>SURLOC CDM-AG</label>
+            </value>
+            <value>
+                <fullName>SURLOC CDM-AN</fullName>
+                <default>false</default>
+                <label>SURLOC CDM-AN</label>
+            </value>
+            <value>
+                <fullName>SURLOC REL</fullName>
+                <default>false</default>
+                <label>SURLOC REL</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-AFF</fullName>
+                <default>false</default>
+                <label>TRANSIT-AFF</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-AG</fullName>
+                <default>false</default>
+                <label>TRANSIT-AG</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-ATEA</fullName>
+                <default>false</default>
+                <label>TRANSIT-ATEA</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-ATEAN</fullName>
+                <default>false</default>
+                <label>TRANSIT-ATEAN</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-ATER</fullName>
+                <default>false</default>
+                <label>TRANSIT-ATER</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-ATERN</fullName>
+                <default>false</default>
+                <label>TRANSIT-ATERN</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-CLI</fullName>
+                <default>false</default>
+                <label>TRANSIT-CLI</label>
+            </value>
+            <value>
+                <fullName>TRANSIT-DEP</fullName>
+                <default>false</default>
+                <label>TRANSIT-DEP</label>
+            </value>
+            <value>
+                <fullName>VOL</fullName>
+                <default>false</default>
+                <label>VOL</label>
+            </value>
+            <value>
+                <fullName>VPC</fullName>
+                <default>false</default>
+                <label>VPC</label>
+            </value>
+            <value>
+                <fullName>VPC EXT FAB</fullName>
+                <default>false</default>
+                <label>VPC EXT FAB</label>
+            </value>
+            <value>
+                <fullName>VPC EXT OCC</fullName>
+                <default>false</default>
+                <label>VPC EXT OCC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

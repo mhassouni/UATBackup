@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PFLO</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Legal_Entity__c</field>
+        <value xsi:type="xsd:string">PFLO,DRO IDF 1,DRO IDF 2,DRO NORD 1,DRO NORD 2,DRO NORD 3,DRO NORD 4,DRO NORD 5,DRO NORD 6,DRO NORD 7,DRO SUD 1,DRO SUD 2,DRO SUD 3,DRO SUD 4,DRO SUD 5,DRO SUD 6,DRO SUD 7</value>
+    </values>
+    <values>
+        <field>api_access__c</field>
+        <value xsi:type="xsd:string">1e7fd5e6fc73ebf0c8269ca25f654691</value>
+    </values>
+    <values>
+        <field>api_key__c</field>
+        <value xsi:type="xsd:string">47c691e4-8f40-11ec-8f61-fa163e2e1b93</value>
+    </values>
+</CustomMetadata>

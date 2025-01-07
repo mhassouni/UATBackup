@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR43_DatesObligatoire_OppGagnee</fullName>
+    <active>true</active>
+    <description>La date de signature du contrat &amp; Date de clôture effective est obligatoire au moment de passage au statut 6</description>
+    <errorConditionFormula>AND 
+( 
+$Setup.Bypass__c.BypassValidationRules__c =false,
+OR
+(
+ISBLANK( DateClotureEffective__c ) 
+,
+ISBLANK( DateSignatureContrat__c )
+) 
+,
+TEXT(StageName) = $Label.OPP_StageName_ContratSigne 
+,
+OR( 
+RecordType.Id= $Label.OPP_RecordType_Vehicule_ENCOURS_15 ,
+RecordType.Id= $Label.OPP_RecordType_Vehicule_FERMEE_15,
+RecordType.Id= LEFT($Label.OPP_RecordType_Container_INTER,15),
+RecordType.Id= LEFT($Label.OPP_RecordType_Container_INTER_LectureSeule,15),
+RecordType.Id = LEFT($Label.OPP_RecordType_Meuble,15)
+)
+)</errorConditionFormula>
+    <errorMessage>Merci de renseigner la Date de clôture effective et la Date de signature contrat</errorMessage>
+</ValidationRule>

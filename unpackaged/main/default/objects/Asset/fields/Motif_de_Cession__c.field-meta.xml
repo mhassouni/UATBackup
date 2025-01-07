@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_Cession__c</fullName>
+    <label>Motif de Cession</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vol</fullName>
+                <default>false</default>
+                <label>Vol</label>
+            </value>
+            <value>
+                <fullName>Destruction</fullName>
+                <default>false</default>
+                <label>Destruction</label>
+            </value>
+            <value>
+                <fullName>Vente</fullName>
+                <default>false</default>
+                <label>Vente</label>
+            </value>
+            <value>
+                <fullName>Perte Totale</fullName>
+                <default>false</default>
+                <label>Perte Totale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

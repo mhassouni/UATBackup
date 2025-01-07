@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Boite de vitesse</masterLabel>
+            <translation>Caja de cambios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Cabina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Cellule Isotherme</masterLabel>
+            <translation>Carrocería / Celda isóterma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Chasis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité Véhicule</masterLabel>
+            <translation>Electricidad vehículo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freinage</masterLabel>
+            <translation>Frenado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Froid</masterLabel>
+            <translation>Grupo frio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/Portique</masterLabel>
+            <translation>Plataforma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation</masterLabel>
+            <translation>Mal uso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne Carburant / Fluide</masterLabel>
+            <translation>Sin gasolina / liquidos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Neumaticos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pont/Essieu/Transmission</masterLabel>
+            <translation>Puente/eje/transmisión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinistre</masterLabel>
+            <translation>Accidente / daño</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

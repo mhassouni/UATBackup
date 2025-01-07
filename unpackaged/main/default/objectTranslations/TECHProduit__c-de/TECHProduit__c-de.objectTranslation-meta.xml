@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- TECH Produit --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Présentation Tech Produit</layout>
+        <sections>
+            <label>Produktinformationen</label>
+            <section>Informations du produit</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom de TECHProduit --></nameFieldLabel>
+</CustomObjectTranslation>

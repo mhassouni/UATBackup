@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo di relazione</label>
+        <name>TypeRelation__c</name>
+        <picklistValues>
+            <masterLabel>Ami</masterLabel>
+            <translation>Amico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation>Cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concurrent</masterLabel>
+            <translation>Concorrente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Famille</masterLabel>
+            <translation>Famiglia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fournisseur</masterLabel>
+            <translation>Fornitore</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

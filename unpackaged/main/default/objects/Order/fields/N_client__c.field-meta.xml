@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>N_client__c</fullName>
+    <description>GFC-497</description>
+    <externalId>false</externalId>
+    <formula>Opportunity.N_Client__c</formula>
+    <label>N° client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

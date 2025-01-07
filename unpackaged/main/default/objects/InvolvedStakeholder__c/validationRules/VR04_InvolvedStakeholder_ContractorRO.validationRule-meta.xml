@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR04_InvolvedStakeholder_ContractorRO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+!$Setup.Bypass__c.BypassValidationRules__c,
+ISPICKVAL(Role__c, &#39;Donneur d’ordre&#39;),
+InvolvedAccount__c &lt;&gt; Opportunity__r.AccountId,
+ischanged(InvolvedAccount__c)
+)</errorConditionFormula>
+    <errorDisplayField>InvolvedAccount__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier le compte donneur d’ordre sur cette opportunité. Pour utiliser ce compte en tant que donneur d’ordre, créez une nouvelle opportunité sur ce compte.</errorMessage>
+</ValidationRule>

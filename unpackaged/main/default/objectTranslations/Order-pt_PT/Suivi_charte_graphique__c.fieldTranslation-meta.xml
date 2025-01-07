@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Suivi charte graphique --></label>
+        <name>Suivi_charte_graphique__c</name>
+        <picklistValues>
+            <masterLabel>Charte graphique transmise </masterLabel>
+            <translation><!-- Charte graphique transmise  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente charte graphique client</masterLabel>
+            <translation><!-- En attente charte graphique client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maquette en attente validation client</masterLabel>
+            <translation><!-- Maquette en attente validation client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maquette en cours de modification</masterLabel>
+            <translation><!-- Maquette en cours de modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maquette en cours de réalisation</masterLabel>
+            <translation><!-- Maquette en cours de réalisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maquette validée / BAT</masterLabel>
+            <translation><!-- Maquette validée / BAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet annulé / réalisé en local</masterLabel>
+            <translation><!-- Projet annulé / réalisé en local --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Financial_Conditions</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Presentation_compacte_Cond_Fi</compactLayoutAssignment>
+    <label>Container - Déro. Financière – Standard</label>
+    <picklistValues>
+        <picklist>Delai_reglement__c</picklist>
+        <values>
+            <fullName>15 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 jours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dpt_garantie__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispensé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_facturation__c</picklist>
+        <values>
+            <fullName>Début de mois</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Fin de mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_reglement__c</picklist>
+        <values>
+            <fullName>Carte bancaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espèces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandat administratif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement automatique</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Virement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mois_caution__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispensé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paiement_en_avance__c</picklist>
+        <values>
+            <fullName>0%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Carrosseries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerated vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Created</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Spécifique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_location__c</picklist>
+        <values>
+            <fullName>Courte Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Longue Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne Durée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Uplift_Mode__c</picklist>
+        <values>
+            <fullName>Indexation selon indice en vigueur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas d%27indexation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pourcentage de l%27indice négocié</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pourcentage fixe négocié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_globale__c</fullName>
+    <description>Remise = Somme des produits par ligne de devis “remise” * “montant total de la location” / Somme des “montant total de la location” de toutes les lignes de devis</description>
+    <formula>( Remise__c * MontantTotalLocation__c )/  Opportunity.Somme_des_montant_total_de_la_location__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Remise globale</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

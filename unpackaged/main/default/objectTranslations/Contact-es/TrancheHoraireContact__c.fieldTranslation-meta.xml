@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Franja horaria de contacto</label>
+        <name>TrancheHoraireContact__c</name>
+        <picklistValues>
+            <masterLabel>Après-midi</masterLabel>
+            <translation>Tarde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Début de Matinée</masterLabel>
+            <translation>Al principio de la Mañana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de Matinée</masterLabel>
+            <translation>Al final de la Mañana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indifférent</masterLabel>
+            <translation>Indiferente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midi</masterLabel>
+            <translation>Mediodía</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soirée</masterLabel>
+            <translation>Noche</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

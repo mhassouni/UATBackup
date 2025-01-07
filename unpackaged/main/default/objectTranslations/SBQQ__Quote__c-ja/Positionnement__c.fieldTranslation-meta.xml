@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Positionnement --></label>
+        <name>Positionnement__c</name>
+        <picklistValues>
+            <masterLabel>A quai</masterLabel>
+            <translation><!-- A quai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Au sol</masterLabel>
+            <translation><!-- Au sol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En intérieur</masterLabel>
+            <translation><!-- En intérieur --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

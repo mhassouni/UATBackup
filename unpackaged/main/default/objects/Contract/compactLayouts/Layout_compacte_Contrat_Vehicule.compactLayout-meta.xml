@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_compacte_Contrat_Vehicule</fullName>
+    <fields>ContractNumber</fields>
+    <fields>Actif__c</fields>
+    <fields>StartDate</fields>
+    <fields>EndDate</fields>
+    <label>Layout compacte - Contrat Véhicule</label>
+</CompactLayout>

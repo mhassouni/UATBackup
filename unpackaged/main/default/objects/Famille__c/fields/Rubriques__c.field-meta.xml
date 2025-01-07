@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rubriques__c</fullName>
+    <label>Rubriques</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carburant</fullName>
+                <default>false</default>
+                <label>Carburant</label>
+            </value>
+            <value>
+                <fullName>Dépannages - Remorquages</fullName>
+                <default>false</default>
+                <label>Dépannages - Remorquages</label>
+            </value>
+            <value>
+                <fullName>Frais Généraux</fullName>
+                <default>false</default>
+                <label>Frais Généraux</label>
+            </value>
+            <value>
+                <fullName>Lubrifiants</fullName>
+                <default>false</default>
+                <label>Lubrifiants</label>
+            </value>
+            <value>
+                <fullName>Pièces-fournitures</fullName>
+                <default>false</default>
+                <label>Pièces-fournitures</label>
+            </value>
+            <value>
+                <fullName>Pneus</fullName>
+                <default>false</default>
+                <label>Pneus</label>
+            </value>
+            <value>
+                <fullName>Sous-traitance</fullName>
+                <default>false</default>
+                <label>Sous-traitance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

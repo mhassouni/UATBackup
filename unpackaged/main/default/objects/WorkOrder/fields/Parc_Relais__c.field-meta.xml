@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parc_Relais__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Parc Relais</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Asset.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parc, Parc - Container</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Ordres de Travail (Relais)</relationshipLabel>
+    <relationshipName>Ordres_de_Travail_Relais</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

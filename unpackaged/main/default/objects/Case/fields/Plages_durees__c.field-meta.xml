@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plages_durees__c</fullName>
+    <label>Plages des durées</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Moins d&#39;une heure</fullName>
+                <default>false</default>
+                <label>Moins d&#39;une heure</label>
+            </value>
+            <value>
+                <fullName>1h - 2h</fullName>
+                <default>false</default>
+                <label>1h - 2h</label>
+            </value>
+            <value>
+                <fullName>2h - 3h</fullName>
+                <default>false</default>
+                <label>2h - 3h</label>
+            </value>
+            <value>
+                <fullName>Plus de 3 heures</fullName>
+                <default>false</default>
+                <label>Plus de 3 heures</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

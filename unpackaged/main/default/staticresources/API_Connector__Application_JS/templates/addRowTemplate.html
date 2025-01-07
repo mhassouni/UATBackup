@@ -1,0 +1,65 @@
+﻿<table class="slds-table slds-table_bordered slds-table_cell-buffer">
+  <thead>
+    <tr class="slds-text-title_caps" ng-if="service=='LeadKvk'">
+      <th scope="col" class="width-50">
+        
+        <div class="slds-truncate" title="accountField">{{customlabel.Lead_Fields}}</div>
+      </th>
+      <th scope="col" class="width-50">
+        
+        <div class="slds-truncate" title="inputField">{{customlabel.Olbico_Account_Input_Fields}}</div>
+      </th>
+    </tr>
+    <tr class="slds-text-title_caps" ng-if="service=='AccountKvk'">
+      <th scope="col" class="width-50" >
+        <div class="slds-truncate" title="accountField">{{customlabel.Account_Fields}}</div>
+      </th>
+      <th scope="col" class="width-47">
+        <div class="slds-truncate" title="inputField">{{customlabel.Olbico_Account_Input_Fields}}</div>
+      </th>
+      <th class="width-3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="record in outputToolkit track by $index">
+      <td data-label="accField" ng-if="service=='AccountKvk' || service=='LeadKvk'" >
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-022" ng-model="record.name" 
+                      ng-options="item.Name as item.Name for item in accountFields" ng-change="myFunc(record.name)"></select>
+            </div>
+          </div>
+        </div>
+      </td> 
+      <td data-label="inputField" ng-if="service=='AccountKvk' || service=='LeadKvk'">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="record.value" 
+                      ng-options="item.Name as item.Name for item in outputfldsToolkit"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element__control" style="margin-top: 20% !important; ">
+          <button class="slds-button slds-button_icon" ng-click="removeRow({record:record,objType:objType})">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+            </svg>
+            <span class="slds-assistive-text"></span>
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="slds-form-element__control">
+          <button class="slds-button slds-button_neutral" ng-click="cancelMapping({objType:objType})">{{customlabel.Cancel}}</button>
+          <button class="slds-button slds-button_brand" ng-click="addNewRow()">{{customlabel.Add_Row}}</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>'

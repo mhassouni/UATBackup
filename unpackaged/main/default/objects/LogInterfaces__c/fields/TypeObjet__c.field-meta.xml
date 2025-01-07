@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeObjet__c</fullName>
+    <label>Type d&#39;objet</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compte</fullName>
+                <default>false</default>
+                <label>Compte</label>
+            </value>
+            <value>
+                <fullName>Opportunité</fullName>
+                <default>false</default>
+                <label>Opportunité</label>
+            </value>
+            <value>
+                <fullName>Produit</fullName>
+                <default>false</default>
+                <label>Produit</label>
+            </value>
+            <value>
+                <fullName>Proposition Commerciale</fullName>
+                <default>false</default>
+                <label>Proposition Commerciale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

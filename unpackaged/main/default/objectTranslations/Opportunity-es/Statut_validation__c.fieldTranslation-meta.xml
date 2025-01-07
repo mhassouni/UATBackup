@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Estado de validación</label>
+        <name>Statut_validation__c</name>
+        <picklistValues>
+            <masterLabel>En cours validation Commerce</masterLabel>
+            <translation>Validación en curso Comercio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours validation Finance</masterLabel>
+            <translation>Validación en curso Finanzas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé Commerce</masterLabel>
+            <translation>Comercio rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé Finance</masterLabel>
+            <translation>Finanzas rechazadas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validée</masterLabel>
+            <translation>Validado</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

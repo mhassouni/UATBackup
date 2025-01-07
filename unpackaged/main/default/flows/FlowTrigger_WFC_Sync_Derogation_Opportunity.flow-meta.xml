@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Edit_Opportunity</name>
+        <label>Edit : Opportunity</label>
+        <locationX>452</locationX>
+        <locationY>623</locationY>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.Categorie__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Categorie__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.CodePF__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Code_PF__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.DureeContrat__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_ContratDuration</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.Kilometrage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_Kilometres</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.LoyerMensuel__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_MonthlyRent</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.Prix_du_Km_supplementaire__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_PricePerAdditionalKM</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.Quantite__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Quantite__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.RYF_Devis__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.RYF_initial__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.RYF_pourcentage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.RYF_demand__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.SousCategorie__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Sous_Categorie__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.SousFamille__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Sous_famille__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.TypeProduit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Origine_de_produit__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.TypeProduits__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Devis__r.Type_de_produit__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_OpportunityRecord.Nombre_de_mois_de_caution__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_DepositMonthsNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Derogation</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>WFC_Sync_Derogation_Opportunite</name>
+        <label>WFC_Sync_Dérogation_Opportunité</label>
+        <locationX>576</locationX>
+        <locationY>383</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Synchronise</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4) AND ( 5 AND 6 )</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Statut__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Acceptée</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Statut__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Amendée</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.WFC_Dero_RecordTypeID_TarifaireENCOURS</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.WFC_Dero_RecordTypeID_TarifaireLectureSeule</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Synchronise__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Synchronise__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Opportunity</targetReference>
+            </connector>
+            <label>Synchronisé?</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Var_ContratDuration</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.Duree_amendee__c}   )),
+{!$Record.Duree_amendee__c},
+IF(
+NOT(ISBLANK({!$Record.Duree_Mois__c} )),
+{!$Record.Duree_Mois__c},
+IF(
+NOT(ISBLANK({!$Record.Duree_rappel__c}  )),
+{!$Record.Duree_rappel__c},
+0
+)
+)
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Var_DepositMonthsNumber</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISPICKVAL({!$Record.Nb_de_mois_de_caution__c},&quot;&quot;)),
+VALUE(LEFT(text({!$Record.Nb_de_mois_de_caution__c}), 1) ),
+{!$Record.Opportunite__r.Nombre_de_mois_de_caution__c}
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Var_Kilometres</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK( {!$Record.Kilometrage_amende__c}  )),
+{!$Record.Kilometrage_amende__c}   ,
+IF(
+NOT(ISBLANK({!$Record.KM_demande__c}  )),
+{!$Record.KM_demande__c} ,
+IF(
+NOT(ISBLANK({!$Record.Km_rappel__c}  )),
+{!$Record.Km_rappel__c} ,
+0
+)
+)
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Var_MonthlyRent</name>
+        <dataType>Currency</dataType>
+        <expression>IF(
+OR(
+NOT(ISBLANK({!$Record.Loyer_amende__c})),
+NOT(ISNULL({!$Record.Loyer_amende__c}))),
+{!$Record.Loyer_amende__c} ,
+IF(
+OR(
+NOT(ISBLANK({!$Record.Loyer_demande__c} )),
+NOT(ISNULL({!$Record.Loyer_demande__c}))),
+{!$Record.Loyer_demande__c},
+IF(
+NOT(ISBLANK({!$Record.Loyer_rappel__c})),
+{!$Record.Loyer_rappel__c},
+0
+)
+)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Var_PricePerAdditionalKM</name>
+        <dataType>Currency</dataType>
+        <expression>if (
+NOT(ISBLANK({!$Record.Prix_du_km_supp_les_100_kms_Demande__c} )),
+{!$Record.Prix_du_km_supp_les_100_kms_Demande__c} ,
+{!$Record.Prix_du_km_supp_les_100_kms_Rappel__c} 
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>FlowTrigger_WFC_Sync_Derogation_Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_WFC_Sync_Derogation_Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Opportunity</name>
+        <label>Get Opportunity</label>
+        <locationX>452</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Edit_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunite__c</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputReference>Var_OpportunityRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Derogation</name>
+        <label>Update Derogation</label>
+        <locationX>452</locationX>
+        <locationY>743</locationY>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.WFC_Dero_RecordTypeID_TarifaireLectureSeule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>452</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <targetReference>Quote_Sync</targetReference>
+        </connector>
+        <inputReference>Var_OpportunityRecord</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>458</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>WFC_Sync_Derogation_Opportunite</targetReference>
+        </connector>
+        <object>Derogation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Order_Flow</name>
+        <label>Order Flow</label>
+        <locationX>426</locationX>
+        <locationY>1180</locationY>
+        <flowName>Initialisation_commandes_fournisseur</flowName>
+        <inputAssignments>
+            <name>id_opp</name>
+            <value>
+                <elementReference>$Record.Opportunite__c</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Quote_Sync</name>
+        <label>Quote Sync</label>
+        <locationX>448</locationX>
+        <locationY>1014</locationY>
+        <connector>
+            <targetReference>Order_Flow</targetReference>
+        </connector>
+        <flowName>MOON_09_Sync_Devis</flowName>
+        <inputAssignments>
+            <name>Id</name>
+            <value>
+                <elementReference>$Record.Devis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>Var_OpportunityRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

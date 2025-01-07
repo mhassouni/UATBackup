@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_au_plus_proche__c</fullName>
+    <label>Standard au plus proche</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CF 10B</fullName>
+                <default>false</default>
+                <label>CF 10B</label>
+            </value>
+            <value>
+                <fullName>CM 25 B</fullName>
+                <default>false</default>
+                <label>CM 25 B</label>
+            </value>
+            <value>
+                <fullName>CM 10S</fullName>
+                <default>false</default>
+                <label>CM 10S</label>
+            </value>
+            <value>
+                <fullName>CM 25S</fullName>
+                <default>false</default>
+                <label>CM 25S</label>
+            </value>
+            <value>
+                <fullName>CM 55S</fullName>
+                <default>false</default>
+                <label>CM 55S</label>
+            </value>
+            <value>
+                <fullName>CF 10</fullName>
+                <default>false</default>
+                <label>CF 10</label>
+            </value>
+            <value>
+                <fullName>CF 20</fullName>
+                <default>false</default>
+                <label>CF 20</label>
+            </value>
+            <value>
+                <fullName>CF 35</fullName>
+                <default>false</default>
+                <label>CF 35</label>
+            </value>
+            <value>
+                <fullName>CF 50</fullName>
+                <default>false</default>
+                <label>CF 50</label>
+            </value>
+            <value>
+                <fullName>CF 85</fullName>
+                <default>false</default>
+                <label>CF 85</label>
+            </value>
+            <value>
+                <fullName>CM 55 B</fullName>
+                <default>false</default>
+                <label>CM 55 B</label>
+            </value>
+            <value>
+                <fullName>CM 90S</fullName>
+                <default>false</default>
+                <label>CM 90S</label>
+            </value>
+            <value>
+                <fullName>CM 25 SF</fullName>
+                <default>false</default>
+                <label>CM 25 SF</label>
+            </value>
+            <value>
+                <fullName>CF 100</fullName>
+                <default>false</default>
+                <label>CF 100</label>
+            </value>
+            <value>
+                <fullName>CF 110</fullName>
+                <default>false</default>
+                <label>CF 110</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

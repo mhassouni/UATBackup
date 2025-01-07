@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_CD_Custom_Action__c</fullName>
+    <formula>IF( OR (ISPICKVAL(Quote_Type__c, &quot;Standard Quote&quot;), ISPICKVAL(Quote_Type__c, &quot;Non Standard Quote&quot;)), TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech CD Custom Action</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

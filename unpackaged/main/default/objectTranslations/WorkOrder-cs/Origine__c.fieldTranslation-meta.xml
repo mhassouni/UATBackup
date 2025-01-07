@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Původ</label>
+        <name>Origine__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation>Klient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation>Technické</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

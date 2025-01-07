@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>見積がライフサイクル内のどのフェーズにあるかを示す状況。</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>承諾済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annulé</masterLabel>
+            <translation><!-- Annulé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approuvé</masterLabel>
+            <translation><!-- Approuvé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon</masterLabel>
+            <translation>ドラフト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon (sans produits)</masterLabel>
+            <translation><!-- Brouillon (sans produits) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis Envoyé</masterLabel>
+            <translation><!-- Devis Envoyé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis Refusé</masterLabel>
+            <translation>拒否済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis Signé</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Attente d&#39;approbation</masterLabel>
+            <translation><!-- En Attente d&apos;approbation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Cours</masterLabel>
+            <translation>レビュー中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation>提出済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rapport de visite</masterLabel>
+            <translation><!-- Rapport de visite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>却下済み</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

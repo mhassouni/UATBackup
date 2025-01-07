@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sum_Order_Product__c</fullName>
+    <description>Sum of OP without transportation</description>
+    <label>Sum of Order Product</label>
+    <summarizedField>OrderItem.UnitPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OrderItem.SBQQ__SubscriptionPricing__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

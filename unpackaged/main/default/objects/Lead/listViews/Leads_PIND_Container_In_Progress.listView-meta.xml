@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PIND_Container_In_Progress</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>PAYS - BAS</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>Pist,Lead,Salon,OP_TECH</value>
+    </filters>
+    <filters>
+        <field>Produits__c</field>
+        <operation>includes</operation>
+        <value>Chambre froide,Containers</value>
+    </filters>
+    <label>Leads PIND Container - In Progress</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIND_Pays_Bas</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

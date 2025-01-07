@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DDT_Trait_es</fullName>
+    <columns>Date_Heure_Demande_de_tarification__c</columns>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>Statut_de_la_demande__c</columns>
+    <columns>QUOTE.STATUS</columns>
+    <columns>QUOTE.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Code_PF__c</columns>
+    <columns>Categorie__c</columns>
+    <columns>QUOTE.RECORDTYPE</columns>
+    <columns>CreatedBy</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>Date_heure_tarification__c</columns>
+    <columns>QUOTE.EXPIRATIONDATE</columns>
+    <columns>Code_PF_FlowInput__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>Tarifé</value>
+    </filters>
+    <filters>
+        <field>Service_tarification__c</field>
+        <operation>equals</operation>
+        <value>Service Tarification France</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>URBAN</value>
+    </filters>
+    <filters>
+        <field>Volume_Palettes__c</field>
+        <operation>contains</operation>
+        <value>6</value>
+    </filters>
+    <label>DDT Traitées</label>
+    <sharedTo>
+        <role>DirecteurCommercialInternational</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X02_Mes_d_rogations_en_cours</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Demandée</value>
+    </filters>
+    <label>02 - Mes dérogations en cours</label>
+</ListView>

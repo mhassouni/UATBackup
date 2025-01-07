@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo de prestación</label>
+        <name>Type_miseAdisposition__c</name>
+        <picklistValues>
+            <masterLabel>A RETIRER</masterLabel>
+            <translation><!-- A RETIRER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A RETIRER - CES</masterLabel>
+            <translation><!-- A RETIRER - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A RETIRER - DES</masterLabel>
+            <translation><!-- A RETIRER - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A RETIRER - ENT</masterLabel>
+            <translation><!-- A RETIRER - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A RETIRER - GTX</masterLabel>
+            <translation><!-- A RETIRER - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A RETIRER - REP</masterLabel>
+            <translation><!-- A RETIRER - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A VENDRE</masterLabel>
+            <translation><!-- A VENDRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADO</masterLabel>
+            <translation><!-- ADO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADO-AN</masterLabel>
+            <translation><!-- ADO-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AFFECTATION</masterLabel>
+            <translation><!-- AFFECTATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD</masterLabel>
+            <translation><!-- ALD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD-AG</masterLabel>
+            <translation><!-- ALD-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD-AN</masterLabel>
+            <translation><!-- ALD-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG</masterLabel>
+            <translation><!-- ATE -AAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG-AG</masterLabel>
+            <translation><!-- ATE -AAG-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG-ATE</masterLabel>
+            <translation><!-- ATE -AAG-ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM</masterLabel>
+            <translation><!-- ATE CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - CES</masterLabel>
+            <translation><!-- ATE CDM - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - DES</masterLabel>
+            <translation><!-- ATE CDM - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - ENT</masterLabel>
+            <translation><!-- ATE CDM - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - EPA</masterLabel>
+            <translation><!-- ATE CDM - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - GAR</masterLabel>
+            <translation><!-- ATE CDM - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - GTX</masterLabel>
+            <translation><!-- ATE CDM - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM - REP</masterLabel>
+            <translation><!-- ATE CDM - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG</masterLabel>
+            <translation><!-- ATE CDM-AAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG-AG</masterLabel>
+            <translation><!-- ATE CDM-AAG-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG-ATE</masterLabel>
+            <translation><!-- ATE CDM-AAG-ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT</masterLabel>
+            <translation><!-- ATE EXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - CES</masterLabel>
+            <translation><!-- ATE EXT - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - DES</masterLabel>
+            <translation><!-- ATE EXT - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - ENT</masterLabel>
+            <translation><!-- ATE EXT - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - EPA</masterLabel>
+            <translation><!-- ATE EXT - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - GAR</masterLabel>
+            <translation><!-- ATE EXT - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - GTX</masterLabel>
+            <translation><!-- ATE EXT - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT - REP</masterLabel>
+            <translation><!-- ATE EXT - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM</masterLabel>
+            <translation><!-- ATE EXT CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - CES</masterLabel>
+            <translation><!-- ATE EXT CDM - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - DES</masterLabel>
+            <translation><!-- ATE EXT CDM - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - ENT</masterLabel>
+            <translation><!-- ATE EXT CDM - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - GAR</masterLabel>
+            <translation><!-- ATE EXT CDM - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - GTX</masterLabel>
+            <translation><!-- ATE EXT CDM - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM - REP</masterLabel>
+            <translation><!-- ATE EXT CDM - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD</masterLabel>
+            <translation><!-- ATE EXT LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - CES</masterLabel>
+            <translation><!-- ATE EXT LD - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - DES</masterLabel>
+            <translation><!-- ATE EXT LD - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - ENT</masterLabel>
+            <translation><!-- ATE EXT LD - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - EPA</masterLabel>
+            <translation><!-- ATE EXT LD - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - GAR</masterLabel>
+            <translation><!-- ATE EXT LD - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - GTX</masterLabel>
+            <translation><!-- ATE EXT LD - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD - REP</masterLabel>
+            <translation><!-- ATE EXT LD - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU</masterLabel>
+            <translation><!-- ATE EXT MU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU - ENT</masterLabel>
+            <translation><!-- ATE EXT MU - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU - GAR</masterLabel>
+            <translation><!-- ATE EXT MU - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU - GTX</masterLabel>
+            <translation><!-- ATE EXT MU - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU - REP</masterLabel>
+            <translation><!-- ATE EXT MU - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MULET</masterLabel>
+            <translation><!-- ATE EXT MULET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT</masterLabel>
+            <translation><!-- ATE EXT NEUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT - ENT</masterLabel>
+            <translation><!-- ATE EXT NEUT - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT - GAR</masterLabel>
+            <translation><!-- ATE EXT NEUT - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT - GTX</masterLabel>
+            <translation><!-- ATE EXT NEUT - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT - REP</masterLabel>
+            <translation><!-- ATE EXT NEUT - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD</masterLabel>
+            <translation><!-- ATE LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - CES</masterLabel>
+            <translation><!-- ATE LD - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - DES</masterLabel>
+            <translation><!-- ATE LD - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - ENT</masterLabel>
+            <translation><!-- ATE LD - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - EPA</masterLabel>
+            <translation><!-- ATE LD - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - GAR</masterLabel>
+            <translation><!-- ATE LD - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - GTX</masterLabel>
+            <translation><!-- ATE LD - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD - REP</masterLabel>
+            <translation><!-- ATE LD - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG</masterLabel>
+            <translation><!-- ATE LD-AAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG-AG</masterLabel>
+            <translation><!-- ATE LD-AAG-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG-ATE</masterLabel>
+            <translation><!-- ATE LD-AAG-ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG</masterLabel>
+            <translation><!-- ATE MU-AAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG-AG</masterLabel>
+            <translation><!-- ATE MU-AAG-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG-ATE</masterLabel>
+            <translation><!-- ATE MU-AAG-ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET</masterLabel>
+            <translation><!-- ATE MULET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - CES</masterLabel>
+            <translation><!-- ATE MULET - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - DES</masterLabel>
+            <translation><!-- ATE MULET - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - ENT</masterLabel>
+            <translation><!-- ATE MULET - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - GAR</masterLabel>
+            <translation><!-- ATE MULET - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - GTX</masterLabel>
+            <translation><!-- ATE MULET - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET - REP</masterLabel>
+            <translation><!-- ATE MULET - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT</masterLabel>
+            <translation><!-- ATE NEUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT - ENT</masterLabel>
+            <translation><!-- ATE NEUT - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT - GAR</masterLabel>
+            <translation><!-- ATE NEUT - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT - GTX</masterLabel>
+            <translation><!-- ATE NEUT - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT - REP</masterLabel>
+            <translation><!-- ATE NEUT - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG</masterLabel>
+            <translation><!-- ATE NEUT-AAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG-AG</masterLabel>
+            <translation><!-- ATE NEUT-AAG-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG-ATE</masterLabel>
+            <translation><!-- ATE NEUT-AAG-ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER</masterLabel>
+            <translation><!-- ATELIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - CES</masterLabel>
+            <translation><!-- ATELIER - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - DES</masterLabel>
+            <translation><!-- ATELIER - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - ENT</masterLabel>
+            <translation><!-- ATELIER - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - EPA</masterLabel>
+            <translation><!-- ATELIER - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - GAR</masterLabel>
+            <translation><!-- ATELIER - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - GTX</masterLabel>
+            <translation><!-- ATELIER - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER - REP</masterLabel>
+            <translation><!-- ATELIER - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE CDM - ENT</masterLabel>
+            <translation><!-- ATT ATE CDM - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE CDM - GAR</masterLabel>
+            <translation><!-- ATT ATE CDM - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE CDM - GTX</masterLabel>
+            <translation><!-- ATT ATE CDM - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE CDM - REP</masterLabel>
+            <translation><!-- ATT ATE CDM - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD</masterLabel>
+            <translation><!-- ATT ATE LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - CES</masterLabel>
+            <translation><!-- ATT ATE LD - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - DES</masterLabel>
+            <translation><!-- ATT ATE LD - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - ENT</masterLabel>
+            <translation><!-- ATT ATE LD - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - GAR</masterLabel>
+            <translation><!-- ATT ATE LD - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - GTX</masterLabel>
+            <translation><!-- ATT ATE LD - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATT ATE LD - REP</masterLabel>
+            <translation><!-- ATT ATE LD - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD MULET</masterLabel>
+            <translation><!-- CD MULET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO</masterLabel>
+            <translation><!-- CDM DISPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO - ENT</masterLabel>
+            <translation><!-- CDM DISPO - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO - REP</masterLabel>
+            <translation><!-- CDM DISPO - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO-AN</masterLabel>
+            <translation><!-- CDM DISPO-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM-AG</masterLabel>
+            <translation><!-- CDM-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM-AN</masterLabel>
+            <translation><!-- CDM-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CODE_POSPF</masterLabel>
+            <translation><!-- CODE_POSPF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO</masterLabel>
+            <translation><!-- DISPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO - CES</masterLabel>
+            <translation><!-- DISPO - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO - ENT</masterLabel>
+            <translation><!-- DISPO - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO - GAR</masterLabel>
+            <translation><!-- DISPO - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO - GTX</masterLabel>
+            <translation><!-- DISPO - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO - REP</masterLabel>
+            <translation><!-- DISPO - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM</masterLabel>
+            <translation><!-- DISPO ATE CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - CES</masterLabel>
+            <translation><!-- DISPO ATE CDM - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - DES</masterLabel>
+            <translation><!-- DISPO ATE CDM - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - ENT</masterLabel>
+            <translation><!-- DISPO ATE CDM - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - GAR</masterLabel>
+            <translation><!-- DISPO ATE CDM - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - GTX</masterLabel>
+            <translation><!-- DISPO ATE CDM - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM - REP</masterLabel>
+            <translation><!-- DISPO ATE CDM - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD</masterLabel>
+            <translation><!-- DISPO ATE LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - CES</masterLabel>
+            <translation><!-- DISPO ATE LD - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - ENT</masterLabel>
+            <translation><!-- DISPO ATE LD - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - EPA</masterLabel>
+            <translation><!-- DISPO ATE LD - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - GAR</masterLabel>
+            <translation><!-- DISPO ATE LD - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - GTX</masterLabel>
+            <translation><!-- DISPO ATE LD - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD - REP</masterLabel>
+            <translation><!-- DISPO ATE LD - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO CLI</masterLabel>
+            <translation><!-- DISPO CLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO CLI - ENT</masterLabel>
+            <translation><!-- DISPO CLI - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO CONT</masterLabel>
+            <translation><!-- DISPO CONT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO DEP</masterLabel>
+            <translation><!-- DISPO DEP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO NEUT</masterLabel>
+            <translation><!-- DISPO NEUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO NEUT-AN</masterLabel>
+            <translation><!-- DISPO NEUT-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO-AN</masterLabel>
+            <translation><!-- DISPO-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN SERVICE</masterLabel>
+            <translation><!-- EN SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV</masterLabel>
+            <translation><!-- FAB AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT</masterLabel>
+            <translation><!-- FAB AV EXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT ATE</masterLabel>
+            <translation><!-- FAB AV EXT ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT ATEEXT</masterLabel>
+            <translation><!-- FAB AV EXT ATEEXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV-AN</masterLabel>
+            <translation><!-- FAB AV-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD</masterLabel>
+            <translation><!-- FAB LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT</masterLabel>
+            <translation><!-- FAB LD EXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT - ENT</masterLabel>
+            <translation><!-- FAB LD EXT - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT ATE</masterLabel>
+            <translation><!-- FAB LD EXT ATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT ATEEXT</masterLabel>
+            <translation><!-- FAB LD EXT ATEEXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD-AN</masterLabel>
+            <translation><!-- FAB LD-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIN NEUT</masterLabel>
+            <translation><!-- FIN NEUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS PARC</masterLabel>
+            <translation><!-- HORS PARC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HS CLIENT</masterLabel>
+            <translation><!-- HS CLIENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD</masterLabel>
+            <translation><!-- LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO</masterLabel>
+            <translation><!-- LD DISPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO - ENT</masterLabel>
+            <translation><!-- LD DISPO - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO - REP</masterLabel>
+            <translation><!-- LD DISPO - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO-AN</masterLabel>
+            <translation><!-- LD DISPO-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD-AG</masterLabel>
+            <translation><!-- LD-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD-AN</masterLabel>
+            <translation><!-- LD-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET</masterLabel>
+            <translation><!-- MULET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET-AG</masterLabel>
+            <translation><!-- MULET-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET-AN</masterLabel>
+            <translation><!-- MULET-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCCASION</masterLabel>
+            <translation><!-- OCCASION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELAIS</masterLabel>
+            <translation><!-- RELAIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELAIS MULET</masterLabel>
+            <translation><!-- RELAIS MULET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER</masterLabel>
+            <translation><!-- SER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER EXT FAB</masterLabel>
+            <translation><!-- SER EXT FAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER EXT OCC</masterLabel>
+            <translation><!-- SER EXT OCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE</masterLabel>
+            <translation><!-- SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CD</masterLabel>
+            <translation><!-- SURLOC CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM</masterLabel>
+            <translation><!-- SURLOC CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM-AG</masterLabel>
+            <translation><!-- SURLOC CDM-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM-AN</masterLabel>
+            <translation><!-- SURLOC CDM-AN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC REL</masterLabel>
+            <translation><!-- SURLOC REL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT</masterLabel>
+            <translation><!-- TRANSIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - CES</masterLabel>
+            <translation><!-- TRANSIT - CES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - DES</masterLabel>
+            <translation><!-- TRANSIT - DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - ENT</masterLabel>
+            <translation><!-- TRANSIT - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - EPA</masterLabel>
+            <translation><!-- TRANSIT - EPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - GAR</masterLabel>
+            <translation><!-- TRANSIT - GAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - GTX</masterLabel>
+            <translation><!-- TRANSIT - GTX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT - REP</masterLabel>
+            <translation><!-- TRANSIT - REP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-AFF</masterLabel>
+            <translation><!-- TRANSIT-AFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-AG</masterLabel>
+            <translation><!-- TRANSIT-AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATEA</masterLabel>
+            <translation><!-- TRANSIT-ATEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATEAN</masterLabel>
+            <translation><!-- TRANSIT-ATEAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATER</masterLabel>
+            <translation><!-- TRANSIT-ATER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATERN</masterLabel>
+            <translation><!-- TRANSIT-ATERN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-CLI</masterLabel>
+            <translation><!-- TRANSIT-CLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-DEP</masterLabel>
+            <translation><!-- TRANSIT-DEP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOL</masterLabel>
+            <translation><!-- VOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOL - ENT</masterLabel>
+            <translation><!-- VOL - ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC</masterLabel>
+            <translation><!-- VPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC EXT FAB</masterLabel>
+            <translation><!-- VPC EXT FAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC EXT OCC</masterLabel>
+            <translation><!-- VPC EXT OCC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

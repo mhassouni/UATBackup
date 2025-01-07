@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Critique</masterLabel>
+        <translation>Kritikai</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Faible</masterLabel>
+        <translation>Alacsony</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Moyen</masterLabel>
+        <translation>Út</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Élevée</masterLabel>
+        <translation>Magas</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

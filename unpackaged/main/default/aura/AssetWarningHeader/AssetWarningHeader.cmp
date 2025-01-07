@@ -1,0 +1,31 @@
+<aura:component controller="AssetWarningHeader"  implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:attribute name="DisplayWarning" type="AssetWarningHeader"/>
+    <aura:attribute name="WarningMessage" type="AssetWarningHeader"/>
+    <aura:attribute name="LastKmCompteurOK" type="AssetWarningHeader"/>
+    <aura:attribute name="KmCompteurIgloo" type="AssetWarningHeader"/>
+    <div class="slds-card slds-card_boundary forceRelatedListCardDesktop" aura:class="forceRelatedListCardDesktop">
+        <div class="slds-card__header slds-grid" style="align-items: center;">
+            <img src="{!$Resource.KmCompteurLogo}"   style="width:32px;height:32px;"/>
+            <label style="font-weight:700;font-size:1em;padding-left:.75rem;">{!$Label.c.Asset_KmCompteurTitle}</label>
+        </div>
+        <div style="padding-right:1 rem; padding-left:1rem;">
+            <aura:if isTrue="{!v.DisplayWarning}">
+                <aura:if isTrue="{!v.LastKmCompteurOK}" >
+                    <div style="background-color:#D9EAD3;text-align:center;font-size:14px;border: 0.5px solid grey;margin-right:1rem;margin-bottom:1rem;border-radius:10px;" >{!v.WarningMessage}</div>
+                    <aura:set attribute="else">
+                        <div style="background-color:#FCE5CD;text-align:center;font-size:14px;border: 0.5px solid grey;margin-right:1rem;margin-bottom:1rem;border-radius:10px;" >{!v.WarningMessage}</div>
+                    </aura:set>
+                </aura:if>    
+                
+                
+            </aura:if> 
+            
+            {!$Label.c.Asset_KmConstate} : <lightning:input type="number" aura:id="KmConstate" min="0" style="width:50%;" variant="label-hidden"    /><br></br><br></br>
+            <div style="text-align:center;padding-bottom:1rem;">
+            	<lightning:button variant="brand" label="{!$Label.c.Asset_BtInsertKmCompteur}" title="Base action"  onclick="{!c.refresh}"/>
+            </div>    
+            
+        </div>
+    </div>
+</aura:component>

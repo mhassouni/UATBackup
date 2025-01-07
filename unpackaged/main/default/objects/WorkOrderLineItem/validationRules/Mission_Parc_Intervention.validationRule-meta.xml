@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mission_Parc_Intervention</fullName>
+    <active>true</active>
+    <description>Le Parc intervention doit être différent du parc en cour d&#39;intervention</description>
+    <errorConditionFormula>AND( 
+Parc_Intervention__r.Id == Asset.Id , 
+ISBLANK( AssetId )== FALSE, 
+ISBLANK( Parc_Intervention__c )==FALSE
+)</errorConditionFormula>
+    <errorDisplayField>Parc_Intervention__c</errorDisplayField>
+    <errorMessage>Parc intervention et parc doivent être differents</errorMessage>
+</ValidationRule>

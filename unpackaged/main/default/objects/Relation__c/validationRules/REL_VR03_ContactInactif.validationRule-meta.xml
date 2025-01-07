@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REL_VR03_ContactInactif</fullName>
+    <active>true</active>
+    <description>CON-RG-005</description>
+    <errorConditionFormula>AND(
+	OR(
+		AND(
+			ISNEW(),
+			OR(
+				TEXT(ContactPrincipal__r.Statut__c) = $Label.CON_Statut_Inactif,
+				TEXT(ContactRelie__r.Statut__c) = $Label.CON_Statut_Inactif
+				)
+			),
+		AND(
+			ISCHANGED(ContactPrincipal__c),
+			TEXT(ContactPrincipal__r.Statut__c) = $Label.CON_Statut_Inactif
+			), 
+		AND(
+			ISCHANGED(ContactRelie__c),
+			TEXT(ContactRelie__r.Statut__c) = $Label.CON_Statut_Inactif
+			)
+		), 
+	$Setup.Bypass__c.BypassValidationRules__c = false
+	)</errorConditionFormula>
+    <errorMessage>Un contact devenu « Inactif » ne peut plus être associé à d’autres contacts.</errorMessage>
+</ValidationRule>

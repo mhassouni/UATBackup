@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsExcluded</fullName>
+    <inlineHelpText>Lorsque la case est cochée, cet enregistrement est exclu des calculs de disponibilité et de fiabilité, car elle est extérieure à plage de dates de début et de fin de l&#39;enregistrement du temps d&#39;activité de l&#39;actif. En lecture seule.</inlineHelpText>
+</CustomField>

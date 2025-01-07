@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Les_controles_de_mes_agences</fullName>
+    <columns>NAME</columns>
+    <columns>Parc__c</columns>
+    <columns>Operation__c</columns>
+    <columns>Prochaine_operation__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_CONTROLES_MES_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Operation__c</field>
+        <operation>equals</operation>
+        <value>CT</value>
+    </filters>
+    <label>Les contrôles de mes agences</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>CD betét - LD ügyfél</label>
+        <name>AcompteClientLD__c</name>
+        <picklistValues>
+            <masterLabel>100% du loyer</masterLabel>
+            <translation>A bérleti díj 100%-a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aucun</masterLabel>
+            <translation>Egyik sem</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_lieu__c</fullName>
+    <description>Lieu du rendez-vous</description>
+    <inlineHelpText>You must choose a context if the action type is Meeting</inlineHelpText>
+    <label>Contexte</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Conférence</fullName>
+                <default>false</default>
+                <label>Conférence</label>
+            </value>
+            <value>
+                <fullName>Evénement Client</fullName>
+                <default>false</default>
+                <label>Evénement Client</label>
+            </value>
+            <value>
+                <fullName>Evénement Culturel</fullName>
+                <default>false</default>
+                <label>Evénement Culturel</label>
+            </value>
+            <value>
+                <fullName>Evénement PF</fullName>
+                <default>false</default>
+                <label>Evénement PF</label>
+            </value>
+            <value>
+                <fullName>Evénement Sportif</fullName>
+                <default>false</default>
+                <label>Evénement Sportif</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Salon</fullName>
+                <default>false</default>
+                <label>Salon</label>
+            </value>
+            <value>
+                <fullName>Site Client</fullName>
+                <default>false</default>
+                <label>Site Client</label>
+            </value>
+            <value>
+                <fullName>Site PF</fullName>
+                <default>false</default>
+                <label>Site PF</label>
+            </value>
+            <value>
+                <fullName>Not identified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not identified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

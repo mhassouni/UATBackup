@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContratOKpourEdition__c</fullName>
+    <formula>IF( 
+AND(
+NB_BP_non_conforme__c=0,
+NB_Contact_DonneurDordre__c&gt;0,
+Nb_BP_Livre__c&gt;0
+)
+, 
+TRUE, 
+FALSE)</formula>
+    <label>ContratOKpourEdition</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

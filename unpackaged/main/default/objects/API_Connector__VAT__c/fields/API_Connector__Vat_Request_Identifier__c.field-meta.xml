@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__Vat_Request_Identifier__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field stores the output field mapping request identifier (Step 5. API Connector UI) for VAT Number Service.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field stores the output field mapping request identifier (Step 5. API Connector UI) for VAT Number Service.</inlineHelpText>
+    <label>Vat Request Identifier</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

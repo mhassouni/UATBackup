@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Allow</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText xsi:nil="true"/>
+    <description>Nom + PaysRégion</description>
+    <duplicateRuleFilter>
+        <booleanFilter>4 AND (2 OR 3 OR 1 OR 5 OR 6 OR 7)</booleanFilter>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>trenoud@petitforestier.fr</value>
+            <sortOrder>1</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>tviger@petitforestier.fr</value>
+            <sortOrder>2</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>mphilippe@mendonleasing.com</value>
+            <sortOrder>3</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>Compte - Client, Compte - Site, Prospect</value>
+            <sortOrder>4</sortOrder>
+            <table>Account</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>mhassouni@petitforestier.fr</value>
+            <sortOrder>5</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>abezzari@petitforestier.fr</value>
+            <sortOrder>6</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Email</field>
+            <operation>equals</operation>
+            <value>irezzouk@petitforestier.fr</value>
+            <sortOrder>7</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Account</matchRuleSObjectType>
+        <matchingRule>R_gle_comptes_doublons_by_name</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Doublons potentiels</masterLabel>
+    <operationsOnInsert>Report</operationsOnInsert>
+    <operationsOnUpdate>Report</operationsOnUpdate>
+    <securityOption>BypassSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

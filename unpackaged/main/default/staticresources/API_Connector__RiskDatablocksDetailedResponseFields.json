@@ -1,0 +1,537 @@
+[
+    {
+        "Name": "--None--",
+        "Path": "--None--",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "ISO Alpha 2 Char Country Code",
+        "Path": "organization.countryISOAlpha2Code",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Company Move Indicator",
+        "Path": "organization.hasCompanyMoved",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Active Exclusions Indicator",
+        "Path": "organization.exclusions.hasActiveExclusions",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Inactive Exclusions Indicator",
+        "Path": "organization.exclusions.hasInactiveExclusions",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Burglary Events Indicator",
+        "Path": "organization.significantEvents.hasBurglaryOccured",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Discontinued Indicator",
+        "Path": "organization.significantEvents.hasBusinessDiscontinued",
+        "isRequired": "No"
+    },
+    {
+        "Name": "CEO Change Indicator",
+        "Path": "organization.significantEvents.hasCEOChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Control Change Indicator",
+        "Path": "organization.significantEvents.hasControlChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Disaster Special Events Indicator",
+        "Path": "organization.significantEvents.hasDisastrousEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Fire Events Indicator",
+        "Path": "organization.significantEvents.hasFireOccurred",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Name Change Indicator",
+        "Path": "organization.significantEvents.hasNameChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Operational Special Events Indicator",
+        "Path": "organization.significantEvents.hasOperationalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Partner Change Indicator",
+        "Path": "organization.significantEvents.hasPartnerChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Other Special Events Indicator",
+        "Path": "organization.significantEvents.hasSignificantEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Primary Business Name",
+        "Path": "organization.primaryName",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Contracts Indicator",
+        "Path": "organization.awards.hasContracts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Debts Indicator",
+        "Path": "organization.awards.hasDebts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Grants Indicator",
+        "Path": "organization.awards.hasGrants",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Loans Indicator",
+        "Path": "organization.awards.hasLoans",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Contracts Indicator",
+        "Path": "organization.awards.hasOpenContracts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Debts Indicator",
+        "Path": "organization.awards.hasOpenDebts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Grants Indicator",
+        "Path": "organization.awards.hasOpenGrants",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Loans Indicator",
+        "Path": "organization.awards.hasOpenLoans",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Indicator",
+        "Path": "organization.financingEvents.hasFinancingEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Letter of Agreement Indicator",
+        "Path": "organization.financingEvents.hasLetterOfAgreement",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Letter Of Liability Indicator",
+        "Path": "organization.financingEvents.hasLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Financial Events Indicator",
+        "Path": "organization.financingEvents.hasOpenFinancingEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Letter Of Liability Indicator",
+        "Path": "organization.financingEvents.hasOpenLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Secured Filings Indicator",
+        "Path": "organization.financingEvents.hasOpenSecuredFilings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Removed Letter of Liability Indicator",
+        "Path": "organization.financingEvents.hasRemovedLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Secured Filings Indicator",
+        "Path": "organization.financingEvents.hasSecuredFilings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Bankruptcy Indicator",
+        "Path": "organization.legalEvents.hasBankruptcy",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Claims Indicator",
+        "Path": "organization.legalEvents.hasClaims",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Criminal Proceedings Indicator",
+        "Path": "organization.legalEvents.hasCriminalProceedings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Debarments Indicator",
+        "Path": "organization.legalEvents.hasDebarments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Embarrassment Indicator",
+        "Path": "organization.legalEvents.hasFinancialEmbarrassment",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Legal Events Insolvency Indicator",
+        "Path": "organization.legalEvents.hasInsolvency",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Judgments Indicator",
+        "Path": "organization.legalEvents.hasJudgments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Indicator",
+        "Path": "organization.legalEvents.hasLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Liens Indicator",
+        "Path": "organization.legalEvents.hasLiens",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Liquidation Indicator",
+        "Path": "organization.legalEvents.hasLiquidation",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Open Bankruptcy Indicator",
+        "Path": "organization.legalEvents.hasOpenBankruptcy",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Claims Indicator",
+        "Path": "organization.legalEvents.hasOpenClaims",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Criminal Proceedings Indicator",
+        "Path": "organization.legalEvents.hasOpenCriminalProceedings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Debarments Indicator",
+        "Path": "organization.legalEvents.hasOpenDebarments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Financial Embarrassment Indicator",
+        "Path": "organization.legalEvents.hasOpenFinancialEmbarrassment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Judgments Indicator",
+        "Path": "organization.legalEvents.hasOpenJudgments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Legal Events Indicator",
+        "Path": "organization.legalEvents.hasOpenLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Open Liens Indicator",
+        "Path": "organization.legalEvents.hasOpenLiens",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Suits Indicator",
+        "Path": "organization.legalEvents.hasOpenSuits",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Other Legal Events Indicator",
+        "Path": "organization.legalEvents.hasOtherLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Suits Indicator",
+        "Path": "organization.legalEvents.hasSuits",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Suspension of Payments Indicator",
+        "Path": "organization.legalEvents.hasSuspensionOfPayments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Canada Environmental Agency Violations Indicator",
+        "Path": "organization.violations.hasCAEnvironmentalViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Environmental Protection Agency Violations Indicator",
+        "Path": "organization.violations.hasEPAViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Government Control List Citations Indicator",
+        "Path": "organization.violations.hasGCLCitations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Occupational Safety and Health Administration Violations Indicator",
+        "Path": "organization.violations.hasOSHAViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Date",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.assessmentDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Assessment Date",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.assessmentDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Currency",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.currency",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Value",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.value",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Maximum Currency",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.currency",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Maximum Value",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.value",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Class Score",
+        "Path": "organization.dnbAssessment.delinquencyScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Class Score Text",
+        "Path": "organization.dnbAssessment.delinquencyScore.classScoreDescription",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score National Percentile",
+        "Path": "organization.dnbAssessment.delinquencyScore.nationalPercentile",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Date",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Model Text",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Model Code",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Override Reasons Description",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Override Reasons Code",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Class Score",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Date",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Model Text",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Model Code",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Class Score",
+        "Path": "organization.dnbAssessment.failureScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Class Score Text",
+        "Path": "organization.dnbAssessment.failureScore.classScoreDescription",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score National Percentile",
+        "Path": "organization.dnbAssessment.failureScore.nationalPercentile",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Date",
+        "Path": "organization.dnbAssessment.failureScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Model Text",
+        "Path": "organization.dnbAssessment.failureScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Model Code",
+        "Path": "organization.dnbAssessment.failureScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Override Reasons Description",
+        "Path": "organization.dnbAssessment.failureScore.scoreOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Override Reasons Code",
+        "Path": "organization.dnbAssessment.failureScore.scoreOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Financial Condition Description",
+        "Path": "organization.dnbAssessment.financialCondition.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Condition Code Value",
+        "Path": "organization.dnbAssessment.financialCondition.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Severe Negative Indicator",
+        "Path": "organization.dnbAssessment.hasSevereNegativeEvents",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment History Rating Text",
+        "Path": "organization.dnbAssessment.historyRating.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment History Rating Code",
+        "Path": "organization.dnbAssessment.historyRating.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Standard Rating Financial Strength",
+        "Path": "organization.dnbAssessment.standardRating.financialStrength",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Value",
+        "Path": "organization.dnbAssessment.standardRating.rating",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Standard Ratings Override Reasons Description",
+        "Path": "organization.dnbAssessment.standardRating.ratingOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Ratings Override Reasons Code",
+        "Path": "organization.dnbAssessment.standardRating.ratingOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Reason Text",
+        "Path": "organization.dnbAssessment.standardRating.ratingReason[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Reason Code",
+        "Path": "organization.dnbAssessment.standardRating.ratingReason[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Risk Segment",
+        "Path": "organization.dnbAssessment.standardRating.riskSegment",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Score Date",
+        "Path": "organization.dnbAssessment.standardRating.scoreDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Deterioration Indicator",
+        "Path": "organization.isDeterioratingBusiness",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "High Risk Indicator",
+        "Path": "organization.isHighRiskBusiness",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Business Trading Summary Data Coverage Description",
+        "Path": "organization.businessTrading[0].summary[0].dataCoverage.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Data Coverage Code",
+        "Path": "organization.businessTrading[0].summary[0].dataCoverage.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Paydex Score",
+        "Path": "organization.businessTrading[0].summary[0].paydexScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Days Quantity",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorDays",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Text",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorResult.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Code",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorResult.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Payment Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].totalExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Summary Date",
+        "Path": "organization.businessTrading[0].summaryDate",
+        "isRequired": "No"
+    }
+]

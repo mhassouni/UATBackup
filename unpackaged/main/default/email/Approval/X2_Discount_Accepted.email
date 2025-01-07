@@ -1,0 +1,11 @@
+Bonjour,
+
+Votre demande de dérogation sur le devis {!SBQQ__Quote__c.Name} pour le client {!SBQQ__Quote__c.SBQQ__Account__c} a été approuvée. 
+
+Commentaires : {!ApprovalRequest.Comments}
+
+Vous pouvez à présent émettre votre devis.
+
+Lien direct vers le devis
+
+{!SBQQ__Quote__c.Link}

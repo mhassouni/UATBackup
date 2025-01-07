@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>PF Ügynökség</label>
+        <name>AgencePF__c</name>
+        <picklistValues>
+            <masterLabel>000 - SIEGE</masterLabel>
+            <translation><!-- 000 - SIEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>001 - VILLEPINTE</masterLabel>
+            <translation><!-- 001 - VILLEPINTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002 - BORDEAUX</masterLabel>
+            <translation><!-- 002 - BORDEAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003 - ROUEN</masterLabel>
+            <translation><!-- 003 - ROUEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004 - RUNGIS</masterLabel>
+            <translation><!-- 004 - RUNGIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005 - TOULOUSE</masterLabel>
+            <translation><!-- 005 - TOULOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006 - NANTES</masterLabel>
+            <translation><!-- 006 - NANTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>007 - PAU</masterLabel>
+            <translation><!-- 007 - PAU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>008 - DIJON</masterLabel>
+            <translation><!-- 008 - DIJON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>009 - TOURS</masterLabel>
+            <translation><!-- 009 - TOURS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>010 - LYON</masterLabel>
+            <translation><!-- 010 - LYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>011 - PLAISIR</masterLabel>
+            <translation><!-- 011 - PLAISIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>012 - CAEN</masterLabel>
+            <translation><!-- 012 - CAEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>014 - LILLE</masterLabel>
+            <translation><!-- 014 - LILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>015 - NIORT</masterLabel>
+            <translation><!-- 015 - NIORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>016 - NÎMES</masterLabel>
+            <translation><!-- 016 - NÎMES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>017 - ANGERS</masterLabel>
+            <translation><!-- 017 - ANGERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>018 - METZ</masterLabel>
+            <translation><!-- 018 - METZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>019 - ORLEANS</masterLabel>
+            <translation><!-- 019 - ORLEANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>020 - REIMS</masterLabel>
+            <translation><!-- 020 - REIMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021 - RENNES</masterLabel>
+            <translation><!-- 021 - RENNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>022 - CLERMONT-FERRAND</masterLabel>
+            <translation><!-- 022 - CLERMONT-FERRAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>023 - LE HAVRE</masterLabel>
+            <translation><!-- 023 - LE HAVRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>024 - MARSEILLE</masterLabel>
+            <translation><!-- 024 - MARSEILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>025 - ANNECY</masterLabel>
+            <translation><!-- 025 - ANNECY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>026 - MULHOUSE</masterLabel>
+            <translation><!-- 026 - MULHOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>027 - LUXEMBOURG</masterLabel>
+            <translation><!-- 027 - LUXEMBOURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>028 - BEZONS</masterLabel>
+            <translation><!-- 028 - BEZONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>029 - PERPIGNAN</masterLabel>
+            <translation><!-- 029 - PERPIGNAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>030 - LIÈGE</masterLabel>
+            <translation><!-- 030 - LIÈGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>031 - QUIMPER</masterLabel>
+            <translation><!-- 031 - QUIMPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>032 - LIMOGES</masterLabel>
+            <translation><!-- 032 - LIMOGES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>033 - CHILLY MAZARIN</masterLabel>
+            <translation><!-- 033 - CHILLY MAZARIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>034 - BRUSSELS HUIZINGEN</masterLabel>
+            <translation><!-- 034 - BRUSSELS HUIZINGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>035 - NICE</masterLabel>
+            <translation><!-- 035 - NICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>036 - GRENOBLE</masterLabel>
+            <translation><!-- 036 - GRENOBLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>037 - BOURGES</masterLabel>
+            <translation><!-- 037 - BOURGES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>038 - AMIENS</masterLabel>
+            <translation><!-- 038 - AMIENS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>039 - ST BRIEUC</masterLabel>
+            <translation><!-- 039 - ST BRIEUC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>040 - TOULON</masterLabel>
+            <translation><!-- 040 - TOULON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>041 - TROYES</masterLabel>
+            <translation><!-- 041 - TROYES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>042 - BAYONNE</masterLabel>
+            <translation><!-- 042 - BAYONNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>043 - STRASBOURG</masterLabel>
+            <translation><!-- 043 - STRASBOURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>044 - LE MANS</masterLabel>
+            <translation><!-- 044 - LE MANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>045 - ROTTERDAM</masterLabel>
+            <translation><!-- 045 - ROTTERDAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>046 - BARCELONA</masterLabel>
+            <translation><!-- 046 - BARCELONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>047 - RODEZ</masterLabel>
+            <translation><!-- 047 - RODEZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>048 - CHAMBERY</masterLabel>
+            <translation><!-- 048 - CHAMBERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>049 - ELOYES EPINAL</masterLabel>
+            <translation><!-- 049 - ELOYES EPINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>050 - MONTPELLIER</masterLabel>
+            <translation><!-- 050 - MONTPELLIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>051 - BOULOGNE SUR MER</masterLabel>
+            <translation><!-- 051 - BOULOGNE SUR MER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>052 - DIEPPE</masterLabel>
+            <translation><!-- 052 - DIEPPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>054 - VALENCE</masterLabel>
+            <translation><!-- 054 - VALENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>055 - NANCY</masterLabel>
+            <translation><!-- 055 - NANCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>056 - MADRID</masterLabel>
+            <translation><!-- 056 - MADRID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>057 - EMERAINVILLE</masterLabel>
+            <translation><!-- 057 - EMERAINVILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>058 - CANNES</masterLabel>
+            <translation><!-- 058 - CANNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>059 - BREST</masterLabel>
+            <translation><!-- 059 - BREST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>060 - SAINT-ETIENNE</masterLabel>
+            <translation><!-- 060 - SAINT-ETIENNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>061 - M.I.N. DE RUNGIS</masterLabel>
+            <translation><!-- 061 - M.I.N. DE RUNGIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>062 - EVREUX</masterLabel>
+            <translation><!-- 062 - EVREUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>063 - AVIGNON</masterLabel>
+            <translation><!-- 063 - AVIGNON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>065 - ANTWERPEN</masterLabel>
+            <translation><!-- 065 - ANTWERPEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>066 - LETCHWORTH</masterLabel>
+            <translation><!-- 066 - LETCHWORTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>068 - KINGSBURY</masterLabel>
+            <translation><!-- 068 - KINGSBURY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>069 - SOUTH LONDON</masterLabel>
+            <translation><!-- 069 - SOUTH LONDON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>070 - CARDIFF</masterLabel>
+            <translation><!-- 070 - CARDIFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>071 - MANCHESTER</masterLabel>
+            <translation><!-- 071 - MANCHESTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>072 - GLASGOW</masterLabel>
+            <translation><!-- 072 - GLASGOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>073 - BIRMINGHAM</masterLabel>
+            <translation><!-- 073 - BIRMINGHAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>074 - DURHAM</masterLabel>
+            <translation><!-- 074 - DURHAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>075 - BESANCON</masterLabel>
+            <translation><!-- 075 - BESANCON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>076 - CHOLET</masterLabel>
+            <translation><!-- 076 - CHOLET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>077 - LA ROCHE SUR YON</masterLabel>
+            <translation><!-- 077 - LA ROCHE SUR YON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>078 - MACON</masterLabel>
+            <translation><!-- 078 - MACON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>079 - SISTERON</masterLabel>
+            <translation><!-- 079 - SISTERON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>081 - BASTIA</masterLabel>
+            <translation><!-- 081 - BASTIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>082 - CENTRAL LONDON</masterLabel>
+            <translation><!-- 082 - CENTRAL LONDON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>083 - AGEN</masterLabel>
+            <translation><!-- 083 - AGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>084 - CORNWALL</masterLabel>
+            <translation><!-- 084 - CORNWALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>085 - CHARTRES</masterLabel>
+            <translation><!-- 085 - CHARTRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>086 - BILBAO</masterLabel>
+            <translation><!-- 086 - BILBAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>087 - EMERAINVILLE</masterLabel>
+            <translation><!-- 087 - EMERAINVILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>088 - ORLY</masterLabel>
+            <translation><!-- 088 - ORLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>089 - CHILLY MAZARIN</masterLabel>
+            <translation><!-- 089 - CHILLY MAZARIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>090 - RUNGIS MIN</masterLabel>
+            <translation><!-- 090 - RUNGIS MIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>092 - VILLENEUVE LA GARENNE</masterLabel>
+            <translation><!-- 092 - VILLENEUVE LA GARENNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>093 - MONTREUIL</masterLabel>
+            <translation><!-- 093 - MONTREUIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>094 - RUNGIS</masterLabel>
+            <translation><!-- 094 - RUNGIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>095 - BEZONS</masterLabel>
+            <translation><!-- 095 - BEZONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>096 - ALENCON</masterLabel>
+            <translation><!-- 096 - ALENCON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>097 - VANNES</masterLabel>
+            <translation><!-- 097 - VANNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>099 - MONT DE MARSAN</masterLabel>
+            <translation><!-- 099 - MONT DE MARSAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 - POITIERS</masterLabel>
+            <translation><!-- 100 - POITIERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101 - TARBES</masterLabel>
+            <translation><!-- 101 - TARBES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102 - SOUTHAMPTON</masterLabel>
+            <translation><!-- 102 - SOUTHAMPTON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>103 - MONTIGNY</masterLabel>
+            <translation><!-- 103 - MONTIGNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>104 - VALENCIENNES</masterLabel>
+            <translation><!-- 104 - VALENCIENNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105 - STRASBOURG MIN</masterLabel>
+            <translation><!-- 105 - STRASBOURG MIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>106 - VALENCIA</masterLabel>
+            <translation><!-- 106 - VALENCIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>107 - WEST LONDON</masterLabel>
+            <translation><!-- 107 - WEST LONDON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>108 - BRISTOL</masterLabel>
+            <translation><!-- 108 - BRISTOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>109 - CREIL</masterLabel>
+            <translation><!-- 109 - CREIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>110 - MAASTRICHT</masterLabel>
+            <translation><!-- 110 - MAASTRICHT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>111 - AUXERRE</masterLabel>
+            <translation><!-- 111 - AUXERRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>112 - VARSOVIE</masterLabel>
+            <translation><!-- 112 - VARSOVIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>113 - LEEDS</masterLabel>
+            <translation><!-- 113 - LEEDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>114 - ANNEMASSE</masterLabel>
+            <translation><!-- 114 - ANNEMASSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>115 - ROUEN MIN</masterLabel>
+            <translation><!-- 115 - ROUEN MIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>116 - LAUSANNE</masterLabel>
+            <translation><!-- 116 - LAUSANNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>118 - MELESSE</masterLabel>
+            <translation><!-- 118 - MELESSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>119 - ROCHEFORT</masterLabel>
+            <translation><!-- 119 - ROCHEFORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120 - LISBONNE</masterLabel>
+            <translation><!-- 120 - LISBONNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>121 - ESTREES-MONS</masterLabel>
+            <translation><!-- 121 - ESTREES-MONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>122 - LIVERPOOL</masterLabel>
+            <translation><!-- 122 - LIVERPOOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>124 - LISIEUX</masterLabel>
+            <translation><!-- 124 - LISIEUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>125 - FREJUS</masterLabel>
+            <translation><!-- 125 - FREJUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>126 - ROGNAC</masterLabel>
+            <translation><!-- 126 - ROGNAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>127 - AJACCIO</masterLabel>
+            <translation><!-- 127 - AJACCIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>128 - BRIVE</masterLabel>
+            <translation><!-- 128 - BRIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>129 - TERESIN</masterLabel>
+            <translation><!-- 129 - TERESIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>130 - RUDA</masterLabel>
+            <translation><!-- 130 - RUDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>131 - MONTELIMAR</masterLabel>
+            <translation><!-- 131 - MONTELIMAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>132 - THIAIS</masterLabel>
+            <translation><!-- 132 - THIAIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>133 - ANGOULEME</masterLabel>
+            <translation><!-- 133 - ANGOULEME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>134 - CARCASSONNE</masterLabel>
+            <translation><!-- 134 - CARCASSONNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>135 - LENS</masterLabel>
+            <translation><!-- 135 - LENS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>136 - COLMAR</masterLabel>
+            <translation><!-- 136 - COLMAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>144 - GRENAY</masterLabel>
+            <translation><!-- 144 - GRENAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>145 - NANTES</masterLabel>
+            <translation><!-- 145 - NANTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>146 - MALAGA</masterLabel>
+            <translation><!-- 146 - MALAGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>147 - CARHAIX</masterLabel>
+            <translation><!-- 147 - CARHAIX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>148 - COURCOURONNES</masterLabel>
+            <translation><!-- 148 - COURCOURONNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>149 - TORINO</masterLabel>
+            <translation><!-- 149 - TORINO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150 - MILANO</masterLabel>
+            <translation><!-- 150 - MILANO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>151 - GENOVA</masterLabel>
+            <translation><!-- 151 - GENOVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>153 - ROMA</masterLabel>
+            <translation><!-- 153 - ROMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>156 - PISTOIA</masterLabel>
+            <translation><!-- 156 - PISTOIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>157 - ST AVOLD</masterLabel>
+            <translation><!-- 157 - ST AVOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>158 - DUBLIN</masterLabel>
+            <translation><!-- 158 - DUBLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160 - ZURICH</masterLabel>
+            <translation><!-- 160 - ZURICH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>164 - PORTO</masterLabel>
+            <translation><!-- 164 - PORTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>165 - CASABLANCA</masterLabel>
+            <translation><!-- 165 - CASABLANCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>166 - CORDOBA</masterLabel>
+            <translation><!-- 166 - CORDOBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>167 - ST OUEN L&#39;AUMONE</masterLabel>
+            <translation><!-- 167 - ST OUEN L&apos;AUMONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>171 - SAN SEBASTIAN</masterLabel>
+            <translation><!-- 171 - SAN SEBASTIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>172 - PIERRELATTE</masterLabel>
+            <translation><!-- 172 - PIERRELATTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>174 - MOUSCRON</masterLabel>
+            <translation><!-- 174 - MOUSCRON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>175 - WARRINGTON</masterLabel>
+            <translation><!-- 175 - WARRINGTON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>176 - GIRONA</masterLabel>
+            <translation><!-- 176 - GIRONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>177 - LIEUSAINT</masterLabel>
+            <translation><!-- 177 - LIEUSAINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>178 - MURCIA</masterLabel>
+            <translation><!-- 178 - MURCIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>179 - WARSZAWA</masterLabel>
+            <translation><!-- 179 - WARSZAWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>183 - LODZ</masterLabel>
+            <translation><!-- 183 - LODZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>184 - POZNAN</masterLabel>
+            <translation><!-- 184 - POZNAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>185 - AUCH</masterLabel>
+            <translation><!-- 185 - AUCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>186 - MONTMARAULT</masterLabel>
+            <translation><!-- 186 - MONTMARAULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>187 - BEZIERS</masterLabel>
+            <translation><!-- 187 - BEZIERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>188 - ZARAGOZA</masterLabel>
+            <translation><!-- 188 - ZARAGOZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>189 - PERIGUEUX</masterLabel>
+            <translation><!-- 189 - PERIGUEUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190 - LISSES</masterLabel>
+            <translation><!-- 190 - LISSES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>191 - GIRONA TALLER CENTRAL</masterLabel>
+            <translation><!-- 191 - GIRONA TALLER CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>192 - LAVAL</masterLabel>
+            <translation><!-- 192 - LAVAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>193 - MALLORCA</masterLabel>
+            <translation><!-- 193 - MALLORCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>194 - BEGLES</masterLabel>
+            <translation><!-- 194 - BEGLES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>195 - GENEVE</masterLabel>
+            <translation><!-- 195 - GENEVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>199 - GLOUCESTER</masterLabel>
+            <translation><!-- 199 - GLOUCESTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 - KÖLN</masterLabel>
+            <translation><!-- 200 - KÖLN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>201 - BORDEAUX LE HAILLAN</masterLabel>
+            <translation><!-- 201 - BORDEAUX LE HAILLAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>202 - DAX</masterLabel>
+            <translation><!-- 202 - DAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>203 - LE HAILLAN</masterLabel>
+            <translation><!-- 203 - LE HAILLAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>204 - MADRID</masterLabel>
+            <translation><!-- 204 - MADRID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>204 - PFM MADRID</masterLabel>
+            <translation><!-- 204 - PFM MADRID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>205 - LORIENT</masterLabel>
+            <translation><!-- 205 - LORIENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>206 - MARSEILLE</masterLabel>
+            <translation><!-- 206 - MARSEILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>207 - TARRAGONA</masterLabel>
+            <translation><!-- 207 - TARRAGONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>208 - GDANSK</masterLabel>
+            <translation><!-- 208 - GDANSK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>209 - AMSTERDAM</masterLabel>
+            <translation><!-- 209 - AMSTERDAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>210 - SEVILLA</masterLabel>
+            <translation><!-- 210 - SEVILLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>211 - WROCLAW</masterLabel>
+            <translation><!-- 211 - WROCLAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>212 - GENT</masterLabel>
+            <translation><!-- 212 - GENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>213 - LYON BRIGNAIS</masterLabel>
+            <translation><!-- 213 - LYON BRIGNAIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>214 - AUBAGNE</masterLabel>
+            <translation><!-- 214 - AUBAGNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>215 - BRIGNAIS</masterLabel>
+            <translation><!-- 215 - BRIGNAIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>216 - MARTIGNY</masterLabel>
+            <translation><!-- 216 - MARTIGNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>218 - CORUÑA</masterLabel>
+            <translation><!-- 218 - CORUÑA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>219 - LONS LE SAUNIER</masterLabel>
+            <translation><!-- 219 - LONS LE SAUNIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>220 - SANTANDER</masterLabel>
+            <translation><!-- 220 - SANTANDER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>221 - FRIBOURG</masterLabel>
+            <translation><!-- 221 - FRIBOURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>222 - BELFAST</masterLabel>
+            <translation><!-- 222 - BELFAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>223 - ALICANTE</masterLabel>
+            <translation><!-- 223 - ALICANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>224 - LEIPZIG</masterLabel>
+            <translation><!-- 224 - LEIPZIG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>225 - BICESTER</masterLabel>
+            <translation><!-- 225 - BICESTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>226 - TOULOUSE PORTET</masterLabel>
+            <translation><!-- 226 - TOULOUSE PORTET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>228 - STRASBOURG ENTZHEIM</masterLabel>
+            <translation><!-- 228 - STRASBOURG ENTZHEIM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>229 - RUNGIS CIRCULAIRE</masterLabel>
+            <translation><!-- 229 - RUNGIS CIRCULAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>230 - FARO</masterLabel>
+            <translation><!-- 230 - FARO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>231 - GRANOLLERS</masterLabel>
+            <translation><!-- 231 - GRANOLLERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>233 - EINDHOVEN</masterLabel>
+            <translation><!-- 233 - EINDHOVEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>234 - NAMUR</masterLabel>
+            <translation><!-- 234 - NAMUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>235 - LA REUNION</masterLabel>
+            <translation><!-- 235 - LA REUNION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>236 - TOULOUSE CONTAINERS</masterLabel>
+            <translation><!-- 236 - TOULOUSE CONTAINERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>237 - PRAHA</masterLabel>
+            <translation><!-- 237 - PRAHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>238 - PAMPLONA</masterLabel>
+            <translation><!-- 238 - PAMPLONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>239 - MÜNCHEN</masterLabel>
+            <translation><!-- 239 - MÜNCHEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>240 - SAINT-LO</masterLabel>
+            <translation><!-- 240 - SAINT-LO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>242 - VALLADOLID</masterLabel>
+            <translation><!-- 242 - VALLADOLID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>244 - CADIZ</masterLabel>
+            <translation><!-- 244 - CADIZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>245 - SARREGUEMINES</masterLabel>
+            <translation><!-- 245 - SARREGUEMINES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>246 - CARQUEFOU</masterLabel>
+            <translation><!-- 246 - CARQUEFOU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>247 - NICE</masterLabel>
+            <translation><!-- 247 - NICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>248 - LAS PALMAS</masterLabel>
+            <translation><!-- 248 - LAS PALMAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>249 - IBIZA</masterLabel>
+            <translation><!-- 249 - IBIZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250 - CASTELNAUDARY</masterLabel>
+            <translation><!-- 250 - CASTELNAUDARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>251 - BLOIS</masterLabel>
+            <translation><!-- 251 - BLOIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>252 - TENERIFE</masterLabel>
+            <translation><!-- 252 - TENERIFE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>253 - COIMBRA</masterLabel>
+            <translation><!-- 253 - COIMBRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>254 - BERLIN</masterLabel>
+            <translation><!-- 254 - BERLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>255 - FRANKFURT</masterLabel>
+            <translation><!-- 255 - FRANKFURT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>256 - MONZA</masterLabel>
+            <translation><!-- 256 - MONZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>257 - VILLEPINTE</masterLabel>
+            <translation><!-- 257 - VILLEPINTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>258 - SAINT-NAZAIRE</masterLabel>
+            <translation><!-- 258 - SAINT-NAZAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>259 - WIEN</masterLabel>
+            <translation><!-- 259 - WIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>260 - POINTE A PITRE</masterLabel>
+            <translation><!-- 260 - POINTE A PITRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>262 - HASSELT</masterLabel>
+            <translation><!-- 262 - HASSELT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>263 - BUDAPEST</masterLabel>
+            <translation><!-- 263 - BUDAPEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>264 - LIÈGE</masterLabel>
+            <translation><!-- 264 - LIÈGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>265 - ESSEN</masterLabel>
+            <translation><!-- 265 - ESSEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>266 - NICE</masterLabel>
+            <translation><!-- 266 - NICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>267 - LYON</masterLabel>
+            <translation><!-- 267 - LYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>268 - JOHANNESBURG</masterLabel>
+            <translation><!-- 268 - JOHANNESBURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>269 - ALBI</masterLabel>
+            <translation><!-- 269 - ALBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>270 - BOLOGNA</masterLabel>
+            <translation><!-- 270 - BOLOGNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>271 - LUBLIN</masterLabel>
+            <translation><!-- 271 - LUBLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>272 - KRAKÓW</masterLabel>
+            <translation><!-- 272 - KRAKÓW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>275 - DURBAN</masterLabel>
+            <translation><!-- 275 - DURBAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>278 - HAMBURG</masterLabel>
+            <translation><!-- 278 - HAMBURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>281 - LILLE</masterLabel>
+            <translation><!-- 281 - LILLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>288 - RENNES</masterLabel>
+            <translation><!-- 288 - RENNES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>289 / NY - BROOKLYN KINGSLAND</masterLabel>
+            <translation><!-- 289 / NY - BROOKLYN KINGSLAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>290 / NY - BRONX</masterLabel>
+            <translation><!-- 290 / NY - BRONX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>291 / NY - BROOKLYN FOSTER</masterLabel>
+            <translation><!-- 291 / NY - BROOKLYN FOSTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>292 / NY - NEWARK</masterLabel>
+            <translation><!-- 292 / NY - NEWARK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>293 / NY - LONG ISLAND</masterLabel>
+            <translation><!-- 293 / NY - LONG ISLAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>294 / NY - LAKEWOOD</masterLabel>
+            <translation><!-- 294 / NY - LAKEWOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>297 - PADOVA</masterLabel>
+            <translation><!-- 297 - PADOVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>299 - DUBAI</masterLabel>
+            <translation><!-- 299 - DUBAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300 - BORDEAUX</masterLabel>
+            <translation><!-- 300 - BORDEAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>302 - SECLIN</masterLabel>
+            <translation><!-- 302 - SECLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>304 - ILE MAURICE</masterLabel>
+            <translation><!-- 304 - ILE MAURICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>305 - CAVAILLON</masterLabel>
+            <translation><!-- 305 - CAVAILLON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>306 / MADRID - COSLADA</masterLabel>
+            <translation><!-- 306 / MADRID - COSLADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>309 - BIALYSTOCK</masterLabel>
+            <translation><!-- 309 - BIALYSTOCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>310 - RZESZÓW</masterLabel>
+            <translation><!-- 310 - RZESZÓW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>312 - MADRID CONTAINERS</masterLabel>
+            <translation><!-- 312 - MADRID CONTAINERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 - MERIDA</masterLabel>
+            <translation><!-- 314 - MERIDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>315 - BRUSSELS NORTH</masterLabel>
+            <translation><!-- 315 - BRUSSELS NORTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>316 - LYON CORBAS II</masterLabel>
+            <translation><!-- 316 - LYON CORBAS II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>318 - CAPE TOWN</masterLabel>
+            <translation><!-- 318 - CAPE TOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>319 - TICINO</masterLabel>
+            <translation><!-- 319 - TICINO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>322 - FORT DE FRANCE</masterLabel>
+            <translation><!-- 322 - FORT DE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325 - LLEIDA</masterLabel>
+            <translation><!-- 325 - LLEIDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327 - KOSZALIN</masterLabel>
+            <translation><!-- 327 - KOSZALIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>328 - BALE</masterLabel>
+            <translation><!-- 328 - BALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>329 - ASTURIAS</masterLabel>
+            <translation><!-- 329 - ASTURIAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330 - MADRID MOSTOLES</masterLabel>
+            <translation><!-- 330 - MADRID MOSTOLES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>334 - GRUDZIĄDZ</masterLabel>
+            <translation><!-- 334 - GRUDZIĄDZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>335 - OLSZTYN</masterLabel>
+            <translation><!-- 335 - OLSZTYN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>341 - NEUFCHATEL</masterLabel>
+            <translation><!-- 341 - NEUFCHATEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>342 - TERESIN-GAJ</masterLabel>
+            <translation><!-- 342 - TERESIN-GAJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>363 - VIC</masterLabel>
+            <translation><!-- 363 - VIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>364 - VITORIA</masterLabel>
+            <translation><!-- 364 - VITORIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>373 - SOSNOWIEC</masterLabel>
+            <translation><!-- 373 - SOSNOWIEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>374 - LUBIN</masterLabel>
+            <translation><!-- 374 - LUBIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>901 - LEGO</masterLabel>
+            <translation><!-- 901 - LEGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>902 - ZEUS</masterLabel>
+            <translation><!-- 902 - ZEUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>903 - DION</masterLabel>
+            <translation><!-- 903 - DION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>904 - CONSTANTIN</masterLabel>
+            <translation><!-- 904 - CONSTANTIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>905 - DRACULA</masterLabel>
+            <translation><!-- 905 - DRACULA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>999 - Reways agence</masterLabel>
+            <translation><!-- 999 - Reways agence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRATISLAVA</masterLabel>
+            <translation><!-- BRATISLAVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUCAREST</masterLabel>
+            <translation><!-- BUCAREST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHE - HO</masterLabel>
+            <translation><!-- CHE - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEU - HO</masterLabel>
+            <translation><!-- DEU - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESP - HO</masterLabel>
+            <translation><!-- ESP - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA - HO</masterLabel>
+            <translation><!-- FRA - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBR - HO</masterLabel>
+            <translation><!-- GBR - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRL - HO</masterLabel>
+            <translation><!-- IRL - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITA - HO</masterLabel>
+            <translation><!-- ITA - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAR - HO</masterLabel>
+            <translation><!-- MAR - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NLD - HO</masterLabel>
+            <translation><!-- NLD - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POL - HO</masterLabel>
+            <translation><!-- POL - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRT - HO</masterLabel>
+            <translation><!-- PRT - HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RPT - HO</masterLabel>
+            <translation><!-- RPT - HO --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

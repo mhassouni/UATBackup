@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- default --></label>
+        <name>sortablegrid__default</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contact Layout - B2C</layout>
+        <sections>
+            <label><!-- Adresse de Facturation --></label>
+            <section>Adresse de Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Adresse de Livraison --></label>
+            <section>Adresse de Livraison</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Fonction --></label>
+            <section>Fonction</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout - Chauffeur</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout - Commercial</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Fonction --></label>
+            <section>Fonction</section>
+        </sections>
+        <sections>
+            <label><!-- Influence --></label>
+            <section>Influence</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Informations personnelles --></label>
+            <section>Informations personnelles</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout - Fournisseur</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout - Personnel PF</layout>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout - Responsable de parcs</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Modifier le Contact Chauffeur --></label>
+        <name>Modifier_le_Contact_Chauffeur</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvel Événement --></label>
+        <name>Nouvel_evenement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle Tâche --></label>
+        <name>Nouvelle_Tache</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Contact - Chauffeur --></label>
+        <name>Contact_Chauffeur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact - Commercial --></label>
+        <name>Contact_Commercial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact - Personnel PF --></label>
+        <name>Contact_Personnel_PF</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact - Responsable de parcs --></label>
+        <name>Contact_Responsable_de_parcs</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Contact B2C --></description>
+        <label><!-- Particulier (B2C) --></label>
+        <name>Particulier_B2C</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Lorsqu&apos;un contact particulier est créé, sa fonction doit être égale à &quot;particulier&quot; --></errorMessage>
+        <name>VR_Contact_B2CFunction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Un contact créé sur un compte de type particulier doit également être particulier --></errorMessage>
+        <name>VR_Contact_B2Conly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le champ Prénom doit être renseigné --></errorMessage>
+        <name>VR_Contact_Commercial_FirstNameRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le prénom est obligatoire --></errorMessage>
+        <name>VR_FirstNameRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le numéro de téléphone doit être composé de moins de 30 chiffres. --></errorMessage>
+        <name>VR_MobilePhoneLength</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Synoptic_View --></label>
+        <name>Synoptic__Synoptic_View</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Check --></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Merge --></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey --></label>
+        <name>qualtrics__Send_Qualtrics_Survey</name>
+    </webLinks>
+</CustomObjectTranslation>

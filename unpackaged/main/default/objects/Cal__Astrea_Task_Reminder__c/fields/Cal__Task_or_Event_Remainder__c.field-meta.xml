@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cal__Task_or_Event_Remainder__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Task or Event Reminder</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Task Reminder</fullName>
+                <default>false</default>
+                <label>Task Reminder</label>
+            </value>
+            <value>
+                <fullName>Event Reminder</fullName>
+                <default>false</default>
+                <label>Event Reminder</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

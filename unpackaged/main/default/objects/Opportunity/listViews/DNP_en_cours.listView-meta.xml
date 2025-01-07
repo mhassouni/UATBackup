@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNP_en_cours</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>DNP_Date_Soumission__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>En attente</value>
+    </filters>
+    <label>Mes DNP en cours</label>
+</ListView>

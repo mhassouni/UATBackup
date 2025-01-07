@@ -1,0 +1,157 @@
+<apex:page controller="Synoptic.SynopticConf" title="{!$Label.Synoptic__SynopticView_Conf_Title}">
+    <apex:includeScript value="{!URLFOR($Resource.Synoptic__Synoptic_Resources,'Synoptic_Conf.js')}"/>
+    <apex:sectionheader title="{!$Label.Synoptic__SynopticView_Title}" subtitle="{!$Label.Synoptic__SynopticView_Conf_SubTitle}"/>
+	<apex:pagemessages />
+    <apex:form id="myForm">
+    	<apex:inputHidden id="sAccountFieldsSelected" value="{!sAccountFieldsSelected}"/>
+    	<apex:inputHidden id="sContactFieldsSelected" value="{!sContactFieldsSelected}"/>
+        <p/>
+        <apex:pageblock title="{!$Label.Synoptic__SynopticView_Conf_Info}">
+			<apex:pageBlockButtons >
+		        <apex:commandButton value="{!$Label.Synoptic__SynopticView_Conf_Save}" action="{!confirm}"/>
+		    </apex:pageBlockButtons> 
+		    <apex:pageBlockSection title="{!$Label.Synoptic__SynopticView_Conf_AccountFields}" collapsible="false"/>
+			<table border="0">
+			<tr>
+				<td align="center">
+					<div><b>{!$Label.SynopticView_Conf_Available}</b></div>
+					<select id="accountFields" size="15" multiple="multiple">
+						<option value="###Standard###">---------- {!$Label.SynopticView_Conf_StdFields} ----------</option>
+						<apex:repeat var="oField" value="{!listStdAccountFields}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>
+						<option value="###Custom###">---------- {!$Label.Synoptic__SynopticView_Conf_CstFields} ----------</option>
+						<apex:repeat var="oField" value="{!listCstAccountFields}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>
+						<option value="###Removed###">---------- {!$Label.SynopticView_Conf_RemovedFields} ----------</option>
+					</select>	
+				</td>
+				<td align="center">
+				    <br/><br/><br/><br/><br/>
+					<div>Add</div>
+					<div>
+						<a href="javascript:moveOptions(document.getElementById('accountFields'), document.getElementById('accountFieldsSelected'));">
+							<img src="/s.gif" alt="Add"  class="rightArrowIcon" title="{!$Label.SynopticView_Conf_Add}"/>
+						</a>
+					</div>
+					<div>
+						<a href="javascript:moveOptions(document.getElementById('accountFieldsSelected'), document.getElementById('accountFields'));">
+							<img src="/s.gif" alt="Remove"  class="leftArrowIcon" title="{!$Label.SynopticView_Conf_Remove}"/>
+						</a>
+					</div>
+					<div>Remove</div>
+				</td>
+				<td align="center">
+					<div><b>{!$Label.SynopticView_Conf_Selected}</b></div>
+					<select id="accountFieldsSelected" size="15" multiple="multiple">
+						<option value="###Selected###">---------- {!$Label.SynopticView_Conf_SelectedFields} ----------</option>
+						<apex:repeat var="oField" value="{!listAccountFieldsSelected}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>					
+					</select>						     
+				</td>
+				<td align="center">
+					<br/><br/><br/><br/><br/>
+					<div>Up</div>
+					<div>
+						<a href="javascript:moveUpDown(document.getElementById('accountFieldsSelected'), -1);">
+							<img src="/s.gif" alt="Up" class="upArrowIcon" title="{!$Label.SynopticView_Conf_Up}"/>
+						</a>
+					</div>
+					<div>
+						<a href="javascript:moveUpDown(document.getElementById('accountFieldsSelected'), 1);">
+							<img src="/s.gif" alt="Down" class="downArrowIcon" title="{!$Label.SynopticView_Conf_Down}"/>
+						</a>
+					</div>
+					<div>Down</div>
+				</td>
+			</tr>
+			</table>   
+			<apex:pageBlockSection title="{!$Label.Synoptic__SynopticView_Conf_ContactFields}" collapsible="false"/>
+			<table border="0">
+			<tr>
+				<td align="center">
+					<div><b>{!$Label.SynopticView_Conf_Available}</b></div>
+					<select id="contactFields" size="15" multiple="multiple">
+						<option value="###Standard###">---------- {!$Label.SynopticView_Conf_StdFields} ----------</option>
+						<apex:repeat var="oField" value="{!listStdContactFields}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>
+						<option value="###Custom###">---------- {!$Label.Synoptic__SynopticView_Conf_CstFields} ----------</option>
+						<apex:repeat var="oField" value="{!listCstContactFields}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>
+						<option value="###Removed###">---------- {!$Label.SynopticView_Conf_RemovedFields} ----------</option>
+					</select>	
+				</td>
+				<td align="center">
+				    <br/><br/><br/><br/><br/>
+					<div>Add</div>
+					<div>
+						<a href="javascript:moveOptions(document.getElementById('contactFields'), document.getElementById('contactFieldsSelected'));">
+							<img src="/s.gif" alt="Add"  class="rightArrowIcon" title="{!$Label.SynopticView_Conf_Add}"/>
+						</a>
+					</div>
+					<div>
+						<a href="javascript:moveOptions(document.getElementById('contactFieldsSelected'), document.getElementById('contactFields'));">
+							<img src="/s.gif" alt="Remove"  class="leftArrowIcon" title="{!$Label.SynopticView_Conf_Remove}"/>
+						</a>
+					</div>
+					<div>Remove</div>
+				</td>
+				<td align="center">
+					<div><b>{!$Label.SynopticView_Conf_Selected}</b></div>
+					<select id="contactFieldsSelected" size="15" multiple="multiple">
+						<option value="###Selected###">---------- {!$Label.SynopticView_Conf_SelectedFields} ----------</option>
+						<apex:repeat var="oField" value="{!listContactFieldsSelected}">
+							<option value="{!oField.sName}">{!oField.sLabel}</option>
+						</apex:repeat>						
+					</select>						     
+				</td>
+				<td align="center">
+					<br/><br/><br/><br/><br/>
+					<div>Up</div>
+					<div>
+						<a href="javascript:moveUpDown(document.getElementById('contactFieldsSelected'), -1);">
+							<img src="/s.gif" alt="Up" class="upArrowIcon" title="{!$Label.SynopticView_Conf_Up}"/>
+						</a>
+					</div>
+					<div>
+						<a href="javascript:moveUpDown(document.getElementById('contactFieldsSelected'), 1);">
+							<img src="/s.gif" alt="Down" class="downArrowIcon" title="{!$Label.SynopticView_Conf_Down}"/>
+						</a>
+					</div>
+					<div>Down</div>
+				</td>
+			</tr>
+			</table>			 	
+        </apex:pageblock>
+    </apex:form>
+
+	<script language="JavaScript" type="text/javascript">
+	function updateFieldsSelected(theSel){
+  		var selLength = theSel.length;
+   		var i;
+   		   		
+   		if(theSel == document.getElementById('accountFieldsSelected')){
+   			document.getElementById('{!$Component.myForm.sAccountFieldsSelected}').value='';
+   		}
+   		else{
+   			document.getElementById('{!$Component.myForm.sContactFieldsSelected}').value='';
+   		}
+  
+  		for(i=1; i<=selLength-1; i++){
+  			if(theSel == document.getElementById('accountFieldsSelected')){
+    			document.getElementById('{!$Component.myForm.sAccountFieldsSelected}').value += '###' + theSel.options[i].value;
+    		}
+    		else{ 
+   				document.getElementById('{!$Component.myForm.sContactFieldsSelected}').value += '###' + theSel.options[i].value;		
+  			}
+  		}
+  		//alert(document.getElementById('{!$Component.myForm.sAccountFieldsSelected}').value);
+  		//alert(document.getElementById('{!$Component.myForm.sContactFieldsSelected}').value);
+  		
+	}
+	</script>
+</apex:page>

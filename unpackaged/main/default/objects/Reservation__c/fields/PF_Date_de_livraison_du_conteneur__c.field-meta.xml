@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Date_de_livraison_du_conteneur__c</fullName>
+    <inlineHelpText>Ce champ est à renseigner pour indiquer la date sur laquelle le conteneur sera livré chez le client</inlineHelpText>
+    <label>Date de facturation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

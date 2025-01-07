@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Map_it</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Map it</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/maps__maps?recordId={!Account.Id}&amp;baseObjectId=a2o3X000001TC9cQAG&amp;tooltipField=Name&amp;tooltipField2=PaysRegionPF__c&amp;tooltipField3=TypeIdentifiantNational__c&amp;tooltipField4=IdentifiantNational__c&amp;tooltipField5=CotationPF__c&amp;tooltipField6=DateCotationPF__c&amp;tooltipField7=AgrementSFAC__c&amp;zoom=8&amp;color=%2366FF00</url>
+</WebLink>

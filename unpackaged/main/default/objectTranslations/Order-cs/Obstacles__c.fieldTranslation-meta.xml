@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Obstacles --></label>
+        <name>Obstacles__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Câbles électriques</masterLabel>
+            <translation><!-- Câbles électriques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grillage</masterLabel>
+            <translation><!-- Grillage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haie</masterLabel>
+            <translation><!-- Haie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mur</masterLabel>
+            <translation><!-- Mur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palissade</masterLabel>
+            <translation><!-- Palissade --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

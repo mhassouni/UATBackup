@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Famille --></label>
+        <name>Famille__c</name>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Container</masterLabel>
+            <translation><!-- Container --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipements Divers</masterLabel>
+            <translation><!-- Equipements Divers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble</masterLabel>
+            <translation><!-- Meuble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pièce détachée Carrosserie</masterLabel>
+            <translation><!-- Pièce détachée Carrosserie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pièce détachée Mécanique</masterLabel>
+            <translation><!-- Pièce détachée Mécanique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule</masterLabel>
+            <translation><!-- Véhicule --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Containers - Modèle Email Réservations Transport</name>
+    <relatedEntityType>Reservation__c</relatedEntityType>
+    <style>none</style>
+    <subject>Avis de Livraison -{{{Reservation__c.Nom_du_client__c}}} -</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

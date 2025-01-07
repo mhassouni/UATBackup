@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- AdditionalDiscountUnit --></label>
+        <name>AdditionalDiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation><!-- Percent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Override</masterLabel>
+            <translation><!-- Total Override --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Override</masterLabel>
+            <translation><!-- Unit Override --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

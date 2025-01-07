@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de transport --></label>
+        <name>Type_de_transport__c</name>
+        <picklistValues>
+            <masterLabel>Déplacement container client</masterLabel>
+            <translation><!-- Déplacement container client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echange technique</masterLabel>
+            <translation><!-- Echange technique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabrication</masterLabel>
+            <translation><!-- Fabrication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intersites</masterLabel>
+            <translation><!-- Intersites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Aller vers client</masterLabel>
+            <translation><!-- Transport Aller vers client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Amont</masterLabel>
+            <translation><!-- Transport Amont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Retour vers le dépôt</masterLabel>
+            <translation><!-- Transport Retour vers le dépôt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport divers</masterLabel>
+            <translation><!-- Transport divers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport inutile</masterLabel>
+            <translation><!-- Transport inutile --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

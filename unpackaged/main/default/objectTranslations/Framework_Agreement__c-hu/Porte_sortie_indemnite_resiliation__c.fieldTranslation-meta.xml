@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kijárati ajtó - befejezési kompenzáció</label>
+        <name>Porte_sortie_indemnite_resiliation__c</name>
+        <picklistValues>
+            <masterLabel>Dépôt de garantie non restitué</masterLabel>
+            <translation>Biztonsági kaució nem került vissza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nombre de mois de loyer</masterLabel>
+            <translation>A bérleti hónapok száma</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

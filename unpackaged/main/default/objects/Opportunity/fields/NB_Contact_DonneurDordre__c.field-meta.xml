@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NB_Contact_DonneurDordre__c</fullName>
+    <label>NB_Contact_DonneurDordre</label>
+    <summaryFilterItems>
+        <field>RoleContact__c.Role__c</field>
+        <operation>equals</operation>
+        <value>Donneur d&#39;ordre</value>
+    </summaryFilterItems>
+    <summaryForeignKey>RoleContact__c.Opportunite__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

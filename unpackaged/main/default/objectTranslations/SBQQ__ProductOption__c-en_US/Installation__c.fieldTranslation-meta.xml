@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Installation --></label>
+        <name>Installation__c</name>
+        <picklistValues>
+            <masterLabel>Installation au sol en extérieur</masterLabel>
+            <translation><!-- Installation au sol en extérieur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation en intérieur</masterLabel>
+            <translation><!-- Installation en intérieur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à quai réalisé par le client</masterLabel>
+            <translation><!-- Mise à quai réalisé par le client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à quai sur béquilles</masterLabel>
+            <translation><!-- Mise à quai sur béquilles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à quai sur gueuses</masterLabel>
+            <translation><!-- Mise à quai sur gueuses --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

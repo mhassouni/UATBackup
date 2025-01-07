@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Door_Types__c</fullName>
+    <label>Types de Portes</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Porte ouverture facile Int/Ext</fullName>
+                <default>false</default>
+                <label>Porte ouverture facile Int/Ext</label>
+            </value>
+            <value>
+                <fullName>Porte 1400 x 2200mm (1 Battant)</fullName>
+                <default>false</default>
+                <label>Porte 1400 x 2200mm (1 Battant)</label>
+            </value>
+            <value>
+                <fullName>Porte 2000 x 2200mm (2 Battants)</fullName>
+                <default>false</default>
+                <label>Porte 2000 x 2200mm (2 Battants)</label>
+            </value>
+            <value>
+                <fullName>Porte Coulissante 2000 x 2200mm</fullName>
+                <default>false</default>
+                <label>Porte Coulissante 2000 x 2200mm</label>
+            </value>
+            <value>
+                <fullName>Porte Sortie de Secours 950x2200mm</fullName>
+                <default>false</default>
+                <label>Porte Sortie de Secours 950x2200mm</label>
+            </value>
+            <value>
+                <fullName>Porte Sectionnelle 1900x2300mm</fullName>
+                <default>false</default>
+                <label>Porte Sectionnelle 1900x2300mm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

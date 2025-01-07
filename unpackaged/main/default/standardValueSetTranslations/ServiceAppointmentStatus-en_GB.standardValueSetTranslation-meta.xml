@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation>Canceled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aucun</masterLabel>
+        <translation>None</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours</masterLabel>
+        <translation>In progress</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expédié</masterLabel>
+        <translation>Sent</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Impossible de terminer</masterLabel>
+        <translation>Impossible to finish</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Planifié</masterLabel>
+        <translation>Scheduled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terminé</masterLabel>
+        <translation>Done</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

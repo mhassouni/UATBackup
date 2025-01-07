@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Parc (+ 5ans)</fullName>
+        <default>false</default>
+        <label>Parc (+ 5ans)</label>
+    </customValue>
+    <customValue>
+        <fullName>Neuf (- 5ans)</fullName>
+        <default>false</default>
+        <label>Neuf (- 5ans)</label>
+    </customValue>
+    <customValue>
+        <fullName>&lt; 5 ans</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>&lt; 5 ans</label>
+    </customValue>
+    <customValue>
+        <fullName>Parc</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parc</label>
+    </customValue>
+    <masterLabel>Caracteristiques</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

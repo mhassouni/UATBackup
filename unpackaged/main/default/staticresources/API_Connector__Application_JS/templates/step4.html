@@ -1,0 +1,1133 @@
+﻿<div ng-if="duplicateCheckAccount">
+    <form name="accountMapping" ng-if="leadMapFieldsFlag && leadFieldsFlag">
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-50">
+                            <div class="slds-truncate" title="Field">{{customLabel.Account_Fields}}</div>
+                        </th>
+                        <th scope="col" class="width-47">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Olbico_Account_Input_Fields}}
+                            </div>
+                        </th>
+                        <th class="width-3"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="rec in recordAccount track by $index">
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                                            ng-options="item.Name as item.Name for item in inputLeadFieldsOnWizard"
+                                            ng-change="myFunc(rec.name)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                                            ng-options="item.Name as item.Name for item in leadMapFields"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'Account')">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_neutral"
+                                    ng-click="CancelMapping('Account')">{{customLabel.Cancel}}</button>
+                                <button class="slds-button slds-button_brand"
+                                    ng-click="addNewRow('Account')">{{customLabel.Add_Row}}</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <div ng-if="!leadMapFieldsFlag || !leadFieldsFlag">
+        <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                style="width: 50%;">
+                <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+        </center>
+    </div>
+</div>
+
+<div ng-if="duplicateCheckContact">
+    <form name="accountMapping" ng-if="leadMapConFieldsFlag && leadFieldsFlag">
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="rec in recordContact track by $index">
+                        <td data-label="leadField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                                            ng-options="item.Name as item.Name for item in inputLeadFieldsOnWizard"
+                                            ng-change="myFunc(rec.name)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="inputField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                                            ng-options="item.Name as item.Name for item in leadMapConFields"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'Contact')">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_neutral"
+                                    ng-click="CancelMapping('Contact')">{{customLabel.Cancel}}</button>
+                                <button class="slds-button slds-button_brand"
+                                    ng-click="addNewRow('Contact')">{{customLabel.Add_Row}}</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <div ng-if="!leadMapConFieldsFlag || !leadFieldsFlag">
+        <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                style="width: 50%;">
+                <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+        </center>
+
+    </div>
+</div>
+
+<!--dutch chamber account-->
+<div ng-if="accountKvk">
+    <div add-row output_toolkit="Mapping_AccountKvk" customlabel="customLabel"
+        account_fields="inputAccountFieldsOnWizard" toolkit_fields="toolkitFields" outputflds_toolkit="kvkInputFields"
+        add-new-row="addNewRow('AccountKvk')" remove-row="removeRow(record,objType)"
+        cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)" obj-toolkit-enterprise="objToolkitEnterprise"
+        service="'AccountKvk'" ng-if="kvkAccInFieldsFlag && kvkAccOutFieldsFlag"></div>
+    <div ng-if="!kvkAccInFieldsFlag || !kvkAccOutFieldsFlag">
+        <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                style="width: 50%;">
+                <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+        </center>
+
+    </div>
+</div>
+
+<!--dutch chamber lead-->
+
+<div ng-if="leadKvk">
+    <div add-row output_toolkit="Mapping_LeadKvk" customlabel="customLabel" account_fields="inputLeadFieldsOnWizard"
+        toolkit_fields="toolkitFields" outputflds_toolkit="kvkLeadInputFields" add-new-row="addNewRow('LeadKvk')"
+        remove-row="removeRow(record,objType)" cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)"
+        obj-toolkit-enterprise="objToolkitEnterprise" service="'LeadKvk'"
+        ng-if="kvkLeadInFieldsFlag && kvkLeadOutFieldsFlag"></div>
+    <div ng-if="!kvkLeadInFieldsFlag || !kvkLeadOutFieldsFlag">
+        <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                style="width: 50%;">
+                <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+                <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+        </center>
+    </div>
+</div>
+
+<div ng-if="creditCheck">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col" class="width-50">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col" class="width-50">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objCredit.Duns"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objCredit.Duns)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input" ng-model="creditInputField.Name"
+                                readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="vatCheck">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objVat.Vat"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objVat.Vat)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-size_small">
+                            <input type="text" id="input-id-01" class="slds-input" ng-model="vatInputField.Name"
+                                readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="toolkitErpManagement">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objToolkitEnterprise.Duns"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objToolkitEnterprise.Duns)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="toolkitEntrMngInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="toolkitQuickCheck">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objToolkitQuickCheck.Duns"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objToolkitQuickCheck.Duns)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="toolkitQckChkInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="iwsServiceAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIwsService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIwsService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input" ng-model="iwsServiceInputField.Name"
+                                readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Start IWS Advanced Address Information Service-->
+<div ng-if="iwsAdvancedAddressServiceAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIwsAdvancedAddressService.Siret"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIwsAdvancedAddressService.Siret)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsAdvancedAddressServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End IWS Advanced Address Information Service-->
+
+<!--Start IWS Bankruptcy Information Service-->
+<div ng-if="iwsBankruptcyInfoServiceAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIwsBankruptcyInfoService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIwsBankruptcyInfoService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsBankruptcyInfoServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End IWS Bankruptcy Information Service-->
+<div ng-if="leadGlobal">
+    <form name="leadGlobalMapping">
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="rec in recordLeadGlobal track by $index">
+                        <td data-label="leadField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                                            ng-options="item.Name as item.Name for item in inputLeadFieldsOnWizard"
+                                            ng-change="myFunc(rec.name)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="inputField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                                            ng-options="item.value as item.name for item in leadGlobalMapInputFields"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_icon"
+                                    ng-click="removeRow(rec,'input_leadGlobal')">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_neutral"
+                                    ng-click="CancelMapping('input_leadGlobal')">{{customLabel.Cancel}}</button>
+                                <button class="slds-button slds-button_brand"
+                                    ng-click="addNewRow('input_leadGlobal')">{{customLabel.Add_Row}}</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+</div>
+<!--start Global Decision Maker Service-->
+<div ng-if="gdmServiceAccount">
+    <form name="accountGDMMapping">
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="leadField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <!-- objDUNSValue.name -->
+                                    <div class="slds-select_container">
+
+                                        <select ng-required class="slds-select" ng-model="objGDMService.Duns"
+                                            ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                            ng-change="myFunc(objGDMService.Duns)">
+                                            <option value="" ng-if="false"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="inputField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" class="slds-input" ng-model="customLabel.D_B_D_U_N_S"
+                                            readonly />
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr ng-repeat="rec in input_GDMAccountService track by $index">
+                        <td data-label="accountField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                                            ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                            ng-change="myFunc(rec.name)">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="inputField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" ng-model="rec.value"
+                                            ng-options="item.name as item.name for item in gdmServiceInputMappingFields"
+                                            ng-change="myFunc(rec.name)">
+                                            <option value="" ng-if="false"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </td>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_icon"
+                                    ng-click="removeRow(rec,'input_accountGDM')">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_neutral"
+                                    ng-click="CancelMapping('input_accountGDM')">{{customLabel.Cancel}}</button>
+                                <button class="slds-button slds-button_brand"
+                                    ng-click="addNewRow('input_accountGDM')">{{customLabel.Add_Row}}</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+</div>
+<!---end-->
+
+<!--Start Indued Service-->
+<div ng-if="induedService">
+    <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Portfolio Step 1 and indueD Due Diligences Step 2
+    </h3>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <!-- objDUNSValue.name -->
+                            <div class="slds-select_container">
+
+                                <select ng-required class="slds-select" ng-model="objInduedService.duns"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objInduedService.duns)">
+                                    <option value="" ng-if="false"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <input type="text" class="slds-input" ng-model="customLabel.Duns" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <!-- objDUNSValue.name -->
+                            <div class="slds-select_container">
+
+                                <select ng-required class="slds-select" ng-model="objInduedService.tags"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objInduedService.tags)">
+                                    <option value="" ng-if="false"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <input type="text" class="slds-input" ng-model="customLabel.tags" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    </br>
+    </br>
+    <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Due Diligences DuedId Step 3 and indueD Reports Step
+        4
+    </h3>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <div ng-repeat="(keyword, list) in inputAccountFieldsOnWizard ">
+                                    <div ng-repeat="names in list">
+                                        <input type="text" class="slds-input"
+                                            ng-if="names == 'api_connector__indued_duediligence_id__c'" ng-model="names"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <input type="text" class="slds-input" ng-model="customLabel.IndueD_DueDiligence_ID"
+                                    readonly />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    </br>
+    </br>
+    <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Reports Id Step 5</h3>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <div ng-repeat="(keyword, list) in inputAccountFieldsOnWizard ">
+                                    <div ng-repeat="names in list">
+                                        <input type="text" class="slds-input"
+                                            ng-if="names == 'api_connector__indued_reports_id__c'" ng-model="names"
+                                            readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__control">
+                                <input type="text" class="slds-input" ng-model="customLabel.IndueD_Reports_ID"
+                                    readonly />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+<!---end-->
+
+<div ng-if="accountGlobalMatch">
+    <form name="accountGlobalMapping">
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="rec in recordAccountGlobal track by $index">
+                        <td data-label="leadField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                                            ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                            ng-change="myFunc(rec.name)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="inputField" class="width-50">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                                            ng-options="item.value as item.name for item in leadGlobalMapInputFields"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_icon"
+                                    ng-click="removeRow(rec,'input_AccountGlobal')">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-form-element__control">
+                                <button class="slds-button slds-button_neutral"
+                                    ng-click="CancelMapping('input_AccountGlobal')">{{customLabel.Cancel}}</button>
+                                <button class="slds-button slds-button_brand"
+                                    ng-click="addNewRow('input_AccountGlobal')">{{customLabel.Add_Row}}</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+</div>
+<div ng-if="accountTradeCredit">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col" class="width-50">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col" class="width-50">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objAccountTradeCredit.dunsNumber"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objAccountTradeCredit.dunsNumber)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="accountTradeCreditInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- IWS Paydex Info Service -->
+<div ng-if="isIWSPaydexInfoServiceForAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIWSPaydexInfoService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIWSPaydexInfoService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsPaydexInfoServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End Paydex Info Service -->
+
+<!-- Start Risk Datablock Service -->
+<div ng-if="riskDatablocksServiceAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objRiskDatablockService.dunsNumber"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objRiskDatablockService.dunsNumber)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="riskDatablockServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End Risk Data block Service -->
+
+<!-- Start of Company Report Service-->
+<div ng-if="companyReportServiceAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objCompanyReportService.dunsNumber"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objCompanyReportService.dunsNumber)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="companyReportServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End of COmpany Report Service-->
+
+<!-- IWS Balance Info Service -->
+<div ng-if="isIWSBalanceSheetServiceForAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIWSBalanceSheetService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIWSBalanceSheetService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsBalanceSheetServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--End Paydex Info Service -->
+
+<div ng-if="isIWSStdAddInfoServiceForAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIWSStdAddInfoService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIWSStdAddInfoService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsStdAddInfoServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="isIWSRiskInfoServiceForAccount">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="accountField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="inputField">{{customLabel.Olbico_Contact_Input_Fields}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="leadField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="select-01" ng-model="objIWSRiskInfoService.Siren"
+                                    ng-options="item.Name as item.Name for item in inputAccountFieldsOnWizard"
+                                    ng-change="myFunc(objIWSRiskInfoService.Siren)"></select>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-label="inputField" class="width-50">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <input type="text" id="input-id-01" class="slds-input"
+                                ng-model="iwsRiskInfoServiceInputField.Name" readonly />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

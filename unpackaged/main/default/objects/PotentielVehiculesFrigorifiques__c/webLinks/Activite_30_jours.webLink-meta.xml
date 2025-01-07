@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activite_30_jours</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Activité &gt; 30 jours</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://emea.salesforce.com/00O/e?retURL=%2F00O&amp;t=title2&amp;sort=DUE_DATE&amp;scope=user&amp;details=yes&amp;c=DD&amp;c=AO&amp;c=AN&amp;c=A1SA&amp;c=TY&amp;c=RT&amp;c=UD&amp;colDt_c=DUE_DATE&amp;colDt_e=01%2F05%2F2015&amp;edit=yes&amp;rt=1&amp;eirb=1</url>
+</WebLink>

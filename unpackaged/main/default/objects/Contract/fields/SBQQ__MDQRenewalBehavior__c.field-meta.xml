@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__MDQRenewalBehavior__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines how segmented subscription products will appear on renewal quotes. De-Segmented will renew as a standard quote line with the last segment’s data.</description>
+    <inlineHelpText>Définit l&#39;affichage des produits d&#39;abonnement segmentés dans les devis de renouvellement. Les produits désegmentés sont renouvelés en tant que ligne de devis standard avec les données du dernier segment.</inlineHelpText>
+    <label>MDQ Renewal Behavior</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>De-segmented</fullName>
+                <default>false</default>
+                <label>De-segmented</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

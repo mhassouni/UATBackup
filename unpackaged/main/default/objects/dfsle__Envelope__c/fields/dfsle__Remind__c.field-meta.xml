@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dfsle__Remind__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Should a reminder be sent periodically to recipients
+			who have not yet completed the envelope?</description>
+    <inlineHelpText>Cochez cette case pour qu’un rappel par e‑mail soit envoyé aux destinataires de l’enveloppe n’ayant pas encore terminé leur opération.
+		</inlineHelpText>
+    <label>Remind signers via email</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

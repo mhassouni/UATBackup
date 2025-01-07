@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lieu_Intervention__c</fullName>
+    <label>Lieu d’intervention</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Atelier</fullName>
+                <default>false</default>
+                <label>Atelier</label>
+            </value>
+            <value>
+                <fullName>Site client</fullName>
+                <default>false</default>
+                <label>Site client</label>
+            </value>
+            <value>
+                <fullName>Autre adresse</fullName>
+                <default>false</default>
+                <label>Autre adresse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

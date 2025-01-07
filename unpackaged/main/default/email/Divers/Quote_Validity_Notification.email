@@ -1,0 +1,10 @@
+<messaging:emailTemplate subject="Votre devis arrive bientôt à expiration" recipientType="User" relatedToType="Quote__c">
+<messaging:plainTextEmailBody >
+{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_01}
+{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_02}{!relatedTo.Name}-{!relatedTo.N_version_du_devis__c}{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_03} {!relatedTo.Opportunity__r.Account.name}{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_04} {!relatedTo.Statut__c}.
+{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_05} {!IF(ISNULL(relatedTo.Date_de_validite_du_devis__c), ' ', TEXT(relatedTo.Date_de_validite_du_devis__c - TODAY()))} {!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_05_02} {! TEXT(DAY(relatedTo.Date_de_validite_du_devis__c)) + '/' + TEXT(MONTH(relatedTo.Date_de_validite_du_devis__c)) + '/' + TEXT(YEAR(relatedTo.Date_de_validite_du_devis__c)) }.
+{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_06}
+Lien: {!LEFT($Api.Partner_Server_URL_290, FIND('/services', $Api.Partner_Server_URL_290))}{!relatedTo.Id}
+{!$Label.FlowVar_FlowScheduled_QuoteCPQ_MailNotification_Body_07}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

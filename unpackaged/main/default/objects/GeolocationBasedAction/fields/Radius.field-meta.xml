@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Radius</fullName>
+    <inlineHelpText>Saisissez une distance 100 à 5000 mètres. L’action est déclenchée lorsque l’agent mobile entre dans le périmètre de l’enregistrement associé.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tout</fullName>
+    <columns>SETUP_OWNER_NAME</columns>
+    <columns>SETUP_TYPE</columns>
+    <columns>BypassAllTriggers__c</columns>
+    <columns>BypassTriggers__c</columns>
+    <columns>BypassValidationRules__c</columns>
+    <columns>BypassWorkflowRules__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+    <language>fr</language>
+</ListView>

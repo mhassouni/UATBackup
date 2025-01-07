@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Assembly Quote --></label>
+        <name>AssemblyFS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Hors standard Quote --></label>
+        <name>Hors_standard_Quote</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Standard Quote --></label>
+        <name>Standard_Quote</name>
+    </fieldSets>
+    <layouts>
+        <layout>Assembly Quote - Read Only	 Layout</layout>
+        <sections>
+            <label><!-- Adresse de facturation --></label>
+            <section>Adresse de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Technique --></label>
+            <section>Information Technique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Assemblage --></label>
+            <section>Informations Assemblage</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Générales --></label>
+            <section>Informations Générales</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse commerciale --></label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assembly Quote Layout</layout>
+        <sections>
+            <label><!-- Adresse de facturation --></label>
+            <section>Adresse de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Technique --></label>
+            <section>Information Technique</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Assemblage --></label>
+            <section>Informations Assemblage</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Générales --></label>
+            <section>Informations Générales</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse commerciale --></label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Standard Quote - Read Only Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Demande d&apos;étude --></label>
+            <section>Demande d&#39;étude</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Générales --></label>
+            <section>Informations Générales</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Standard Quote Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Demande d&apos;étude --></label>
+            <section>Demande d&#39;étude</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Générales --></label>
+            <section>Informations Générales</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard Quote - Read Only Layout</layout>
+        <sections>
+            <label><!-- Adresse de facturation --></label>
+            <section>Adresse de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse commerciale --></label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard Quote Layout</layout>
+        <sections>
+            <label><!-- Adresse de facturation --></label>
+            <section>Adresse de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Approbation --></label>
+            <section>Approbation</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse commerciale --></label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>見積番号</nameFieldLabel>
+    <quickActions>
+        <label><!-- Retour Edition Devis --></label>
+        <name>Back_to_in_progress</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Demande hors standard --></label>
+        <name>Demande_Etude</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Finaliser Devis --></label>
+        <name>Finaliser_Devis</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle fiche de renseignement --></label>
+        <name>Generate_Information_Sheet_Assembly</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Générer contrats --></label>
+        <name>Generate_contracts</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Générer Devis --></label>
+        <name>Generate_devis</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mail --></label>
+        <name>Mail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Non Standard Information Sheet --></label>
+        <name>New_Information_Sheet_STMT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Order --></label>
+        <name>SBQQ__CreateOrderLightning</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mise à jour Conditions Financières --></label>
+        <name>UpdateFinancialConditionMD</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mise à jour Conditions Financières --></label>
+        <name>Update_FinancialCondition_CD</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mise à jour Conditions Financières --></label>
+        <name>Update_FinancialCondition_LD</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Assembly Quote --></label>
+        <name>Assembly_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assembly Quote - Read Only --></label>
+        <name>Assembly_Quote_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Standard Quote --></label>
+        <name>Non_Standard_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Standard Quote - Read Only --></label>
+        <name>Non_Standard_Quote_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Quote --></label>
+        <name>Standard_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Quote - Read Only --></label>
+        <name>Standard_Quote_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vehicule --></label>
+        <name>Vehicle</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Your quote is currently under calculation. Please try in a few seconds. --></errorMessage>
+        <name>Block_change_status_during_recalculation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ce devis est &quot;Courte Durée&quot;. Vous n&apos;êtes pas autorisé à modifier les valeurs pour la caution ou le dépot de garantie. --></errorMessage>
+        <name>No_Caution_dpt_de_garantie_if_CD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Les prix ont été définis, l&apos;édition du devis est désormais bloquée. Vous ne pouvez plus modifier les options et les quantités. --></errorMessage>
+        <name>No_Option_Deleted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create more than one Information Sheet for this Quote. --></errorMessage>
+        <name>Prevent_Creation_of_Several_IS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Les groupes de ligne de devis ne peuvent pas avoir la même date de fin.
+Si c&apos;est le cas, merci de créer un devis pour chaque groupe de ligne de devis.
+Cela permettra la création d&apos;un contrat unique pour chaque groupe. --></errorMessage>
+        <name>QLG_Similar_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The subscription term must be a positive number. --></errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Votre devis nécessite une approbation. Merci de cliquer sur le bouton &quot;Soumettre pour approbation&quot; --></errorMessage>
+        <name>VR_Approval_Process</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Les champs &quot; Condition contractuelle&quot; sont obligatoires --></errorMessage>
+        <name>VR_ConditionsContractuelle_NotBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous devez renseigner le champ &quot;SI autres précisez&quot; quand vous renseignez &quot;Autres&quot; dans &quot;Mois de caution&quot; --></errorMessage>
+        <name>VR_MoisCaution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cliquer sur le bouton “Finaliser Devis” pour créer le contrat. --></errorMessage>
+        <name>VR_StatusSigned_FinaliserDevis</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;êtes pas autorisé à passer ce devis à &quot;En attente de remise&quot; ou &quot;Remise Accordée&quot; manuellement. --></errorMessage>
+        <name>VR_Status_En_Attente_de_Remise</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Ajout_Mod_Produit --></label>
+        <name>Ajout_Mod_Produit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca273G000000Yrt0QAC --></label>
+        <name>Deca273G000000Yrt0QAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca277T000001LyiiQAC --></label>
+        <name>Deca277T000001LyiiQAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deca277T000001LyijQAC --></label>
+        <name>Deca277T000001LyijQAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Demande_de_chiffrage --></label>
+        <name>Demande_de_chiffrage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T0000004iAyUAI --></label>
+        <name>Generatea2D7T0000004iAyUAI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T000000TN6tUAG --></label>
+        <name>Generatea2D7T000000TN6tUAG</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T000000TN86UAG --></label>
+        <name>Generatea2D7T000000TN86UAG</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T000000TN8BUAW --></label>
+        <name>Generatea2D7T000000TN8BUAW</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000PkYAUA0 --></label>
+        <name>Generatea2E3N000000PkYAUA0</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000XfjlUAC --></label>
+        <name>Generatea2E3N000000XfjlUAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000Xfk5UAC --></label>
+        <name>Generatea2E3N000000Xfk5UAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000XgfKUAS --></label>
+        <name>Generatea2E3N000000XgfKUAS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000XggmUAC --></label>
+        <name>Generatea2E3N000000XggmUAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000Ywh6UAC --></label>
+        <name>Generatea2E3N000000Ywh6UAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea3a7Z000000balRQAQ --></label>
+        <name>Generatea3a7Z000000balRQAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea3a7Z000000bdeIQAQ --></label>
+        <name>Generatea3a7Z000000bdeIQAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea3a7Z000000bdeNQAQ --></label>
+        <name>Generatea3a7Z000000bdeNQAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea3a7Z000000bepfQAA --></label>
+        <name>Generatea3a7Z000000bepfQAA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CalculateQuote --></label>
+        <name>SBQQ__CalculateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

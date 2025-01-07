@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aggregated_Caution_Months__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(
+				Type_de_location__c,
+				&quot;Moyenne Durée&quot;,
+				IF( 
+				text(Dpt_garantie__c) = &quot;Dispensé&quot;,
+				0,
+				IF(
+								text(Dpt_garantie__c) =&quot;Autres&quot;,
+								Si_autres_precisez__c,
+								Value(text(Dpt_garantie__c))
+								)
+				),
+				&quot;Longue Durée&quot;,
+				IF( 
+				text(Mois_caution__c) = &quot;Dispensé&quot;,
+				0,
+				IF(
+								text(Mois_caution__c) =&#39;Autres&#39;,
+								Si_autres_precisez__c,
+								Value(text(Mois_caution__c))
+								)
+				),
+				0
+				)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mois de caution à facturer</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

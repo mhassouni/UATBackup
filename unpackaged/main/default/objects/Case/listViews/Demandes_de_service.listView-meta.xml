@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_de_service</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Debut_disponibilite_vehicule__c</columns>
+    <columns>Organes_controler__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Nom_Commercial_Client__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Demande_de_service</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouvelle,En_Cours,Terminee</value>
+    </filters>
+    <label>Demandes de service de mes agences</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

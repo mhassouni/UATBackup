@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_de_Services_Termin_es</fullName>
+    <columns>Name</columns>
+    <columns>RecordType</columns>
+    <columns>CreatedDate</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Organe_controler__c</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <columns>Account</columns>
+    <columns>Asset</columns>
+    <columns>Origine_de_la_requete__c</columns>
+    <columns>Status</columns>
+    <columns>Travaux_demandes__c</columns>
+    <columns>Precisions_Long__c</columns>
+    <columns>Lieu_Intervention__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Duree_Intervention__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Demande_de_service,WorkOrder.Ordre_Reparation</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Terminé,Annulé,Non abouti</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>025-DD Services - Terminées mon Agence</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

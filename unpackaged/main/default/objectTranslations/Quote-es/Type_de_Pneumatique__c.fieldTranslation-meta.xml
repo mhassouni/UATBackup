@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo de neumático</label>
+        <name>Type_de_Pneumatique__c</name>
+        <picklistValues>
+            <masterLabel>Pneu 4 S</masterLabel>
+            <translation>Neumático 4S</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneu hiver</masterLabel>
+            <translation>Neumático invierno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneu été</masterLabel>
+            <translation>Neumático verano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard PL - MS</masterLabel>
+            <translation><!-- Standard PL - MS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

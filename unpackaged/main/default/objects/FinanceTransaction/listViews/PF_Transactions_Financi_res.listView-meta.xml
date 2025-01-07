@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Transactions_Financi_res</fullName>
+    <columns>Name</columns>
+    <columns>Posted_Invoice_Number__c</columns>
+    <columns>Account</columns>
+    <columns>Transaction_Type__c</columns>
+    <columns>Line_Number__c</columns>
+    <columns>Type_Transaction__c</columns>
+    <columns>blng__FinancePeriod__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Etat_Lettrage__c</columns>
+    <columns>Line_Name__c</columns>
+    <columns>Subtotal</columns>
+    <columns>TotalAmountWithTax</columns>
+    <columns>FinanceSystemIntegrationStatus</columns>
+    <columns>FinanceSystemTransactionNumber</columns>
+    <filterScope>Everything</filterScope>
+    <label>PF - Transactions Financières</label>
+</ListView>

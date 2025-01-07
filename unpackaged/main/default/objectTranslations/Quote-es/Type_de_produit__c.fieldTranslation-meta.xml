@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo de producto</label>
+        <name>Type_de_produit__c</name>
+        <picklistValues>
+            <masterLabel>Dry vehicle</masterLabel>
+            <translation><!-- Dry vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refrigerated vehicle</masterLabel>
+            <translation><!-- Refrigerated vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veicolo frigo</masterLabel>
+            <translation><!-- Veicolo frigo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Frigorifiques</masterLabel>
+            <translation>Vehículo frigorífico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Secs</masterLabel>
+            <translation>Vehículo seco</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

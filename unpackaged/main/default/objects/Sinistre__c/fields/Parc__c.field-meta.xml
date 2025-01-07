@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parc__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Parc</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Asset.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parc</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Sinistres</relationshipLabel>
+    <relationshipName>Sinistres</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

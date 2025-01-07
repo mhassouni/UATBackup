@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recherche</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Nom_option__c</columns>
+    <columns>Non_realisable__c</columns>
+    <columns>Devis__c</columns>
+    <columns>PAT_Option__c</columns>
+    <columns>Charge_utile__c</columns>
+    <columns>Prix_unitaire__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Nom_option__c</field>
+        <operation>contains</operation>
+        <value>attelage</value>
+    </filters>
+    <filters>
+        <field>Devis__c</field>
+        <operation>contains</operation>
+        <value>35c14</value>
+    </filters>
+    <label>Recherche</label>
+</ListView>

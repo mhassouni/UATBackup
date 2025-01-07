@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR58_Valider_le_compte_a_la_creation</fullName>
+    <active>false</active>
+    <description>interdire de valider le compte à la création pour certains comptes.</description>
+    <errorConditionFormula>AND
+(
+ISNEW()
+,
+$Profile.Id != LEFT($Label.USR_ProfileId_AdministrateurSysteme,15)
+,
+$Profile.Id != LEFT($Label.USR_ProfileId_PFAdministrateurSysteme,15)
+,
+$Profile.Id != LEFT($Label.USR_ProfileId_PFCreditManagement,15)
+,
+RecordType.Id &lt;&gt; &#39;01220000000K3oc&#39;
+,
+OR
+(
+TEXT(Statut__c) =  $Label.CPT_Statut_Valide ,
+TEXT(Statut__c) =  $Label.CPT_Statut_ValideCM 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas choisir Validé ou Validé CM.</errorMessage>
+</ValidationRule>

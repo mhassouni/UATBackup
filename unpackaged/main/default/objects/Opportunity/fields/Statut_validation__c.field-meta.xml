@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_validation__c</fullName>
+    <label>Statut validation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En cours validation Commerce</fullName>
+                <default>false</default>
+                <label>En cours validation Commerce</label>
+            </value>
+            <value>
+                <fullName>En cours validation Finance</fullName>
+                <default>false</default>
+                <label>En cours validation Finance</label>
+            </value>
+            <value>
+                <fullName>Refusé Commerce</fullName>
+                <default>false</default>
+                <label>Refusé Commerce</label>
+            </value>
+            <value>
+                <fullName>Refusé Finance</fullName>
+                <default>false</default>
+                <label>Refusé Finance</label>
+            </value>
+            <value>
+                <fullName>Validée</fullName>
+                <default>false</default>
+                <label>Validée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

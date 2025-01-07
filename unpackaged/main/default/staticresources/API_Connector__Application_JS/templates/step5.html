@@ -1,0 +1,3484 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+  <style>
+    .slds-input {
+      padding-left: .5rem !important;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="detailForm">
+    <div class="slds-scope slds-form slds-form_stacked">
+      <div ng-if="accountTradeCredit">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.Trade_Credit_Risk_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="accountTradeCreditDateStatusRecord.StatusDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="accountTradeCreditDateStatusRecord.Status = getDataTypeFilteredLst(accountTradeCreditDateStatusRecord.StatusDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountTradeCreditDateStatusRecord.Status"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accountTradeCreditDateStatusRecord.StatusDataType,accountFields)"
+                        ng-change="myFunc(accountTradeCreditDateStatusRecord.Status)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Trade_Credit_Risk_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="accountTradeCreditDateStatusRecord.DateDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="accountTradeCreditDateStatusRecord.Date = getDataTypeFilteredLst(accountTradeCreditDateStatusRecord.DateDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountTradeCreditDateStatusRecord.Date"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accountTradeCreditDateStatusRecord.DateDataType,accountFields)"
+                        ng-change="myFunc(accountTradeCreditDateStatusRecord.Date)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr ng-repeat="rec in output_AccountTradeCredit track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-if="rec.type=='row'">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                          ng-options="item.name as item.name for item in tradeCreditOutputOptionFields"></select>
+                      </div>
+                    </div>
+                    <div ng-if="rec.type=='JPathRow'">
+                      <input type="text" id="input-username" class="slds-input" ng-model="rec.value" />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_AccountTradeCredit')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+                </div>
+              </td>
+              <td ng-if="rec.isError">
+                <div class="slds-form-element__control">
+                  <p style="color:red;">{{customLabel.Syntax_Error}}</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_AccountTradeCredit')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addTradeNewRow('output_AccountTradeCredit', 'row')">{{customLabel.Add_Row}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addTradeNewRow('output_AccountTradeCredit', 'JPathRow')">{{customLabel.Add_JPath_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div ng-if="vatCheck">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="accountField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="accountField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="inputField">{{customLabel.Account_Fields}}</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="leadField" class="width-33">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Vat_Service_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField" class="width-33">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.StatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="vatRecord.Status = getDataTypeFilteredLst(vatRecord.StatusDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField" class="width-33">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.Status"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(vatRecord.StatusDataType,accountFields) "
+                        ng-change="myFunc(vatRecord.Status)"></select>
+
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Vat_Service_Date"
+                      readonly />
+
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.DateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="vatRecord.Date = getDataTypeFilteredLst(vatRecord.DateDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.Date"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(vatRecord.DateDataType,accountFields)"
+                        ng-change="myFunc(vatRecord.Date)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Vat_Request_Identifier"
+                      readonly />
+
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.IdentifierDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="vatRecord.Identifier = getDataTypeFilteredLst(vatRecord.IdentifierDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="vatRecord.Identifier"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(vatRecord.IdentifierDataType,accountFields)"
+                        ng-change="myFunc(vatRecord.Identifier)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div ng-if="creditCheck">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="accountField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="accountField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-33">
+                <div class="slds-truncate" title="inputField">{{customLabel.Account_Fields}}</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Credit_Service_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.StatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="creditRecord.Status = getDataTypeFilteredLst(creditRecord.StatusDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.Status"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(creditRecord.StatusDataType,accountFields)"
+                        ng-change="myFunc(creditRecord.Status)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Credit_Service_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.DateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="creditRecord.Date = getDataTypeFilteredLst(creditRecord.DateDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.Date"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(creditRecord.DateDataType,accountFields)"
+                        ng-change="myFunc(creditRecord.Date)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Credit_Service_Rating"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.ValueDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="creditRecord.Value = getDataTypeFilteredLst(creditRecord.ValueDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="inputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="creditRecord.Value"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(creditRecord.ValueDataType,accountFields)"
+                        ng-change="myFunc(creditRecord.Value)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div ng-if="duplicateCheckAccount">
+        <div ng-if="leadMapFieldsOutFlag && leadFieldsFlag">
+          <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+              <tr class="slds-text-title_caps">
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="leadField">{{$root.DataTypeTitle}}</div>
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+                </th>
+                <th class="width-4"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <input type="text" id="input-id-01" class="slds-input"
+                        ng-model="customLabel.Account_Service_Status" readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accRecord.StatusDataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="accRecord.Status = getDataTypeFilteredLst(accRecord.StatusDataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accRecord.Status"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accRecord.StatusDataType,outputLeadFields)"
+                          ng-change="myFunc(accRecord.Status)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Account_Service_Date"
+                        readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accRecord.DateDataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="accRecord.Date = getDataTypeFilteredLst(accRecord.DateDataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accRecord.Date"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accRecord.DateDataType,outputLeadFields)"
+                          ng-change="myFunc(accRecord.Date)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr ng-repeat="rec in output_Account track by $index">
+                <td data-label="outputField">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                          ng-options="item.Name as item.Name for item in leadMapOutFields"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="DataType">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="leadField">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst( rec.DataType, outputLeadFields) "
+                          ng-change="myFunc(rec.name)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element__control" style="margin-top: 20%;">
+                    <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'Output_Account')">
+                      <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                      </svg>
+                      <span class="slds-assistive-text"></span>
+                    </button>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element__control">
+                    <button class="slds-button slds-button_neutral"
+                      ng-click="CancelMapping('Output_Account')">{{customLabel.Cancel}}</button>
+                    <button class="slds-button slds-button_brand"
+                      ng-click="addNewRow('Output_Account')">{{customLabel.Add_Row}}</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div ng-if="!leadMapFieldsOutFlag || !leadFieldsFlag">
+          <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+              style="width: 50%;">
+              <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+              <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+          </center>
+
+        </div>
+      </div>
+      <div ng-if="duplicateCheckContact">
+        <div ng-if="leadMapConOutFieldsFlag && leadFieldsFlag">
+          <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+              <tr class="slds-text-title_caps">
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+                </th>
+                <th class="width-4"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <input type="text" id="input-id-01" class="slds-input"
+                        ng-model="customLabel.Contact_Service_Status" readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="conRecord.StatusDataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="conRecord.Status = getDataTypeFilteredLst(conRecord.StatusDataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="conRecord.Status"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(conRecord.StatusDataType,outputLeadFields)"
+                          ng-change="myFunc(conRecord.Status)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Contact_Service_Date"
+                        readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="conRecord.DateDataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="conRecord.Date = getDataTypeFilteredLst(conRecord.DateDataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="conRecord.Date"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(conRecord.DateDataType,outputLeadFields)"
+                          ng-change="myFunc(conRecord.Date)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr ng-repeat="rec in output_Contact track by $index">
+
+                <td data-label="outputField">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.value"
+                          ng-options="item.Name as item.Name for item in leadMapConOutFields"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="leadField">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                          ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                          ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,outputLeadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="leadField">
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="rec.name"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType,leadFields)"
+                          ng-change="myFunc(rec.name)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element__control" style="margin-top: 20%;">
+                    <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'Output_Contact')">
+                      <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                      </svg>
+                      <span class="slds-assistive-text"></span>
+                    </button>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element__control">
+                    <button class="slds-button slds-button_neutral"
+                      ng-click="CancelMapping('Output_Contact')">{{customLabel.Cancel}}</button>
+                    <button class="slds-button slds-button_brand"
+                      ng-click="addNewRow('Output_Contact')">{{customLabel.Add_Row}}</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div ng-if="!leadMapConOutFieldsFlag || !leadFieldsFlag">
+          <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+              style="width: 50%;">
+              <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+              <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+          </center>
+
+        </div>
+      </div>
+      <div ng-if="toolkitErpManagement">
+        <div add-row output_toolkit="output_toolkit" customlabel="customLabel"
+          account-fields-data-type-list="accountFieldsDataTypeList" account_fields="accountFields"
+          outputflds_toolkit="outputFldsToolkit" add-new-row="addNewRow('toolkit')"
+          remove-row="removeRow(record,objType)" cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)"
+          obj-toolkit-enterprise="objToolkitEnterprise" service="'Toolkit'" currentstep="currentStep"
+          template="templates/addRowToolkit.html"></div>
+      </div>
+      <div ng-if="toolkitQuickCheck">
+        <div add-row output_toolkit="output_toolkitQC" customlabel="customLabel"
+          account-fields-data-type-list="accountFieldsDataTypeList" account_fields="accountFields"
+          outputflds_toolkit="outputFldsToolkitQC" add-new-row="addNewRow('toolkitQC')"
+          remove-row="removeRow(record,objType)" cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)"
+          obj-toolkit-enterprise="objToolkitQuickCheck" service="'ToolkitQC'" currentstep="currentStep"
+          template="templates/addRowToolkit.html"></div>
+      </div>
+      <!--Dutch chamber account-->
+      <div ng-if="accountKvk" test="test">
+        <div ng-if="kvkAccInFieldsFlag && kvkAccOutFieldsFlag">
+          <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+              <tr class="slds-text-title_caps">
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+
+                </th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+                </th>
+                <th class="width-4"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      KvK Match Status:<input type="text" id="input-id-01" class="slds-input" readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accKvkRecord.StatusDataType"
+                          ng-options="item as item for item in accountFieldsDataTypeList"
+                          ng-change="accKvkRecord.Status = getDataTypeFilteredLst(accKvkRecord.StatusDataType,accountFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accKvkRecord.Status"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accKvkRecord.StatusDataType,accountFields)"
+                          ng-change="myFunc(accKvkRecord.Status)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td style="border-top : 1px solid rgb(221, 219, 218)"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      KvK Match Date:<input type="text" id="input-id-01" class="slds-input" readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accKvkRecord.DateDataType"
+                          ng-options="item as item for item in accountFieldsDataTypeList"
+                          ng-change="accKvkRecord.Date = getDataTypeFilteredLst(accKvkRecord.DateDataType,accountFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="accKvkRecord.Date"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accKvkRecord.DateDataType,accountFields)"
+                          ng-change="myFunc(accKvkRecord.Date)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+            <add-row output_toolkit="Output_AccountKvk" customlabel="customLabel" account_fields="accountFields"
+              account-fields-data-type-list="accountFieldsDataTypeList" toolkit_fields="toolkitFields"
+              outputflds_toolkit="kvkOutputFields" add-new-row="addNewRow('AccountKvkOutFld')"
+              remove-row="removeRow(record,objType)" cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)"
+              obj-toolkit-enterprise="objToolkitEnterprise" service="'AccountKvkOutFld'"
+              template="templates/addRowAccountKvK.html" />
+          </div>
+        </div>
+        <div ng-if="!kvkAccInFieldsFlag || !kvkAccOutFieldsFlag">
+          <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+              style="width: 50%;">
+              <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+              <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+          </center>
+
+        </div>
+      </div>
+      <!--dutch chamber lead-->
+      <div ng-if="leadKvk">
+        <div ng-if="kvkLeadInFieldsFlag && kvkLeadOutFieldsFlag">
+          <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+              <tr class="slds-text-title_caps">
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+                </th>
+                <th scope="col" class="width-32">{{$root.DataTypeTitle}}</th>
+                <th scope="col" class="width-32">
+                  <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+                </th>
+                <th class="width-4"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      {{customLabel.KvK_Match_Status}}:<input type="text" id="input-id-01" class="slds-input"
+                        readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="leadKvkRecord.StatusDataType"
+                          ng-options="item as item for item in leadFieldsDataTypeList"
+                          ng-change="leadKvkRecord.Status = getDataTypeFilteredLst(leadKvkRecord.StatusDataType,leadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="leadKvkRecord.Status"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(leadKvkRecord.StatusDataType,leadFields)"
+                          ng-change="myFunc(leadKvkRecord.Status)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td style="border-top : 1px solid rgb(221, 219, 218)"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      {{customLabel.KvK_Match_Date}}:<input type="text" id="input-id-01" class="slds-input" readonly />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="leadKvkRecord.DateDataType"
+                          ng-options="item as item for item in leadFieldsDataTypeList"
+                          ng-change="leadKvkRecord.Date = getDataTypeFilteredLst(leadKvkRecord.DateDataType,leadFields)[0].Name"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                      <div class="slds-select_container">
+                        <select class="slds-select" id="select-01" ng-model="leadKvkRecord.Date"
+                          ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(leadKvkRecord.DateDataType,leadFields)"
+                          ng-change="myFunc(leadKvkRecord.Date)"></select>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+            <add-row output_toolkit="Output_LeadKvk" customlabel="customLabel" account_fields="leadFields"
+              account-fields-data-type-list="leadFieldsDataTypeList" toolkit_fields="toolkitFields"
+              outputflds_toolkit="kvkLeadOutputFields" add-new-row="addNewRow('LeadKvkOutFld')"
+              remove-row="removeRow(record,objType)" cancel-mapping="CancelMapping(objType)" my-func="myFunc(objType)"
+              obj-toolkit-enterprise="objToolkitEnterprise" service="'LeadKvkOutFld'"
+              template="templates/addRowAccountKvK.html" />
+          </div>
+        </div>
+        <div ng-if="!kvkLeadInFieldsFlag || !kvkLeadOutFieldsFlag">
+          <center>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+              style="width: 50%;">
+              <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+              <h2>{{customLabel.Provide_Valid_Credentials}}</h2>
+            </div>
+          </center>
+        </div>
+      </div>
+      <div ng-if="leadGlobal">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Lead_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Global_Match_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="leadGlobalOutRecord.StatusDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="leadGlobalOutRecord.Status = getDataTypeFilteredLst(leadGlobalOutRecord.StatusDataType,outputLeadFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="leadGlobalOutRecord.Status"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(leadGlobalOutRecord.StatusDataType,outputLeadFields)"
+                        ng-change="myFunc(leadGlobalOutRecord.Status)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Global_Match_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="leadGlobalOutRecord.DateDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="leadGlobalOutRecord.Date = getDataTypeFilteredLst(leadGlobalOutRecord.DateDataType,outputLeadFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="leadGlobalOutRecord.Date"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(leadGlobalOutRecord.DateDataType,outputLeadFields)"
+                        ng-change="myFunc(leadGlobalOutRecord.Date)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_LeadGlobal track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in leadGlobalMapOutputFields"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,outputLeadFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="leadField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType,leadFields)"
+                        ng-change="myFunc(rec.name)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_LeadGlobal')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_LeadGlobal')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_LeadGlobal')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <!--Start GDM Service-->
+      <div ng-if="gdmServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.D_B_Decision_Maker_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objGDMService.StatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objGDMService.GDMServiceStatus = getDataTypeFilteredLst(objGDMService.StatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objGDMService.GDMServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objGDMService.StatusDataType,accountFields)"
+                        ng-change="myFunc(objGDMService.GDMServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.D_B_Decision_Maker_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objGDMService.DateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objGDMService.GDMServiceDate = getDataTypeFilteredLst(objGDMService.DateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objGDMService.GDMServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objGDMService.DateDataType,accountFields)"
+                        ng-change="myFunc(objGDMService.GDMServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_GDMAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in gdmServiceOutputMappingFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType,accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_accountGDM')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_accountGDM')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_accountGDM')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+      </div>
+      <!--End GDM Service-->
+
+      <!--Start IndueD Service-->
+      <div ng-if="induedService">
+        <!--<h3 class="slds-text-heading_small slds-m-bottom_medium">Indued Portfolio Step 1
+        </h3>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_Portfolio_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.InduedSServicePortfolioStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.PortfolioStatus = getDataTypeFilteredLst(objInduedService.InduedSServicePortfolioStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.PortfolioStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServicePortfolioStatusDataType,accountFields)"
+                        ng-change="myFunc(objInduedService.PortfolioStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Portfolio_Service_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.InduedSServicePortfolioDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.PortfolioDate = getDataTypeFilteredLst(objInduedService.InduedSServicePortfolioDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.PortfolioDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServicePortfolioDateDataType,accountFields)"
+                        ng-change="myFunc(objInduedService.PortfolioDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </br>-->
+        <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Due Diligences Step 2
+        </h3>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.IndueD_DueDiligence_ID"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Text" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-repeat="(keyword, list) in accountFields">
+                      <div ng-repeat="names in list">
+                        <input type="text" class="slds-input"
+                          ng-if="names == 'api_connector__indued_duediligence_id__c'" ng-model="names" readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_DueDiligences_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Text" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-repeat="(keyword, list) in accountFields">
+                      <div ng-repeat="names in list">
+                        <input type="text" class="slds-input"
+                          ng-if="names == 'api_connector__indued_duediligences_status__c'" ng-model="names" readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_DueDiligences_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceDueDiligenceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.DueDiligenceDate = getDataTypeFilteredLst(objInduedService.InduedSServiceDueDiligenceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.DueDiligenceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceDueDiligenceDateDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.DueDiligenceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        </br>
+        </br>
+        <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Due Diligences DuedId Step 3
+        </h3>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_DuediligencesFinal_FPM_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" class="slds-input" ng-model="customLabel.Text" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-repeat="(keyword, list) in accountFields ">
+                      <div ng-repeat="names in list">
+                        <input type="text" class="slds-input"
+                          ng-if="names == 'api_connector__indued_duediligencesfinal_fpm_status__c'" ng-model="names"
+                          readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_DuediligencesFinal_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceDuedidStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.DueDiligenceDuedidServiceStatus = getDataTypeFilteredLst(objInduedService.InduedSServiceDuedidStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.DueDiligenceDuedidServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceDuedidStatusDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.DueDiligenceDuedidServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_DuediligencesFinal_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.InduedSServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.DueDiligenceServiceFpmDate = getDataTypeFilteredLst(objInduedService.InduedSServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.DueDiligenceServiceFpmDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceDateDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.DueDiligenceServiceFpmDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IndueDService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in induedServiceResopnseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType,accountFields,true)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_IndueDService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IndueDService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IndueDService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </br>
+        </br>
+        <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Reports Step 4
+        </h3>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.IndueD_Reports_ID"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Text" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-repeat="(keyword, list) in accountFields">
+                      <div ng-repeat="names in list">
+                        <input type="text" class="slds-input" ng-if="names == 'api_connector__indued_reports_id__c'"
+                          ng-model="names" readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.IndueD_Reports_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceReportServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.ReportServiceStatus = getDataTypeFilteredLst(objInduedService.InduedSServiceReportServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.ReportServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceReportServiceStatusDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.ReportServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.IndueD_Reports_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceReportServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.ReportDate = getDataTypeFilteredLst(objInduedService.InduedSServiceReportServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.ReportDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceReportServiceDateDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.ReportDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        </br>
+        </br>
+        <h3 class="slds-text-heading_small slds-m-bottom_medium">indueD Reports Id Step 5
+        </h3>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Output Fields">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Datatype">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="Account Fields">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_ReportsFinal_Report_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Text" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div ng-repeat="(keyword, list) in accountFields">
+                      <div ng-repeat="names in list">
+                        <input type="text" class="slds-input"
+                          ng-if="names == 'api_connector__indued_reportsfinal_report_status__c'" ng-model="names"
+                          readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_ReportsFinal_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceReportIdServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.ReportIdServiceStatus = getDataTypeFilteredLst(objInduedService.InduedSServiceReportIdServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.ReportIdServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceReportIdServiceStatusDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.ReportIdServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_ReportsFinal_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceReportDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.ReportIdDate = getDataTypeFilteredLst(objInduedService.InduedSServiceReportDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.ReportIdDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceReportDateDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.ReportIdDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IndueD_ReportsFinal_URL" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objInduedService.InduedSServiceReportUrlDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objInduedService.ReportUrl = getDataTypeFilteredLst(objInduedService.InduedSServiceReportUrlDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objInduedService.ReportUrl"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objInduedService.InduedSServiceReportUrlDataType,accountFields,true)"
+                        ng-change="myFunc(objInduedService.ReportUrl)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </br>
+      </div>
+      <!-- End IndueD Service-->
+
+      <!--Start IWS Service -->
+      <div ng-if="iwsServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Company_Identification_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIwsService.IwsServiceStatusDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="objIwsService.IwsServiceStatus = getDataTypeFilteredLst(objIwsService.IwsServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIwsService.IwsServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsService.IwsServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIwsService.IwsServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Company_Identification_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIwsService.IwsServiceDateDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="objIwsService.IwsServiceDate = getDataTypeFilteredLst(objIwsService.IwsServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIwsService.IwsServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsService.IwsServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIwsService.IwsServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IWSAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsServiceMapOutputFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_IWSAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END IWS Service -->
+
+      <!--Start IWS Standred Address Information Service -->
+      <div ng-if="isIWSStdAddInfoServiceForAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Standard_Address_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSStdAddInfoService.IwsServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSStdAddInfoService.IwsServiceStatus = getDataTypeFilteredLst(objIWSStdAddInfoService.IwsServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSStdAddInfoService.IwsServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSStdAddInfoService.IwsServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIWSStdAddInfoService.IwsServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Standard_Address_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSStdAddInfoService.IwsServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSStdAddInfoService.IwsServiceDate = getDataTypeFilteredLst(objIWSStdAddInfoService.IwsServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSStdAddInfoService.IwsServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSStdAddInfoService.IwsServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIWSStdAddInfoService.IwsServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IWSStdAddInfoAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsStdAddInfoServiceResopnseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSStdAddInfoAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSStdAddInfoAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSStdAddInfoAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END Start IWS Standred Address Information Service -->
+
+      <!--Start IWS Advanced Address Information Service-->
+      <div ng-if="iwsAdvancedAddressServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Advanced_Address_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatus = getDataTypeFilteredLst(objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIwsAdvancedAddressService.IwsAdvancedAddressServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Advanced_Address_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsAdvancedAddressService.IwsAdvancedAddressServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIwsAdvancedAddressService.IwsAdvancedAddressServiceDate = getDataTypeFilteredLst(objIwsAdvancedAddressService.IwsAdvancedAddressServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsAdvancedAddressService.IwsAdvancedAddressServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsAdvancedAddressService.IwsAdvancedAddressServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIwsAdvancedAddressService.IwsAdvancedAddressServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IWSAdvancedAddressAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsAdvancedAddressServiceMapOutputFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSAdvancedAddressAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSAdvancedAddressAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSAdvancedAddressAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End IWS Advanced Address Information Service-->
+      <!--Start IWS Balance Sheet Service -->
+      <div ng-if="isIWSBalanceSheetServiceForAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Balance_Sheet_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSBalanceSheetService.IwsServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSBalanceSheetService.IwsServiceStatus = getDataTypeFilteredLst(objIWSBalanceSheetService.IwsServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSBalanceSheetService.IwsServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSBalanceSheetService.IwsServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIWSBalanceSheetService.IwsServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Balance_Sheet_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSBalanceSheetService.IwsServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSBalanceSheetService.IwsServiceDate = getDataTypeFilteredLst(objIWSBalanceSheetService.IwsServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSBalanceSheetService.IwsServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSBalanceSheetService.IwsServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIWSBalanceSheetService.IwsServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IWSBalanceSheetAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsBalanceSheetResopnseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSBalanceSheetAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSBalanceSheetAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSBalanceSheetAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END Start IWS Standred Address Information Service -->
+
+
+      <!--Start Risk Datablock Service -->
+      <div ng-if="riskDatablocksServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Risk_Datablocks_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objRiskDatablockService.riskDatablockServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objRiskDatablockService.riskDatablockServiceStatus = getDataTypeFilteredLst(objRiskDatablockService.riskDatablockServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objRiskDatablockService.riskDatablockServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objRiskDatablockService.riskDatablockServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objRiskDatablockService.riskDatablockServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Risk_Datablocks_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objRiskDatablockService.riskDatablockServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objRiskDatablockService.riskDatablockServiceDate = getDataTypeFilteredLst(objRiskDatablockService.riskDatablockServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objRiskDatablockService.riskDatablockServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objRiskDatablockService.riskDatablockServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objRiskDatablockService.riskDatablockServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_RiskDatablockAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in riskDatablockServiceResponseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_RiskDatablockAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_RiskDatablockAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_RiskDatablockAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END Risk Datablock Service -->
+
+      <!--Start Company Report Service -->
+      <div ng-if="companyReportServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Company_Report_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objCompanyReportService.companyReportServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objCompanyReportService.companyReportServiceStatus = getDataTypeFilteredLst(objCompanyReportService.companyReportServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objCompanyReportService.companyReportServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objCompanyReportService.companyReportServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objCompanyReportService.companyReportServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Company_Report_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objCompanyReportService.companyReportServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objCompanyReportService.companyReportServiceDate = getDataTypeFilteredLst(objCompanyReportService.companyReportServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objCompanyReportService.companyReportServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objCompanyReportService.companyReportServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objCompanyReportService.companyReportServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End Company Report Service -->
+
+
+      <!--Start IWS Risk Information Service -->
+      <div ng-if="isIWSRiskInfoServiceForAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Risk_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSRiskInfoService.IwsServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSRiskInfoService.IwsServiceStatus = getDataTypeFilteredLst(objIWSRiskInfoService.IwsServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSRiskInfoService.IwsServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSRiskInfoService.IwsServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIWSRiskInfoService.IwsServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Risk_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSRiskInfoService.IwsServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSRiskInfoService.IwsServiceDate = getDataTypeFilteredLst(objIWSRiskInfoService.IwsServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSRiskInfoService.IwsServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSRiskInfoService.IwsServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIWSRiskInfoService.IwsServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr ng-repeat="rec in output_IWSRiskInfoAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsRiskInfoServiceResopnseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSRiskInfoAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSRiskInfoAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSRiskInfoAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END Start IWS Risk Information Service -->
+
+
+      <!--Start IWS Bankruptcy Information Service-->
+      <div ng-if="iwsBankruptcyInfoServiceAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Bankruptcy_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatus = getDataTypeFilteredLst(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Bankruptcy_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDate = getDataTypeFilteredLst(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIwsBankruptcyInfoService.IwsBankruptcyInfoServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr ng-repeat="rec in output_IWSBankruptcyInfoAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsBankruptcyInfoServiceMapOutputFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSBankruptcyInfoAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSBankruptcyInfoAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSBankruptcyInfoAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End IWS Bankruptcy Information Service-->
+
+      <!--Start IWS Paydex Information Service -->
+      <div ng-if="isIWSPaydexInfoServiceForAccount">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Paydex_Information_Status" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSPaydexInfoService.IwsServiceStatusDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSPaydexInfoService.IwsServiceStatus = getDataTypeFilteredLst(objIWSPaydexInfoService.IwsServiceStatusDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSPaydexInfoService.IwsServiceStatus"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSPaydexInfoService.IwsServiceStatusDataType,accountFields)"
+                        ng-change="myFunc(objIWSPaydexInfoService.IwsServiceStatus)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input"
+                      ng-model="customLabel.IWS_Paydex_Information_Date" readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01"
+                        ng-model="objIWSPaydexInfoService.IwsServiceDateDataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="objIWSPaydexInfoService.IwsServiceDate = getDataTypeFilteredLst(objIWSPaydexInfoService.IwsServiceDateDataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="objIWSPaydexInfoService.IwsServiceDate"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objIWSPaydexInfoService.IwsServiceDateDataType,accountFields)"
+                        ng-change="myFunc(objIWSPaydexInfoService.IwsServiceDate)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_IWSPaydexInfoAccountService track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in iwsPaydexInfoServiceResopnseFields">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)">
+                        <option value="" ng-if="false"></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon"
+                    ng-click="removeRow(rec,'output_IWSPaydexInfoAccountService')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_IWSPaydexInfoAccountService')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_IWSPaydexInfoAccountService')">{{customLabel.Add_Row}}</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--END Paydex Information Service -->
+
+      <div ng-if="accountGlobalMatch">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+          <thead>
+            <tr class="slds-text-title_caps">
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{customLabel.Output_Fields}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+              </th>
+              <th scope="col" class="width-32">
+                <div class="slds-truncate" title="leadField">{{customLabel.Account_Fields}}</div>
+              </th>
+              <th class="width-4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Global_Match_Status"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountGlobalOutRecord.StatusDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="accountGlobalOutRecord.Status = getDataTypeFilteredLst(accountGlobalOutRecord.StatusDataType,outputLeadFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountGlobalOutRecord.Status"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accountGlobalOutRecord.StatusDataType,accountFields)"
+                        ng-change="myFunc(accountGlobalOutRecord.Status)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <input type="text" id="input-id-01" class="slds-input" ng-model="customLabel.Global_Match_Date"
+                      readonly />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountGlobalOutRecord.DateDataType"
+                        ng-options="item as item for item in outputLeadFieldsDataTypeList"
+                        ng-change="accountGlobalOutRecord.Date = getDataTypeFilteredLst(accountGlobalOutRecord.DateDataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="accountGlobalOutRecord.Date"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(accountGlobalOutRecord.DateDataType,accountFields)"
+                        ng-change="myFunc(accountGlobalOutRecord.Date)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr ng-repeat="rec in output_AccountGlobal track by $index">
+              <td data-label="outputField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.value"
+                        ng-options="item.name as item.name for item in leadGlobalMapOutputFields"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.DataType"
+                        ng-options="item as item for item in accountFieldsDataTypeList"
+                        ng-change="rec.name = getDataTypeFilteredLst(rec.DataType,accountFields)[0].Name"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td data-label="accountField">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      <select class="slds-select" id="select-01" ng-model="rec.name"
+                        ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(rec.DataType, accountFields)"
+                        ng-change="myFunc(rec.name)"></select>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="slds-form-element__control" style="margin-top: 20%;">
+                  <button class="slds-button slds-button_icon" ng-click="removeRow(rec,'output_AccountGlobal')">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+                    </svg>
+                    <span class="slds-assistive-text"></span>
+                  </button>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="slds-form-element__control">
+                  <button class="slds-button slds-button_neutral"
+                    ng-click="CancelMapping('output_AccountGlobal')">{{customLabel.Cancel}}</button>
+                  <button class="slds-button slds-button_brand"
+                    ng-click="addNewRow('output_AccountGlobal')">{{customLabel.Add_Row}}</button>
+
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+      </div>
+
+    </div>
+  </form>
+</body>
+
+</html>

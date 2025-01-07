@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Devis Parc</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Devis parcs</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Devis Parc</layout>
+        <sections>
+            <label><!-- Information de base --></label>
+            <section>Information de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Parc --></label>
+            <section>Informations Parc</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas modifier le numéro de parc pressenti lorsque le devis a été envoyé en tarification. --></errorMessage>
+        <name>VR_Bloquer_modification_no_parc_pressent</name>
+    </validationRules>
+</CustomObjectTranslation>

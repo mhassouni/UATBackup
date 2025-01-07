@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>MD garancia letét (1-6. fokozat)</label>
+        <name>DepotGarantieMD__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation>1 hónap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation>2 hónap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation>3 hónap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Mások</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation>Kiadva</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Rodzaj płatności</label>
+        <name>TypeEcheance__c</name>
+        <picklistValues>
+            <masterLabel>ATP</masterLabel>
+            <translation><!-- ATP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractuelle</masterLabel>
+            <translation><!-- Contractuelle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economique</masterLabel>
+            <translation><!-- Economique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation><!-- Technique --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

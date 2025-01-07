@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNP_Statut__c</fullName>
+    <label>DNP Statut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approuvée</fullName>
+                <color>#009900</color>
+                <default>false</default>
+                <label>Approuvée</label>
+            </value>
+            <value>
+                <fullName>Rejetée</fullName>
+                <color>#CC0000</color>
+                <default>false</default>
+                <label>Rejetée</label>
+            </value>
+            <value>
+                <fullName>En attente</fullName>
+                <color>#FF9900</color>
+                <default>false</default>
+                <label>En attente</label>
+            </value>
+            <value>
+                <fullName>Anuulé</fullName>
+                <default>false</default>
+                <label>Annulé</label>
+            </value>
+            <value>
+                <fullName>En attente DG</fullName>
+                <default>false</default>
+                <label>En attente DG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

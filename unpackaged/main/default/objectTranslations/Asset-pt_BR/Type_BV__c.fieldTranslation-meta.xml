@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>tipo BV</label>
+        <name>Type_BV__c</name>
+        <picklistValues>
+            <masterLabel>Automatique</masterLabel>
+            <translation>Automático</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSG</masterLabel>
+            <translation>DSG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mécanique</masterLabel>
+            <translation>Mecânico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robotisée</masterLabel>
+            <translation>Robotizado</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Approuvé</masterLabel>
+        <translation>Genehmigt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nouveau</masterLabel>
+        <translation>Neu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Soumis</masterLabel>
+        <translation>Unterbreiten</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

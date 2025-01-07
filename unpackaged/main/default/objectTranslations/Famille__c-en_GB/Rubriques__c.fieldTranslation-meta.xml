@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Sections</label>
+        <name>Rubriques__c</name>
+        <picklistValues>
+            <masterLabel>Carburant</masterLabel>
+            <translation><!-- Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dépannages - Remorquages</masterLabel>
+            <translation><!-- Dépannages - Remorquages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frais Généraux</masterLabel>
+            <translation><!-- Frais Généraux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lubrifiants</masterLabel>
+            <translation><!-- Lubrifiants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pièces-fournitures</masterLabel>
+            <translation><!-- Pièces-fournitures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneus</masterLabel>
+            <translation>Tires</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sous-traitance</masterLabel>
+            <translation><!-- Sous-traitance --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

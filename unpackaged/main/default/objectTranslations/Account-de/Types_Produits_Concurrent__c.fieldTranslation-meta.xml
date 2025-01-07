@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Produkttyp</label>
+        <name>Types_Produits_Concurrent__c</name>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation>Container</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meubles</masterLabel>
+            <translation>Kühltruhen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Frigorifiques</masterLabel>
+            <translation>Kühlfahrzeuge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Secs</masterLabel>
+            <translation>Trockenwagen</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

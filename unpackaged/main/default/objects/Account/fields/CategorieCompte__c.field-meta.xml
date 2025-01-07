@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CategorieCompte__c</fullName>
+    <label>Catégorie de compte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Compte Clé</fullName>
+                <default>false</default>
+                <label>Compte Clé</label>
+            </value>
+            <value>
+                <fullName>Compte Standard</fullName>
+                <default>false</default>
+                <label>Compte Standard</label>
+            </value>
+            <value>
+                <fullName>Grand Compte</fullName>
+                <default>false</default>
+                <label>Grand Compte</label>
+            </value>
+            <value>
+                <fullName>Grand Compte Groupe</fullName>
+                <default>false</default>
+                <label>Grand Compte Groupe</label>
+            </value>
+            <value>
+                <fullName>Grand Compte National</fullName>
+                <default>false</default>
+                <label>Grand Compte National</label>
+            </value>
+            <value>
+                <fullName>Multi-Régions</fullName>
+                <default>false</default>
+                <label>Multi-Régions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

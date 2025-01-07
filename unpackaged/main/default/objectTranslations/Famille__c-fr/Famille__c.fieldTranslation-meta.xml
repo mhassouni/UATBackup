@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Famille --></label>
+        <name>Famille__c</name>
+        <picklistValues>
+            <masterLabel>ATELIER</masterLabel>
+            <translation><!-- ATELIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPEX - CHASSIS</masterLabel>
+            <translation><!-- CAPEX - CHASSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPEX - GROUPE FROID</masterLabel>
+            <translation><!-- CAPEX - GROUPE FROID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPEX - HAYON</masterLabel>
+            <translation><!-- CAPEX - HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPEX - MEUBLES</masterLabel>
+            <translation><!-- CAPEX - MEUBLES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPEX - VPC</masterLabel>
+            <translation><!-- CAPEX - VPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARBURANTS</masterLabel>
+            <translation><!-- CARBURANTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEPLACEMENT</masterLabel>
+            <translation><!-- DEPLACEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAIS GENERAUX</masterLabel>
+            <translation><!-- FRAIS GENERAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEX - ACHATS INDIRECTS (SERVICES GENERAUX)</masterLabel>
+            <translation><!-- OPEX - ACHATS INDIRECTS (SERVICES GENERAUX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEX - CONSOMMABLE/PRESTATIONS/ACCESSOIRES CHASSIS</masterLabel>
+            <translation><!-- OPEX - CONSOMMABLE/PRESTATIONS/ACCESSOIRES CHASSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEX - FOURNITURES ATELIER</masterLabel>
+            <translation><!-- OPEX - FOURNITURES ATELIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEX - PDR</masterLabel>
+            <translation><!-- OPEX - PDR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEX - TRANSPORT</masterLabel>
+            <translation><!-- OPEX - TRANSPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSPORT</masterLabel>
+            <translation><!-- TRANSPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VEHICULES</masterLabel>
+            <translation><!-- VEHICULES --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

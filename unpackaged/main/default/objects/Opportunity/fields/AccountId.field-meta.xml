@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountId</fullName>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>On ne peut associer une opportunité qu&#39;à un compte prospect/client, un grand compte, un compte multi-niveau, un groupement, une administration, ou une association.</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Prospect, Client</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

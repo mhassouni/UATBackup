@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Accueil</masterLabel>
+        <translation>Empfang</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expédition</masterLabel>
+        <translation>Spedition</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facturation</masterLabel>
+        <translation>Abrechnung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Messagerie</masterLabel>
+        <translation>Mailbox</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

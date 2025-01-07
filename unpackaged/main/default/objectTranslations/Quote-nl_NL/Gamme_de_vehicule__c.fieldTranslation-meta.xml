@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Voertuigaanbod</label>
+        <name>Gamme_de_vehicule__c</name>
+        <picklistValues>
+            <masterLabel>PL/SR/TR</masterLabel>
+            <translation><!-- PL/SR/TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de prestations --></label>
+        <name>PF_Type_de_prestations__c</name>
+        <picklistValues>
+            <masterLabel>Autres prestations</masterLabel>
+            <translation><!-- Autres prestations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caution</masterLabel>
+            <translation><!-- Caution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indemnités de résiliation</masterLabel>
+            <translation><!-- Indemnités de résiliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lavage</masterLabel>
+            <translation><!-- Lavage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyer</masterLabel>
+            <translation><!-- Loyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manutention</masterLabel>
+            <translation><!-- Manutention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Options</masterLabel>
+            <translation><!-- Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remise en état</masterLabel>
+            <translation><!-- Remise en état --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport</masterLabel>
+            <translation><!-- Transport --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

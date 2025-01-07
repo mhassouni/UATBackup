@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dero_Devis_en_attente_d_approbation</fullName>
+    <columns>NAME</columns>
+    <columns>N_version_du_devis__c</columns>
+    <columns>Account__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Statut__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>En attente approbation</value>
+    </filters>
+    <label>Déro - Devis en attente d&#39;approbation</label>
+</ListView>

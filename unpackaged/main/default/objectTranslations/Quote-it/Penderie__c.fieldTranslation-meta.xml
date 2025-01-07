@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Armadio per la carne</label>
+        <name>Penderie__c</name>
+        <picklistValues>
+            <masterLabel>BARRE PORTE CINTRES</masterLabel>
+            <translation><!-- BARRE PORTE CINTRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI-RAIL ALU</masterLabel>
+            <translation>Armadio con Bi-rail</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DENT DE LOUP</masterLabel>
+            <translation>Armadio con gancio a dente di lupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation>Non standard - vedi layout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL FURGOCAR</masterLabel>
+            <translation>Armadio con guida FURGOCAR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE</masterLabel>
+            <translation>Armadio con guida tubolare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A DROITE</masterLabel>
+            <translation><!-- RAIL TUBULAIRE INOX DIAM 50 - CHAISE A DROITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A GAUCHE</masterLabel>
+            <translation><!-- RAIL TUBULAIRE INOX DIAM 50 - CHAISE A GAUCHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A DROITE</masterLabel>
+            <translation><!-- RAIL TUBULAIRE INOX DIAM 60 - CHAISE A DROITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A GAUCHE</masterLabel>
+            <translation><!-- RAIL TUBULAIRE INOX DIAM 60 - CHAISE A GAUCHE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

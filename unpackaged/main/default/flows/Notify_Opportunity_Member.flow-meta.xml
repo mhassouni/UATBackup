@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Chatter</name>
+        <label>Chatter</label>
+        <locationX>583</locationX>
+        <locationY>443</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Message</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.User.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>chatterPost</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Notify Opportunity Member {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Notify Opportunity Member</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>458</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Chatter</targetReference>
+        </connector>
+        <object>OpportunityTeamMember</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Message</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>@[{!$Record.User.Id}]
+Vous venez d&#39;être ajouté(e) à l&#39;équipe de l&#39;opportunité : 
+- Nom commercial société : {!$Record.Opportunity.Account.Name}
+- Nom de l&#39;opportunité : {!$Record.Opportunity.Name}
+{!$Record.Opportunity.TECHLienSF__c}</text>
+    </textTemplates>
+</Flow>

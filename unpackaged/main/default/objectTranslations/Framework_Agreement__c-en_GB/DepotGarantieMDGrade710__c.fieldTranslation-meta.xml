@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Grade 7 to 10 and ungraded</help>
+        <label>MD Security Deposit (7 to 10, Ungraded)</label>
+        <name>DepotGarantieMDGrade710__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation>1 month</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation>2 months</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation>3 months</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Others</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation>Dispensed</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

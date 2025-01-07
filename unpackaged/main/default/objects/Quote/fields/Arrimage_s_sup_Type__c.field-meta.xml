@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arrimage_s_sup_Type__c</fullName>
+    <label>Arrimage(s) sup. (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RAIL ARRIMAGE ACIER 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ACIER 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ACIER 3 FACES</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ACIER 3 FACES</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ACIER CÔTÉ D</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ACIER CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ACIER CÔTÉ G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ACIER CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ACIER FACE AV</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ACIER FACE AV</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM 2 FACES D + G (Rolls)</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM 2 FACES D + G (Rolls)</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM 3 FACES</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM 3 FACES</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM 3 FACES (Rolls)</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM 3 FACES (Rolls)</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM CÔTÉ D</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM CÔTÉ D (Rolls)</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM CÔTÉ D (Rolls)</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM CÔTÉ G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM CÔTÉ G (Rolls)</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM CÔTÉ G (Rolls)</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM FACE AV</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM FACE AV</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE ALUMINIUM FACE AV (Rolls)</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE ALUMINIUM FACE AV (Rolls)</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE BRIKS 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE BRIKS 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE BRIKS 3 FACES</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE BRIKS 3 FACES</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE BRIKS CÔTÉ D</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE BRIKS CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE BRIKS CÔTÉ G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE BRIKS CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE BRIKS FACE AV</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE BRIKS FACE AV</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE INOX 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE INOX 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE INOX 3 FACES</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE INOX 3 FACES</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE INOX CÔTÉ D</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE INOX CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE INOX CÔTÉ G</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE INOX CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE INOX FACE AV</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE INOX FACE AV</label>
+            </value>
+            <value>
+                <fullName>TUBE ARRIMAGE 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>TUBE ARRIMAGE 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>TUBE ARRIMAGE 3 FACES</fullName>
+                <default>false</default>
+                <label>TUBE ARRIMAGE 3 FACES</label>
+            </value>
+            <value>
+                <fullName>TUBE ARRIMAGE CÔTÉ D</fullName>
+                <default>false</default>
+                <label>TUBE ARRIMAGE CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>TUBE ARRIMAGE CÔTÉ G</fullName>
+                <default>false</default>
+                <label>TUBE ARRIMAGE CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>TUBE ARRIMAGE FACE AV</fullName>
+                <default>false</default>
+                <label>TUBE ARRIMAGE FACE AV</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

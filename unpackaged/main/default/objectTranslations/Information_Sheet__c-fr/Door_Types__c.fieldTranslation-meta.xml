@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Types de Portes --></label>
+        <name>Door_Types__c</name>
+        <picklistValues>
+            <masterLabel>Porte 1400 x 2200mm (1 Battant)</masterLabel>
+            <translation><!-- Porte 1400 x 2200mm (1 Battant) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte 2000 x 2200mm (2 Battants)</masterLabel>
+            <translation><!-- Porte 2000 x 2200mm (2 Battants) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte Coulissante 2000 x 2200mm</masterLabel>
+            <translation><!-- Porte Coulissante 2000 x 2200mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte Sectionnelle 1900x2300mm</masterLabel>
+            <translation><!-- Porte Sectionnelle 1900x2300mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte Sortie de Secours 950x2200mm</masterLabel>
+            <translation><!-- Porte Sortie de Secours 950x2200mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte ouverture facile Int/Ext</masterLabel>
+            <translation><!-- Porte ouverture facile Int/Ext --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

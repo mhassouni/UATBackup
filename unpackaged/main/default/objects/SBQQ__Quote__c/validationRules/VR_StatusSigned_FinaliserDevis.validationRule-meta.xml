@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_StatusSigned_FinaliserDevis</fullName>
+    <active>true</active>
+    <description>Utilisateur forcé à executer le flux &quot;Finaliser devis&quot; avant de passer le devis en &quot;Devis signé&quot;</description>
+    <errorConditionFormula>AND
+(
+text(SBQQ__Status__c) == &#39;Approved&#39;
+,
+TECH_Finaliser_devis__c == false
+,
+Opportunity_type__c &lt;&gt;&#39;PRG&#39;
+)</errorConditionFormula>
+    <errorDisplayField>SBQQ__Status__c</errorDisplayField>
+    <errorMessage>Cliquer sur le bouton “Finaliser Devis” pour créer le contrat.</errorMessage>
+</ValidationRule>

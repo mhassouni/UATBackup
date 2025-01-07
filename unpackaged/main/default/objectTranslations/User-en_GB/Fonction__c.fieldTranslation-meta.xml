@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Function</label>
+        <name>Fonction__c</name>
+        <picklistValues>
+            <masterLabel>Administration des Ventes</masterLabel>
+            <translation>Sales administration</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistante / commercial GC</masterLabel>
+            <translation><!-- Assistante / commercial GC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistante d’Agence</masterLabel>
+            <translation>Depot assistant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atelier</masterLabel>
+            <translation><!-- Atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial territorial (CT)</masterLabel>
+            <translation>Sales person</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur Régional des Ventes (DRV)</masterLabel>
+            <translation><!-- Directeur Régional des Ventes (DRV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur de Site (DS)</masterLabel>
+            <translation>Depot Manager (DM)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction Commerciale</masterLabel>
+            <translation>Business management</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable Comptes Clients Régionaux (RCCR)</masterLabel>
+            <translation><!-- Responsable Comptes Clients Régionaux (RCCR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Grands Comptes</masterLabel>
+            <translation><!-- Service Grands Comptes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service PARC</masterLabel>
+            <translation><!-- Service PARC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Technique</masterLabel>
+            <translation>Helpdesk</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

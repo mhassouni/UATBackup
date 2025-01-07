@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Glasgow_Closed</fullName>
+    <booleanFilter>1 AND 6 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>AB1,AB2,AB3,AB4,AB5,AB6,AB7,AB8,AB9,DD1,DD2,DD3,DD4,DD5,DD6,DD7,DD8,DD9,DG1,DG2,DG3,DG4,DG5,DG6,DG7,DG8,DG9,EH1,EH2,EH3,EH4,EH5,EH6,EH7,EH8,EH9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>FK1,FK2,FK3,FK4,FK5,FK6,FK7,FK8,FK9,G1,G2,G3,G4,G5,G6,G7,G8,G9,HS1,HS2,HS3,HS5,HS4,HS6,HS7,HS8,HS9,IV1,IV2,IV3,IV4,IV5,IV6,IV7,IV8,IV9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>KA1,KA2,KA3,KA4,KA5,KA6,KA7,KA8,KA9,KW1,KW2,KW3,KW5,KW6,KW7,KW8,KW9,KY1,KY2,KY3,KY4,KY5,KY6,KY7,KY8,KY9</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>ML1,ML2,ML3,ML4,ML5,ML6,ML7,ML8,ML9,PA1,PA2,PA3,PA4,PA5,PA6,PA7,PA8,PA9,PH1,PH2,PH3,PH4,PH5,PH6,PH7,PH8,PH9,TD1,TD2,TD3,TD4,TD5,TD6,TD7,TD8,TD9,ZE1,ZE2,ZE3</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Gagnée,Abandonnée,Clôturée</value>
+    </filters>
+    <label>Leads PFUK Glasgow - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

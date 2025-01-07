@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_les_campagnes_en_cours</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>CAMPAIGN.NUM_OPPORTUNITIES</columns>
+    <columns>CAMPAIGN.NUM_WON_OPPORTUNITIES</columns>
+    <columns>AMOUNT_WON</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN.STATUS</field>
+        <operation>equals</operation>
+        <value>En cours</value>
+    </filters>
+    <label>Toutes les campagnes en cours</label>
+    <language>fr</language>
+</ListView>

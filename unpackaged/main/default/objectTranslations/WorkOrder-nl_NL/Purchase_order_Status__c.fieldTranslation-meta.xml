@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Purchase order Status --></label>
+        <name>Purchase_order_Status__c</name>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>Opgesteld</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validated</masterLabel>
+            <translation>Gevalideerde</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

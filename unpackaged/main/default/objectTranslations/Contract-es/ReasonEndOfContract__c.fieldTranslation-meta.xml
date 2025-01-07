@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif de la Demande fin de contrat --></label>
+        <name>ReasonEndOfContract__c</name>
+        <picklistValues>
+            <masterLabel>Achat</masterLabel>
+            <translation><!-- Achat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cessation Active</masterLabel>
+            <translation><!-- Cessation Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cessation Relation</masterLabel>
+            <translation><!-- Cessation Relation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concurrence</masterLabel>
+            <translation><!-- Concurrence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parc Client</masterLabel>
+            <translation><!-- Parc Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réduction</masterLabel>
+            <translation><!-- Réduction --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

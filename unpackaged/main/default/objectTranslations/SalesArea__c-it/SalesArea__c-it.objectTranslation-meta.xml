@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Organizzazione commerciale</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Organizzazioni commerciali</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Vue Commerciale</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome dell&#39;organizzazione commerciale</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Autorisé</masterLabel>
+            <translation><!-- Autorisé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon</masterLabel>
+            <translation><!-- Brouillon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon - étude HS en cours</masterLabel>
+            <translation><!-- Brouillon - étude HS en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon - étude HS validée</masterLabel>
+            <translation><!-- Brouillon - étude HS validée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat envoyé</masterLabel>
+            <translation><!-- Contrat envoyé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat signé</masterLabel>
+            <translation><!-- Contrat signé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat validé</masterLabel>
+            <translation><!-- Contrat validé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Création de contrat en cours</masterLabel>
+            <translation><!-- Création de contrat en cours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis Envoyé</masterLabel>
+            <translation><!-- Devis Envoyé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis annulé</masterLabel>
+            <translation><!-- Devis annulé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis refusé</masterLabel>
+            <translation><!-- Devis refusé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis validé</masterLabel>
+            <translation><!-- Devis validé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis échu</masterLabel>
+            <translation><!-- Devis échu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echec de la création du contrat</masterLabel>
+            <translation><!-- Echec de la création du contrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente approbation</masterLabel>
+            <translation><!-- En attente approbation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Autorisé</masterLabel>
+            <translation><!-- Non Autorisé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

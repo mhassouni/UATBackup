@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type --></label>
+        <name>type_OE__c</name>
+        <picklistValues>
+            <masterLabel>Boite de vitesse</masterLabel>
+            <translation><!-- Boite de vitesse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation><!-- Cabine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Cellule Isotherme</masterLabel>
+            <translation><!-- Carrosserie/Cellule Isotherme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation><!-- Châssis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité Véhicule</masterLabel>
+            <translation><!-- Electricité Véhicule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freinage</masterLabel>
+            <translation><!-- Freinage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Froid</masterLabel>
+            <translation><!-- Groupe Froid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/Portique</masterLabel>
+            <translation><!-- Hayon/Portique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Négligence</masterLabel>
+            <translation><!-- Mauvaise Utilisation / Négligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation><!-- Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation><!-- Pneumatiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pont/Essieu/Transmission</masterLabel>
+            <translation><!-- Pont/Essieu/Transmission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinistre / Dégâts</masterLabel>
+            <translation><!-- Sinistre / Dégâts --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

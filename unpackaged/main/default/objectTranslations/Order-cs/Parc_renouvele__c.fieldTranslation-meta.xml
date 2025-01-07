@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Obnovený park</label>
+        <lookupFilter>
+            <errorMessage><!-- Vous devez choisir un parc de type véhicule ou Container --></errorMessage>
+        </lookupFilter>
+        <name>Parc_renouvele__c</name>
+        <relationshipLabel><!-- Commandes (Parc renouvelé) --></relationshipLabel>
+    </CustomFieldTranslation>

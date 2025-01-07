@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Aktivität</label>
+        <name>Activity_area__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation>Landwirtschaft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation>Kraftstoff</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance and insurance</masterLabel>
+            <translation><!-- Finance and insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry</masterLabel>
+            <translation><!-- Industry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tourism</masterLabel>
+            <translation><!-- Tourism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade and crafts</masterLabel>
+            <translation><!-- Trade and crafts --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

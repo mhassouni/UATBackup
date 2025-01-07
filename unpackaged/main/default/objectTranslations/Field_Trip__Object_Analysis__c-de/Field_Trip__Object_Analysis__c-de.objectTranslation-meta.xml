@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Field Trip --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Object Analysis Layout</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Field Trip Information --></label>
+            <section>Field Trip Information</section>
+        </sections>
+        <sections>
+            <label><!-- Object Information --></label>
+            <section>Object Information</section>
+        </sections>
+        <sections>
+            <label><!-- Scope of Analysis --></label>
+            <section>Scope of Analysis</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Field Trip Name --></nameFieldLabel>
+    <webLinks>
+        <label><!-- Analyze --></label>
+        <name>Field_Trip__Analyze</name>
+    </webLinks>
+</CustomObjectTranslation>

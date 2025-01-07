@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_West_London_Closed</fullName>
+    <booleanFilter>1 AND 6 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>GU1,GU2,GU3,GU4,GU5,GU6,GU7,GU8,GU9,GU10,GU11,GU12,GU14,GU17,GU15,GU16,GU95,GU18,GU19,GU20,GU21,GU22,GU23,GU24,GU25,GU26,GU27,GU28,GU29,GU30,GU31,GU32,GU33,GU34,GU35,GU46,GU47,GU51,GU52</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>HA0,HA9,HA1,HA2,HA3,HA4,HA5,HA6,HA7,HA8,HP12,HP13,HP14,HP15,HP16,HP17,HP18,HP19,HP20,HP21,HP22,HP27,HP23,KT1,KT2,KT3,KT4,KT5,KT6,KT7,KT8,KT9,KT10,KT11,KT12,KT13,KT14,KT15,KT16,KT17,KT18,KT19,KT20,KT21,KT22,KT23,KT24</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>RH1,RH2,RH3,RH4,RH5,RH6,RH7,RH8,RH9,RH10,RH11,RH77,RH12,RH13,RH14,RH15,RH16,RH17,RH18,RH19,RH20,SL0,SL1,SL2,SL3,SL95,SL4,SL5,SL6,SL60,SL7,SL8,SL9,SM1,SM2,SM3,SM4,SM5,SM6,SM7</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>TW1,TW2,TW3,TW4,TW5,TW6,TW7,TW8,TW9,TW10,TW11,TW12,TW13,TW14,TW15,TW16,TW17,TW18,TW19,TW20,UB1,UB2,UB3,UB4,UB5,UB6,UB18,UB7,UB88,UB8,UB9,UB10,UB11,WD3,WD4,WD18,WD5,WD6,WD7,WD17,WD19,WD24,WD25,WD99,WD23</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Gagnée,Abandonnée,Clôturée</value>
+    </filters>
+    <label>Leads PFUK West London - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

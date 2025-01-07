@@ -1,0 +1,5 @@
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<p>Bonjour,</p>
+<p>Merci de traiter le besoin Hors Standard pour le client {!SBQQ__Quote__c.Account_Name__c} :</p>
+<p><a href="{!SBQQ__Quote__c.Link}">Lien devis</a></p>
+<p>Cordialement,<br /><br />{!SBQQ__Quote__c.OwnerFullName}<br />{!SBQQ__Quote__c.OwnerEmail}<br />{!SBQQ__Quote__c.OwnerPhone}</p>

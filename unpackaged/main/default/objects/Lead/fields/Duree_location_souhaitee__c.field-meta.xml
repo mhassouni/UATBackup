@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_location_souhaitee__c</fullName>
+    <label>Durée location souhaitée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 à 30 jours</fullName>
+                <default>false</default>
+                <label>1 à 30 jours</label>
+            </value>
+            <value>
+                <fullName>1 à 11 mois</fullName>
+                <default>false</default>
+                <label>1 à 11 mois</label>
+            </value>
+            <value>
+                <fullName>Longue durée</fullName>
+                <default>false</default>
+                <label>Longue durée</label>
+            </value>
+            <value>
+                <fullName>De 1 à 25 jours</fullName>
+                <default>false</default>
+                <label>De 1 à 25 jours</label>
+            </value>
+            <value>
+                <fullName>De 1 à 12 mois</fullName>
+                <default>false</default>
+                <label>De 1 à 12 mois</label>
+            </value>
+            <value>
+                <fullName>Plus de 12 mois</fullName>
+                <default>false</default>
+                <label>Plus de 12 mois</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metiers__c</fullName>
+    <label>Métiers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Froid</fullName>
+                <default>false</default>
+                <label>Froid</label>
+            </value>
+            <value>
+                <fullName>Sec</fullName>
+                <default>false</default>
+                <label>Sec</label>
+            </value>
+            <value>
+                <fullName>Hygiène</fullName>
+                <default>false</default>
+                <label>Hygiène</label>
+            </value>
+            <value>
+                <fullName>Brasseur</fullName>
+                <default>false</default>
+                <label>Brasseur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activated</masterLabel>
+        <translation><!-- Activated --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation><!-- Annulé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Envoyé</masterLabel>
+        <translation>Smlouva odeslána</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Expiré</masterLabel>
+        <translation><!-- Contrat Expiré --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Prolongé</masterLabel>
+        <translation><!-- Contrat Prolongé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Renouvelé</masterLabel>
+        <translation><!-- Contrat Renouvelé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Résilié</masterLabel>
+        <translation><!-- Contrat Résilié --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrat Signé</masterLabel>
+        <translation><!-- Contrat Signé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Draft</masterLabel>
+        <translation>Návrh</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En attente d&#39;approbation</masterLabel>
+        <translation><!-- En attente d&apos;approbation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In Approval Process</masterLabel>
+        <translation><!-- In Approval Process --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

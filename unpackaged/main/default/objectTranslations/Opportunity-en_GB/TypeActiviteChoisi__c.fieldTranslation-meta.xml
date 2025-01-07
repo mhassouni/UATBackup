@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Chosen sourcing type</label>
+        <name>TypeActiviteChoisi__c</name>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation>Hire with driver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation>Hire without driver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation>Owner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport dernier kilomètre</masterLabel>
+            <translation>Last mile carrier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation>Public transport</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

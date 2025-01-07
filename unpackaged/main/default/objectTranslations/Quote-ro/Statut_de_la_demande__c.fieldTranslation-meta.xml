@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Starea cererii</label>
+        <name>Statut_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>DONE</masterLabel>
+            <translation>Tratat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS</masterLabel>
+            <translation>În curs de desfășurare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS QUOTATION LECAPITAINE</masterLabel>
+            <translation>În curs de desfășurare - Tarifarea Lecapitaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - LECAPITAINE - IN PRICING</masterLabel>
+            <translation>În așteptare de desfășurare - Lecapitaine - Precizări</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</masterLabel>
+            <translation>În așteptare - Serviciul produse - Returnarea achizițiilor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING - PRODUCT SERVICE &amp; PURCHASING</masterLabel>
+            <translation>În așteptare - Servicii de produse - Achiziții</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</masterLabel>
+            <translation>În așteptare - Lecapitaine &amp; Achiziții</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - BACK TO PURCHASES</masterLabel>
+            <translation>În așteptare - Lecapitaine - Achiziții de retur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - DRAWN</masterLabel>
+            <translation>În așteptare - Lecapitaine - Retragere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - IN DRAWING</masterLabel>
+            <translation>În așteptare - Lecapitaine - Desenat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - TO BE DRAWN</masterLabel>
+            <translation>În așteptare - Lecapitaine - În curs de tragere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING DDT</masterLabel>
+            <translation>În așteptare - DDT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FOR THE SALESPERSON</masterLabel>
+            <translation>În așteptare comercială</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FRIOVAL QUOTATION</masterLabel>
+            <translation>În așteptare - Coldcar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING IGLOOCAR</masterLabel>
+            <translation>În așteptare - Igloocar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING KEY ACCOUNTS</masterLabel>
+            <translation>În așteptare - Conturi-cheie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING LECAPITAINE</masterLabel>
+            <translation>În așteptare - Lecapitaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING PURCHASE SERVICE</masterLabel>
+            <translation>În așteptare - Achiziții</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</masterLabel>
+            <translation>În așteptare - Departamentul de produse - În curs de evaluare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</masterLabel>
+            <translation>În așteptare - Serviciul produse - În curs de evaluare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING UK QUOTATION</masterLabel>
+            <translation>În așteptare - Achiziții în Marea Britanie</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

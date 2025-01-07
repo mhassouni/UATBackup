@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quote</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Chemin Quote LD - Hors standard - LS</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>A Tarifer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Tarifé</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Quote_LD_Hors_Standard_Lecture_seule</recordTypeName>
+</PathAssistant>

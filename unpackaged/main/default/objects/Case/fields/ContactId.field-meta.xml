@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactId</fullName>
+    <inlineHelpText>Contact Personnel PF</inlineHelpText>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Contact.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Contact - Personnel PF</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

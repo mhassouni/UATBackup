@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Satisfaction_Client_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusSiteAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusUltimateAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusClientAccount)
+,
+IF(ISBLANK(TEXT( Satisfaction_Client__c )) = true ,  IMAGE(&quot;/resource/1530277791000/Case_NULL?isdtp=p1&quot;, &quot;Non renseignée&quot; , 32, 32) , 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Favorable&quot;) , IMAGE(&quot;/resource/1530277698000/Case_Satisfaction_positive?isdtp=p1&quot;, &quot;Positive&quot; , 32, 32), 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Neutre&quot;),IMAGE(&quot;/resource/1530277771000/Case_Satisfaction_neutre?isdtp=p1&quot;, &quot;Neutre&quot;, 32, 32), 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Defavorable&quot;), IMAGE(&quot;/resource/1530277735000/Case_Satisfaction_negative?isdtp=p1&quot;, &quot;Négative&quot;, 32, 32), 
+
+&quot;Pas de note&quot; 
+))))
+,
+
+
+IF(ISBLANK(TEXT( Satisfaction_Client__c )) = true ,  IMAGE(&quot;/resource/1530277791000/Case_NULL?isdtp=p1&quot;, &quot;Non renseignée&quot; , 32, 32) , 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Favorable&quot;) , IMAGE(&quot;/resource/1530277698000/Case_Satisfaction_positive?isdtp=p1&quot;, &quot;Positive&quot; , 32, 32), 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Neutre&quot;),IMAGE(&quot;/resource/1530277771000/Case_Satisfaction_neutre?isdtp=p1&quot;, &quot;Neutre&quot;, 32, 32), 
+IF(ISPICKVAL(Satisfaction_Client__c,&quot;Defavorable&quot;), IMAGE(&quot;/resource/1530277735000/Case_Satisfaction_negative?isdtp=p1&quot;, &quot;Négative&quot;, 32, 32), 
+
+&quot;Pas de note&quot; 
+))))
+
+)</formula>
+    <label>Satisfaction Client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Deposito LD</label>
+        <name>Caution_LD__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation>1 mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation>2 mesi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation>3 mesi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Altri</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation>Dispensato</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

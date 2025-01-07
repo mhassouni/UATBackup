@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CriteriaForAutoUnbundlingId</fullName>
+    <inlineHelpText>Saisissez les critères qui ouvrent automatiquement un paquet. Utilisez une valeur vide pour empêcher l&#39;ouverture automatique du paquet.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

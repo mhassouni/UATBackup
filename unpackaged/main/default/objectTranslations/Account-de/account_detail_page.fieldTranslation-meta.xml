@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Detailseite für Konto</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Detailseiten für Konto</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>account_detail_page</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Note de crédit --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Note de crédit --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>PF_Credit Note Layout</layout>
+        <sections>
+            <label><!-- Balance Details --></label>
+            <section>Balance Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Credit Note Number --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Generate Credit Note --></label>
+        <name>Generate_Credit_Note</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Création d’une ligne d’avoir</label>
+        <name>PF_Create_Credit_Note_Line</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Approbation &amp; Publication</label>
+        <name>Submit_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Apply Tax --></label>
+        <name>blng__ApplyTax</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Tax --></label>
+        <name>blng__CancelTax</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Estimate Tax --></label>
+        <name>blng__EstimateTax</name>
+    </quickActions>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Veuillez envoyer cet avoir en approbation. Si l&apos;avoir a été accepté, le statut sera adapté automatiquement --></errorMessage>
+        <name>Changing_Status_to_Posted_is_not_allowed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generatea2D7T000000TN81UAG --></label>
+        <name>Generatea2D7T000000TN81UAG</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000YibjUAC --></label>
+        <name>Generatea2E3N000000YibjUAC</name>
+    </webLinks>
+    <webLinks>
+        <label>Allocation d&#39;une facture</label>
+        <name>blng__Allocations</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ApplyTax --></label>
+        <name>blng__ApplyTax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CancelTax --></label>
+        <name>blng__CancelTax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EstimateTax --></label>
+        <name>blng__EstimateTax</name>
+    </webLinks>
+</CustomObjectTranslation>

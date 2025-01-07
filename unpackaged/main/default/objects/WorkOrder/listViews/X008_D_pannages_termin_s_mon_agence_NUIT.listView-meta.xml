@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X008_D_pannages_termin_s_mon_agence_NUIT</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Agence_parc__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Asset</columns>
+    <columns>Account</columns>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>Etape_actuelle__c</columns>
+    <columns>Derniere_etape_realisee__c</columns>
+    <columns>Parc_Relais__c</columns>
+    <columns>Ressource_Interne__c</columns>
+    <columns>Duree_Intervention__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ressource_Interne__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Terminé,Annulé,Provisoire,Non abouti</value>
+    </filters>
+    <filters>
+        <field>Intervention_nuit__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>008-Dépannages terminés ma région JOUR</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

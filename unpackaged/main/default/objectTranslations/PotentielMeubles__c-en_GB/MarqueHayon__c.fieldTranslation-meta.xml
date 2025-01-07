@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tail lift brand</label>
+        <name>MarqueHayon__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>OTHER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEL Equipment</masterLabel>
+            <translation><!-- DEL Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dautel</masterLabel>
+            <translation><!-- Dautel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dhollandia</masterLabel>
+            <translation><!-- Dhollandia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elefantcar</masterLabel>
+            <translation><!-- Elefantcar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratcliff</masterLabel>
+            <translation><!-- Ratcliff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zepro</masterLabel>
+            <translation><!-- Zepro --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

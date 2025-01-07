@@ -1,0 +1,20 @@
+﻿<div class="slds-panel__section">
+
+    <svg class="slds-icon slds-icon--x-small" aria-hidden="true">
+        <use xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+    </svg>
+    <h3 class="slds-text-heading_small slds-m-bottom_medium">{{selectServiceLabel}}</h3>
+    <ul>
+        <li class="slds-form-element slds-hint-parent">
+            <label class="slds-form-element__label" for="select-01">{{Services}}</label>
+            <div
+                class="slds-form-element__control slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="select-01" ng-model="selectService.Name"
+                        ng-options="item.Name as item.Name for item in serviceList"
+                        ng-change="serviceCall(selectService.Name)"></select>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

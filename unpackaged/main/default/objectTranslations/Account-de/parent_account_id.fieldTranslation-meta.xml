@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>ID des übergeordneten Kontos</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>IDs des übergeordneten Konten</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>parent_account_id</name>
+    </CustomFieldTranslation>

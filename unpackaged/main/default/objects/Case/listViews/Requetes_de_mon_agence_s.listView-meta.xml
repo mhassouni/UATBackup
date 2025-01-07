@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requetes_de_mon_agence_s</fullName>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Statut__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Agence_proprietaire__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Case.Gestion_du_portail</value>
+    </filters>
+    <label>04 - Requêtes de mes agences - Tous</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

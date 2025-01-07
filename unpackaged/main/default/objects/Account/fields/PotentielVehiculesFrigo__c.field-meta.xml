@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PotentielVehiculesFrigo__c</fullName>
+    <inlineHelpText>Reporte automatiquement le nombre de véhicules frigorifiques enregistrés dans le potentiel décrit plus bas</inlineHelpText>
+    <label>Potentiel - Véhicules Frigo</label>
+    <summarizedField>PotentielVehiculesFrigorifiques__c.Quantite__c</summarizedField>
+    <summaryForeignKey>PotentielVehiculesFrigorifiques__c.CompteRaisonSociale__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

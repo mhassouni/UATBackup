@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Resumo de uso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Resumos de uso</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Usage Summary Layout</layout>
+        <sections>
+            <label>Informações de faturamento</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informação de precificação</label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label>Informações da receita</label>
+            <section>Revenue Information</section>
+        </sections>
+        <sections>
+            <label>Informações da data do resumo</label>
+            <section>Summary Date Information</section>
+        </sections>
+        <sections>
+            <label>Informações do sistema</label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label>Informações do resumo de uso</label>
+            <section>Usage Summary Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Resumo de uso</nameFieldLabel>
+</CustomObjectTranslation>

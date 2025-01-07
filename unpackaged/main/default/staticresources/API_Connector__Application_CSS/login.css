@@ -1,0 +1,38 @@
+﻿#loginSection form {
+    padding: 20px 20px 10px 20px;
+    border: 1px solid #016268;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.btn-color-login {
+
+color: #fff !important;
+background-color: #016268 !important;
+border-color: #016268 !important;
+}
+.block-width {
+    width: 30% !important;
+    margin-top: 20px !important;
+    
+}
+.panel-primary > .panel-heading {
+    background-color:  #016268 !important;
+    border-color:  #016268 !important;
+  
+}
+.panel-primary {
+    border-color: #016268 !important;
+    margin: 0px 100px 50px 100px !important;
+    
+}
+.panel-top-spacing {
+    margin-top: 100px !important;
+}
+.error-class {
+color:red;
+}
+.btn-bg-color {
+
+    background-color:  #016268 !important;
+    border-color:  #016268 !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Est_un_grand_compte__c</fullName>
+    <description>Ce compte est un grand compte</description>
+    <formula>if
+(( UltimateAccount__r.Grand_Compte__c == true ||  Parent.Grand_Compte__c   == true ||Grand_Compte__c== true)
+,
+true
+,
+false
+)</formula>
+    <label>Est un grand compte</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

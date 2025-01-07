@@ -1,0 +1,34 @@
+<!--Goes to last View-->
+<apex:page action="{!IF(OR($Profile.Id==$Label.USR_ProfileId_AdministrateurSysteme,$Profile.Id==$Label.USR_ProfileId_PFAdministrateurSysteme),'/006/o?nooverride=1',URLFOR($Action.Opportunity.List, $ObjectType.Opportunity))}"/>
+
+<!--Goes to Recently View(?No Dropdown?)-->
+<!--apex:page showHeader="true" tabstyle="Opportunity"> 
+    <apex:ListViews type="Opportunity" /> 
+</apex:page-->
+
+<!--Goes to the view we want BUT have to add dropdown + controller-->
+<!--apex:page >
+    <apex:enhancedList listId="00Bg0000001Bplw" height="600" customizable="true" rowsPerPage="10"/>
+</apex:page-->
+
+<!--Goes to the view we want BUT goes to "Chargement..." page before-->
+<!--apex:Page tabStyle="Opportunity" >
+<script src="/soap/ajax/15.0/connection.js"></script>
+<script type="text/javascript" />
+<script>
+     window.onload = function() {
+
+     sforce.connection.sessionId = '{!$Api.Session_ID}';
+
+     var describeSObjectResult = sforce.connection.describeSObject("Opportunity");
+     var prefix = describeSObjectResult.keyPrefix;
+
+     // Determine the View based on the Role of the User
+     var cView = "00Bg0000001Bplw";
+
+     // Change the whole window to point to this location
+     parent.document.location.href = "/" + prefix + "?fcf=" + cView ;
+}
+</script>
+<center><h2>Please Wait ..... Loading 'Your' Tab</h2></center>
+</apex:page-->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkOrderGenerationMethod</fullName>
+    <inlineHelpText>Spécifie la méthode de génération des ordres de travail lorsque plusieurs actifs sont associés au plan de maintenance.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

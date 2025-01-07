@@ -1,0 +1,23 @@
+<h4>&nbsp;</h4>
+<table style="height: 153px; margin-left: auto; margin-right: auto;" border="0" width="400">
+<tbody>
+<tr style="height: 97.2188px;">
+<td style="width: 250px; height: 97.2188px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://greenforce--c.eu9.content.force.com/servlet/servlet.ImageServer?id=0150O000004DunR&oid=00D20000000nspZ" width="178" height="89" /></td>
+<td style="width: 182px; height: 97.2188px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://greenforce--c.eu9.content.force.com/servlet/servlet.ImageServer?id=0150O000004Dunb&oid=00D20000000nspZ"  width="182" height="114" /></td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align: left;"><span style="text-decoration: underline;"><strong>FR :</strong></span></p>
+<p style="text-align: center;">Bonjour&nbsp;{!Contact.OwnerFullName}</p>
+<p style="text-align: center;">Demain est l'anniversaire de votre contact {!Contact.Name} ({!Contact.Birthdate}) de la soci&eacute;t&eacute;&nbsp;{!Contact.Raison_sociale__c}</p>
+<p style="text-align: center;">N&deg; Mobile :&nbsp;{!Contact.MobilePhone}</p>
+<p style="text-align: center;">N&deg; Fixe :&nbsp;{!Contact.Phone}</p>
+<p style="text-align: center;">Lien SalesForce :&nbsp;{!Contact.TECHLienSF__c}</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><span style="text-decoration: underline;"><strong>ENG :</strong></span></p>
+<p style="text-align: center;">Hi {!Contact.OwnerFullName}</p>
+<p style="text-align: center;">Tomorrow is the birthday of your contact {!Contact.Name} ({!Contact.Birthdate}) from {!Contact.Raison_sociale__c}</p>
+<p style="text-align: center;">Mobile Phone :&nbsp;{!Contact.MobilePhone}</p>
+<p style="text-align: center;">Landline Number :&nbsp;{!Contact.Phone}</p>
+<p style="text-align: center;">SalesForce Link :&nbsp;{!Contact.TECHLienSF__c}</p>

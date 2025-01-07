@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RatioCCPATCPQ__c</fullName>
+    <description>Carnet de commande brut / Total prix d’achat (Somme PAT)</description>
+    <formula>CarnetCommandeBrutList__c /  Total_Prix_d_achat__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TOI pondéré global</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

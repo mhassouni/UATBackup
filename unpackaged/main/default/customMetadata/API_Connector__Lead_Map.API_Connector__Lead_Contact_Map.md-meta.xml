@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Lead_Contact_Map</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Connector__Authorization__c</field>
+        <value xsi:type="xsd:string">Basic ZG5idWtfMzAxMDpiNEpKNVBXYWQzZU0=</value>
+    </values>
+    <values>
+        <field>API_Connector__Case_Key__c</field>
+        <value xsi:type="xsd:string">7785116c-71d9-42e5-a520-246a52fc88cb</value>
+    </values>
+    <values>
+        <field>API_Connector__Endpoint__c</field>
+        <value xsi:type="xsd:string">https://api.dqbox.com/api/duplicatecheck</value>
+    </values>
+    <values>
+        <field>API_Connector__Mapping_Fields__c</field>
+        <value xsi:type="xsd:string">[{&quot;name&quot;:&quot;firstname&quot;,&quot;value&quot;:&quot;Firstname&quot;},{&quot;name&quot;:&quot;lastname&quot;,&quot;value&quot;:&quot;Lastname&quot;},{&quot;name&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;Company_ID&quot;}]</value>
+    </values>
+    <values>
+        <field>API_Connector__Mapping_Output_Fields__c</field>
+        <value xsi:type="xsd:string">[{&quot;name&quot;:&quot;lastname&quot;,&quot;value&quot;:&quot;lastname&quot;}]</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interface Name --></label>
+        <name>Interface_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account_SAP</masterLabel>
+            <translation><!-- Account_SAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WorkOrder_SAP</masterLabel>
+            <translation><!-- WorkOrder_SAP --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

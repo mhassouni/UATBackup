@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Nouveau (NCT)</masterLabel>
+        <translation>Nuevo (NCT)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Renouvellement (RNV)</masterLabel>
+        <translation>RENOVACIÓN (RNV)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Supplémentaire (SUP)</masterLabel>
+        <translation>SUP</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

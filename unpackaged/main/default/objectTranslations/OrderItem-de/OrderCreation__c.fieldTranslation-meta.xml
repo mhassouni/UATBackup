@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- OrderCreation --></label>
+        <name>OrderCreation__c</name>
+        <picklistValues>
+            <masterLabel>Same Order</masterLabel>
+            <translation><!-- Same Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Splitted Order</masterLabel>
+            <translation><!-- Splitted Order --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

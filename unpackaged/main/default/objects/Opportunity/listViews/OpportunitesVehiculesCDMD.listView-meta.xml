@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunitesVehiculesCDMD</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>SalesAreaData__c</columns>
+    <columns>Type_de_location__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>Véhicules</value>
+    </filters>
+    <filters>
+        <field>Type_Location__c</field>
+        <operation>equals</operation>
+        <value>Courte Durée</value>
+    </filters>
+    <filters>
+        <field>Type_Location__c</field>
+        <operation>equals</operation>
+        <value>Moyenne Durée</value>
+    </filters>
+    <label>Opportunités Véhicules CD / MD</label>
+</ListView>

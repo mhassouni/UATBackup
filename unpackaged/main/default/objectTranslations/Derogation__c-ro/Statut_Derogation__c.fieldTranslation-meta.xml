@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut Dérogation --></label>
+        <name>Statut_Derogation__c</name>
+        <picklistValues>
+            <masterLabel>Approuvée</masterLabel>
+            <translation>Aprobat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente</masterLabel>
+            <translation>În așteptare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente DG</masterLabel>
+            <translation>Asteptand DG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejetée</masterLabel>
+            <translation>Respins</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

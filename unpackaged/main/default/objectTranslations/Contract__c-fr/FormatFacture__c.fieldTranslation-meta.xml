@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Format de facture --></label>
+        <name>FormatFacture__c</name>
+        <picklistValues>
+            <masterLabel>CHORUS</masterLabel>
+            <translation><!-- CHORUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEMAT</masterLabel>
+            <translation><!-- DEMAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI</masterLabel>
+            <translation><!-- EDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI_ITALIE</masterLabel>
+            <translation><!-- EDI_ITALIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NON</masterLabel>
+            <translation><!-- NON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF signé</masterLabel>
+            <translation><!-- PDF signé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

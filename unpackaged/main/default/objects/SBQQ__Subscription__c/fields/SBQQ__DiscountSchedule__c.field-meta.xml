@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__DiscountSchedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Specify discounts in terms of % or Amt to be discounted off the product&#39;s price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price &amp; resulting total is stored in the Regular Price</description>
+    <inlineHelpText>Spécifiez les remises en % ou montant à déduire du prix prod. en utilisant quant. ou durée achetée. Définissez des plages de quant./durée sur des niv. avec différents % de rem. La rem. s&#39;applique au prix catal. et le total est stocké dans le prix normal</inlineHelpText>
+    <label>Discount Schedule</label>
+    <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+    <relationshipLabel>Subscriptions</relationshipLabel>
+    <relationshipName>Subscriptions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

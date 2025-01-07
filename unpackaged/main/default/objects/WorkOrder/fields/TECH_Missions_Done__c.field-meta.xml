@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Missions_Done__c</fullName>
+    <description>Nb missions effectuées</description>
+    <label>TECH_Missions_Done</label>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Status</field>
+        <operation>equals</operation>
+        <value>Réalisé</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Detail Probleem</label>
+        <name>Detail_Pb_Requete__c</name>
+        <picklistValues>
+            <masterLabel>Accessoires</masterLabel>
+            <translation>Accessoires</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessoires (Etagères, rails )</masterLabel>
+            <translation><!-- Accessoires (Etagères, rails ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accident véhicule</masterLabel>
+            <translation><!-- Accident véhicule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès</masterLabel>
+            <translation>Toegang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire électrique</masterLabel>
+            <translation>Schakelkast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV/Transmission</masterLabel>
+            <translation>Versnellingsbak / transmissie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruit anormal</masterLabel>
+            <translation><!-- Bruit anormal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casse Pare Brise</masterLabel>
+            <translation><!-- Casse Pare Brise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloison</masterLabel>
+            <translation>Tussenschot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code alarme (à préciser sur les commentaires)</masterLabel>
+            <translation>Alarmcode (op te geven in de opmerkingen)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur</masterLabel>
+            <translation>Compressor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coupure moteur</masterLabel>
+            <translation><!-- Coupure moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crevaison</masterLabel>
+            <translation>Lekke band</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descend Tout Seul</masterLabel>
+            <translation><!-- Descend Tout Seul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction</masterLabel>
+            <translation>Richting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Froid</masterLabel>
+            <translation>Storing Kou</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Hayon</masterLabel>
+            <translation>Probleem Achterklep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage</masterLabel>
+            <translation>Start-up</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage / Batterie</masterLabel>
+            <translation>Starten / Accu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage</masterLabel>
+            <translation>Verlichting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage / Signalisation</masterLabel>
+            <translation>Verlichting / Signalisatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Electrisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eléctricité Châssis</masterLabel>
+            <translation>Elektriciteit Chassis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enregistreur</masterLabel>
+            <translation>Temp registratie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur Utilisation / Casse Rétroviseur</masterLabel>
+            <translation><!-- Erreur Utilisation / Casse Rétroviseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur carburant / adblue / lubrifiant</masterLabel>
+            <translation><!-- Erreur carburant / adblue / lubrifiant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fluide frigorigene</masterLabel>
+            <translation>Koelgas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne mais ne manœuvre pas</masterLabel>
+            <translation>Werkt maar werkt niet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne tout seul</masterLabel>
+            <translation>Werkt op zichzelf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freins</masterLabel>
+            <translation>Remmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite d&#39;air</masterLabel>
+            <translation>Luchtlek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon bloqué position ouverte</masterLabel>
+            <translation><!-- Hayon bloqué position ouverte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jante</masterLabel>
+            <translation>Velg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur / BV / Pont</masterLabel>
+            <translation>Motor / Versnellingsbak / Brug</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur condenseur</masterLabel>
+            <translation>Condensor motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur evaporateur</masterLabel>
+            <translation>Verdamper motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne fonctionne pas</masterLabel>
+            <translation>Werkt niet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur route</masterLabel>
+            <translation>Baanwerking start niet op</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur secteur</masterLabel>
+            <translation>Nachtkoeling (stroomfunctie) start niet op</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouverture/Fermeture</masterLabel>
+            <translation>Opening / Sluiting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouvrant (portes, Fenetres)</masterLabel>
+            <translation><!-- Ouvrant (portes, Fenetres) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne GO</masterLabel>
+            <translation>Gebrek aan dieselolie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne carburant / AdBlue</masterLabel>
+            <translation><!-- Panne carburant / AdBlue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte / Casse de clé</masterLabel>
+            <translation>Verlies / Breuk sleutel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte roue / roue déserrée</masterLabel>
+            <translation><!-- Perte roue / roue déserrée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plancher</masterLabel>
+            <translation>Vloer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise en glace</masterLabel>
+            <translation>Ingevroren verdamper</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de phase</masterLabel>
+            <translation>Faseprobleem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de prise</masterLabel>
+            <translation>Stekkerprobleem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puissance</masterLabel>
+            <translation>Vermogen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspensions</masterLabel>
+            <translation><!-- Suspensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne descend pas en température</masterLabel>
+            <translation>Start op, maar temperatuur zakt/stijgt niet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne démarre pas</masterLabel>
+            <translation>Start op, maar slaat niet aan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usure</masterLabel>
+            <translation><!-- Usure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilation</masterLabel>
+            <translation>Ventilatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant tableau de bord</masterLabel>
+            <translation>Lampje dashboard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant/Message d&#39;alerte au tableau de bord</masterLabel>
+            <translation>Waarschuwingslampje dashboard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule embourbé</masterLabel>
+            <translation><!-- Véhicule embourbé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

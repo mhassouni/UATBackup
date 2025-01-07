@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agrement__c</fullName>
+    <description>Agrément Sfac + Date Agrément</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Account.AgrementSFAC__c),&quot;###&quot;,TEXT(ROUND(Account.AgrementSFAC__c,2) ))  &amp; &quot; // &quot; &amp; IF(ISBLANK(Account.DateAgrementEH__c),&quot;###&quot;,IF(LEN(TEXT(DAY(Account.DateAgrementEH__c))) &gt; 1 , TEXT(DAY(Account.DateAgrementEH__c)), &quot;0&quot; + TEXT(DAY(Account.DateAgrementEH__c)))+ &quot;-&quot; +IF(LEN(TEXT(MONTH(Account.DateAgrementEH__c))) &gt; 1 , TEXT(MONTH(Account.DateAgrementEH__c)), &quot;0&quot; + TEXT(MONTH(Account.DateAgrementEH__c)))+&quot;-&quot; +TEXT(YEAR(Account.DateAgrementEH__c)))</formula>
+    <label>Agrément</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

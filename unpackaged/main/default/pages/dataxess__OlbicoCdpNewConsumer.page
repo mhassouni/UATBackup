@@ -1,0 +1,5 @@
+<apex:page id="OlbicoCdpNewConsumer" sidebar="false" standardController="Contact" extensions="dataxess.OlbicoCdpController" >
+    <apex:outputPanel layout="block" id="detail"> 
+        <apex:iframe src="https://crmplugin.dqbox.com/CrmUserRedirect.html?token={!token}&userpage=consumer&language={!language}&userId={!$User.Id}&profile={!HTMLENCODE($Profile.Name)}&theme={!$User.UIThemeDisplayed}" scrolling="false" height="870px" width="100%" />
+    </apex:outputPanel>
+</apex:page>

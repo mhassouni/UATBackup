@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA__c</fullName>
+    <description>Calcul de SLA selon la durée de la requête</description>
+    <externalId>false</externalId>
+    <formula>if 
+(
+Duree_de_la_requete__c &lt;=60
+
+,
+ $Label.Case_SLA
+,
+if(AND(Duree_de_la_requete__c&gt;61,Duree_de_la_requete__c&lt;120), $Label.Case_SLA_Moyen	
+,
+if(Duree_de_la_requete__c&gt;=120,$Label.Case_SLA_Mauvais,
+
+
+&#39;N/A&#39;
+)
+
+
+)
+
+
+)</formula>
+    <label>SLA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

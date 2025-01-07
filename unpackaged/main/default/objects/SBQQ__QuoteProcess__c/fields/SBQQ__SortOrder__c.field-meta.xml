@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SortOrder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines display order of quote processes in Line Editor (pick list rendering only).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Spécifiez le numéro séquentiel qui détermine l&#39;ordre d&#39;affichage du processus du devis.</inlineHelpText>
+    <label>Sort Order</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

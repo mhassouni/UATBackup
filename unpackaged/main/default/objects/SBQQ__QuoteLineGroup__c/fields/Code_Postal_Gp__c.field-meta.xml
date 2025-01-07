@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Code_Postal_Gp__c</fullName>
+    <description>Code Postal pour la livraison.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Merci de saisir le code postal de livraison de ce groupe. 
+L&#39;adresse complète vous sera demandée lors du bouton &quot;Finaliser Devis&quot;</inlineHelpText>
+    <label>Code Postal</label>
+    <length>10</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transacción de ingresos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transacciones de ingresos</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Transaction Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de ingresos</label>
+            <section>Revenue Information</section>
+        </sections>
+        <sections>
+            <label>Registros de origen</label>
+            <section>Source Records</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,57 @@
+<apex:page controller="VFC20_AccountBatches" action="{!act}"  lightningStylesheets="true">
+    <apex:sectionHeader title="{!$Label.VFP_Batches_Titre}"/>
+    <apex:form >
+        <apex:pageMessages />
+        {!$Label.VFP_Batches_MainMsg}
+        <br/><br/>
+        
+        <table width="100%" >
+            <tr>
+                <td>
+                    <b>{!$Label.VFP_Batches_IdEHNotNull}</b>
+                </td>
+                <td>
+                    <i><apex:outputLabel value="{!$Label.PST_VFP_PaysRegionPF} " for="filterIdEHPaysRegionPF"/></i>
+                    <apex:inputField value="{!accIdEH.PaysRegionPF__c}" id="filterIdEHPaysRegionPF" />
+                </td>
+                <td>
+                    <i><apex:outputLabel value="{!$Label.PST_VFP_AgencePF} " for="filterIdEHAgencePF"/></i>
+                    <apex:inputField value="{!accIdEH.AgencePF__c}" id="filterIdEHAgencePF" />
+                </td>
+                <td>
+                    <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerIdEH}" reRender="numberOfAccounts_IdEH" />
+                </td>
+                <td>
+                    <b><apex:outputText value="{!numberOfAccounts_IdEH}" id="numberOfAccounts_IdEH" /></b>
+                </td>
+                <td>
+                    <apex:commandButton action="{!executeBatchIdEHNotNull}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>{!$Label.VFP_Batches_IdNatNotNull}</b>
+                </td>
+                <td>
+                    <i><apex:outputLabel value="{!$Label.PST_VFP_PaysRegionPF} " for="filterIdNatPaysRegionPF" /></i>
+                    <apex:inputField value="{!accIdNat.PaysRegionPF__c}" id="filterIdNatPaysRegionPF" />
+                </td>
+                <td>
+                    <i><apex:outputLabel value="{!$Label.PST_VFP_AgencePF} " for="filterIdNatAgencePF" /></i>
+                    <apex:inputField value="{!accIdNat.AgencePF__c}" id="filterIdNatAgencePF" />
+                </td>
+                <td>
+                    <apex:commandButton value="{!$Label.VFP_Batches_Denombrer}" action="{!denombrerIdNat}" reRender="numberOfAccounts_IdNat" />
+                </td>
+                <td>
+                    <b><apex:outputText value="{!numberOfAccounts_IdNat}" id="numberOfAccounts_IdNat" /></b>
+                </td>
+                <td>
+                    <apex:commandButton action="{!executeBatchIdNatNotNull}" value="{!$Label.VFP_Batches_DeclencherAppel}"/>
+                </td>
+            </tr>
+        </table>
+    </apex:form>
+    
+</apex:page>

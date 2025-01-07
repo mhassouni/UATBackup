@@ -1,0 +1,27 @@
+<apex:page standardController="task" extensions="VFE24_tacheCompte">
+<head><apex:includeScript value="{!URLFOR($Resource.jquery11)}"/> </head>
+<script>
+$(document).ready(function(){
+    if(( (typeof sforce != 'undefined') && (sforce != null) )){
+    
+        sforce.one.createRecord("Task");
+    
+    }
+
+    if(!( (typeof sforce != 'undefined') && (sforce != null) )){
+    
+        if('{!a.TypeProduits__c}'!="")
+        {
+            window.open("/{!$Label.TCH_CreateNew_Id}/e?who_id={!a.accountId}&what_id={!a.Id}&{!$Label.TCH_TypeProduit_Id}={!a.TypeProduits__c}&retURL=/{!a.Id}",'_top');
+        }else
+        {
+            //alert('aaaa');
+            window.open("/{!$Label.TCH_CreateNew_Id}/e?who_id={!a.accountId}&what_id={!a.Id}&retURL=/{!a.Id}",'_top');
+        }
+        
+    }
+});
+
+</script>
+
+</apex:page>

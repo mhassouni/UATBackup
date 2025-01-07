@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_WFC_Conditions_Synchro_Dero_Opp</fullName>
+    <active>true</active>
+    <description>Ne synchroniser que si la dérogation est acceptée ou amendée</description>
+    <errorConditionFormula>AND
+(
+Synchronise__c == true
+,
+TEXT(Statut__c) &lt;&gt; &#39;Acceptée&#39;
+,
+TEXT(Statut__c) &lt;&gt; &#39;Amendée&#39;
+)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas synchroniser la dérogation si elle est pas en statut acceptée ou amendée</errorMessage>
+</ValidationRule>

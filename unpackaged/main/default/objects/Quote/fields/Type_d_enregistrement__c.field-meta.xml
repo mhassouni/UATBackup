@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_enregistrement__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+( 
+OR(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15 ,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15,
+RecordType.Id =   $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15 )
+,
+ $Label.Quote_Hors_Standard
+,
+if
+(
+OR(
+RecordType.Id =   $Label.Quote_RecordTypeId_Parc_Draft ,
+RecordType.Id =   $Label.Quote_RecordTypeId_Parc ,
+RecordType.Id =    $Label.Quote_RecordTypeId_Parc_LectureSeule  )
+,
+ $Label.Quote_Parc
+,
+ $Label.Quote_Standard
+)
+)</formula>
+    <label>Type d&#39;enregistrement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

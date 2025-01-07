@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>According to PF classification</help>
+        <label>Business Activity</label>
+        <name>TypeActivite__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentaire Non Frigorifique</masterLabel>
+            <translation>Food Service Not Refrigerated</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beurre, Œufs, Fromage</masterLabel>
+            <translation>Dairy produce</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boulangerie - Pâtisserie</masterLabel>
+            <translation>Bakery</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crèmes Glacées, Surgelés</masterLabel>
+            <translation>Frozen Foods</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuisine Centrale</masterLabel>
+            <translation>Central Kitchen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de boissons</masterLabel>
+            <translation>Drinks</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de produits frais et surgelés</masterLabel>
+            <translation>Food service</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Déménagement</masterLabel>
+            <translation>Move</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenementiel</masterLabel>
+            <translation>Events</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivités</masterLabel>
+            <translation>Merrymaking</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleuriste</masterLabel>
+            <translation>Flower Shop</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fruits et Légumes</masterLabel>
+            <translation>Fruits &amp; Vegetables</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandes et Moyennes Surfaces</masterLabel>
+            <translation>Supermarket</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Service</masterLabel>
+            <translation><!-- Home Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation>Hygiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôtelier</masterLabel>
+            <translation>Innkeeper</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loueur</masterLabel>
+            <translation>The renter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marée</masterLabel>
+            <translation>Seafood</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médicaments / Laboratoires pharma</masterLabel>
+            <translation>Pharmaceutical</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ostréiculteur</masterLabel>
+            <translation>Oyster-Farmer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panification (producteur avec distrib. Intégrée)</masterLabel>
+            <translation>Bread Maker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Particulier</masterLabel>
+            <translation>Person</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portage de repas (CCAS-CPAS etc…)</masterLabel>
+            <translation>Meal Transport</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteur</masterLabel>
+            <translation>Producer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteurs Industriels</masterLabel>
+            <translation>Industrial Producer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurateur</masterLabel>
+            <translation>Restaurant Owner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Collective</masterLabel>
+            <translation>Catering services</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Rapide</masterLabel>
+            <translation>Fast Food</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salaisons, Plats Préparés</masterLabel>
+            <translation>Delicatessen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Station Service</masterLabel>
+            <translation>Gas Station</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traiteurs</masterLabel>
+            <translation>Caterers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Public Frigorifique</masterLabel>
+            <translation>Refrigerated public transport</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur</masterLabel>
+            <translation>Carrier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travaux Publics - BTP</masterLabel>
+            <translation>Construction and Civil Engineering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viandes, Volailles</masterLabel>
+            <translation>Meat and Poultry</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viticulteur</masterLabel>
+            <translation>Wine-grower</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<apex:page standardController="Account" extensions="UpdateGradeController" lightningStylesheets="true">
+    <apex:form >
+       
+       <apex:pageBlock >
+        <apex:pageMessage rendered="{!DisplayInfo}" summary="{!$Label.FlowVar_Grade_Info}" severity="info" strength="2" />
+        <apex:pageMessage rendered="{!DisplaySame}" summary="{!$Label.FlowVar_Grade_Same}" severity="warning" strength="2" />
+        <apex:pageMessage rendered="{!DisplayDifferent}" summary="{!$Label.FlowVar_Grade_Different}" severity="confirm" strength="2" />
+        <apex:pageMessage rendered="{!DisplayNull}" summary="{!$Label.FlowVar_Grade_Null}" severity="error" strength="2" />
+        <apex:pageMessage rendered="{!DisplayRequested}" summary="{!$Label.FlowVar_Grade_Requested}" severity="info" strength="2" />
+</apex:pageBlock>
+             
+            <center><apex:commandButton action="{!method}" value="{!$Label.FlowVar_Grade_Button}" /> </center>
+    </apex:form>
+</apex:page>

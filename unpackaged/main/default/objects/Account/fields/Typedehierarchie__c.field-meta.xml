@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Typedehierarchie__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				NOT(
+								ISBLANK(DB_DUNS_Number__c)), 
+				IMAGE(&quot;/resource/DNB&quot;,&quot;DNB&quot;,20,20),
+IF(
+				NOT(
+								ISBLANK(Group__c)), 
+				IMAGE(&quot;/resource/Groupement&quot;,&quot;Groupement&quot;,20,20),
+				IMAGE(&quot;/resource/Diffus&quot;,&quot;Diffus&quot;,20,20)
+				))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type de hiérarchie</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

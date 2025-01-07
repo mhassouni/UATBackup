@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tache_PF</fullName>
+    <active>true</active>
+    <label>Tâche PF</label>
+    <picklistValues>
+        <picklist>FSL__Event_Type__c</picklist>
+        <values>
+            <fullName>Resource Absence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Appointment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_de_communication__c</picklist>
+        <values>
+            <fullName>RDV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nom_Operation_Global__c</picklist>
+        <values>
+            <fullName>100%25 Client PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25 FRAIKIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANUGA 2021 - Cologne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDD ALIMARKET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUY AND RENT BACK ACTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARUUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELECTRIC PIONEER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDEREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FREDEREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORENT CUSTOMER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichier AAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROSSMARKT HAMBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTEREST FOR CONTAINERS%2FCOLSTORE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERNATIONAL TARGETS NCEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LABORATOIRE DE BIOLOGIE MEDICALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORESTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHONING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIBELUX Comptes N%27ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICH Zürich Engrosmarkt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIND PROJECT REGIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Sales Bruxelles-Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESTART AFTER COVID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESTART AFTER COVID-19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEMI-MARATHON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIRHA 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNIPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon du Mondial du Fromages 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbotel 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sirha 2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOLTA TRUCKS CANDIDATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZEFIRENT BELUX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Note_de_satisfaction__c</picklist>
+        <values>
+            <fullName>Bon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excellent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insuffisant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ObjetAction__c</picklist>
+        <values>
+            <fullName>Action suite à résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Découverte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichier AAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestion de l%27opportunité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opération commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise de contact multi-produits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Détracteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Passif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Promoteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synthèse de prestations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_probleme__c</picklist>
+        <values>
+            <fullName>Assistance %26 relais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entretien et maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrée en relation avec Petit Forestier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipement camion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livraison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise_disposition_produit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Négociation et proposition commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relation administrative et contractualisation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normale</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution_probleme__c</picklist>
+        <values>
+            <fullName>En cours de résolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalade Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résolu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resultat__c</picklist>
+        <values>
+            <fullName>A recontacter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Multi-produits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Vehicules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Echec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas intéressé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Présentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réussite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Effectuée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Effectuée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Reportée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de RdV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Présentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Détracteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Passif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi Client Promoteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeProduits__c</picklist>
+        <values>
+            <fullName>Carrosseries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Produits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_lieu__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conférence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evénement Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evénement Culturel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evénement PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evénement Sportif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site PF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

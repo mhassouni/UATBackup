@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictionFieldName</fullName>
+    <inlineHelpText>Sélectionnez le champ de rendez-vous de service du membre du paquet utilisé pour appliquer la restriction. Seuls les rendez-vous de service de membre de paquet contenant la même valeur peuvent être empaquetés ensemble.</inlineHelpText>
+</CustomField>

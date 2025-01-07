@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Location Type --></label>
+        <name>Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Courte Durée</masterLabel>
+            <translation><!-- Courte Durée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue Durée</masterLabel>
+            <translation><!-- Longue Durée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moyenne Durée</masterLabel>
+            <translation><!-- Moyenne Durée --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

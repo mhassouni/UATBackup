@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Dossier privé --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Dossier privé --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Layout - Dossier Privé</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Pièce Jointe</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom du dossier --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Dossier Privé --></label>
+        <name>Dossier_Prive</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sur Compte --></label>
+        <name>SurCompte</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+    <webLinks>
+        <label><!-- Nouveau_dossier --></label>
+        <name>Nouveau_dossier</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Partager --></label>
+        <name>Partager</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- QuiAAcces --></label>
+        <name>QuiAAcces</name>
+    </webLinks>
+</CustomObjectTranslation>

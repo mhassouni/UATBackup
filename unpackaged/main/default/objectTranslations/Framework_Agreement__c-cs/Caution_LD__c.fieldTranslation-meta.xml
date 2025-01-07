@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>LD vklad</label>
+        <name>Caution_LD__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation>1 měsíc</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation>2 měsíce</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation>3 měsíce</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Ostatní</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation>Vydáno</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

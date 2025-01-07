@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pistas_Espa_a_Terminadas</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Produits__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CA_estime__c</columns>
+    <columns>RaisonCloture__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.Lead_PetitForestier_com,Lead.Lead_PetitForestier_com_Lecture_seule</value>
+    </filters>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ESPAGNE</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Convertie,Clôturée,Abandonnée,Gagnée</value>
+    </filters>
+    <label>Pistas PIES - Terminadas</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIES_Espagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

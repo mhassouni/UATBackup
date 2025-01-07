@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Quote  LD - Hors Standard Layout</layout>
+        <sections>
+            <label><!-- Caisse --></label>
+            <section>Caisse</section>
+        </sections>
+        <sections>
+            <label><!-- Catalogue utilisé --></label>
+            <section>Catalogue utilisé</section>
+        </sections>
+        <sections>
+            <label><!-- Catégorisation du produit --></label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Châssis --></label>
+            <section>Châssis</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Dimensions (mm) / Poids / Volume --></label>
+            <section>Dimensions (mm) / Poids / Volume</section>
+        </sections>
+        <sections>
+            <label><!-- Groupe --></label>
+            <section>Groupe</section>
+        </sections>
+        <sections>
+            <label><!-- Hayon --></label>
+            <section>Hayon</section>
+        </sections>
+        <sections>
+            <label><!-- Informations devis --></label>
+            <section>Informations devis</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- PAT &amp; Remises obtenues --></label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label><!-- Peinture &amp; Covering --></label>
+            <section>Peinture &amp; Covering</section>
+        </sections>
+        <sections>
+            <label><!-- Quote --></label>
+            <section>Quote</section>
+        </sections>
+        <sections>
+            <label><!-- Tarif délégation --></label>
+            <section>Tarif délégation</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification synchronisée --></label>
+            <section>Tarification synchronisée</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote  LD - Hors Standard Layout - Lecture Seule</layout>
+        <sections>
+            <label><!-- Caisse --></label>
+            <section>Caisse</section>
+        </sections>
+        <sections>
+            <label><!-- Catalogue utilisé --></label>
+            <section>Catalogue utilisé</section>
+        </sections>
+        <sections>
+            <label><!-- Catégorisation du produit --></label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Châssis --></label>
+            <section>Châssis</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Dimensions (mm) / Poids / Volume --></label>
+            <section>Dimensions (mm) / Poids / Volume</section>
+        </sections>
+        <sections>
+            <label><!-- Groupe --></label>
+            <section>Groupe</section>
+        </sections>
+        <sections>
+            <label><!-- Hayon --></label>
+            <section>Hayon</section>
+        </sections>
+        <sections>
+            <label><!-- Informations devis --></label>
+            <section>Informations devis</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- PAT &amp; Remises obtenues --></label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label><!-- Peinture &amp; Covering --></label>
+            <section>Peinture &amp; Covering</section>
+        </sections>
+        <sections>
+            <label><!-- Quote --></label>
+            <section>Quote</section>
+        </sections>
+        <sections>
+            <label><!-- Tarif délégation --></label>
+            <section>Tarif délégation</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification synchronisée --></label>
+            <section>Tarification synchronisée</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote  LD - Hors Standard Layout DRAFT</layout>
+        <sections>
+            <label><!-- Catégorisation du produit --></label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Informations devis --></label>
+            <section>Informations devis</section>
+        </sections>
+        <sections>
+            <label><!-- Quote --></label>
+            <section>Quote</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote LD - Parc - Lecture Seule Layout</layout>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Covering --></label>
+            <section>Covering</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Presentazione del direttore della filiale o del direttore del paese</label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label>Prezzi sincronizzati</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Categorizzazione del prodotto</label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label>Commenti</label>
+            <section>Tarif délégation</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification synchronisée --></label>
+            <section>Tarification synchronisée</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote LD - Parc Layout</layout>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Covering --></label>
+            <section>Covering</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>Prezzi sincronizzati</label>
+            <section>Informations devis</section>
+        </sections>
+        <sections>
+            <label>Presentazione del direttore della filiale o del direttore del paese</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Scatola refrigerata / furgone</label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label>Categorizzazione del prodotto</label>
+            <section>Tarification synchronisée</section>
+        </sections>
+        <sections>
+            <label>Telaio</label>
+            <section>Tarifs délégation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote LD - Parc Layout DRAFT</layout>
+        <sections>
+            <label><!-- Catégorisation du produit --></label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaire --></label>
+            <section>Commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- Covering --></label>
+            <section>Covering</section>
+        </sections>
+        <sections>
+            <label><!-- Informations devis --></label>
+            <section>Informations devis</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote LD - Standard Layout</layout>
+        <sections>
+            <label>Categorizzazione del prodotto</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Covering --></label>
+            <section>Covering</section>
+        </sections>
+        <sections>
+            <label><!-- PAT &amp; Remises obtenues --></label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification --></label>
+            <section>Tarification</section>
+        </sections>
+        <sections>
+            <label>Presentazione del direttore della filiale o del direttore del paese</label>
+            <section>Tarifs délégation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote LD - Standard Layout - USA</layout>
+        <sections>
+            <label><!-- Catégorisation du produit --></label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- PAT &amp; Remises obtenues --></label>
+            <section>PAT &amp; Remises obtenues</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification --></label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cloner --></label>
+        <name>Cloner</name>
+    </quickActions>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>La tua richiesta è stata inviata</label>
+        <name>Demande_de_tarification</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Richiesta di preventivo</label>
+        <name>Demande_de_tarification</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit quote SAP --></label>
+        <name>Edit_quote_SAP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Proposition Commerciale --></label>
+        <name>Proposition_Commerciale</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Sincronizzazione effettuata</label>
+        <name>Synchroniser</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Sincronizzato</label>
+        <name>Synchroniser</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mettre à jour le devis --></label>
+        <name>Update_Devis</name>
+    </quickActions>
+    <recordTypes>
+        <label>Preventivo LT - Non standard</label>
+        <name>Quote_LD_Hors_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Non standard Draft / Crea</label>
+        <name>Quote_LD_Hors_Standard_Draft</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Non standard - Solo lettura</label>
+        <name>Quote_LD_Hors_Standard_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Flotta esistente</label>
+        <name>Quote_LD_Parc</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Flotta esistente Draft / Crea</label>
+        <name>Quote_LD_Parc_Draft</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Flotta esistente - Solo lettura</label>
+        <name>Quote_LD_Parc_Lecture_Seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preventivo LT - Standard</label>
+        <name>Quote_LD_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Preventivo LD - Standard - SV Noleggio --></label>
+        <name>Quote_LD_Standard_SVNoleggio</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quote LD - Standard - USA --></label>
+        <name>Quote_LD_Standard_USA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Non è possibile inviare una richiesta di prezzo se il numero di Km, il periodo di noleggio non sono compilati e viene scelto un servizio di tariffazione.</errorMessage>
+        <name>RV01_Conditions_Demande_tarification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non sei autorizzato a modificare lo stato del preventivo</errorMessage>
+        <name>RV03_Status_profil_tarification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non puoi richiedere i prezzi se la tua opportunità non è nello stato 2,3 o 4</errorMessage>
+        <name>RV04_DemandeTarification_StatutOpp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Compila tutti i campi [Tipo di prodotto / Sottofamiglia / Categoria / Sottocategoria / Quantità / Durata / KM / Noleggia / Prezzo di km aggiuntivi per 100 km] prima di sincronizzare il preventivo. Il tuo account opportunità / preventivo deve essere convalidato.</errorMessage>
+        <name>RV05_Conditions_Sync_Devis_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Devi inserire la posizione della partizione</errorMessage>
+        <name>RV07_PositionCloison_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>È necessario inserire il &quot;Numero di ganci per binario&quot; e &quot;Binario per carne&quot;</errorMessage>
+        <name>RV08_RailViande_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>È necessario inserire la quantità di ripiano per lato e le posizioni dei ripiani.</errorMessage>
+        <name>RV09_QteEtageres_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>È necessario compilare il &quot;Posizionamento dell&#39;ancoraggio del binario&quot;</errorMessage>
+        <name>RV10_NiveauRailArrimage_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Fuori delegazione Contattare il proprio Country Manager</errorMessage>
+        <name>RV11_LoyerDepotManager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Assicurati di avere l&#39;affitto prima di entrare nel Rent Depot Manager o Rent Country Manager</errorMessage>
+        <name>RV_18_Delegation_Tarification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Delega esclusa. Grazie per aver creato un&#39;esenzione</errorMessage>
+        <name>VR12_LoyerCountryManager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile inserire un affitto inferiore a quello proposto dalle tariffe. Grazie per aver fatto un&#39;eccezione.</errorMessage>
+        <name>VR14_Sansdelegation_DepotManager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile informare un affitto inferiore a quello proposto dalle tariffe. Grazie per fare una richiesta di deroga</errorMessage>
+        <name>VR15_SansDelegation_CountryManager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Devi inserire Posizione (i) porte laterali, Qtà aperta. laterale (posizione da specificare) e dimensione apertura laterale (mm)</errorMessage>
+        <name>VR17_PositionPorteLateral_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inserisci una quantità di barra di supporto.</errorMessage>
+        <name>VR18_BarreEtaisQte_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le compte doit être validé pour pouvoir synchroniser le devis. Merci de contacter votre crédit manager. --></errorMessage>
+        <name>VR20_Sycnhroniser_CompteValide</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si le champ Etagère (Qté par face) est renseigné, vous devez renseigner &quot;Etagère (Type)&apos; et &quot;Etagère (Hauteur / plancher)&quot; --></errorMessage>
+        <name>VR_Etageres</name>
+    </validationRules>
+    <webLinks>
+        <label>Clone</label>
+        <name>Cloner1</name>
+    </webLinks>
+</CustomObjectTranslation>

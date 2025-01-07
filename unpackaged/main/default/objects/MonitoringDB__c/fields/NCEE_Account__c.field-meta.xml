@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NCEE_Account__c</fullName>
+    <formula>OR( 
+				PaysRegion_PF__c	= &#39;USA&#39;,
+    PaysRegion_PF__c=&#39;CONSTANTIN&#39;,
+    PaysRegion_PF__c=&#39;DION&#39;,
+    PaysRegion_PF__c=&#39;DRACULA&#39;,
+    PaysRegion_PF__c=&#39;LEGO&#39;,
+    PaysRegion_PF__c=&#39;ZEUS&#39;,
+    PaysRegion_PF__c=&#39;Reways&#39;,
+    PaysRegion_PF__c=&#39;PFM&#39;,
+    PaysRegion_PF__c=&#39;PFUK&#39;,
+    PaysRegion_PF__c=&#39;PIAT&#39;,
+    PaysRegion_PF__c=&#39;PIBE&#39;,
+    PaysRegion_PF__c=&#39;PIBU&#39;,
+    PaysRegion_PF__c=&#39;PICH&#39;,
+    PaysRegion_PF__c=&#39;PICZ&#39;,
+    PaysRegion_PF__c=&#39;PIDE&#39;,
+    PaysRegion_PF__c=&#39;PIHU&#39;,
+    PaysRegion_PF__c=&#39;PILU&#39;,
+    PaysRegion_PF__c=&#39;PIND&#39;,
+    PaysRegion_PF__c=&#39;PIPL&#39;,
+    PaysRegion_PF__c=&#39;PIPT&#39;,
+    PaysRegion_PF__c=&#39;PIRL&#39;,
+    PaysRegion_PF__c=&#39;PIRO&#39;,
+    PaysRegion_PF__c=&#39;PISK&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NCEE Account</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

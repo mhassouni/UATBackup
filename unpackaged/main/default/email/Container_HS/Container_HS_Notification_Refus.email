@@ -1,0 +1,5 @@
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<p>Bonjour {!SBQQ__Quote__c.OwnerFullName},<br /><br />Le besoin Hors Standard pour le client {!SBQQ__Quote__c.Account_Name__c} n&rsquo;a pas &eacute;t&eacute; accord&eacute;e.</p>
+<p>Pour en d&eacute;couvrir les raisons, merci de cliquer sur le lien ci-dessous :</p>
+<p><a href="{!SBQQ__Quote__c.Link}">Lien devis</a></p>
+<p>Merci</p>

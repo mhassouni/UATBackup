@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Stav</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Attente Validation CM</masterLabel>
+            <translation>Čeká na schválení CM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué</masterLabel>
+            <translation>Blokováno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué CM</masterLabel>
+            <translation><!-- Bloqué CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Návrh</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente analyse CM</masterLabel>
+            <translation><!-- En attente analyse CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur EH</masterLabel>
+            <translation>Chyba EH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactif</masterLabel>
+            <translation>Neaktivní</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé</masterLabel>
+            <translation>Zamítnuto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé CM</masterLabel>
+            <translation><!-- Refusé CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé DC</masterLabel>
+            <translation><!-- Refusé DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation>Schváleno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé CM</masterLabel>
+            <translation>Schváleno CM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé DC</masterLabel>
+            <translation><!-- Validé DC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

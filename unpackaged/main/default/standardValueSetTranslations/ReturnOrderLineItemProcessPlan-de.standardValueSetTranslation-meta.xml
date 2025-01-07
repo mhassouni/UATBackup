@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonner</masterLabel>
+        <translation>Aufgeben</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Préserver</masterLabel>
+        <translation>Behalten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Restocker</masterLabel>
+        <translation>Wieder auflagern</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Réparer</masterLabel>
+        <translation>Reparieren</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

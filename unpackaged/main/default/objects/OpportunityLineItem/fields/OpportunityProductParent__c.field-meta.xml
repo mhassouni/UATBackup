@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunityProductParent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Produit d&#39;opportunité parent</label>
+    <referenceTo>OpportunityLineItem</referenceTo>
+    <relationshipLabel>Produit d&#39;opportunité</relationshipLabel>
+    <relationshipName>Produit_d_opportunite</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

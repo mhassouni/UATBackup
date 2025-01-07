@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demande DNP Approuvé</name>
+    <style>none</style>
+    <subject>{!$Label.DNP_Subject_Approuved}</subject>
+    <textOnly>{!$Label.OPP_WFC_NotificationDNP_Tarification_Chatter_MSG_Case02_01}
+
+{!$Label.DNP_Subject_Approuved}
+
+Opportunité: {!Opportunity.Name}
+
+Commentaires : {!ApprovalRequest.Comments}
+
+{!$Label.DNP_Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

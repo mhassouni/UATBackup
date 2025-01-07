@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tests Community Mobile Publisher</label>
+    <applicationVisibilities>
+        <application>standard__DataAssessment</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__PublicSector</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SandboxTestingInCommunityApp</name>
+    </userPermissions>
+</PermissionSet>

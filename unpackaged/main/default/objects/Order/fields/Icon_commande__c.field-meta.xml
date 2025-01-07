@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Icon_commande__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( 
+
+RecordType.Id ,  
+
+Left($Label.Commande_OrderClient_RecordtypeId,15)  ,
+ IMAGE(&#39;/resource/1649749747000/Icon_OrderClient?&#39;, &#39;Client&#39;, 64, 64) ,
+
+LEFT($Label.Commande_OrderManual_RecordtypeId,15),
+IMAGE(&#39;/resource/1649749713000/Icon_OrderManual?&#39;, &#39;Manual&#39;, 64, 64) ,
+
+
+&#39;&#39;)</formula>
+    <label>Icon commande</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

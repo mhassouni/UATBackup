@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Achat Fichier</fullName>
+        <default>false</default>
+        <label>Achat Fichier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annuaire</fullName>
+        <default>false</default>
+        <label>Annuaire</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appel Entrant</fullName>
+        <default>false</default>
+        <label>Appel Entrant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-mailing</fullName>
+        <default>false</default>
+        <label>E-mailing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Filiale Client</fullName>
+        <default>false</default>
+        <label>Filiale Client</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Groupement</fullName>
+        <default>false</default>
+        <label>Groupement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Magazine</fullName>
+        <default>false</default>
+        <label>Magazine</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mailing / Courrier</fullName>
+        <default>false</default>
+        <label>Mailing / Courrier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opération Commerciale</fullName>
+        <default>false</default>
+        <label>Opération Commerciale</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pages Jaunes</fullName>
+        <default>false</default>
+        <label>Pages Jaunes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospection</fullName>
+        <default>false</default>
+        <label>Prospection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recommandation Client</fullName>
+        <default>false</default>
+        <label>Recommandation Client</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Repérage</fullName>
+        <default>false</default>
+        <label>Repérage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salon</fullName>
+        <default>false</default>
+        <label>Salon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Site Internet</fullName>
+        <default>false</default>
+        <label>Site Internet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Site PF</fullName>
+        <default>false</default>
+        <label>Site PF</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <label>Autre</label>
+    </standardValue>
+</StandardValueSet>

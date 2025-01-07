@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Carte bancaire</masterLabel>
+        <translation>Bankkarte</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chèque</masterLabel>
+        <translation>Überprüfen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Espèces</masterLabel>
+        <translation>Spezies</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mandat administratif</masterLabel>
+        <translation>Verwaltungsauftrag</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prelevement SEPA B2B</masterLabel>
+        <translation>SEPA-Firmenlastschrift</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement SEPA CORE</masterLabel>
+        <translation>Lastschriftverfahren</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement automatique</masterLabel>
+        <translation>Lastschrift</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement SEPA</masterLabel>
+        <translation>SEPA-Überweisung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement bancaire etrang</masterLabel>
+        <translation>Auslandsüberweisung</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

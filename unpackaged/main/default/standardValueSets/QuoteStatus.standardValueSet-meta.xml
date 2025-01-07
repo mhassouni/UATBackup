@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Draft</fullName>
+        <default>true</default>
+        <label>Draft</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>A Tarifer</fullName>
+        <default>false</default>
+        <label>A Tarifer</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Tarifé</fullName>
+        <default>false</default>
+        <label>Tarifé</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Présenté</fullName>
+        <default>false</default>
+        <label>Présenté</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Accepté</fullName>
+        <default>false</default>
+        <label>Accepté</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Refusé</fullName>
+        <default>false</default>
+        <label>Refusé</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Annulé</fullName>
+        <default>false</default>
+        <label>Annulé</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+</StandardValueSet>

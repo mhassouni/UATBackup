@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Account_Child_of_Principal__c</fullName>
+    <formula>IF( ParentId  &lt;&gt; NULL,TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IS Account Child of Principal</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

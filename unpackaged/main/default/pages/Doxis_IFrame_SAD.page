@@ -1,0 +1,5 @@
+<apex:page showHeader="true" standardController="SalesAreaData__c" lightningStylesheets="true"> 
+   
+   <iframe id="iframeX" height="800" width="1000" src="https://fiptfrdev.sow.doxis.cloud/webcube/searches/fae7d566-93a1-4e90-9a38-c19bad446bc4?server=FIPTFR-DEV&system=FIPTFR-DEV-ORG1&role=admins&NSALESFORCE={!SalesAreaData__c.Numero_Compte__c}&openone=1&home=1&logout=0&reusesession=1&rview=1&topbar=0
+'"/>
+</apex:page>

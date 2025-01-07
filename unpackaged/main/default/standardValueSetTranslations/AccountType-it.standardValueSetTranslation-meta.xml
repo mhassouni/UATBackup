@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CLIENT ACTIF</masterLabel>
+        <translation>CLIENTE ATTIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLIENT INACTIF</masterLabel>
+        <translation>CLIENTE INATTIVO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROSPECT ACTIF</masterLabel>
+        <translation>Prospetto attivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROSPECT INACTIF</masterLabel>
+        <translation>Prospetto inattivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SUSPECT</masterLabel>
+        <translation>Sospetto</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

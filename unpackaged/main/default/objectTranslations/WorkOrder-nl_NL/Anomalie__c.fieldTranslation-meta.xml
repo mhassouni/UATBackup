@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Storing</label>
+        <name>Anomalie__c</name>
+        <picklistValues>
+            <masterLabel>AEBS</masterLabel>
+            <translation>AEBS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accastillage</masterLabel>
+            <translation>Deurbeslag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessoires (enregistreur, contacteur de porte, sonde piqueuse, etc)</masterLabel>
+            <translation>Accessoires</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alarme personne enfermée</masterLabel>
+            <translation>Insluitalarm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation</masterLabel>
+            <translation>Voeding / Spanning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation Carburant</masterLabel>
+            <translation><!-- Alimentation Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentation électrique</masterLabel>
+            <translation>Stroomtoevoer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternateur</masterLabel>
+            <translation>Dynamo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amortisseur</masterLabel>
+            <translation><!-- Amortisseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auvent</masterLabel>
+            <translation>Luifel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Axes grippés</masterLabel>
+            <translation>Vastgelopen assen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV bloquée</masterLabel>
+            <translation>Versnellingsbak geblokkeerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie De Puissance Groupe Électrique</masterLabel>
+            <translation><!-- Batterie De Puissance Groupe Électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie De Traction Véhicule Électrique</masterLabel>
+            <translation><!-- Batterie De Traction Véhicule Électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Déchargée</masterLabel>
+            <translation><!-- Batterie Déchargée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Frigo</masterLabel>
+            <translation><!-- Batterie Frigo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batterie Hayon</masterLabel>
+            <translation><!-- Batterie Hayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloc Moteur (Trous/Fuite)</masterLabel>
+            <translation><!-- Bloc Moteur (Trous/Fuite) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloque (Serrage Moteur)</masterLabel>
+            <translation><!-- Bloque (Serrage Moteur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouteilles d&#39;air</masterLabel>
+            <translation>Luchtflessen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine / Multimédia</masterLabel>
+            <translation><!-- Cabine / Multimédia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine / équipements</masterLabel>
+            <translation><!-- Cabine / équipements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadre</masterLabel>
+            <translation>Kader/Frame</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calage</masterLabel>
+            <translation>Positionering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calandre</masterLabel>
+            <translation>Grille</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capteur D&#39;usure</masterLabel>
+            <translation><!-- Capteur D&apos;usure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargeur Hayon</masterLabel>
+            <translation><!-- Chargeur Hayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Carrosserie Ou Pare-brise</masterLabel>
+            <translation><!-- Choc Carrosserie Ou Pare-brise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Cellule Isotherme (Caisse)</masterLabel>
+            <translation><!-- Choc Cellule Isotherme (Caisse) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc En Hauteur</masterLabel>
+            <translation><!-- Choc En Hauteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Pare-choc Ou Éclairage</masterLabel>
+            <translation><!-- Choc Pare-choc Ou Éclairage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Piece Mecanique (Radiateur, Compresseur, Etc)</masterLabel>
+            <translation><!-- Choc Piece Mecanique (Radiateur, Compresseur, Etc) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc Rétroviseur</masterLabel>
+            <translation><!-- Choc Rétroviseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc caisse</masterLabel>
+            <translation>Schade laadruimte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc groupe</masterLabel>
+            <translation>Schade koelgroep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Choc trottoir</masterLabel>
+            <translation>Schade door trottoir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chronotachygraphe</masterLabel>
+            <translation>Tachograaf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circuit électrique</masterLabel>
+            <translation><!-- Circuit électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claquement</masterLabel>
+            <translation>Klapperend geluid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloison</masterLabel>
+            <translation>Tussenschot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code clé</masterLabel>
+            <translation>Sleutelcode</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commande</masterLabel>
+            <translation>Bediening</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commande ( micro, cartes etc..)</masterLabel>
+            <translation>Controller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commandes</masterLabel>
+            <translation>Bedieningsorganen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commandes Bv</masterLabel>
+            <translation><!-- Commandes Bv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur</masterLabel>
+            <translation>Compressor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur Pneumatique</masterLabel>
+            <translation><!-- Compresseur Pneumatique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur route</masterLabel>
+            <translation>Compressor weg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur secteur</masterLabel>
+            <translation>Compressor spanningsnet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courroie</masterLabel>
+            <translation>Riem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courroies / Galet</masterLabel>
+            <translation><!-- Courroies / Galet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crevaison</masterLabel>
+            <translation>Lekke band</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crémone grippée</masterLabel>
+            <translation>Deurstang vastgelopen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction</masterLabel>
+            <translation>Stuurinrichting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disjoncteur</masterLabel>
+            <translation>Automaat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disques</masterLabel>
+            <translation>Schijven</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation>Distributie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage Par Câbles</masterLabel>
+            <translation><!-- Démarrage Par Câbles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage du groupe</masterLabel>
+            <translation>Koelgroep start niet op</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage mode ROUTE</masterLabel>
+            <translation>Baanwerking start niet op weg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage mode SECTEUR</masterLabel>
+            <translation>Nachtkoeling (stroomfunctie) start niet op</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarreur</masterLabel>
+            <translation>Startmotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Détendeur</masterLabel>
+            <translation>Reduceerklep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECU (Calculateur)</masterLabel>
+            <translation><!-- ECU (Calculateur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echangeurs (Condenseur, Évaporateur)</masterLabel>
+            <translation><!-- Echangeurs (Condenseur, Évaporateur) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echappement</masterLabel>
+            <translation><!-- Echappement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echauffement</masterLabel>
+            <translation><!-- Echauffement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage</masterLabel>
+            <translation>Verlichting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Electriciteit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité 12v / 24v</masterLabel>
+            <translation>Electriciteit 12v / 24v</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrovanne</masterLabel>
+            <translation><!-- Electrovanne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Embrayage</masterLabel>
+            <translation>Koppeling</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emetteur</masterLabel>
+            <translation>Zender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enregistreur électronique</masterLabel>
+            <translation>Digitale registratie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipement ( Climatisation, Etc…)</masterLabel>
+            <translation><!-- Equipement ( Climatisation, Etc…) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipements</masterLabel>
+            <translation>Uitrustingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essuie-glace / Moteur Essuie-glace</masterLabel>
+            <translation><!-- Essuie-glace / Moteur Essuie-glace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etancheité</masterLabel>
+            <translation>Vrij van lekkage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etriers</masterLabel>
+            <translation>Beugels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face Avant</masterLabel>
+            <translation><!-- Face Avant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faisceau Electrique</masterLabel>
+            <translation><!-- Faisceau Electrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faisceaux</masterLabel>
+            <translation>Aansluitkabels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faux - châssis</masterLabel>
+            <translation>Subframe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filtre à particules</masterLabel>
+            <translation>Roetfilter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fissure châssis</masterLabel>
+            <translation>Scheurtje chassis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frein A Main</masterLabel>
+            <translation><!-- Frein A Main --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite Au Circuit Hydraulique</masterLabel>
+            <translation><!-- Fuite Au Circuit Hydraulique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite D&#39;air</masterLabel>
+            <translation><!-- Fuite D&apos;air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite D&#39;huile</masterLabel>
+            <translation><!-- Fuite D&apos;huile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite De Carburant</masterLabel>
+            <translation><!-- Fuite De Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite Pont Arrière</masterLabel>
+            <translation><!-- Fuite Pont Arrière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite de fluide</masterLabel>
+            <translation>Lekkende vloeistof</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite huile</masterLabel>
+            <translation>Lekkende olie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite liquide de frein</masterLabel>
+            <translation>Lekkende remvloeistof</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite liquide de refroidissement</masterLabel>
+            <translation>Lekkende koelvloeistof</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fusible</masterLabel>
+            <translation>Zekering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe froid / échangeurs</masterLabel>
+            <translation><!-- Groupe froid / échangeurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Génératrice</masterLabel>
+            <translation>Generator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Géométrie train AV/ARR</masterLabel>
+            <translation>Geométrie trein V/A</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon / Fuite au circuit hydrau</masterLabel>
+            <translation><!-- Hayon / Fuite au circuit hydrau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incendie</masterLabel>
+            <translation><!-- Incendie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injection</masterLabel>
+            <translation><!-- Injection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interrupteur</masterLabel>
+            <translation><!-- Interrupteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jante</masterLabel>
+            <translation>Velg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation>Afdichtingsrubber</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kit poulie - moteur</masterLabel>
+            <translation>Kit poelie - motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LDWS</masterLabel>
+            <translation>LDWS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquide de refroidissement</masterLabel>
+            <translation>Koelvloeistof</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marchepied</masterLabel>
+            <translation>Opstapje</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvais branchement du container</masterLabel>
+            <translation>Niet correct aangesloten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique)</masterLabel>
+            <translation><!-- Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Niveau Lave Glace</masterLabel>
+            <translation><!-- Mauvaise Utilisation / Niveau Lave Glace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Niveau Liquide Refroidissement</masterLabel>
+            <translation><!-- Mauvaise Utilisation / Niveau Liquide Refroidissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Panne Carburant</masterLabel>
+            <translation><!-- Mauvaise Utilisation / Panne Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation Commande Frigo</masterLabel>
+            <translation><!-- Mauvaise Utilisation Commande Frigo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation Hayon</masterLabel>
+            <translation>Verkeerd gebruik Klep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise utilisation groupe</masterLabel>
+            <translation>Machine niet corect gebruikt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micro / Carte imprimée</masterLabel>
+            <translation>Microprocessor / Printplaat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montage</masterLabel>
+            <translation>Montage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation><!-- Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur Véhicule Électrique</masterLabel>
+            <translation><!-- Moteur Véhicule Électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur thermique</masterLabel>
+            <translation>Verbrandingsmotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur électrique</masterLabel>
+            <translation>Elektromotor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite)</masterLabel>
+            <translation><!-- Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neiman</masterLabel>
+            <translation>Stuurslot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau D&#39;huile (Niveau Bas)</masterLabel>
+            <translation><!-- Niveau D&apos;huile (Niveau Bas) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau Liquide De Refroidissement</masterLabel>
+            <translation><!-- Niveau Liquide De Refroidissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau Liquide Lave-glace</masterLabel>
+            <translation><!-- Niveau Liquide Lave-glace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niveau d’huile</masterLabel>
+            <translation>Olieniveau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouverture/Fermeture</masterLabel>
+            <translation>Opening / Sluiting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paliers</masterLabel>
+            <translation>Lagers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne Adblue</masterLabel>
+            <translation><!-- Panne Adblue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne Carburant</masterLabel>
+            <translation><!-- Panne Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne De Carburant</masterLabel>
+            <translation><!-- Panne De Carburant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne batterie Hayon</masterLabel>
+            <translation>Probleem accu Klep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panneau latéral</masterLabel>
+            <translation>Zijwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pare - chocs</masterLabel>
+            <translation>Bumper</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pavillon</masterLabel>
+            <translation>Dakdeel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte / casse de clé</masterLabel>
+            <translation>Verlies sleutel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte clé de hayon</masterLabel>
+            <translation>Verlies sleutel laadklep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte de puissance</masterLabel>
+            <translation>Vermogensverlies</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte de roue</masterLabel>
+            <translation>Verlies wiel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pièce électrique (condensateur, pont de diode, VEM, etc)</masterLabel>
+            <translation>Elektrische onderdelen (condensator, diodebrug, solenoidklep, etc)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plancher</masterLabel>
+            <translation>Vloer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaquettes</masterLabel>
+            <translation>Plaatjes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plateforme / Portique</masterLabel>
+            <translation>Platform / Portaal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques / Crevaison</masterLabel>
+            <translation><!-- Pneumatiques / Crevaison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pompe A Eau</masterLabel>
+            <translation><!-- Pompe A Eau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pompe Direction Assistée</masterLabel>
+            <translation><!-- Pompe Direction Assistée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte ARR relevante</masterLabel>
+            <translation>Valdeur achter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte Arrière</masterLabel>
+            <translation>Achterdeur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porte latérale</masterLabel>
+            <translation>Zijdeur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portes ARR</masterLabel>
+            <translation>Achterdeuren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poumon De Frein</masterLabel>
+            <translation><!-- Poumon De Frein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise En Glace Évaporateur</masterLabel>
+            <translation><!-- Prise En Glace Évaporateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise de courant (option)</masterLabel>
+            <translation>Stekker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise en glace</masterLabel>
+            <translation>Ingevroren verdamper</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème batterie suite négligence client</masterLabel>
+            <translation>Accuprobleem t.g.v. noplettendheid gebruiker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de démarrage</masterLabel>
+            <translation>Startprobleem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail/crémone grippé</masterLabel>
+            <translation>Rail / Deurstang vastgelopen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge électrique</masterLabel>
+            <translation>Stroomkabel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge/ Prise Électrique 230 / 380v</masterLabel>
+            <translation><!-- Rallonge/ Prise Électrique 230 / 380v --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rallonge/ Prise Électrique 230/380v Client</masterLabel>
+            <translation><!-- Rallonge/ Prise Électrique 230/380v Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remplacement Batterie</masterLabel>
+            <translation><!-- Remplacement Batterie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resistance chauffante</masterLabel>
+            <translation>Verwarmingselement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robot de commande</masterLabel>
+            <translation>Bedieningsrobot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roue Desserrée</masterLabel>
+            <translation><!-- Roue Desserrée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roulements</masterLabel>
+            <translation>Rollagers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réamorçage Gasoil</masterLabel>
+            <translation><!-- Réamorçage Gasoil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Récepteur</masterLabel>
+            <translation>Ontvanger</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réservoir Ad Blue</masterLabel>
+            <translation>Ad Blue reservoir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réservoir gazole</masterLabel>
+            <translation>Dieselreservoir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sellerie</masterLabel>
+            <translation>Bekleding</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sellette</masterLabel>
+            <translation>Opleggerkoppeling</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solénoïde</masterLabel>
+            <translation><!-- Solénoïde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonde / Capteur</masterLabel>
+            <translation>Sensor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonde/Pressostats/Sécurité</masterLabel>
+            <translation><!-- Sonde/Pressostats/Sécurité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surcharge Véhicule</masterLabel>
+            <translation><!-- Surcharge Véhicule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surchauffe Moteur</masterLabel>
+            <translation><!-- Surchauffe Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspension</masterLabel>
+            <translation>Ophanging</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synchros</masterLabel>
+            <translation>Gesynchroniseerde versnellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Système EGR</masterLabel>
+            <translation><!-- Système EGR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau De Bord</masterLabel>
+            <translation><!-- Tableau De Bord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission</masterLabel>
+            <translation>Transmissie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tringlerie</masterLabel>
+            <translation><!-- Tringlerie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turbo</masterLabel>
+            <translation><!-- Turbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télécommande</masterLabel>
+            <translation><!-- Télécommande --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usure</masterLabel>
+            <translation><!-- Usure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilisation roue de secours</masterLabel>
+            <translation>Gebruik reservewiel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vandalisme</masterLabel>
+            <translation>Vandalisme</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilation</masterLabel>
+            <translation>Ventilatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilations condenseur</masterLabel>
+            <translation>Ventilator condensator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilations évaporateur</masterLabel>
+            <translation>Ventilator verdamper</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verrouillage cabine</masterLabel>
+            <translation>Vergrendeling cabine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitesse Saute / Craquement</masterLabel>
+            <translation><!-- Vitesse Saute / Craquement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitrages</masterLabel>
+            <translation>Ruiten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vol</masterLabel>
+            <translation>Diefstal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vol (véhicule ou accessoire)</masterLabel>
+            <translation>Diefstal (voertuig of accessoire)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volant Moteur</masterLabel>
+            <translation>Vliegwiel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant ABS allumé</masterLabel>
+            <translation>ABS-controlelampje brandt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule embourbé</masterLabel>
+            <translation>Voertuig vastgereden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vérins</masterLabel>
+            <translation>Vijzels</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

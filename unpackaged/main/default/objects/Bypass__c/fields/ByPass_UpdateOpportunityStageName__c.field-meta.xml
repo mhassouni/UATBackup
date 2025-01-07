@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ByPass_UpdateOpportunityStageName__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Autorise les utilisateurs à modifier le statut des opportunités SAP CPQ</description>
+    <label>ByPass_UpdateOpportunityStageName</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,46 @@
+[
+    {
+        "Name": "--None--",
+        "Path": "--None--"
+    },
+    {
+        "Name": "Date du score",
+        "Path": "/getScoreResponse/return/myInfo/dateValeur"
+    },
+    {
+        "Name": "En-cours recommandé",
+        "Path": "/getScoreResponse/return/myInfo/encours"
+    },
+    {
+        "Name": "Niveau de risque",
+        "Path": "/getScoreResponse/return/myInfo/niveauRisque"
+    },
+    {
+        "Name": "Code Niveau de risque",
+        "Path": "/getScoreResponse/return/myInfo/niveauRisqueCode"
+    },
+    {
+        "Name": "Probabilité de défaillance",
+        "Path": "/getScoreResponse/return/myInfo/probaDefaillance"
+    },
+    {
+        "Name": "Score (sur 100)",
+        "Path": "/getScoreResponse/return/myInfo/scoreCent"
+    },
+    {
+        "Name": "Score sectoriel (sur 100)",
+        "Path": "/getScoreResponse/return/myInfo/scoreSectorielCent"
+    },
+    {
+        "Name": "Score sectoriel (sur 20)",
+        "Path": "/getScoreResponse/return/myInfo/scoreSectorielVingt"
+    },
+    {
+        "Name": "Score (sur 20)",
+        "Path": "/getScoreResponse/return/myInfo/scoreVingt"
+    },
+    {
+        "Name": "Indicateur de présence du Bilan",
+        "Path": "/getScoreResponse/return/myInfo/typeBilan"
+    }
+]

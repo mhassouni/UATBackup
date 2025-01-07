@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_Famille__c</fullName>
+    <label>Sous Famille</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Famille__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accesoires Meubles</fullName>
+                <default>false</default>
+                <label>Accesoires Meubles</label>
+            </value>
+            <value>
+                <fullName>Accessoires</fullName>
+                <default>false</default>
+                <label>Accessoires</label>
+            </value>
+            <value>
+                <fullName>Ad blue</fullName>
+                <default>false</default>
+                <label>Ad blue</label>
+            </value>
+            <value>
+                <fullName>Agences de voyage</fullName>
+                <default>false</default>
+                <label>Agences de voyage</label>
+            </value>
+            <value>
+                <fullName>Appareils de mesure</fullName>
+                <default>false</default>
+                <label>Appareils de mesure</label>
+            </value>
+            <value>
+                <fullName>Badge autoroute</fullName>
+                <default>false</default>
+                <label>Badge autoroute</label>
+            </value>
+            <value>
+                <fullName>Batteries</fullName>
+                <default>false</default>
+                <label>Batteries</label>
+            </value>
+            <value>
+                <fullName>Caissons frigorifiques</fullName>
+                <default>false</default>
+                <label>Caissons frigorifiques</label>
+            </value>
+            <value>
+                <fullName>Carburant</fullName>
+                <default>false</default>
+                <label>Carburant</label>
+            </value>
+            <value>
+                <fullName>Carrosseries</fullName>
+                <default>false</default>
+                <label>Carrosseries</label>
+            </value>
+            <value>
+                <fullName>Carte carburant</fullName>
+                <default>false</default>
+                <label>Carte carburant</label>
+            </value>
+            <value>
+                <fullName>Certificats économie d&#39;énergie</fullName>
+                <default>false</default>
+                <label>Certificats économie d&#39;énergie</label>
+            </value>
+            <value>
+                <fullName>Chariots élévateurs</fullName>
+                <default>false</default>
+                <label>Chariots élévateurs</label>
+            </value>
+            <value>
+                <fullName>Châssis</fullName>
+                <default>false</default>
+                <label>Châssis</label>
+            </value>
+            <value>
+                <fullName>Consommables atelier</fullName>
+                <default>false</default>
+                <label>Consommables atelier</label>
+            </value>
+            <value>
+                <fullName>Consommables informatiques</fullName>
+                <default>false</default>
+                <label>Consommables informatiques</label>
+            </value>
+            <value>
+                <fullName>Containers</fullName>
+                <default>false</default>
+                <label>Containers</label>
+            </value>
+            <value>
+                <fullName>Contrôle technique atelier</fullName>
+                <default>false</default>
+                <label>Contrôle technique atelier</label>
+            </value>
+            <value>
+                <fullName>Contrôle technique véhicules</fullName>
+                <default>false</default>
+                <label>Contrôle technique véhicules</label>
+            </value>
+            <value>
+                <fullName>Courrier/messagerie</fullName>
+                <default>false</default>
+                <label>Courrier/messagerie</label>
+            </value>
+            <value>
+                <fullName>Déchets</fullName>
+                <default>false</default>
+                <label>Déchets</label>
+            </value>
+            <value>
+                <fullName>Dépannage</fullName>
+                <default>false</default>
+                <label>Dépannage</label>
+            </value>
+            <value>
+                <fullName>EPI</fullName>
+                <default>false</default>
+                <label>EPI</label>
+            </value>
+            <value>
+                <fullName>Extincteurs</fullName>
+                <default>false</default>
+                <label>Extincteurs</label>
+            </value>
+            <value>
+                <fullName>Fluides frigorifiques</fullName>
+                <default>false</default>
+                <label>Fluides frigorifiques</label>
+            </value>
+            <value>
+                <fullName>Fontaine de dégraissage</fullName>
+                <default>false</default>
+                <label>Fontaine de dégraissage</label>
+            </value>
+            <value>
+                <fullName>Fontaines à eau</fullName>
+                <default>false</default>
+                <label>Fontaines à eau</label>
+            </value>
+            <value>
+                <fullName>Fourniture bureau</fullName>
+                <default>false</default>
+                <label>Fourniture bureau</label>
+            </value>
+            <value>
+                <fullName>Gaz industriel</fullName>
+                <default>false</default>
+                <label>Gaz industriel</label>
+            </value>
+            <value>
+                <fullName>Groupe Froid</fullName>
+                <default>false</default>
+                <label>Groupe Froid</label>
+            </value>
+            <value>
+                <fullName>Gueuse</fullName>
+                <default>false</default>
+                <label>Gueuse</label>
+            </value>
+            <value>
+                <fullName>Hayons</fullName>
+                <default>false</default>
+                <label>Hayons</label>
+            </value>
+            <value>
+                <fullName>Imprimerie</fullName>
+                <default>false</default>
+                <label>Imprimerie</label>
+            </value>
+            <value>
+                <fullName>Lavage véhicules</fullName>
+                <default>false</default>
+                <label>Lavage véhicules</label>
+            </value>
+            <value>
+                <fullName>Liquide de refroidissement</fullName>
+                <default>false</default>
+                <label>Liquide de refroidissement</label>
+            </value>
+            <value>
+                <fullName>Logiciel / Software</fullName>
+                <default>false</default>
+                <label>Logiciel / Software</label>
+            </value>
+            <value>
+                <fullName>Lubrifiants</fullName>
+                <default>false</default>
+                <label>Lubrifiants</label>
+            </value>
+            <value>
+                <fullName>Machine à café</fullName>
+                <default>false</default>
+                <label>Machine à café</label>
+            </value>
+            <value>
+                <fullName>Machines à affranchir</fullName>
+                <default>false</default>
+                <label>Machines à affranchir</label>
+            </value>
+            <value>
+                <fullName>Matériel / Hardware</fullName>
+                <default>false</default>
+                <label>Matériel / Hardware</label>
+            </value>
+            <value>
+                <fullName>Meubles</fullName>
+                <default>false</default>
+                <label>Meubles</label>
+            </value>
+            <value>
+                <fullName>Outillage atelier</fullName>
+                <default>false</default>
+                <label>Outillage atelier</label>
+            </value>
+            <value>
+                <fullName>PDR CAISSE</fullName>
+                <default>false</default>
+                <label>PDR CAISSE</label>
+            </value>
+            <value>
+                <fullName>PDR CONTAINER</fullName>
+                <default>false</default>
+                <label>PDR CONTAINER</label>
+            </value>
+            <value>
+                <fullName>PDR groupe FROID</fullName>
+                <default>false</default>
+                <label>PDR groupe FROID</label>
+            </value>
+            <value>
+                <fullName>PDR HAYON</fullName>
+                <default>false</default>
+                <label>PDR HAYON</label>
+            </value>
+            <value>
+                <fullName>PDR Triporteur</fullName>
+                <default>false</default>
+                <label>PDR Triporteur</label>
+            </value>
+            <value>
+                <fullName>Peinture</fullName>
+                <default>false</default>
+                <label>Peinture</label>
+            </value>
+            <value>
+                <fullName>Pharmacie</fullName>
+                <default>false</default>
+                <label>Pharmacie</label>
+            </value>
+            <value>
+                <fullName>Photocopieurs</fullName>
+                <default>false</default>
+                <label>Photocopieurs</label>
+            </value>
+            <value>
+                <fullName>Pièces de rechange chassis</fullName>
+                <default>false</default>
+                <label>Pièces de rechange chassis</label>
+            </value>
+            <value>
+                <fullName>Pièces Meubles</fullName>
+                <default>false</default>
+                <label>Pièces Meubles</label>
+            </value>
+            <value>
+                <fullName>PLV CAISSE</fullName>
+                <default>false</default>
+                <label>PLV CAISSE</label>
+            </value>
+            <value>
+                <fullName>PLV meubles</fullName>
+                <default>false</default>
+                <label>PLV meubles</label>
+            </value>
+            <value>
+                <fullName>Pneus</fullName>
+                <default>false</default>
+                <label>Pneus</label>
+            </value>
+            <value>
+                <fullName>Presta SAV meubles</fullName>
+                <default>false</default>
+                <label>Presta SAV meubles</label>
+            </value>
+            <value>
+                <fullName>Produit de nettoyage</fullName>
+                <default>false</default>
+                <label>Produit de nettoyage</label>
+            </value>
+            <value>
+                <fullName>Produits Hygiène</fullName>
+                <default>false</default>
+                <label>Produits Hygiène</label>
+            </value>
+            <value>
+                <fullName>Réfection de boite et moteur</fullName>
+                <default>false</default>
+                <label>Réfection de boite et moteur</label>
+            </value>
+            <value>
+                <fullName>SAV MANUT</fullName>
+                <default>false</default>
+                <label>SAV MANUT</label>
+            </value>
+            <value>
+                <fullName>Sèche main</fullName>
+                <default>false</default>
+                <label>Sèche main</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Télécom / Réseaux</fullName>
+                <default>false</default>
+                <label>Télécom / Réseaux</label>
+            </value>
+            <value>
+                <fullName>Télématique</fullName>
+                <default>false</default>
+                <label>Télématique</label>
+            </value>
+            <value>
+                <fullName>Téléphonie mobile</fullName>
+                <default>false</default>
+                <label>Téléphonie mobile</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Triporteur</fullName>
+                <default>false</default>
+                <label>Triporteur</label>
+            </value>
+            <value>
+                <fullName>Valise Diagnostique</fullName>
+                <default>false</default>
+                <label>Valise Diagnostique</label>
+            </value>
+            <value>
+                <fullName>Véhicules pour collaborateurs</fullName>
+                <default>false</default>
+                <label>Véhicules pour collaborateurs</label>
+            </value>
+            <value>
+                <fullName>Vêtement de travail</fullName>
+                <default>false</default>
+                <label>Vêtement de travail</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Logiciel / Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Matériel / Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Télécom / Réseaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Certificats économie d&#39;énergie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Chariots élévateurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Contrôle technique atelier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Contrôle technique véhicules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Déchets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Dépannage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>EPI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Extincteurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Fontaine de dégraissage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Gaz industriel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Gueuse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Lavage véhicules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Liquide de refroidissement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Lubrifiants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Outillage atelier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Peinture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Produit de nettoyage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Réfection de boite et moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>SAV MANUT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ATELIER</controllingFieldValue>
+            <valueName>Valise Diagnostique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARBURANTS</controllingFieldValue>
+            <valueName>Ad blue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARBURANTS</controllingFieldValue>
+            <valueName>Carburant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARBURANTS</controllingFieldValue>
+            <valueName>Carte carburant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARBURANTS</controllingFieldValue>
+            <valueName>Containers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARBURANTS</controllingFieldValue>
+            <valueName>PDR CONTAINER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEPLACEMENT</controllingFieldValue>
+            <valueName>Agences de voyage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DEPLACEMENT</controllingFieldValue>
+            <valueName>Badge autoroute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Consommables informatiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Courrier/messagerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Fontaines à eau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Fourniture bureau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Imprimerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Machine à café</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Machines à affranchir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Pharmacie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Photocopieurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Produits Hygiène</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Sèche main</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Téléphonie mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Véhicules pour collaborateurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRAIS GENERAUX</controllingFieldValue>
+            <valueName>Vêtement de travail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - GROUPE FROID</controllingFieldValue>
+            <valueName>Appareils de mesure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - GROUPE FROID</controllingFieldValue>
+            <valueName>Fluides frigorifiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - GROUPE FROID</controllingFieldValue>
+            <valueName>Groupe Froid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - MEUBLES</controllingFieldValue>
+            <valueName>Accesoires Meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - MEUBLES</controllingFieldValue>
+            <valueName>Meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - MEUBLES</controllingFieldValue>
+            <valueName>Pièces Meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - MEUBLES</controllingFieldValue>
+            <valueName>PLV meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAPEX - MEUBLES</controllingFieldValue>
+            <valueName>Presta SAV meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>Batteries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>Consommables atelier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>PDR CAISSE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>PDR groupe FROID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>PDR HAYON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>PDR Triporteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>Pièces de rechange chassis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPEX - PDR</controllingFieldValue>
+            <valueName>Pneus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRANSPORT</controllingFieldValue>
+            <valueName>Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Caissons frigorifiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Carrosseries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Châssis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Hayons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>PLV CAISSE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Télématique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VEHICULES</controllingFieldValue>
+            <valueName>Triporteur</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

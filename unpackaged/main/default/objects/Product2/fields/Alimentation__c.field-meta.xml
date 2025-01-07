@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alimentation__c</fullName>
+    <label>Alimentation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>380 V Tri + Terre + Neutre - 32 A - 12 kW</fullName>
+                <default>false</default>
+                <label>380 V Tri + Terre + Neutre - 32 A - 12 kW</label>
+            </value>
+            <value>
+                <fullName>380 V + T32 A + 220 V 16 A</fullName>
+                <default>false</default>
+                <label>380 V + T32 A + 220 V 16 A</label>
+            </value>
+            <value>
+                <fullName>230 V Mono - 32 A</fullName>
+                <default>false</default>
+                <label>230 V Mono - 32 A</label>
+            </value>
+            <value>
+                <fullName>380 V Tri + Terre + Neutre - 16 A</fullName>
+                <default>false</default>
+                <label>380 V Tri + Terre + Neutre - 16 A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

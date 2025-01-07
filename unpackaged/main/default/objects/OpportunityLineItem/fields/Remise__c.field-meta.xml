@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise__c</fullName>
+    <description>Alimenté par SAP CPQ / Anciennement nommé sur SF &quot;Remise (%)&quot; - mappé avec &quot;Remise&quot; CPQ</description>
+    <label>Remise client appliquée</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

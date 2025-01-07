@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__QuoteTotalsPrinted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Forces quote totals to print after line items rendered by this section.</description>
+    <inlineHelpText>Sélectionnez cette case pour imprimer les totaux de devis après cette section. Applicable uniquement aux sections Éléments de ligne.</inlineHelpText>
+    <label>Print Quote Totals</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

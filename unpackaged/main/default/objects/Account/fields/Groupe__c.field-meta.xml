@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Groupe__c</fullName>
+    <label>Groupe</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PFGROUPE</fullName>
+                <default>false</default>
+                <label>PFGROUPE</label>
+            </value>
+            <value>
+                <fullName>PFLOGROUPE</fullName>
+                <default>false</default>
+                <label>PFLOGROUPE</label>
+            </value>
+            <value>
+                <fullName>RESFR</fullName>
+                <default>false</default>
+                <label>RESFR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

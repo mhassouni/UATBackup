@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probabilite_signature__c</fullName>
+    <inlineHelpText>Indiquer selon votre feeling la probabilité de signer l&#39;opportunité</inlineHelpText>
+    <label>Probabilité signature</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0% (Perdu)</fullName>
+                <default>false</default>
+                <label>0% (Perdu)</label>
+            </value>
+            <value>
+                <fullName>20% (Peu probable)</fullName>
+                <default>false</default>
+                <label>20% (Peu probable)</label>
+            </value>
+            <value>
+                <fullName>50% (Probable)</fullName>
+                <default>false</default>
+                <label>50% (Probable)</label>
+            </value>
+            <value>
+                <fullName>80% (Très probable)</fullName>
+                <default>false</default>
+                <label>80% (Très probable)</label>
+            </value>
+            <value>
+                <fullName>100% (Signé)</fullName>
+                <default>false</default>
+                <label>100% (Signé)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>3 - Proposition remise</controllingFieldValue>
+            <controllingFieldValue>4 - En négociation</controllingFieldValue>
+            <controllingFieldValue>1 - Opportunité créée</controllingFieldValue>
+            <controllingFieldValue>2 - Opportunité qualifiée</controllingFieldValue>
+            <valueName>20% (Peu probable)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3 - Proposition remise</controllingFieldValue>
+            <controllingFieldValue>4 - En négociation</controllingFieldValue>
+            <controllingFieldValue>1 - Opportunité créée</controllingFieldValue>
+            <controllingFieldValue>2 - Opportunité qualifiée</controllingFieldValue>
+            <valueName>50% (Probable)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3 - Proposition remise</controllingFieldValue>
+            <controllingFieldValue>4 - En négociation</controllingFieldValue>
+            <controllingFieldValue>4 - Accord de principe</controllingFieldValue>
+            <controllingFieldValue>1 - Opportunité créée</controllingFieldValue>
+            <controllingFieldValue>2 - Opportunité qualifiée</controllingFieldValue>
+            <valueName>80% (Très probable)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>5 - Gagnée</controllingFieldValue>
+            <controllingFieldValue>6 - Contrat signé</controllingFieldValue>
+            <controllingFieldValue>5 - Contrat signé</controllingFieldValue>
+            <controllingFieldValue>6 - Gagnée</controllingFieldValue>
+            <valueName>100% (Signé)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7 - Perdue</controllingFieldValue>
+            <controllingFieldValue>8 - Inactive</controllingFieldValue>
+            <valueName>0% (Perdu)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

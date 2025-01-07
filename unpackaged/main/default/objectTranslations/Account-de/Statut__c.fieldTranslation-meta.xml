@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Status</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Attente Validation CM</masterLabel>
+            <translation>Warten auf CM-Freigabe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué</masterLabel>
+            <translation>Blockiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué CM</masterLabel>
+            <translation><!-- Bloqué CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente analyse CM</masterLabel>
+            <translation><!-- En attente analyse CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur EH</masterLabel>
+            <translation>Fehler EH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactif</masterLabel>
+            <translation>Inaktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé CM</masterLabel>
+            <translation><!-- Refusé CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refusé DC</masterLabel>
+            <translation><!-- Refusé DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation>Freigegeben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé CM</masterLabel>
+            <translation>Freigegeben CM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé DC</masterLabel>
+            <translation><!-- Validé DC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

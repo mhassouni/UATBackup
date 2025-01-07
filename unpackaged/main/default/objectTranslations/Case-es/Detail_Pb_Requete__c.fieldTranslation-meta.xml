@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Detalle problema</label>
+        <name>Detail_Pb_Requete__c</name>
+        <picklistValues>
+            <masterLabel>Accessoires</masterLabel>
+            <translation>Accesorios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessoires (Etagères, rails )</masterLabel>
+            <translation>Accesorios (estantes, rieles, etc.)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accident véhicule</masterLabel>
+            <translation>Accidente de vehículo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès</masterLabel>
+            <translation><!-- Accès --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire électrique</masterLabel>
+            <translation><!-- Armoire électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV/Transmission</masterLabel>
+            <translation>Caja de cambios / Transmisión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruit anormal</masterLabel>
+            <translation>Ruido anormal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casse Pare Brise</masterLabel>
+            <translation>Parabrisas roto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloison</masterLabel>
+            <translation>Separación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code alarme (à préciser sur les commentaires)</masterLabel>
+            <translation>Código de alarma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur</masterLabel>
+            <translation><!-- Compresseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coupure moteur</masterLabel>
+            <translation>Apagado del motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crevaison</masterLabel>
+            <translation>Pinchazo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descend Tout Seul</masterLabel>
+            <translation>Baja solo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction</masterLabel>
+            <translation>Dirección</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Froid</masterLabel>
+            <translation>Fallo de frío</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Hayon</masterLabel>
+            <translation>Fallo plataforma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage</masterLabel>
+            <translation>La puesta en marcha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage / Batterie</masterLabel>
+            <translation>Arranque/batería</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage</masterLabel>
+            <translation>Iluminación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage / Signalisation</masterLabel>
+            <translation>Iluminación/señalización</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eléctricité Châssis</masterLabel>
+            <translation>Electricidad chasis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enregistreur</masterLabel>
+            <translation><!-- Enregistreur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur Utilisation / Casse Rétroviseur</masterLabel>
+            <translation>Error de usuario / rotura del espejo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur carburant / adblue / lubrifiant</masterLabel>
+            <translation>Error de combustible / adblue / lubricante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fluide frigorigene</masterLabel>
+            <translation><!-- Fluide frigorigene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne mais ne manœuvre pas</masterLabel>
+            <translation>Funciona pero no funciona</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne tout seul</masterLabel>
+            <translation>Funciona solo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freins</masterLabel>
+            <translation>Frenos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite d&#39;air</masterLabel>
+            <translation>Fuga de aire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon bloqué position ouverte</masterLabel>
+            <translation><!-- Hayon bloqué position ouverte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jante</masterLabel>
+            <translation>Llanta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur / BV / Pont</masterLabel>
+            <translation>Motor/caja cambios/puente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur condenseur</masterLabel>
+            <translation><!-- Moteur condenseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur evaporateur</masterLabel>
+            <translation><!-- Moteur evaporateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne fonctionne pas</masterLabel>
+            <translation>No funciona</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur route</masterLabel>
+            <translation>No se enciende en marcha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur secteur</masterLabel>
+            <translation>No se enciende al estar conectado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouverture/Fermeture</masterLabel>
+            <translation>Apertura / cierre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouvrant (portes, Fenetres)</masterLabel>
+            <translation><!-- Ouvrant (portes, Fenetres) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne GO</masterLabel>
+            <translation>Avería sist. híbrido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne carburant / AdBlue</masterLabel>
+            <translation><!-- Panne carburant / AdBlue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte / Casse de clé</masterLabel>
+            <translation>Pérdida / Llave rota</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte roue / roue déserrée</masterLabel>
+            <translation><!-- Perte roue / roue déserrée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plancher</masterLabel>
+            <translation><!-- Plancher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise en glace</masterLabel>
+            <translation><!-- Prise en glace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de phase</masterLabel>
+            <translation>Problema de los faros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de prise</masterLabel>
+            <translation>Problema de agarre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puissance</masterLabel>
+            <translation>Potencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspensions</masterLabel>
+            <translation><!-- Suspensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne descend pas en température</masterLabel>
+            <translation>Se enciende pero no baja de temperatura</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne démarre pas</masterLabel>
+            <translation>Se enciende peor no arranca</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usure</masterLabel>
+            <translation>Desgaste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilation</masterLabel>
+            <translation><!-- Ventilation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant tableau de bord</masterLabel>
+            <translation>Indicador salpicadero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant/Message d&#39;alerte au tableau de bord</masterLabel>
+            <translation>Testigo/Mensaje de alerta en el cuadro de mando</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule embourbé</masterLabel>
+            <translation>Vehículo atascado</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

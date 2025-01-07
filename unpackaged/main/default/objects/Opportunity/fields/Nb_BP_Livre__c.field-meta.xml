@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nb_BP_Livre__c</fullName>
+    <label>Nb_BP_Livre</label>
+    <summaryFilterItems>
+        <field>InvolvedStakeholder__c.Role__c</field>
+        <operation>equals</operation>
+        <value>Livré</value>
+    </summaryFilterItems>
+    <summaryForeignKey>InvolvedStakeholder__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

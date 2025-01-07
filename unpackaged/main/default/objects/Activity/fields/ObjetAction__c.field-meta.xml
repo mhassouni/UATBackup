@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjetAction__c</fullName>
+    <label>Objet de l&#39;action</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Opération commerciale</fullName>
+                <default>false</default>
+                <label>Opération commerciale</label>
+            </value>
+            <value>
+                <fullName>Prospection</fullName>
+                <default>false</default>
+                <label>Prospection</label>
+            </value>
+            <value>
+                <fullName>Découverte</fullName>
+                <default>false</default>
+                <label>Découverte</label>
+            </value>
+            <value>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+                <label>Qualification</label>
+            </value>
+            <value>
+                <fullName>Synthèse de prestations</fullName>
+                <default>false</default>
+                <label>Synthèse de prestations</label>
+            </value>
+            <value>
+                <fullName>Suivi Client</fullName>
+                <default>false</default>
+                <label>Suivi Client</label>
+            </value>
+            <value>
+                <fullName>Fichier AAA</fullName>
+                <default>false</default>
+                <label>Fichier AAA</label>
+            </value>
+            <value>
+                <fullName>Gestion de l&#39;opportunité</fullName>
+                <default>false</default>
+                <label>Gestion de l&#39;opportunité</label>
+            </value>
+            <value>
+                <fullName>Action suite à résiliation</fullName>
+                <default>false</default>
+                <label>Action suite à résiliation</label>
+            </value>
+            <value>
+                <fullName>COVID</fullName>
+                <default>false</default>
+                <label>COVID</label>
+            </value>
+            <value>
+                <fullName>Prise de contact multi-produits</fullName>
+                <default>false</default>
+                <label>Prise de contact multi-produits</label>
+            </value>
+            <value>
+                <fullName>Relance</fullName>
+                <default>false</default>
+                <label>Relance</label>
+            </value>
+            <value>
+                <fullName>Suivi Client Détracteur</fullName>
+                <default>false</default>
+                <label>Suivi Client Détracteur</label>
+            </value>
+            <value>
+                <fullName>Suivi Client Passif</fullName>
+                <default>false</default>
+                <label>Suivi Client Passif</label>
+            </value>
+            <value>
+                <fullName>Suivi Client Promoteur</fullName>
+                <default>false</default>
+                <label>Suivi Client Promoteur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

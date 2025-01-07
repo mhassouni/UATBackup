@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Administrateur</fullName>
+        <default>false</default>
+        <label>Administrateur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Assistant</fullName>
+        <default>false</default>
+        <label>Assistant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Directeur</fullName>
+        <default>false</default>
+        <label>Directeur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employé</fullName>
+        <default>false</default>
+        <label>Employé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gérant</fullName>
+        <default>false</default>
+        <label>Gérant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Particulier</fullName>
+        <default>false</default>
+        <label>Particulier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Propriétaire</fullName>
+        <default>false</default>
+        <label>Propriétaire</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responsable</fullName>
+        <default>false</default>
+        <label>Responsable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Igloo</fullName>
+        <default>false</default>
+        <label>Commercial Igloo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facturation</fullName>
+        <default>false</default>
+        <label>Facturation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Comptabilité</fullName>
+        <default>false</default>
+        <label>Comptabilité</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PV</fullName>
+        <default>false</default>
+        <label>PV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Exploit.</fullName>
+        <default>false</default>
+        <label>Exploit.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relevé KM</fullName>
+        <default>false</default>
+        <label>Relevé KM</label>
+    </standardValue>
+</StandardValueSet>

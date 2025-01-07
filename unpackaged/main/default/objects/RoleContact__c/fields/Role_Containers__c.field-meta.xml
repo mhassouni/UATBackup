@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_Containers__c</fullName>
+    <label>Rôle (Containers)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Payeur</fullName>
+                <default>false</default>
+                <label>Payeur</label>
+            </value>
+            <value>
+                <fullName>Exploitant</fullName>
+                <default>false</default>
+                <label>Exploitant</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Comptabilité</fullName>
+                <default>false</default>
+                <label>Comptabilité</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>Avis de paiement</fullName>
+                <default>false</default>
+                <label>Avis de paiement</label>
+            </value>
+            <value>
+                <fullName>Facture dématérialisée</fullName>
+                <default>false</default>
+                <label>Facture dématérialisée</label>
+            </value>
+            <value>
+                <fullName>Livré</fullName>
+                <default>false</default>
+                <label>Livré</label>
+            </value>
+            <value>
+                <fullName>Donneur d&#39;ordre</fullName>
+                <default>false</default>
+                <label>Donneur d&#39;ordre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

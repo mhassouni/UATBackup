@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Contact_Commercial_FirstNameRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+    AND(RecordType.Name = &quot;Contact - Commercial&quot;, ISBLANK(FirstName), $Profile.Name&lt;&gt;&quot;PF Administrateur Système&quot;), 
+    TRUE, 
+    FALSE
+)</errorConditionFormula>
+    <errorMessage>Le champ Prénom doit être renseigné</errorMessage>
+</ValidationRule>

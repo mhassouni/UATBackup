@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Temperaturschreiber</label>
+        <name>Enregistreur_T__c</name>
+        <picklistValues>
+            <masterLabel>A DISQUE</masterLabel>
+            <translation>mit Scheibe / Schaublatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 100  - Clé USB</masterLabel>
+            <translation>Datacold 100 - USB Schlüssel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 300 R - avec imprimante</masterLabel>
+            <translation>Datacold 300 R - mit Drucker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 600 R - avec imprimante</masterLabel>
+            <translation>Datacold 600 R - mit Drucker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 600 T - avec imprimante</masterLabel>
+            <translation>Datacold 600 T - mit Drucker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEOLOCALISATION AVEC REMONTEE DE T°</masterLabel>
+            <translation>Ortung mit Temperaturanzeige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements GROUPE</masterLabel>
+            <translation>außer Standard - siehe Einrichungen vom Kühlaggregat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCHPRINT PREMIUM - avec imprimante</masterLabel>
+            <translation>Touchprint Premium - mit Drucker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCHPRINT standard  - avec imprimante</masterLabel>
+            <translation>Touchprint Standard - mit Drucker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSCAN ADVANCE</masterLabel>
+            <translation>Transcan Advance</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

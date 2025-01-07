@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>blng__BankRoutingCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The valid Routing number of the customer’s Bank</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Le numéro de routage valide de la banque, qui est aussi appelé le code ABA</inlineHelpText>
+    <label>Bank Routing Code</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

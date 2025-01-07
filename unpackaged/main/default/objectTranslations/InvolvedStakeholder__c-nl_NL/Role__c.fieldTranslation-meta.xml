@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Partnerrol</label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Donneur d’ordre</masterLabel>
+            <translation>Besteller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facturé</masterLabel>
+            <translation>Gefactureerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livré</masterLabel>
+            <translation>Geleverd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PV</masterLabel>
+            <translation><!-- PV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payeur</masterLabel>
+            <translation>Betaler</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

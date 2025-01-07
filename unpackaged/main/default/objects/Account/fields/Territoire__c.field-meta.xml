@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territoire__c</fullName>
+    <label>Territoire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Region__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ANTILLES</fullName>
+                <default>false</default>
+                <label>ANTILLES</label>
+            </value>
+            <value>
+                <fullName>DO1A</fullName>
+                <default>false</default>
+                <label>DO1A</label>
+            </value>
+            <value>
+                <fullName>DO1B</fullName>
+                <default>false</default>
+                <label>DO1B</label>
+            </value>
+            <value>
+                <fullName>DO2A</fullName>
+                <default>false</default>
+                <label>DO2A</label>
+            </value>
+            <value>
+                <fullName>DO2B</fullName>
+                <default>false</default>
+                <label>DO2B</label>
+            </value>
+            <value>
+                <fullName>DO3A</fullName>
+                <default>false</default>
+                <label>DO3A</label>
+            </value>
+            <value>
+                <fullName>DO3B</fullName>
+                <default>false</default>
+                <label>DO3B</label>
+            </value>
+            <value>
+                <fullName>DO4A</fullName>
+                <default>false</default>
+                <label>DO4A</label>
+            </value>
+            <value>
+                <fullName>DO4B</fullName>
+                <default>false</default>
+                <label>DO4B</label>
+            </value>
+            <value>
+                <fullName>DO5A</fullName>
+                <default>false</default>
+                <label>DO5A</label>
+            </value>
+            <value>
+                <fullName>DO5B</fullName>
+                <default>false</default>
+                <label>DO5B</label>
+            </value>
+            <value>
+                <fullName>DRO IDF 1</fullName>
+                <default>false</default>
+                <label>DRO IDF 1</label>
+            </value>
+            <value>
+                <fullName>DRO IDF 2</fullName>
+                <default>false</default>
+                <label>DRO IDF 2</label>
+            </value>
+            <value>
+                <fullName>DROM</fullName>
+                <default>false</default>
+                <label>DROM</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 1</fullName>
+                <default>false</default>
+                <label>DRO NORD 1</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 2</fullName>
+                <default>false</default>
+                <label>DRO NORD 2</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 3</fullName>
+                <default>false</default>
+                <label>DRO NORD 3</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 4</fullName>
+                <default>false</default>
+                <label>DRO NORD 4</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 5</fullName>
+                <default>false</default>
+                <label>DRO NORD 5</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 6</fullName>
+                <default>false</default>
+                <label>DRO NORD 6</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 7</fullName>
+                <default>false</default>
+                <label>DRO NORD 7</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 1</fullName>
+                <default>false</default>
+                <label>DRO SUD 1</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 2</fullName>
+                <default>false</default>
+                <label>DRO SUD 2</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 3</fullName>
+                <default>false</default>
+                <label>DRO SUD 3</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 4</fullName>
+                <default>false</default>
+                <label>DRO SUD 4</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 5</fullName>
+                <default>false</default>
+                <label>DRO SUD 5</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 6</fullName>
+                <default>false</default>
+                <label>DRO SUD 6</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 7</fullName>
+                <default>false</default>
+                <label>DRO SUD 7</label>
+            </value>
+            <value>
+                <fullName>ILE MAURICE</fullName>
+                <default>false</default>
+                <label>ILE MAURICE</label>
+            </value>
+            <value>
+                <fullName>OCEAN INDIEN</fullName>
+                <default>false</default>
+                <label>OCEAN INDIEN</label>
+            </value>
+            <value>
+                <fullName>PFM</fullName>
+                <default>false</default>
+                <label>PFM</label>
+            </value>
+            <value>
+                <fullName>PFUK</fullName>
+                <default>false</default>
+                <label>PFUK</label>
+            </value>
+            <value>
+                <fullName>PIAE</fullName>
+                <default>false</default>
+                <label>PIAE</label>
+            </value>
+            <value>
+                <fullName>PIAT</fullName>
+                <default>false</default>
+                <label>PIAT</label>
+            </value>
+            <value>
+                <fullName>PIBE</fullName>
+                <default>false</default>
+                <label>PIBE</label>
+            </value>
+            <value>
+                <fullName>PIBU</fullName>
+                <default>false</default>
+                <label>PIBU</label>
+            </value>
+            <value>
+                <fullName>PICH</fullName>
+                <default>false</default>
+                <label>PICH</label>
+            </value>
+            <value>
+                <fullName>PICZ</fullName>
+                <default>false</default>
+                <label>PICZ</label>
+            </value>
+            <value>
+                <fullName>PIDE</fullName>
+                <default>false</default>
+                <label>PIDE</label>
+            </value>
+            <value>
+                <fullName>PIES</fullName>
+                <default>false</default>
+                <label>PIES</label>
+            </value>
+            <value>
+                <fullName>PIHU</fullName>
+                <default>false</default>
+                <label>PIHU</label>
+            </value>
+            <value>
+                <fullName>PILU</fullName>
+                <default>false</default>
+                <label>PILU</label>
+            </value>
+            <value>
+                <fullName>PIMA</fullName>
+                <default>false</default>
+                <label>PIMA</label>
+            </value>
+            <value>
+                <fullName>PIND</fullName>
+                <default>false</default>
+                <label>PIND</label>
+            </value>
+            <value>
+                <fullName>PINL</fullName>
+                <default>false</default>
+                <label>PINL</label>
+            </value>
+            <value>
+                <fullName>PIPL</fullName>
+                <default>false</default>
+                <label>PIPL</label>
+            </value>
+            <value>
+                <fullName>PIPT</fullName>
+                <default>false</default>
+                <label>PIPT</label>
+            </value>
+            <value>
+                <fullName>PIRL</fullName>
+                <default>false</default>
+                <label>PIRL</label>
+            </value>
+            <value>
+                <fullName>PIRO</fullName>
+                <default>false</default>
+                <label>PIRO</label>
+            </value>
+            <value>
+                <fullName>PISK</fullName>
+                <default>false</default>
+                <label>PISK</label>
+            </value>
+            <value>
+                <fullName>PITA</fullName>
+                <default>false</default>
+                <label>PITA</label>
+            </value>
+            <value>
+                <fullName>PIZA</fullName>
+                <default>false</default>
+                <label>PIZA</label>
+            </value>
+            <value>
+                <fullName>STFR1</fullName>
+                <default>false</default>
+                <label>STFR1</label>
+            </value>
+            <value>
+                <fullName>STFR2</fullName>
+                <default>false</default>
+                <label>STFR2</label>
+            </value>
+            <value>
+                <fullName>STFR3</fullName>
+                <default>false</default>
+                <label>STFR3</label>
+            </value>
+            <value>
+                <fullName>STFR4</fullName>
+                <default>false</default>
+                <label>STFR4</label>
+            </value>
+            <value>
+                <fullName>STFR5</fullName>
+                <default>false</default>
+                <label>STFR5</label>
+            </value>
+            <value>
+                <fullName>USA</fullName>
+                <default>false</default>
+                <label>USA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>DIRECTION RESEAU DROM</controllingFieldValue>
+            <valueName>DROM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <valueName>PFM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIBE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIBU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PICH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PICZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIDE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIHU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PILU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIND</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PINL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIPL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PIRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCEE</controllingFieldValue>
+            <valueName>PISK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEUS</controllingFieldValue>
+            <valueName>USA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEM</controllingFieldValue>
+            <valueName>PIES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEM</controllingFieldValue>
+            <valueName>PIMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEM</controllingFieldValue>
+            <valueName>PIPT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEM</controllingFieldValue>
+            <valueName>PITA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UMEA</controllingFieldValue>
+            <valueName>PFUK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UMEA</controllingFieldValue>
+            <valueName>PIRL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UMEA</controllingFieldValue>
+            <valueName>PIZA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU DROM</controllingFieldValue>
+            <valueName>ILE MAURICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU DROM</controllingFieldValue>
+            <valueName>OCEAN INDIEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU IDF</controllingFieldValue>
+            <valueName>DRO IDF 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU IDF</controllingFieldValue>
+            <valueName>DRO IDF 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU NORD</controllingFieldValue>
+            <valueName>DRO NORD 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECTION RESEAU SUD</controllingFieldValue>
+            <valueName>DRO SUD 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF1</controllingFieldValue>
+            <valueName>DO1A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF1</controllingFieldValue>
+            <valueName>DO1B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF2</controllingFieldValue>
+            <valueName>DO2A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF2</controllingFieldValue>
+            <valueName>DO2B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF3</controllingFieldValue>
+            <valueName>DO3A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF3</controllingFieldValue>
+            <valueName>DO3B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF4</controllingFieldValue>
+            <valueName>DO4A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF4</controllingFieldValue>
+            <valueName>DO4B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF5</controllingFieldValue>
+            <valueName>DO5A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DF5</controllingFieldValue>
+            <valueName>DO5B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR</controllingFieldValue>
+            <valueName>STFR1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR</controllingFieldValue>
+            <valueName>STFR2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR</controllingFieldValue>
+            <valueName>STFR3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR</controllingFieldValue>
+            <valueName>STFR4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR</controllingFieldValue>
+            <valueName>STFR5</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

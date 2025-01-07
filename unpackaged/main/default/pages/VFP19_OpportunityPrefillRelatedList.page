@@ -1,0 +1,1 @@
+<apex:page standardController="Opportunity" extensions="VFE12_OpportunityPrefill" recordSetVar="opportunities" action="{!prefillChildOpportunity}"/>

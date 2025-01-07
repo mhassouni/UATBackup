@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empreinte_Geo_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+ ISPICKVAL(Empreinte_Geographique__c, &#39;I&#39;),
+ IMAGE(&quot;/resource/Empreinte_Geo_I&quot;, &quot;International&quot;, 32, 32),
+ IF
+ (
+  ISPICKVAL(Empreinte_Geographique__c, &#39;N&#39;),
+  IMAGE(&quot;/resource/Empreinte_Geo_N&quot;, &quot;National&quot;, 32, 32),
+  IMAGE(&quot;/resource/Empreinte_Geo_R&quot;, &quot;Régional&quot;, 32, 32)
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Empreinte_Géo_Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

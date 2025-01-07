@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ScoreSegmentation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+Note_Segmentation__c &gt;0 &amp;&amp; Note_Segmentation__c&lt; 16,
+IMAGE($Setup.PictogrammesSegmentation__c.FER__c, &quot;FER&quot;, 39, 75),
+IF(
+Note_Segmentation__c &gt;= 16 &amp;&amp; Note_Segmentation__c &lt; 30,
+IMAGE($Setup.PictogrammesSegmentation__c.BRONZE__c, &quot;BRONZE&quot;, 39, 75),
+IF(
+Note_Segmentation__c &gt;= 30 &amp;&amp; Note_Segmentation__c &lt; 50,
+IMAGE($Setup.PictogrammesSegmentation__c.ARGENT__c, &quot;ARGENT&quot;, 39, 75),
+IF(
+Note_Segmentation__c &gt;= 50,
+IMAGE($Setup.PictogrammesSegmentation__c.OR__c, &quot;OR&quot;, 39, 75),
+NULL
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score Segmentation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

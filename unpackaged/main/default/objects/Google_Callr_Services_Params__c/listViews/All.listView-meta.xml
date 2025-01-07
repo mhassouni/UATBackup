@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Origine_Param__c</columns>
+    <columns>Destination_Param__c</columns>
+    <columns>EstimatedTravelTime_Sec__c</columns>
+    <columns>Recipient_Phone__c</columns>
+    <columns>RecordId_1__c</columns>
+    <columns>RecordId_2__c</columns>
+    <columns>RecordId_3__c</columns>
+    <columns>SMS_Message__c</columns>
+    <columns>SMS_Sender__c</columns>
+    <columns>SMSType__c</columns>
+    <columns>Test_Field__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+</ListView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label>Aktionkategorie</label>
+            <section>Catégorisation de la campagne</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label>Massenbearbeitung</label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label>Massenupdate</label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey --></label>
+        <name>qualtrics__Send_Qualtrics_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey_Detail --></label>
+        <name>qualtrics__Send_Qualtrics_Survey_Detail</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modele_Hayon__c</fullName>
+    <label>Modèle (Hayon)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1/2 HAYON ARRIERE DROIT</fullName>
+                <default>false</default>
+                <label>1/2 HAYON ARRIERE DROIT</label>
+            </value>
+            <value>
+                <fullName>1/2 HAYON ARRIERE GAUCHE</fullName>
+                <default>false</default>
+                <label>1/2 HAYON ARRIERE GAUCHE</label>
+            </value>
+            <value>
+                <fullName>A CASSETTE</fullName>
+                <default>false</default>
+                <label>A CASSETTE</label>
+            </value>
+            <value>
+                <fullName>A COLONNE (Rabattable manuel)</fullName>
+                <default>false</default>
+                <label>A COLONNE (Rabattable manuel)</label>
+            </value>
+            <value>
+                <fullName>FOURGON 1/2 HAYON</fullName>
+                <default>false</default>
+                <label>FOURGON 1/2 HAYON</label>
+            </value>
+            <value>
+                <fullName>FOURGON HAYON</fullName>
+                <default>false</default>
+                <label>FOURGON HAYON</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME</fullName>
+                <default>false</default>
+                <label>ISOTHERME</label>
+            </value>
+            <value>
+                <fullName>RABATTABLE</fullName>
+                <default>false</default>
+                <label>RABATTABLE</label>
+            </value>
+            <value>
+                <fullName>RABATTABLE ISOTHERME (classe A)</fullName>
+                <default>false</default>
+                <label>RABATTABLE ISOTHERME (classe A)</label>
+            </value>
+            <value>
+                <fullName>RETRACTABLE</fullName>
+                <default>false</default>
+                <label>RETRACTABLE</label>
+            </value>
+            <value>
+                <fullName>RETRACTABLE / REPLIABLE</fullName>
+                <default>false</default>
+                <label>RETRACTABLE / REPLIABLE</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir Aménagement HAYON</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir Aménagement HAYON</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

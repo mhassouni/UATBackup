@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_compacte_Client</fullName>
+    <fields>Name</fields>
+    <fields>Typologie_du_compte__c</fields>
+    <fields>NomCommercial__c</fields>
+    <fields>PaysRegionPF__c</fields>
+    <fields>Credit_decision_status__c</fields>
+    <fields>Classification_Client__c</fields>
+    <fields>ScoreSegmentation__c</fields>
+    <label>Présentation compacte - Client</label>
+</CompactLayout>

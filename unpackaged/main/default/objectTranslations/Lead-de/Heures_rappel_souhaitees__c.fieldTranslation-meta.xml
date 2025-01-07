@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Gewünschte Rückrufzeit</label>
+        <name>Heures_rappel_souhaitees__c</name>
+        <picklistValues>
+            <masterLabel>Après-midi : entre 12h30 et 18h</masterLabel>
+            <translation>Nachmittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>La journée</masterLabel>
+            <translation>Tagsüber</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le matin</masterLabel>
+            <translation>Morgens</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L’après-midi</masterLabel>
+            <translation>Nachmittags</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matin : entre 08h00 et 12h30</masterLabel>
+            <translation>Vormittag</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

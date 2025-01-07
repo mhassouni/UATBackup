@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X06_TousGroupements</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>AgencePF__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Noeud</value>
+    </filters>
+    <filters>
+        <field>Grand_Compte__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>06- Groupements / Groupments</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

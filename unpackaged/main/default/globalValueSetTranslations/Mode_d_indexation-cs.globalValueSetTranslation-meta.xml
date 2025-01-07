@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Indexation selon indice en vigueur</masterLabel>
+        <translation>Indexování podle aktuálního indexu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pas d&#39;indexation</masterLabel>
+        <translation>Žádné indexování</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pourcentage de l&#39;indice négocié</masterLabel>
+        <translation>Procento obchodovaného indexu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pourcentage fixe négocié</masterLabel>
+        <translation>Sjednáno pevné procento</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesAreaData__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Vue commerciale client sur la quelle la facture a été créé.</description>
+    <label>Vue Commerciale Client</label>
+    <referenceTo>SalesAreaData__c</referenceTo>
+    <relationshipLabel>Factures véhicules</relationshipLabel>
+    <relationshipName>FacturesVehicules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

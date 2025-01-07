@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Vat_Service_Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Connector__Custom_Logic__c</field>
+        <value xsi:type="xsd:string">1 OR 2 OR 3 OR 4</value>
+    </values>
+    <values>
+        <field>API_Connector__Filter_logic__c</field>
+        <value xsi:type="xsd:string">1 or 2</value>
+    </values>
+    <values>
+        <field>API_Connector__Value1__c</field>
+        <value xsi:type="xsd:string">{&quot;Condition&quot;:&quot;AND&quot;,&quot;Field&quot;:&quot;name&quot;,&quot;Operator&quot;:&quot;changed&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsReference&quot;:false,&quot;Type&quot;:&quot;text&quot;,&quot;Id&quot;:1}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value2__c</field>
+        <value xsi:type="xsd:string">{&quot;Condition&quot;:&quot;OR&quot;,&quot;Field&quot;:&quot;shippingcity&quot;,&quot;Operator&quot;:&quot;changed&quot;,&quot;IsReference&quot;:false,&quot;Type&quot;:&quot;text&quot;,&quot;Id&quot;:2,&quot;Value&quot;:&quot;&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value3__c</field>
+        <value xsi:type="xsd:string">{&quot;Condition&quot;:&quot;AND&quot;,&quot;Field&quot;:&quot;phone&quot;,&quot;Operator&quot;:&quot;equal&quot;,&quot;Value&quot;:&quot;12345&quot;,&quot;IsReference&quot;:false,&quot;Type&quot;:&quot;text&quot;,&quot;Id&quot;:3}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value4__c</field>
+        <value xsi:type="xsd:string">{&quot;Id&quot;:4,&quot;IsReference&quot;:false,&quot;Condition&quot;:&quot;AND&quot;,&quot;Field&quot;:&quot;industry&quot;,&quot;Operator&quot;:&quot;equal&quot;,&quot;Type&quot;:&quot;text&quot;,&quot;Value&quot;:&quot;Agriculture&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value5__c</field>
+        <value xsi:type="xsd:string">{&quot;Id&quot;:5,&quot;IsReference&quot;:false,&quot;Field&quot;:&quot;--None--&quot;,&quot;Operator&quot;:&quot;--None--&quot;,&quot;Type&quot;:&quot;text&quot;,&quot;Value&quot;:&quot;&quot;}</value>
+    </values>
+</CustomMetadata>

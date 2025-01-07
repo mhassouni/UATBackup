@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Int_rieur__c</fullName>
+    <label>Intérieur</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hauteur Hangar</fullName>
+                <default>false</default>
+                <label>Hauteur Hangar</label>
+            </value>
+            <value>
+                <fullName>Type sol</fullName>
+                <default>false</default>
+                <label>Type sol</label>
+            </value>
+            <value>
+                <fullName>Bouche égouts (ou autres)</fullName>
+                <default>false</default>
+                <label>Bouche égouts (ou autres)</label>
+            </value>
+            <value>
+                <fullName>Distance Roulage</fullName>
+                <default>false</default>
+                <label>Distance Roulage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Betrieb</label>
+        <name>Operation__c</name>
+        <picklistValues>
+            <masterLabel>Achat Pièces</masterLabel>
+            <translation>Einkauf Ersatzteile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convoyage</masterLabel>
+            <translation>Fahrzeugüberstellung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dépannage</masterLabel>
+            <translation>Abschleppung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réparation</masterLabel>
+            <translation>Reparatur</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notification anniversaire contact</name>
+    <style>none</style>
+    <subject>Rappel Anniversaire contact / Contact Birthday Reminder</subject>
+    <textOnly>FR :
+
+Bonjour {!Contact.OwnerFullName}
+
+Demain est l&#39;anniversaire de votre contact {!Contact.Name} de la société {!Contact.Raison_sociale__c}
+
+N° Mobile : {!Contact.MobilePhone}
+
+N° Fixe : {!Contact.Phone}
+
+Lien SalesForce : {!Contact.TECHLienSF__c}
+
+
+ENG :
+
+Hi {!Contact.OwnerFullName}
+
+Tomorrow is the birthday of your contact {!Contact.Name} from {!Contact.Raison_sociale__c}
+
+Mobile Phone : {!Contact.MobilePhone}
+
+Landline Number : {!Contact.Phone}
+
+SalesForce Link : {!Contact.TECHLienSF__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

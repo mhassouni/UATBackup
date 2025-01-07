@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV04_DemandeTarification_StatutOpp</fullName>
+    <active>true</active>
+    <description>Interdire de faire une demande de tarification si l&#39;opportunité associée avec le devis n&#39;est pas en statut 2,3,4</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Status )
+,
+TEXT(Status) = &#39;A Tarifer&#39;
+,	
+
+NOT(BEGINS(Text(Opportunity.StageName ), &#39;2&#39;))
+,
+NOT(BEGINS(Text(Opportunity.StageName ), &#39;3&#39;))
+,
+NOT(BEGINS(Text(Opportunity.StageName ), &#39;4&#39;))
+
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas faire une demande de tarification si votre opportunité n&#39;est pas en statut 2,3 ou 4</errorMessage>
+</ValidationRule>

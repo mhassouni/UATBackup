@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Bloquer_Modification_du_Champ_Statut</fullName>
+    <active>true</active>
+    <description>Le champ &quot;Statut&quot; ne doit plus être modifiable.</description>
+    <errorConditionFormula>AND
+(
+$Profile.Name &lt;&gt; &#39;PF Administrateur Système&#39;,
+OR
+(
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à Traiter&quot;),  
+ISPICKVAL(Status, &quot;Validations Internes&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à Traiter&quot;),  
+ISPICKVAL(Status, &quot;Activated&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à Traiter&quot;),  
+ISPICKVAL(Status, &quot;Draft&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à facturer&quot;),  
+ISPICKVAL(Status, &quot;Commande à Traiter&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à facturer&quot;),  
+ISPICKVAL(Status, &quot;Validations Internes&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à facturer&quot;),  
+ISPICKVAL(Status, &quot;Activated&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande à facturer&quot;),  
+ISPICKVAL(Status, &quot;Draft&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande facturée&quot;),  
+ISPICKVAL(Status, &quot;Commande à facturer&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande facturée&quot;),  
+ISPICKVAL(Status, &quot;Commande à Traiter&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande facturée&quot;),  
+ISPICKVAL(Status, &quot;Validations Internes&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande facturée&quot;),  
+ISPICKVAL(Status, &quot;Activated&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande facturée&quot;),  
+ISPICKVAL(Status, &quot;Draft&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Commande facturée&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Commande à facturer&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Commande à Traiter&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Validations Internes&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Activated&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Draft&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Commande clôturée&quot;),  
+ISPICKVAL(Status, &quot;Annulée&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Commande facturée&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Commande clôturée&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Commande à facturer&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Commande à Traiter&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Validations Internes&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Activated&quot;)  
+),
+AND
+(
+ISPICKVAL(PRIORVALUE(Status),&quot;Annulée&quot;),  
+ISPICKVAL(Status, &quot;Draft&quot;)  
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas revenir au statut précédent car les réservations sont déjà créées. Merci de contacter votre administrateur. </errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__System__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Marks this option as managed by the system which means users can not manually select or deselect.</description>
+    <inlineHelpText>Sélectionnez la case pour indiquer que cette option est gérée par le système, ce qui signifie que l&#39;utilisateur ne peut plus la sélectionner.</inlineHelpText>
+    <label>System</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Rodzaj produktu</label>
+        <name>TypeProduits__c</name>
+        <picklistValues>
+            <masterLabel>Carrosseries</masterLabel>
+            <translation>Zabudowa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation>Kontener</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meubles</masterLabel>
+            <translation>Meble</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Produits</masterLabel>
+            <translation>Różne produkty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vente</masterLabel>
+            <translation><!-- Vente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Frigorifiques</masterLabel>
+            <translation>Pojazdy chłodnie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Secs</masterLabel>
+            <translation>Pojazdy izotermy</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

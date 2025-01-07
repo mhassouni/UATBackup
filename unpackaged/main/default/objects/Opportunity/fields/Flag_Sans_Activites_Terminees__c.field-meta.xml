@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Sans_Activites_Terminees__c</fullName>
+    <description>- Les false (donc les avec activités Terminées) soient composés des :
+- Opportunités mono avec activités Terminées qui n&#39;ont pas d&#39;opportunité multi
+- Opportunités mono sans activité Terminées qui ont une opportunité multi avec activités Terminées
+
+- Les true (donc les sans activité Terminées) soient composés des :
+
+- Opportunités mono sans activité Terminées  qui n&#39;ont pas d&#39;opportunité multi
+- Opportunités mono sans activité Terminées qui ont une opportunité multi sans activité Terminées</description>
+    <formula>IF 
+( 
+OR 
+( 
+ Sans_Activites_Terminees__c  == FALSE 
+, 
+AND 
+( 
+Sans_Activites_Terminees__c == FALSE 
+, 
+ OpportuniteParent__r.Sans_Activites_Terminees__c  ==FALSE 
+) 
+) 
+, 
+FALSE 
+, 
+IF 
+( 
+OR 
+( 
+AND 
+( 
+Sans_Activites_Terminees__c==TRUE 
+, 
+ISBLANK(OpportuniteParent__c) 
+) 
+, 
+AND 
+( 
+Sans_Activites_Terminees__c== TRUE 
+, 
+OpportuniteParent__r.Sans_Activites_Terminees__c  ==TRUE 
+) 
+) 
+, 
+TRUE 
+, 
+NULL 
+) 
+)</formula>
+    <label>Sans Activités Terminées</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

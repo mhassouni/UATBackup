@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_de_location__c</fullName>
+    <label>Statut de Réservation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Position_Conteneur__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En Atelier</fullName>
+                <default>false</default>
+                <label>En Atelier</label>
+            </value>
+            <value>
+                <fullName>En Transport</fullName>
+                <default>false</default>
+                <label>En Transport</label>
+            </value>
+            <value>
+                <fullName>En Location</fullName>
+                <default>false</default>
+                <label>En Location</label>
+            </value>
+            <value>
+                <fullName>Disponible</fullName>
+                <default>false</default>
+                <label>Disponible</label>
+            </value>
+            <value>
+                <fullName>Cession</fullName>
+                <default>false</default>
+                <label>Cession</label>
+            </value>
+            <value>
+                <fullName>Magasin (Service)</fullName>
+                <default>false</default>
+                <label>Magasin (Service)</label>
+            </value>
+            <value>
+                <fullName>En Fabrication</fullName>
+                <default>false</default>
+                <label>En Fabrication</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Exploitable</controllingFieldValue>
+            <valueName>En Atelier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exploitable</controllingFieldValue>
+            <valueName>En Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exploitable</controllingFieldValue>
+            <valueName>En Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exploitable</controllingFieldValue>
+            <valueName>Disponible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exploitable</controllingFieldValue>
+            <valueName>En Fabrication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non Exploitable</controllingFieldValue>
+            <valueName>Cession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non Exploitable</controllingFieldValue>
+            <valueName>Magasin (Service)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

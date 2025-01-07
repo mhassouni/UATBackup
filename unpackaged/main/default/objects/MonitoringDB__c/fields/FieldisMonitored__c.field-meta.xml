@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FieldisMonitored__c</fullName>
+    <formula>OR(
+					FieldName__c	= &#39;DB_Raison_Sociale__c&#39;,
+					FieldName__c	= &#39;DB_Adresse_Ligne1__c&#39;,
+				 FieldName__c = &#39;DB_Adresse_Ligne2__c&#39;,
+				 FieldName__c = &#39;DB_Adresse_Ville__c&#39;,
+				 FieldName__c = &#39;DB_Adresse_Code_Postal__c&#39;,
+				 FieldName__c = &#39;DB_Adresse_Pays__c&#39;,
+				 FieldName__c = &#39;DB_ID_Prefere__c&#39;,
+				 FieldName__c = &#39;DB_Valeur_ID_Prefere__c&#39;,
+				 FieldName__c = &#39;DB_Valeur_Taxe__c&#39;,
+				 FieldName__c = &#39;DB_Autre_Identifiant_National__c&#39;,
+				 FieldName__c = &#39;DB_Forme_Juridique_Generale__c&#39;, 
+				 FieldName__c = &#39;DB_Role_Arborescence__c&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Field is Monitored</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

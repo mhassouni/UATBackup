@@ -1,0 +1,6 @@
+Bonjour, 
+
+Votre devis {!SBQQ__Quote__c.Name} pour le client {!SBQQ__Quote__c.SBQQ__Account__c} a été revu. 
+
+Vous pouvez visualiser ce devis via ce lien : 
+{!SBQQ__Quote__c.Link}

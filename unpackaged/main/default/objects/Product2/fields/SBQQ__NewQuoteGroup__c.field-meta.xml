@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__NewQuoteGroup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Forces this product to be in its own group on a quote.</description>
+    <inlineHelpText>Sélectionnez cette case pour créer un groupe de devis lors de l&#39;ajout de ce produit (sauf si le groupe actuel est vide).</inlineHelpText>
+    <label>New Quote Group</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

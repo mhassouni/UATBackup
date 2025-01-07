@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité CPQ</layout>
+        <sections>
+            <label>Fields</label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- LD --></label>
+            <section>LD</section>
+        </sections>
+        <sections>
+            <label>Custom links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Offer</label>
+            <section>Offre</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Cession</layout>
+        <sections>
+            <label><!-- Catégorie du produit --></label>
+            <section>Catégorie du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Logistique et publicité --></label>
+            <section>Logistique et publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse commerciale --></label>
+            <section>Synthèse commerciale</section>
+        </sections>
+        <sections>
+            <label><!-- infos système --></label>
+            <section>infos système</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - DRAFT</layout>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - EN COURS</layout>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - FERMEE</layout>
+        <sections>
+            <label>Post Mortem Analysis</label>
+            <section>Analyse Post Mortem</section>
+        </sections>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label>Product categorisation</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label>Credit management</label>
+            <section>Crédit management</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Indicators</label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Logistics &amp; Advertising</label>
+            <section>Logistique &amp; Publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - INTER</layout>
+        <sections>
+            <label>Post Mortem Analysis</label>
+            <section>Analyse Post Mortem</section>
+        </sections>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label>Product categorisation</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label>Credit management</label>
+            <section>Crédit management</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Indicators</label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Logistics &amp; Advertising</label>
+            <section>Logistique &amp; Publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - INTER - Lecture seule</layout>
+        <sections>
+            <label>Post Mortem Analysis</label>
+            <section>Analyse Post Mortem</section>
+        </sections>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label>Product categorisation</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label>Credit management</label>
+            <section>Crédit management</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Indicators</label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Logistics &amp; Advertising</label>
+            <section>Logistique &amp; Publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Container - Lecture seule</layout>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Meuble</layout>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label>Product categorisation</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Logistics &amp; Advertising</label>
+            <section>Logistique &amp; Publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Meuble - FERMEE</layout>
+        <sections>
+            <label>Contract categorisation</label>
+            <section>Catégorisation du contrat</section>
+        </sections>
+        <sections>
+            <label>Product categorisation</label>
+            <section>Catégorisation du produit</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>General information</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Logistics &amp; Advertising</label>
+            <section>Logistique &amp; Publicité</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse Commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Véhicule - DRAFT</layout>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Fields</label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Custom links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse commerciale</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Véhicule - EN COURS</layout>
+        <sections>
+            <label>Post Mortem Analysis</label>
+            <section>Analyse POST MORTEM</section>
+        </sections>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Deposit</label>
+            <section>Caution</section>
+        </sections>
+        <sections>
+            <label>Fields</label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Credit management</label>
+            <section>Crédit management</section>
+        </sections>
+        <sections>
+            <label><!-- DNP --></label>
+            <section>DNP</section>
+        </sections>
+        <sections>
+            <label>Custom links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse commerciale</section>
+        </sections>
+        <sections>
+            <label>Pricing</label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Véhicule - FERMEE</layout>
+        <sections>
+            <label>Post Mortem Analysis</label>
+            <section>Analyse POST MORTEM</section>
+        </sections>
+        <sections>
+            <label>Call for tenders</label>
+            <section>Appel d&#39;offre</section>
+        </sections>
+        <sections>
+            <label>Deposit</label>
+            <section>Caution</section>
+        </sections>
+        <sections>
+            <label>Fields</label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Credit management</label>
+            <section>Crédit management</section>
+        </sections>
+        <sections>
+            <label><!-- DNP --></label>
+            <section>DNP</section>
+        </sections>
+        <sections>
+            <label>Custom links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>Commercial Summary</label>
+            <section>Synthèse commerciale</section>
+        </sections>
+        <sections>
+            <label>Pricing</label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Opportunité Véhicules CD/MD</layout>
+        <sections>
+            <label>Fields</label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Legal Entity</label>
+            <section>Entité Légale</section>
+        </sections>
+        <sections>
+            <label>Custom links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Offer</label>
+            <section>Offre</section>
+        </sections>
+        <sections>
+            <label>Managers</label>
+            <section>Responsables</section>
+        </sections>
+        <sections>
+            <label><!-- Zone --></label>
+            <section>Zone</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Add Account</label>
+        <name>AjouterUnCompte</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Add Contact</label>
+        <name>AjouterUnContact</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Clone</label>
+        <name>Cloner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer devis --></label>
+        <name>Create_New_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer devis --></label>
+        <name>Create_SAP_Quote</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Event</label>
+        <name>Evenement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer un devis --></label>
+        <name>New_Quote</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>(Add) Relationship(s)</label>
+        <name>Nouveau_role_de_contact</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>(Add) Relationship(s)</label>
+        <name>Nouveau_role_de_contact1</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>New Event</label>
+        <name>Nouvel_Evenement</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>New Task</label>
+        <name>NouvelleTache</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Order --></label>
+        <name>SBQQ__CreateOrderLightning</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Agreement request</label>
+        <name>SFAC</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Agreement request</label>
+        <name>SFAC2</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Task</label>
+        <name>Tache</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Actualiser agrément --></label>
+        <name>Update_Agrement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update opportunity --></label>
+        <name>Update_opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update opportunity container --></label>
+        <name>Update_opportunity_container</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Opportunité Container - INTER --></label>
+        <name>Opportunit_Container_INTER</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Opportunity created</label>
+        <name>Opportunit_creee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Cession --></label>
+        <name>Opportunite_Cession</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Container - EN COURS --></label>
+        <name>Opportunite_Containe_EN_COURS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Container - Draft --></label>
+        <name>Opportunite_Container_Draft</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Container - FERMEE --></label>
+        <name>Opportunite_Container_FERMEE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Container - INTER - Lecture seule --></label>
+        <name>Opportunite_Container_INTER_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Meuble --></label>
+        <name>Opportunite_Meuble</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité Meuble - FERMEE --></label>
+        <name>Opportunite_Meuble_FERMEE</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehicle Opportunity - DRAFT</label>
+        <name>Opportunite_Vehicule_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehicle Opportunity - In prgress</label>
+        <name>Opportunite_Vehicule_EN_COURS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehicle Opportunity - Read only</label>
+        <name>Opportunite_Vehicule_Fermee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité CPQ CD/MD --></label>
+        <name>Opportunity_CPQ_CDMD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunité CPQ LD --></label>
+        <name>Opportunity_CPQ_LD</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Ce champ ne peut pas être modifié après la création de l&apos;enregistrement. --></errorMessage>
+        <name>OPP_PreventFieldsEditAfterCreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The &quot;Effective closing date&quot; must be superior or equal to the &quot;Last delivery date&quot;</errorMessage>
+        <name>OPP_VR08_DDerniRemiseSuperieureDateClotu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The &quot;Effective closing date&quot; must be superior or equal to the &quot;Creation date&quot;</errorMessage>
+        <name>OPP_VR09_DateCreatSuperieureDateClotu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Please fill in the actual Closing date</errorMessage>
+        <name>OPP_VR29_FermeeDateEffectiveObligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Qualified Opportunity. Product and Contacts compulsory.</errorMessage>
+        <name>OPP_VR35_OpportuniteDejaQualifieeInfos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner la Date de clôture effective et la Date de signature contrat --></errorMessage>
+        <name>OPP_VR43_DatesObligatoire_OppGagnee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de compléter la date de signature de contrat et de renseigner la section caution --></errorMessage>
+        <name>OPP_VR45_DatesSignObligatoire_OppGagnee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The quantity of vehicles of the opportuntie must be equal to the confirmed fleets</errorMessage>
+        <name>OPP_VR_WFC_05_Parcs_confirmes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Les dates saisies ne sont pas valides pour ce type de contrat. --></errorMessage>
+        <name>Opp_SAPCPQ_DatesValidesCDMD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas passer l&apos;opportunité en statut 6 - Contrat signé si le statut de Validation n&apos;est pas Validée. --></errorMessage>
+        <name>Opp_Statut_Valide</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas passer l&apos;opportunité en statut 6 - Contrat signé si votre demande de numéro de parc est rejetée. --></errorMessage>
+        <name>VR_DNP_Rejet_Statut6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>the customer number is required to switch to status 6</errorMessage>
+        <name>VR_OPP_ContratSigne_N_Client</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner une date de clôture effective. --></errorMessage>
+        <name>VR_OPP_Gagnee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez synchroniser un devis. --></errorMessage>
+        <name>VR_OPP_PropositionRemise</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n’avez aucun devis qualifié lié à cette opportunité.Vous ne pouvez pas la passer en statut 2. --></errorMessage>
+        <name>VR_OPP_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;êtes pas autorisé à modifier l&apos;étape d&apos;opportunité --></errorMessage>
+        <name>VR_OPP_SAPCPQ_CantUpdateStageName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner une date de signature de contrat. --></errorMessage>
+        <name>VR_OPP_Signee</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Demande_N_Parc --></label>
+        <name>Demande_N_Parc</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label>New Opportunity</label>
+        <name>NouvelleOpportunite</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

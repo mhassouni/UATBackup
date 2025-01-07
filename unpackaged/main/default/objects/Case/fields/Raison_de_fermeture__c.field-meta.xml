@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raison_de_fermeture__c</fullName>
+    <label>Raison de fermeture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Résolu par téléphone</fullName>
+                <default>false</default>
+                <label>Résolu par téléphone</label>
+            </value>
+            <value>
+                <fullName>Client dépanné</fullName>
+                <default>false</default>
+                <label>Client dépanné</label>
+            </value>
+            <value>
+                <fullName>Client relayé</fullName>
+                <default>false</default>
+                <label>Client relayé</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Terminee</controllingFieldValue>
+            <valueName>Résolu par téléphone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminee</controllingFieldValue>
+            <valueName>Client dépanné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminee</controllingFieldValue>
+            <valueName>Client relayé</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

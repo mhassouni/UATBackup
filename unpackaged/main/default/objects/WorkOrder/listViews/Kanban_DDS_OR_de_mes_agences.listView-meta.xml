@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kanban_DDS_OR_de_mes_agences</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Asset</columns>
+    <columns>Organe_controler__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Priority</columns>
+    <columns>RecordType</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <columns>Travaux_demandes__c</columns>
+    <columns>Precisions_Long__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Demande_de_service,WorkOrder.Ordre_Reparation</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours,Terminé,À replanifier</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>[Kanban] DDS &amp; OR de mes agences</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

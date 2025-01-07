@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Modelo (plataforma)</label>
+        <name>Modele_Hayon__c</name>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE DROIT</masterLabel>
+            <translation>1/2 PLATAFORMA TRASERA DERECHA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE GAUCHE</masterLabel>
+            <translation>1/2 PLATAFORMA TRASERA IZQUIERDA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A CASSETTE</masterLabel>
+            <translation>PLATAFORMA ENCAJADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A COLONNE (Rabattable manuel)</masterLabel>
+            <translation>PLATAFORMA DE COLUMNA (plegable manual)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON 1/2 HAYON</masterLabel>
+            <translation>FURGON 1/2 PLATAFORMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON HAYON</masterLabel>
+            <translation>FURGON PLATAFORMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir Aménagement HAYON</masterLabel>
+            <translation>FUERA ESTÁNDAR - ver equipamientos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME</masterLabel>
+            <translation>ISOTERMO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE</masterLabel>
+            <translation>ABATIBLE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE ISOTHERME (classe A)</masterLabel>
+            <translation>ABATIBLE ISOTERMO (Cat. A)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE</masterLabel>
+            <translation>RETRÁCTIL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE / REPLIABLE</masterLabel>
+            <translation>RETRÁCTIL / PLEGABLE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation>SIN</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

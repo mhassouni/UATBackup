@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_Potentiel_extension_business__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+ISBLANK(DB_Code_Activite_NACE__c),
+ISBLANK(Segmentation__r.CodeNACE__c)
+),
+2.5,
+IF(
+AND(
+DB_Code_Activite_NACE__c = Segmentation__r.CodeNACE__c,
+Segmentation__r.NotationPotentielExtension__c &lt;&gt;0
+),
+Segmentation__r.NotationPotentielExtension__c,
+2.5
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Note Potentiel d’extension business</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

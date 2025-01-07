@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_assetIsFromSap</fullName>
+    <active>false</active>
+    <description>Uniquement les admins sont autorisés à modifier les work orders géré par SAP</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+$Profile.Name &lt;&gt; &quot;PF Administrateur Système&quot;,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;,
+$Profile.Name &lt;&gt; &quot;PF Réseau Inter&quot;,
+Asset.IsFromSAP__c = true
+)</errorConditionFormula>
+    <errorMessage>Vous n&#39;êtes pas autorisé à modifier un ordre de travail géré dans SAP</errorMessage>
+</ValidationRule>

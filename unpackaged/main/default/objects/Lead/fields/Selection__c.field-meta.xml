@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selection__c</fullName>
+    <label>Selection</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ram ProMaster Van</fullName>
+                <default>false</default>
+                <label>Ram ProMaster Van</label>
+            </value>
+            <value>
+                <fullName>Ram ProMaster</fullName>
+                <default>false</default>
+                <label>Ram ProMaster</label>
+            </value>
+            <value>
+                <fullName>Reefer Ram ProMaster</fullName>
+                <default>false</default>
+                <label>Reefer Ram ProMaster</label>
+            </value>
+            <value>
+                <fullName>Hino 155</fullName>
+                <default>false</default>
+                <label>Hino 155</label>
+            </value>
+            <value>
+                <fullName>Reefer Hino 155</fullName>
+                <default>false</default>
+                <label>Reefer Hino 155</label>
+            </value>
+            <value>
+                <fullName>Hino 195</fullName>
+                <default>false</default>
+                <label>Hino 195</label>
+            </value>
+            <value>
+                <fullName>Reefer Hino 195</fullName>
+                <default>false</default>
+                <label>Reefer Hino 195</label>
+            </value>
+            <value>
+                <fullName>Hino 268</fullName>
+                <default>false</default>
+                <label>Hino 268</label>
+            </value>
+            <value>
+                <fullName>Reefer Hino 268</fullName>
+                <default>false</default>
+                <label>Reefer Hino 268</label>
+            </value>
+            <value>
+                <fullName>Hino 338</fullName>
+                <default>false</default>
+                <label>Hino 338</label>
+            </value>
+            <value>
+                <fullName>Tractor</fullName>
+                <default>false</default>
+                <label>Tractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

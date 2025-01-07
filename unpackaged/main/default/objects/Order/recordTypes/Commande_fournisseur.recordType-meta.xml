@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commande_fournisseur</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Layout_Compacte_Commande</compactLayoutAssignment>
+    <description>Commande chez le fournisseur</description>
+    <label>Commande fournisseur</label>
+    <picklistValues>
+        <picklist>Acces_Camion__c</picklist>
+        <values>
+            <fullName>Câbles électriques</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Auvent__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delai_reglement__c</picklist>
+        <values>
+            <fullName>30 jours</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>45 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comptant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Exterieur__c</picklist>
+        <values>
+            <fullName>Aucun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type Terrain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Horaire_souhaite__c</picklist>
+        <values>
+            <fullName>Matin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation__c</picklist>
+        <values>
+            <fullName>Installation au sol en extérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation en intérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai réalisé par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur béquilles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur gueuses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interieur__c</picklist>
+        <values>
+            <fullName>Aucun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouche égouts %28ou autres%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distance Roulage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hauteur Hangar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type sol</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Module_de_telesurveillance__c</picklist>
+        <values>
+            <fullName>EMERSON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLOBETRACKER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JRI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Obstacles__c</picklist>
+        <values>
+            <fullName>Grillage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palissade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Periode_livraison_estimee__c</picklist>
+        <values>
+            <fullName>Après-midi %2814h - 18 h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matin %288h -12h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midi %2812h - 14h%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Periode_retour_estimee__c</picklist>
+        <values>
+            <fullName>Après-midi %2814h - 18 h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matin %288h -12h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midi %2812h - 14h%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractingMethod__c</picklist>
+        <values>
+            <fullName>By Subscription End Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PaymentTerm__c</picklist>
+        <values>
+            <fullName>Due on receipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 30</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PriceCalcStatus__c</picklist>
+        <values>
+            <fullName>Aborted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Queued</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Créée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours Flux Amonts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours Lecapitaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traitée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suivi_charte_graphique__c</picklist>
+        <values>
+            <fullName>Charte graphique transmise%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente charte graphique client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquette en attente validation client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquette en cours de modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquette en cours de réalisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquette validée %2F BAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet annulé %2F réalisé en local</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transport_et_manutention__c</picklist>
+        <values>
+            <fullName>Organisé par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organisé par nos soins</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeOpportunite__c</picklist>
+        <values>
+            <fullName>NCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RNV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>blng__BillingDayOfMonth__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>blng__InvoiceBatch__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

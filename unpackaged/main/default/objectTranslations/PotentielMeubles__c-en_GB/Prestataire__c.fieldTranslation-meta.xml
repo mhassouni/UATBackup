@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Supplier</label>
+        <lookupFilter>
+            <errorMessage>The chosen service provider must be a competitor Account.</errorMessage>
+        </lookupFilter>
+        <name>Prestataire__c</name>
+        <relationshipLabel>Customer Display Unit fleet (Supplier)</relationshipLabel>
+    </CustomFieldTranslation>

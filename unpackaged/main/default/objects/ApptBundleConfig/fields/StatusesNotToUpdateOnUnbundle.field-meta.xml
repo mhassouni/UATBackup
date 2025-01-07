@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusesNotToUpdateOnUnbundle</fullName>
+    <inlineHelpText>Sélectionnez les statuts qui ne sont pas mis à jour lors de l&#39;ouverture d&#39;un paquet. Utilisez une valeur vide pour mettre à jour les rendez-vous de service lors de l&#39;ouverture du paquet.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

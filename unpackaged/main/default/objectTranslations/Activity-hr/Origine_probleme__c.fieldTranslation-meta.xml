@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Origine du problème --></label>
+        <name>Origine_probleme__c</name>
+        <picklistValues>
+            <masterLabel>Assistance &amp; relais</masterLabel>
+            <translation><!-- Assistance &amp; relais --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entretien et maintenance</masterLabel>
+            <translation><!-- Entretien et maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entrée en relation avec Petit Forestier</masterLabel>
+            <translation><!-- Entrée en relation avec Petit Forestier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipement du camion</masterLabel>
+            <translation><!-- Equipement du camion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facturation</masterLabel>
+            <translation><!-- Facturation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation><!-- Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livraison</masterLabel>
+            <translation><!-- Livraison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à disposition du produit</masterLabel>
+            <translation><!-- Mise à disposition du produit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Négociation et proposition commerciale</masterLabel>
+            <translation><!-- Négociation et proposition commerciale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relation administrative et contractualisation</masterLabel>
+            <translation><!-- Relation administrative et contractualisation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

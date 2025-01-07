@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Probléma részletei</label>
+        <name>Detail_Pb_Requete__c</name>
+        <picklistValues>
+            <masterLabel>Accessoires</masterLabel>
+            <translation>Kiegészítők</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accessoires (Etagères, rails )</masterLabel>
+            <translation><!-- Accessoires (Etagères, rails ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accident véhicule</masterLabel>
+            <translation>Járműbaleset</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accès</masterLabel>
+            <translation><!-- Accès --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoire électrique</masterLabel>
+            <translation><!-- Armoire électrique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BV/Transmission</masterLabel>
+            <translation>Sebességváltó / váltó</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruit anormal</masterLabel>
+            <translation>Rendellenes zaj</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casse Pare Brise</masterLabel>
+            <translation>Szélvédő törése</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloison</masterLabel>
+            <translation>Válaszfal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code alarme (à préciser sur les commentaires)</masterLabel>
+            <translation>Riasztó kód</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compresseur</masterLabel>
+            <translation><!-- Compresseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coupure moteur</masterLabel>
+            <translation>Motor megállt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crevaison</masterLabel>
+            <translation>Gumiabroncs defekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descend Tout Seul</masterLabel>
+            <translation>Hátfal magától megy le</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction</masterLabel>
+            <translation>Irány</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Froid</masterLabel>
+            <translation>Hideg levegőre vonatkozó hiba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Défaut Hayon</masterLabel>
+            <translation>Csomagtérajtó hiba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage</masterLabel>
+            <translation>Indítási probléma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Démarrage / Batterie</masterLabel>
+            <translation>Indítás/akkumulátor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage</masterLabel>
+            <translation>Világítás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclairage / Signalisation</masterLabel>
+            <translation>Világítás/jelzések</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eléctricité Châssis</masterLabel>
+            <translation>Alváz elektromosság</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enregistreur</masterLabel>
+            <translation><!-- Enregistreur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur Utilisation / Casse Rétroviseur</masterLabel>
+            <translation>Rossz használat / Tükör sokk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur carburant / adblue / lubrifiant</masterLabel>
+            <translation>Üzemanyag hiba /adblue /</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fluide frigorigene</masterLabel>
+            <translation><!-- Fluide frigorigene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne mais ne manœuvre pas</masterLabel>
+            <translation>Hátfal működik, de nem irányítható</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fonctionne tout seul</masterLabel>
+            <translation><!-- Fonctionne tout seul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freins</masterLabel>
+            <translation>Fékek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuite d&#39;air</masterLabel>
+            <translation>Levegő szivárgás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon bloqué position ouverte</masterLabel>
+            <translation>A hátfal nyitott helyzetben állt meg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jante</masterLabel>
+            <translation>Felni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur / BV / Pont</masterLabel>
+            <translation>Motor/sebességváltó/fedélzet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur condenseur</masterLabel>
+            <translation><!-- Moteur condenseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur evaporateur</masterLabel>
+            <translation><!-- Moteur evaporateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne fonctionne pas</masterLabel>
+            <translation><!-- Ne fonctionne pas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur route</masterLabel>
+            <translation>A hűtőrendszer nem működik hajtásról</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ne s’allume pas sur secteur</masterLabel>
+            <translation>A hűtőrendszer nem működik hálózatról</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouverture/Fermeture</masterLabel>
+            <translation>ajtónyitás / csukódás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ouvrant (portes, Fenetres)</masterLabel>
+            <translation><!-- Ouvrant (portes, Fenetres) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne GO</masterLabel>
+            <translation>GÁZOLAJ hiba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne carburant / AdBlue</masterLabel>
+            <translation>hiba benzin / AdBlue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte / Casse de clé</masterLabel>
+            <translation>elveszett vagy eltört kulcs</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte roue / roue déserrée</masterLabel>
+            <translation>Gumiabroncs elvesztése / Laza gumiabroncs</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plancher</masterLabel>
+            <translation><!-- Plancher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise en glace</masterLabel>
+            <translation><!-- Prise en glace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de phase</masterLabel>
+            <translation>Elektromos fázis probléma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problème de prise</masterLabel>
+            <translation>Elektromos csatlakozó probléma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puissance</masterLabel>
+            <translation>A motor teljesítménye</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspensions</masterLabel>
+            <translation>felfüggesztések</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne descend pas en température</masterLabel>
+            <translation>A hűtőrendszer beindul, de nem csökken a hőmérséklet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S’allume mais ne démarre pas</masterLabel>
+            <translation>A hűtőrendszer világít, de nem indul el</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usure</masterLabel>
+            <translation>Kopás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventilation</masterLabel>
+            <translation><!-- Ventilation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant tableau de bord</masterLabel>
+            <translation>Műszerfali jelzőfény</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant/Message d&#39;alerte au tableau de bord</masterLabel>
+            <translation>Riasztó kód Irányítópult</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule embourbé</masterLabel>
+            <translation>Elakadt tehergépjármű</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

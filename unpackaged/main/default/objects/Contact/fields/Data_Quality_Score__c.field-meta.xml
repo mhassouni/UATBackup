@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Quality_Score__c</fullName>
+    <formula>if((isblank( LastName )),0,0.2) +
+if((isblank( Email )),0,0.2) + 
+if((isblank( text( Fonction__c)) ),0,0.2) +
+if(AND((isblank( Phone )),(ISBLANK( MobilePhone ))),0,0.2) + 
+if((isblank( text(ServiceDepartement__c) )),0,0.2)</formula>
+    <label>Data Quality - Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

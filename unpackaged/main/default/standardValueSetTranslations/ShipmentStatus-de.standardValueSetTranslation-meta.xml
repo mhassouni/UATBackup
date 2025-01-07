@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Expédié</masterLabel>
+        <translation>Gesendet</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Livré</masterLabel>
+        <translation>Geliefert</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

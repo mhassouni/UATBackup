@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pistes_de_mes_agences</fullName>
+    <columns>Agence_PF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>Besoin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Pistes de mes Agences - En cours</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurCommercialFrance</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PIBE_Belgique</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PICH_Suisse</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Direction_Pays_PILU_Luxembourg</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

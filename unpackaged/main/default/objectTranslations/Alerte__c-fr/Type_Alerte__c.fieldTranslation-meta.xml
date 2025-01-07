@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type Alerte --></label>
+        <name>Type_Alerte__c</name>
+        <picklistValues>
+            <masterLabel>Coupure basse pression A01</masterLabel>
+            <translation><!-- Coupure basse pression A01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tension batterie basse</masterLabel>
+            <translation><!-- Tension batterie basse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voyant moteur</masterLabel>
+            <translation><!-- Voyant moteur --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

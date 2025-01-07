@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur__c</fullName>
+    <label>Secteur</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Région Nord / Normandie</fullName>
+                <default>false</default>
+                <label>Région Nord / Normandie</label>
+            </value>
+            <value>
+                <fullName>Région Bretagne / Pays de Loire</fullName>
+                <default>false</default>
+                <label>Région Bretagne / Pays de Loire</label>
+            </value>
+            <value>
+                <fullName>Région Centre / Aquitaine / Midi Pyrénées</fullName>
+                <default>false</default>
+                <label>Région Centre / Aquitaine / Midi Pyrénées</label>
+            </value>
+            <value>
+                <fullName>Région Ile de France</fullName>
+                <default>false</default>
+                <label>Région Ile de France</label>
+            </value>
+            <value>
+                <fullName>Région Paca</fullName>
+                <default>false</default>
+                <label>Région Paca</label>
+            </value>
+            <value>
+                <fullName>Région Est</fullName>
+                <default>false</default>
+                <label>Région Est</label>
+            </value>
+            <value>
+                <fullName>Région Rhône Alpes</fullName>
+                <default>false</default>
+                <label>Région Rhône Alpes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Konto-Datensatztyp</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>true</plural>
+            <value>Konto-Datensatztypen</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Konto-Datensatztyp</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Konto-Datensatztypen</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>account_record_type</name>
+    </CustomFieldTranslation>

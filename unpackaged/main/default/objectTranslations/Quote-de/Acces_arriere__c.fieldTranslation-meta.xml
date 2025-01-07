@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Hinterer Zugang zum Kühlkoffer</label>
+        <name>Acces_arriere__c</name>
+        <picklistValues>
+            <masterLabel>2 RAMPES INT REPLIABLES COULISSANTES (largeur 150 mm utile)</masterLabel>
+            <translation>2 Rampen innen faltbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT</masterLabel>
+            <translation>schiebbare Leiter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT 2 MARCHES</masterLabel>
+            <translation>Ausziehbare Trittleiter 2 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT 3 MARCHES</masterLabel>
+            <translation>Ausziehbare Trittleiter 3 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT 4 MARCHES</masterLabel>
+            <translation>Ausziehbare Trittleiter 4 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT 5 MARCHES</masterLabel>
+            <translation>Ausziehbare Trittleiter 5 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT 6 MARCHES</masterLabel>
+            <translation>Ausziehbare Trittleiter 6 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER COULISSANT D</masterLabel>
+            <translation>Ausziehbarer Tritt rechts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER COULISSANT G</masterLabel>
+            <translation>Ausziehbarer Tritt links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER FIXE D</masterLabel>
+            <translation>Fest eingebauter Tritt rechts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER FIXE G</masterLabel>
+            <translation>Fest eingebauter Tritt links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIERS COULISSANTS D + G</masterLabel>
+            <translation>Ausziehbarer Tritt rechts + links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIERS FIXES D + G</masterLabel>
+            <translation>Fest eingebauter Tritt rechts + links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation>außer Standard - siehe Einrichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARCHE PIED FIXE</masterLabel>
+            <translation>Fest eingebautes Trittbrett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARCHEPIED RABATTABLE 1 MARCHE</masterLabel>
+            <translation>Klappbares Trittbrett 1 Stufe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARCHEPIED RABATTABLE 2 MARCHES</masterLabel>
+            <translation>Klappbares Trittbrett 2 Stufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE INT RABATTABLE (largeur 700 mm utile)</masterLabel>
+            <translation>Innere klappbare Rampe (Nutzbreite 700 mm)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE INT REPLIABLE FIXE (largeur 1000 mm utile)</masterLabel>
+            <translation>Innere faltbare Rampe (Nutzbreite 1000 mm)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE INT REPLIABLE FIXE (largeur 800 mm utile)</masterLabel>
+            <translation>Innere faltbare Rampe (Nutzbreite 800 mm)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE INT REPLIABLE PIVOTANTE (largeur 1000 mm utile)</masterLabel>
+            <translation>Schwenkbare innere faltbare Rampe (Nutzbreite 1000 mm)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE INT REPLIABLE PIVOTANTE (largeur 800 mm utile)</masterLabel>
+            <translation>Schwenkbare innere faltbare Rampe (Nutzbreite 800 mm)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

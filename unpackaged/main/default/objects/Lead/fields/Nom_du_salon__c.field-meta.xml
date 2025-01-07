@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_du_salon__c</fullName>
+    <label>Nom du salon</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Serbotel 2021</fullName>
+                <default>false</default>
+                <label>Serbotel 2021</label>
+            </value>
+            <value>
+                <fullName>ADMR 2022</fullName>
+                <default>false</default>
+                <label>ADMR 2022</label>
+            </value>
+            <value>
+                <fullName>Agores 2022</fullName>
+                <default>false</default>
+                <label>Agores 2022</label>
+            </value>
+            <value>
+                <fullName>Alimentaria 2022</fullName>
+                <default>false</default>
+                <label>Alimentaria 2022</label>
+            </value>
+            <value>
+                <fullName>BACK EUROPE 2022</fullName>
+                <default>false</default>
+                <label>BACK EUROPE 2022</label>
+            </value>
+            <value>
+                <fullName>CIDIAL 2022</fullName>
+                <default>false</default>
+                <label>CIDIAL 2022</label>
+            </value>
+            <value>
+                <fullName>Du Rock dans la Cuisine 2022</fullName>
+                <default>false</default>
+                <label>Du Rock dans la Cuisine 2022</label>
+            </value>
+            <value>
+                <fullName>ETS JOURDAIN 2022</fullName>
+                <default>false</default>
+                <label>ETS JOURDAIN 2022</label>
+            </value>
+            <value>
+                <fullName>Food in Sud 2022</fullName>
+                <default>false</default>
+                <label>Food in Sud 2022</label>
+            </value>
+            <value>
+                <fullName>Foire Intermarché Ciney 2022</fullName>
+                <default>false</default>
+                <label>Foire Intermarché Ciney 2022</label>
+            </value>
+            <value>
+                <fullName>IAA 2022</fullName>
+                <default>false</default>
+                <label>IAA 2022</label>
+            </value>
+            <value>
+                <fullName>ITT UK 2022</fullName>
+                <default>false</default>
+                <label>ITT UK 2022</label>
+            </value>
+            <value>
+                <fullName>Rest Hotel Rennes 2022</fullName>
+                <default>false</default>
+                <label>Rest Hotel Rennes 2022</label>
+            </value>
+            <value>
+                <fullName>Salon du Fromage Paris 2022</fullName>
+                <default>false</default>
+                <label>Salon du Fromage Paris 2022</label>
+            </value>
+            <value>
+                <fullName>RESTAUCO 2022</fullName>
+                <default>false</default>
+                <label>RESTAUCO 2022</label>
+            </value>
+            <value>
+                <fullName>Rest Hotel Clermont-F 2022</fullName>
+                <default>false</default>
+                <label>Rest Hotel Clermont-F 2022</label>
+            </value>
+            <value>
+                <fullName>REST HOTEL REIMS 2022</fullName>
+                <default>false</default>
+                <label>REST HOTEL REIMS 2022</label>
+            </value>
+            <value>
+                <fullName>REST HOTEL ROUEN 2022</fullName>
+                <default>false</default>
+                <label>REST HOTEL ROUEN 2022</label>
+            </value>
+            <value>
+                <fullName>SALON ALPIN 2022</fullName>
+                <default>false</default>
+                <label>SALON ALPIN 2022</label>
+            </value>
+            <value>
+                <fullName>SALON DE LA BOUCHERIE CHARCUTERIE TRAITEUR 2022</fullName>
+                <default>false</default>
+                <label>SALON DE LA BOUCHERIE CHARCUTERIE TRAITEUR 2022</label>
+            </value>
+            <value>
+                <fullName>SALON DE LA BOULANGERIE ET DE LA PÂTISSERIE ANTILLES 2022</fullName>
+                <default>false</default>
+                <label>SALON DE LA BOULANGERIE ET DE LA PÂTISSERIE ANTILLES 2022</label>
+            </value>
+            <value>
+                <fullName>SALON DES MAIRES ET DES COLLECTIVITÉS LOCALES 2022</fullName>
+                <default>false</default>
+                <label>SALON DES MAIRES ET DES COLLECTIVITÉS LOCALES 2022</label>
+            </value>
+            <value>
+                <fullName>SIPRHO 2022</fullName>
+                <default>false</default>
+                <label>SIPRHO 2022</label>
+            </value>
+            <value>
+                <fullName>SIRHA Budapest 2022</fullName>
+                <default>false</default>
+                <label>SIRHA Budapest 2022</label>
+            </value>
+            <value>
+                <fullName>QUALIDAYS 2022</fullName>
+                <default>false</default>
+                <label>QUALIDAYS 2022</label>
+            </value>
+            <value>
+                <fullName>Vinequip 2022</fullName>
+                <default>false</default>
+                <label>Vinequip 2022</label>
+            </value>
+            <value>
+                <fullName>SIRHA 2023</fullName>
+                <default>false</default>
+                <label>SIRHA 2023</label>
+            </value>
+            <value>
+                <fullName>REST HOTEL BREST 2023</fullName>
+                <default>false</default>
+                <label>REST HOTEL BREST 2023</label>
+            </value>
+            <value>
+                <fullName>SIPRHO MONTPELLIER 2023</fullName>
+                <default>false</default>
+                <label>SIPRHO MONTPELLIER 2023</label>
+            </value>
+            <value>
+                <fullName>RESTHOTEL Tours 2023</fullName>
+                <default>false</default>
+                <label>RESTHOTEL Tours 2023</label>
+            </value>
+            <value>
+                <fullName>Relais et Château Toulouse 2023</fullName>
+                <default>false</default>
+                <label>Relais et Château Toulouse 2023</label>
+            </value>
+            <value>
+                <fullName>HORESTA Biarritz 2023</fullName>
+                <default>false</default>
+                <label>HORESTA Biarritz 2023</label>
+            </value>
+            <value>
+                <fullName>Le Printemps des Fromagers Reims 2023</fullName>
+                <default>false</default>
+                <label>Le Printemps des Fromagers Reims 2023</label>
+            </value>
+            <value>
+                <fullName>GRAL GRANCOEUR Annecy 2023</fullName>
+                <default>false</default>
+                <label>GRAL GRANCOEUR Annecy 2023</label>
+            </value>
+            <value>
+                <fullName>SELFI Rungis - Avril 2023</fullName>
+                <default>false</default>
+                <label>SELFI Rungis - Avril 2023</label>
+            </value>
+            <value>
+                <fullName>AGORES Auch - Mai 2023</fullName>
+                <default>false</default>
+                <label>AGORES Auch - Mai 2023</label>
+            </value>
+            <value>
+                <fullName>Tutto food 2023</fullName>
+                <default>false</default>
+                <label>Tutto food 2023</label>
+            </value>
+            <value>
+                <fullName>CREMAI 2023</fullName>
+                <default>false</default>
+                <label>CREMAI 2023</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

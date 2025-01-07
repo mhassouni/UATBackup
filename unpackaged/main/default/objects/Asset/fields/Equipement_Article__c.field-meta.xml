@@ -1,0 +1,3579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_Article__c</fullName>
+    <label>Article</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Equipement_Modele__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>90</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <label>300</label>
+            </value>
+            <value>
+                <fullName>350</fullName>
+                <default>false</default>
+                <label>350</label>
+            </value>
+            <value>
+                <fullName>400</fullName>
+                <default>false</default>
+                <label>400</label>
+            </value>
+            <value>
+                <fullName>450</fullName>
+                <default>false</default>
+                <label>450</label>
+            </value>
+            <value>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>500</label>
+            </value>
+            <value>
+                <fullName>600</fullName>
+                <default>false</default>
+                <label>600</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT</label>
+            </value>
+            <value>
+                <fullName>ETRIER COULISSANT</fullName>
+                <default>false</default>
+                <label>ETRIER COULISSANT</label>
+            </value>
+            <value>
+                <fullName>RAMPE</fullName>
+                <default>false</default>
+                <label>RAMPE</label>
+            </value>
+            <value>
+                <fullName>ETRIER ARR</fullName>
+                <default>false</default>
+                <label>ETRIER ARR</label>
+            </value>
+            <value>
+                <fullName>MARCHEPIED FIXE</fullName>
+                <default>false</default>
+                <label>MARCHEPIED FIXE</label>
+            </value>
+            <value>
+                <fullName>RAMPE D&#39;ACCES</fullName>
+                <default>false</default>
+                <label>RAMPE D&#39;ACCES</label>
+            </value>
+            <value>
+                <fullName>MARCHEPIED BASCULANT</fullName>
+                <default>false</default>
+                <label>MARCHEPIED BASCULANT</label>
+            </value>
+            <value>
+                <fullName>AVEC ALARME</fullName>
+                <default>false</default>
+                <label>AVEC ALARME</label>
+            </value>
+            <value>
+                <fullName>AR RÉTRACTABLE</fullName>
+                <default>false</default>
+                <label>AR RÉTRACTABLE</label>
+            </value>
+            <value>
+                <fullName>1 PASSERELLE 1/2 CABINE</fullName>
+                <default>false</default>
+                <label>1 PASSERELLE 1/2 CABINE</label>
+            </value>
+            <value>
+                <fullName>2 PASSERELLES 1/2 CABINE</fullName>
+                <default>false</default>
+                <label>2 PASSERELLES 1/2 CABINE</label>
+            </value>
+            <value>
+                <fullName>PASSERELLE COMPLETE</fullName>
+                <default>false</default>
+                <label>PASSERELLE COMPLETE</label>
+            </value>
+            <value>
+                <fullName>ETRIER COULISS</fullName>
+                <default>false</default>
+                <label>ETRIER COULISS</label>
+            </value>
+            <value>
+                <fullName>ETRIER COULISSANT ET TÉLESCOPIQUE</fullName>
+                <default>false</default>
+                <label>ETRIER COULISSANT ET TÉLESCOPIQUE</label>
+            </value>
+            <value>
+                <fullName>ETRIER 3 MARCHES TÉLÉSCOPIQUE AVEC BUZZER</fullName>
+                <default>false</default>
+                <label>ETRIER 3 MARCHES TÉLÉSCOPIQUE AVEC BUZZER</label>
+            </value>
+            <value>
+                <fullName>V3B2 WIFI</fullName>
+                <default>false</default>
+                <label>V3B2 WIFI</label>
+            </value>
+            <value>
+                <fullName>RAIL D ARRIMAGE</fullName>
+                <default>false</default>
+                <label>RAIL D ARRIMAGE</label>
+            </value>
+            <value>
+                <fullName>RAIL ARRIMAGE</fullName>
+                <default>false</default>
+                <label>RAIL ARRIMAGE</label>
+            </value>
+            <value>
+                <fullName>RAIL D&#39;ARRIMAGE DROIT</fullName>
+                <default>false</default>
+                <label>RAIL D&#39;ARRIMAGE DROIT</label>
+            </value>
+            <value>
+                <fullName>RAIL D&#39;ARRIMAGE FACE AVANT</fullName>
+                <default>false</default>
+                <label>RAIL D&#39;ARRIMAGE FACE AVANT</label>
+            </value>
+            <value>
+                <fullName>RAIL D&#39;ARRIMAGE GAUCHE</fullName>
+                <default>false</default>
+                <label>RAIL D&#39;ARRIMAGE GAUCHE</label>
+            </value>
+            <value>
+                <fullName>TUBES D&#39;ARRIMAGE</fullName>
+                <default>false</default>
+                <label>TUBES D&#39;ARRIMAGE</label>
+            </value>
+            <value>
+                <fullName>BALANCE</fullName>
+                <default>false</default>
+                <label>BALANCE</label>
+            </value>
+            <value>
+                <fullName>BALANCE AVEC IMPRIMANTE</fullName>
+                <default>false</default>
+                <label>BALANCE AVEC IMPRIMANTE</label>
+            </value>
+            <value>
+                <fullName>BENNES BASCULANTE</fullName>
+                <default>false</default>
+                <label>BENNES BASCULANTE</label>
+            </value>
+            <value>
+                <fullName>CHANDELLE</fullName>
+                <default>false</default>
+                <label>CHANDELLE</label>
+            </value>
+            <value>
+                <fullName>CAPITONS</fullName>
+                <default>false</default>
+                <label>CAPITONS</label>
+            </value>
+            <value>
+                <fullName>PLANCHER STRATIFIE</fullName>
+                <default>false</default>
+                <label>PLANCHER STRATIFIE</label>
+            </value>
+            <value>
+                <fullName>BARRE PORTE CINTRE LONGITUDINALE</fullName>
+                <default>false</default>
+                <label>BARRE PORTE CINTRE LONGITUDINALE</label>
+            </value>
+            <value>
+                <fullName>CAPUCINE</fullName>
+                <default>false</default>
+                <label>CAPUCINE</label>
+            </value>
+            <value>
+                <fullName>PAROIS STRATIFIEES FOURGON</fullName>
+                <default>false</default>
+                <label>PAROIS STRATIFIEES FOURGON</label>
+            </value>
+            <value>
+                <fullName>INTERIEUR BOIS FOURGON</fullName>
+                <default>false</default>
+                <label>INTERIEUR BOIS FOURGON</label>
+            </value>
+            <value>
+                <fullName>PALETTES</fullName>
+                <default>false</default>
+                <label>PALETTES</label>
+            </value>
+            <value>
+                <fullName>ARMOIRE MOBILE</fullName>
+                <default>false</default>
+                <label>ARMOIRE MOBILE</label>
+            </value>
+            <value>
+                <fullName>CAILLEBOTIS PLASTIQUE</fullName>
+                <default>false</default>
+                <label>CAILLEBOTIS PLASTIQUE</label>
+            </value>
+            <value>
+                <fullName>CAISSON ANTI BRUIT</fullName>
+                <default>false</default>
+                <label>CAISSON ANTI BRUIT</label>
+            </value>
+            <value>
+                <fullName>COFFRE À PALETTES</fullName>
+                <default>false</default>
+                <label>COFFRE À PALETTES</label>
+            </value>
+            <value>
+                <fullName>DEFLECTEUR DE TOIT</fullName>
+                <default>false</default>
+                <label>DEFLECTEUR DE TOIT</label>
+            </value>
+            <value>
+                <fullName>DEFLECTEURS LATERAUX</fullName>
+                <default>false</default>
+                <label>DEFLECTEURS LATERAUX</label>
+            </value>
+            <value>
+                <fullName>LABEL PHARMA</fullName>
+                <default>false</default>
+                <label>LABEL PHARMA</label>
+            </value>
+            <value>
+                <fullName>LAMPE AIR STERIL</fullName>
+                <default>false</default>
+                <label>LAMPE AIR STERIL</label>
+            </value>
+            <value>
+                <fullName>PAVILLON POLYESTER OPAQUE</fullName>
+                <default>false</default>
+                <label>PAVILLON POLYESTER OPAQUE</label>
+            </value>
+            <value>
+                <fullName>PAVILLON POLYESTER TRANSLUCIDE</fullName>
+                <default>false</default>
+                <label>PAVILLON POLYESTER TRANSLUCIDE</label>
+            </value>
+            <value>
+                <fullName>PLANCHER ALU</fullName>
+                <default>false</default>
+                <label>PLANCHER ALU</label>
+            </value>
+            <value>
+                <fullName>PLANCHER ANTI DERAPANT</fullName>
+                <default>false</default>
+                <label>PLANCHER ANTI DERAPANT</label>
+            </value>
+            <value>
+                <fullName>PLANCHER CAILLEBOTIS</fullName>
+                <default>false</default>
+                <label>PLANCHER CAILLEBOTIS</label>
+            </value>
+            <value>
+                <fullName>PLANCHER LISSE</fullName>
+                <default>false</default>
+                <label>PLANCHER LISSE</label>
+            </value>
+            <value>
+                <fullName>PLANCHER TYPE FRET AERIEN</fullName>
+                <default>false</default>
+                <label>PLANCHER TYPE FRET AERIEN</label>
+            </value>
+            <value>
+                <fullName>RIDEAU D&#39;AIR AR + AIR LAT</fullName>
+                <default>false</default>
+                <label>RIDEAU D&#39;AIR AR + AIR LAT</label>
+            </value>
+            <value>
+                <fullName>RIDEAU D&#39;AIR ARR</fullName>
+                <default>false</default>
+                <label>RIDEAU D&#39;AIR ARR</label>
+            </value>
+            <value>
+                <fullName>RIDEAU D&#39;AIR LAT</fullName>
+                <default>false</default>
+                <label>RIDEAU D&#39;AIR LAT</label>
+            </value>
+            <value>
+                <fullName>RIDEAUX À LANIÈRES ARR</fullName>
+                <default>false</default>
+                <label>RIDEAUX À LANIÈRES ARR</label>
+            </value>
+            <value>
+                <fullName>RIDEAUX À LANIÈRES ARR + LATÉRALE</fullName>
+                <default>false</default>
+                <label>RIDEAUX À LANIÈRES ARR + LATÉRALE</label>
+            </value>
+            <value>
+                <fullName>RIDEAUX À LANIÈRES LAT</fullName>
+                <default>false</default>
+                <label>RIDEAUX À LANIÈRES LAT</label>
+            </value>
+            <value>
+                <fullName>RIDEAUX AIR AR + LANIÈRE LAT</fullName>
+                <default>false</default>
+                <label>RIDEAUX AIR AR + LANIÈRE LAT</label>
+            </value>
+            <value>
+                <fullName>SANS PAROI LATERALE D</fullName>
+                <default>false</default>
+                <label>SANS PAROI LATERALE D</label>
+            </value>
+            <value>
+                <fullName>SANS PAROI LATERALE G</fullName>
+                <default>false</default>
+                <label>SANS PAROI LATERALE G</label>
+            </value>
+            <value>
+                <fullName>SANS PAROIS LATERALES D+G</fullName>
+                <default>false</default>
+                <label>SANS PAROIS LATERALES D+G</label>
+            </value>
+            <value>
+                <fullName>VEHICULE BACHE</fullName>
+                <default>false</default>
+                <label>VEHICULE BACHE</label>
+            </value>
+            <value>
+                <fullName>VEHICULE BRASSEUR</fullName>
+                <default>false</default>
+                <label>VEHICULE BRASSEUR</label>
+            </value>
+            <value>
+                <fullName>PLANCHER PLAT</fullName>
+                <default>false</default>
+                <label>PLANCHER PLAT</label>
+            </value>
+            <value>
+                <fullName>BLOCKSHAFT XVAN</fullName>
+                <default>false</default>
+                <label>BLOCKSHAFT XVAN</label>
+            </value>
+            <value>
+                <fullName>BLOC CENTRAL</fullName>
+                <default>false</default>
+                <label>BLOC CENTRAL</label>
+            </value>
+            <value>
+                <fullName>ALARME</fullName>
+                <default>false</default>
+                <label>ALARME</label>
+            </value>
+            <value>
+                <fullName>CABINE COUCHETTE</fullName>
+                <default>false</default>
+                <label>CABINE COUCHETTE</label>
+            </value>
+            <value>
+                <fullName>PORTE PALETTES</fullName>
+                <default>false</default>
+                <label>PORTE PALETTES</label>
+            </value>
+            <value>
+                <fullName>OPTION ANCIENNETE</fullName>
+                <default>false</default>
+                <label>OPTION ANCIENNETE</label>
+            </value>
+            <value>
+                <fullName>BRAS HYDRAULIQUE</fullName>
+                <default>false</default>
+                <label>BRAS HYDRAULIQUE</label>
+            </value>
+            <value>
+                <fullName>BUZZER DE MARCHE ARRIERE</fullName>
+                <default>false</default>
+                <label>BUZZER DE MARCHE ARRIERE</label>
+            </value>
+            <value>
+                <fullName>CAMERA DE RECUL</fullName>
+                <default>false</default>
+                <label>CAMERA DE RECUL</label>
+            </value>
+            <value>
+                <fullName>CHAINAGE AUTOMATIQUE</fullName>
+                <default>false</default>
+                <label>CHAINAGE AUTOMATIQUE</label>
+            </value>
+            <value>
+                <fullName>CHASSIS REHAUSSE TYPE CAPECURES</fullName>
+                <default>false</default>
+                <label>CHASSIS REHAUSSE TYPE CAPECURES</label>
+            </value>
+            <value>
+                <fullName>CHAUFFAGE AUTONOME</fullName>
+                <default>false</default>
+                <label>CHAUFFAGE AUTONOME</label>
+            </value>
+            <value>
+                <fullName>CONTRAT DE MAINTENANCE</fullName>
+                <default>false</default>
+                <label>CONTRAT DE MAINTENANCE</label>
+            </value>
+            <value>
+                <fullName>CROCHET ATTELAGE</fullName>
+                <default>false</default>
+                <label>CROCHET ATTELAGE</label>
+            </value>
+            <value>
+                <fullName>DÉFLECTEUR DE TOIT</fullName>
+                <default>false</default>
+                <label>DÉFLECTEUR DE TOIT</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PÉDALE</fullName>
+                <default>false</default>
+                <label>DOUBLE PÉDALE</label>
+            </value>
+            <value>
+                <fullName>RADAR DE RECUL + BUZZER M AR</fullName>
+                <default>false</default>
+                <label>RADAR DE RECUL + BUZZER M AR</label>
+            </value>
+            <value>
+                <fullName>RADAR DE RECUL + CAMÉRA DE RECUL</fullName>
+                <default>false</default>
+                <label>RADAR DE RECUL + CAMÉRA DE RECUL</label>
+            </value>
+            <value>
+                <fullName>RADAR DE RECUL</fullName>
+                <default>false</default>
+                <label>RADAR DE RECUL</label>
+            </value>
+            <value>
+                <fullName>WEBASTO OU CHAUFFAGE AUTONOME</fullName>
+                <default>false</default>
+                <label>WEBASTO OU CHAUFFAGE AUTONOME</label>
+            </value>
+            <value>
+                <fullName>OPTIFLEET</fullName>
+                <default>false</default>
+                <label>OPTIFLEET</label>
+            </value>
+            <value>
+                <fullName>CAISSON AR</fullName>
+                <default>false</default>
+                <label>CAISSON AR</label>
+            </value>
+            <value>
+                <fullName>CAISSON AV</fullName>
+                <default>false</default>
+                <label>CAISSON AV</label>
+            </value>
+            <value>
+                <fullName>CLOISON FIXE LONGITUDINALE</fullName>
+                <default>false</default>
+                <label>CLOISON FIXE LONGITUDINALE</label>
+            </value>
+            <value>
+                <fullName>GRILLE DE SEPARATION</fullName>
+                <default>false</default>
+                <label>GRILLE DE SEPARATION</label>
+            </value>
+            <value>
+                <fullName>LATERAL</fullName>
+                <default>false</default>
+                <label>LATERAL</label>
+            </value>
+            <value>
+                <fullName>AVEC PORTE</fullName>
+                <default>false</default>
+                <label>AVEC PORTE</label>
+            </value>
+            <value>
+                <fullName>CLOISON FIXE TRANSVERSALE</fullName>
+                <default>false</default>
+                <label>CLOISON FIXE TRANSVERSALE</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME</fullName>
+                <default>false</default>
+                <label>ISOTHERME</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME + FRIGO</fullName>
+                <default>false</default>
+                <label>ISOTHERME + FRIGO</label>
+            </value>
+            <value>
+                <fullName>CLOISON MATELAS</fullName>
+                <default>false</default>
+                <label>CLOISON MATELAS</label>
+            </value>
+            <value>
+                <fullName>CLOISON SOUPLE</fullName>
+                <default>false</default>
+                <label>CLOISON SOUPLE</label>
+            </value>
+            <value>
+                <fullName>CLOISON MOBILE</fullName>
+                <default>false</default>
+                <label>CLOISON MOBILE</label>
+            </value>
+            <value>
+                <fullName>MOBILE COMPAS A GAZ</fullName>
+                <default>false</default>
+                <label>MOBILE COMPAS A GAZ</label>
+            </value>
+            <value>
+                <fullName>PORTE</fullName>
+                <default>false</default>
+                <label>PORTE</label>
+            </value>
+            <value>
+                <fullName>VOLETS AERATEURS</fullName>
+                <default>false</default>
+                <label>VOLETS AERATEURS</label>
+            </value>
+            <value>
+                <fullName>CLOISON 2 PARTIES</fullName>
+                <default>false</default>
+                <label>CLOISON 2 PARTIES</label>
+            </value>
+            <value>
+                <fullName>JRI</fullName>
+                <default>false</default>
+                <label>JRI</label>
+            </value>
+            <value>
+                <fullName>ENREGISTREUR A DISQUE</fullName>
+                <default>false</default>
+                <label>ENREGISTREUR A DISQUE</label>
+            </value>
+            <value>
+                <fullName>COMARK</fullName>
+                <default>false</default>
+                <label>COMARK</label>
+            </value>
+            <value>
+                <fullName>DATA COLD 100</fullName>
+                <default>false</default>
+                <label>DATA COLD 100</label>
+            </value>
+            <value>
+                <fullName>DATA COLD 300</fullName>
+                <default>false</default>
+                <label>DATA COLD 300</label>
+            </value>
+            <value>
+                <fullName>DATA COLD 600</fullName>
+                <default>false</default>
+                <label>DATA COLD 600</label>
+            </value>
+            <value>
+                <fullName>DATACOLD</fullName>
+                <default>false</default>
+                <label>DATACOLD</label>
+            </value>
+            <value>
+                <fullName>DATACOLD 650 R AVEC IMPRIMANTE</fullName>
+                <default>false</default>
+                <label>DATACOLD 650 R AVEC IMPRIMANTE</label>
+            </value>
+            <value>
+                <fullName>GPRS</fullName>
+                <default>false</default>
+                <label>GPRS</label>
+            </value>
+            <value>
+                <fullName>SPY GREEN</fullName>
+                <default>false</default>
+                <label>SPY GREEN</label>
+            </value>
+            <value>
+                <fullName>ENR_TEMP.ENR.TEMP.ELECTRONIQUE.ESCO.ESCO</fullName>
+                <default>false</default>
+                <label>ENR_TEMP.ENR.TEMP.ELECTRONIQUE.ESCO.ESCO</label>
+            </value>
+            <value>
+                <fullName>RMMW</fullName>
+                <default>false</default>
+                <label>RMMW</label>
+            </value>
+            <value>
+                <fullName>EUROSCAN</fullName>
+                <default>false</default>
+                <label>EUROSCAN</label>
+            </value>
+            <value>
+                <fullName>SIRIUSWEB</fullName>
+                <default>false</default>
+                <label>SIRIUSWEB</label>
+            </value>
+            <value>
+                <fullName>TESTO</fullName>
+                <default>false</default>
+                <label>TESTO</label>
+            </value>
+            <value>
+                <fullName>THERMOPLUS</fullName>
+                <default>false</default>
+                <label>THERMOPLUS</label>
+            </value>
+            <value>
+                <fullName>TOUCH PRINT</fullName>
+                <default>false</default>
+                <label>TOUCH PRINT</label>
+            </value>
+            <value>
+                <fullName>TOUCH PRINT PREMIUM</fullName>
+                <default>false</default>
+                <label>TOUCH PRINT PREMIUM</label>
+            </value>
+            <value>
+                <fullName>TRANSCAN</fullName>
+                <default>false</default>
+                <label>TRANSCAN</label>
+            </value>
+            <value>
+                <fullName>CAISSON AMOVIBLE</fullName>
+                <default>false</default>
+                <label>CAISSON AMOVIBLE</label>
+            </value>
+            <value>
+                <fullName>PLANCHER INTERMEDIAIRE 1/2 DE LA LONGUEUR</fullName>
+                <default>false</default>
+                <label>PLANCHER INTERMEDIAIRE 1/2 DE LA LONGUEUR</label>
+            </value>
+            <value>
+                <fullName>PLANCHER INTERMEDIAIRE COMPLET</fullName>
+                <default>false</default>
+                <label>PLANCHER INTERMEDIAIRE COMPLET</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PLANCHER</fullName>
+                <default>false</default>
+                <label>DOUBLE PLANCHER</label>
+            </value>
+            <value>
+                <fullName>SEMI PLANCHER INTERMEDIAIRE</fullName>
+                <default>false</default>
+                <label>SEMI PLANCHER INTERMEDIAIRE</label>
+            </value>
+            <value>
+                <fullName>ETAGERES FIXES AV</fullName>
+                <default>false</default>
+                <label>ETAGERES FIXES AV</label>
+            </value>
+            <value>
+                <fullName>ETAGERES FIXES D</fullName>
+                <default>false</default>
+                <label>ETAGERES FIXES D</label>
+            </value>
+            <value>
+                <fullName>ETAGERES FIXES D+G</fullName>
+                <default>false</default>
+                <label>ETAGERES FIXES D+G</label>
+            </value>
+            <value>
+                <fullName>ETAGERES FIXES G</fullName>
+                <default>false</default>
+                <label>ETAGERES FIXES G</label>
+            </value>
+            <value>
+                <fullName>ETAGERES RELEVABLES AV</fullName>
+                <default>false</default>
+                <label>ETAGERES RELEVABLES AV</label>
+            </value>
+            <value>
+                <fullName>ETAGERES RELEVABLES D</fullName>
+                <default>false</default>
+                <label>ETAGERES RELEVABLES D</label>
+            </value>
+            <value>
+                <fullName>AMENAGEMENT SPECIAL</fullName>
+                <default>false</default>
+                <label>AMENAGEMENT SPECIAL</label>
+            </value>
+            <value>
+                <fullName>ETAGERES RELEVABLES D+G</fullName>
+                <default>false</default>
+                <label>ETAGERES RELEVABLES D+G</label>
+            </value>
+            <value>
+                <fullName>ETAGERES CONTAINERS</fullName>
+                <default>false</default>
+                <label>ETAGERES CONTAINERS</label>
+            </value>
+            <value>
+                <fullName>ETAGERES RELEVABLES G</fullName>
+                <default>false</default>
+                <label>ETAGERES RELEVABLES G</label>
+            </value>
+            <value>
+                <fullName>BLUE TREE SYSTEM</fullName>
+                <default>false</default>
+                <label>BLUE TREE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>CAR TRACK</fullName>
+                <default>false</default>
+                <label>CAR TRACK</label>
+            </value>
+            <value>
+                <fullName>MCU2</fullName>
+                <default>false</default>
+                <label>MCU2</label>
+            </value>
+            <value>
+                <fullName>MCU2 + 1 PIQ.</fullName>
+                <default>false</default>
+                <label>MCU2 + 1 PIQ.</label>
+            </value>
+            <value>
+                <fullName>MCU2 + 2 PIQ.</fullName>
+                <default>false</default>
+                <label>MCU2 + 2 PIQ.</label>
+            </value>
+            <value>
+                <fullName>MCU3</fullName>
+                <default>false</default>
+                <label>MCU3</label>
+            </value>
+            <value>
+                <fullName>MCU3 + 1 PIQ.</fullName>
+                <default>false</default>
+                <label>MCU3 + 1 PIQ.</label>
+            </value>
+            <value>
+                <fullName>MCU3 + 2 PIQ.</fullName>
+                <default>false</default>
+                <label>MCU3 + 2 PIQ.</label>
+            </value>
+            <value>
+                <fullName>MUXY</fullName>
+                <default>false</default>
+                <label>MUXY</label>
+            </value>
+            <value>
+                <fullName>GPS COUPLE À L&#39;ÉCRAN DE LA CAMÉRA DE RECUL</fullName>
+                <default>false</default>
+                <label>GPS COUPLE À L&#39;ÉCRAN DE LA CAMÉRA DE RECUL</label>
+            </value>
+            <value>
+                <fullName>GPS INTÉGRÉ</fullName>
+                <default>false</default>
+                <label>GPS INTÉGRÉ</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT LONGITUDINAL</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT LONGITUDINAL</label>
+            </value>
+            <value>
+                <fullName>GROUPE BI-TEMPERATURE 220 VOLT</fullName>
+                <default>false</default>
+                <label>GROUPE BI-TEMPERATURE 220 VOLT</label>
+            </value>
+            <value>
+                <fullName>GROUPE BI-TEMPERATURE 380 VOLT</fullName>
+                <default>false</default>
+                <label>GROUPE BI-TEMPERATURE 380 VOLT</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AR -</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AR -</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AR +</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AR +</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AV -</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AV -</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AV +</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AV +</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AR I</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AR I</label>
+            </value>
+            <value>
+                <fullName>COMPARTIMENT AV I</fullName>
+                <default>false</default>
+                <label>COMPARTIMENT AV I</label>
+            </value>
+            <value>
+                <fullName>GAS HEATING</fullName>
+                <default>false</default>
+                <label>GAS HEATING</label>
+            </value>
+            <value>
+                <fullName>GROUPE MONO TEMPERATURE 220 VO</fullName>
+                <default>false</default>
+                <label>GROUPE MONO TEMPERATURE 220 VO</label>
+            </value>
+            <value>
+                <fullName>GROUPE MONO TEMPERATURE 380 VO</fullName>
+                <default>false</default>
+                <label>GROUPE MONO TEMPERATURE 380 VO</label>
+            </value>
+            <value>
+                <fullName>GROUPE FRIGO MONOPHASE</fullName>
+                <default>false</default>
+                <label>GROUPE FRIGO MONOPHASE</label>
+            </value>
+            <value>
+                <fullName>MULTI TEMPERATURE</fullName>
+                <default>false</default>
+                <label>MULTI TEMPERATURE</label>
+            </value>
+            <value>
+                <fullName>GROUPE MULTI TEMPERATURE 220V</fullName>
+                <default>false</default>
+                <label>GROUPE MULTI TEMPERATURE 220V</label>
+            </value>
+            <value>
+                <fullName>GROUPE MULTI TEMPERATURE 380 V</fullName>
+                <default>false</default>
+                <label>GROUPE MULTI TEMPERATURE 380 V</label>
+            </value>
+            <value>
+                <fullName>SECTEUR ELECTRIQUE</fullName>
+                <default>false</default>
+                <label>SECTEUR ELECTRIQUE</label>
+            </value>
+            <value>
+                <fullName>GROUPE TRI TEMPERATURE 380 VOL</fullName>
+                <default>false</default>
+                <label>GROUPE TRI TEMPERATURE 380 VOL</label>
+            </value>
+            <value>
+                <fullName>R-290</fullName>
+                <default>false</default>
+                <label>R-290</label>
+            </value>
+            <value>
+                <fullName>R-600</fullName>
+                <default>false</default>
+                <label>R-600</label>
+            </value>
+            <value>
+                <fullName>R-744</fullName>
+                <default>false</default>
+                <label>R-744</label>
+            </value>
+            <value>
+                <fullName>R-22</fullName>
+                <default>false</default>
+                <label>R-22</label>
+            </value>
+            <value>
+                <fullName>R-134A</fullName>
+                <default>false</default>
+                <label>R-134A</label>
+            </value>
+            <value>
+                <fullName>R-404A</fullName>
+                <default>false</default>
+                <label>R-404A</label>
+            </value>
+            <value>
+                <fullName>R-407A</fullName>
+                <default>false</default>
+                <label>R-407A</label>
+            </value>
+            <value>
+                <fullName>R-410A</fullName>
+                <default>false</default>
+                <label>R-410A</label>
+            </value>
+            <value>
+                <fullName>R-442A</fullName>
+                <default>false</default>
+                <label>R-442A</label>
+            </value>
+            <value>
+                <fullName>R-448A</fullName>
+                <default>false</default>
+                <label>R-448A</label>
+            </value>
+            <value>
+                <fullName>R-449A</fullName>
+                <default>false</default>
+                <label>R-449A</label>
+            </value>
+            <value>
+                <fullName>R-452A</fullName>
+                <default>false</default>
+                <label>R-452A</label>
+            </value>
+            <value>
+                <fullName>R-507</fullName>
+                <default>false</default>
+                <label>R-507</label>
+            </value>
+            <value>
+                <fullName>R-1234YF</fullName>
+                <default>false</default>
+                <label>R-1234YF</label>
+            </value>
+            <value>
+                <fullName>AIRBUS 320 L</fullName>
+                <default>false</default>
+                <label>AIRBUS 320 L</label>
+            </value>
+            <value>
+                <fullName>ALASKA 333</fullName>
+                <default>false</default>
+                <label>ALASKA 333</label>
+            </value>
+            <value>
+                <fullName>THERMOKING CB MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING CB MAX</label>
+            </value>
+            <value>
+                <fullName>TK CD 2</fullName>
+                <default>false</default>
+                <label>TK CD 2</label>
+            </value>
+            <value>
+                <fullName>THERMOKING CD1 MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING CD1 MAX 50</label>
+            </value>
+            <value>
+                <fullName>ZANOTTI DFZ435</fullName>
+                <default>false</default>
+                <label>ZANOTTI DFZ435</label>
+            </value>
+            <value>
+                <fullName>PETTER</fullName>
+                <default>false</default>
+                <label>PETTER</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS R70</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS R70</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS R90</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS R90</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS B80 BI</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS B80 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS B80</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS B80</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS B50</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS B50</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS R80</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS R80</label>
+            </value>
+            <value>
+                <fullName>CARRIER GENESIS TM 800</fullName>
+                <default>false</default>
+                <label>CARRIER GENESIS TM 800</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD I</fullName>
+                <default>false</default>
+                <label>THERMOKING KD I</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD II 50</fullName>
+                <default>false</default>
+                <label>THERMOKING KD II 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD II</fullName>
+                <default>false</default>
+                <label>THERMOKING KD II</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD II BI</fullName>
+                <default>false</default>
+                <label>THERMOKING KD II BI</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD I BI</fullName>
+                <default>false</default>
+                <label>THERMOKING KD I BI</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD II MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING KD II MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING KD II 25</fullName>
+                <default>false</default>
+                <label>THERMOKING KD II 25</label>
+            </value>
+            <value>
+                <fullName>CARRIER MAXIMA 1300</fullName>
+                <default>false</default>
+                <label>CARRIER MAXIMA 1300</label>
+            </value>
+            <value>
+                <fullName>CARRIER MAXIMA</fullName>
+                <default>false</default>
+                <label>CARRIER MAXIMA</label>
+            </value>
+            <value>
+                <fullName>CARRIER MAXIMA 2</fullName>
+                <default>false</default>
+                <label>CARRIER MAXIMA 2</label>
+            </value>
+            <value>
+                <fullName>CARRIER MAXIMA 1200</fullName>
+                <default>false</default>
+                <label>CARRIER MAXIMA 1200</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD II 50</fullName>
+                <default>false</default>
+                <label>THERMOKING MD II 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD II MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING MD II MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD 200MT</fullName>
+                <default>false</default>
+                <label>THERMOKING MD 200MT</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD I 30</fullName>
+                <default>false</default>
+                <label>THERMOKING MD I 30</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD II</fullName>
+                <default>false</default>
+                <label>THERMOKING MD II</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD I 50</fullName>
+                <default>false</default>
+                <label>THERMOKING MD I 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD II 25</fullName>
+                <default>false</default>
+                <label>THERMOKING MD II 25</label>
+            </value>
+            <value>
+                <fullName>THERMOKING MD300</fullName>
+                <default>false</default>
+                <label>THERMOKING MD300</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 310</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 310</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 400</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 400</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 405</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 405</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 410</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 410</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 410 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 410 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 600</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 600</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 605</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 605</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 610</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 610</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 700</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 700</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 710</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 710</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 710 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 710 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 800</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 800</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 900</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 900</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 900 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 900 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 700 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 700 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 500</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 500</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 800 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 800 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER MISTRAL 610 BI</fullName>
+                <default>false</default>
+                <label>CARRIER MISTRAL 610 BI</label>
+            </value>
+            <value>
+                <fullName>THERMOKING RD II</fullName>
+                <default>false</default>
+                <label>THERMOKING RD II</label>
+            </value>
+            <value>
+                <fullName>THERMOKING RD I TC 50</fullName>
+                <default>false</default>
+                <label>THERMOKING RD I TC 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING RD II TC 1</fullName>
+                <default>false</default>
+                <label>THERMOKING RD II TC 1</label>
+            </value>
+            <value>
+                <fullName>THERMOKING RD I 25</fullName>
+                <default>false</default>
+                <label>THERMOKING RD I 25</label>
+            </value>
+            <value>
+                <fullName>THERMOKING RD II 50</fullName>
+                <default>false</default>
+                <label>THERMOKING RD II 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING SB III</fullName>
+                <default>false</default>
+                <label>THERMOKING SB III</label>
+            </value>
+            <value>
+                <fullName>THERMOKING SB II 30</fullName>
+                <default>false</default>
+                <label>THERMOKING SB II 30</label>
+            </value>
+            <value>
+                <fullName>THERMOKING SDZ 25</fullName>
+                <default>false</default>
+                <label>THERMOKING SDZ 25</label>
+            </value>
+            <value>
+                <fullName>THERMOKING SDZ 50</fullName>
+                <default>false</default>
+                <label>THERMOKING SDZ 50</label>
+            </value>
+            <value>
+                <fullName>SIFO SD 80</fullName>
+                <default>false</default>
+                <label>SIFO SD 80</label>
+            </value>
+            <value>
+                <fullName>SL TCI</fullName>
+                <default>false</default>
+                <label>SL TCI</label>
+            </value>
+            <value>
+                <fullName>SL200 50CS</fullName>
+                <default>false</default>
+                <label>SL200 50CS</label>
+            </value>
+            <value>
+                <fullName>SLK 400.50</fullName>
+                <default>false</default>
+                <label>SLK 400.50</label>
+            </value>
+            <value>
+                <fullName>SLX SPECTRUM</fullName>
+                <default>false</default>
+                <label>SLX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>SLXI-400</fullName>
+                <default>false</default>
+                <label>SLXi-400</label>
+            </value>
+            <value>
+                <fullName>SLXI-SPECTRUM</fullName>
+                <default>false</default>
+                <label>SLXi-SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>SLX 300.50</fullName>
+                <default>false</default>
+                <label>SLX 300.50</label>
+            </value>
+            <value>
+                <fullName>SPECTRUM</fullName>
+                <default>false</default>
+                <label>SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>T800R</fullName>
+                <default>false</default>
+                <label>T800R</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1000 MT</fullName>
+                <default>false</default>
+                <label>SUPRA 1000 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 522</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 522</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 822</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 822</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 822 BI</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 822 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 722</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 722</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 522 BI</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 522 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 422</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 422</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 922</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 922</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 544</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 544</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 944</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 944</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 744</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 744</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 444</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 444</label>
+            </value>
+            <value>
+                <fullName>550 INSONORISEE</fullName>
+                <default>false</default>
+                <label>550 INSONORISEE</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 844</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 844</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 322</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 322</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 750</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 750</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 944U</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 944U</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 950U</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 950U</label>
+            </value>
+            <value>
+                <fullName>850-S</fullName>
+                <default>false</default>
+                <label>850-S</label>
+            </value>
+            <value>
+                <fullName>850-S MT</fullName>
+                <default>false</default>
+                <label>850-S MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 450</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 450</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 550</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 550</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 750 MT</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 750 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 850</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 850</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 850 MT</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 850 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 950</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 950</label>
+            </value>
+            <value>
+                <fullName>CARRIER SUPRA 950 MT</fullName>
+                <default>false</default>
+                <label>CARRIER SUPRA 950 MT</label>
+            </value>
+            <value>
+                <fullName>CITY 1000 Z</fullName>
+                <default>false</default>
+                <label>CITY 1000 Z</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1000 MT CITY Z</fullName>
+                <default>false</default>
+                <label>SUPRA 1000 MT CITY Z</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1050</fullName>
+                <default>false</default>
+                <label>SUPRA 1050</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1050 U</fullName>
+                <default>false</default>
+                <label>SUPRA 1050 U</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1100 U</fullName>
+                <default>false</default>
+                <label>SUPRA 1100 U</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1150</fullName>
+                <default>false</default>
+                <label>SUPRA 1150</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1150 MT SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 1150 MT SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1150 MT°</fullName>
+                <default>false</default>
+                <label>SUPRA 1150 MT°</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1150 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 1150 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1150-S MT</fullName>
+                <default>false</default>
+                <label>SUPRA 1150-S MT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250</fullName>
+                <default>false</default>
+                <label>SUPRA 1250</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 CITY</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 CITY</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 CITY MT</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 CITY MT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 MT GAZ</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 MT GAZ</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 MT°</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 MT°</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 MT° SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 MT° SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 1250 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 1250-S MT</fullName>
+                <default>false</default>
+                <label>SUPRA 1250-S MT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 450 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 450 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 550 INSONORISEE</fullName>
+                <default>false</default>
+                <label>SUPRA 550 INSONORISEE</label>
+            </value>
+            <value>
+                <fullName>SUPRA 550 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 550 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 550-S</fullName>
+                <default>false</default>
+                <label>SUPRA 550-S</label>
+            </value>
+            <value>
+                <fullName>SUPRA 750</fullName>
+                <default>false</default>
+                <label>SUPRA 750</label>
+            </value>
+            <value>
+                <fullName>SUPRA 750 MT SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 750 MT SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 750 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 750 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 850</fullName>
+                <default>false</default>
+                <label>SUPRA 850</label>
+            </value>
+            <value>
+                <fullName>SUPRA 850 MT° SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 850 MT° SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 850 SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 850 SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 850 U</fullName>
+                <default>false</default>
+                <label>SUPRA 850 U</label>
+            </value>
+            <value>
+                <fullName>SUPRA 950 MT</fullName>
+                <default>false</default>
+                <label>SUPRA 950 MT</label>
+            </value>
+            <value>
+                <fullName>SUPRA 950 MT° SILENT</fullName>
+                <default>false</default>
+                <label>SUPRA 950 MT° SILENT</label>
+            </value>
+            <value>
+                <fullName>SUPRA CITY Z 1250 MT</fullName>
+                <default>false</default>
+                <label>SUPRA CITY Z 1250 MT</label>
+            </value>
+            <value>
+                <fullName>T1000R</fullName>
+                <default>false</default>
+                <label>T1000R</label>
+            </value>
+            <value>
+                <fullName>T1000R SPECTRUM</fullName>
+                <default>false</default>
+                <label>T1000R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>T1200 SPECTRUM</fullName>
+                <default>false</default>
+                <label>T1200 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>T1200R</fullName>
+                <default>false</default>
+                <label>T1200R</label>
+            </value>
+            <value>
+                <fullName>T1200R 50 SPECTRUM S3 + S3</fullName>
+                <default>false</default>
+                <label>T1200R 50 SPECTRUM S3 + S3</label>
+            </value>
+            <value>
+                <fullName>T1200R SPECTRUM</fullName>
+                <default>false</default>
+                <label>T1200R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>T560R</fullName>
+                <default>false</default>
+                <label>T560R</label>
+            </value>
+            <value>
+                <fullName>T600R</fullName>
+                <default>false</default>
+                <label>T600R</label>
+            </value>
+            <value>
+                <fullName>T800R SPECTRUM</fullName>
+                <default>false</default>
+                <label>T800R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>UT-SPECTRUM</fullName>
+                <default>false</default>
+                <label>UT-SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TD I 30</fullName>
+                <default>false</default>
+                <label>THERMOKING TD I 30</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TD II 50</fullName>
+                <default>false</default>
+                <label>THERMOKING TD II 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TD II MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING TD II MAX</label>
+            </value>
+            <value>
+                <fullName>MD 200.50</fullName>
+                <default>false</default>
+                <label>MD 200.50</label>
+            </value>
+            <value>
+                <fullName>MD 250.50</fullName>
+                <default>false</default>
+                <label>MD 250.50</label>
+            </value>
+            <value>
+                <fullName>TK - 1200R 50</fullName>
+                <default>false</default>
+                <label>TK - 1200R 50</label>
+            </value>
+            <value>
+                <fullName>TK 800 R</fullName>
+                <default>false</default>
+                <label>TK 800 R</label>
+            </value>
+            <value>
+                <fullName>TK SLXE400</fullName>
+                <default>false</default>
+                <label>TK SLXE400</label>
+            </value>
+            <value>
+                <fullName>TK T 1000 R</fullName>
+                <default>false</default>
+                <label>TK T 1000 R</label>
+            </value>
+            <value>
+                <fullName>TK T 600 R</fullName>
+                <default>false</default>
+                <label>TK T 600 R</label>
+            </value>
+            <value>
+                <fullName>TK T 800 R</fullName>
+                <default>false</default>
+                <label>TK T 800 R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TS 200</fullName>
+                <default>false</default>
+                <label>THERMOKING TS 200</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TS 300</fullName>
+                <default>false</default>
+                <label>THERMOKING TS 300</label>
+            </value>
+            <value>
+                <fullName>THERMOKING TS 500</fullName>
+                <default>false</default>
+                <label>THERMOKING TS 500</label>
+            </value>
+            <value>
+                <fullName>T-800R</fullName>
+                <default>false</default>
+                <label>T-800R</label>
+            </value>
+            <value>
+                <fullName>TK 1200</fullName>
+                <default>false</default>
+                <label>TK 1200</label>
+            </value>
+            <value>
+                <fullName>CARRIER VECTOR MT</fullName>
+                <default>false</default>
+                <label>CARRIER VECTOR MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER VECTOR</fullName>
+                <default>false</default>
+                <label>CARRIER VECTOR</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1350</fullName>
+                <default>false</default>
+                <label>VECTOR 1350</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1550 MONO</fullName>
+                <default>false</default>
+                <label>VECTOR 1550 MONO</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1800 MT</fullName>
+                <default>false</default>
+                <label>VECTOR 1800 MT</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1850 MONO</fullName>
+                <default>false</default>
+                <label>VECTOR 1850 MONO</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1850 MT</fullName>
+                <default>false</default>
+                <label>VECTOR 1850 MT</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 INSONORISE</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 INSONORISE</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 MT</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 MT</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 MT INSONORISE</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 MT INSONORISE</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 MT SILENT</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 MT SILENT</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 S</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 S</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 S INSONORISÉ</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 S INSONORISÉ</label>
+            </value>
+            <value>
+                <fullName>VECTOR 1950 SILENT</fullName>
+                <default>false</default>
+                <label>VECTOR 1950 SILENT</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19 CITY</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19 CITY</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19 INSONORISÉ</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19 INSONORISÉ</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19 MT</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19 MT</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19 MT CITY</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19 MT CITY</label>
+            </value>
+            <value>
+                <fullName>VECTOR HE 19 MT INSONORISÉE</fullName>
+                <default>false</default>
+                <label>VECTOR HE 19 MT INSONORISÉE</label>
+            </value>
+            <value>
+                <fullName>THERMOKING XDS 50SR</fullName>
+                <default>false</default>
+                <label>THERMOKING XDS 50SR</label>
+            </value>
+            <value>
+                <fullName>ZANOTI</fullName>
+                <default>false</default>
+                <label>ZANOTI</label>
+            </value>
+            <value>
+                <fullName>ANTIGUA</fullName>
+                <default>false</default>
+                <label>ANTIGUA</label>
+            </value>
+            <value>
+                <fullName>THERMOKING B100</fullName>
+                <default>false</default>
+                <label>THERMOKING B100</label>
+            </value>
+            <value>
+                <fullName>THERMOKING B 065 A</fullName>
+                <default>false</default>
+                <label>THERMOKING B 065 A</label>
+            </value>
+            <value>
+                <fullName>THERMOKING B 060</fullName>
+                <default>false</default>
+                <label>THERMOKING B 060</label>
+            </value>
+            <value>
+                <fullName>THERMOKING B 085 RS</fullName>
+                <default>false</default>
+                <label>THERMOKING B 085 RS</label>
+            </value>
+            <value>
+                <fullName>CARRIER BASIC 600</fullName>
+                <default>false</default>
+                <label>CARRIER BASIC 600</label>
+            </value>
+            <value>
+                <fullName>CARRIER BASIC 700 RS</fullName>
+                <default>false</default>
+                <label>CARRIER BASIC 700 RS</label>
+            </value>
+            <value>
+                <fullName>CARRIER BASIC 700 R</fullName>
+                <default>false</default>
+                <label>CARRIER BASIC 700 R</label>
+            </value>
+            <value>
+                <fullName>BCV-IB3096 3T</fullName>
+                <default>false</default>
+                <label>BCV-IB3096 3T</label>
+            </value>
+            <value>
+                <fullName>MVC-IF-1024</fullName>
+                <default>false</default>
+                <label>MVC-IF-1024</label>
+            </value>
+            <value>
+                <fullName>BCVIF 3074 2T</fullName>
+                <default>false</default>
+                <label>BCVIF 3074 2T</label>
+            </value>
+            <value>
+                <fullName>BCVIF 3074 3T</fullName>
+                <default>false</default>
+                <label>BCVIF 3074 3T</label>
+            </value>
+            <value>
+                <fullName>CARRIER BLIZARD 240</fullName>
+                <default>false</default>
+                <label>CARRIER BLIZARD 240</label>
+            </value>
+            <value>
+                <fullName>CARRIER BLIZARD 340</fullName>
+                <default>false</default>
+                <label>CARRIER BLIZARD 340</label>
+            </value>
+            <value>
+                <fullName>CARRIER BLIZARD 440</fullName>
+                <default>false</default>
+                <label>CARRIER BLIZARD 440</label>
+            </value>
+            <value>
+                <fullName>CARRIER BLIZARD 590</fullName>
+                <default>false</default>
+                <label>CARRIER BLIZARD 590</label>
+            </value>
+            <value>
+                <fullName>EDT TRANSC BORA 450</fullName>
+                <default>false</default>
+                <label>EDT TRANSC BORA 450</label>
+            </value>
+            <value>
+                <fullName>13 G</fullName>
+                <default>false</default>
+                <label>13 G</label>
+            </value>
+            <value>
+                <fullName>TK E200 SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK E200 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>EDT TRANSC FIDJI 810</fullName>
+                <default>false</default>
+                <label>EDT TRANSC FIDJI 810</label>
+            </value>
+            <value>
+                <fullName>FUTUNA 2000</fullName>
+                <default>false</default>
+                <label>FUTUNA 2000</label>
+            </value>
+            <value>
+                <fullName>FUTUNA 3000</fullName>
+                <default>false</default>
+                <label>FUTUNA 3000</label>
+            </value>
+            <value>
+                <fullName>A01-134A</fullName>
+                <default>false</default>
+                <label>A01-134A</label>
+            </value>
+            <value>
+                <fullName>LXE 10 E</fullName>
+                <default>false</default>
+                <label>LXE 10 E</label>
+            </value>
+            <value>
+                <fullName>MAGNUM PLUS</fullName>
+                <default>false</default>
+                <label>MAGNUM PLUS</label>
+            </value>
+            <value>
+                <fullName>CARRIER ND</fullName>
+                <default>false</default>
+                <label>CARRIER ND</label>
+            </value>
+            <value>
+                <fullName>NEOS 100</fullName>
+                <default>false</default>
+                <label>NEOS 100</label>
+            </value>
+            <value>
+                <fullName>NEOS 100 S</fullName>
+                <default>false</default>
+                <label>NEOS 100 S</label>
+            </value>
+            <value>
+                <fullName>NEOS 100 T</fullName>
+                <default>false</default>
+                <label>NEOS 100 T</label>
+            </value>
+            <value>
+                <fullName>CARRIER NT</fullName>
+                <default>false</default>
+                <label>CARRIER NT</label>
+            </value>
+            <value>
+                <fullName>R134A 3000</fullName>
+                <default>false</default>
+                <label>R134A 3000</label>
+            </value>
+            <value>
+                <fullName>EDT TRANSC SAMOA 1610</fullName>
+                <default>false</default>
+                <label>EDT TRANSC SAMOA 1610</label>
+            </value>
+            <value>
+                <fullName>B100</fullName>
+                <default>false</default>
+                <label>B100</label>
+            </value>
+            <value>
+                <fullName>EDT TRANSC TONGA 1210</fullName>
+                <default>false</default>
+                <label>EDT TRANSC TONGA 1210</label>
+            </value>
+            <value>
+                <fullName>EDT TRANSC TONGA 1260</fullName>
+                <default>false</default>
+                <label>EDT TRANSC TONGA 1260</label>
+            </value>
+            <value>
+                <fullName>TONCA 1210</fullName>
+                <default>false</default>
+                <label>TONCA 1210</label>
+            </value>
+            <value>
+                <fullName>TONGA 1210 RS</fullName>
+                <default>false</default>
+                <label>TONGA 1210 RS</label>
+            </value>
+            <value>
+                <fullName>RELEC TR10</fullName>
+                <default>false</default>
+                <label>RELEC TR10</label>
+            </value>
+            <value>
+                <fullName>30I INTEGRE</fullName>
+                <default>false</default>
+                <label>30i INTEGRE</label>
+            </value>
+            <value>
+                <fullName>VBOX</fullName>
+                <default>false</default>
+                <label>VBOX</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF2GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF2GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC RF3GP/PMDC 3700</fullName>
+                <default>false</default>
+                <label>RELEC RF3GP/PMDC 3700</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF3GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF3GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF3GP/PMSC 3700</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF3GP/PMSC 3700</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF3PP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF3PP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF4GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF4GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF5GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF5GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF6GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF6GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF6GPS/PMSC2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF6GPS/PMSC2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF7GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF7GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF7GPS/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF7GPS/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RELEC MIXTE RF8GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RELEC MIXTE RF8GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>CARLSEN</fullName>
+                <default>false</default>
+                <label>CARLSEN</label>
+            </value>
+            <value>
+                <fullName>C33 C525</fullName>
+                <default>false</default>
+                <label>C33 C525</label>
+            </value>
+            <value>
+                <fullName>THERMOKING F 5 L</fullName>
+                <default>false</default>
+                <label>THERMOKING F 5 L</label>
+            </value>
+            <value>
+                <fullName>THERMOKING F3 L</fullName>
+                <default>false</default>
+                <label>THERMOKING F3 L</label>
+            </value>
+            <value>
+                <fullName>THERMOKING F4</fullName>
+                <default>false</default>
+                <label>THERMOKING F4</label>
+            </value>
+            <value>
+                <fullName>PLAQUES</fullName>
+                <default>false</default>
+                <label>PLAQUES</label>
+            </value>
+            <value>
+                <fullName>RELEC 4PL</fullName>
+                <default>false</default>
+                <label>RELEC 4PL</label>
+            </value>
+            <value>
+                <fullName>RELEC RF3GP</fullName>
+                <default>false</default>
+                <label>RELEC RF3GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF3PPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF3PPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF5GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF5GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF4GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF4GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF2GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF2GP</label>
+            </value>
+            <value>
+                <fullName>COLD CAR 6P</fullName>
+                <default>false</default>
+                <label>COLD CAR 6P</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF8PP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF8PP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF7GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF7GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF6GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF6GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF8GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF8GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF4GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF4GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF2PPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF2PPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF3PP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF3PP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF7GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF7GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF5PP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF5PP</label>
+            </value>
+            <value>
+                <fullName>COLD CAR</fullName>
+                <default>false</default>
+                <label>COLD CAR</label>
+            </value>
+            <value>
+                <fullName>CARSEN 400V</fullName>
+                <default>false</default>
+                <label>CARSEN 400V</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF3GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF3GP</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF5PPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF5PPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF7PPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF7PPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF6GP</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF6GP</label>
+            </value>
+            <value>
+                <fullName>COFI</fullName>
+                <default>false</default>
+                <label>COFI</label>
+            </value>
+            <value>
+                <fullName>COLD CAR CC/20T3</fullName>
+                <default>false</default>
+                <label>COLD CAR CC/20T3</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF3GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF3GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF5GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF5GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF8GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF8GPS</label>
+            </value>
+            <value>
+                <fullName>RELEC 5PL</fullName>
+                <default>false</default>
+                <label>RELEC 5PL</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES</label>
+            </value>
+            <value>
+                <fullName>PLAQUES EUTECTIQUES</fullName>
+                <default>false</default>
+                <label>PLAQUES EUTECTIQUES</label>
+            </value>
+            <value>
+                <fullName>RELEC PLAQUES RF2GPS</fullName>
+                <default>false</default>
+                <label>RELEC PLAQUES RF2GPS</label>
+            </value>
+            <value>
+                <fullName>2 PLAQUES EUTECTIQUE FACE AV + 1 AU PAVILLON</fullName>
+                <default>false</default>
+                <label>2 PLAQUES EUTECTIQUE FACE AV + 1 AU PAVILLON</label>
+            </value>
+            <value>
+                <fullName>200 H + 4 PLAQUES EUTECTIQUES</fullName>
+                <default>false</default>
+                <label>200 H + 4 PLAQUES EUTECTIQUES</label>
+            </value>
+            <value>
+                <fullName>204 B</fullName>
+                <default>false</default>
+                <label>204 B</label>
+            </value>
+            <value>
+                <fullName>VATNA 200</fullName>
+                <default>false</default>
+                <label>VATNA 200</label>
+            </value>
+            <value>
+                <fullName>VATNA 204</fullName>
+                <default>false</default>
+                <label>VATNA 204</label>
+            </value>
+            <value>
+                <fullName>VATNA 205</fullName>
+                <default>false</default>
+                <label>VATNA 205</label>
+            </value>
+            <value>
+                <fullName>VATNA 300</fullName>
+                <default>false</default>
+                <label>VATNA 300</label>
+            </value>
+            <value>
+                <fullName>VATNA 305</fullName>
+                <default>false</default>
+                <label>VATNA 305</label>
+            </value>
+            <value>
+                <fullName>VATNA 306</fullName>
+                <default>false</default>
+                <label>VATNA 306</label>
+            </value>
+            <value>
+                <fullName>VATNA 400</fullName>
+                <default>false</default>
+                <label>VATNA 400</label>
+            </value>
+            <value>
+                <fullName>VATNA 408</fullName>
+                <default>false</default>
+                <label>VATNA 408</label>
+            </value>
+            <value>
+                <fullName>FINSAM 1</fullName>
+                <default>false</default>
+                <label>FINSAM 1</label>
+            </value>
+            <value>
+                <fullName>FINSAM 2</fullName>
+                <default>false</default>
+                <label>FINSAM 2</label>
+            </value>
+            <value>
+                <fullName>FINSAM 3</fullName>
+                <default>false</default>
+                <label>FINSAM 3</label>
+            </value>
+            <value>
+                <fullName>C33</fullName>
+                <default>false</default>
+                <label>C33</label>
+            </value>
+            <value>
+                <fullName>CARRIER 520.H</fullName>
+                <default>false</default>
+                <label>CARRIER 520.H</label>
+            </value>
+            <value>
+                <fullName>CARRIER A.930</fullName>
+                <default>false</default>
+                <label>CARRIER A.930</label>
+            </value>
+            <value>
+                <fullName>FRIGIPLATE 4</fullName>
+                <default>false</default>
+                <label>FRIGIPLATE 4</label>
+            </value>
+            <value>
+                <fullName>EUROFRIGO 2500 XTS</fullName>
+                <default>false</default>
+                <label>EUROFRIGO 2500 XTS</label>
+            </value>
+            <value>
+                <fullName>EUROFRIGO C3500 S</fullName>
+                <default>false</default>
+                <label>EUROFRIGO C3500 S</label>
+            </value>
+            <value>
+                <fullName>MULTI TEMP 332 LV</fullName>
+                <default>false</default>
+                <label>MULTI TEMP 332 LV</label>
+            </value>
+            <value>
+                <fullName>CARRIER TM 800</fullName>
+                <default>false</default>
+                <label>CARRIER TM 800</label>
+            </value>
+            <value>
+                <fullName>ORIGINAL</fullName>
+                <default>false</default>
+                <label>ORIGINAL</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 100</fullName>
+                <default>false</default>
+                <label>THERMOKING C 100</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 150</fullName>
+                <default>false</default>
+                <label>THERMOKING C 150</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 200</fullName>
+                <default>false</default>
+                <label>THERMOKING C 200</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 250 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING C 250 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 350 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING C 350 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING C 450 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING C 450 MAX</label>
+            </value>
+            <value>
+                <fullName>CITIMAX 280</fullName>
+                <default>false</default>
+                <label>CITIMAX 280</label>
+            </value>
+            <value>
+                <fullName>CITIMAX 350</fullName>
+                <default>false</default>
+                <label>CITIMAX 350</label>
+            </value>
+            <value>
+                <fullName>CITIMAX 400</fullName>
+                <default>false</default>
+                <label>CITIMAX 400</label>
+            </value>
+            <value>
+                <fullName>CORONA 350MT</fullName>
+                <default>false</default>
+                <label>CORONA 350MT</label>
+            </value>
+            <value>
+                <fullName>CORONA 500</fullName>
+                <default>false</default>
+                <label>CORONA 500</label>
+            </value>
+            <value>
+                <fullName>CORONA C4</fullName>
+                <default>false</default>
+                <label>CORONA C4</label>
+            </value>
+            <value>
+                <fullName>CRYOTECH CT 10</fullName>
+                <default>false</default>
+                <label>CRYOTECH CT 10</label>
+            </value>
+            <value>
+                <fullName>4000/10-R134</fullName>
+                <default>false</default>
+                <label>4000/10-R134</label>
+            </value>
+            <value>
+                <fullName>R404A</fullName>
+                <default>false</default>
+                <label>R404A</label>
+            </value>
+            <value>
+                <fullName>FK 24 / 25</fullName>
+                <default>false</default>
+                <label>FK 24 / 25</label>
+            </value>
+            <value>
+                <fullName>FK13</fullName>
+                <default>false</default>
+                <label>FK13</label>
+            </value>
+            <value>
+                <fullName>FK25SL</fullName>
+                <default>false</default>
+                <label>FK25SL</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK MONO</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK MONO</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK MT</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER INTEGRA 20S</fullName>
+                <default>false</default>
+                <label>CARRIER INTEGRA 20S</label>
+            </value>
+            <value>
+                <fullName>OASIS 250</fullName>
+                <default>false</default>
+                <label>OASIS 250</label>
+            </value>
+            <value>
+                <fullName>RELEC PMDC3500</fullName>
+                <default>false</default>
+                <label>RELEC PMDC3500</label>
+            </value>
+            <value>
+                <fullName>RELEC PMDC3700</fullName>
+                <default>false</default>
+                <label>RELEC PMDC3700</label>
+            </value>
+            <value>
+                <fullName>RELEC PMDC 4700</fullName>
+                <default>false</default>
+                <label>RELEC PMDC 4700</label>
+            </value>
+            <value>
+                <fullName>RELEC PMSC2300</fullName>
+                <default>false</default>
+                <label>RELEC PMSC2300</label>
+            </value>
+            <value>
+                <fullName>RELEC PMSC3700</fullName>
+                <default>false</default>
+                <label>RELEC PMSC3700</label>
+            </value>
+            <value>
+                <fullName>RELEC PMSC2500</fullName>
+                <default>false</default>
+                <label>RELEC PMSC2500</label>
+            </value>
+            <value>
+                <fullName>600 T MT</fullName>
+                <default>false</default>
+                <label>600 T MT</label>
+            </value>
+            <value>
+                <fullName>350 MT</fullName>
+                <default>false</default>
+                <label>350 MT</label>
+            </value>
+            <value>
+                <fullName>400 MT</fullName>
+                <default>false</default>
+                <label>400 MT</label>
+            </value>
+            <value>
+                <fullName>600 MT</fullName>
+                <default>false</default>
+                <label>600 MT</label>
+            </value>
+            <value>
+                <fullName>RELEC FROID TR 21</fullName>
+                <default>false</default>
+                <label>RELEC FROID TR 21</label>
+            </value>
+            <value>
+                <fullName>RELEC FROID TR 31</fullName>
+                <default>false</default>
+                <label>RELEC FROID TR 31</label>
+            </value>
+            <value>
+                <fullName>RELEC TR 10</fullName>
+                <default>false</default>
+                <label>RELEC TR 10</label>
+            </value>
+            <value>
+                <fullName>RELEC TR 22</fullName>
+                <default>false</default>
+                <label>RELEC TR 22</label>
+            </value>
+            <value>
+                <fullName>RELEC TR15</fullName>
+                <default>false</default>
+                <label>RELEC TR15</label>
+            </value>
+            <value>
+                <fullName>RELEC TR16</fullName>
+                <default>false</default>
+                <label>RELEC TR16</label>
+            </value>
+            <value>
+                <fullName>RELEC TR30</fullName>
+                <default>false</default>
+                <label>RELEC TR30</label>
+            </value>
+            <value>
+                <fullName>RELEC TR32</fullName>
+                <default>false</default>
+                <label>RELEC TR32</label>
+            </value>
+            <value>
+                <fullName>RELEC TR36</fullName>
+                <default>false</default>
+                <label>RELEC TR36</label>
+            </value>
+            <value>
+                <fullName>SYBERIA 11</fullName>
+                <default>false</default>
+                <label>SYBERIA 11</label>
+            </value>
+            <value>
+                <fullName>SYBERIA MONO</fullName>
+                <default>false</default>
+                <label>SYBERIA MONO</label>
+            </value>
+            <value>
+                <fullName>SYBERIA TWIN COOL</fullName>
+                <default>false</default>
+                <label>SYBERIA TWIN COOL</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V300 MAX TC 20</fullName>
+                <default>false</default>
+                <label>THERMOKING V300 MAX TC 20</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 400 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING V 400 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 095</fullName>
+                <default>false</default>
+                <label>THERMOKING V 095</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 090</fullName>
+                <default>false</default>
+                <label>THERMOKING V 090</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 175</fullName>
+                <default>false</default>
+                <label>THERMOKING V 175</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 250</fullName>
+                <default>false</default>
+                <label>THERMOKING V 250</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 200</fullName>
+                <default>false</default>
+                <label>THERMOKING V 200</label>
+            </value>
+            <value>
+                <fullName>TK V 200 S MAX 50</fullName>
+                <default>false</default>
+                <label>TK V 200 S MAX 50</label>
+            </value>
+            <value>
+                <fullName>TK V 300 MAX</fullName>
+                <default>false</default>
+                <label>TK V 300 MAX</label>
+            </value>
+            <value>
+                <fullName>TK V 300 MAX 50</fullName>
+                <default>false</default>
+                <label>TK V 300 MAX 50</label>
+            </value>
+            <value>
+                <fullName>TK V MAX TC 120</fullName>
+                <default>false</default>
+                <label>TK V MAX TC 120</label>
+            </value>
+            <value>
+                <fullName>TK V200 MAX</fullName>
+                <default>false</default>
+                <label>TK V200 MAX</label>
+            </value>
+            <value>
+                <fullName>TK V200S</fullName>
+                <default>false</default>
+                <label>TK V200S</label>
+            </value>
+            <value>
+                <fullName>TK V-200S 50</fullName>
+                <default>false</default>
+                <label>TK V-200s 50</label>
+            </value>
+            <value>
+                <fullName>TK V300 TC</fullName>
+                <default>false</default>
+                <label>TK V300 TC</label>
+            </value>
+            <value>
+                <fullName>TK V500 + 1 PLAQUE EUTECTIQUE</fullName>
+                <default>false</default>
+                <label>TK V500 + 1 PLAQUE EUTECTIQUE</label>
+            </value>
+            <value>
+                <fullName>TK V600 + 2 PLAQUES EUTECTIQUES</fullName>
+                <default>false</default>
+                <label>TK V600 + 2 PLAQUES EUTECTIQUES</label>
+            </value>
+            <value>
+                <fullName>TK V600 MAX + 2 PLAQUES EUTECTIQUE</fullName>
+                <default>false</default>
+                <label>TK V600 MAX + 2 PLAQUES EUTECTIQUE</label>
+            </value>
+            <value>
+                <fullName>TK V700 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK V700 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>V 500 MAX TC 20</fullName>
+                <default>false</default>
+                <label>V 500 MAX TC 20</label>
+            </value>
+            <value>
+                <fullName>TK V100</fullName>
+                <default>false</default>
+                <label>TK V100</label>
+            </value>
+            <value>
+                <fullName>V 100 MAX</fullName>
+                <default>false</default>
+                <label>V 100 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 200 MAX 20</fullName>
+                <default>false</default>
+                <label>THERMOKING V 200 MAX 20</label>
+            </value>
+            <value>
+                <fullName>V 200 MAX 50</fullName>
+                <default>false</default>
+                <label>V 200 MAX 50</label>
+            </value>
+            <value>
+                <fullName>TK V200 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK V200 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>TK V200 MAX SPECTRUM 50</fullName>
+                <default>false</default>
+                <label>TK V200 MAX SPECTRUM 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 200 MAX TC 20</fullName>
+                <default>false</default>
+                <label>THERMOKING V 200 MAX TC 20</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 200 MAX TC 50</fullName>
+                <default>false</default>
+                <label>THERMOKING V 200 MAX TC 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V300</fullName>
+                <default>false</default>
+                <label>THERMOKING V300</label>
+            </value>
+            <value>
+                <fullName>TK V300 MAX 20</fullName>
+                <default>false</default>
+                <label>TK V300 MAX 20</label>
+            </value>
+            <value>
+                <fullName>V300 MAX 30</fullName>
+                <default>false</default>
+                <label>V300 MAX 30</label>
+            </value>
+            <value>
+                <fullName>V300 MAX 50</fullName>
+                <default>false</default>
+                <label>V300 MAX 50</label>
+            </value>
+            <value>
+                <fullName>TK V300 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK V300 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>V300 MAX SPECTRUM 50</fullName>
+                <default>false</default>
+                <label>V300 MAX SPECTRUM 50</label>
+            </value>
+            <value>
+                <fullName>V300 MAX TC 50</fullName>
+                <default>false</default>
+                <label>V300 MAX TC 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V300 MAX TCI 20</fullName>
+                <default>false</default>
+                <label>THERMOKING V300 MAX TCI 20</label>
+            </value>
+            <value>
+                <fullName>V350 MAX TCI</fullName>
+                <default>false</default>
+                <label>V350 MAX TCI</label>
+            </value>
+            <value>
+                <fullName>TK V500</fullName>
+                <default>false</default>
+                <label>TK V500</label>
+            </value>
+            <value>
+                <fullName>TK V500 MAX</fullName>
+                <default>false</default>
+                <label>TK V500 MAX</label>
+            </value>
+            <value>
+                <fullName>TK V 500 MAX 50</fullName>
+                <default>false</default>
+                <label>TK V 500 MAX 50</label>
+            </value>
+            <value>
+                <fullName>TK V500 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK V500 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>TK V 500 MAX SPECTRUM 50</fullName>
+                <default>false</default>
+                <label>TK V 500 MAX SPECTRUM 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING V 500 MAX TCI 20</fullName>
+                <default>false</default>
+                <label>THERMOKING V 500 MAX TCi 20</label>
+            </value>
+            <value>
+                <fullName>TK V600 MAX</fullName>
+                <default>false</default>
+                <label>TK V600 MAX</label>
+            </value>
+            <value>
+                <fullName>TK V600 MAX 50</fullName>
+                <default>false</default>
+                <label>TK V600 MAX 50</label>
+            </value>
+            <value>
+                <fullName>V700 MAX</fullName>
+                <default>false</default>
+                <label>V700 MAX</label>
+            </value>
+            <value>
+                <fullName>V 800 MAX</fullName>
+                <default>false</default>
+                <label>V 800 MAX</label>
+            </value>
+            <value>
+                <fullName>TK V800 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>TK V800 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING VM 305 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING VM 305 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING VM 305 BI</fullName>
+                <default>false</default>
+                <label>THERMOKING VM 305 BI</label>
+            </value>
+            <value>
+                <fullName>THERMOKING VM 400 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING VM 400 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING VM 400 MAX TC 20</fullName>
+                <default>false</default>
+                <label>THERMOKING VM 400 MAX TC 20</label>
+            </value>
+            <value>
+                <fullName>THERMOKING VM 400 MAX 20</fullName>
+                <default>false</default>
+                <label>THERMOKING VM 400 MAX 20</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 150</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 150</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 200</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 200</label>
+            </value>
+            <value>
+                <fullName>XARIOS 200 BI-T</fullName>
+                <default>false</default>
+                <label>XARIOS 200 BI-T</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 200 T</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 200 T</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 300</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 300</label>
+            </value>
+            <value>
+                <fullName>XARIOS 300 T</fullName>
+                <default>false</default>
+                <label>XARIOS 300 T</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 350</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 350</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 350 MT</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 350 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 350 T</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 350 T</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 400</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 400</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 500</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 500</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 500 MT</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 500 MT</label>
+            </value>
+            <value>
+                <fullName>500 T</fullName>
+                <default>false</default>
+                <label>500 T</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 600</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 600</label>
+            </value>
+            <value>
+                <fullName>CARRIER XARIOS 600 MT</fullName>
+                <default>false</default>
+                <label>CARRIER XARIOS 600 MT</label>
+            </value>
+            <value>
+                <fullName>XARIOS 600 T</fullName>
+                <default>false</default>
+                <label>XARIOS 600 T</label>
+            </value>
+            <value>
+                <fullName>XARIOS 600 T MT</fullName>
+                <default>false</default>
+                <label>XARIOS 600 T MT</label>
+            </value>
+            <value>
+                <fullName>FZ248</fullName>
+                <default>false</default>
+                <label>FZ248</label>
+            </value>
+            <value>
+                <fullName>Z35S</fullName>
+                <default>false</default>
+                <label>Z35S</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 180H</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 180H</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 540</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 540</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 30S</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 30S</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 20S</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 20S</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 300 BI</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 300 BI</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 180 R</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 180 R</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 180</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 180</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 200</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 200</label>
+            </value>
+            <value>
+                <fullName>CARRIER ZEPHYR 300</fullName>
+                <default>false</default>
+                <label>CARRIER ZEPHYR 300</label>
+            </value>
+            <value>
+                <fullName>1000 MM</fullName>
+                <default>false</default>
+                <label>1000 MM</label>
+            </value>
+            <value>
+                <fullName>1280 MM</fullName>
+                <default>false</default>
+                <label>1280 MM</label>
+            </value>
+            <value>
+                <fullName>DH-P1.03</fullName>
+                <default>false</default>
+                <label>DH-P1.03</label>
+            </value>
+            <value>
+                <fullName>1600 MM</fullName>
+                <default>false</default>
+                <label>1600 MM</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME 1000 / 1800</fullName>
+                <default>false</default>
+                <label>ISOTHERME 1000 / 1800</label>
+            </value>
+            <value>
+                <fullName>1600MM</fullName>
+                <default>false</default>
+                <label>1600MM</label>
+            </value>
+            <value>
+                <fullName>1700 MM</fullName>
+                <default>false</default>
+                <label>1700 MM</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME 1500 / 1800</fullName>
+                <default>false</default>
+                <label>ISOTHERME 1500 / 1800</label>
+            </value>
+            <value>
+                <fullName>2000 MM</fullName>
+                <default>false</default>
+                <label>2000 MM</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME 1500 / 1600</fullName>
+                <default>false</default>
+                <label>ISOTHERME 1500 / 1600</label>
+            </value>
+            <value>
+                <fullName>2000MM</fullName>
+                <default>false</default>
+                <label>2000MM</label>
+            </value>
+            <value>
+                <fullName>TOTAL</fullName>
+                <default>false</default>
+                <label>TOTAL</label>
+            </value>
+            <value>
+                <fullName>PLATEAU</fullName>
+                <default>false</default>
+                <label>PLATEAU</label>
+            </value>
+            <value>
+                <fullName>1450 MM</fullName>
+                <default>false</default>
+                <label>1450 MM</label>
+            </value>
+            <value>
+                <fullName>ISOTHERME 750 / 1600</fullName>
+                <default>false</default>
+                <label>ISOTHERME 750 / 1600</label>
+            </value>
+            <value>
+                <fullName>1800 MM</fullName>
+                <default>false</default>
+                <label>1800 MM</label>
+            </value>
+            <value>
+                <fullName>A QUALIFIER</fullName>
+                <default>false</default>
+                <label>A QUALIFIER</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 1000 KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 1000 KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 1000KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 1000KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 1300 MM</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 1300 mm</label>
+            </value>
+            <value>
+                <fullName>1250 MM</fullName>
+                <default>false</default>
+                <label>1250 MM</label>
+            </value>
+            <value>
+                <fullName>1300 MM</fullName>
+                <default>false</default>
+                <label>1300 MM</label>
+            </value>
+            <value>
+                <fullName>1400 MM</fullName>
+                <default>false</default>
+                <label>1400 MM</label>
+            </value>
+            <value>
+                <fullName>1200 MM</fullName>
+                <default>false</default>
+                <label>1200 MM</label>
+            </value>
+            <value>
+                <fullName>1500 MM</fullName>
+                <default>false</default>
+                <label>1500 MM</label>
+            </value>
+            <value>
+                <fullName>1750 MM</fullName>
+                <default>false</default>
+                <label>1750 mm</label>
+            </value>
+            <value>
+                <fullName>2050 MM</fullName>
+                <default>false</default>
+                <label>2050 MM</label>
+            </value>
+            <value>
+                <fullName>2100 MM</fullName>
+                <default>false</default>
+                <label>2100 mm</label>
+            </value>
+            <value>
+                <fullName>2150 MM</fullName>
+                <default>false</default>
+                <label>2150 MM</label>
+            </value>
+            <value>
+                <fullName>2200 MM</fullName>
+                <default>false</default>
+                <label>2200 MM</label>
+            </value>
+            <value>
+                <fullName>2250 MM</fullName>
+                <default>false</default>
+                <label>2250 MM</label>
+            </value>
+            <value>
+                <fullName>1900 MM</fullName>
+                <default>false</default>
+                <label>1900 MM</label>
+            </value>
+            <value>
+                <fullName>1950 MM</fullName>
+                <default>false</default>
+                <label>1950 MM</label>
+            </value>
+            <value>
+                <fullName>2300 MM</fullName>
+                <default>false</default>
+                <label>2300 MM</label>
+            </value>
+            <value>
+                <fullName>2350 MM</fullName>
+                <default>false</default>
+                <label>2350 mm</label>
+            </value>
+            <value>
+                <fullName>1850 MM</fullName>
+                <default>false</default>
+                <label>1850 mm</label>
+            </value>
+            <value>
+                <fullName>2500 MM</fullName>
+                <default>false</default>
+                <label>2500 mm</label>
+            </value>
+            <value>
+                <fullName>2750 MM</fullName>
+                <default>false</default>
+                <label>2750 mm</label>
+            </value>
+            <value>
+                <fullName>2550 MM</fullName>
+                <default>false</default>
+                <label>2550 mm</label>
+            </value>
+            <value>
+                <fullName>2800 MM</fullName>
+                <default>false</default>
+                <label>2800 MM</label>
+            </value>
+            <value>
+                <fullName>2700 MM</fullName>
+                <default>false</default>
+                <label>2700 MM</label>
+            </value>
+            <value>
+                <fullName>1550 MM</fullName>
+                <default>false</default>
+                <label>1550 MM</label>
+            </value>
+            <value>
+                <fullName>1650 MM</fullName>
+                <default>false</default>
+                <label>1650 MM</label>
+            </value>
+            <value>
+                <fullName>HAYON 1/2 AR</fullName>
+                <default>false</default>
+                <label>HAYON 1/2 AR</label>
+            </value>
+            <value>
+                <fullName>AUVENT</fullName>
+                <default>false</default>
+                <label>AUVENT</label>
+            </value>
+            <value>
+                <fullName>CLASSIQUE</fullName>
+                <default>false</default>
+                <label>CLASSIQUE</label>
+            </value>
+            <value>
+                <fullName>ELEVATEUR A VIANDE</fullName>
+                <default>false</default>
+                <label>ELEVATEUR A VIANDE</label>
+            </value>
+            <value>
+                <fullName>HAYON 1/2 ARD</fullName>
+                <default>false</default>
+                <label>HAYON 1/2 ARD</label>
+            </value>
+            <value>
+                <fullName>HAYON 1/2 ARG</fullName>
+                <default>false</default>
+                <label>HAYON 1/2 ARG</label>
+            </value>
+            <value>
+                <fullName>2100MM</fullName>
+                <default>false</default>
+                <label>2100MM</label>
+            </value>
+            <value>
+                <fullName>HAYON 750 KG</fullName>
+                <default>false</default>
+                <label>HAYON 750 KG</label>
+            </value>
+            <value>
+                <fullName>HAYON 1000 KG</fullName>
+                <default>false</default>
+                <label>HAYON 1000 KG</label>
+            </value>
+            <value>
+                <fullName>HAYON 1500 KG</fullName>
+                <default>false</default>
+                <label>HAYON 1500 KG</label>
+            </value>
+            <value>
+                <fullName>HAYON 2000 KG</fullName>
+                <default>false</default>
+                <label>HAYON 2000 KG</label>
+            </value>
+            <value>
+                <fullName>HAYON 2500 KG</fullName>
+                <default>false</default>
+                <label>HAYON 2500 KG</label>
+            </value>
+            <value>
+                <fullName>HAYON 500 KG</fullName>
+                <default>false</default>
+                <label>HAYON 500 KG</label>
+            </value>
+            <value>
+                <fullName>3000 KG</fullName>
+                <default>false</default>
+                <label>3000 KG</label>
+            </value>
+            <value>
+                <fullName>AR 1 PORTE CENTRALE</fullName>
+                <default>false</default>
+                <label>AR 1 PORTE CENTRALE</label>
+            </value>
+            <value>
+                <fullName>AR 2 VANTAUX</fullName>
+                <default>false</default>
+                <label>AR 2 VANTAUX</label>
+            </value>
+            <value>
+                <fullName>AUVENT RELEVABLE</fullName>
+                <default>false</default>
+                <label>AUVENT RELEVABLE</label>
+            </value>
+            <value>
+                <fullName>TOTALE 2 VANTAUX</fullName>
+                <default>false</default>
+                <label>TOTALE 2 VANTAUX</label>
+            </value>
+            <value>
+                <fullName>TOTALE 3 VANTAUX</fullName>
+                <default>false</default>
+                <label>TOTALE 3 VANTAUX</label>
+            </value>
+            <value>
+                <fullName>TOTALE RIDEAUX FIT</fullName>
+                <default>false</default>
+                <label>TOTALE RIDEAUX FIT</label>
+            </value>
+            <value>
+                <fullName>PORTE CENTRALE 70 CM</fullName>
+                <default>false</default>
+                <label>PORTE CENTRALE 70 CM</label>
+            </value>
+            <value>
+                <fullName>PORTE CENTRALE 80 CM</fullName>
+                <default>false</default>
+                <label>PORTE CENTRALE 80 CM</label>
+            </value>
+            <value>
+                <fullName>PORTE CENTRALE 90 CM</fullName>
+                <default>false</default>
+                <label>PORTE CENTRALE 90 CM</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE TOTALE</fullName>
+                <default>false</default>
+                <label>OUVERTURE TOTALE</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PORTE 80 CM</fullName>
+                <default>false</default>
+                <label>DOUBLE PORTE 80 CM</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PORTE 100 CM</fullName>
+                <default>false</default>
+                <label>DOUBLE PORTE 100 CM</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PORTE 120 CM</fullName>
+                <default>false</default>
+                <label>DOUBLE PORTE 120 CM</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE AR DROIT</fullName>
+                <default>false</default>
+                <label>OUVERTURE AR DROIT</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE ARR 270°</fullName>
+                <default>false</default>
+                <label>OUVERTURE ARR 270°</label>
+            </value>
+            <value>
+                <fullName>RIDEAU EASY ACC&#39;AIR</fullName>
+                <default>false</default>
+                <label>RIDEAU EASY ACC&#39;AIR</label>
+            </value>
+            <value>
+                <fullName>RIDEAU FIT ELECTRIQUE</fullName>
+                <default>false</default>
+                <label>RIDEAU FIT ELECTRIQUE</label>
+            </value>
+            <value>
+                <fullName>RIDEAU FIT MANUEL</fullName>
+                <default>false</default>
+                <label>RIDEAU FIT MANUEL</label>
+            </value>
+            <value>
+                <fullName>RIDEAU FIT PNEUMATIQUE</fullName>
+                <default>false</default>
+                <label>RIDEAU FIT PNEUMATIQUE</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVABLE ISOTHERME</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVABLE ISOTHERME</label>
+            </value>
+            <value>
+                <fullName>SMARTOPEN-C</fullName>
+                <default>false</default>
+                <label>SMARTOPEN-C</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PORTE RAPIDE</fullName>
+                <default>false</default>
+                <label>DOUBLE PORTE RAPIDE</label>
+            </value>
+            <value>
+                <fullName>SIMPLE PORTE RAPIDE</fullName>
+                <default>false</default>
+                <label>SIMPLE PORTE RAPIDE</label>
+            </value>
+            <value>
+                <fullName>2 PORTES AV D+G</fullName>
+                <default>false</default>
+                <label>2 PORTES AV D+G</label>
+            </value>
+            <value>
+                <fullName>1 PORTE 1,30 D</fullName>
+                <default>false</default>
+                <label>1 PORTE 1,30 D</label>
+            </value>
+            <value>
+                <fullName>1 PORTE 1,30 G</fullName>
+                <default>false</default>
+                <label>1 PORTE 1,30 G</label>
+            </value>
+            <value>
+                <fullName>1 PORTE AR D</fullName>
+                <default>false</default>
+                <label>1 PORTE AR D</label>
+            </value>
+            <value>
+                <fullName>1 PORTE AR G</fullName>
+                <default>false</default>
+                <label>1 PORTE AR G</label>
+            </value>
+            <value>
+                <fullName>1 PORTE AV D</fullName>
+                <default>false</default>
+                <label>1 PORTE AV D</label>
+            </value>
+            <value>
+                <fullName>1 PORTE AV G</fullName>
+                <default>false</default>
+                <label>1 PORTE AV G</label>
+            </value>
+            <value>
+                <fullName>2 PORTES D AV+AR</fullName>
+                <default>false</default>
+                <label>2 PORTES D AV+AR</label>
+            </value>
+            <value>
+                <fullName>2 PORTES G AV+AR</fullName>
+                <default>false</default>
+                <label>2 PORTES G AV+AR</label>
+            </value>
+            <value>
+                <fullName>PORTILLON D</fullName>
+                <default>false</default>
+                <label>PORTILLON D</label>
+            </value>
+            <value>
+                <fullName>PORTILLON G</fullName>
+                <default>false</default>
+                <label>PORTILLON G</label>
+            </value>
+            <value>
+                <fullName>DROITE</fullName>
+                <default>false</default>
+                <label>DROITE</label>
+            </value>
+            <value>
+                <fullName>PORTE LATERALE</fullName>
+                <default>false</default>
+                <label>PORTE LATERALE</label>
+            </value>
+            <value>
+                <fullName>1.00 DROITE</fullName>
+                <default>false</default>
+                <label>1.00 DROITE</label>
+            </value>
+            <value>
+                <fullName>1.00 GAUCHE</fullName>
+                <default>false</default>
+                <label>1.00 GAUCHE</label>
+            </value>
+            <value>
+                <fullName>CENTREE</fullName>
+                <default>false</default>
+                <label>CENTREE</label>
+            </value>
+            <value>
+                <fullName>PORTE BATTANTE 2 VANTAUX AV</fullName>
+                <default>false</default>
+                <label>PORTE BATTANTE 2 VANTAUX AV</label>
+            </value>
+            <value>
+                <fullName>PORTE BATTANTE 2 VANTAUX AR</fullName>
+                <default>false</default>
+                <label>PORTE BATTANTE 2 VANTAUX AR</label>
+            </value>
+            <value>
+                <fullName>RIDEAU ALU AVD</fullName>
+                <default>false</default>
+                <label>RIDEAU ALU AVD</label>
+            </value>
+            <value>
+                <fullName>1 PORTE</fullName>
+                <default>false</default>
+                <label>1 PORTE</label>
+            </value>
+            <value>
+                <fullName>2 PORTES</fullName>
+                <default>false</default>
+                <label>2 PORTES</label>
+            </value>
+            <value>
+                <fullName>PORTE AV</fullName>
+                <default>false</default>
+                <label>PORTE AV</label>
+            </value>
+            <value>
+                <fullName>PORTE AR</fullName>
+                <default>false</default>
+                <label>PORTE AR</label>
+            </value>
+            <value>
+                <fullName>RIDEAU COULISSANT</fullName>
+                <default>false</default>
+                <label>RIDEAU COULISSANT</label>
+            </value>
+            <value>
+                <fullName>AIGUILLAGE</fullName>
+                <default>false</default>
+                <label>AIGUILLAGE</label>
+            </value>
+            <value>
+                <fullName>BI-RAILS</fullName>
+                <default>false</default>
+                <label>BI-RAILS</label>
+            </value>
+            <value>
+                <fullName>EPI</fullName>
+                <default>false</default>
+                <label>EPI</label>
+            </value>
+            <value>
+                <fullName>BARRE A DENTS FIXE</fullName>
+                <default>false</default>
+                <label>BARRE A DENTS FIXE</label>
+            </value>
+            <value>
+                <fullName>PENDERIES</fullName>
+                <default>false</default>
+                <label>PENDERIES</label>
+            </value>
+            <value>
+                <fullName>FIXE LATERAL+BI-RAIL C CENTRAL</fullName>
+                <default>false</default>
+                <label>FIXE LATERAL+BI-RAIL C CENTRAL</label>
+            </value>
+            <value>
+                <fullName>FIXE LATERAL+RAIL C CENTRAL</fullName>
+                <default>false</default>
+                <label>FIXE LATERAL+RAIL C CENTRAL</label>
+            </value>
+            <value>
+                <fullName>FIXE LATERAL+RAIL TUBE CENTRAL</fullName>
+                <default>false</default>
+                <label>FIXE LATERAL+RAIL TUBE CENTRAL</label>
+            </value>
+            <value>
+                <fullName>RAIL C</fullName>
+                <default>false</default>
+                <label>RAIL C</label>
+            </value>
+            <value>
+                <fullName>TOIT PORTEUR</fullName>
+                <default>false</default>
+                <label>TOIT PORTEUR</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1</controllingFieldValue>
+            <valueName>FINSAM 1</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

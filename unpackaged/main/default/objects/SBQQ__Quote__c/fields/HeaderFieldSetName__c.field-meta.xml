@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HeaderFieldSetName__c</fullName>
+    <label>HeaderFieldSetName</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Quote</fullName>
+                <default>true</default>
+                <label>Standard Quote</label>
+            </value>
+            <value>
+                <fullName>Detailed Standard Quote</fullName>
+                <default>false</default>
+                <label>Detailed Standard Quote</label>
+            </value>
+            <value>
+                <fullName>AssemblyFS</fullName>
+                <default>false</default>
+                <label>AssemblyFS</label>
+            </value>
+            <value>
+                <fullName>Hors_standard_Quote</fullName>
+                <default>false</default>
+                <label>Hors_standard_Quote</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Carte bancaire</masterLabel>
+        <translation>Bankovní karta</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chèque</masterLabel>
+        <translation>Kontrola</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Espèces</masterLabel>
+        <translation>Druh</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mandat administratif</masterLabel>
+        <translation>Administrativní mandát</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prelevement SEPA B2B</masterLabel>
+        <translation>SEPA B2B inkaso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement SEPA CORE</masterLabel>
+        <translation>automatická úhrada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement automatique</masterLabel>
+        <translation>Inkaso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement SEPA</masterLabel>
+        <translation>SEPA převod</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement bancaire etrang</masterLabel>
+        <translation>Zahraniční bankovní převod</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

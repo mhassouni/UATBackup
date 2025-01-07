@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>T° recordeer</label>
+        <name>Enregistreur_T__c</name>
+        <picklistValues>
+            <masterLabel>A DISQUE</masterLabel>
+            <translation><!-- A DISQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 100  - Clé USB</masterLabel>
+            <translation><!-- DATACOLD 100  - Clé USB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 300 R - avec imprimante</masterLabel>
+            <translation><!-- DATACOLD 300 R - avec imprimante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 600 R - avec imprimante</masterLabel>
+            <translation><!-- DATACOLD 600 R - avec imprimante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 600 T - avec imprimante</masterLabel>
+            <translation><!-- DATACOLD 600 T - avec imprimante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEOLOCALISATION AVEC REMONTEE DE T°</masterLabel>
+            <translation><!-- GEOLOCALISATION AVEC REMONTEE DE T° --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements GROUPE</masterLabel>
+            <translation><!-- HORS STANDARD - voir aménagements GROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation><!-- SANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCHPRINT PREMIUM - avec imprimante</masterLabel>
+            <translation><!-- TOUCHPRINT PREMIUM - avec imprimante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCHPRINT standard  - avec imprimante</masterLabel>
+            <translation><!-- TOUCHPRINT standard  - avec imprimante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSCAN ADVANCE</masterLabel>
+            <translation><!-- TRANSCAN ADVANCE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

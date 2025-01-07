@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operatori di opportunità</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operatori di opportunità</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Acteur de l&#39;opportunité</layout>
+        <sections>
+            <label>Commenti</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro --></nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage>I campi obbligatori devono essere compilati</errorMessage>
+        <name>ACO_VR01_RequiredImport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solamente un account in statuto &quot;Convalidato&quot; oppure &quot;Convalidato CM&quot; può essere scelto come protagonista su un&#39;opportunità</errorMessage>
+        <name>ACO_VR02_CompteDraftRefuseInactf</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>L&#39;account selezionato deve operare sugli stessi paesi conto dell&#39;opportunità</errorMessage>
+        <name>ACO_VR03_Compte_pays_operation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous devez choisir un compte concurrent qui propose le produit de votre opportunité --></errorMessage>
+        <name>ACO_VR04_ProduitsConcurrent</name>
+    </validationRules>
+    <webLinks>
+        <label>Aggiungi  Account</label>
+        <name>AjouterCompte</name>
+    </webLinks>
+</CustomObjectTranslation>

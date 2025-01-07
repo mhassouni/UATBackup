@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of this option.</description>
+    <inlineHelpText>Utilisez « Composant » si cette option, y compris la quantité, dépend du parent. Utilisez « Accessoire » si cette option dépend du parent, mais que la quantité est indépendante. Utilisez « Produit associé » pour associée, mais totalement indépendante des produits.</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Component</fullName>
+                <default>true</default>
+                <label>Component</label>
+            </value>
+            <value>
+                <fullName>Accessory</fullName>
+                <default>false</default>
+                <label>Accessory</label>
+            </value>
+            <value>
+                <fullName>Related Product</fullName>
+                <default>false</default>
+                <label>Related Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

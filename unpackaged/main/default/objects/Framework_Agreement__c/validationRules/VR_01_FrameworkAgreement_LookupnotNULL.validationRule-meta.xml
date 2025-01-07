@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_01_FrameworkAgreement_LookupnotNULL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(Compte__c),
+ISBLANK(Groupement__c)
+,
+OR(RecordType.DeveloperName = &#39;Accords_Cadres&#39;
+,RecordType.DeveloperName = &#39;AccordCadre_PL&#39;
+,RecordType.DeveloperName = &#39;AccordCadre_SR&#39;
+,RecordType.DeveloperName = &#39;AccordCadre_VE&#39;
+,RecordType.DeveloperName = &#39;AccordCadre_VL&#39;)
+)</errorConditionFormula>
+    <errorMessage>Lors de la création d&#39;un accord-cadre, il est nécessaire que le Compte OU le Groupement soit renseigné.</errorMessage>
+</ValidationRule>

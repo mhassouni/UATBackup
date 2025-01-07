@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1 - Opportunité créée</masterLabel>
+        <translation>1 - Opportuniteit gecreëerd</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 - Opportunité qualifiée</masterLabel>
+        <translation>2 - Opportuniteit gekwalificeerd</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3 - Proposition remise</masterLabel>
+        <translation>3 - Voorstel ingediend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 - Accord de principe</masterLabel>
+        <translation>4 - Princiepsakkoord</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 - En négociation</masterLabel>
+        <translation>4 - In onderhandeling</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5 - Contrat signé</masterLabel>
+        <translation>5 - Contract ondertekend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5 - Gagnée</masterLabel>
+        <translation>5 - Gewonnen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6 - Contrat signé</masterLabel>
+        <translation>6 - Contract ondertekend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6 - Gagnée</masterLabel>
+        <translation>6 - Gewonnen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7 - Perdue</masterLabel>
+        <translation>7 - Verloren</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8 - Inactive</masterLabel>
+        <translation>8 - Inactief</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fermée Gagnée</masterLabel>
+        <translation>Gesloten gewonnen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fermée Perdue</masterLabel>
+        <translation>Gesloten verloren</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ouverte</masterLabel>
+        <translation>Open</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

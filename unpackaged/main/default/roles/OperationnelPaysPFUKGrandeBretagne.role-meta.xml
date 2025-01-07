@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Opérationnel Pays PFUK (Grande Bretagne)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Opérationnel Pays PFUK (Grande Bretagne)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>DirecteurCommercialPaysPFUKGrandeBretagne</parentRole>
+</Role>

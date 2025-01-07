@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Birmingham_In_Progress</fullName>
+    <booleanFilter>1 AND 9 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>B1,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B2,B20,B21,B23,B24,B25,B26,B27,B28,B29,B3,B30,B31,B32,B33,B34,B35,B36,B37,B38,B4,B40,B42,B43,B44,B45,B46,B47,B48,B49,B5,B50,B6,B60,B61,B62,B63</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>B64,B65,B66,B67,B68,B69,B7,B70,B71,B72,B73,B74,B75,B76,B77,B78,B79,B8,B80,B9,B90,B91,B92,B93,B94,B95,B96,B97,B98,B99,CV1,CV10,CV11,CV12,CV13,CV2,CV21,CV22,CV23,CV3,CV31,CV32,CV33,CV37,CV4,CV5,CV6,CV7,CV8</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>CV8,CV9,CV34,CV35,CV36,CV47,DE1,DE3,DE21,DE22,DE23,DE24,DE65,DE72,DE73,DE74,DE99,DE4,DE5,DE6,DE7,DE11,DE12,DE13,DE14,DE15,DE45,DE55,DE56,DE75,DY1,DY2,DY3,DY4,DY5,DY6,DY7,DY8,DY9,DY10,DY11,DY14,DY12,DY13,HR1,HR2,HR3,HR4,HR5,HR6,HR7</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>HR8,HR9,LE1,LE2,LE3,LE4,LE5,LE6,LE7,LE8,LE9,LE19,LE21,LE41,LE55,LE87,LE94,LE95,LE10,LE11,LE12,LE13,LE14,LE15,LE16,LE17,LE18,LE65,LE67,NG1,NG2,NG3,NG4,NG5,NG6,NG7,NG8,NG9,NG10,NG11,NG12,NG13,NG14,NG15,NG16,NG17,NG80,NG90</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>NG17,NG18,NG19,NG20,NG21,NG70,NG22,NG23,NG24,NG25,NG31,NG32,NG33,NG34,ST1,ST2,ST3,ST4,ST6,ST7,ST8,ST9,ST10,ST11,ST12,ST5,ST55,ST13,ST14,ST15,ST16,ST17,ST18,ST19,ST20,ST21,SY1,SY2,SY3,SY4,SY5,SY99,SY6,SY7,SY8,SY9,SY10,SY11</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>SY12,SY13,SY14,SY15,SY16,SY17,SY18,SY19,SY20,SY21,SY22,SY23,SY24,SY25,TF1,TF2,TF3,TF4,TF5,TF6,TF7,TF8,TF9,TF10,TF11,TF12,TF13</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>WR1,WR2,WR3,WR4,WR5,WR6,WR7,WR8,WR78,WR99,WR9,WR10,WR11,WR12,WR13,WR14,WR15,WS1,WS2,WS3,WS4,WS5,WS6,WS8,WS9,WS7,WS10,WS11,WS12,WS13,WS14,WS15,WV1,WV2,WV3,WV4,WV5,WV6,WV7,WV8,WV9,WV10,WV11,WV98,WV12,WV13,WV14,WV15,WV16</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Leads PFUK Birmingham - In Progress</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurCommercialPaysPFUKGrandeBretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

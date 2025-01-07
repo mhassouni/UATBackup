@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Lead_Duplicate_Contact_Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Connector__Custom_Logic__c</field>
+        <value xsi:type="xsd:string">1 OR 2</value>
+    </values>
+    <values>
+        <field>API_Connector__Filter_logic__c</field>
+        <value xsi:type="xsd:string">1 And 2</value>
+    </values>
+    <values>
+        <field>API_Connector__Value1__c</field>
+        <value xsi:type="xsd:string">{&quot;IsError&quot;:false,&quot;Value&quot;:&quot;&quot;,&quot;Type&quot;:&quot;text&quot;,&quot;Id&quot;:1,&quot;IsReference&quot;:false,&quot;Condition&quot;:&quot;OR&quot;,&quot;Field&quot;:&quot;title&quot;,&quot;Operator&quot;:&quot;changed&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value2__c</field>
+        <value xsi:type="xsd:string">{&quot;IsError&quot;:false,&quot;Id&quot;:2,&quot;IsReference&quot;:false,&quot;Condition&quot;:&quot;AND&quot;,&quot;Field&quot;:&quot;firstname&quot;,&quot;Operator&quot;:&quot;changed&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Type&quot;:&quot;text&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value3__c</field>
+        <value xsi:type="xsd:string">{&quot;IsError&quot;:false,&quot;Value&quot;:&quot;&quot;,&quot;Id&quot;:3,&quot;IsReference&quot;:false,&quot;Condition&quot;:&quot;OR&quot;,&quot;Field&quot;:&quot;--None--&quot;,&quot;Operator&quot;:&quot;--None--&quot;,&quot;Type&quot;:&quot;text&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value4__c</field>
+        <value xsi:type="xsd:string">{&quot;IsError&quot;:false,&quot;Id&quot;:4,&quot;IsReference&quot;:false,&quot;Condition&quot;:&quot;AND&quot;,&quot;Field&quot;:&quot;--None--&quot;,&quot;Operator&quot;:&quot;--None--&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Type&quot;:&quot;text&quot;}</value>
+    </values>
+    <values>
+        <field>API_Connector__Value5__c</field>
+        <value xsi:type="xsd:string">{&quot;IsError&quot;:false,&quot;Id&quot;:5,&quot;IsReference&quot;:false,&quot;Value&quot;:&quot;&quot;,&quot;Operator&quot;:&quot;--None--&quot;,&quot;Field&quot;:&quot;--None--&quot;,&quot;Condition&quot;:&quot;AND&quot;,&quot;Type&quot;:&quot;text&quot;}</value>
+    </values>
+</CustomMetadata>

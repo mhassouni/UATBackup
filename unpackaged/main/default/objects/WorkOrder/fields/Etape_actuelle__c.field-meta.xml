@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etape_actuelle__c</fullName>
+    <description>Chevron OT</description>
+    <externalId>false</externalId>
+    <formula>IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==1,Text(Status)==&#39;Provisoire&#39;)
+,
+IMAGE(&quot;/resource/1582019118000/OT_PROVISOIRE?&quot;,&quot;Provisoire&quot;,20,130)
+,
+IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==1,Text(Status)&lt;&gt;&#39;En cours&#39;)
+,
+IMAGE(&quot;/resource/1551965030000/OT_Retour?&quot;,&quot;Retour&quot;,20,130)
+,
+IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==1,Text(Status)==&#39;En cours&#39;)
+,
+IMAGE(&quot;/resource/1551965007000/OT_Fin?&quot;,&quot;Fin&quot;,20,130)
+,
+IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==0)
+,
+IMAGE(&quot;/resource/1551964987000/OT_Arrivee?&quot;,&quot;Arrivee&quot;,20,130)
+,
+IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==0,TECH_Fin__c==0)
+,
+IMAGE(&quot;/resource/1551964926000/OT_Depart?&quot;,&quot;Depart&quot;,20,130)
+,
+IF
+(
+AND(TECH_Transmission__c ==1,TECH_Depart__c==0,TECH_Arrivee__c==0,TECH_Fin__c==0)
+,
+IMAGE(&quot;/resource/1551964968000/OT_Transmission?&quot;,&quot;Transmission&quot;,20,130)
+,
+IMAGE(&quot;/resource/1551971810000/OT_Nouvelle?&quot;,&quot;Transmission&quot;,20,130)
+)
+)
+)
+)
+)
+
+
+)</formula>
+    <label>Etape actuelle</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Période retour estimée --></label>
+        <name>Periode_retour_estimee__c</name>
+        <picklistValues>
+            <masterLabel>Après-midi (14h - 18 h)</masterLabel>
+            <translation><!-- Après-midi (14h - 18 h) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matin (8h -12h)</masterLabel>
+            <translation><!-- Matin (8h -12h) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midi (12h - 14h)</masterLabel>
+            <translation><!-- Midi (12h - 14h) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plancher__c</fullName>
+    <label>Plancher (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALUMINIUM ANTIDERAPANT</fullName>
+                <default>false</default>
+                <label>ALUMINIUM ANTIDERAPANT</label>
+            </value>
+            <value>
+                <fullName>ANTIDERAPANT</fullName>
+                <default>false</default>
+                <label>ANTIDERAPANT</label>
+            </value>
+            <value>
+                <fullName>AVIATION</fullName>
+                <default>false</default>
+                <label>AVIATION</label>
+            </value>
+            <value>
+                <fullName>BOIS DUR + OMEGAS</fullName>
+                <default>false</default>
+                <label>BOIS DUR + OMEGAS</label>
+            </value>
+            <value>
+                <fullName>CAILLEBOTIS</fullName>
+                <default>false</default>
+                <label>CAILLEBOTIS</label>
+            </value>
+            <value>
+                <fullName>LISSE</fullName>
+                <default>false</default>
+                <label>LISSE</label>
+            </value>
+            <value>
+                <fullName>SANS - TRACTEUR</fullName>
+                <default>false</default>
+                <label>SANS - TRACTEUR</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Role</label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Avis de paiement</masterLabel>
+            <translation><!-- Avis de paiement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptabilité</masterLabel>
+            <translation><!-- Comptabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donneur d&#39;ordre</masterLabel>
+            <translation><!-- Donneur d&apos;ordre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploitant</masterLabel>
+            <translation><!-- Exploitant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facturation</masterLabel>
+            <translation><!-- Facturation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facture dématerialisée</masterLabel>
+            <translation><!-- Facture dématerialisée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livré</masterLabel>
+            <translation><!-- Livré --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PV</masterLabel>
+            <translation><!-- PV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payeur</masterLabel>
+            <translation><!-- Payeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relance KM</masterLabel>
+            <translation><!-- Relance KM --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Containers</fullName>
+        <default>false</default>
+        <label>Containers</label>
+    </customValue>
+    <customValue>
+        <fullName>Meubles</fullName>
+        <default>false</default>
+        <label>Meubles</label>
+    </customValue>
+    <customValue>
+        <fullName>Véhicules Frigorifiques</fullName>
+        <default>false</default>
+        <label>Véhicules Frigorifiques</label>
+    </customValue>
+    <customValue>
+        <fullName>Véhicules Secs</fullName>
+        <default>false</default>
+        <label>Véhicules Secs</label>
+    </customValue>
+    <customValue>
+        <fullName>Cession</fullName>
+        <default>false</default>
+        <label>Cession</label>
+    </customValue>
+    <customValue>
+        <fullName>Vente</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vente</label>
+    </customValue>
+    <customValue>
+        <fullName>Véhicules</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Véhicules</label>
+    </customValue>
+    <masterLabel>Business Line</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Typ</label>
+        <name>type_OE__c</name>
+        <picklistValues>
+            <masterLabel>Boite de vitesse</masterLabel>
+            <translation>Převodovka</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Kabina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Cellule Isotherme</masterLabel>
+            <translation>Karoserie / Izotermický článek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Podvozek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité Véhicule</masterLabel>
+            <translation>Elektřina vozidla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freinage</masterLabel>
+            <translation>Brzdy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Froid</masterLabel>
+            <translation>Chlazení</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/Portique</masterLabel>
+            <translation>Zadní dveře / Portál</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Négligence</masterLabel>
+            <translation>Špatné použití / Nedbalost</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Motor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Pneumatiky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pont/Essieu/Transmission</masterLabel>
+            <translation>Náprava/Osa/Převod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinistre / Dégâts</masterLabel>
+            <translation>Škoda / Poškození</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

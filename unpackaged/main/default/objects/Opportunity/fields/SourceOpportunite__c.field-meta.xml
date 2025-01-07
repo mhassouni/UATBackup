@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceOpportunite__c</fullName>
+    <inlineHelpText>Préciser comment l&#39;opportunité a été  identifiée et remontée dans le pipeline.</inlineHelpText>
+    <label>Source de l&#39;opportunité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Achat Fichier</fullName>
+                <default>false</default>
+                <label>Achat Fichier</label>
+            </value>
+            <value>
+                <fullName>Annuaire</fullName>
+                <default>false</default>
+                <label>Annuaire</label>
+            </value>
+            <value>
+                <fullName>Appel Entrant</fullName>
+                <default>false</default>
+                <label>Appel Entrant</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>E-mailing</fullName>
+                <default>false</default>
+                <label>E-mailing</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>Magazine</label>
+            </value>
+            <value>
+                <fullName>Mailing / Courrier</fullName>
+                <default>false</default>
+                <label>Mailing / Courrier</label>
+            </value>
+            <value>
+                <fullName>Opération Prospection</fullName>
+                <default>false</default>
+                <label>Opération Prospection</label>
+            </value>
+            <value>
+                <fullName>Pages Jaunes</fullName>
+                <default>false</default>
+                <label>Pages Jaunes</label>
+            </value>
+            <value>
+                <fullName>Repérage</fullName>
+                <default>false</default>
+                <label>Repérage</label>
+            </value>
+            <value>
+                <fullName>Salon</fullName>
+                <default>false</default>
+                <label>Salon</label>
+            </value>
+            <value>
+                <fullName>Site PF</fullName>
+                <default>false</default>
+                <label>Site PF</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

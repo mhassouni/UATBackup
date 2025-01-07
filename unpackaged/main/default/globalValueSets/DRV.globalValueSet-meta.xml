@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DRV Nord</fullName>
+        <default>false</default>
+        <label>DRV Nord</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV Nord Ouest</fullName>
+        <default>false</default>
+        <label>DRV Nord Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV Nord Est</fullName>
+        <default>false</default>
+        <label>DRV Nord Est</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV IDF</fullName>
+        <default>false</default>
+        <label>DRV IDF</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV Sud Ouest</fullName>
+        <default>false</default>
+        <label>DRV Sud Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV Sud Centre</fullName>
+        <default>false</default>
+        <label>DRV Sud Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV Sud Est</fullName>
+        <default>false</default>
+        <label>DRV Sud Est</label>
+    </customValue>
+    <masterLabel>DRV</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

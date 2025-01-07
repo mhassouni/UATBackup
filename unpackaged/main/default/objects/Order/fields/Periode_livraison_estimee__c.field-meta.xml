@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Periode_livraison_estimee__c</fullName>
+    <label>Période livraison estimée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Matin (8h -12h)</fullName>
+                <default>false</default>
+                <label>Matin (8h -12h)</label>
+            </value>
+            <value>
+                <fullName>Midi (12h - 14h)</fullName>
+                <default>false</default>
+                <label>Midi (12h - 14h)</label>
+            </value>
+            <value>
+                <fullName>Après-midi (14h - 18 h)</fullName>
+                <default>false</default>
+                <label>Après-midi (14h - 18 h)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

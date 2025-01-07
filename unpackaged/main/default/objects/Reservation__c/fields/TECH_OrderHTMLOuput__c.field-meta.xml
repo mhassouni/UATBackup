@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_OrderHTMLOuput__c</fullName>
+    <description>This field is used in the reservations displayed as results of the reservation filter component (LC_FleetManagement)</description>
+    <externalId>false</externalId>
+    <formula>&#39;&lt;a style=&quot;text-decoration: underline;font-size: 14px; color:black;&quot; href=&quot;/&#39; &amp; Commande__c &amp; &#39;&quot; target=&quot;_blank&quot;&gt;&#39; &amp; Commande__r.OrderNumber &amp; &#39;&lt;/a&gt;&#39;</formula>
+    <label>TECH_OrderHTMLOuput</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X7_Commande_s_financer</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 8) AND 6 AND 7</booleanFilter>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>N_Parc__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>Agence_PF__c</columns>
+    <columns>Date_de_Commande_chassis__c</columns>
+    <columns>Date_de_livraison_chassis__c</columns>
+    <columns>Date_de_livraison_vehicule__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Commande_fournisseur</value>
+    </filters>
+    <filters>
+        <field>N_Parc__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>En cours Flux Amonts,En cours Lecapitaine,Commande traitée</value>
+    </filters>
+    <filters>
+        <field>Origine_du_produit__c</field>
+        <operation>equals</operation>
+        <value>A</value>
+    </filters>
+    <filters>
+        <field>Origine_du_produit__c</field>
+        <operation>equals</operation>
+        <value>B</value>
+    </filters>
+    <filters>
+        <field>Statut_de_l_opportunit__c</field>
+        <operation>equals</operation>
+        <value>6 - Contrat signé</value>
+    </filters>
+    <filters>
+        <field>Date_de_livraison_chassis__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Origine_du_produit__c</field>
+        <operation>equals</operation>
+        <value>F</value>
+    </filters>
+    <label>7 - Commande(s) à financer</label>
+    <sharedTo>
+        <role>AG_Flux_Amont</role>
+        <role>DirectionGenerale</role>
+    </sharedTo>
+</ListView>

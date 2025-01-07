@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acces_arriere__c</fullName>
+    <label>Accès arrière (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2 RAMPES INT REPLIABLES COULISSANTES (largeur 150 mm utile)</fullName>
+                <default>false</default>
+                <label>2 RAMPES INT REPLIABLES COULISSANTES (largeur 150 mm utile)</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT 2 MARCHES</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT 2 MARCHES</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT 3 MARCHES</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT 3 MARCHES</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT 4 MARCHES</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT 4 MARCHES</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT 5 MARCHES</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT 5 MARCHES</label>
+            </value>
+            <value>
+                <fullName>ESCABEAU COULISSANT 6 MARCHES</fullName>
+                <default>false</default>
+                <label>ESCABEAU COULISSANT 6 MARCHES</label>
+            </value>
+            <value>
+                <fullName>ETRIER COULISSANT D</fullName>
+                <default>false</default>
+                <label>ETRIER COULISSANT D</label>
+            </value>
+            <value>
+                <fullName>ETRIER COULISSANT G</fullName>
+                <default>false</default>
+                <label>ETRIER COULISSANT G</label>
+            </value>
+            <value>
+                <fullName>ETRIER FIXE D</fullName>
+                <default>false</default>
+                <label>ETRIER FIXE D</label>
+            </value>
+            <value>
+                <fullName>ETRIER FIXE G</fullName>
+                <default>false</default>
+                <label>ETRIER FIXE G</label>
+            </value>
+            <value>
+                <fullName>ETRIERS COULISSANTS D + G</fullName>
+                <default>false</default>
+                <label>ETRIERS COULISSANTS D + G</label>
+            </value>
+            <value>
+                <fullName>ETRIERS FIXES D + G</fullName>
+                <default>false</default>
+                <label>ETRIERS FIXES D + G</label>
+            </value>
+            <value>
+                <fullName>MARCHE PIED FIXE</fullName>
+                <default>false</default>
+                <label>MARCHE PIED FIXE</label>
+            </value>
+            <value>
+                <fullName>MARCHEPIED RABATTABLE 1 MARCHE</fullName>
+                <default>false</default>
+                <label>MARCHEPIED RABATTABLE 1 MARCHE</label>
+            </value>
+            <value>
+                <fullName>MARCHEPIED RABATTABLE 2 MARCHES</fullName>
+                <default>false</default>
+                <label>MARCHEPIED RABATTABLE 2 MARCHES</label>
+            </value>
+            <value>
+                <fullName>RAMPE INT RABATTABLE (largeur 700 mm utile)</fullName>
+                <default>false</default>
+                <label>RAMPE INT RABATTABLE (largeur 700 mm utile)</label>
+            </value>
+            <value>
+                <fullName>RAMPE INT REPLIABLE FIXE (largeur 1000 mm utile)</fullName>
+                <default>false</default>
+                <label>RAMPE INT REPLIABLE FIXE (largeur 1000 mm utile)</label>
+            </value>
+            <value>
+                <fullName>RAMPE INT REPLIABLE FIXE (largeur 800 mm utile)</fullName>
+                <default>false</default>
+                <label>RAMPE INT REPLIABLE FIXE (largeur 800 mm utile)</label>
+            </value>
+            <value>
+                <fullName>RAMPE INT REPLIABLE PIVOTANTE (largeur 1000 mm utile)</fullName>
+                <default>false</default>
+                <label>RAMPE INT REPLIABLE PIVOTANTE (largeur 1000 mm utile)</label>
+            </value>
+            <value>
+                <fullName>RAMPE INT REPLIABLE PIVOTANTE (largeur 800 mm utile)</fullName>
+                <default>false</default>
+                <label>RAMPE INT REPLIABLE PIVOTANTE (largeur 800 mm utile)</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

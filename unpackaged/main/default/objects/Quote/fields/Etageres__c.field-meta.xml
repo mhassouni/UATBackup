@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etageres__c</fullName>
+    <label>Etagère (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FIXE</fullName>
+                <default>false</default>
+                <label>FIXE</label>
+            </value>
+            <value>
+                <fullName>RELEVABLE</fullName>
+                <default>false</default>
+                <label>RELEVABLE</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 400 mm 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 400 mm 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 400 mm 3 FACES</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 400 mm 3 FACES</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 400 mm CÔTÉ D</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 400 mm CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 400 mm CÔTÉ G</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 400 mm CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 400 mm FACE AV</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 400 mm FACE AV</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 500 mm 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 500 mm 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 500 mm 3 FACES</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 500 mm 3 FACES</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 500 mm CÔTÉ D</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 500 mm CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 500 mm CÔTÉ G</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 500 mm CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE 500 mm FACE AV</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE 500 mm FACE AV</label>
+            </value>
+            <value>
+                <fullName>PLANCHER INTERMEDIAIRE COMPLET AMOVIBLE</fullName>
+                <default>false</default>
+                <label>PLANCHER INTERMEDIAIRE COMPLET AMOVIBLE</label>
+            </value>
+            <value>
+                <fullName>1/2 PLANCHER INTERMEDIAIRE AMOVIBLE</fullName>
+                <default>false</default>
+                <label>1/2 PLANCHER INTERMEDIAIRE AMOVIBLE</label>
+            </value>
+            <value>
+                <fullName>DOUBLE PLANCHER AMOVIBLE (CARGO)</fullName>
+                <default>false</default>
+                <label>DOUBLE PLANCHER AMOVIBLE (CARGO)</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

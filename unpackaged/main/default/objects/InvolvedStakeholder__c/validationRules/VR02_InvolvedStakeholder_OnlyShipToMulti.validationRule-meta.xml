@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR02_InvolvedStakeholder_OnlyShipToMulti</fullName>
+    <active>true</active>
+    <description>Uniquement les comptes &quot;Ship To&quot; peuvent être créer plusieurs fois sur les parties impliquées</description>
+    <errorConditionFormula>AND(
+     !$Setup.Bypass__c.BypassValidationRules__c,
+     !ByPass_MultiCreateRole__c,
+     ISNEW(),
+     !ISPICKVAL(Role__c, &#39;Livré&#39;)   
+)</errorConditionFormula>
+    <errorMessage>Une partie impliquée existe déjà pour ce rôle. 
+Vous ne pouvez pas en créer une autre, modifiez l&#39;existante.</errorMessage>
+</ValidationRule>

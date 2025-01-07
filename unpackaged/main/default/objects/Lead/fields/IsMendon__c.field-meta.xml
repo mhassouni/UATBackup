@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsMendon__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Cochée si le lead appartient à la filiale US Mendon.</description>
+    <label>IsMendon</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

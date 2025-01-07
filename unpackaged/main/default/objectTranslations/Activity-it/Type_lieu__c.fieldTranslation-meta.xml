@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>È necessario selezionare un contesto, se il tipo di azione è Appuntamento.</help>
+        <label>Contesto</label>
+        <name>Type_lieu__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation>Conferenza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Client</masterLabel>
+            <translation>Evento clienti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Culturel</masterLabel>
+            <translation>Evento culturali</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement PF</masterLabel>
+            <translation>Evento PF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Sportif</masterLabel>
+            <translation>Evento sportivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation>Ristorante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation>Esposizione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Client</masterLabel>
+            <translation>Sito del cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation>Sito PF</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

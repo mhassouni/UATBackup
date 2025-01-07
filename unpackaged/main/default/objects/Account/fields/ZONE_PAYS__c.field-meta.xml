@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZONE_PAYS__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE
+( PaysRegionPF__c ,
+&#39;PFUK&#39;,&#39;(Z1)PFUK&#39;,
+&#39;PIRL&#39;,&#39;(Z1)PIRL&#39;,
+
+&#39;PIES&#39;,&#39;(Z2)PIES&#39;,
+&#39;PIPT&#39;,&#39;(Z2)PIPT&#39;,
+
+&#39;PIBU&#39;,&#39;(Z3))PIBU&#39;,
+&#39;PICZ&#39;,&#39;(Z3)PICZ&#39;,
+&#39;PIHU&#39;,&#39;(Z3)PIHU&#39;,
+&#39;PIPL&#39;,&#39;(Z3)PIPL&#39;,
+&#39;PIRO&#39;,&#39;(Z3))PIRO&#39;,
+&#39;PISK&#39;,&#39;(Z3))PISK&#39;,
+
+&#39;PICH&#39;,&#39;(Z4)PICH&#39;,
+&#39;PITA&#39;,&#39;(Z4)PITA&#39;,
+
+&#39;PIAT&#39;,&#39;(Z5)PIAT&#39;,
+&#39;PIBE&#39;,&#39;(Z5)PIBE&#39;,
+&#39;PIDE&#39;,&#39;(Z5)PIDE&#39;,
+&#39;PILU&#39;,&#39;(Z5)PILU&#39;,
+&#39;PIND&#39;,&#39;(Z5)PIND&#39;,
+
+&#39;PIMA&#39;,&#39;(Z6)PIMA&#39;,
+
+&#39;PIZA&#39;,&#39;(Z7)PIZA&#39;,
+
+&#39;USA&#39;,&#39;(Z8)USA&#39;,
+
+&#39;Other&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ZONE PAYS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WOLineItem</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>DDS/ODR</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSL Work Order Line Item Layout</layout>
+        <sections>
+            <label>Adresse</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Carrosserie / Pneus</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Documents administratifs</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Eclairage / Batterie</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Systeminformationen</label>
+            <section>System information</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Frigo / Cellule</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Systeminformationen</label>
+            <section>System information</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Frigo / Groupe</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Hayon</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Kilométrage</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Moteur</layout>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label>Mechaniker-Bericht</label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label>Kontrolle der Flotte</label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Arrivée sur place</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Compte rendu</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Départ Intervention</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Fin d&#39;intevention</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Retour Agence/Domicile</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Suivi d&#39;intevention</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Transmission appel</layout>
+        <sections>
+            <label>Details</label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Die Aufgabe ist geschlossen.</label>
+        <name>Fermer</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Schließen</label>
+        <name>Fermer</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Schließen</label>
+        <name>Fermer_Description</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <label>vor Ort angekommen</label>
+        <name>Arrivee_sur_place</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compte rendu --></label>
+        <name>Compte_rendu</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Début d&apos;intervention --></label>
+        <name>Debut_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Beginn des Arbeitsauftrages</label>
+        <name>Depart_Intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label>administrative Dokumente</label>
+        <name>Documents_administratifs</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Ende vom Arbeitsauftrag</label>
+        <name>Fin_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Ladebordwand</label>
+        <name>Hayon_l_vateur</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kilometerstand</label>
+        <name>Kilometrage</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Motor / Getriebe / Achse</label>
+        <name>MOTEUR_BOITE_PONT</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Motor</label>
+        <name>Moteur</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Karrosserie / Reifen / Bremsen</label>
+        <name>Partie_carrosserie_Pneus</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kühlung</label>
+        <name>Partie_frigo_cellule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kühlung / Kühlaggregat</label>
+        <name>Partie_frigo_groupe</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Retour Depot</label>
+        <name>Retour_Agence_Domicile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Suivi d&apos;intervention --></label>
+        <name>Suivi_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Weiterleitung des Anrufes</label>
+        <name>Transmission_Appel</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Beleuchtung / Batterie</label>
+        <name>clairage_batterie</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Einsatzpark muss sich vom Park unterscheiden</errorMessage>
+        <name>Mission_Parc_Intervention</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Parken und Reisen muss sich vom Park des Einsatzes unterscheiden</errorMessage>
+        <name>Mission_Parc_Relais</name>
+    </validationRules>
+    <webLinks>
+        <label>Reparatur-Blatt</label>
+        <name>Fiche_Depannage</name>
+    </webLinks>
+    <webLinks>
+        <label>Reparatur-Blatt 2</label>
+        <name>Fiche_Depannage_2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X --></label>
+        <name>X</name>
+    </webLinks>
+</CustomObjectTranslation>

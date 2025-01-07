@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attractivite_secteur__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+BusinessLine__c,
+&quot;Véhicules Frigorifiques&quot;,
+IF(
+Note_secteur__c = 1, IMAGE($Setup.PictogrammesSegmentation__c.NonPrioritaire__c, &#39;Non Prioritaire&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 1, Note_secteur__c &lt; 5), IMAGE($Setup.PictogrammesSegmentation__c.P3__c, &#39;P3&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 5, Note_secteur__c &lt; 6), IMAGE($Setup.PictogrammesSegmentation__c.P2__c, &#39;P2&#39;, 25, 75),
+IF(
+Note_secteur__c &gt;= 6, IMAGE($Setup.PictogrammesSegmentation__c.P1__c, &#39;P1&#39;, 25, 75),
+&quot;&quot;
+)
+)
+)
+),
+&quot;Véhicules Secs&quot;,
+IF(
+Note_secteur__c &lt;= 1,IMAGE($Setup.PictogrammesSegmentation__c.NonPrioritaire__c, &#39;Non Prioritaire&#39;, 25, 75),
+&quot;&quot;
+),
+&quot;Containers&quot;,
+IF(
+Note_secteur__c = 1, IMAGE($Setup.PictogrammesSegmentation__c.NonPrioritaire__c, &#39;Non Prioritaire&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 1, Note_secteur__c &lt; 4.8), IMAGE($Setup.PictogrammesSegmentation__c.P3__c, &#39;P3&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 4.8, Note_secteur__c &lt;5.5), IMAGE($Setup.PictogrammesSegmentation__c.P2__c, &#39;P2&#39;, 25, 75),
+IF(
+Note_secteur__c &gt;= 5.5, IMAGE($Setup.PictogrammesSegmentation__c.P1__c, &#39;P1&#39;, 25, 75),
+&quot;&quot;
+)
+)
+)
+),
+&quot;Meubles&quot;,
+IF(
+Note_secteur__c = 1, IMAGE($Setup.PictogrammesSegmentation__c.NonPrioritaire__c, &#39;Non Prioritaire&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 1, Note_secteur__c &lt; 5), IMAGE($Setup.PictogrammesSegmentation__c.P3__c, &#39;P3&#39;, 25, 75),
+IF(
+AND(Note_secteur__c &gt;= 5, Note_secteur__c &lt; 5.5), IMAGE($Setup.PictogrammesSegmentation__c.P2__c, &#39;P2&#39;, 25, 75),
+IF(
+Note_secteur__c &gt;= 5.5, IMAGE($Setup.PictogrammesSegmentation__c.P1__c, &#39;P1&#39;, 25, 75),
+&quot;&quot;
+)
+)
+)
+),
+&quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Priorité secteur</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

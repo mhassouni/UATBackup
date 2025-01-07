@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Code_Pays__c</columns>
+    <columns>Catalogue__c</columns>
+    <columns>Code_PF__c</columns>
+    <columns>Standard__c</columns>
+    <columns>Marque__c</columns>
+    <columns>Modele__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Code_Pays__c</field>
+        <operation>contains</operation>
+        <value>de_de</value>
+    </filters>
+    <label>Tout</label>
+</ListView>

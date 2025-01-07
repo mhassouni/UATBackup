@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Funzione</label>
+        <name>Fonction__c</name>
+        <picklistValues>
+            <masterLabel>Achats</masterLabel>
+            <translation>Aquisti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration / Secrétariat</masterLabel>
+            <translation>Amministratore / Segreteria</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation>Commercio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation>Comunicazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptabilité / Finance</masterLabel>
+            <translation>Contabilità / Finanza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informatique</masterLabel>
+            <translation>Informatica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Juridique</masterLabel>
+            <translation>Giuridico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistique / Exploitation</masterLabel>
+            <translation>Logistico / Operazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management</masterLabel>
+            <translation>Gestione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ressource Humaines</masterLabel>
+            <translation>Risorse umane</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Généraux / Immobilier</masterLabel>
+            <translation>Servizio Generale / Immobiliare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation>Tecnico</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

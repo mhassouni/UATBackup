@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Letchworth_Closed</fullName>
+    <booleanFilter>1 AND 8 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>AL1,AL2,AL3,AL4,AL5,AL6,AL7,AL8,AL9,AL10,CB1,CB2,CB3,CB4,CB5,CB21,CB22,CB23,CB24,CB25,CB6,CB7,CB8,CB9,CB10,CB11,CM0,CM1,CM2,CM3,CM92,CM98,CM99,CM4,CM5,CM6,CM7,CM77,CM8,CM9,CM11,CM12,CM13,CM14,CM15,CM16,CM17</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>CM18,CM19,CM20,CM21,CM22,CM23,CM24,CO1,CO2,CO3,CO4,CO5,CO6,CO7,CO8,CO9,CO10,CO11,CO12,CO13,CO14,CO15,CO16,CR0,CR9,CR44,CR90,CR2,CR3,CR4,CR5,CR6,CR7,CR8,EN1,EN2,EN3,EN4,EN5,EN6,EN7,EN8,EN77,EN9,EN10,EN11</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>IP1,IP2,IP3,IP4,IP5,IP6,IP7,IP8,IP9,IP10,IP11,IP12,IP13,IP14,IP15,IP16,IP17,IP18,IP19,IP20,IP21,IP22,IP98,IP23,IP24,IP25,IP26,IP27,IP28,IP29,IP30,IP31,IP33,LU1,LU2,LU3,LU4,LU5,LU6,LU7,MK1,MK2,MK3,MK4,MK5,MK6,MK7,MK8</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>MK9,MK10,MK11,MK12,MK13,MK14,MK15,MK17,MK19,MK77,MK16,MK18,MK40,MK41,MK42,MK43,MK44,MK45,MK46,NN1,NN2,NN3,NN4,NN5,NN6,NN7,NN8,NN9,NN29,NN10,NN11,NN12,NN13,NN14,NN15,NN16,NN17,NN18,NR1,NR2,NR3,NR4,NR5,NR6,NR7,NR8,NR9,NR10,NR11,NR12</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>NR13,NR14,NR15,NR16,NR18,NR19,NR26,NR28,NR99,NR17,NR20,NR21,NR22,NR23,NR24,NR25,NR27,NR29,NR30,NR31,NR32,NR33,NR34,NR35,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE99,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PE16,PE19,PE20,PE21,PE22,PE23</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>PE23,PE24,PE25,PE26,PE28,PE29,PE27,PE30,PE31,PE32,PE33,PE34,PE35,PE36,PE37,PE38,SG1,SG2,SG3,SG4,SG5,SG6,SG7,SG8,SG9,SG10,SG11,SG12,SG13,SG14,SG15,SG16,SG17,SG18,SG19</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Gagnée,Abandonnée,Clôturée</value>
+    </filters>
+    <label>Leads PFUK Letchworth - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

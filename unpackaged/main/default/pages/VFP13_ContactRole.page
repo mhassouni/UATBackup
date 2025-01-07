@@ -1,0 +1,28 @@
+<apex:page standardController="RoleContact__c" extensions="VFE13_ContactRole" lightningStylesheets="true">
+  <apex:sectionHeader title="{!$Label.RDC_VFPTitre_RoleContactModification}" subtitle="{!subtitle}" />
+  <apex:pageMessages />
+  <apex:form >
+      <apex:pageBlock title="{!$Label.RDC_VFPTitre_ModiferRoleContact}">
+          <apex:pageBlockSection columns="1" title="{!$Label.RDC_VFPTitre_Informations}" collapsible="false">
+              <apex:outputField value="{!rc.Opportunite__c}"/>
+              <apex:inputField value="{!rc.CompteOpportunite__c}"/>
+              <apex:inputField value="{!rc.Contact__c}">
+                  <apex:actionSupport event="onchange" action="{!selectContact}" reRender="InfosContact" />
+              </apex:inputField>
+          </apex:pageBlockSection>
+          <apex:pageBlockSection columns="1" title="{!$Label.RDC_VFPTitre_InformationContact}" id="InfosContact" collapsible="false">
+              <apex:inputField value="{!rc.ServiceDepartement__c}"/>
+              <apex:inputField value="{!rc.InfluenceAchat__c}"/>
+              <apex:inputField value="{!rc.Role__c}"/>
+          </apex:pageBlockSection>
+          <apex:pageBlockSection columns="1" title="{!$Label.RDC_VFPTitre_Commentaires}" id="Commentaires" collapsible="false">
+              <apex:inputField value="{!rc.Commentaires__c}" style="width:480px; height:80px"/>
+          </apex:pageBlockSection>
+          <apex:pageBlockButtons >
+              <apex:commandButton value="{!$Label.VFP_Save}" action="{!saveContact}"/>
+              <apex:commandButton value="{!$Label.VFP_SaveAndNew}" action="{!saveAndNewContact}"/>
+              <apex:commandButton value="{!$Label.VFP_Cancel}" action="{!cancel}"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

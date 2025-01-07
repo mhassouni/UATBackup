@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Opérationnel Pays PITA (Italie)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Opérationnel Pays PITA (Italie)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>DirecteurCommercialPaysPITAItalie</parentRole>
+</Role>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appartient_un_groupement__c</fullName>
+    <description>True s&#39;il appartient à un groupement sinon false</description>
+    <formula>if(
+ OR(ISBLANK(Account__r.Groupement__c),ISNULL(Account__r.Groupement__c))
+,
+
+FALSE
+,
+TRUE
+
+)</formula>
+    <label>Appartient à un groupement</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

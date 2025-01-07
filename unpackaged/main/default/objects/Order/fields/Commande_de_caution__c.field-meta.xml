@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commande_de_caution__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Commande de caution</label>
+    <referenceTo>Contract</referenceTo>
+    <relationshipLabel>Commande de caution</relationshipLabel>
+    <relationshipName>Commande_de_caution</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

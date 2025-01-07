@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tätigkeitsobjekt</label>
+        <name>ObjetAction__c</name>
+        <picklistValues>
+            <masterLabel>Action suite à résiliation</masterLabel>
+            <translation>Aktion nach Auflösung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COVID</masterLabel>
+            <translation><!-- COVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Découverte</masterLabel>
+            <translation>Entdeckung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fichier AAA</masterLabel>
+            <translation><!-- Fichier AAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gestion de l&#39;opportunité</masterLabel>
+            <translation>Opportuniät-Management</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opération commerciale</masterLabel>
+            <translation><!-- Opération commerciale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prise de contact multi-produits</masterLabel>
+            <translation>Kontakt mit mehreren Produkten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospection</masterLabel>
+            <translation>Kundenakquise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation>Qualifizierung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relance</masterLabel>
+            <translation><!-- Relance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suivi Client</masterLabel>
+            <translation>Kunden-Follow-up</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suivi Client Détracteur</masterLabel>
+            <translation><!-- Suivi Client Détracteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suivi Client Passif</masterLabel>
+            <translation><!-- Suivi Client Passif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suivi Client Promoteur</masterLabel>
+            <translation><!-- Suivi Client Promoteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synthèse de prestations</masterLabel>
+            <translation>Dienstleistungsvorstellung</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

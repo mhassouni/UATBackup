@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_transports</fullName>
+    <columns>NAME</columns>
+    <columns>Commande__c</columns>
+    <columns>Asset_assigne__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_de_debut__c</columns>
+    <columns>Date_de_fin__c</columns>
+    <columns>Client__c</columns>
+    <columns>Type_de_conteneur__c</columns>
+    <columns>Type_de_transport__c</columns>
+    <columns>PF_Date_de_livraison_du_conteneur__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Commande__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>00001195</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Reservation__c.Transport</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Confirmée</value>
+    </filters>
+    <label>Tous les transports</label>
+</ListView>

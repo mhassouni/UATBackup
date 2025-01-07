@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Intervalos de duração</label>
+        <name>Plages_durees__c</name>
+        <picklistValues>
+            <masterLabel>1h - 2h</masterLabel>
+            <translation><!-- 1h - 2h --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2h - 3h</masterLabel>
+            <translation><!-- 2h - 3h --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moins d&#39;une heure</masterLabel>
+            <translation><!-- Moins d&apos;une heure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 3 heures</masterLabel>
+            <translation><!-- Plus de 3 heures --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

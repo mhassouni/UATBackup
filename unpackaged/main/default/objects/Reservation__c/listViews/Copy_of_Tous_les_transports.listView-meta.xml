@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Tous_les_transports</fullName>
+    <columns>NAME</columns>
+    <columns>Commande__c</columns>
+    <columns>Asset_assigne__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_de_debut__c</columns>
+    <columns>Date_de_fin__c</columns>
+    <columns>PF_Date_de_livraison_du_conteneur__c</columns>
+    <columns>Agence__c</columns>
+    <columns>Transporteur__c</columns>
+    <columns>Client__c</columns>
+    <columns>Type_de_conteneur__c</columns>
+    <columns>Type_de_transport__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Reservation__c.Transport</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>En attente de planification,Planifiée</value>
+    </filters>
+    <filters>
+        <field>Type_de_transport__c</field>
+        <operation>equals</operation>
+        <value>Transport Aller vers client</value>
+    </filters>
+    <label>Transports Départ - non confirmés</label>
+</ListView>

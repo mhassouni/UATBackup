@@ -1,0 +1,137 @@
+.THIS.slds-box {
+  background: #ffffff;
+}
+.THIS .fc-event,
+.THIS .fc-event-dot {
+  background-color: #19a200;
+}
+
+/* TOOLTIP */
+.THIS a.fc-event {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+}
+.THIS a.fc-event:hover {
+  cursor: help;
+  position: relative;
+}
+.THIS a.fc-event .description {
+  display: none;
+}
+.THIS a.fc-event:hover .description {
+  border: #c0c0c0 1px dotted;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  color: black;
+  border-radius: 5px;
+  z-index: 100;
+  background: #f0f0f0;
+  left: 0px;
+  margin: 10px;
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  text-decoration: none;
+}
+
+.THIS .fc-day-grid-event .fc-content {
+  cursor: pointer;
+}
+/* /TOOLTIP */
+
+.THIS .header-date {
+  font-size: 0.9rem;
+}
+
+/* LEGEND */
+.THIS .legend-section {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.THIS .legends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.THIS .color-box {
+  width: 40px;
+  height: 20px;
+}
+
+.THIS .color-box:hover {
+  opacity: 0.9;
+}
+.THIS .record-type {
+  width: 150px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgb(70, 67, 67);
+  margin-left: 0.5rem;
+}
+.THIS .legend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+/* /LEGEND  */
+
+.THIS .holiday {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #444343;
+  z-index: 9999999;
+  position: relative;
+  font-size: 11px;
+  padding: 5px 0;
+}
+
+.THIS .fc-title {
+  /*color: #000000;*/
+  color: #ffffff;
+  text-shadow: 1px 1px #3a3a3a;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.THIS .atelierP {
+  background: repeating-linear-gradient(
+    -45deg,
+    #dc9256,
+    #dc9256 6px,
+    #ffffff86 10px
+  );
+  border: 1px solid #dc9256;
+}
+
+.THIS .locationP {
+  background: repeating-linear-gradient(
+    -45deg,
+    #5394ac,
+    #5394ac 6px,
+    #ffffff86 10px
+  );
+  border: 1px solid #5394ac;
+}
+
+.THIS .transportP {
+  background: repeating-linear-gradient(
+    -45deg,
+    #5dbb8e,
+    #5dbb8e 6px,
+    #ffffff86 10px
+  );
+  border: 1px solid #5dbb8e;
+}
+
+.THIS .fc-row.fc-week.fc-widget-content {
+  z-index: 1;
+}

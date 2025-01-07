@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Problem Qualification</label>
+        <name>Qualification__c</name>
+        <picklistValues>
+            <masterLabel>Branchement</masterLabel>
+            <translation>Connection</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Caisse/Cellule isotherme</masterLabel>
+            <translation>Box</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Chassis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur D&#39;utilisation / Casse / Accident</masterLabel>
+            <translation>Use</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Frigo</masterLabel>
+            <translation>Fridge Unit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Liftgate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/système de levage</masterLabel>
+            <translation>Liftgate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Engine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>Pneumatic</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

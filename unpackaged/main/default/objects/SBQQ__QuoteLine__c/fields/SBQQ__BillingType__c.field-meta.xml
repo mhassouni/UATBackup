@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__BillingType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided.</description>
+    <inlineHelpText>Type de fact. qui définit à quel moment la fact. doit avoir lieu. La fact. anticipée vous permet de facturer vos clients avant de livrer les produits ou services commandés et la fact. différée vous permet de les facturer après.</inlineHelpText>
+    <label>Billing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SBQQ__BillingType</valueSetName>
+    </valueSet>
+</CustomField>

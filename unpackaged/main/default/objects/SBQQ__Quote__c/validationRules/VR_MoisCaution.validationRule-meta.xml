@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_MoisCaution</fullName>
+    <active>true</active>
+    <description>GFC-1444</description>
+    <errorConditionFormula>AND
+(
+ text(Mois_caution__c) == &#39;Autres&#39;
+,
+isblank( Si_autres_precisez__c )
+)</errorConditionFormula>
+    <errorDisplayField>Si_autres_precisez__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner le champ &quot;SI autres précisez&quot; quand vous renseignez &quot;Autres&quot; dans &quot;Mois de caution&quot;</errorMessage>
+</ValidationRule>

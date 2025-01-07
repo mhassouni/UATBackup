@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Containers&#39; customer base</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Containers&#39; customer bases</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Parc Client Containers</layout>
+        <sections>
+            <label>Comments</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Container --></label>
+            <section>Container</section>
+        </sections>
+        <sections>
+            <label>General informations</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Identifier</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SubscriptionType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the subscription type to determine contract&#39;s pricing.</description>
+    <inlineHelpText>Indique le type d&#39;abonnement qui permet de déterminer la tarification du contrat.</inlineHelpText>
+    <label>Subscription Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SBQQ__SubscriptionType</valueSetName>
+    </valueSet>
+</CustomField>

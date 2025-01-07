@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Marca / modello di telaio</label>
+        <name>Marque_Modele_Chassis__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE -  voir Equipements chassis</masterLabel>
+            <translation>Non standard - vedi layout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEREAU / REMORQUE</masterLabel>
+            <translation><!-- CHEREAU / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEREAU / SEMIREMORQUE</masterLabel>
+            <translation><!-- CHEREAU / SEMIREMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITROEN / BERLINGO</masterLabel>
+            <translation><!-- CITROEN / BERLINGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITROEN / E-JUMPY</masterLabel>
+            <translation><!-- CITROEN / E-JUMPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITROEN / JUMPER</masterLabel>
+            <translation><!-- CITROEN / JUMPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITROEN / JUMPY</masterLabel>
+            <translation><!-- CITROEN / JUMPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF / CF</masterLabel>
+            <translation><!-- DAF / CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF / LF</masterLabel>
+            <translation><!-- DAF / LF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF / XF</masterLabel>
+            <translation><!-- DAF / XF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIAT / DOBLO</masterLabel>
+            <translation><!-- FIAT / DOBLO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIAT / DUCATO</masterLabel>
+            <translation><!-- FIAT / DUCATO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIAT / FIORINO</masterLabel>
+            <translation><!-- FIAT / FIORINO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIAT / TALENTO</masterLabel>
+            <translation><!-- FIAT / TALENTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORD / TRANSIT</masterLabel>
+            <translation><!-- FORD / TRANSIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORD / TRANSIT CONNECT</masterLabel>
+            <translation><!-- FORD / TRANSIT CONNECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORD / TRANSIT CUSTOM</masterLabel>
+            <translation><!-- FORD / TRANSIT CUSTOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAPPA / REMORQUE</masterLabel>
+            <translation><!-- FRAPPA / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAPPA / SEMI</masterLabel>
+            <translation><!-- FRAPPA / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRAPPA / SEMI-REMORQUE</masterLabel>
+            <translation><!-- FRAPPA / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREEGONES / TRICYCLE</masterLabel>
+            <translation><!-- FREEGONES / TRICYCLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREIGHTLINER / M2-106</masterLabel>
+            <translation><!-- FREIGHTLINER / M2-106 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREIGHTLINER / M2-112</masterLabel>
+            <translation><!-- FREIGHTLINER / M2-112 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREIGHTLINER / SPRINTER</masterLabel>
+            <translation><!-- FREIGHTLINER / SPRINTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUEHAUF / REM</masterLabel>
+            <translation><!-- FRUEHAUF / REM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUEHAUF / REMORQUE</masterLabel>
+            <translation><!-- FRUEHAUF / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUEHAUF / SEMI</masterLabel>
+            <translation><!-- FRUEHAUF / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUEHAUF / SEMI-REMORQUE</masterLabel>
+            <translation><!-- FRUEHAUF / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUEHAUF / TRAILER</masterLabel>
+            <translation><!-- FRUEHAUF / TRAILER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSO / CANTER</masterLabel>
+            <translation><!-- FUSO / CANTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSO / E-CANTER</masterLabel>
+            <translation><!-- FUSO / E-CANTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOUPIL / G</masterLabel>
+            <translation><!-- GOUPIL / G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOUPIL / G4</masterLabel>
+            <translation><!-- GOUPIL / G4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOUPIL / G5</masterLabel>
+            <translation><!-- GOUPIL / G5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOUPIL / G6</masterLabel>
+            <translation><!-- GOUPIL / G6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROSSE EQUIPEMENT / REMORQUE</masterLabel>
+            <translation><!-- GROSSE EQUIPEMENT / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROSSE EQUIPEMENT / SEMI-REMORQUE</masterLabel>
+            <translation><!-- GROSSE EQUIPEMENT / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / L6</masterLabel>
+            <translation><!-- HINO / L6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / L7</masterLabel>
+            <translation><!-- HINO / L7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / M4</masterLabel>
+            <translation><!-- HINO / M4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / M5</masterLabel>
+            <translation><!-- HINO / M5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / SERIES 300</masterLabel>
+            <translation><!-- HINO / SERIES 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / SERIES 500</masterLabel>
+            <translation><!-- HINO / SERIES 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / SERIES 600</masterLabel>
+            <translation><!-- HINO / SERIES 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / SERIES 700</masterLabel>
+            <translation><!-- HINO / SERIES 700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / XL7</masterLabel>
+            <translation><!-- HINO / XL7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINO / XL8</masterLabel>
+            <translation><!-- HINO / XL8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYUNDAI / H100</masterLabel>
+            <translation><!-- HYUNDAI / H100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYUNDAI / HYUNDAI</masterLabel>
+            <translation><!-- HYUNDAI / HYUNDAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / F11</masterLabel>
+            <translation><!-- ISUZU / F11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / F14</masterLabel>
+            <translation><!-- ISUZU / F14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / FRR</masterLabel>
+            <translation><!-- ISUZU / FRR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / FSR</masterLabel>
+            <translation><!-- ISUZU / FSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / FTR</masterLabel>
+            <translation><!-- ISUZU / FTR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / FVM</masterLabel>
+            <translation><!-- ISUZU / FVM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / FVR</masterLabel>
+            <translation><!-- ISUZU / FVR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / ISUZU</masterLabel>
+            <translation><!-- ISUZU / ISUZU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / L35</masterLabel>
+            <translation><!-- ISUZU / L35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / M21</masterLabel>
+            <translation><!-- ISUZU / M21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / M55</masterLabel>
+            <translation><!-- ISUZU / M55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / NLR</masterLabel>
+            <translation><!-- ISUZU / NLR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / NPR</masterLabel>
+            <translation><!-- ISUZU / NPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / NQR</masterLabel>
+            <translation><!-- ISUZU / NQR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / P65</masterLabel>
+            <translation><!-- ISUZU / P65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / P75</masterLabel>
+            <translation><!-- ISUZU / P75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISUZU / Q95</masterLabel>
+            <translation><!-- ISUZU / Q95 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVECO / DAILY</masterLabel>
+            <translation><!-- IVECO / DAILY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVECO / EUROCARGO</masterLabel>
+            <translation><!-- IVECO / EUROCARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVECO / S-WAY</masterLabel>
+            <translation><!-- IVECO / S-WAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVECO / STRALIS</masterLabel>
+            <translation><!-- IVECO / STRALIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENWORTH / KENWORTH</masterLabel>
+            <translation><!-- KENWORTH / KENWORTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIA / K2500</masterLabel>
+            <translation><!-- KIA / K2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIA / K2700</masterLabel>
+            <translation><!-- KIA / K2700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIESLING / KIESLING</masterLabel>
+            <translation><!-- KIESLING / KIESLING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIESLING / REMORQUE</masterLabel>
+            <translation><!-- KIESLING / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIESLING / SEMI</masterLabel>
+            <translation><!-- KIESLING / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRONE / REMORQUE</masterLabel>
+            <translation><!-- KRONE / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRONE / SEMI</masterLabel>
+            <translation><!-- KRONE / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRONE / SEMI-REMORQUE</masterLabel>
+            <translation><!-- KRONE / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMBERET / REMORQUE</masterLabel>
+            <translation><!-- LAMBERET / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMBERET / SEMI</masterLabel>
+            <translation><!-- LAMBERET / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMBERET / SEMI-REMORQUE</masterLabel>
+            <translation><!-- LAMBERET / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LE ROUIC / REMORQUE</masterLabel>
+            <translation><!-- LE ROUIC / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LE ROUIC / SEMI-REMORQUE</masterLabel>
+            <translation><!-- LE ROUIC / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LECAPITAINE / REMORQUE</masterLabel>
+            <translation><!-- LECAPITAINE / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBNER / REMORQUE</masterLabel>
+            <translation><!-- LIBNER / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBNER / SEMI</masterLabel>
+            <translation><!-- LIBNER / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBNER / SEMI-REMORQUE</masterLabel>
+            <translation><!-- LIBNER / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIGIER / PULSE 4</masterLabel>
+            <translation><!-- LIGIER / PULSE 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MACK / MACK</masterLabel>
+            <translation><!-- MACK / MACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAN / E-TGE</masterLabel>
+            <translation><!-- MAN / E-TGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAN / TGE</masterLabel>
+            <translation><!-- MAN / TGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAN / TGL</masterLabel>
+            <translation><!-- MAN / TGL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAN / TGM</masterLabel>
+            <translation><!-- MAN / TGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAN / TGX</masterLabel>
+            <translation><!-- MAN / TGX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAXICARGO / REMORQUE</masterLabel>
+            <translation><!-- MAXICARGO / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / ACTROS</masterLabel>
+            <translation><!-- MERCEDES / ACTROS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / ANTOS</masterLabel>
+            <translation><!-- MERCEDES / ANTOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / AROCS</masterLabel>
+            <translation><!-- MERCEDES / AROCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / ATEGO</masterLabel>
+            <translation><!-- MERCEDES / ATEGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / CITAN</masterLabel>
+            <translation><!-- MERCEDES / CITAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / SPRINTER</masterLabel>
+            <translation><!-- MERCEDES / SPRINTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCEDES / VITO</masterLabel>
+            <translation><!-- MERCEDES / VITO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MITSUBISHI / CANTER</masterLabel>
+            <translation><!-- MITSUBISHI / CANTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MITSUBISHI / FUSO</masterLabel>
+            <translation><!-- MITSUBISHI / FUSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MITSUBISHI / L200</masterLabel>
+            <translation><!-- MITSUBISHI / L200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MITSUBISHI / MITSUBISHI</masterLabel>
+            <translation><!-- MITSUBISHI / MITSUBISHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFORCECARGO / NFORCECARGO</masterLabel>
+            <translation><!-- NFORCECARGO / NFORCECARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / E-NV200</masterLabel>
+            <translation><!-- NISSAN / E-NV200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / NISSAN</masterLabel>
+            <translation><!-- NISSAN / NISSAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / NT400</masterLabel>
+            <translation><!-- NISSAN / NT400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / NV250</masterLabel>
+            <translation><!-- NISSAN / NV250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / NV300</masterLabel>
+            <translation><!-- NISSAN / NV300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / NV400</masterLabel>
+            <translation><!-- NISSAN / NV400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NISSAN / URVAN</masterLabel>
+            <translation><!-- NISSAN / URVAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEL / COMBO</masterLabel>
+            <translation><!-- OPEL / COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEL / MOVANO</masterLabel>
+            <translation><!-- OPEL / MOVANO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEL / VIVARO</masterLabel>
+            <translation><!-- OPEL / VIVARO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEUGEOT / BOXER</masterLabel>
+            <translation><!-- PEUGEOT / BOXER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEUGEOT / EXPERT</masterLabel>
+            <translation><!-- PEUGEOT / EXPERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEUGEOT / PARTNER</masterLabel>
+            <translation><!-- PEUGEOT / PARTNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM / PROMASTER</masterLabel>
+            <translation><!-- RAM / PROMASTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / EXPRESS</masterLabel>
+            <translation><!-- RENAULT / EXPRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / KANGOO</masterLabel>
+            <translation><!-- RENAULT / KANGOO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / KANGOO ZE</masterLabel>
+            <translation><!-- RENAULT / KANGOO ZE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / MASTER</masterLabel>
+            <translation><!-- RENAULT / MASTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / MASTER ZE</masterLabel>
+            <translation><!-- RENAULT / MASTER ZE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / MAXITY</masterLabel>
+            <translation><!-- RENAULT / MAXITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT / TRAFIC</masterLabel>
+            <translation><!-- RENAULT / TRAFIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT TRUCKS / GAMME C</masterLabel>
+            <translation><!-- RENAULT TRUCKS / GAMME C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT TRUCKS / GAMME D</masterLabel>
+            <translation><!-- RENAULT TRUCKS / GAMME D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENAULT TRUCKS / GAMME T</masterLabel>
+            <translation><!-- RENAULT TRUCKS / GAMME T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAMRO / REM</masterLabel>
+            <translation><!-- SAMRO / REM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAMRO / SEMI</masterLabel>
+            <translation><!-- SAMRO / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCANIA / PORTEUR</masterLabel>
+            <translation><!-- SCANIA / PORTEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCANIA / SCP</masterLabel>
+            <translation><!-- SCANIA / SCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCANIA / SCR</masterLabel>
+            <translation><!-- SCANIA / SCR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCANIA / TRACTEUR</masterLabel>
+            <translation><!-- SCANIA / TRACTEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHMITZ / REMORQUE</masterLabel>
+            <translation><!-- SCHMITZ / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHMITZ / SEMI</masterLabel>
+            <translation><!-- SCHMITZ / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHMITZ CARGOBULL / REMORQUE</masterLabel>
+            <translation><!-- SCHMITZ CARGOBULL / REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHMITZ CARGOBULL / SEMI-REMORQUE</masterLabel>
+            <translation><!-- SCHMITZ CARGOBULL / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOR IBERICA / SEMI</masterLabel>
+            <translation><!-- SOR IBERICA / SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOR IBERICA / SEMI-REMORQUE</masterLabel>
+            <translation><!-- SOR IBERICA / SEMI-REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOYOTA / HIACE</masterLabel>
+            <translation><!-- TOYOTA / HIACE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOYOTA / HILUX</masterLabel>
+            <translation><!-- TOYOTA / HILUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOYOTA / PROACE</masterLabel>
+            <translation><!-- TOYOTA / PROACE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOYOTA / PROACE CITY</masterLabel>
+            <translation><!-- TOYOTA / PROACE CITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UD TRUCKS / UD TRUCKS</masterLabel>
+            <translation><!-- UD TRUCKS / UD TRUCKS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLKSWAGEN / CADDY</masterLabel>
+            <translation><!-- VOLKSWAGEN / CADDY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLKSWAGEN / CRAFTER</masterLabel>
+            <translation><!-- VOLKSWAGEN / CRAFTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLKSWAGEN / E-CRAFTER</masterLabel>
+            <translation><!-- VOLKSWAGEN / E-CRAFTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLKSWAGEN / TRANSPORTER</masterLabel>
+            <translation><!-- VOLKSWAGEN / TRANSPORTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLVO / FE</masterLabel>
+            <translation><!-- VOLVO / FE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLVO / FH</masterLabel>
+            <translation><!-- VOLVO / FH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLVO / FL</masterLabel>
+            <translation><!-- VOLVO / FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLVO / FM</masterLabel>
+            <translation><!-- VOLVO / FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLVO / FMX</masterLabel>
+            <translation><!-- VOLVO / FMX --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

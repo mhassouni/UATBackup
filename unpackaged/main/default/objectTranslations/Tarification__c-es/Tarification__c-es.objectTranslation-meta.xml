@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Tarification --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Tarification --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- FlowSet --></label>
+        <name>FlowSet</name>
+    </fieldSets>
+    <gender><!-- Feminine --></gender>
+    <layouts>
+        <layout>Présentation Tarification</layout>
+        <sections>
+            <label>Datos</label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Tarification admins</layout>
+        <sections>
+            <label><!-- Informations --></label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro de Tarification Loyer --></nameFieldLabel>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Sincronización realizada</label>
+        <name>Synchronis_button</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Sincronizado</label>
+        <name>Synchronis_button</name>
+    </quickActions>
+</CustomObjectTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Votre véhicule est disponible</name>
+    <style>none</style>
+    <subject>Votre véhicule est disponible</subject>
+    <textOnly>L’intervention dans notre atelier est terminée. Planifions ensemble le retrait de votre véhicule.
+
+Chère cliente, cher client,
+
+L’intervention réalisée sur votre véhicule immatriculé {!WorkOrder.TECH_Parc_IMMAT__c} et portant le numéro de parc {!WorkOrder.Asset} est terminée.
+
+Vous pouvez dès à présent contacter votre agence Petit Forestier afin de planifier la récupération de votre véhicule ainsi que la restitution du véhicule de remplacement mis à votre disposition.
+
+Toujours à votre service et engagés à vos côtés, nous restons à votre écoute pour toute information sur les travaux réalisés.
+
+Cordialement,
+
+Votre équipe Petit Forestier
+
+Votre agence
+Petit Forestier {!WorkOrder.TECH_AgenceIntervenante_Libelle__c}
+
+{!WorkOrder.TECH_AdressAgence__c}
+
+{!WorkOrder.TECH_AgenceIntervenante_Tel__c}
+
+Sous quel délai dois-je restituer le véhicule relais ?
+
+Le véhicule de remplacement doit être restitué sous deux jours ouvrables à compter de ce jour.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

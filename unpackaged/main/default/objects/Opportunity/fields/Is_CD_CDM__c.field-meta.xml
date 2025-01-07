@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_CD_CDM__c</fullName>
+    <formula>IF(  
+   OR(
+     ISPICKVAL(Type_Location__c, &#39;Courte Durée&#39;) ,
+     ISPICKVAL(Type_Location__c, &#39;Moyenne Durée&#39;) ,
+     ISPICKVAL(TypeContrat__c, &#39;CD&#39;) ,
+     ISPICKVAL(TypeContrat__c, &#39;CDM&#39;) 
+       
+     ) , 
+   True, 
+   False
+   )</formula>
+    <label>Is_CD_CDM</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

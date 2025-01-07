@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Stato Workflow commerce</label>
+        <name>StatutWorkflowCommerce__c</name>
+        <picklistValues>
+            <masterLabel>Analyse en cours</masterLabel>
+            <translation>Analisi in corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiffrage en cours</masterLabel>
+            <translation>Quantificazione in corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours sauvegardé</masterLabel>
+            <translation>In corso di salvataggio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fermé</masterLabel>
+            <translation>Chiuso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour analyse</masterLabel>
+            <translation>Sottoposta ad analisi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage au SP</masterLabel>
+            <translation>Sottoposta a quotazione a SP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour chiffrage à LC</masterLabel>
+            <translation>Sottoposta a quotazione a LC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumis pour tarification</masterLabel>
+            <translation>Sottoposta a tariffazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sélection du tarif en cours</masterLabel>
+            <translation>Selezione della tariffa in corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification en cours</masterLabel>
+            <translation>Tariffazione in corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarification soumise</masterLabel>
+            <translation>Tariffazione presentato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validé</masterLabel>
+            <translation>Convalidato</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

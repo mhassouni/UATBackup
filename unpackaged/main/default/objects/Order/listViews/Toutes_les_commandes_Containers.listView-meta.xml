@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_les_commandes_Containers</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Type_de_location__c</columns>
+    <columns>ORDER.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Manual_Order,Order.Order_Client</value>
+    </filters>
+    <label>Container - Toutes les commandes</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeEcheance__c</fullName>
+    <label>Type échéance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATP</fullName>
+                <default>false</default>
+                <label>ATP</label>
+            </value>
+            <value>
+                <fullName>Contractuelle</fullName>
+                <default>false</default>
+                <label>Contractuelle</label>
+            </value>
+            <value>
+                <fullName>Economique</fullName>
+                <default>false</default>
+                <label>Economique</label>
+            </value>
+            <value>
+                <fullName>Technique</fullName>
+                <default>false</default>
+                <label>Technique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

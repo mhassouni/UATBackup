@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Order_Not_Controlled__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Work Order Not Controlled</label>
+    <referenceTo>WorkOrder</referenceTo>
+    <relationshipLabel>Non Controlés</relationshipLabel>
+    <relationshipName>Work_Order_Line_Items2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

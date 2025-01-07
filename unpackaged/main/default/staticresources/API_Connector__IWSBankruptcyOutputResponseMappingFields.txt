@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "--None--",
+    "Path": "--None--"
+  },
+  {
+    "Name": "Date Jugement (dernier rendu)",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/dateJugementPcl"
+  },
+  {
+    "Name": "Code Etape PCL",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/etapeCode"
+  },
+  {
+    "Name": "Etape PCL",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/etapeLibelle"
+  },
+  {
+    "Name": "PCL en cours",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/flagPclEnCours"
+  },
+  {
+    "Name": "Nbre d'annonces BODACC",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/nbPclBodacc"
+  },
+  {
+    "Name": "Nbre d'annonces Infogreffe",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/nbPclInfogreffe"
+  },
+  {
+    "Name": "Nbre d'annonces JAL",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/nbPclJal"
+  },
+  {
+    "Name": "Nbre d'annonces RNCS",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/nbPclRncs"
+  },
+  {
+    "Name": "Nbre de Sanctions dirigeant ?",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/nbSanctionDirigeant"
+  },
+  {
+    "Name": "Sanction Dirigeant connu ?",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/sanctionDirigeant"
+  },
+  {
+    "Name": "Adresse du greffe",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/adresseGreffe"
+  },
+  {
+    "Name": "Date de cessation de paiement",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/dateCessationPaiement"
+  },
+  {
+    "Name": "Date d'effet",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/dateEffet"
+  },
+  {
+    "Name": "Date d'integration",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/dateIntegration"
+  },
+  {
+    "Name": "Date de publication",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/dateParution"
+  },
+  {
+    "Name": "Type du jugement",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/familleJugement"
+  },
+  {
+    "Name": "Identifiant annonce",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/idAnnonce"
+  },
+  {
+    "Name": "Duree du plan",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/dureePlan"
+  },
+  {
+    "Name": "Nature de la PCL",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/natureEvenement"
+  },
+  {
+    "Name": "Code de la PCL",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/natureEvenementCode"
+  },
+  {
+    "Name": "Nature du jugement",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/natureJugement"
+  },
+  {
+    "Name": "Reference de la publication",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/Parution"
+  },
+  {
+    "Name": "Texte de l'annonce",
+    "Path": "/getUnifiedPCLResponse/return/myInfo/unifiedPcl/texteAnnonce"
+  }  
+]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kwalifikacja problemu</label>
+        <name>Qualification__c</name>
+        <picklistValues>
+            <masterLabel>Branchement</masterLabel>
+            <translation><!-- Branchement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Caisse/Cellule isotherme</masterLabel>
+            <translation>Nadwozie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Podwozie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur D&#39;utilisation / Casse / Accident</masterLabel>
+            <translation>Użycie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Frigo</masterLabel>
+            <translation>Agregat chłodniczy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Winda samozaładowcza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/système de levage</masterLabel>
+            <translation><!-- Hayon/système de levage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation><!-- Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>Opony</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

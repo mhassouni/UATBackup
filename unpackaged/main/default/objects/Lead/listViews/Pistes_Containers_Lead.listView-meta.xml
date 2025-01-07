@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pistes_Containers_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>DRO IDF 1,DRO IDF 2,DROM,DRO NORD 1,DRO NORD 2,DRO NORD 3,DRO NORD 4,DRO NORD 5,DRO NORD 6,DRO NORD 7,DRO SUD 1,DRO SUD 2,DRO SUD 3,DRO SUD 4,DRO SUD 5,DRO SUD 6,DRO SUD 7</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>7/16/2023 12:00 AM</value>
+    </filters>
+    <label>PIFR - Containers</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurCommercialFrance</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Compte__c</columns>
+    <columns>Interroge_qualite_client__c</columns>
+    <columns>Annees_des_enquetes__c</columns>
+    <columns>Note_globale_PF__c</columns>
+    <columns>Note_satisfaction_client_Field__c</columns>
+    <columns>Evolution_note_satisfaction__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+</ListView>

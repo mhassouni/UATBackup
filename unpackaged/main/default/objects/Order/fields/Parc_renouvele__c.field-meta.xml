@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parc_renouvele__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>GFC-444</description>
+    <label>Parc renouvelé</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Vous devez choisir un parc de type véhicule ou Container</errorMessage>
+        <filterItems>
+            <field>Asset.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parc - Container, Parc</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Commandes (Parc renouvelé)</relationshipLabel>
+    <relationshipName>Commandes_Parc_renewed</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

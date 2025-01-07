@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonnée</masterLabel>
+        <translation>Elhagyatott</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clôturée</masterLabel>
+        <translation>Zárva</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Convertie</masterLabel>
+        <translation>Átváltva</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Créée</masterLabel>
+        <translation>Létrehozva</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gagnée</masterLabel>
+        <translation>Nyerte</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualifiée</masterLabel>
+        <translation>Képzett</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

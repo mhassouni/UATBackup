@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_2_No_Fleet_allocated_UK</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>Dnp_Date_d_approbation__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Origine_du_produit__c</columns>
+    <columns>N_Parc__c</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>Agence_PF__c</columns>
+    <columns>Statut_de_l_opportunit__c</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Commande_fournisseur</value>
+    </filters>
+    <filters>
+        <field>N_Parc__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Dnp_Statut__c</field>
+        <operation>equals</operation>
+        <value>Approuvée</value>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Créée</value>
+    </filters>
+    <filters>
+        <field>Pays_Region_PF__c</field>
+        <operation>equals</operation>
+        <value>PFUK,PIRL</value>
+    </filters>
+    <label>3.2 -  No. Fleet allocated UK</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>AG_Flux_Amont</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

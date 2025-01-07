@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_Transport_inutile__c</fullName>
+    <label>Motif Transport inutile</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_de_transport__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Le container contient de la marchandise</fullName>
+                <default>false</default>
+                <label>Le container contient de la marchandise</label>
+            </value>
+            <value>
+                <fullName>Le container est encore branché</fullName>
+                <default>false</default>
+                <label>Le container est encore branché</label>
+            </value>
+            <value>
+                <fullName>Le client n&#39;a pas été informé</fullName>
+                <default>false</default>
+                <label>Le client n&#39;a pas été informé</label>
+            </value>
+            <value>
+                <fullName>Le site n&#39;est pas accessible</fullName>
+                <default>false</default>
+                <label>Le site n&#39;est pas accessible</label>
+            </value>
+            <value>
+                <fullName>L&#39;emplacement n&#39;est pas disponible</fullName>
+                <default>false</default>
+                <label>L&#39;emplacement n&#39;est pas disponible</label>
+            </value>
+            <value>
+                <fullName>Manque de matériels pour installation</fullName>
+                <default>false</default>
+                <label>Manque de matériels pour installation</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Le container contient de la marchandise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Le container est encore branché</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Le client n&#39;a pas été informé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Le site n&#39;est pas accessible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>L&#39;emplacement n&#39;est pas disponible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Manque de matériels pour installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport inutile</controllingFieldValue>
+            <valueName>Autres</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

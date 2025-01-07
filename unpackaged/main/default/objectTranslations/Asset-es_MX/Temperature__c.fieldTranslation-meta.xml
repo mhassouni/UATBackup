@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Température --></label>
+        <name>Temperature__c</name>
+        <picklistValues>
+            <masterLabel>Isotherme</masterLabel>
+            <translation><!-- Isotherme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixte</masterLabel>
+            <translation><!-- Mixte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Négative</masterLabel>
+            <translation><!-- Négative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive</masterLabel>
+            <translation><!-- Positive --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

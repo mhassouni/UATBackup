@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__RenewalForecast__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select to trigger the generation of a renewal opportunity for forecasting purposes. Does not automatically generate a renewal quote.</description>
+    <inlineHelpText>Sélectionnez cette case pour déclencher la génération d&#39;une opportunité de renouvellement à des fins de prévision. Ne génère pas automatiquement un devis de renouvellement.</inlineHelpText>
+    <label>Renewal Forecast</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

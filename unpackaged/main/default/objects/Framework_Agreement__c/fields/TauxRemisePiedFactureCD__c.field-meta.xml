@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TauxRemisePiedFactureCD__c</fullName>
+    <inlineHelpText>Taux de remise pied de facture CD à appliquer</inlineHelpText>
+    <label>Taux de remise pied de facture CD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

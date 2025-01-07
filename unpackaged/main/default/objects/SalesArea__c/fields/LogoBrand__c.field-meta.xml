@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LogoBrand__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Brand__c ),
+&#39;Petit Forestier&#39;, IMAGE($Setup.CompanyPicture__c.LogoPetitForestier__c , &#39;Petit Forestier&#39;, 30, 50),
+&#39;Stricher Froid&#39;,IMAGE($Setup.CompanyPicture__c.LogoStricherFroid__c , &#39;Stricher&#39;, 30, 50),
+&#39;Zefirent&#39;,IMAGE($Setup.CompanyPicture__c.Zefirent_Logo__c , &#39;Zefirent&#39;, 30, 50),
+&#39;Mendon Truck Leasing&#39;,IMAGE($Setup.CompanyPicture__c.Mendon_Logo__c , &#39;Mendon&#39;, 30, 50),
+&#39;Medfood&#39;, IMAGE($Setup.CompanyPicture__c.LogoPetitForestier__c , &#39;Petit Forestier&#39;, 30, 50),
+&#39;NOLEGGIO&#39;, IMAGE($Setup.CompanyPicture__c.SVNoleggio_Logo__c, &#39;SV Noleggio&#39;, 40, 60),
+&#39;Reways&#39;, IMAGE($Setup.CompanyPicture__c.Logo_Reways__c, &#39;Reways&#39;, 40, 60),
+					&#39;&#39;
+)</formula>
+    <label>Logo Marque</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

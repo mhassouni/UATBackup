@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority</fullName>
+    <inlineHelpText>Saisissez un numéro de priorité de politique, qui doit être unique. Lorsque les politiques de paquet sont évaluées avec l&#39;empaquetage automatique, la priorité détermine l&#39;ordre d&#39;application des politiques.</inlineHelpText>
+</CustomField>

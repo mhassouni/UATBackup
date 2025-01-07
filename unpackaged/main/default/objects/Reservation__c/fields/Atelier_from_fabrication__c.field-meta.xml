@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Atelier_from_fabrication__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is used in the flow to distinguish the reservation we will modify in case the date of fabrication is modified</description>
+    <label>Atelier from fabrication</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

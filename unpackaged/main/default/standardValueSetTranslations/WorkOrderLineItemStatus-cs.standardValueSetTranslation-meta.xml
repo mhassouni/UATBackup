@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>A faire</masterLabel>
+        <translation>Nutné udělat</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Crée</masterLabel>
+        <translation>Vytvořeno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Impossible de terminer</masterLabel>
+        <translation>Dokončení není možné</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non contrôlé</masterLabel>
+        <translation>Nekontrolováno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Réalisé</masterLabel>
+        <translation>Provedeno</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

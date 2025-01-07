@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Dublin_In_Progress</fullName>
+    <booleanFilter>1 AND 4 AND (2 OR 3)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BT1,BT2,BT3,BT4,BT5,BT6,BT7,BT8,BT9,BT10,BT11,BT12,BT13,BT14,BT15,BT16,BT17,BT29,BT18,BT19,BT20,BT21,BT22,BT23,BT24,BT25,BT26,BT27,BT28,BT30,BT31,BT32,BT33,BT34,BT35,BT36,BT37,BT58,BT38,BT39,BT40,BT41,BT42,BT43,BT44,BT45,BT46,BT47,BT48</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BT51,BT52,BT53,BT54,BT55,BT56,BT57,BT60,BT61,BT62,BT63,BT64,BT65,BT66,BT67,BT68,BT69,BT70,BT71,BT74,BT92,BT93,BT94,BT75,BT76,BT77,BT78,BT79,BT80,BT81,BT82</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Leads PFUK Dublin - In Progress</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

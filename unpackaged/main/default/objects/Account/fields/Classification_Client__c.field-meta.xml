@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_Client__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    TEXT(Classification_CA_Manuel__c),
+    &#39;S&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_S__c, &#39;S&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;M&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_M__c, &#39;M&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;K&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K__c, &#39;K&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;K1&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K1__c, &#39;K1&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;K2&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K2__c, &#39;K2&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;K3&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K3__c, &#39;K3&#39;, 30, 30) &amp; &#39; &#39;,
+    CASE(
+        TEXT(Classification__c),
+        &#39;S&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_S__c, &#39;S&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;M&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_M__c, &#39;M&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;K&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K__c, &#39;K&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;K1&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K1__c, &#39;K1&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;K2&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K2__c, &#39;K2&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;K3&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_K3__c, &#39;K3&#39;, 30, 30) &amp; &#39; &#39;,
+        &#39;&#39;
+    )
+) &amp;
+CASE(
+TEXT(Empreinte_Geographique__c),
+&#39;I&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_I__c, &#39;I&#39;, 30, 30),
+&#39;N&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_N__c, &#39;N&#39;, 30, 30),
+&#39;R&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_R__c, &#39;R&#39;, 30, 30),
+&#39;&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_R__c, &#39;R&#39;, 30, 30), &#39;&#39;
+) &amp;
+CASE(
+    TEXT(Classification_OffreProduit__c),
+    &#39;M&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_M_Produit__c, &#39;M&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;P&#39;, IMAGE($Setup.PictogrammesClassification__c.Classification_P__c, &#39;P&#39;, 30, 30) &amp; &#39; &#39;,
+    &#39;&#39;
+) &amp;
+IF(
+    NOT(ISBLANK(Groupement__c)),
+    IMAGE($Setup.PictogrammesClassification__c.Classification_G__c, &#39;G&#39;, 30, 30),
+    &#39;&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Classification Client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

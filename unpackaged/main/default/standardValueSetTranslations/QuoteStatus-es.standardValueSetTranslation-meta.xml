@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>A Tarifer</masterLabel>
+        <translation>Estudio tarifa/s en espera</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Accepté</masterLabel>
+        <translation>Aceptado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation>Cancelado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Draft</masterLabel>
+        <translation>Draft</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Présenté</masterLabel>
+        <translation>Presentado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Refusé</masterLabel>
+        <translation>Rechazado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tarifé</masterLabel>
+        <translation>Estudio tarifa/s realizado</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

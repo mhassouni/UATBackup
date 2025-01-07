@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Famille --></label>
+        <name>Equipement_Famille__c</name>
+        <picklistValues>
+            <masterLabel>ACCES</masterLabel>
+            <translation><!-- ACCES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTIDEMARRAGE</masterLabel>
+            <translation><!-- ANTIDEMARRAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARRIMAGE</masterLabel>
+            <translation><!-- ARRIMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSE</masterLabel>
+            <translation><!-- CAISSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHASSIS</masterLabel>
+            <translation><!-- CHASSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISONS</masterLabel>
+            <translation><!-- CLOISONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENREGISTREUR TEMPERATURE</masterLabel>
+            <translation><!-- ENREGISTREUR TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES</masterLabel>
+            <translation><!-- ETAGERES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEOLOC</masterLabel>
+            <translation><!-- GEOLOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPS</masterLabel>
+            <translation><!-- GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE</masterLabel>
+            <translation><!-- GROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON</masterLabel>
+            <translation><!-- HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTIONS DE GROUPE</masterLabel>
+            <translation><!-- OPTIONS DE GROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTIONS HAYON</masterLabel>
+            <translation><!-- OPTIONS HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURES</masterLabel>
+            <translation><!-- OUVERTURES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIES</masterLabel>
+            <translation><!-- PENDERIES --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

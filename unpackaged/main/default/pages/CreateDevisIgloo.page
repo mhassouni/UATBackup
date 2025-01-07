@@ -1,0 +1,14 @@
+<apex:page standardController="Lead" extensions="CreateDevisIglooContoller" lightningStylesheets="true">
+    <apex:form >
+       
+       <apex:pageBlock >
+        <apex:pageMessage rendered="{!DisplayInfo}" summary="{!$Label.FlowVar_CreateDevi_Info}" severity="info" strength="2" />
+        <apex:pageMessage rendered="{!DisplayDone}" summary="{!$Label.FlowVar_CreateDevi_Done}" severity="confirm" strength="2" />
+        <apex:pageMessage rendered="{!DisplayNotQalified}" summary="{!$Label.FlowVar_CreateDevi_Qalified}" severity="warning" strength="2" />
+           <apex:pageMessage rendered="{!DisplayExiste}" summary="{!$Label.FlowVar_CreateDevi_Existe}" severity="warning" strength="2" />
+        <apex:pageMessage rendered="{!DisplayError}" summary="{!$Label.FlowVar_CreateDevi_Erreur}" severity="error" strength="2" />
+</apex:pageBlock>
+             
+            <center><apex:commandButton action="{!method}" value="{!$Label.FlowVar_Creer_Devis}" /> </center>
+    </apex:form>
+</apex:page>

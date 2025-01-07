@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Line_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Type_Transaction__c,&#39;HT&#39;), TEXT(Line_Number__c*10+3), 
+			IF(ISPICKVAL(Type_Transaction__c,&#39;TVA&#39;), TEXT(Line_Number__c*10+2),
+     IF(ISPICKVAL(Type_Transaction__c,&#39;TTC&#39;), TEXT(Line_Number__c*10+1),&#39;&#39;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unique Line Number</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

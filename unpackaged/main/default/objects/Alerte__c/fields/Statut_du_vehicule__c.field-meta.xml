@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_du_vehicule__c</fullName>
+    <label>Statut du vehicule</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MOTEUR_NON_TOURNANT</fullName>
+                <default>true</default>
+                <label>MOTEUR_NON_TOURNANT</label>
+            </value>
+            <value>
+                <fullName>MOTEUR_TOURNANT_VEHICULE_NON_ROULANT</fullName>
+                <default>false</default>
+                <label>MOTEUR_TOURNANT_VEHICULE_NON_ROULANT</label>
+            </value>
+            <value>
+                <fullName>MOTEUR_TOURNANT_VEHICULE_ROULANT</fullName>
+                <default>false</default>
+                <label>MOTEUR_TOURNANT_VEHICULE_ROULANT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

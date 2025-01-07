@@ -1,0 +1,5 @@
+<p>Bonjour {!SBQQ__Quote__c.OwnerFullName},<br /><br />Le besoin Hors Standard pour le client {!SBQQ__Quote__c.Account_Name__c} <span style="font-weight: 400;">a &eacute;t&eacute; accord&eacute;e.</span></p>
+<p><span style="font-weight: 400;">A pr&eacute;sent, nous vous invitons &agrave; retourner sur votre devis puis d&rsquo;ajouter les produits Standards.</span></p>
+<p><span style="font-weight: 400;">La tarification sera compl&eacute;t&eacute;e par le service Hors Standard.</span></p>
+<p><a href="{!SBQQ__Quote__c.Link}">Lien devis</a></p>
+<p>Merci</p>

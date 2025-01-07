@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuentas_Madrid2</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NomCommercial__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AgencePF__c</field>
+        <operation>equals</operation>
+        <value>306 / MADRID - COSLADA</value>
+    </filters>
+    <label>=&gt; Cuentas 306 / MADRID - COSLADA</label>
+    <language>fr</language>
+    <sharedTo />
+</ListView>

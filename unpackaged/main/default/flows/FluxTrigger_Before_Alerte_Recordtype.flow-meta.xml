@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>What_recordtype</name>
+        <label>What recordtype</label>
+        <locationX>446</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Voyant_moteur</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_Alerte__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Voyant moteur</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_alerte_0</targetReference>
+            </connector>
+            <label>Voyant moteur</label>
+        </rules>
+        <rules>
+            <name>Tension_batterie_basse</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_Alerte__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tension batterie basse</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_alerte_0_0</targetReference>
+            </connector>
+            <label>Tension batterie basse</label>
+        </rules>
+        <rules>
+            <name>Coupure_basse_pression_A01</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_Alerte__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupure basse pression</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_alerte_0_0_0</targetReference>
+            </connector>
+            <label>Coupure basse pression</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>FluxTrigger Before - Alerte Recordtype {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FluxTrigger Before - Alerte Recordtype</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_alerte_0</name>
+        <label>Update alerte</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Alerte_RecordType_Voyant_Moteur</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_alerte_0_0</name>
+        <label>Update alerte</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Alerte_RecordType_Tenssion_basse</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_alerte_0_0_0</name>
+        <label>Update alerte</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Alerte_RecordType_CoupureBassePressionA01</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_recordtype</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type_Alerte__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Alerte__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

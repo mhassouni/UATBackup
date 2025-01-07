@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Neuf ou parc --></label>
+        <name>Neuf_ou_parc__c</name>
+        <picklistValues>
+            <masterLabel>Neuf</masterLabel>
+            <translation><!-- Neuf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parc</masterLabel>
+            <translation><!-- Parc --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

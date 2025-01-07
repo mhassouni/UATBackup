@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FrameworkAgreementPrevious__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Accord - Cadre Précédent</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <filterItems>
+            <field>$Source.Vue_Commerciale_Client__c</field>
+            <operation>equals</operation>
+            <valueField>Framework_Agreement__c.Vue_Commerciale_Client__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Groupement__c</field>
+            <operation>equals</operation>
+            <valueField>Framework_Agreement__c.Groupement__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Framework_Agreement__c.Active__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>Framework_Agreement__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Accords_Cadres</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Framework_Agreement__c</referenceTo>
+    <relationshipLabel>Accord-Cadre Suivant</relationshipLabel>
+    <relationshipName>Accords_Cadres1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsManualBundling</fullName>
+    <inlineHelpText>Rendez cette politique disponible lorsque le répartiteur regroupe manuellement des rendez-vous de service dans la console de répartition. Vous pouvez activer en même temps le regroupement manuel et le regroupement automatique.</inlineHelpText>
+</CustomField>

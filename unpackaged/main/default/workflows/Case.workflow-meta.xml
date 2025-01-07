@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_Mail_Cloture_Astreinte_24_24</fullName>
+        <description>Alerte Mail ClôtureAstreinte 24/24</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_Email_Agence__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>MOON/Mail_cloture_astreinte_24_24</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Mail_Ouverture_Astreinte_24_24</fullName>
+        <description>Alerte Mail Ouverture Astreinte 24/24</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_Email_Agence__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>MOON/Mail_ouverture_astreinte_24_24</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Notification_Requete</fullName>
+        <description>Alerte Notification Requête</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_Email_Agence__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>MOON/Notification_Requete</template>
+    </alerts>
+    <alerts>
+        <fullName>Enregistrement_demande_d_intervention</fullName>
+        <description>Enregistrement demande d&#39;intervention</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_responsable_parc__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Community/Enregistrement_demande_de_service</template>
+    </alerts>
+    <alerts>
+        <fullName>Enregistrement_demande_de_support</fullName>
+        <description>Enregistrement demande de support</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Community/Demande_de_support_Mail_Client</template>
+    </alerts>
+    <alerts>
+        <fullName>Mail_fermeture_requete_Demande_de_Support</fullName>
+        <description>Mail à la fermeture de la requête : Demande de Support</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Community/demande_support_terminee</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_Service_Relation_Clients_Creation_Requete_Community</fullName>
+        <description>Notification Service Relation Clients Création Requête Community</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Service_Relation_Clients_Community</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Community/Community_Mail_To_Service_Relation</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_creation_requete_community</fullName>
+        <description>Notification création requête community</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_Email_Agence__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>TECH_Email_astreinte24_24__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Community/Notification_Creation_Requete_Community</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Close_Case</fullName>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Close Case</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TODAY_DATE</fullName>
+        <field>TECH_DATE__c</field>
+        <formula>TODAY()</formula>
+        <name>TODAY DATE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

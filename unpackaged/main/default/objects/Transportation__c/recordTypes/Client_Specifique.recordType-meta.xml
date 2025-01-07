@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Specifique</fullName>
+    <active>true</active>
+    <label>Client Spécifique</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>%3C 5 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neuf %28- 5ans%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parc %28%2B 5ans%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Forfait 14 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forfait 21 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forfait 7 jours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Bretagne %2F Pays de Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Centre %2F Aquitaine %2F Midi Pyrénées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Ile de France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Nord %2F Normandie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Paca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Région Rhônes Alpes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Location__c</picklist>
+        <values>
+            <fullName>CDM - 1 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM_ 2 - 5 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM_ 6 - 11 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courte durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - %E2%89%A5 1 an</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - %E2%89%A5 2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - %E2%89%A5 3 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - %E2%89%A5 4 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - %E2%89%A5 5 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

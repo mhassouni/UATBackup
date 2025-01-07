@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV07_PositionCloison_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si Cloison est renseigné,la position de la cloison est obligatoire</description>
+    <errorConditionFormula>AND
+(
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISPICKVAL(Cloison__c,&quot;&quot;))
+,
+ISBLANK( Position_de_la_cloison__c )
+)</errorConditionFormula>
+    <errorDisplayField>Position_de_la_cloison__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner Cloison(Position) quand Cloison(Type) est renseigné</errorMessage>
+</ValidationRule>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR_76_MappingIgloo_Client</fullName>
+    <active>true</active>
+    <description>Contrôle si le Compte Client a été mappé (traité par Data Quality), sinon bloque la modification.</description>
+    <errorConditionFormula>AND(
+
+NOT(ISNEW()),
+
+OR(
+ISCHANGED( Ligne1__c ), 
+ISCHANGED( Ligne2__c ),
+ISCHANGED( CodePostal__c ),
+ISCHANGED( Ville__c ),
+ISCHANGED( Pays__c )
+)
+,
+NOT(ISBLANK( IGLOO_KEY__c ))
+,
+ RecordType.Id =  $Label.CPT_RecordTypeId_CompteClient
+,
+ $User.ProfileId &lt;&gt;  $Label.USR_ProfileId_PFAdministrateurSysteme 
+,
+ $User.ProfileId &lt;&gt;  $Label.USR_ProfileId_PFCentrale 
+,
+ $User.ProfileId &lt;&gt;   $Label.USR_ProfileId_PFSupport ,
+$User.ProfileId &lt;&gt;   $Label.USR_ProfileId_PFCreditManagement
+
+)</errorConditionFormula>
+    <errorMessage>Pour effectuer une demande de modification d’adresse, merci de contact @Helpdesk Greenforce via Chatter.</errorMessage>
+</ValidationRule>

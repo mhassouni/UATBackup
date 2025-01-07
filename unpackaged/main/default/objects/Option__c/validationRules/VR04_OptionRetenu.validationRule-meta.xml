@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR04_OptionRetenu</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Option_retenu__c),
+Option_retenu__c = True,
+ ISNULL(Devis__r.Loyer__c ) 
+)</errorConditionFormula>
+    <errorMessage>Veuillez sélectionner un tarif avant d’ajouter une option</errorMessage>
+</ValidationRule>

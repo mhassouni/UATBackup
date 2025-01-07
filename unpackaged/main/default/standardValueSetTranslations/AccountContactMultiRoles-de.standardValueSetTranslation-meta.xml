@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Acheteur technique</masterLabel>
+        <translation><!-- Acheteur technique --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Acheteur économique</masterLabel>
+        <translation><!-- Acheteur économique --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Autre</masterLabel>
+        <translation>Andere</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Décideur</masterLabel>
+        <translation>Entscheidungsträger</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Décideur économique</masterLabel>
+        <translation>Entscheidungsträger</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parrain</masterLabel>
+        <translation><!-- Parrain --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prescripteur</masterLabel>
+        <translation><!-- Prescripteur --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Utilisateur professionnel</masterLabel>
+        <translation><!-- Utilisateur professionnel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Évaluateur</masterLabel>
+        <translation><!-- Évaluateur --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

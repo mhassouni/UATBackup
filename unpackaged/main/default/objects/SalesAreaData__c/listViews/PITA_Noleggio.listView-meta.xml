@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PITA_Noleggio</fullName>
+    <columns>NAME</columns>
+    <columns>TerritorialCommercial__c</columns>
+    <columns>TerritorialCommercial2__c</columns>
+    <columns>Commercial_Territorial2__c</columns>
+    <columns>Account__c</columns>
+    <columns>LogoBrand__c</columns>
+    <columns>LogoBusinessLine__c</columns>
+    <columns>PFRegion__c</columns>
+    <columns>Secteur__c</columns>
+    <columns>Secteur2__c</columns>
+    <columns>Territoire__c</columns>
+    <columns>Territoire2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PFRegion__c</field>
+        <operation>equals</operation>
+        <value>PITA,SV NOLLEGIO</value>
+    </filters>
+    <filters>
+        <field>Marque__c</field>
+        <operation>contains</operation>
+        <value>Noleggio</value>
+    </filters>
+    <label>PITA/Noleggio</label>
+</ListView>

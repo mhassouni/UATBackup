@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>WFC_Synchronisation_Devis_Opportunity</name>
+        <label>WFC Synchronisation Devis Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Conditions_synchro</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Synchronise__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Synchronise__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type_de_produit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sous_famille__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Categorie__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sous_Categorie__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Quantite__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Duree__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Loyer__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.KM__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Origine_de_produit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.TECH_No_Update__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Opportunity</targetReference>
+            </connector>
+            <label>Conditions synchro</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>VAR_Loyer_Mensuel</name>
+        <dataType>Currency</dataType>
+        <expression>if
+(
+NOT(ISBLANK({!$Record.Loyer_DO_DF__c}))
+,
+{!$Record.Loyer_DO_DF__c}
+,
+if
+(
+NOT(ISBLANK({!$Record.Loyer_Directeur_de_site__c} ))
+,
+{!$Record.Loyer_Directeur_de_site__c}
+,
+{!$Record.Loyer__c}
+)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>VAR_RYF_Pourcentage</name>
+        <dataType>Number</dataType>
+        <expression>( 
+if
+(
+NOT(ISBLANK({!$Record.Loyer_DO_DF__c} ))
+,
+{!$Record.Loyer_DO_DF__c}
+,
+if
+(
+NOT(ISBLANK({!$Record.Loyer_Directeur_de_site__c} ))
+,
+{!$Record.Loyer_Directeur_de_site__c}
+,
+{!$Record.Loyer__c} 
+)
+)
+ / ( {!$Record.Prix_0_kms__c}  + ( {!$Record.KM__c} * ( {!$Record.Prix_des_kms_inclus_les_100_kms__c} /100 ) ) ) - 1)*100</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>FlowTrigger_WFC_Synchronisation_Devis_Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_WFC Synchronisation Devis Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Flow_Initialisation_commandes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Categorie__c</field>
+            <value>
+                <elementReference>$Record.Categorie__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CodePF__c</field>
+            <value>
+                <elementReference>$Record.Code_PF__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Delegation_DP__c</field>
+            <value>
+                <elementReference>$Record.Delegation_DP__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Delegation_DS__c</field>
+            <value>
+                <elementReference>$Record.Delegation_DS__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DureeContrat__c</field>
+            <value>
+                <elementReference>$Record.Duree__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Kilometrage__c</field>
+            <value>
+                <elementReference>$Record.KM__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LoyerMensuel__c</field>
+            <value>
+                <elementReference>VAR_Loyer_Mensuel</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Loyer_Devis__c</field>
+            <value>
+                <elementReference>$Record.Loyer__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PAT__c</field>
+            <value>
+                <elementReference>$Record.Somme_PAT__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Prix_0_Km_Devis__c</field>
+            <value>
+                <elementReference>$Record.Prix_0_kms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Prix_des_kms_inclus_les_100_kms_Devis__c</field>
+            <value>
+                <elementReference>$Record.Prix_des_kms_inclus_les_100_kms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Prix_du_Km_supplementaire__c</field>
+            <value>
+                <elementReference>$Record.Prix_du_km_supplementaire_les_100_kms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantite__c</field>
+            <value>
+                <elementReference>$Record.Quantite__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RYF_Devis__c</field>
+            <value>
+                <elementReference>$Record.RYF_Devis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RYF_pourcentage__c</field>
+            <value>
+                <elementReference>VAR_RYF_Pourcentage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sans_Delegation__c</field>
+            <value>
+                <elementReference>$Record.Sans_Delegation__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SousCategorie__c</field>
+            <value>
+                <elementReference>$Record.Sous_Categorie__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SousFamille__c</field>
+            <value>
+                <elementReference>$Record.Sous_famille__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TypeProduit__c</field>
+            <value>
+                <elementReference>$Record.Origine_de_produit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TypeProduits__c</field>
+            <value>
+                <elementReference>$Record.Type_de_produit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_devis__c</field>
+            <value>
+                <elementReference>$Record.Type_d_enregistrement__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>WFC_Synchronisation_Devis_Opportunity</targetReference>
+        </connector>
+        <object>Quote</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Flow_Initialisation_commandes</name>
+        <label>Flow Initialisation commandes</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Flow_Quote_Order</targetReference>
+        </connector>
+        <flowName>Initialisation_commandes_fournisseur</flowName>
+        <inputAssignments>
+            <name>id_opp</name>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Flow_Quote_Order</name>
+        <label>Flow Quote Order</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <flowName>FluxAL_OrderQuote</flowName>
+        <inputAssignments>
+            <name>QuoteId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>Set_Legal_Entity</name>
+        <label>Set Legal Entity</label>
+        <locationX>176</locationX>
+        <locationY>388</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PF_Legal_Entity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Setup.PF_BillingSettings__c.Legal_Entity__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Automatically sets the LE on Opportunity.</description>
+    <interviewLabel>PF Set Legal Entity on Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PF Set Legal Entity on Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Set_Legal_Entity</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalContratsAEcheance__c</fullName>
+    <description>Nombre de contrats par ligne de produit CD/MD/LD dont la date de tacite reconduction est inférieure à 12 mois pour LD, 1 mois pour MD et 1 jour pour CD</description>
+    <externalId>false</externalId>
+    <label>Total Contrats à échéance</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

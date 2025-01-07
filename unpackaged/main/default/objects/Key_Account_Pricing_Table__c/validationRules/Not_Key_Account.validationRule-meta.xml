@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Key_Account</fullName>
+    <active>false</active>
+    <description>If account is not a Key account, it should be imposible to create such Prices.</description>
+    <errorConditionFormula>Key_Account__c = False</errorConditionFormula>
+    <errorMessage>This account is not a key account.</errorMessage>
+</ValidationRule>

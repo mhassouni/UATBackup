@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PIPL_lista_zapyta_o_nr_boczne</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>DNP_Statut__c</columns>
+    <columns>Commentaire__c</columns>
+    <columns>N_Parc_s_attribu_s__c</columns>
+    <columns>N_Parc__c</columns>
+    <columns>DNP_Date_Soumission__c</columns>
+    <columns>DNP_Nom_Initiateur__c</columns>
+    <columns>DNP_Date_Approbation__c</columns>
+    <columns>DNP_Nom_Approbteur__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PIPL</value>
+    </filters>
+    <label>PIPL - lista zapytań o nr. boczne</label>
+</ListView>

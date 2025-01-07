@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Si Prix &lt;&gt; vide, calcule le discount par rapport au prix standard, sinon applique la valeur saisie dans Discount. --></help>
+        <label><!-- Calculated Discount --></label>
+        <name>Calculated_Discount__c</name>
+    </CustomFieldTranslation>

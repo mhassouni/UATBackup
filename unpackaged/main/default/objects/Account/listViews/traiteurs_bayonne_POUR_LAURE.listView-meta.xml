@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>traiteurs_bayonne_POUR_LAURE</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Ligne1Exploitation__c</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>VilleExploitation__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VilleExploitation__c</field>
+        <operation>equals</operation>
+        <value>BAYONNE</value>
+    </filters>
+    <filters>
+        <field>Type_compte__c</field>
+        <operation>equals</operation>
+        <value>CLIENT CD,PROSPECT</value>
+    </filters>
+    <filters>
+        <field>TypeActivite__c</field>
+        <operation>equals</operation>
+        <value>Traiteurs</value>
+    </filters>
+    <label>traiteurs bayonne POUR LAURE</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

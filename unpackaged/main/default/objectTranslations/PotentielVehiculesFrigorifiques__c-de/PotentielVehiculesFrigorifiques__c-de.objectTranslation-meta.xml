@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Kühlfahrzeug-Potenzial</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Kühlfahrzeug-Potenziale</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Kühlfahrzeug-Potenzial</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Kühlfahrzeug-Potenziale</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Kühlfahrzeug-Potenzial</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Kühlfahrzeug-Potenziale</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Kühlfahrzeug-Potenzial</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Kühlfahrzeug-Potenziale</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Présentation Parc Client Véhicules Frigorifiques</layout>
+        <sections>
+            <label>Kommentare</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>allgemeine Informationen</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Fahrzeug</label>
+            <section>Véhicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Identifiant --></nameFieldLabel>
+    <webLinks>
+        <label>Aktivität &gt; 30 Tage</label>
+        <name>Activite_30_jours</name>
+    </webLinks>
+</CustomObjectTranslation>

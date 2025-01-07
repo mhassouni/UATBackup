@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Extérieur --></label>
+        <name>Ext_rieur__c</name>
+        <picklistValues>
+            <masterLabel>A quai</masterLabel>
+            <translation><!-- A quai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Au sol</masterLabel>
+            <translation><!-- Au sol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calage</masterLabel>
+            <translation><!-- Calage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distance Roulage</masterLabel>
+            <translation><!-- Distance Roulage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type Terrain</masterLabel>
+            <translation><!-- Type Terrain --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

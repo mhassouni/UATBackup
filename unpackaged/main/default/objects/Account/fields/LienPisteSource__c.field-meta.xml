@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LienPisteSource__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TECHIDPiste__c),&#39;&#39;,HYPERLINK(LEFT($Api.Partner_Server_URL_340, FIND( &#39;/services&#39;, $Api.Partner_Server_URL_340)) &amp; TECHIDPiste__c, if(ISBLANK(TECHNumeroPiste__c), TECHIDPiste__c, TECHNumeroPiste__c)))</formula>
+    <label>Lien vers la piste source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copie_de_DNP_en_cours_d_approbation</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CodePF__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Kilometrage__c</columns>
+    <columns>DureeContrat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>En attente</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>DO5A</value>
+    </filters>
+    <label>DO5A DNP en cours d&#39;approbation</label>
+</ListView>

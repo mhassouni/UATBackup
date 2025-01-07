@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Finanční podmínky</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Dero. Fi Layout</layout>
+        <sections>
+            <label>Požadované podmínky</label>
+            <section>Conditions souhaitées</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexování</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dero. Fi Standard Layout</layout>
+        <sections>
+            <label>Podmínky</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexování</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Courte durée</layout>
+        <sections>
+            <label>Podmínky</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Moyenne durée</layout>
+        <sections>
+            <label>Podmínky</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Název finanční výjimky</nameFieldLabel>
+    <recordTypes>
+        <label>Kontejner - Finanční záloha - Specific</label>
+        <name>Specific_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kontejner - Dero. Finanční – standardní</label>
+        <name>Standard_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vozidlo – Krátkodobé</label>
+        <name>VehiculeCourteDuree</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vozidlo – střední doba trvání</label>
+        <name>VehiculeMoyenneDuree</name>
+    </recordTypes>
+</CustomObjectTranslation>

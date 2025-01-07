@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R_glementations__c</fullName>
+    <label>Réglementations</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Aucun</fullName>
+                <default>true</default>
+                <label>Aucun</label>
+            </value>
+            <value>
+                <fullName>GDP (Pharma)</fullName>
+                <default>false</default>
+                <label>GDP (Pharma)</label>
+            </value>
+            <value>
+                <fullName>Hs SP (?)</fullName>
+                <default>false</default>
+                <label>Hs SP (?)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

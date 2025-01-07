@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Type__c</fullName>
+    <label>Location Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Courte Durée</fullName>
+                <default>false</default>
+                <label>Courte Durée</label>
+            </value>
+            <value>
+                <fullName>Moyenne Durée</fullName>
+                <default>false</default>
+                <label>Moyenne Durée</label>
+            </value>
+            <value>
+                <fullName>Longue Durée</fullName>
+                <default>false</default>
+                <label>Longue Durée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

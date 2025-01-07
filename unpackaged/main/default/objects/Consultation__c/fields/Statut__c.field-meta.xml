@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut__c</fullName>
+    <label>Statut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Création</fullName>
+                <default>false</default>
+                <label>Création</label>
+            </value>
+            <value>
+                <fullName>Élaboration CDC</fullName>
+                <default>false</default>
+                <label>Élaboration CDC</label>
+            </value>
+            <value>
+                <fullName>Sourcing</fullName>
+                <default>false</default>
+                <label>Sourcing</label>
+            </value>
+            <value>
+                <fullName>Attente offres</fullName>
+                <default>false</default>
+                <label>Attente offres</label>
+            </value>
+            <value>
+                <fullName>Analyse</fullName>
+                <default>false</default>
+                <label>Analyse</label>
+            </value>
+            <value>
+                <fullName>Négociation</fullName>
+                <default>false</default>
+                <label>Négociation</label>
+            </value>
+            <value>
+                <fullName>Contractualisation ou Abandon</fullName>
+                <default>false</default>
+                <label>Contractualisation ou Abandon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

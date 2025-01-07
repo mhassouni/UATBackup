@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Nb_Missions_Open__c</fullName>
+    <description>Le nombre des missions en cours
+Use:Flux clôture mission</description>
+    <label>TECH Nb Missions Open</label>
+    <summaryFilterItems>
+        <field>WorkOrderLineItem.Status</field>
+        <operation>equals</operation>
+        <value>A faire</value>
+    </summaryFilterItems>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

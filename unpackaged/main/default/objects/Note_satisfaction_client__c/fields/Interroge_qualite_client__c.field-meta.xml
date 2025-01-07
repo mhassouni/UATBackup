@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interroge_qualite_client__c</fullName>
+    <label>Interrogé en qualité de client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Conteneur</fullName>
+                <default>false</default>
+                <label>Conteneur</label>
+            </value>
+            <value>
+                <fullName>Meuble</fullName>
+                <default>false</default>
+                <label>Meuble</label>
+            </value>
+            <value>
+                <fullName>Véhicule Frigorifique</fullName>
+                <default>false</default>
+                <label>Véhicule Frigorifique</label>
+            </value>
+            <value>
+                <fullName>Véhicule Sec En IDF</fullName>
+                <default>false</default>
+                <label>Véhicule Sec En IDF</label>
+            </value>
+            <value>
+                <fullName>Véhicule Sec Hors IDF</fullName>
+                <default>false</default>
+                <label>Véhicule Sec Hors IDF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

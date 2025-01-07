@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Regula privind data indexării chiriei/KM</label>
+        <name>Regle_date_indexation_Loyer_KM__c</name>
+        <picklistValues>
+            <masterLabel>à chaque date anniversaire de mise à disposition du véhicule</masterLabel>
+            <translation>la fiecare dată aniversară a disponibilității vehiculului</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>à date fixe</masterLabel>
+            <translation>la o dată fixă</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

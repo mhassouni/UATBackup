@@ -1,0 +1,9 @@
+Bonjour,
+
+Votre demande de dérogation financière {!Dero_Fi__c.Name}, pour le client {!Dero_Fi__c.Account__c}, est approuvée.
+
+Commentaires : {!ApprovalRequest.Comments}
+
+{!Dero_Fi__c.Link}
+
+Vous pouvez à présent générer votre devis.

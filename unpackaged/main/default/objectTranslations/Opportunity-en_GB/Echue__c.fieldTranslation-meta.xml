@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>A : Not expired B : Expired less than 8 days ago C : Expired more than 8 days ago</help>
+        <label>Expired</label>
+        <name>Echue__c</name>
+    </CustomFieldTranslation>

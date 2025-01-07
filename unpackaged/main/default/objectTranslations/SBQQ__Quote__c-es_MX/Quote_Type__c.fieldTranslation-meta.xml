@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Quote Type --></label>
+        <name>Quote_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assembly Quote</masterLabel>
+            <translation><!-- Assembly Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Standard Quote</masterLabel>
+            <translation><!-- Non Standard Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Quote</masterLabel>
+            <translation><!-- Standard Quote --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

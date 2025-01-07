@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_Container_HS_Notification_Accord</fullName>
+        <description>Alerte_Container_HS_Notification_Accord</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Container_HS/Container_HS_Notification_Accord</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Container_HS_Notification_Refus</fullName>
+        <description>Alerte_Container_HS_Notification_Refus</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Container_HS/Container_HS_Notification_Refus</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_DemandeEtude</fullName>
+        <description>Alerte_Demande Hors Standard_NotificationAR</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Container_HS/Container_HS_Notification_AR</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Demande_Hors_Standard_Notification_EquipeHS</fullName>
+        <description>Alerte_Demande Hors Standard_Notification_EquipeHS</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Equipe_Hors_Standard_Container</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Container_HS/Container_HS_Notification_EquipeHS</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Demande_Hors_Standard_commercial_Cotation</fullName>
+        <description>Alerte_Demande Hors Standard_commercial_Cotation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CPQ_Emailing/Container_HS_Notification_Cotation</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_demande_Assemblage_commercial_Cotation</fullName>
+        <description>Alerte demande Assemblage - commercial - Cotation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CPQ_Emailing/Container_Assemblage_Notification_Commercial_Cotation</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_demande_chiffrage_Equipe_assemblage</fullName>
+        <description>Alerte demande chiffrage - Equipe assemblage</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Equipe_assemblage</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CPQ_Emailing/Notification_Chiffrage_Equipe_Assemblage</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_demande_chiffrage_commercial</fullName>
+        <description>Alerte demande chiffrage - commercial</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CPQ_Emailing/Notification_chiffrage_Commercial</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_for_BELUX</fullName>
+        <description>Approval for BELUX</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X1_Reques_Approbation_Discount</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_for_discount</fullName>
+        <description>Approval for discount</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X1_Reques_Approbation_Discount</template>
+    </alerts>
+    <alerts>
+        <fullName>Discount_Accepted</fullName>
+        <description>Discount Accepted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X2_Discount_Accepted</template>
+    </alerts>
+    <alerts>
+        <fullName>Discount_Refused</fullName>
+        <description>Discount Refused</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X3_Discount_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Direction_Devis_Assemblage_Signe_v2</fullName>
+        <description>Email Direction Devis Assemblage Signe v2</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Assemblage_Signature</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Approval/Devis_sign</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Direction_Devis_Assemblage_Signev2</fullName>
+        <description>Email Direction Devis Assemblage Signé v2</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Assemblage_Signature</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/Devis_sign</template>
+    </alerts>
+    <alerts>
+        <fullName>Prix_Definis</fullName>
+        <description>Prix Definis</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Approval/Prix_Definis</template>
+    </alerts>
+    <alerts>
+        <fullName>Remise_Rejete</fullName>
+        <description>Remise Rejeté</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X3_Discount_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Remise_accept</fullName>
+        <description>Remise accepté</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval/X2_Discount_Accepted</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Checbox_to_true</fullName>
+        <field>TechStatusApprovalProcess__c</field>
+        <literalValue>1</literalValue>
+        <name>Checbox to true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Checkbox_to_true</fullName>
+        <field>TechStatusApprovalProcess__c</field>
+        <literalValue>1</literalValue>
+        <name>Checkbox to true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_en_Attente_Approbation</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>En Attente d&#39;approbation</literalValue>
+        <name>Status en Attente Approbation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_en_attente_appro</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>En Attente d&#39;approbation</literalValue>
+        <name>Status en Attente Approbation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_en_attente_remise</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>En Attente Remise</literalValue>
+        <name>Status en attente remise</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Unlock_quote_record</fullName>
+        <field>Tech_approval_unlock__c</field>
+        <literalValue>1</literalValue>
+        <name>Unlock quote record</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Approuvé</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_Recall</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>Update Status Recall</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>mise_jour_Statut</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>mise à jour Statut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>statut</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Approuvé</literalValue>
+        <name>statut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

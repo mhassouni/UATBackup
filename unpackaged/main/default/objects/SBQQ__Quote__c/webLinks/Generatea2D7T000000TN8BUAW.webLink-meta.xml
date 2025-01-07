@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generatea2D7T000000TN8BUAW</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Générer Devis Assemblage</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &#39;/s&#39;,&#39;/apex/dfsle__gendocumentgenerator&#39;, $Site.Prefix +&#39;/apex/dfsle__gendocumentgenerator&#39;), null, [sId = SBQQ__Quote__c.Id, templateId = &#39;a2D7T000000TN8BUAW&#39;, recordId = SBQQ__Quote__c.Id, title = &#39;Générer Devis Assemblage&#39;])}</url>
+</WebLink>

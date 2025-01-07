@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Account_Child_of_GU__c</fullName>
+    <formula>IF( DB_DUNS_Number__c  &lt;&gt;  DB_DUNS_GU__c,TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IS Account Child of GU</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

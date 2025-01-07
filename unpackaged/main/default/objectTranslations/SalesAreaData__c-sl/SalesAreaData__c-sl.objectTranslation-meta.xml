@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Vue Commerciale Client</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Vues Commerciales Client</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Présentation Vue Commerciale Client</layout>
+        <sections>
+            <label><!-- Entité Légale --></label>
+            <section>Entité Légale</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Limite de crédit --></label>
+            <section>Limite de crédit</section>
+        </sections>
+        <sections>
+            <label><!-- Territoire Commercial --></label>
+            <section>Territoire Commercial</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom de la Vue Commerciale Client --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Nouvelle opportunité --></label>
+        <name>NewOpp</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle opportunité --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle Opportunité B2B --></label>
+        <name>NewOpportunityB2B</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvelle opportunité B2C --></label>
+        <name>NewOpportunityB2C</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouvel événement --></label>
+        <name>Nouvel_evenement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- test --></label>
+        <name>test</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Ce champ ne peut pas être modifié après la création de l&apos;enregistrement. --></errorMessage>
+        <name>PreventNameFieldEditAfterCreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ce champ ne peut pas être modifié après la création de l&apos;enregistrement. --></errorMessage>
+        <name>PreventSalesAreaFieldEditAfterCreation</name>
+    </validationRules>
+</CustomObjectTranslation>

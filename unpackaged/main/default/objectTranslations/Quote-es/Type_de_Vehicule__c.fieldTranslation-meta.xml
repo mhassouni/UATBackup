@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo de vehículo</label>
+        <name>Type_de_Vehicule__c</name>
+        <picklistValues>
+            <masterLabel>Véhicule de Parc VL</masterLabel>
+            <translation>Vehículo de parque VL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule neuf</masterLabel>
+            <translation>Vehículo nuevo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>véhicule de Parc PL</masterLabel>
+            <translation>Vehículo de parque PL</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

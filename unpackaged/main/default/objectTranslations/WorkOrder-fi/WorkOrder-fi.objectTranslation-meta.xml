@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>FSL Work Order Layout</layout>
+        <sections>
+            <label>Osoite</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Demande de service</layout>
+        <sections>
+            <label><!-- Détails intervention --></label>
+            <section>Détails intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Planification intervention --></label>
+            <section>Planification intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi intervention --></label>
+            <section>Suivi intervention</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Demande de service - Community</layout>
+        <sections>
+            <label><!-- Détails intervention --></label>
+            <section>Détails intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Planification intervention --></label>
+            <section>Planification intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi intervention --></label>
+            <section>Suivi intervention</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage</layout>
+        <sections>
+            <label><!-- Contact Astreinte --></label>
+            <section>Contact Astreinte</section>
+        </sections>
+        <sections>
+            <label><!-- Durées --></label>
+            <section>Durées</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage - Admin</layout>
+        <sections>
+            <label><!-- Contact Astreinte --></label>
+            <section>Contact Astreinte</section>
+        </sections>
+        <sections>
+            <label><!-- Durées --></label>
+            <section>Durées</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage - Lecture Seule</layout>
+        <sections>
+            <label><!-- Contact Astreinte --></label>
+            <section>Contact Astreinte</section>
+        </sections>
+        <sections>
+            <label><!-- Durées --></label>
+            <section>Durées</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage - Mobile</layout>
+        <sections>
+            <label><!-- Contact Astreinte --></label>
+            <section>Contact Astreinte</section>
+        </sections>
+        <sections>
+            <label><!-- Durées --></label>
+            <section>Durées</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Equipements --></label>
+            <section>Equipements</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage - Mobile - Lecture seule</layout>
+        <sections>
+            <label><!-- Contact Astreinte --></label>
+            <section>Contact Astreinte</section>
+        </sections>
+        <sections>
+            <label><!-- Durées --></label>
+            <section>Durées</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Equipements --></label>
+            <section>Equipements</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Depannage - UK</layout>
+        <sections>
+            <label><!-- Billing Informations --></label>
+            <section>Billing Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Détails Techniques --></label>
+            <section>Détails Techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention timestamps --></label>
+            <section>Intervention timestamps</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Ordre de réparation</layout>
+        <sections>
+            <label><!-- Détails intervention --></label>
+            <section>Détails intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Planification intervention --></label>
+            <section>Planification intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi intervention --></label>
+            <section>Suivi intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Travaux --></label>
+            <section>Travaux</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Tour de parc</layout>
+        <sections>
+            <label><!-- Date d&apos;intervention --></label>
+            <section>Date d&#39;intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Information system --></label>
+            <section>Information system</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Ordre De travail - Tour de parc - Lecture seule</layout>
+        <sections>
+            <label><!-- Date d&apos;intervention --></label>
+            <section>Date d&#39;intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Information system --></label>
+            <section>Information system</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ordre De travail - Tour de parc Chapeau</layout>
+        <sections>
+            <label><!-- Confirmation client --></label>
+            <section>Confirmation client</section>
+        </sections>
+        <sections>
+            <label><!-- Date d&apos;intervention --></label>
+            <section>Date d&#39;intervention</section>
+        </sections>
+        <sections>
+            <label><!-- Information system --></label>
+            <section>Information system</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ordre de Travail Depannage - Community</layout>
+        <sections>
+            <label><!-- Durée d&apos;intervention calculée --></label>
+            <section>Durée d&#39;intervention calculée</section>
+        </sections>
+        <sections>
+            <label><!-- Détails techniques --></label>
+            <section>Détails techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervenants --></label>
+            <section>Intervenants</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ordre de Travail Tour de parc - Community</layout>
+        <sections>
+            <label><!-- Détails techniques --></label>
+            <section>Détails techniques</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ordre de Travail Tour de parc Chapeau - Community</layout>
+        <sections>
+            <label><!-- Confirmation client --></label>
+            <section>Confirmation client</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Intervention --></label>
+            <section>Intervention</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- 04 - Compte-rendu --></label>
+        <name>Fermer_Intervention</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 02 - Arrivée --></label>
+        <name>X02_Arrivee</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 03 - Fin --></label>
+        <name>X03_Fin</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 05 - Retour Agence/Domicile --></label>
+        <name>X05_Retour</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 01 - Départ --></label>
+        <name>X1_Depart</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Demande de service --></label>
+        <name>Demande_de_service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ordre de travail de type Depannage --></description>
+        <label><!-- Depannage --></label>
+        <name>Depannage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Depannage Container - Lecture Seule --></label>
+        <name>Depannage_Container_Lecture_Seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dépannage - Containers --></label>
+        <name>Depannage_Containers</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Depannage - Lecture Seule --></label>
+        <name>Depannage_Lecture_Seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Depannage - Véhicule --></label>
+        <name>Depannage_Vehicule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Depannage véhicule - Lecture Seule --></label>
+        <name>Depannage_vehicule_Lecture_Seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ordre de réparation --></label>
+        <name>Ordre_Reparation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Principal --></label>
+        <name>Principal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tour de parc --></label>
+        <name>Tour_de_parc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tour de parc - Chapeau --></label>
+        <name>Tour_de_parc_Chapeau</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tour de parc - Lecture Seule --></label>
+        <name>Tour_de_parc_Lecture_Seule</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Le parc assistance / relais ne peut pas être identique au véhicule en panne --></errorMessage>
+        <name>Moon_02_OT_Parc_Assistance_Relais</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous devez renseigner l&apos;adresse si le lieu d&apos;intervention est &quot;Autre adresse&quot; --></errorMessage>
+        <name>VR02_Adresse</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez remplir le champs suivants avant d&apos;affecter une ressource interne : [Travaux demandés,Date planifiée,Priorité,Lieu d&apos;intervention] --></errorMessage>
+        <name>VR03_OT_DDS_DDR_RequiredFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas fermer l&apos;intervention sans clôturer toutes les missions en cours. --></errorMessage>
+        <name>VR_WorkOrder_Fermer_intervention</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;êtes pas autorisé à modifier un ordre de travail géré dans SAP --></errorMessage>
+        <name>VR_assetIsFromSap</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Bon_de_commande --></label>
+        <name>Bon_de_commande</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Fiche_Depannage --></label>
+        <name>Fiche_Depannage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Nouvelle_Mission --></label>
+        <name>Nouvelle_Mission</name>
+    </webLinks>
+</CustomObjectTranslation>

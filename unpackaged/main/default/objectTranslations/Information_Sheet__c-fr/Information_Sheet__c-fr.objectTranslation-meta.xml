@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fiche de renseignement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fiches de renseignement</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Fiche de renseignement</layout>
+        <sections>
+            <label><!-- Information Assemblage --></label>
+            <section>Information Assemblage</section>
+        </sections>
+        <sections>
+            <label><!-- Information Technique --></label>
+            <section>Information Technique</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Assembly Sheet --></label>
+        <name>Assembly_Sheet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Standard Sheet --></label>
+        <name>Short_Term_Medium_Term</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must add a Deck description --></errorMessage>
+        <name>Deck_Installation_Reason_is_Empty</name>
+    </validationRules>
+</CustomObjectTranslation>

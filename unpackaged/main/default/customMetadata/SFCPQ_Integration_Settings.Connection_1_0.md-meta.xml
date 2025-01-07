@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Connection 1.0</label>
+    <protected>false</protected>
+    <values>
+        <field>CPQ_Environment_URL__c</field>
+        <value xsi:type="xsd:string">https://petitforestier-tst.cpq.cloud.sap</value>
+    </values>
+    <values>
+        <field>CPQ_Environment__c</field>
+        <value xsi:type="xsd:string">PETITFORESTIER_TST</value>
+    </values>
+    <values>
+        <field>Client_Identifier__c</field>
+        <value xsi:type="xsd:string">bead3f4e-f8c2-4755-a0e9-7852e728b5ef</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">=!#D;R_*zd6}]+YVx$]M6ql$0[]uU{</value>
+    </values>
+    <values>
+        <field>FSSO__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>IDP_Route__c</field>
+        <value xsi:type="xsd:string">petitforestier_tst</value>
+    </values>
+    <values>
+        <field>JWT_Token_Signing_Key__c</field>
+        <value xsi:type="xsd:string">:g:B_Q{j8B!w(.;=#eN-C*%7!k.+Jy@}s@LwXbrt@;#h*{1)1}]([A[*AE@:lBHtTl@+w3Q+!&gt;{./qWoq]/^8+32D$H=gx_.q^TW;zGPdy-)X#=3P&amp;h.}mr)B})8^4@-</value>
+    </values>
+    <values>
+        <field>SF_Environment_URL__c</field>
+        <value xsi:type="xsd:string">https://greenforce--uat.sandbox.my.salesforce.com</value>
+    </values>
+    <values>
+        <field>Use_SFCPQ_Usernames_Mapping__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

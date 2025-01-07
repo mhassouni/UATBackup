@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Carte bancaire</masterLabel>
+        <translation>Bankkártya</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chèque</masterLabel>
+        <translation>Ellenőrzés</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Espèces</masterLabel>
+        <translation>Faj</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mandat administratif</masterLabel>
+        <translation>Adminisztratív megbízás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prelevement SEPA B2B</masterLabel>
+        <translation>SEPA B2B csoportos beszedési megbízás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement SEPA CORE</masterLabel>
+        <translation>terhelés</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prélèvement automatique</masterLabel>
+        <translation>Csoportos beszedési megbízás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement SEPA</masterLabel>
+        <translation>SEPA átutalás</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Virement bancaire etrang</masterLabel>
+        <translation>Külföldi banki átutalás</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

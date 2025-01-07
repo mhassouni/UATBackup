@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compte_avec_parcs__c</fullName>
+    <formula>if
+(
+
+AND(Nb_Parcs__c &gt;0,NOT(ISBLANK(Nb_Parcs__c)))
+,
+true
+,
+false
+)</formula>
+    <label>Compte avec parcs</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Boite_de_vitesse__c</fullName>
+    <label>Boite de vitesse</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manuelle</fullName>
+                <default>false</default>
+                <label>Manuelle</label>
+            </value>
+            <value>
+                <fullName>Automatique Robotisée</fullName>
+                <default>false</default>
+                <label>Automatique Robotisée</label>
+            </value>
+            <value>
+                <fullName>Hi-Matic</fullName>
+                <default>false</default>
+                <label>Hi-Matic</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir Aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir Aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Art der Anfrage</label>
+        <name>Type_de_demande__c</name>
+        <picklistValues>
+            <masterLabel>Demander la création d’un compte</masterLabel>
+            <translation>Beantragung eines Kontos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Désactiver l’accès d’un ancien collaborateur</masterLabel>
+            <translation>Antrag auf Deaktivierung des Zugriffs eines Mitarbeiters</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modifier mes coordonnées</masterLabel>
+            <translation>Meine Kontaktdaten ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rectifier la visibilité de mes parcs ou de mes sites</masterLabel>
+            <translation>Die Sichtbarkeit meiner Parcs oder Standorte korrigieren</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

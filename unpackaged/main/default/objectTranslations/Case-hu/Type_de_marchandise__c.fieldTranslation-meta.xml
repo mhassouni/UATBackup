@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Áru típusa</label>
+        <name>Type_de_marchandise__c</name>
+        <picklistValues>
+            <masterLabel>Frais</masterLabel>
+            <translation>Friss</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frais &amp; Surgelé</masterLabel>
+            <translation>Friss és fagyasztott</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sec</masterLabel>
+            <translation>Szárított</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgelé</masterLabel>
+            <translation>Fagyasztott</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

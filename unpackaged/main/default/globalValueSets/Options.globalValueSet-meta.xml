@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Étagères</fullName>
+        <default>false</default>
+        <label>Étagères</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloison matelassée</fullName>
+        <default>false</default>
+        <label>Cloison matelassée</label>
+    </customValue>
+    <customValue>
+        <fullName>Surcharge (Mendon)</fullName>
+        <default>false</default>
+        <label>Surcharge (Mendon)</label>
+    </customValue>
+    <customValue>
+        <fullName>Climatisation</fullName>
+        <default>false</default>
+        <label>Climatisation</label>
+    </customValue>
+    <customValue>
+        <fullName>Enregistreur tº</fullName>
+        <default>false</default>
+        <label>Enregistreur tº</label>
+    </customValue>
+    <customValue>
+        <fullName>Retarder (uniquement PL)</fullName>
+        <default>false</default>
+        <label>Retarder (uniquement PL)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boîte auto</fullName>
+        <default>false</default>
+        <label>Boîte auto</label>
+    </customValue>
+    <customValue>
+        <fullName>Porte latérale</fullName>
+        <default>false</default>
+        <label>Porte latérale</label>
+    </customValue>
+    <customValue>
+        <fullName>Caméra de recul</fullName>
+        <default>false</default>
+        <label>Caméra de recul</label>
+    </customValue>
+    <customValue>
+        <fullName>GPS</fullName>
+        <default>false</default>
+        <label>GPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Rideau à lanières/d&#39;air</fullName>
+        <default>false</default>
+        <label>Rideau à lanières/d&#39;air</label>
+    </customValue>
+    <customValue>
+        <fullName>Déflecteur (uniquement V11?)</fullName>
+        <default>false</default>
+        <label>Déflecteur (uniquement V11?)</label>
+    </customValue>
+    <customValue>
+        <fullName>Suspension pneumatique (uniquement PL)</fullName>
+        <default>false</default>
+        <label>Suspension pneumatique (uniquement PL)</label>
+    </customValue>
+    <customValue>
+        <fullName>Réservoir groupe indépendant (uniquement PL)</fullName>
+        <default>false</default>
+        <label>Réservoir groupe indépendant (uniquement PL)</label>
+    </customValue>
+    <customValue>
+        <fullName>Blocage différentiel (uniquement PL)</fullName>
+        <default>false</default>
+        <label>Blocage différentiel (uniquement PL)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rideau FIT</fullName>
+        <default>false</default>
+        <label>Rideau FIT</label>
+    </customValue>
+    <masterLabel>Options</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

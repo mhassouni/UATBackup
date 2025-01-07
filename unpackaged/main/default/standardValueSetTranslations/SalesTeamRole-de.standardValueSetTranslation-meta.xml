@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Acteur</masterLabel>
+        <translation>Akteur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Consulté</masterLabel>
+        <translation>Aufgesucht</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Informé</masterLabel>
+        <translation>Informiert</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable</masterLabel>
+        <translation>Verantwortlich</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_PF_ALERTES_AGENCES__c</fullName>
+    <formula>if
+(
+AND(CONTAINS( $User.Liste_Agences__c , LEFT(( Parc__r.Agence__r.Code__c ), 3) )
+,
+NOT(ISBLANK((Parc__r.Agence__r.Code__c))) )
+,
+TRUE
+,
+FALSE
+)</formula>
+    <label>TECH_PF_ALERTES_AGENCES</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

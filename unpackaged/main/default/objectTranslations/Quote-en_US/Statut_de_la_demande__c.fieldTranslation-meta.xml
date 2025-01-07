@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut de la demande --></label>
+        <name>Statut_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>DONE</masterLabel>
+            <translation><!-- DONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS</masterLabel>
+            <translation><!-- IN PROGRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROGRESS QUOTATION LECAPITAINE</masterLabel>
+            <translation><!-- IN PROGRESS QUOTATION LECAPITAINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - LECAPITAINE - IN PRICING</masterLabel>
+            <translation><!-- ON HOLD - LECAPITAINE - IN PRICING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON HOLD - PRODUCT SERVICE - PURCHASES REPLY</masterLabel>
+            <translation><!-- ON HOLD - PRODUCT SERVICE - PURCHASES REPLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING - PRODUCT SERVICE &amp; PURCHASING</masterLabel>
+            <translation><!-- PENDING - PRODUCT SERVICE &amp; PURCHASING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT</masterLabel>
+            <translation><!-- WAITING - LECAPITAINE &amp; PURCHASING DEPARTMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - BACK TO PURCHASES</masterLabel>
+            <translation><!-- WAITING - LECAPITAINE - BACK TO PURCHASES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - DRAWN</masterLabel>
+            <translation><!-- WAITING - LECAPITAINE - DRAWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - IN DRAWING</masterLabel>
+            <translation><!-- WAITING - LECAPITAINE - IN DRAWING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING - LECAPITAINE - TO BE DRAWN</masterLabel>
+            <translation><!-- WAITING - LECAPITAINE - TO BE DRAWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING DDT</masterLabel>
+            <translation><!-- WAITING DDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FOR THE SALESPERSON</masterLabel>
+            <translation><!-- WAITING FOR THE SALESPERSON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING FRIOVAL QUOTATION</masterLabel>
+            <translation><!-- WAITING FRIOVAL QUOTATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING IGLOOCAR</masterLabel>
+            <translation><!-- WAITING IGLOOCAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING KEY ACCOUNTS</masterLabel>
+            <translation><!-- WAITING KEY ACCOUNTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING LECAPITAINE</masterLabel>
+            <translation><!-- WAITING LECAPITAINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING PURCHASE SERVICE</masterLabel>
+            <translation><!-- WAITING PURCHASE SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT - IN EVALUATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY</masterLabel>
+            <translation><!-- WAITING QUOTATION SERVICE PRODUCT - IN PRODUCT STUDY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITING UK QUOTATION</masterLabel>
+            <translation><!-- WAITING UK QUOTATION --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

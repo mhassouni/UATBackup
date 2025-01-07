@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR45_Valide</fullName>
+    <active>false</active>
+    <description>Statuts du compte</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(Statut__c), 
+TEXT(Statut__c)=$Label.CPT_Statut_Valide, 
+NOT(ISCHANGED(TECHWS__c)), 
+ 
+$Profile.Id != LEFT($Label.USR_ProfileId_AdministrateurSysteme,15), 
+$Profile.Id != LEFT($Label.USR_ProfileId_PFAdministrateurSysteme,15), 
+$Profile.Id != LEFT($Label.USR_ProfileId_PFCreditManagement,15),
+$Setup.Bypass__c.BypassValidationRules__c = false)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas choisir le statut &quot;Validé&quot;.</errorMessage>
+</ValidationRule>

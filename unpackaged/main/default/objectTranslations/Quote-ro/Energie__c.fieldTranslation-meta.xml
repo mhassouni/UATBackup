@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Energie --></label>
+        <name>Energie__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE -  voir Equipements chassis</masterLabel>
+            <translation><!-- AUTRE -  voir Equipements chassis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B100</masterLabel>
+            <translation><!-- B100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIESEL</masterLabel>
+            <translation><!-- DIESEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRIQUE</masterLabel>
+            <translation><!-- ELECTRIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESSENCE</masterLabel>
+            <translation><!-- ESSENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNC</masterLabel>
+            <translation><!-- GNC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNL</masterLabel>
+            <translation><!-- GNL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNV</masterLabel>
+            <translation><!-- GNV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYBRIDE</masterLabel>
+            <translation><!-- HYBRIDE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

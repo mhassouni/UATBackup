@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_compacte_Service</fullName>
+    <fields>Name</fields>
+    <fields>Type_de_vehicule__c</fields>
+    <fields>Formule__c</fields>
+    <fields>Quantity__c</fields>
+    <fields>Marchandises_transportees__c</fields>
+    <label>Layout compacte - Service</label>
+</CompactLayout>

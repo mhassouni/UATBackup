@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derniere_activite_sur_le_compte__c</fullName>
+    <description>Date/Heure de création tâche sur compte
+Date/Heure de modification tâche sur compte
+Date/Heure de création Evènement sur compte 
+Date/Heure de modification Evènement sur compte 
+Date/Heure de création opportunité
+Date/Heure de modification opportunité [Statut 1,2,3,4,5]
+Date/Heure de création Tâche sur Opportunité
+Date/Heure de modification tâche sur opportunité
+Date/Heure de création Evènement sur Opportunité 
+Date/Heure  de modification Evènement sur Opportunité</description>
+    <label>Dernière activité sur le compte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

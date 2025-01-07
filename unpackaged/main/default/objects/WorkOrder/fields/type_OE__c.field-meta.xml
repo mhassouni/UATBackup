@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>type_OE__c</fullName>
+    <description>type picklist</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origine__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Boite de vitesse</fullName>
+                <default>false</default>
+                <label>Boite de vitesse</label>
+            </value>
+            <value>
+                <fullName>Cabine</fullName>
+                <default>false</default>
+                <label>Cabine</label>
+            </value>
+            <value>
+                <fullName>Carrosserie/Cellule Isotherme</fullName>
+                <default>false</default>
+                <label>Carrosserie/Cellule Isotherme</label>
+            </value>
+            <value>
+                <fullName>Châssis</fullName>
+                <default>false</default>
+                <label>Châssis</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation / Négligence</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation / Négligence</label>
+            </value>
+            <value>
+                <fullName>Electricité Véhicule</fullName>
+                <default>false</default>
+                <label>Electricité Véhicule</label>
+            </value>
+            <value>
+                <fullName>Freinage</fullName>
+                <default>false</default>
+                <label>Freinage</label>
+            </value>
+            <value>
+                <fullName>Groupe Froid</fullName>
+                <default>false</default>
+                <label>Groupe Froid</label>
+            </value>
+            <value>
+                <fullName>Hayon/Portique</fullName>
+                <default>false</default>
+                <label>Hayon/Portique</label>
+            </value>
+            <value>
+                <fullName>Moteur</fullName>
+                <default>false</default>
+                <label>Moteur</label>
+            </value>
+            <value>
+                <fullName>Pneumatiques</fullName>
+                <default>false</default>
+                <label>Pneumatiques</label>
+            </value>
+            <value>
+                <fullName>Pont/Essieu/Transmission</fullName>
+                <default>false</default>
+                <label>Pont/Essieu/Transmission</label>
+            </value>
+            <value>
+                <fullName>Sinistre / Dégâts</fullName>
+                <default>false</default>
+                <label>Sinistre / Dégâts</label>
+            </value>
+            <value>
+                <fullName>Caisse</fullName>
+                <default>false</default>
+                <label>Caisse</label>
+            </value>
+            <value>
+                <fullName>Electricité</fullName>
+                <default>false</default>
+                <label>Electricité</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Boite de vitesse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Cabine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Carrosserie/Cellule Isotherme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Châssis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Electricité Véhicule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Freinage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Groupe Froid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Hayon/Portique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Pneumatiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Pont/Essieu/Transmission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Caisse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technique</controllingFieldValue>
+            <valueName>Electricité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Mauvaise Utilisation / Négligence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Sinistre / Dégâts</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

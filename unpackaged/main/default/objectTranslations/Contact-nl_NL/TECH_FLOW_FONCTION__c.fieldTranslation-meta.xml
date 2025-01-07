@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Functie</label>
+        <name>TECH_FLOW_FONCTION__c</name>
+        <picklistValues>
+            <masterLabel>Administrateur</masterLabel>
+            <translation><!-- Administrateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant</masterLabel>
+            <translation><!-- Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur</masterLabel>
+            <translation><!-- Directeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employé</masterLabel>
+            <translation><!-- Employé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gérant</masterLabel>
+            <translation><!-- Gérant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriétaire</masterLabel>
+            <translation><!-- Propriétaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable</masterLabel>
+            <translation><!-- Responsable --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

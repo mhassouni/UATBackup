@@ -1,0 +1,12 @@
+<apex:page standardController="Account" extensions="GenDocCreditNotesFromAccount"  showQuickActionVfHeader="false">
+    
+    <apex:repeat value="{!creditNotes}" var="creditNote" id="theRepeat">
+		 <apex:iframe rendered="{!NOT(creditNote.Facture_Genere__c)}" id="myFrame" src="{!URLFOR(IF($Site.prefix == '/s','/apex/dfsle__gendocumentgenerator',
+                                       $Site.Prefix +'/apex/dfsle__gendocumentgenerator'), null, [sId = creditNote.id, templateId = creditNote.templateId__c, recordId=creditNote.id, title = 'Generate Assembly creditNote'])}"   />
+	</apex:repeat>
+    <apex:outputPanel rendered="{!allDocsAlreadyGenerated}" >
+        	<div style="text-align:center;font-size: 40px;margin-top:200px;">
+               <apex:outputText value="Toutes les avoirs sont dèja générées" /> 
+           </div>
+    </apex:outputPanel>
+</apex:page>

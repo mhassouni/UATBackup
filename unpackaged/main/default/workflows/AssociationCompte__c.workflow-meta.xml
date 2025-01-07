@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>CPT_UpdateUnicite</fullName>
+        <description>CPT-RG-014</description>
+        <field>TECHUnicite__c</field>
+        <formula>Association__c + Compte__c</formula>
+        <name>CPT_UpdateUnicite</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CPT_WF03_DuplicateAssociation</fullName>
+        <actions>
+            <name>CPT_UpdateUnicite</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>CPT-RG-014</description>
+        <formula>AND ( OR ( ISNEW() , ISCHANGED(Association__c) , ISCHANGED(Compte__c) ) , $Setup.Bypass__c.BypassWorkflowRules__c = false )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV09_QteEtageres_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si Etageres est renseigné ,la qte etagere par face a préciser et Positions des étagères sont obligatoire</description>
+    <errorConditionFormula>AND
+(
+ DATEVALUE(CreatedDate) &gt;= DATE(2022,11,17)
+,
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISPICKVAL(Etageres__c ,&quot;&quot;))
+,
+OR
+(
+ISBLANK(  Qte_etagere_par_face_a_preciser__c )
+, 
+ISBLANK( Positions_des_etageres__c )
+)
+,
+CreatedDate &gt; DATETIMEVALUE( &quot;2022-11-21 00:00:00&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Etageres__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner &quot;Etagère (Qté par face)&quot; et &quot;Etagère (Hauteur / plancher)&quot; si &quot;Etagère (Type)&quot; est renseigné.</errorMessage>
+</ValidationRule>

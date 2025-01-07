@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Critique</masterLabel>
+        <translation>Kritická</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Faible</masterLabel>
+        <translation>Lehká</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Moyen</masterLabel>
+        <translation>Střední</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Élevée</masterLabel>
+        <translation>Vážná</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

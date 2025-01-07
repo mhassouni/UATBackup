@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Ce champ fait le lien entre la commande Pro Forma ET la commande Principale --></help>
+        <label><!-- Commande Associée --></label>
+        <name>Related_Order__c</name>
+        <relationshipLabel><!-- Orders (Related Order) --></relationshipLabel>
+    </CustomFieldTranslation>

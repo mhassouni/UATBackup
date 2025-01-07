@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Active Contract Lookup --></label>
+        <name>SBQQ__ActiveContractLookup</name>
+    </fieldSets>
+    <layouts>
+        <layout>CPQ Contract Layout</layout>
+        <sections>
+            <label>システム情報</label>
+            <section>Amendments</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>修正</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Contract custom Layout</layout>
+        <sections>
+            <label><!-- Amendments --></label>
+            <section>Amendments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Indemnité de résiliation --></label>
+            <section>Indemnité de résiliation</section>
+        </sections>
+        <sections>
+            <label><!-- Indexation --></label>
+            <section>Indexation</section>
+        </sections>
+        <sections>
+            <label><!-- Logistique --></label>
+            <section>Logistique</section>
+        </sections>
+        <sections>
+            <label><!-- Prolongation / Renouvellement --></label>
+            <section>Prolongation / Renouvellement</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Contrat --></label>
+            <section>Signature Contrat</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Layout</layout>
+        <sections>
+            <label><!-- Logistique --></label>
+            <section>Logistique</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contrat vehicule</layout>
+        <sections>
+            <label><!-- Adresses --></label>
+            <section>Adresses</section>
+        </sections>
+        <sections>
+            <label><!-- Assurances &amp; Franchises --></label>
+            <section>Assurances &amp; Franchises</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contrat véhicule - Community</layout>
+        <sections>
+            <label><!-- Adresses --></label>
+            <section>Adresses</section>
+        </sections>
+        <sections>
+            <label><!-- Assurances &amp; Franchises --></label>
+            <section>Assurances &amp; Franchises</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Master Agreement</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Contrat --></label>
+            <section>Signature Contrat</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Demande fin de contrat --></label>
+        <name>AskForContractEnd</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Batch Prolong. --></label>
+        <name>Batch_Prolong</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Prolongation --></label>
+        <name>Extension</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Renouvellement --></label>
+        <name>Renew</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- prolongation --></label>
+        <name>Renew_Contract</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Start Contract Uplift Batch --></label>
+        <name>Start_Contract_Uplift_Batch</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Contract --></description>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contrat véhicule --></label>
+        <name>Contrat_vehicule</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Master Agreement --></description>
+        <label><!-- Master Agreement --></label>
+        <name>Master_Agreement</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Vous devez soumettre le contrat à une approbation si vous voulez le résilier. --></errorMessage>
+        <name>BlockTerminatedStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La date de prolongation doit être supérieur à la date de fin du contrat --></errorMessage>
+        <name>Date_de_Prolongation_Sup_A_Date_de_Fin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La date d&apos;interruption ne peut pas être inférieure à la date de début du contrat.
+La date d&apos;interruption ne peut pas être supérieure à la date de fin du contrat. --></errorMessage>
+        <name>Terminated_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de remplir le mode d&apos;indexation. --></errorMessage>
+        <name>Uplift_mode_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Deca3U7Z000000JC1rUAG --></label>
+        <name>Deca3U7Z000000JC1rUAG</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T000000TN7NUAW --></label>
+        <name>Generatea2D7T000000TN7NUAW</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000XgfKUAS --></label>
+        <name>Generatea2E3N000000XgfKUAS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2E3N000000YyGOUA0 --></label>
+        <name>Generatea2E3N000000YyGOUA0</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend --></label>
+        <name>SBQQ__Amend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RenewContracts --></label>
+        <name>SBQQ__RenewContracts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

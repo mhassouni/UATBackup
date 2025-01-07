@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Programador de faturas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programadores de faturas</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>PF_Invoice Scheduler Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Information --></label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label><!-- Month Configuration --></label>
+            <section>Month Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Information --></label>
+            <section>Technical Information</section>
+        </sections>
+        <sections>
+            <label><!-- Weekly Configuration --></label>
+            <section>Weekly Configuration</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do agendador de fatura</nameFieldLabel>
+    <quickActions>
+        <label><!-- Schedule Immediately --></label>
+        <name>Schedule_Immediately</name>
+    </quickActions>
+</CustomObjectTranslation>

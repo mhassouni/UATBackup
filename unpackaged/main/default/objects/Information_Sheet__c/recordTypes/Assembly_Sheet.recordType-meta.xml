@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assembly_Sheet</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Information_Sheet_CL</compactLayoutAssignment>
+    <label>Assembly Sheet</label>
+    <picklistValues>
+        <picklist>Alarme_de_Temperature__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Door_Types__c</picklist>
+        <values>
+            <fullName>Porte 1400 x 2200mm %281 Battant%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte 2000 x 2200mm %282 Battants%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte Coulissante 2000 x 2200mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte Sectionnelle 1900x2300mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte Sortie de Secours 950x2200mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte ouverture facile Int%2FExt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Duree_Location__c</picklist>
+        <values>
+            <fullName>2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_Type__c</picklist>
+        <values>
+            <fullName>Installation au sol en extérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation en intérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai réalisé par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur béquilles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur gueuses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Noise_Reduction__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Door_Types__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plan_de_Prevention__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prevoir_un_Calage__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Si_Installation_Quai_Pr_ciser__c</picklist>
+        <values>
+            <fullName>Mise à quai réalisée par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur béquilles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur les gueuses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected - Needs Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structure__c</picklist>
+        <values>
+            <fullName>Au Sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>À Quai</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_Porte__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double %28L x h%3A 2000 x 2200%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simple %28L x h%3A 1400 x 2200%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

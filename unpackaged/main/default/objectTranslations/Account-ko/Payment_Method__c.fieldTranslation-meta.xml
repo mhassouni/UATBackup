@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Payment Method --></label>
+        <name>Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Carte Bleue</masterLabel>
+            <translation><!-- Carte Bleue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Espèces</masterLabel>
+            <translation><!-- Espèces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandat</masterLabel>
+            <translation><!-- Mandat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prélèvement</masterLabel>
+            <translation><!-- Prélèvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virement</masterLabel>
+            <translation><!-- Virement --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devis_a_annul</fullName>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>Service_tarification__c</columns>
+    <columns>QUOTE.STATUS</columns>
+    <columns>Pays_Region_PF__c</columns>
+    <columns>Statut_de_la_demande__c</columns>
+    <columns>QUOTE.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CreatedBy</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>QUOTE.STATUS</field>
+        <operation>equals</operation>
+        <value>A Tarifer</value>
+    </filters>
+    <filters>
+        <field>QUOTE.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Quote.Quote_LD_Hors_Standard_Lecture_seule</value>
+    </filters>
+    <filters>
+        <field>Statut_opportunite__c</field>
+        <operation>contains</operation>
+        <value>7,8</value>
+    </filters>
+    <label>Devis à annuler</label>
+    <sharedTo>
+        <group>Tarification</group>
+    </sharedTo>
+</ListView>

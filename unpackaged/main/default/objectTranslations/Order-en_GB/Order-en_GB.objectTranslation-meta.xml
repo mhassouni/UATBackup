@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Billing Order Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Metrics --></label>
+            <section>Billing Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Information --></label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Address --></label>
+            <section>Shipping and Billing Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Order Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OrderContracting --></label>
+            <section>OrderContracting</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Commande Fournisseur</layout>
+        <sections>
+            <label><!-- Informations Commande --></label>
+            <section>Informations Commande</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Opportunité --></label>
+            <section>Informations Opportunité</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- informations système --></label>
+            <section>informations système</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Commande Fournisseur - Administration</layout>
+        <sections>
+            <label><!-- Informations Opportunité --></label>
+            <section>Informations Opportunité</section>
+        </sections>
+        <sections>
+            <label><!-- Informations commande --></label>
+            <section>Informations commande</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- informations système --></label>
+            <section>informations système</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manual Order Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Metrics --></label>
+            <section>Billing Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Information --></label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Interne --></label>
+            <section>Informations Interne</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Address --></label>
+            <section>Shipping and Billing Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PF_Order Layout</layout>
+        <sections>
+            <label><!-- Commentaire Interne --></label>
+            <section>Commentaire Interne</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Information Système --></label>
+            <section>Information Système</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Facturation --></label>
+            <section>Informations Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Finance --></label>
+            <section>Informations Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Livraison --></label>
+            <section>Livraison</section>
+        </sections>
+        <sections>
+            <label><!-- Module de télésurveillance --></label>
+            <section>Module de télésurveillance</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Prolongation --></label>
+            <section>Prolongation</section>
+        </sections>
+        <sections>
+            <label><!-- Validations Internes --></label>
+            <section>Validations Internes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Création d’une Commande</label>
+        <name>Create_Manual_Order</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gestion de Flotte --></label>
+        <name>Manage_Fleet</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Process order usages --></label>
+        <name>process_order_usages</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Commande chez le fournisseur --></description>
+        <label>Supplier Order</label>
+        <name>Commande_fournisseur</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Manual Order for Standalone Orders --></description>
+        <label><!-- Manual Order --></label>
+        <name>Manual_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Container - Order client --></description>
+        <label><!-- Order Client --></label>
+        <name>Order_Client</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- La date doit être identique au champ &quot;Start Date&quot; --></errorMessage>
+        <name>Order_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t contract the order. Activate the order and try again. --></errorMessage>
+        <name>SBQQ__Cannot_Contract_New_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas revenir au statut précédent car les réservations sont déjà créées. Merci de contacter votre administrateur.  --></errorMessage>
+        <name>VR_Bloquer_Modification_du_Champ_Statut</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de préciser la hauteur du auvent --></errorMessage>
+        <name>VR_Order_Auvent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generatea2D7T00000059VyUAI --></label>
+        <name>Generatea2D7T00000059VyUAI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generatea2D7T00000059ovUAA --></label>
+        <name>Generatea2D7T00000059ovUAA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditOrderProducts --></label>
+        <name>SBQQ__EditOrderProducts</name>
+    </webLinks>
+</CustomObjectTranslation>

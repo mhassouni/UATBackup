@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DepotGarantieMD__c</fullName>
+    <label>Dépôt de garantie MD (Grade 1 à 6)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3 mois</fullName>
+                <default>false</default>
+                <label>3 mois</label>
+            </value>
+            <value>
+                <fullName>2 mois</fullName>
+                <default>true</default>
+                <label>2 mois</label>
+            </value>
+            <value>
+                <fullName>1 mois</fullName>
+                <default>false</default>
+                <label>1 mois</label>
+            </value>
+            <value>
+                <fullName>Dispensé</fullName>
+                <default>false</default>
+                <label>Dispensé</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

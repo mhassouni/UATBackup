@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Fonction partenaire --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Fonction partenaire --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation B2B Partie impliquée</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro Partie impliquée --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- B2B --></label>
+        <name>B2B</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas modifier le compte payeur sur cette opportunité. Pour utiliser ce compte en tant que payeur, créez une nouvelle opportunité sur ce compte. --></errorMessage>
+        <name>VR01_InvolvedStakeholder_PayerReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Une partie impliquée existe déjà pour ce rôle. 
+Vous ne pouvez pas en créer une autre, modifiez l&apos;existante. --></errorMessage>
+        <name>VR02_InvolvedStakeholder_OnlyShipToMulti</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas modifier le rôle de la fonction partenaire --></errorMessage>
+        <name>VR03_noUpdateOnRole</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas modifier le compte donneur d’ordre sur cette opportunité. Pour utiliser ce compte en tant que donneur d’ordre, créez une nouvelle opportunité sur ce compte. --></errorMessage>
+        <name>VR04_InvolvedStakeholder_ContractorRO</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AjouterCompteLivre --></label>
+        <name>AjouterCompteLivre</name>
+    </webLinks>
+</CustomObjectTranslation>

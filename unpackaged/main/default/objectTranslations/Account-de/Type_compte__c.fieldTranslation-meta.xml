@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Account-Typ</label>
+        <name>Type_compte__c</name>
+        <picklistValues>
+            <masterLabel>CLIENT CD</masterLabel>
+            <translation>CD-Kunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT CDM</masterLabel>
+            <translation>CDM-Kunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT LD</masterLabel>
+            <translation>LD-Kunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROSPECT</masterLabel>
+            <translation>AUSSICHT</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

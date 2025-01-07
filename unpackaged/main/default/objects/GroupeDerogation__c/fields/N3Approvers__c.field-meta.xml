@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>N3Approvers__c</fullName>
+    <externalId>false</externalId>
+    <formula>N3Approbateur1__r.Email &amp;&#39;|&#39;&amp; N3Approbateur2__r.Email &amp; &#39;|&#39; &amp; N3Approbateur3__r.Email &amp; &#39;|&#39; &amp; N3Approbateur4__r.Email</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Approbateurs N3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

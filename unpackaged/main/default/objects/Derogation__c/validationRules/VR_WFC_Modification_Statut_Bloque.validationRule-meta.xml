@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_WFC_Modification_Statut_Bloque</fullName>
+    <active>true</active>
+    <description>interdire le demandeur à modifier le statut.</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Statut__c)
+,
+OR(Text(Statut__c) = &#39;Annulée&#39;,Text(Statut__c) = &#39;Acceptée&#39;)
+,
+$User.ProfileId &lt;&gt; $Label.USR_ProfileId_PFTarification 
+, 
+$User.ProfileId &lt;&gt; $Label.USR_ProfileId_PFAdministrateurSysteme
+,
+$User.ProfileId &lt;&gt;  $Label.USR_ProfileId_PFCentrale
+)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Vous n&#39;étes pas autorisé à modifier le statut de la dérogation.</errorMessage>
+</ValidationRule>

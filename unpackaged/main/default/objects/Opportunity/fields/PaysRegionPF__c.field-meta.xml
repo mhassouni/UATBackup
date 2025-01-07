@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaysRegionPF__c</fullName>
+    <inlineHelpText>Pays ou Région (FR) selon l&#39;implémentation des agences PF</inlineHelpText>
+    <label>Pays / Région PF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DRO IDF 1</fullName>
+                <default>false</default>
+                <label>DRO IDF 1</label>
+            </value>
+            <value>
+                <fullName>DRO IDF 2</fullName>
+                <default>false</default>
+                <label>DRO IDF 2</label>
+            </value>
+            <value>
+                <fullName>DROM</fullName>
+                <default>false</default>
+                <label>DROM</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 1</fullName>
+                <default>false</default>
+                <label>DRO NORD 1</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 2</fullName>
+                <default>false</default>
+                <label>DRO NORD 2</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 3</fullName>
+                <default>false</default>
+                <label>DRO NORD 3</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 4</fullName>
+                <default>false</default>
+                <label>DRO NORD 4</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 5</fullName>
+                <default>false</default>
+                <label>DRO NORD 5</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 6</fullName>
+                <default>false</default>
+                <label>DRO NORD 6</label>
+            </value>
+            <value>
+                <fullName>DRO NORD 7</fullName>
+                <default>false</default>
+                <label>DRO NORD 7</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 1</fullName>
+                <default>false</default>
+                <label>DRO SUD 1</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 2</fullName>
+                <default>false</default>
+                <label>DRO SUD 2</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 3</fullName>
+                <default>false</default>
+                <label>DRO SUD 3</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 4</fullName>
+                <default>false</default>
+                <label>DRO SUD 4</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 5</fullName>
+                <default>false</default>
+                <label>DRO SUD 5</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 6</fullName>
+                <default>false</default>
+                <label>DRO SUD 6</label>
+            </value>
+            <value>
+                <fullName>DRO SUD 7</fullName>
+                <default>false</default>
+                <label>DRO SUD 7</label>
+            </value>
+            <value>
+                <fullName>PFM</fullName>
+                <default>false</default>
+                <label>PFM</label>
+            </value>
+            <value>
+                <fullName>PFUK</fullName>
+                <default>false</default>
+                <label>PFUK</label>
+            </value>
+            <value>
+                <fullName>PIAE</fullName>
+                <default>false</default>
+                <label>PIAE</label>
+            </value>
+            <value>
+                <fullName>PIAT</fullName>
+                <default>false</default>
+                <label>PIAT</label>
+            </value>
+            <value>
+                <fullName>PIBE</fullName>
+                <default>false</default>
+                <label>PIBE</label>
+            </value>
+            <value>
+                <fullName>PICH</fullName>
+                <default>false</default>
+                <label>PICH</label>
+            </value>
+            <value>
+                <fullName>PICZ</fullName>
+                <default>false</default>
+                <label>PICZ</label>
+            </value>
+            <value>
+                <fullName>PIDE</fullName>
+                <default>false</default>
+                <label>PIDE</label>
+            </value>
+            <value>
+                <fullName>PIES</fullName>
+                <default>false</default>
+                <label>PIES</label>
+            </value>
+            <value>
+                <fullName>PIHU</fullName>
+                <default>false</default>
+                <label>PIHU</label>
+            </value>
+            <value>
+                <fullName>PILU</fullName>
+                <default>false</default>
+                <label>PILU</label>
+            </value>
+            <value>
+                <fullName>PIMA</fullName>
+                <default>false</default>
+                <label>PIMA</label>
+            </value>
+            <value>
+                <fullName>PIND</fullName>
+                <default>false</default>
+                <label>PIND</label>
+            </value>
+            <value>
+                <fullName>PIPL</fullName>
+                <default>false</default>
+                <label>PIPL</label>
+            </value>
+            <value>
+                <fullName>PIPT</fullName>
+                <default>false</default>
+                <label>PIPT</label>
+            </value>
+            <value>
+                <fullName>PIRL</fullName>
+                <default>false</default>
+                <label>PIRL</label>
+            </value>
+            <value>
+                <fullName>PIRO</fullName>
+                <default>false</default>
+                <label>PIRO</label>
+            </value>
+            <value>
+                <fullName>PISK</fullName>
+                <default>false</default>
+                <label>PISK</label>
+            </value>
+            <value>
+                <fullName>PITA</fullName>
+                <default>false</default>
+                <label>PITA</label>
+            </value>
+            <value>
+                <fullName>PIZA</fullName>
+                <default>false</default>
+                <label>PIZA</label>
+            </value>
+            <value>
+                <fullName>STFR1</fullName>
+                <default>false</default>
+                <label>STFR1</label>
+            </value>
+            <value>
+                <fullName>STFR2</fullName>
+                <default>false</default>
+                <label>STFR2</label>
+            </value>
+            <value>
+                <fullName>STFR3</fullName>
+                <default>false</default>
+                <label>STFR3</label>
+            </value>
+            <value>
+                <fullName>STFR4</fullName>
+                <default>false</default>
+                <label>STFR4</label>
+            </value>
+            <value>
+                <fullName>STFR5</fullName>
+                <default>false</default>
+                <label>STFR5</label>
+            </value>
+            <value>
+                <fullName>USA</fullName>
+                <default>false</default>
+                <label>USA</label>
+            </value>
+            <value>
+                <fullName>Zone Dev 1</fullName>
+                <default>false</default>
+                <label>Zone Dev 1</label>
+            </value>
+            <value>
+                <fullName>CONSTANTIN</fullName>
+                <default>false</default>
+                <label>CONSTANTIN</label>
+            </value>
+            <value>
+                <fullName>DION</fullName>
+                <default>false</default>
+                <label>DION</label>
+            </value>
+            <value>
+                <fullName>DRACULA</fullName>
+                <default>false</default>
+                <label>DRACULA</label>
+            </value>
+            <value>
+                <fullName>LEGO</fullName>
+                <default>false</default>
+                <label>LEGO</label>
+            </value>
+            <value>
+                <fullName>ZEUS</fullName>
+                <default>false</default>
+                <label>ZEUS</label>
+            </value>
+            <value>
+                <fullName>SV Noleggio</fullName>
+                <default>false</default>
+                <label>SV Noleggio</label>
+            </value>
+            <value>
+                <fullName>Reways</fullName>
+                <default>false</default>
+                <label>Reways</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Il/Lui</fullName>
+        <default>false</default>
+        <label>Il/Lui</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Elle/Elle</fullName>
+        <default>false</default>
+        <label>Elle/Elle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ils/Eux</fullName>
+        <default>false</default>
+        <label>Ils/Eux</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Il/Ils</fullName>
+        <default>false</default>
+        <label>Il/Ils</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Elle/Elles</fullName>
+        <default>false</default>
+        <label>Elle/Elles</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non répertorié</fullName>
+        <default>false</default>
+        <label>Non répertorié</label>
+    </standardValue>
+</StandardValueSet>

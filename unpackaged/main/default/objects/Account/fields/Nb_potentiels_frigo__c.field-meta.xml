@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nb_potentiels_frigo__c</fullName>
+    <description>Retourne vide si aucun potentiel
+Retourne la somme des quantités des potentiels le cas échéant</description>
+    <externalId>false</externalId>
+    <formula>if( count_potentiel_frigo__c = 0 ,NULL, (PotentielVehiculesFrigo__c) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nb potentiels frigo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

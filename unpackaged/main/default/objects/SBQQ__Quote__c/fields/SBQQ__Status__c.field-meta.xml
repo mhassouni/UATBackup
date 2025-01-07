@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Status indicating where quote is in its lifecycle.</description>
+    <inlineHelpText>Statut indiquant la position du devis dans son cycle de vie.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rapport de visite</fullName>
+                <default>false</default>
+                <label>Rapport de visite</label>
+            </value>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Brouillon</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>En Cours</label>
+            </value>
+            <value>
+                <fullName>En Attente d&#39;approbation</fullName>
+                <default>false</default>
+                <label>En Attente d&#39;approbation</label>
+            </value>
+            <value>
+                <fullName>Approuvé</fullName>
+                <default>false</default>
+                <label>Approuvé</label>
+            </value>
+            <value>
+                <fullName>Quote Sent</fullName>
+                <default>false</default>
+                <label>Devis Envoyé</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Devis Refusé</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Devis Signé</label>
+            </value>
+            <value>
+                <fullName>Presented</fullName>
+                <default>false</default>
+                <label>Presented</label>
+            </value>
+            <value>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+                <label>Accepted</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Draft (No Product)</fullName>
+                <default>false</default>
+                <label>Brouillon (sans produits)</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Annulé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

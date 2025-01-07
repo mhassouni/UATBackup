@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Partner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Primary partner on this deal (if any). Defaulted to partner marked as primary in Partners related list on the opportunity.</description>
+    <inlineHelpText>Partenaire principal de cette affaire (le cas échéant). Ce champ utilise par défaut le partenaire marqué comme principal dans la liste associée Partenaires de l&#39;opportunité.</inlineHelpText>
+    <label>Partner</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Partner Quotes</relationshipLabel>
+    <relationshipName>PartnerQuotes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

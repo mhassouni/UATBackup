@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>PF Company</label>
+        <name>Societe_PF__c</name>
+        <picklistValues>
+            <masterLabel>FRIDENGO</masterLabel>
+            <translation><!-- FRIDENGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LECAPITAINE</masterLabel>
+            <translation><!-- LECAPITAINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFLO</masterLabel>
+            <translation><!-- PFLO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFM</masterLabel>
+            <translation><!-- PFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR</masterLabel>
+            <translation><!-- STFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SV</masterLabel>
+            <translation><!-- SV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVAD</masterLabel>
+            <translation><!-- SVAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVCC</masterLabel>
+            <translation><!-- SVCC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

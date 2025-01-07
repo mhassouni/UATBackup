@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__QuoteLineFields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>QuoteLine__c fields referenced by the plugin</description>
+    <inlineHelpText>Saisissez les noms d&#39;API de tous les champs Ligne de devis référencés par ce plug-in, un par ligne.</inlineHelpText>
+    <label>Quote Line Fields</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

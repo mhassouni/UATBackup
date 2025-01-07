@@ -1,0 +1,6305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunit_creee</fullName>
+    <active>true</active>
+    <businessProcess>Opportunité Créée</businessProcess>
+    <compactLayoutAssignment>Panneau_de_presentation_Opportunity</compactLayoutAssignment>
+    <label>Opportunité créée</label>
+    <picklistValues>
+        <picklist>AgencePF__c</picklist>
+        <values>
+            <fullName>000 - SIEGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>001 - VILLEPINTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>002 - BORDEAUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>003 - ROUEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>004 - RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>005 - TOULOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>006 - NANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>007 - PAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>008 - DIJON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>009 - TOURS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010 - LYON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>011 - PLAISIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>012 - CAEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>014 - LILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>015 - NIORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>016 - NÎMES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>017 - ANGERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>018 - METZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>019 - ORLEANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020 - REIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>021 - RENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>022 - CLERMONT-FERRAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>023 - LE HAVRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>024 - MARSEILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>025 - ANNECY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>026 - MULHOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>027 - LUXEMBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>028 - BEZONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>029 - PERPIGNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030 - LIÈGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>031 - QUIMPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>032 - LIMOGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>033 - CHILLY MAZARIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>034 - BRUSSELS HUIZINGEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>035 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>036 - GRENOBLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>037 - BOURGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>038 - AMIENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>039 - ST BRIEUC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040 - TOULON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>041 - TROYES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>042 - BAYONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>043 - STRASBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>044 - LE MANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>045 - ROTTERDAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>046 - BARCELONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>047 - RODEZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>048 - CHAMBERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>049 - ELOYES EPINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050 - MONTPELLIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>051 - BOULOGNE SUR MER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>052 - DIEPPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>054 - VALENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>055 - NANCY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>056 - MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>057 - EMERAINVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>058 - CANNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>059 - BREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060 - SAINT-ETIENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>061 - M%2EI%2EN%2E DE RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>062 - EVREUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>063 - AVIGNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>065 - ANTWERPEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>066 - LETCHWORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>068 - KINGSBURY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>069 - SOUTH LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070 - CARDIFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071 - MANCHESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>072 - GLASGOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>073 - BIRMINGHAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>074 - DURHAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>075 - BESANCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>076 - CHOLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>077 - LA ROCHE SUR YON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>078 - MACON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>079 - SISTERON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>081 - BASTIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>083 - AGEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>084 - CORNWALL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>085 - CHARTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>086 - BILBAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>087 - EMERAINVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>088 - ORLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>089 - CHILLY MAZARIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>092 - VILLENEUVE LA GARENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>093 - MONTREUIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>094 - RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>095 - BEZONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>096 - ALENCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>097 - VANNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>099 - MONT DE MARSAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 - POITIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101 - TARBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>102 - SOUTHAMPTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>103 - MONTIGNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>104 - VALENCIENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>105 - STRASBOURG MIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>106 - VALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>107 - WEST LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>108 - BRISTOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>109 - CREIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110 - MAASTRICHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>111 - AUXERRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>112 - VARSOVIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>113 - LEEDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>114 - ANNEMASSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>115 - ROUEN MIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>116 - LAUSANNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>118 - MELESSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>119 - ROCHEFORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120 - LISBONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>121 - ESTREES-MONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>122 - LIVERPOOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>124 - LISIEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>125 - FREJUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>126 - ROGNAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>127 - AJACCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>128 - BRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>129 - TERESIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>130 - RUDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>131 - MONTELIMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>132 - THIAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>133 - ANGOULEME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>134 - CARCASSONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>135 - LENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>136 - COLMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 - GRENAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>146 - MALAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>147 - CARHAIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>148 - COURCOURONNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>149 - TORINO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 - MILANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>151 - GENOVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>153 - ROMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>156 - PISTOIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>157 - ST AVOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>158 - DUBLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160 - ZURICH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>164 - PORTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>165 - CASABLANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>166 - CORDOBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>167 - ST OUEN L%27AUMONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>171 - SAN SEBASTIAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>172 - PIERRELATTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>174 - MOUSCRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>175 - WARRINGTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>176 - GIRONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>177 - LIEUSAINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>178 - MURCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>179 - WARSZAWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>183 - LODZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>184 - POZNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>185 - AUCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>186 - MONTMARAULT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>187 - BEZIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>188 - ZARAGOZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>189 - PERIGUEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190 - LISSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>191 - GIRONA TALLER CENTRAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>192 - LAVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>193 - MALLORCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>194 - BEGLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>195 - GENEVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>199 - GLOUCESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 - KÖLN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>201 - BORDEAUX LE HAILLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>202 - DAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>203 - LE HAILLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>204 - MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>204 - PFM MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>205 - LORIENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>206 - MARSEILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>207 - TARRAGONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>208 - GDANSK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>209 - AMSTERDAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>210 - SEVILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>211 - WROCLAW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>212 - GENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>213 - LYON BRIGNAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>214 - AUBAGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>215 - BRIGNAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>216 - MARTIGNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>218 - CORUÑA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>219 - LONS LE SAUNIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>220 - SANTANDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>221 - FRIBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>222 - BELFAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>223 - ALICANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>224 - LEIPZIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>225 - BICESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>226 - TOULOUSE PORTET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>228 - STRASBOURG ENTZHEIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>229 - RUNGIS CIRCULAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>230 - FARO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>231 - GRANOLLERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>233 - EINDHOVEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>234 - NAMUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>235 - LA REUNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>236 - TOULOUSE CONTAINERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>237 - PRAHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>238 - PAMPLONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>239 - MÜNCHEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>240 - SAINT-LO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>242 - VALLADOLID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>244 - CADIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>245 - SARREGUEMINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>246 - CARQUEFOU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>247 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>248 - LAS PALMAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>249 - IBIZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>250 - CASTELNAUDARY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>251 - BLOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>252 - TENERIFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>253 - COIMBRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>254 - BERLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>255 - FRANKFURT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>256 - MONZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>257 - VILLEPINTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>258 - SAINT-NAZAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>259 - WIEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>260 - POINTE A PITRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>262 - HASSELT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>263 - BUDAPEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>264 - LIÈGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>265 - ESSEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>266 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>267 - LYON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>268 - JOHANNESBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>269 - ALBI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>270 - BOLOGNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>271 - LUBLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>272 - KRAKÓW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275 - DURBAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>278 - HAMBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>281 - LILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>289 %2F NY - BROOKLYN KINGSLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>290 %2F NY - BRONX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>291 %2F NY - BROOKLYN FOSTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>292 %2F NY - NEWARK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>293 %2F NY - LONG ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>294 %2F NY - LAKEWOOD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>299 - DUBAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 - BORDEAUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>302 - SECLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>304 - ILE MAURICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>305 - CAVAILLON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>306 %2F MADRID - COSLADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>309 - BIALYSTOCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>310 - RZESZÓW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>312 - MADRID CONTAINERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 - MERIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>315 - BRUSSELS NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>318 - CAPE TOWN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>319 - TICINO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>322 - FORT DE FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>325 - LLEIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>327 - KOSZALIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>328 - BALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>329 - ASTURIAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>330 - MADRID MOSTOLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>334 - GRUDZIĄDZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>335 - OLSZTYN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>342 - TERESIN-GAJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>901 - LEGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>902 - ZEUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>903 - DION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>904 - CONSTANTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>905 - DRACULA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRATISLAVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUCAREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHE - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEU - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESP - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRA - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBR - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRL - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITA - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAR - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NLD - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POL - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRT - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPT - HO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Catalogue_FlowInput__c</picklist>
+        <values>
+            <fullName>BR_ST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR_ST_FRANCE BOISSON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_DPT-REST%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_EUROTRANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_PF_SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS_ST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HY_ST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HY_ST_KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE_ST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categorie__c</picklist>
+        <values>
+            <fullName>0m50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0m70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0m90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1m90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2m00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2m50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etal à poisson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16%28Frigo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réfrigerateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Showmaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-1m30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T-2m00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tour pâtissière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8 %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Code_PF_FlowInput__c</picklist>
+        <values>
+            <fullName>100E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E19 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E19 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E19 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E19 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E21 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E21 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100E21 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1018 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1018 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1018 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1021 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1021 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CB_LIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E19 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E21 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E21 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E21 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E21 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E22 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120E22 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120EL21 G CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120EL21 G CBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120EL21 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120EL21 G CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120EL21 G CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1218 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1218 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1218 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1221 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1221 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1318 CB - FRANCE BOISSONS - LIBNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1318 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1321 CB - FRANCE BOISSONS - LIBNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1321 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E19 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E19 CB_LIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E21 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E21 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E21 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E21 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140E22 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1518 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1521 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 G CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E21 G CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E22 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E22 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E22 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160E25 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180E25 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180E28 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180EL25 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180EL28 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1824 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1827 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1827 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1830 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1830 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1840 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1843 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL25 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL28 CBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL28 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL28 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL28 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL28 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL32 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190EL32 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2532 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FF %28CCM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FF %28L1H1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FF %28L2H1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FF %28L2H1-CCM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FI %28CCM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FI %28L1H1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FI %28L2H1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 FI %28L2H1-CCM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 BEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF - BV-Manuelle - Cloison Longitudinale ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF - BV-Manuelle - ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF API - B%2EV%2E Manuelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF Cloison Longitudinale ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF Cloison Longitudinale ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF Cloison Longitudinale ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF Dpt Rest - BV%2EMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF LONG Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF LONG Dpt Rest - BV%2EMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 FF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 FI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16-3L CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16-3L CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16-3L CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C16-3L CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C18 TR Maxicargo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35C18 TR Maxicargo Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF - BV-Manuelle - ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF ELIOR %2F B%2EV%2E Hi-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 FF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 FI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S14 FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S16 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35S16-3L CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38S14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38S14 G FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF - BV-Manuelle - ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF API - B%2EV%2E Manuelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF Dpt Rest - BV%2EMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF LONG Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF LONG Dpt Rest - BV%2EMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40C14 G FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C16 CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C16 CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C16 CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C16 LONG Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50C18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>514 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>514 FF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>514 FI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60C16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60C16 CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65C14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65C14 G CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65C14 G CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70C18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70C18 CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70C18 CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70C18 FF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C14 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72C18 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E16 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E16 CH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E16 CH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E16 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E19 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75E19 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7C15 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7C18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80E21 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>816-75 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>816-75 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>816-75 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>816-85 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>818-75 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>818-75 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>818-85 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AD260S31 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AD260S33 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT440S46 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF320%2E26 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF340%2E26 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF450%2E19 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR65%2E140CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E210 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E210 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E210 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E240 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D10%2E240 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E210 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E210 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E210 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E210 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E240 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E240 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D12%2E240 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E210 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E210 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E210 CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E210 CF Dpt Rest_Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E240 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D14%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E210 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E210 CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E210 CF Dpt Rest_Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E210 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E210 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E240 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E240 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D16%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D18%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D18%2E280 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D18%2E320 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E280 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E280 CF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E280 CF Dpt Rest_Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E280 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E320 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E320 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D19%2E320 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D26%2E320 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D26%2E320 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7%2C5%2E210 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7%2C5%2E210 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7%2C5%2E210 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7%2C5%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOCI SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF - X200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFI SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFS ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBOFS G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF EUROT RANSPHARMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCH G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCH-CC SOLIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCI G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOCS G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF G SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF-3T5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF-LECAP API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF-LECAP COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFF-LECAP SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFH G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI G ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI G ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI G ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI-3T5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI-LECAP COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI-LECAP G ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFI-LECAP SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E3T-CH1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E3T-CH2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E3T-LH2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E3T-MH1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E5T-LH3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E5T-MH2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E5T-XLH2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3%2E5T-XLH3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3T-CH2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-3T-MH1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-LH3 G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-XLH2 G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCOFS-XLH3 G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DYNA CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGSCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FT850%2E240 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H195 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H258 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H338 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCEFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JYCF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JYCF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFF E SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFI E SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOFS E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L200CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF150%2E08-75 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF150%2E08-75 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF150%2E08-75 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF170%2E08-75 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF170%2E08-75 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF170%2E08-75 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E08-75 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E10 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E10 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E10 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E12 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E12 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E12 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E12 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E14 CB - FRANCE BOISSONS - LIBNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF180%2E14 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E10 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E10 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E10 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E12 CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E12 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E12 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E12 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E14 CB - FRANCE BOISSONS - LIBNER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E14 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E16 CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF210%2E16 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF230%2E18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF260%2E16 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF260%2E16 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF260%2E18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF260%2E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF290%2E18 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF290%2E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF290%2E19 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF320%2E19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LF320%2E19 CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2106 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2112 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCF E SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCH KALHYGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCH KALHYGE - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRCS E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFH E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E3T-L1H2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L1H1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L1H2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L2H2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L2H3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L3H2-Propulsion RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L3H2-Propulsion RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L3H3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L3H3-Propulsion RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L3H3-Propulsion RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L4H2-Propulsion RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L4H2-Propulsion RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L4H3-Propulsion RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRFS-3%2E5T-L4H3-Propulsion RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N75%2E150 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPR130%2E65 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NQR500%2E150 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PKE 250%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE M CF Maxicargo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE M CF Maxicargo Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP 250 DB 19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP 280 DB 19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP 280 DB 19 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP 320 DB 19 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP 340 DB 19 G CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCR450LA TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEM CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEM CF CARGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T19%2E430 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T19%2E460 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCCF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFF EDC - ECP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFI EDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFI EDC - ECP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCFS-EDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TGM 15%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TGM 18%2E250 CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF COMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF Dpt Rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF ELIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF ELIOR - AO 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF ELIOR - AO 2020 - OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCF SODEXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLOFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTFFCONNECT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTFFCUSTOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVNFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOFS BVA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Code_Pays_FlowInput__c</picklist>
+        <values>
+            <fullName>AE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AE_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AE_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT_DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE_DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE_NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH_DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH_IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ_CZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE_DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES_ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT_IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MU_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MU_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL_NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT_PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US_FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZA_EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZA_FR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Couleur__c</picklist>
+        <values>
+            <fullName>BYF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RYF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VYF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DNP_Statut__c</picklist>
+        <values>
+            <fullName>Anuulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approuvée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente DG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejetée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flow_Type_de_produit_B2B__c</picklist>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flow_Type_produit__c</picklist>
+        <values>
+            <fullName>Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meuble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Sec</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flow_type_produit_B2C__c</picklist>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Achat Fichier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annuaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel Entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filiale Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groupement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing %2F Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opération Commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pages Jaunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommandation Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repérage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site PF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Liste_nom_operation__c</picklist>
+        <values>
+            <fullName>100%25 Client PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25 FRAIKIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANUGA 2021 - Cologne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDD ALIMARKET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORENT CUSTOMER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichier AAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTEREST FOR CONTAINERS%2FCOLSTORE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORESTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIBELUX Comptes N%27ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICH Zürich Engrosmarkt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESTART AFTER COVID-19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEMI-MARATHON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNIPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbotel 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sirha 2023</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotifEchecPrincipal__c</picklist>
+        <values>
+            <fullName>Distance géographique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etat d%27esprit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nom_Operation_Global__c</picklist>
+        <values>
+            <fullName>100%25 Client PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25 FRAIKIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANUGA 2021 - Cologne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDD ALIMARKET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUY AND RENT BACK ACTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARUUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELECTRIC PIONEER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDEREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FREDEREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORENT CUSTOMER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fichier AAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROSSMARKT HAMBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTEREST FOR CONTAINERS%2FCOLSTORE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERNATIONAL TARGETS NCEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LABORATOIRE DE BIOLOGIE MEDICALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORESTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHONING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIBELUX Comptes N%27ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICH Zürich Engrosmarkt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIND PROJECT REGIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Sales Bruxelles-Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESTART AFTER COVID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESTART AFTER COVID-19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEMI-MARATHON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIRHA 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNIPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon du Mondial du Fromages 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbotel 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sirha 2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOLTA TRUCKS CANDIDATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZEFIRENT BELUX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PaysRegionPF__c</picklist>
+        <values>
+            <fullName>CONSTANTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRACULA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO IDF 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO IDF 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO NORD 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRO SUD 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFUK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIAE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIHU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PILU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIRL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PISK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PITA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STFR1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STFR2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STFR3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STFR4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STFR5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZEUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone Dev 1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Porte_de_sortie__c</picklist>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Probabilite_signature__c</picklist>
+        <values>
+            <fullName>0%25 %28Perdu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25 %28Signé%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%25 %28Peu probable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 %28Probable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%25 %28Très probable%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RaisonCloture__c</picklist>
+        <values>
+            <fullName>Annulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus %28Interne%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SourceOpportunite__c</picklist>
+        <values>
+            <fullName>Achat Fichier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annuaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appel Entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing %2F Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opération Prospection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pages Jaunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repérage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site PF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SousCategorie__c</picklist>
+        <values>
+            <fullName>Armoire Porte Pleine Froid %28%2B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire Porte Pleine Froid %28-%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire Vitrée Champignon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire de stockage 400 L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire double vitrée 875L %28%2B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire porte pleine %28%2B%29 640L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire porte pleine %28%2B%2F-%29640L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire réfrigérée P%2EPleine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armoire à Boissons Visicooler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac 1m mixte standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac 1m positif standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac BLS110 mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac Service Arrière standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 1m50 mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 1m50 positif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 2m00 mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 2m00 négatif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 2m00 positif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bac libre service 2m50 mixte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C22XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C24XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C26XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C28XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C29XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF85</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congelateur Ice Cream 7 bacs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congél vitré couv relevab 550L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congél%2E coffre vitre coul 405L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congél%2E couv%2E relevable 518L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur Ice Cream 9 Bacs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur coffre 468 litres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur counter 50L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur porte coulis%2E 664L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur porte vitrée 119 L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congélateur pte vit%2E rel%2E 570L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etal Poissons Inox 2M20x1M10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etal Poissons Réfrigéré 2m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L12XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L14XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L16XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L18XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L20XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L22XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L24XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L26XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meuble Semi-vertical 1%2E30m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meuble Showmaster%2CRond%2C1m10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meuble Showmaster%2CRond%2C1m47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16EH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16IH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16MH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16PH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P16XH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réfrigérateur %2B freezer 97%2B11L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réfrigérateur 140L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tour patissière 2p - granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tour patissière 2p - inox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V10XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V12XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V8XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vit Nég Gris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vitr Gris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vitrées %28%2B%29 AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vitrées %28-%29 AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vitrées Négat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 4 Faces Vitrées froid%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 6 Faces Froid négatif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 6 Faces Froid positif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine 6 Faces positif gris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Libre-Service 0m50 Positif Noir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Libre-Service 1m40 Négative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Porte Vitrée Négatif 0m67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Porte Vitrée Positif 0m67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Semi Verticale 1m00 Noir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Semi Verticale 1m55 Noir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Traiteur 2m</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine Traiteur droite noire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine patissière ventilée 91</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine patissière ventilée106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine patissière ventilée136</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine patissière ventilée141</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine patissière ventilée166</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine service arrière 134%28-%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine traiteur 1m30 standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine traiteur 2m00 standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine verticale 0m70 standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine verticale 0m90 standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine verticale 1m 30 standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrine verticale 1m 90 standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SousFamille__c</picklist>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V %28Dry%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standard_PF_FlowInput__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H10</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatutWorkflowCommerce__c</picklist>
+        <values>
+            <fullName>Analyse en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chiffrage en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours sauvegardé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fermé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soumis pour analyse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soumis pour chiffrage au SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soumis pour chiffrage à LC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soumis pour tarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sélection du tarif en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarification en cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarification soumise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_demande_agrement__c</picklist>
+        <values>
+            <fullName>En cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réalisée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_validation__c</picklist>
+        <values>
+            <fullName>En cours validation Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours validation Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusé Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusé Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TECHPaysCompte__c</picklist>
+        <values>
+            <fullName>AFRIQUE DU SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALBANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALGERIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLEMAGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANDORRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANGOLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARABIE SAOUDITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARGENTINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARMENIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUSTRALIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTRICHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAHREIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BELARUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BELGIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BERMUDES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOLIVIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOSNIE HERZEGOVINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOTSWANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRESIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BULGARIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BURKINA FASO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBODGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMEROUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHILI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHYPRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CISJORDANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLOMBIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMORES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONGO REPUBLIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COREE DU NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COREE DU SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COSTA RICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COTE D%27IVOIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CROATIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DANEMARK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EGYPTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMIRATS ARABES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESPAGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTONIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETATS UNIS D%27AMERIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETHIOPIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FINLANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GABON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAMBIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEORGIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GHANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRECE %28REPUBLIQUE HELLENIQUE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUADELOUPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUATEMALA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUINEE EQUATORIALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUINEE FRANCAISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAITIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HONG KONG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HONGRIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILE MAURICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDONESIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRLANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISLANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISRAEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITALIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAMAIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAPON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JORDANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KENYA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LESOTHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LETTONIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBYE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIECHTENSTEIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LITUANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUXEMBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACEDOINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADAGASCAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MALAISIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MALI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MALTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAROC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARTINIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAURITANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAYOTTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEXIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOLDAVIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONACO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONGOLIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOZAMBIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAMIBIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIGER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIGERIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORVEGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOUVELLE CALEDONIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOUVELLE ZELANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARAGUAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAYS - BAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEROU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHILIPPINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POLOGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POLYNESIE FRANCAISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PORTUGAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QATAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPUBLIQUE CENTRAFRICAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPUBLIQUE DOMINICAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPUBLIQUE TCHEQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REUNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROUMANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROYAUME UNI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RUSSIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAINTE LUCIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SALVADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SENEGAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERBIE - MONTENEGRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINGAPOUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLOVAQUIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SLOVENIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOUDAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ST PIERRE ET MIQUELON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUEDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUISSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYRIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAIWAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANZANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCHAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>THAILANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TUNISIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURQUIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UKRAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>URUGUAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VENEZUELA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIETNAM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Nouveau %28NCT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renouvellement %28RNV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplémentaire %28SUP%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeActiviteChoisi__c</picklist>
+        <values>
+            <fullName>Location avec chauffeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location sans chauffeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propriété</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport dernier kilomètre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporteur public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeActivite__c</picklist>
+        <values>
+            <fullName>Location Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouveau besoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propriété</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporteur public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeAppelOffre__c</picklist>
+        <values>
+            <fullName>Divers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Négocié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeContrat__c</picklist>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeProduits__c</picklist>
+        <values>
+            <fullName>Carrosseries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigerated vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Location__c</picklist>
+        <values>
+            <fullName>Courte Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Longue Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne Durée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypedeDevis__c</picklist>
+        <values>
+            <fullName>Devis Assemblage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Hors Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

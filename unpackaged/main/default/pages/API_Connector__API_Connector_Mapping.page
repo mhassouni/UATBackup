@@ -1,0 +1,135 @@
+<apex:page Controller="API_Connector.Engine" lightningStyleSheets="true" standardStylesheets="false" applyBodyTag="false" docType="html-5.0"
+    showHeader="true" extensions="API_Connector.APIConectorResult">
+    <!--{!$CurrentPage.parameters.local}-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <apex:slds />
+
+    <script data-require="angular-resource@1.2.14" data-semver="1.2.14" src="https://code.angularjs.org/1.2.14/angular-resource.js"></script>
+    <style type="text/css">
+        .slds-scope button[disabled] {
+            cursor: not-allowed !important;
+        }
+
+        .slds-button_neutral:hover:enabled {
+            background-color: #d8d6d6 !important;
+        }
+
+        .slds-scope .slds-table_cell-buffer tr>td:last-child {
+            padding-right: 0.5rem !important;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 21px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #0076de;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #0076de;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+
+        .slider.round {
+            border-radius: 34px;
+            height: 27px;
+            width: 54px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+    <c:GlobalResources local="{!$CurrentPage.parameters.local}" application_CSS="wizard.css,toaster.css" application_JS="toasterApp.js,wizardapp.js"
+        vendor_CSS="angular/angular-toaster.css,jquery/chosen.min.css,jquery/jquery-ui.css" vendor_JS="jquery/jquery.min.js,angular/angular.min.js,angular/angular-messeges.js,jquery/chosen.jquery.min.js,jquery/jquery-ui.js,angular/angular-animate.min.js,angular/angular-toaster.js,jquery/jquery.maskedinput.min.js,jquery/xdate.js">
+    </c:GlobalResources>
+
+
+    <div class="slds-scope" ng-app="wizardApp">
+        <toaster-container toaster-options="{'time-out': 5000}"></toaster-container>
+        <div id="wizard-container" ng-controller="WizardController" data-ng-init="onloadFun()" style="padding-top: 10px;">
+            <div class="slds-wizard" role="navigation">
+                <ol class="slds-wizard__list">
+                    <li class="slds-wizard__item" ng-repeat="step in steps" ng-class="{'slds-is-active':step.step <= currentStep} ">
+                        <a href="javascript:void(0);" ng-click="gotoStep(step.step)" class="slds-wizard__link">
+                            <span class="slds-wizard__marker"></span>
+                            <span class="slds-wizard__label slds-text-heading--label slds-truncate">{{step.name}}</span>
+                        </a>
+                    </li>
+                </ol>
+                <span class="slds-wizard__progress" style="z-index:0;">
+                    <span class="slds-wizard__progress-bar" style="width:{{steps[currentStep-1].progress}}"></span>
+                </span>
+            </div>
+            <br/>
+            <br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-3">
+                    <div style="font-weight: bold;" ng-show="currentStep != 1">{{selectService.Name}}</div>
+                </div>
+                <div class="slds-col slds-size_1-of-3" ng-if="currentStep == 5 && selectService.Name == 'Risk Datablocks | Account page | http://www.altares.fr'">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_5-of-12" style="font-weight: bold;">Recommended fields</div>
+                        <div class="slds-col slds-size_5-of-12">
+                            <label class="switch">
+                                <input type="checkbox" ng-model="objRiskDatablockService.isOnlyRecommended" ng-click="assignmentOfResponseField()">
+                                <span class="slider round"></span>
+                                </input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wizard-content-container" style="padding-top: 20px;">
+                <ng-include src="getStepTemplate()"></ng-include>
+            </div>
+            <div class="slds-button-group slds-float_right" role="group">
+                <button ng-disabled="currentStep <= 1" class="slds-button slds-button_neutral" ng-click="gotoStep(currentStep - 1)">{!$Label.Previous_step}</button>
+                <button ng-disabled="currentStep >= steps.length" class="slds-button slds-button_neutral" ng-click="gotoStep(currentStep + 1)">{!$Label.Next_step}</button>
+                <button ng-disabled="currentStep == 1 || currentStep == 3 || currentStep == 4 || currentStep == 5" class="slds-button slds-button_neutral"
+                    ng-click="saveDetails()" type="submit">{!$Label.Save}</button>
+            </div>
+        </div>
+    </div>
+</apex:page>

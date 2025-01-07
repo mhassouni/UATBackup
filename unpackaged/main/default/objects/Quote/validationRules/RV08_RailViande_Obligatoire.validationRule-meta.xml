@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV08_RailViande_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si penderie est renseigné ,nombre de crochet par rail et rail viande qte sont obligatoire</description>
+    <errorConditionFormula>AND
+(
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISPICKVAL(Penderie__c,&quot;&quot; ))
+,
+OR(
+ISBLANK(  Nombre_de_crochet_par_rail__c )
+,
+ISBLANK(Rail_viande_Qte__c ))
+,
+CreatedDate &gt; DATETIMEVALUE( &quot;2022-11-21 00:00:00&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Penderie__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner le &quot;Crochet par rail à viande (Qté)&quot; et &quot;Penderie  / Porte cintre (Qté)
+&quot; si &quot;Penderie / Porte cintre (Type)&quot; est renseigné</errorMessage>
+</ValidationRule>

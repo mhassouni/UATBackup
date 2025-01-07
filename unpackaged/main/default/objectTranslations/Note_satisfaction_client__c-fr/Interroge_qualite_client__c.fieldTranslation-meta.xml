@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interrogé en qualité de client --></label>
+        <name>Interroge_qualite_client__c</name>
+        <picklistValues>
+            <masterLabel>Conteneur</masterLabel>
+            <translation><!-- Conteneur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble</masterLabel>
+            <translation><!-- Meuble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule Frigorifique</masterLabel>
+            <translation><!-- Véhicule Frigorifique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule Sec En IDF</masterLabel>
+            <translation><!-- Véhicule Sec En IDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule Sec Hors IDF</masterLabel>
+            <translation><!-- Véhicule Sec Hors IDF --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

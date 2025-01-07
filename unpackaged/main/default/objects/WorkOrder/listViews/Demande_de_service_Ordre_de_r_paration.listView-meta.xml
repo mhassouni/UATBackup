@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_de_service_Ordre_de_r_paration</fullName>
+    <columns>Name</columns>
+    <columns>N_Parc__c</columns>
+    <columns>Account</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Status</columns>
+    <columns>Origine_de_la_requete__c</columns>
+    <columns>Ressource_Interne__c</columns>
+    <columns>Intervenant_PF__c</columns>
+    <columns>RecordType</columns>
+    <columns>CreatedDate</columns>
+    <columns>Owner</columns>
+    <columns>Statut__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Demande_de_service,WorkOrder.Ordre_Reparation</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Demande de service / Ordre de réparation</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>checkbox_pays__c</fullName>
+    <description>si le champs Pays__c de l&#39;objet Account à la même valeur que le champs Country de l&#39;objet utilisateur le checkbox est TRUE.</description>
+    <formula>IF( Text( Account__r.Pays__c ) =   $User.Country  , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>pays compte = pays utilisateur</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

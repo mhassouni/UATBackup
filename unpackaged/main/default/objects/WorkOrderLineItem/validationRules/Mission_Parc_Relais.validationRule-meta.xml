@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mission_Parc_Relais</fullName>
+    <active>true</active>
+    <description>Interdire que le parc de la mission soit le même que le parc de relais ou le parc d&#39;intervention</description>
+    <errorConditionFormula>AND( 
+Parc_Relais__r.Id == Asset.Id , 
+ISBLANK( AssetId )== FALSE, 
+ISBLANK( Parc_Relais__c )==FALSE 
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Parc_Relais__c</errorDisplayField>
+    <errorMessage>Parc relais doit être différent du parc en cours d&#39;intervention</errorMessage>
+</ValidationRule>

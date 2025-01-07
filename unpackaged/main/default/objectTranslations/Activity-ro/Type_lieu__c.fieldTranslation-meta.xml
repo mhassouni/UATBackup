@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- You must choose a context if the action type is Meeting --></help>
+        <label><!-- Contexte --></label>
+        <name>Type_lieu__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation><!-- Conférence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Client</masterLabel>
+            <translation><!-- Evénement Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Culturel</masterLabel>
+            <translation><!-- Evénement Culturel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement PF</masterLabel>
+            <translation><!-- Evénement PF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Sportif</masterLabel>
+            <translation><!-- Evénement Sportif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation><!-- Salon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Client</masterLabel>
+            <translation><!-- Site Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation><!-- Site PF --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

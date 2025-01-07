@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Echue__c</fullName>
+    <description>Opportunité Echue?</description>
+    <externalId>false</externalId>
+    <formula>if( CloseDate &gt;=Today(),&#39;A&#39;,IF(Today() - CloseDate&lt;8,&#39;B&#39;,&#39;c&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A : Non Echue 
+B : Echue moins de 8 jours 
+C : Echue plus de 8 jours</inlineHelpText>
+    <label>Echue</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_Compte_generique__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Nom du Compte générique</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunités (Nom du Compte générique)</relationshipLabel>
+    <relationshipName>Opportunites_Compte_Gen</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Group</label>
+        <name>Groupe__c</name>
+        <picklistValues>
+            <masterLabel>PFGROUPE</masterLabel>
+            <translation><!-- PFGROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFLOGROUPE</masterLabel>
+            <translation><!-- PFLOGROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESFR</masterLabel>
+            <translation><!-- RESFR --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

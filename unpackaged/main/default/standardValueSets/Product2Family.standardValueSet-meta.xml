@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Véhicules</fullName>
+        <default>false</default>
+        <label>Véhicules</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Containers</fullName>
+        <default>false</default>
+        <label>Containers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meubles</fullName>
+        <default>false</default>
+        <label>Meubles</label>
+    </standardValue>
+</StandardValueSet>

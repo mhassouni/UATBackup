@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Degré d&apos;intérêt --></label>
+        <name>Degre_d_interet__c</name>
+        <picklistValues>
+            <masterLabel>Chaud</masterLabel>
+            <translation><!-- Chaud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Froid</masterLabel>
+            <translation><!-- Froid --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

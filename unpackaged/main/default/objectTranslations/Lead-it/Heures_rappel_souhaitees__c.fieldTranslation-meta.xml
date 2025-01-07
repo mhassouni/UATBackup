@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Orario di contatto preferito</label>
+        <name>Heures_rappel_souhaitees__c</name>
+        <picklistValues>
+            <masterLabel>Après-midi : entre 12h30 et 18h</masterLabel>
+            <translation><!-- Après-midi : entre 12h30 et 18h --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>La journée</masterLabel>
+            <translation>La giornata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le matin</masterLabel>
+            <translation>Il mattino</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L’après-midi</masterLabel>
+            <translation>Il pomeriggio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matin : entre 08h00 et 12h30</masterLabel>
+            <translation><!-- Matin : entre 08h00 et 12h30 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

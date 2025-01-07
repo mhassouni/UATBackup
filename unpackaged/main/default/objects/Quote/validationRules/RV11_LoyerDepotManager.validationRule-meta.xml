@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV11_LoyerDepotManager</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF 
+( 
+AND
+(
+(-( Loyer__c - Loyer_Directeur_de_site__c )*100)/Loyer__c &lt; -5 
+,
+NOT(ISBLANK(Loyer_Directeur_de_site__c ))
+)
+, 
+TRUE 
+, 
+FALSE 
+)</errorConditionFormula>
+    <errorDisplayField>Loyer_Directeur_de_site__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas renseigner un loyer inférieur au loyer proposé par la tarification.Merci de faire une dérogation.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Exit door - termination compensation</label>
+        <name>Porte_sortie_indemnite_resiliation__c</name>
+        <picklistValues>
+            <masterLabel>Dépôt de garantie non restitué</masterLabel>
+            <translation><!-- Dépôt de garantie non restitué --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nombre de mois de loyer</masterLabel>
+            <translation><!-- Nombre de mois de loyer --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

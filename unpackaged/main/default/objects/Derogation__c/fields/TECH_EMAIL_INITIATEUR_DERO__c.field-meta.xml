@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_EMAIL_INITIATEUR_DERO__c</fullName>
+    <description>Renseigner l&#39;adresse mail de l&#39;utilisateur initiateur de la demande DERO afin de recevoir un mail une fois acté.</description>
+    <externalId>false</externalId>
+    <label>TECH_EMAIL_INITIATEUR_DERO</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

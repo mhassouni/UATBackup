@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financement__c</fullName>
+    <label>Financement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Autofinancement</fullName>
+                <default>false</default>
+                <label>Autofinancement</label>
+            </value>
+            <value>
+                <fullName>Crédit-Bail</fullName>
+                <default>false</default>
+                <label>Crédit-Bail</label>
+            </value>
+            <value>
+                <fullName>Emprunt Bancaire</fullName>
+                <default>false</default>
+                <label>Emprunt Bancaire</label>
+            </value>
+            <value>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+                <label>Leasing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

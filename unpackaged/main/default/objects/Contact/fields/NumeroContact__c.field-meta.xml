@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumeroContact__c</fullName>
+    <displayFormat>GF-CON-{0000000000}</displayFormat>
+    <externalId>true</externalId>
+    <inlineHelpText>Numéro du système, incrémenté automatiquement</inlineHelpText>
+    <label>Numéro du contact</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

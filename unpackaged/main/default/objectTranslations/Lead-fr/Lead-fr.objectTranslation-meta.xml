@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Maps Fields --></label>
+        <name>Maps_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Lead PF - Draft</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead PF - En Cours</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Besoin - détails --></label>
+            <section>Besoin - détails</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead PF - Lecture seule</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Besoin - détails --></label>
+            <section>Besoin - détails</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead PetitForestier.com</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Détails du besoin --></label>
+            <section>Détails du besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead PetitForestier.com - Lecture Seule</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Besoin détaillé --></label>
+            <section>Besoin détaillé</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Stricher.fr</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Piste</layout>
+        <sections>
+            <label><!-- Besoin --></label>
+            <section>Besoin</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect --></label>
+            <section>Prospect</section>
+        </sections>
+        <sections>
+            <label><!-- commentaire --></label>
+            <section>commentaire</section>
+        </sections>
+        <sections>
+            <label><!-- informations supplémentaires --></label>
+            <section>informations supplémentaires</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Account Duplication Check --></label>
+        <name>API_Connector__Account_Duplication_Check_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Contact Duplication Check --></label>
+        <name>API_Connector__Contact_Duplication_Check_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Global Match --></label>
+        <name>API_Connector__Global_Match_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Vind KvK --></label>
+        <name>API_Connector__Lead_Kvk_Check</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Convertir --></label>
+        <name>Convertir</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer devis Igloo --></label>
+        <name>Creer_devis_Igloo</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Modifier le statut --></label>
+        <name>Fermer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- DC Convert --></label>
+        <name>dupcheck__DCConvert</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Lead - PF Draft --></label>
+        <name>Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Lead pour la filiale US --></description>
+        <label><!-- Lead - Mendon --></label>
+        <name>Lead_Mendon</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead - PF En cours --></label>
+        <name>Lead_PF_En_cours</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead PF - Lecture seule --></label>
+        <name>Lead_PF_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead PetitForestier.com --></label>
+        <name>Lead_PetitForestier_com</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead PetitForestier.com Lecture seule --></label>
+        <name>Lead_PetitForestier_com_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead Zefirent.com --></label>
+        <name>Lead_Zefirent_com</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead Zefirent.com - Lecture seule --></label>
+        <name>Lead_Zefirent_com_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stricher.com --></label>
+        <name>Stricher_com</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Veuillez Remplir le champ CA estimé --></errorMessage>
+        <name>VR01_Lead_Statut</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas changer le statut de la piste a Qualifiée manuellement. --></errorMessage>
+        <name>VR02_Lead_Statut_Qualifiee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner le nom du salon --></errorMessage>
+        <name>VR04_Nom_Du_Salon</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Account_Duplication_Check_API_Connector --></label>
+        <name>API_Connector__Account_Duplication_Check_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_Duplication_Check_API_Connector --></label>
+        <name>API_Connector__Contact_Duplication_Check_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Global_Match_API_Connector --></label>
+        <name>API_Connector__Global_Match_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lead_Kvk_Check --></label>
+        <name>API_Connector__Lead_Kvk_Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Check --></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Convert --></label>
+        <name>dupcheck__dc3Convert</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Merge --></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Qualtrics_Survey --></label>
+        <name>qualtrics__Send_Qualtrics_Survey</name>
+    </webLinks>
+</CustomObjectTranslation>

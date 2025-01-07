@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>En cours</fullName>
+        <default>false</default>
+        <label>En cours</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminée</fullName>
+        <default>false</default>
+        <label>Terminée</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandonnée</fullName>
+        <default>false</default>
+        <label>Abandonnée</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Planifiée</fullName>
+        <default>true</default>
+        <label>Planifiée</label>
+    </standardValue>
+</StandardValueSet>

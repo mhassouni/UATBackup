@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousFamille__c</fullName>
+    <label>Sous-famille</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TypeProduits__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A (Carrosseries)</fullName>
+                <default>false</default>
+                <label>N/A (Carrosseries)</label>
+            </value>
+            <value>
+                <fullName>BAC</fullName>
+                <default>false</default>
+                <label>BAC</label>
+            </value>
+            <value>
+                <fullName>SALON</fullName>
+                <default>false</default>
+                <label>SALON</label>
+            </value>
+            <value>
+                <fullName>VITRINE</fullName>
+                <default>false</default>
+                <label>VITRINE</label>
+            </value>
+            <value>
+                <fullName>CF</fullName>
+                <default>false</default>
+                <label>CF</label>
+            </value>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>R</label>
+            </value>
+            <value>
+                <fullName>P (Frigo)</fullName>
+                <default>false</default>
+                <label>P (Frigo)</label>
+            </value>
+            <value>
+                <fullName>S (Frigo)</fullName>
+                <default>false</default>
+                <label>S (Frigo)</label>
+            </value>
+            <value>
+                <fullName>T (Frigo)</fullName>
+                <default>false</default>
+                <label>T (Frigo)</label>
+            </value>
+            <value>
+                <fullName>V (Frigo)</fullName>
+                <default>false</default>
+                <label>V (Frigo)</label>
+            </value>
+            <value>
+                <fullName>P (Sec)</fullName>
+                <default>false</default>
+                <label>P (Sec)</label>
+            </value>
+            <value>
+                <fullName>T (Sec)</fullName>
+                <default>false</default>
+                <label>T (Sec)</label>
+            </value>
+            <value>
+                <fullName>V (Sec)</fullName>
+                <default>false</default>
+                <label>V (Sec)</label>
+            </value>
+            <value>
+                <fullName>V</fullName>
+                <default>false</default>
+                <label>V</label>
+            </value>
+            <value>
+                <fullName>L</fullName>
+                <default>false</default>
+                <label>L</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>S</label>
+            </value>
+            <value>
+                <fullName>V (Dry)</fullName>
+                <default>false</default>
+                <label>V (Dry)</label>
+            </value>
+            <value>
+                <fullName>L (Dry)</fullName>
+                <default>false</default>
+                <label>L (Dry)</label>
+            </value>
+            <value>
+                <fullName>C (Dry)</fullName>
+                <default>false</default>
+                <label>C (Dry)</label>
+            </value>
+            <value>
+                <fullName>T</fullName>
+                <default>false</default>
+                <label>T</label>
+            </value>
+            <value>
+                <fullName>S (Dry)</fullName>
+                <default>false</default>
+                <label>S (Dry)</label>
+            </value>
+            <value>
+                <fullName>MEDFOOD</fullName>
+                <default>false</default>
+                <label>MEDFOOD</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Secs</controllingFieldValue>
+            <valueName>P (Sec)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Secs</controllingFieldValue>
+            <valueName>T (Sec)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Secs</controllingFieldValue>
+            <valueName>V (Sec)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Frigorifiques</controllingFieldValue>
+            <valueName>R</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Frigorifiques</controllingFieldValue>
+            <valueName>P (Frigo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Frigorifiques</controllingFieldValue>
+            <valueName>S (Frigo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Frigorifiques</controllingFieldValue>
+            <valueName>T (Frigo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicules Frigorifiques</controllingFieldValue>
+            <valueName>V (Frigo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Containers</controllingFieldValue>
+            <valueName>CF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meubles</controllingFieldValue>
+            <valueName>BAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meubles</controllingFieldValue>
+            <valueName>SALON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meubles</controllingFieldValue>
+            <valueName>VITRINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meubles</controllingFieldValue>
+            <valueName>MEDFOOD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosseries</controllingFieldValue>
+            <valueName>N/A (Carrosseries)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated vehicle</controllingFieldValue>
+            <valueName>V</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated vehicle</controllingFieldValue>
+            <valueName>L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated vehicle</controllingFieldValue>
+            <valueName>C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refrigerated vehicle</controllingFieldValue>
+            <valueName>S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dry vehicle</controllingFieldValue>
+            <valueName>V (Dry)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dry vehicle</controllingFieldValue>
+            <valueName>L (Dry)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dry vehicle</controllingFieldValue>
+            <valueName>C (Dry)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dry vehicle</controllingFieldValue>
+            <valueName>T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dry vehicle</controllingFieldValue>
+            <valueName>S (Dry)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

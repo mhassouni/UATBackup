@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demande Dérogation</name>
+    <style>none</style>
+    <subject>Demande de dérogation</subject>
+    <textOnly>Bonjour
+
+Vous avez reçu une nouvelle demande de dérogation.
+
+Numéro de la Dérogation : {!Derogation__c.Name}
+
+Nom commercial société : {!Derogation__c.Nom_Commercial_Societe__c}
+
+Commentaire : {!ApprovalRequest.Comments}
+
+Lien vers la demande</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

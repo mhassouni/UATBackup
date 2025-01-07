@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FR_Account__c</fullName>
+    <formula>OR(
+				PaysRegion_PF__c = &#39;DRO IDF 1&#39;,
+				PaysRegion_PF__c =&#39;DRO IDF 2&#39;,
+				PaysRegion_PF__c =&#39;DROM&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 1&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 2&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 3&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 4&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 5&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 6&#39;,
+				PaysRegion_PF__c =&#39;DRO NORD 7&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 1&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 2&#39;,
+				PaysRegion_PF__c ==&#39;DRO SUD 3&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 4&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 5&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 6&#39;,
+				PaysRegion_PF__c =&#39;DRO SUD 7&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>FR Account</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

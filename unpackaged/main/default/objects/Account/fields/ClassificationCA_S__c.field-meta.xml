@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClassificationCA_S__c</fullName>
+    <description>Nombre de SAD ayant la classification &quot;S&quot; - utilisé pour automatiser l&#39;attribution du C.A concernant la classification</description>
+    <externalId>false</externalId>
+    <label>ClassificationCA_S</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

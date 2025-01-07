@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controles__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( RecordType.Id ,
+LEFT($Label.Mission_RecordTypeId_Kilom_trage,15),$Label.Mission_TECH_Kilometrage,
+LEFT($Label.Mission_RecordTypeId_Partie_carrosserie_Pneus,15),$Label.Mission_TECH_CARROSSERIE_PNEUS_FREINS,
+LEFT($Label.Mission_RecordTypeId_DocumentAdministratif,15),$Label.Mission_TECH_Documents_administratifs,
+LEFT($Label.Mission_RecordTypeId_EclairageBatterie,15),$Label.Mission_TECH_Eclairage_batterie,
+LEFT($Label.Mission_RecordTypeId_Mission_RecordTypeId_Partie_frigo_cellule,15),$Label.Mission_TECH_FRIGO_CELLULE,
+LEFT($Label.Mission_RecordTypeId_Partie_frigo_groupe,15),$Label.Mission_TECH_FRIGO_GROUPE,
+LEFT($Label.Mission_RecordTypeId_HayonElevateur,15),$Label.Mission_TECH_HAYON,
+LEFT($Label.Mission_RecordTypeId_Moteur,15),$Label.Mission_TECH_Moteur,
+LEFT($Label.Mission_RecordTypeId_Moteur_Boite_Pont,15),$Label.Mission_TECH_MOTEUR_BOITE_PONT,
+&#39;Default&#39;)</formula>
+    <label>None</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

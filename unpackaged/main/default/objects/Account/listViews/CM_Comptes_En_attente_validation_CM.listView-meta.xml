@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Comptes_En_attente_validation_CM</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>Type_compte__c</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>CotationPF__c</columns>
+    <columns>DateCotationPF__c</columns>
+    <columns>AgrementSFAC__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Attente Validation CM</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>DRO IDF 1,DRO IDF 2,DROM,DRO NORD 1,DRO NORD 2,DRO NORD 3,DRO NORD 4,DRO NORD 5,DRO NORD 6,DRO NORD 7,DRO SUD 1,DRO SUD 2,DRO SUD 3,DRO SUD 4,DRO SUD 5,DRO SUD 6,DRO SUD 7</value>
+    </filters>
+    <label>CM -FR- Comptes En attente validation CM</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

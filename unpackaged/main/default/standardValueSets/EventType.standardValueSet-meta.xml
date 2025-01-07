@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Rendez-vous</fullName>
+        <default>false</default>
+        <label>Rendez-vous</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appel entrant</fullName>
+        <default>false</default>
+        <label>Appel entrant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appel sortant</fullName>
+        <default>false</default>
+        <label>Appel sortant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Porte à porte</fullName>
+        <default>false</default>
+        <label>Porte à porte</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salon - Prospection</fullName>
+        <default>false</default>
+        <label>Salon - Prospection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salon - Gestion</fullName>
+        <default>false</default>
+        <label>Salon - Gestion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invitation</fullName>
+        <default>false</default>
+        <label>Invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rencontre impromptue</fullName>
+        <default>false</default>
+        <label>Rencontre impromptue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Réunion interne</fullName>
+        <default>false</default>
+        <label>Réunion interne</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Réunion DR</fullName>
+        <default>false</default>
+        <label>Réunion DR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Formation</fullName>
+        <default>false</default>
+        <label>Formation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Séminaire</fullName>
+        <default>false</default>
+        <label>Séminaire</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visite Agence</fullName>
+        <default>false</default>
+        <label>Visite Agence</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Congés / Absences</fullName>
+        <default>false</default>
+        <label>Congés / Absences</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Action suite à résiliation</fullName>
+        <default>false</default>
+        <label>Action suite à résiliation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SF Maps</fullName>
+        <default>false</default>
+        <label>SF Maps</label>
+    </standardValue>
+</StandardValueSet>

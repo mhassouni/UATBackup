@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derniere_etape_realisee__c</fullName>
+    <description>Afficher la derniere étape réalisée (La derniere mission dont le statut est réalisée</description>
+    <externalId>false</externalId>
+    <formula>IF 
+( 
+AND(TECH_Transmission__c ==1,TECH_Depart__c==0,TECH_Arrivee__c==0,TECH_Fin__c==0,TECH_Retour__c==0) 
+, 
+$Label.Mission_TECH_Transmission 
+, 
+IF 
+( 
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==0,TECH_Fin__c==0,TECH_Retour__c==0) 
+, 
+$Label.Mission_TECH_Depart 
+, 
+IF 
+( 
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==0,TECH_Retour__c==0) 
+, 
+$Label.Mission_TECH_Arrivee 
+, 
+IF 
+( 
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==1,TECH_Retour__c==0) 
+, 
+$Label.Mission_TECH_Fin 
+, 
+IF 
+( 
+AND(TECH_Transmission__c ==1,TECH_Depart__c==1,TECH_Arrivee__c==1,TECH_Fin__c==1,TECH_Retour__c==1) 
+, 
+
+$Label.Mission_TECH_Retour 
+, 
+$Label.Mission_TECH_Nouveau 
+) 
+) 
+) 
+) 
+
+
+
+)</formula>
+    <inlineHelpText>La dernière mission dont le statut est réalisée.</inlineHelpText>
+    <label>Dernière étape réalisée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

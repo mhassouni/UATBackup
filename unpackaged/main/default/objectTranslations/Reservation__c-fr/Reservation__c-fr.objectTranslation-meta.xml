@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Réservation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Réservations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Fleet Management Result Fields --></label>
+        <name>Fleet_Management_Result_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fleet Management Search Fields --></label>
+        <name>Fleet_Management_Search_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Search Fields --></label>
+        <name>Gantt_Search_Fields</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Atelier Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Atelier --></label>
+            <section>Information Atelier</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fabrication page layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information sur la fabrication --></label>
+            <section>Information sur la fabrication</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Location Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information générale --></label>
+            <section>Information générale</section>
+        </sections>
+        <sections>
+            <label><!-- Information sur la commande --></label>
+            <section>Information sur la commande</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transport Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information sur la commande --></label>
+            <section>Information sur la commande</section>
+        </sections>
+        <sections>
+            <label><!-- Information transport --></label>
+            <section>Information transport</section>
+        </sections>
+        <sections>
+            <label><!-- Informations complémentaires --></label>
+            <section>Informations complémentaires</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Création commande manuelle</label>
+        <name>Create_Manual_Order</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- E-mail --></label>
+        <name>Email</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Atelier (avant ou après location) --></description>
+        <label><!-- Atelier --></label>
+        <name>Atelier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fabrication --></label>
+        <name>Fabrication</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Location --></description>
+        <label><!-- Location --></label>
+        <name>Location</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Transport (Aller ou Retour) --></description>
+        <label><!-- Transport --></label>
+        <name>Transport</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Veuillez sélectionner la date d&apos;aujourd&apos;hui ou bien une date dans le futur --></errorMessage>
+        <name>Date_Livraison</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La date de fin ne peut être antérieure à la date de début. --></errorMessage>
+        <name>Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La date de début ne peut être postérieure à la date de fin. --></errorMessage>
+        <name>Date_Validation_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le container sélectionné ne correspond pas au type de container de la réservation. --></errorMessage>
+        <name>Preventing_Assign_Wrong_Asset</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generatea2D7T0000004jVYUAY --></label>
+        <name>Generatea2D7T0000004jVYUAY</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Caméras --></label>
+        <name>Cameras__c</name>
+        <picklistValues>
+            <masterLabel>Caméra embarquée - Double objectifs</masterLabel>
+            <translation><!-- Caméra embarquée - Double objectifs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caméra embarquée - Simple objectif</masterLabel>
+            <translation><!-- Caméra embarquée - Simple objectif --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

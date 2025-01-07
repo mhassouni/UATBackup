@@ -1,0 +1,5 @@
+<apex:page standardController="Lead"  extensions="VFE04_PisteNouvelle" action="{!Redirects}">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Redirecting...</h1>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

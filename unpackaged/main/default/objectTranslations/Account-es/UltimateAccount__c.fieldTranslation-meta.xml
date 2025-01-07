@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Cuenta al nivel más alto de la jerarquía de esta cuenta</help>
+        <label>Cuenta definitiva</label>
+        <name>UltimateAccount__c</name>
+        <relationshipLabel>Cuentas Hijos (Jerarquia)</relationshipLabel>
+    </CustomFieldTranslation>

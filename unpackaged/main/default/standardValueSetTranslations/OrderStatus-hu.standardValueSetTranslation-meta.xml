@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activé</masterLabel>
+        <translation>Engedélyezve</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Annulée</masterLabel>
+        <translation><!-- Annulée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande annulée</masterLabel>
+        <translation>Törölt rendelés</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande clôturée</masterLabel>
+        <translation><!-- Commande clôturée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande facturée</masterLabel>
+        <translation><!-- Commande facturée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande traitée</masterLabel>
+        <translation><!-- Commande traitée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande à Traiter</masterLabel>
+        <translation><!-- Commande à Traiter --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Commande à facturer</masterLabel>
+        <translation><!-- Commande à facturer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Confirmé</masterLabel>
+        <translation><!-- Confirmé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Confirmée</masterLabel>
+        <translation>Megerősített</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Créée</masterLabel>
+        <translation>Létrehozva</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours Flux Amonts</masterLabel>
+        <translation>Folyamatban Upstream Flows</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours Lecapitaine</masterLabel>
+        <translation>Folyamatban Lecapitaine</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Traitée</masterLabel>
+        <translation>Feldolgozott</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Validations Internes</masterLabel>
+        <translation><!-- Validations Internes --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

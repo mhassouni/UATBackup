@@ -1,0 +1,14 @@
+Bonjour,
+
+Vous avez reçu une demande de validation pour un arrêt de contrat {!Contract.ContractNumber}  pour le client {!Contract.Account}
+
+
+
+Voici le lien direct pour approbation et le contrat :
+
+{!ApprovalRequest.External_URL}
+{!Contract.Name}
+
+
+
+{!Contract.Link}

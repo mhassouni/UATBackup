@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Le résultat de ce champ affiche la somme des groupes de ligne de devis avant remise sans les montants de l&apos;Acompte / Dépôt de Garantie / Caution. --></help>
+        <label><!-- Montant Total --></label>
+        <name>SumGroupsSpecialPrice__c</name>
+    </CustomFieldTranslation>

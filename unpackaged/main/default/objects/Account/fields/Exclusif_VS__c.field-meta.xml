@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclusif_VS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check &quot;Exclusive&quot; only if ALL the customer&#39;s park (Dry vehicles) is provided by PETIT FORESTIER (No property, no other rental company, ...)</inlineHelpText>
+    <label>Exclusif PF / Sans Véhicule Sec</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

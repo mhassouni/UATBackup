@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__DisableAmendmentCoTerm__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If unchecked, the Amendment Quote End Date will be set according to the Amendment &amp; Renewal Behavior setting. If checked, then no End Date will be set.</description>
+    <inlineHelpText>Si cette case n&#39;est pas sélectionnée, la date de fin du devis d&#39;amendement doit être définie conformément au paramètre Comportement d&#39;amendement et de renouvellement. Si elle est sélectionnée, aucune date de fin n&#39;est définie.</inlineHelpText>
+    <label>Disable Amendment Co-Term</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>収益トランザクション</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Revenue Transaction Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>収益情報</label>
+            <section>Revenue Information</section>
+        </sections>
+        <sections>
+            <label>ソースレコード</label>
+            <section>Source Records</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>名前</nameFieldLabel>
+</CustomObjectTranslation>

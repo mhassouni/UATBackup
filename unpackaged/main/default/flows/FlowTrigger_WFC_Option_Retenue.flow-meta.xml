@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>WFC_Option_Retenue</name>
+        <label>WFC Option Retenue</label>
+        <locationX>576</locationX>
+        <locationY>380</locationY>
+        <defaultConnector>
+            <targetReference>WFC_Option_Retenue_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Masquer_le_champ_Nom_de_Pack</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Option</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Option_Nom_du_pack</targetReference>
+            </connector>
+            <label>Masquer le champ &quot;Nom de Pack&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WFC_Option_Retenue_0</name>
+        <label>WFC Option Retenue</label>
+        <locationX>576</locationX>
+        <locationY>556</locationY>
+        <defaultConnector>
+            <targetReference>WFC_Option_Retenue_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Masquer_le_champ_Nom_de_l_option_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.Option_Telematique</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Option_Nom_option</targetReference>
+            </connector>
+            <label>Masquer le champ &quot;Nom de l&#39;option&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WFC_Option_Retenue_0_0</name>
+        <label>WFC Option Retenue</label>
+        <locationX>577</locationX>
+        <locationY>738</locationY>
+        <defaultConnector>
+            <targetReference>WFC_Option_Retenue_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Option_retenue_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Option_retenu__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Option_retenu__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Devis_Option_Retenue</targetReference>
+            </connector>
+            <label>Option retenue</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WFC_Option_Retenue_0_0_0</name>
+        <label>WFC Option Retenue</label>
+        <locationX>577</locationX>
+        <locationY>918</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Option_Non_retenue_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Option_retenu__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Option_retenu__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Devis_Option_Non_Retenue</targetReference>
+            </connector>
+            <label>Option Non retenue</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Var_Charge_Utile_Kg_Option_Non_Retenue</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.Charge_utile__c}) ) ,
+ {!$Record.Devis__r.Charge_utile_Kg__c }  -   {!$Record.Charge_utile__c},
+ {!$Record.Devis__r.Charge_utile_Kg__c }
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Var_Charge_Utile_Kg_Option_Retenue</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.Charge_utile__c})) , 
+{!$Record.Devis__r.Charge_utile_Kg__c } +   {!$Record.Charge_utile__c},
+{!$Record.Devis__r.Charge_utile_Kg__c }
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Var_Loyer_Option_Non_Retenue</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.Prix_unitaire__c}) ) ,
+   {!$Record.Devis__r.Loyer__c}  - {!$Record.Prix_unitaire__c},
+ {!$Record.Devis__r.Loyer__c} 
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Var_Loyer_Option_Retenue</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.Prix_unitaire__c}) ) ,
+{!$Record.Devis__r.Loyer__c}  +  {!$Record.Prix_unitaire__c},
+ {!$Record.Devis__r.Loyer__c} 
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>FlowTrigger_WFC Option Retenue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_WFC Option Retenue</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Devis_Option_Non_Retenue</name>
+        <label>Update : Devis =&gt; Option Non Retenue</label>
+        <locationX>853</locationX>
+        <locationY>836</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Devis__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Charge_utile_Kg__c</field>
+            <value>
+                <elementReference>Var_Charge_Utile_Kg_Option_Non_Retenue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Loyer__c</field>
+            <value>
+                <elementReference>Var_Loyer_Option_Non_Retenue</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Quote</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Devis_Option_Retenue</name>
+        <label>Update : Devis =&gt; Option Retenue</label>
+        <locationX>362</locationX>
+        <locationY>827</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Devis__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Charge_utile_Kg__c</field>
+            <value>
+                <elementReference>Var_Charge_Utile_Kg_Option_Retenue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Loyer__c</field>
+            <value>
+                <elementReference>Var_Loyer_Option_Retenue</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Quote</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Option_Nom_du_pack</name>
+        <label>Update : Option - Nom du pack</label>
+        <locationX>319</locationX>
+        <locationY>461</locationY>
+        <connector>
+            <targetReference>WFC_Option_Retenue_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Nom_du_pack__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Option_Nom_option</name>
+        <label>Update : Option - Nom de l&#39;option</label>
+        <locationX>847</locationX>
+        <locationY>653</locationY>
+        <connector>
+            <targetReference>WFC_Option_Retenue_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Nom_option__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>458</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>WFC_Option_Retenue</targetReference>
+        </connector>
+        <object>Option__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

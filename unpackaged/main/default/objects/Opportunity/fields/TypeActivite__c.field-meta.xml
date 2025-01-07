@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeActivite__c</fullName>
+    <label>Motif de l&#39;opportunité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Location avec chauffeur</fullName>
+                <default>false</default>
+                <label>Location avec chauffeur</label>
+            </value>
+            <value>
+                <fullName>Location sans chauffeur</fullName>
+                <default>false</default>
+                <label>Location sans chauffeur</label>
+            </value>
+            <value>
+                <fullName>Location Meubles</fullName>
+                <default>false</default>
+                <label>Location Meubles</label>
+            </value>
+            <value>
+                <fullName>Transport dernier kilomètre</fullName>
+                <default>false</default>
+                <label>Transport dernier kilomètre</label>
+            </value>
+            <value>
+                <fullName>Transporteur public</fullName>
+                <default>false</default>
+                <label>Transporteur public</label>
+            </value>
+            <value>
+                <fullName>Nouveau besoin</fullName>
+                <default>false</default>
+                <label>Nouveau besoin</label>
+            </value>
+            <value>
+                <fullName>Propriété</fullName>
+                <default>false</default>
+                <label>Propriété</label>
+            </value>
+            <value>
+                <fullName>1- Conquérir une (des) position(s) LD</fullName>
+                <default>false</default>
+                <label>1- Conquérir une (des) position(s) LD</label>
+            </value>
+            <value>
+                <fullName>2- Renouveler un (des) contrat(s) existant(s)</fullName>
+                <default>false</default>
+                <label>2- Renouveler un (des) contrat(s) existant(s)</label>
+            </value>
+            <value>
+                <fullName>3- Challenger un loueur concurrent en place</fullName>
+                <default>false</default>
+                <label>3- Challenger un loueur concurrent en place</label>
+            </value>
+            <value>
+                <fullName>4- Offrir une alternative à l&#39;achat/leasing</fullName>
+                <default>false</default>
+                <label>4- Offrir une alternative à l&#39;achat/leasing</label>
+            </value>
+            <value>
+                <fullName>5- Offrir une alternative à la sous-traitance (transporteur, dernier km, location avec chauffeur)</fullName>
+                <default>false</default>
+                <label>5- Offrir une alternative à la sous-traitance (transporteur, dernier km, location avec chauffeur)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

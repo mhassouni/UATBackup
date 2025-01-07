@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Type</label>
+        <name>type_OE__c</name>
+        <picklistValues>
+            <masterLabel>Boite de vitesse</masterLabel>
+            <translation>Gearbox</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Cabin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Cellule Isotherme</masterLabel>
+            <translation>Body /  Isothermal cell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Chassis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité Véhicule</masterLabel>
+            <translation>Vehicle Electricity</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freinage</masterLabel>
+            <translation>Braking</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Froid</masterLabel>
+            <translation>Cooling Unit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/Portique</masterLabel>
+            <translation>Tail-board</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Négligence</masterLabel>
+            <translation><!-- Mauvaise Utilisation / Négligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Engine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Tyres</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pont/Essieu/Transmission</masterLabel>
+            <translation>Lift/Axle/Transmission</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinistre / Dégâts</masterLabel>
+            <translation><!-- Sinistre / Dégâts --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

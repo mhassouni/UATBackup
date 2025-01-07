@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Qualification --></label>
+        <name>Qualification__c</name>
+        <picklistValues>
+            <masterLabel>Branchement</masterLabel>
+            <translation><!-- Branchement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Caisse/Cellule isotherme</masterLabel>
+            <translation><!-- Carrosserie/Caisse/Cellule isotherme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation><!-- Châssis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Frigo</masterLabel>
+            <translation><!-- Groupe Frigo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation><!-- Hayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/système de levage</masterLabel>
+            <translation><!-- Hayon/système de levage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation><!-- Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation><!-- Pneumatique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilisation</masterLabel>
+            <translation><!-- Utilisation --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

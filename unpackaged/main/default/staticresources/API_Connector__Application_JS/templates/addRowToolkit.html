@@ -1,0 +1,128 @@
+﻿<table class="slds-table slds-table_bordered slds-table_cell-buffer">
+  <thead>
+    <tr class="slds-text-title_caps">
+      <th scope="col" class="width-32">
+        <div class="slds-truncate" title="accountField">{{customlabel.Output_Fields}}</div>
+      </th>
+      <th scope="col" class="width-32">
+        <div class="slds-truncate" title="inputField">{{$root.DataTypeTitle}}</div>
+      </th>
+      <th scope="col" class="width-32">
+        <div class="slds-truncate" title="inputField">{{customlabel.Account_Fields}}</div>
+      </th>
+      <th class="width-4"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <input type="text" id="input-id-01" class="slds-input" value="{{service == 'Toolkit'?
+                   customlabel.Toolkit_Service_Status : customlabel.Quick_Check_Status}}" readonly />
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="objToolkitEnterprise.ToolkitStatusDataType"
+                      ng-options="item as item for item in accountFieldsDataTypeList" ng-change="objToolkitEnterprise.ToolkitStatus = getDataTypeFilteredLst(objToolkitEnterprise.ToolkitStatusDataType,accountFields)[0].Name"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="objToolkitEnterprise.ToolkitStatus" 
+                      ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objToolkitEnterprise.ToolkitStatusDataType,accountFields)" ng-change="myFunc(objToolkitEnterprise.ToolkitStatus)"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <input type="text" id="input-id-01" class="slds-input" value="{{service == 'Toolkit'?
+                   customlabel.Toolkit_Service_Date : customlabel.Quick_Check_Date}}" readonly />
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="objToolkitEnterprise.ToolkitDateDataType"
+                      ng-options="item as item for item in accountFieldsDataTypeList" ng-change="objToolkitEnterprise.ToolkitDate = getDataTypeFilteredLst(objToolkitEnterprise.ToolkitDateDataType,accountFields)[0].Name"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="objToolkitEnterprise.ToolkitDate" 
+                       ng-options="item.Name as item.Name for item in getDataTypeFilteredLst(objToolkitEnterprise.ToolkitDateDataType,accountFields)" ng-change="myFunc(objToolkitEnterprise.ToolkitDate)"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr ng-repeat="record in outputToolkit track by $index">
+      <td data-label="leadField" >
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-01" ng-model="record.value" 
+                      ng-options="item.Name as item.Name for item in outputfldsToolkit"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td data-label="Data Type">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-022" ng-model="record.DataType"
+                      ng-options="item as item for item in accountFieldsDataTypeList" ng-change="record.name = getDataTypeFilteredLst( record.DataType, accountFields)[0].Name"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td data-label="inputField">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select class="slds-select" id="select-022" ng-model="record.name" 
+                      ng-options="item.Name as item.Name for item in getDataTypeFilteredLst( record.DataType, accountFields) " ng-change = "myFunc(record.name)"></select>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="slds-form-element__control" style="margin-top: 20% !important; ">
+          <button class="slds-button slds-button_icon" ng-click="removeRow({record:record,objType:objType})">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#close" />
+            </svg>
+            <span class="slds-assistive-text"></span>
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="slds-form-element__control">
+          <button class="slds-button slds-button_neutral" ng-click="cancelMapping({objType:objType})">{{customlabel.Cancel}}</button>
+          <button class="slds-button slds-button_brand" ng-click="addNewRow()">{{customlabel.Add_Row}}</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>'

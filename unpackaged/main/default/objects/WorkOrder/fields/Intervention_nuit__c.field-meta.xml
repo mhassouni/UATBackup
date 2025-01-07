@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervention_nuit__c</fullName>
+    <formula>Case.Intervention_Nuit__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Intervention nuit</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

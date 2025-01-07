@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nouvelles_pistes_CD_de_mes_Agences</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Date_Heure_Creation__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH,LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>Duree_location_souhaitee__c</field>
+        <operation>equals</operation>
+        <value>1 à 30 jours,De 1 à 25 jours</value>
+    </filters>
+    <filters>
+        <field>Produits__c</field>
+        <operation>equals</operation>
+        <value>Véhicule frigorifique</value>
+    </filters>
+    <filters>
+        <field>Particulier_Professionnel__c</field>
+        <operation>equals</operation>
+        <value>Professionnel</value>
+    </filters>
+    <label>Pistes CD véh pro de mes Agences (M/M-1)</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

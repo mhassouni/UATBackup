@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Diesel</fullName>
+        <default>false</default>
+        <label>Diesel</label>
+    </customValue>
+    <customValue>
+        <fullName>Électrique</fullName>
+        <default>false</default>
+        <label>Électrique</label>
+    </customValue>
+    <customValue>
+        <fullName>Hydrogène</fullName>
+        <default>false</default>
+        <label>Hydrogène</label>
+    </customValue>
+    <customValue>
+        <fullName>GNC</fullName>
+        <default>false</default>
+        <label>GNC</label>
+    </customValue>
+    <masterLabel>Energie</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

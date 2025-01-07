@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WOLineItem</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>DDS/ODR</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSL Work Order Line Item Layout</layout>
+        <sections>
+            <label>Διεύθυνση</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Carrosserie / Pneus</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Documents administratifs</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Eclairage / Batterie</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- System information --></label>
+            <section>System information</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Frigo / Cellule</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- System information --></label>
+            <section>System information</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Frigo / Groupe</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Hayon</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Kilométrage</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tour de parc - Moteur</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Retour Technicien --></label>
+            <section>Retour Technicien</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Arrivée sur place</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Compte rendu</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Départ Intervention</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Fin d&#39;intevention</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Retour Agence/Domicile</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Suivi d&#39;intevention</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>layout - Transmission appel</layout>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Fermer --></label>
+        <name>Fermer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Fermer --></label>
+        <name>Fermer_Description</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Arrivée sur place --></label>
+        <name>Arrivee_sur_place</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compte rendu --></label>
+        <name>Compte_rendu</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Début d&apos;intervention --></label>
+        <name>Debut_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Départ Intervention --></label>
+        <name>Depart_Intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DOCUMENTS ADMINISTRATIFS --></label>
+        <name>Documents_administratifs</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fin d&apos;intervention --></label>
+        <name>Fin_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HAYON --></label>
+        <name>Hayon_l_vateur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- KILOMETRAGE --></label>
+        <name>Kilometrage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MOTEUR / BOITE / PONT --></label>
+        <name>MOTEUR_BOITE_PONT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MOTEUR --></label>
+        <name>Moteur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CARROSSERIE / PNEUS / FREINS --></label>
+        <name>Partie_carrosserie_Pneus</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FRIGO / CELLULE --></label>
+        <name>Partie_frigo_cellule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FRIGO / GROUPE --></label>
+        <name>Partie_frigo_groupe</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retour Agence/Domicile --></label>
+        <name>Retour_Agence_Domicile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Suivi d&apos;intervention --></label>
+        <name>Suivi_intervention</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transmission Appel --></label>
+        <name>Transmission_Appel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ECLAIRAGE / BATTERIE --></label>
+        <name>clairage_batterie</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Parc intervention et parc doivent être differents --></errorMessage>
+        <name>Mission_Parc_Intervention</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parc relais doit être différent du parc en cours d&apos;intervention --></errorMessage>
+        <name>Mission_Parc_Relais</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Fiche_Depannage --></label>
+        <name>Fiche_Depannage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Fiche_Depannage_2 --></label>
+        <name>Fiche_Depannage_2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X --></label>
+        <name>X</name>
+    </webLinks>
+</CustomObjectTranslation>

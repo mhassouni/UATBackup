@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Annulée</masterLabel>
+        <translation>Cancelled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Effectuée</masterLabel>
+        <translation>Completed</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>En cours</masterLabel>
+        <translation>In progress</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

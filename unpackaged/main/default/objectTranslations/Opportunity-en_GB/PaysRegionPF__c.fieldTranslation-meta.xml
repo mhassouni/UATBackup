@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Country or region (FR) based on the location of PF branches</help>
+        <label>Country / PF Region</label>
+        <name>PaysRegionPF__c</name>
+        <picklistValues>
+            <masterLabel>CONSTANTIN</masterLabel>
+            <translation><!-- CONSTANTIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DION</masterLabel>
+            <translation><!-- DION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRACULA</masterLabel>
+            <translation><!-- DRACULA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO IDF 1</masterLabel>
+            <translation><!-- DRO IDF 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO IDF 2</masterLabel>
+            <translation><!-- DRO IDF 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 1</masterLabel>
+            <translation><!-- DRO NORD 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 2</masterLabel>
+            <translation><!-- DRO NORD 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 3</masterLabel>
+            <translation><!-- DRO NORD 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 4</masterLabel>
+            <translation><!-- DRO NORD 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 5</masterLabel>
+            <translation><!-- DRO NORD 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 6</masterLabel>
+            <translation><!-- DRO NORD 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO NORD 7</masterLabel>
+            <translation><!-- DRO NORD 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 1</masterLabel>
+            <translation><!-- DRO SUD 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 2</masterLabel>
+            <translation><!-- DRO SUD 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 3</masterLabel>
+            <translation><!-- DRO SUD 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 4</masterLabel>
+            <translation><!-- DRO SUD 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 5</masterLabel>
+            <translation><!-- DRO SUD 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 6</masterLabel>
+            <translation><!-- DRO SUD 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO SUD 7</masterLabel>
+            <translation><!-- DRO SUD 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DROM</masterLabel>
+            <translation><!-- DROM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEGO</masterLabel>
+            <translation><!-- LEGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFM</masterLabel>
+            <translation><!-- PFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFUK</masterLabel>
+            <translation><!-- PFUK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIAE</masterLabel>
+            <translation><!-- PIAE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIAT</masterLabel>
+            <translation><!-- PIAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIBE</masterLabel>
+            <translation><!-- PIBE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PICH</masterLabel>
+            <translation><!-- PICH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PICZ</masterLabel>
+            <translation><!-- PICZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIDE</masterLabel>
+            <translation><!-- PIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIES</masterLabel>
+            <translation><!-- PIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIHU</masterLabel>
+            <translation><!-- PIHU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PILU</masterLabel>
+            <translation><!-- PILU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIMA</masterLabel>
+            <translation><!-- PIMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIND</masterLabel>
+            <translation><!-- PIND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIPL</masterLabel>
+            <translation><!-- PIPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIPT</masterLabel>
+            <translation><!-- PIPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIRL</masterLabel>
+            <translation><!-- PIRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIRO</masterLabel>
+            <translation><!-- PIRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PISK</masterLabel>
+            <translation><!-- PISK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PITA</masterLabel>
+            <translation><!-- PITA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIZA</masterLabel>
+            <translation><!-- PIZA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reways</masterLabel>
+            <translation><!-- Reways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR1</masterLabel>
+            <translation><!-- STFR1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR2</masterLabel>
+            <translation><!-- STFR2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR3</masterLabel>
+            <translation><!-- STFR3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR4</masterLabel>
+            <translation><!-- STFR4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STFR5</masterLabel>
+            <translation><!-- STFR5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SV Noleggio</masterLabel>
+            <translation><!-- SV Noleggio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZEUS</masterLabel>
+            <translation><!-- ZEUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone Dev 1</masterLabel>
+            <translation><!-- Zone Dev 1 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

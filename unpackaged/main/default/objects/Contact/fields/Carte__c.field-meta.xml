@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carte__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( 
+
+&quot;https://maps.googleapis.com/maps/api/staticmap?center=&quot; + 
+Ligne1__c + &quot;,&quot; + 
+IF ( NOT ( ISBLANK (Ligne2__c)), Ligne2__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (Ligne3__c)), Ligne3__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (Ligne4__c)), Ligne4__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (TEXT(Province__c))), TEXT(Province__c) + &quot;,&quot;, &quot;&quot; ) + 
+CodePostal__c + &quot;+&quot; + Ville__c + &quot;,&quot; + 
+TEXT ( Pays__c ) + 
+&quot;&amp;zoom=13&amp;size=250x250&amp;markers=color:red|&quot; + 
+Ligne1__c + &quot;+&quot; + 
+IF ( NOT ( ISBLANK (Ligne2__c)), Ligne2__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (Ligne3__c)), Ligne3__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (Ligne4__c)), Ligne4__c + &quot;,&quot;, &quot;&quot; ) + 
+IF ( NOT ( ISBLANK (TEXT(Province__c))), TEXT(Province__c) + &quot;,&quot;, &quot;&quot; ) + 
+CodePostal__c + &quot;+&quot; + Ville__c + &quot;,&quot; + 
+TEXT ( Pays__c ) + 
+&quot;&amp;sensor=true&quot; 
+
+, $Label.CON_Carte_AucuneCarteDispo , 250, 250)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Carte</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

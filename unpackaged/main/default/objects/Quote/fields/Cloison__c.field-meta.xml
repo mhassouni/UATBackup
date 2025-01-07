@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloison__c</fullName>
+    <label>Cloison (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MOUSSE</fullName>
+                <default>false</default>
+                <label>MOUSSE</label>
+            </value>
+            <value>
+                <fullName>FIXE TRANSVERSALE</fullName>
+                <default>false</default>
+                <label>FIXE TRANSVERSALE</label>
+            </value>
+            <value>
+                <fullName>FIXE LONGITUDINALE</fullName>
+                <default>false</default>
+                <label>FIXE LONGITUDINALE</label>
+            </value>
+            <value>
+                <fullName>MOBILE RELEVABLE</fullName>
+                <default>false</default>
+                <label>MOBILE RELEVABLE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE 1/2 - 1/2</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE 1/2 - 1/2</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE 1/3 - 2/3</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE 1/3 - 2/3</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE 2/3 - 1/3</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE 2/3 - 1/3</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC ELECTRO-VENTILATEUR</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC ELECTRO-VENTILATEUR</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE DOUBLE CENTREE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE DOUBLE CENTREE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE SIMPLE CENTREE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE BATTANTE SIMPLE CENTREE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE DOUBLE CENTREE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE DOUBLE CENTREE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A DROITE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A DROITE</label>
+            </value>
+            <value>
+                <fullName>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A GAUCHE</fullName>
+                <default>false</default>
+                <label>MOBILE TRANSVERSALE RELEVABLE AVEC PORTE COULISSANTE SIMPLE DECALEE A GAUCHE</label>
+            </value>
+            <value>
+                <fullName>1 GRILLE AMOVIBLE (Brasseur)</fullName>
+                <default>false</default>
+                <label>1 GRILLE AMOVIBLE (Brasseur)</label>
+            </value>
+            <value>
+                <fullName>2 GRILLES AMOVIBLES (Brasseur)</fullName>
+                <default>false</default>
+                <label>2 GRILLES AMOVIBLES (Brasseur)</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

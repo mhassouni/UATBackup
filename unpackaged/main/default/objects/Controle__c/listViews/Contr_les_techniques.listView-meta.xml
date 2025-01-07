@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contr_les_techniques</fullName>
+    <columns>Parc__c</columns>
+    <columns>Operation__c</columns>
+    <columns>Prochaine_operation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_CONTROLES_MES_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Operation__c</field>
+        <operation>equals</operation>
+        <value>CT</value>
+    </filters>
+    <label>Contrôles techniques</label>
+</ListView>

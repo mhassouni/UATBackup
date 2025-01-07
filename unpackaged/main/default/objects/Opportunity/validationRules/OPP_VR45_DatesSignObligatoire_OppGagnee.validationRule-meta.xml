@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR45_DatesSignObligatoire_OppGagnee</fullName>
+    <active>true</active>
+    <description>La date de signature du contrat &amp; un des champs de la section Caution est obligatoire au moment de passage au statut 6</description>
+    <errorConditionFormula>AND 
+( 
+Text(PaysRegionPF__c) &lt;&gt; &#39;Reways&#39;,
+AND
+( 
+ISBLANK( DateSignatureContrat__c ), 
+OR
+(	Caution_r_gl_e_ce_jour__c,
+			 Compensation_avec_caution_r_gularis_e__c ,
+			R_glement_Ult_rieur_sur_facture__c,
+			Dispense_de_caution__c
+		) 
+	)
+	, 
+	TEXT(StageName) = $Label.OPP_StageName_ContratSigne 
+)</errorConditionFormula>
+    <errorMessage>Merci de compléter la date de signature de contrat et de renseigner la section caution</errorMessage>
+</ValidationRule>

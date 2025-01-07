@@ -1,0 +1,171 @@
+[
+  {
+    "Name": "--None--",
+    "Path": "--None--"
+  },
+  {
+    "Name": "Active status",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/actif"
+  },
+  {
+    "Name": "Fantoir code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/codeFantoir"
+  },
+  {
+    "Name": "Iris City block id",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/codeIris"
+  },
+  {
+    "Name": "Zipcode",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/codePostal"
+  },
+  {
+    "Name": "Citycode",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/communeCode"
+  },
+  {
+    "Name": "Street line address 2",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/complementRue"
+  },
+  {
+    "Name": "Creation date at this location",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/dateCreation"
+  },
+  {
+    "Name": "Closing date",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/dateFermeture"
+  },
+  {
+    "Name": "Phone last update",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/dateMajTelephone"
+  },
+  {
+    "Name": "Reactivation date",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/dateReactivation"
+  },
+  {
+    "Name": "Branch Duns",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/duns"
+  },
+  {
+    "Name": "Tradestyles",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/enseigne"
+  },
+  {
+    "Name": "Fax #",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/fax"
+  },
+  {
+    "Name": "INSEE commercial name",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/l1NomAdressage"
+  },
+  {
+    "Name": "INSEE complement name",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/l2CompNomAdressage"
+  },
+  {
+    "Name": "Activity NAF code at this place",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/naf5Code"
+  },
+  {
+    "Name": "Activity NAF label at this place",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/naf5Libelle"
+  },
+  {
+    "Name": "Diffusible status",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/nonDiffusible"
+  },
+  {
+    "Name": "Former place code reason",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/precEvenementCode"
+  },
+  {
+    "Name": "Former place information date",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/precEvenementDate"
+  },
+  {
+    "Name": "Former place label reason",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/precEvenementLabel"
+  },
+  {
+    "Name": "Former place siret",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/predSiret"
+  },
+  {
+    "Name": "RCS# company ID",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/rcs"
+  },
+  {
+    "Name": "Yellow page activity code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/rubriqueFTCode"
+  },
+  {
+    "Name": "Yellow page activity label",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/rubriqueFTLabel"
+  },
+  {
+    "Name": "Street line address 1",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/rue"
+  },
+  {
+    "Name": "Is HQ Status",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/siege"
+  },
+  {
+    "Name": "EIRL status code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/statutEirlCode"
+  },
+  {
+    "Name": "EIRL status label",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/statutEirlLabel"
+  },
+  {
+    "Name": "Next place reason code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/succEvenementCode"
+  },
+  {
+    "Name": "Next place date",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/succEvenementDate"
+  },
+  {
+    "Name": "Next place reason label",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/succEvenementLabel"
+  },
+  {
+    "Name": "Next Siret#",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/succSiret"
+  },
+  {
+    "Name": "Phone #",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/telephone"
+  },
+  {
+    "Name": "Employee range label at this place",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/trEffectifEtab"
+  },
+  {
+    "Name": "Employee range code at this place",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/trEffectifEtabCode"
+  },
+  {
+    "Name": "Entity place specifications code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/typeEtablissementCode"
+  },
+  {
+    "Name": "Entity place specifications label",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/typeEtablissementLabel"
+  },
+  {
+    "Name": "INSEE Exploitation type Code",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/typeExploitationCode"
+  },
+  {
+    "Name": "INSEE Exploitation type Label",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/typeExploitationLabel"
+  },
+  {
+    "Name": "City name",
+    "Path": "/getIdentiteAltaN4EtablissementResponse/return/myInfo/ville"
+  }
+  
+]

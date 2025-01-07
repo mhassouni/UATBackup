@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panneau_de_presentation_Fournisseur</fullName>
+    <fields>Name</fields>
+    <fields>Statut_Fournisseur__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Ville__c</fields>
+    <fields>Pays__c</fields>
+    <label>Panneau de présentation Fournisseur</label>
+</CompactLayout>

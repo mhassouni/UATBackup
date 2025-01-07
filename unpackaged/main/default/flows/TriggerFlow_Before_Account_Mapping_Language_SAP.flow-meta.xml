@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <description>Assign Language with the right country</description>
+        <name>Assign_Language_with_the_right_country</name>
+        <label>Assign Language with the right country</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TECH_SAP_Language__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Mapping_Language_Country.Language__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>03/07/24 - Léa Bergerot - Init Flow - Mapping Language with Country as part of SAP based on Metadata type</description>
+    <environments>Default</environments>
+    <interviewLabel>TriggerFlow_Before_Account_Mapping_Language_SAP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TriggerFlow_Before_Account_Mapping_Language_SAP</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get custom metadata type Mapping language country link to the country of the account</description>
+        <name>Get_Mapping_Language_Country</name>
+        <label>Get Mapping Language Country</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Language_with_the_right_country</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Pays__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Mapping_Language_Country__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Mapping_Language_Country</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Pays__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Pays__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

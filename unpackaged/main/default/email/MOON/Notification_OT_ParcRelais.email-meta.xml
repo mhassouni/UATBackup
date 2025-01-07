@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notification_OT_ParcRelais</name>
+    <style>none</style>
+    <subject>Mobilisation d&#39;un parc relais par une autre agence</subject>
+    <textOnly>Bonjour,
+
+Dans le cadre de l&#39;intervention {!WorkOrder.TECH_Case_Number__c} réalisée par l&#39;agence {!WorkOrder.TECH_AgenceIntervenante_Name__c} le {!WorkOrder.CreatedDate}, le parc N° {!WorkOrder.TECH_ParcRelais_Name__c} a été utilisé comme véhicule de relais.
+
+Pour plus d&#39;informations, merci de contacter directement l&#39;agence concernée.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

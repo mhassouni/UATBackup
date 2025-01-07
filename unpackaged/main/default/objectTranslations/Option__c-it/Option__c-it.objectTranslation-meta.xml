@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Option --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Option --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Layout Option</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification --></label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Option - Service Tarification</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification --></label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Option - Télématique</layout>
+        <sections>
+            <label><!-- Informations --></label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Pack --></label>
+            <section>Pack</section>
+        </sections>
+        <sections>
+            <label><!-- Tarification --></label>
+            <section>Tarification</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Num de Option --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Option --></label>
+        <name>Option</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Option - Télématique --></label>
+        <name>Option_Telematique</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Veuillez sélectionner un tarif avant d’ajouter une option --></errorMessage>
+        <name>VR04_OptionRetenu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- L&apos;option retenue n&apos;est pas réalisable ou n&apos;a pas été tarifée --></errorMessage>
+        <name>VR1_Options</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Les caméras ne peuvent être sélectionnées que pour les Pack UK et Pack Italie --></errorMessage>
+        <name>VR2_OptionTelematique_Cameras</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez renseigner le champ Configuration pour un pack de type Evolution --></errorMessage>
+        <name>VR_Option_PackConfiguration</name>
+    </validationRules>
+</CustomObjectTranslation>

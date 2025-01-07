@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partager</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Partager</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/p/share/CustomObjectSharingEdit?parentId={!Piece_Jointe__c.Id}&amp;retURL=%2Fapex%2FVFP26_PiecesJointes%3FId%3D{!Piece_Jointe__c.Id}</url>
+</WebLink>

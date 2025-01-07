@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Refrigerated Vehicles&#39; customer base</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Refrigerated Vehicles&#39; customer bases</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Parc Client Véhicules Frigorifiques</layout>
+        <sections>
+            <label>Comments</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>General informations</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Vehicle</label>
+            <section>Véhicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Identifier</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Activite_30_jours --></label>
+        <name>Activite_30_jours</name>
+    </webLinks>
+</CustomObjectTranslation>

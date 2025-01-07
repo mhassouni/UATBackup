@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Famille__c</fullName>
+    <label>Famille</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATELIER</fullName>
+                <default>false</default>
+                <label>ATELIER</label>
+            </value>
+            <value>
+                <fullName>CAPEX - CHASSIS</fullName>
+                <default>false</default>
+                <label>CAPEX - CHASSIS</label>
+            </value>
+            <value>
+                <fullName>CAPEX - GROUPE FROID</fullName>
+                <default>false</default>
+                <label>CAPEX - GROUPE FROID</label>
+            </value>
+            <value>
+                <fullName>CAPEX - MEUBLES</fullName>
+                <default>false</default>
+                <label>CAPEX - MEUBLES</label>
+            </value>
+            <value>
+                <fullName>CARBURANTS</fullName>
+                <default>false</default>
+                <label>CARBURANTS</label>
+            </value>
+            <value>
+                <fullName>DEPLACEMENT</fullName>
+                <default>false</default>
+                <label>DEPLACEMENT</label>
+            </value>
+            <value>
+                <fullName>FRAIS GENERAUX</fullName>
+                <default>false</default>
+                <label>FRAIS GENERAUX</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>OPEX - PDR</fullName>
+                <default>false</default>
+                <label>OPEX - PDR</label>
+            </value>
+            <value>
+                <fullName>TRANSPORT</fullName>
+                <default>false</default>
+                <label>TRANSPORT</label>
+            </value>
+            <value>
+                <fullName>VEHICULES</fullName>
+                <default>false</default>
+                <label>VEHICULES</label>
+            </value>
+            <value>
+                <fullName>CAPEX - HAYON</fullName>
+                <default>false</default>
+                <label>CAPEX - HAYON</label>
+            </value>
+            <value>
+                <fullName>OPEX - CONSOMMABLE/PRESTATIONS/ACCESSOIRES CHASSIS</fullName>
+                <default>false</default>
+                <label>OPEX - CONSOMMABLE/PRESTATIONS/ACCESSOIRES CHASSIS</label>
+            </value>
+            <value>
+                <fullName>CAPEX - VPC</fullName>
+                <default>false</default>
+                <label>CAPEX - VPC</label>
+            </value>
+            <value>
+                <fullName>OPEX - FOURNITURES ATELIER</fullName>
+                <default>false</default>
+                <label>OPEX - FOURNITURES ATELIER</label>
+            </value>
+            <value>
+                <fullName>OPEX - ACHATS INDIRECTS (SERVICES GENERAUX)</fullName>
+                <default>false</default>
+                <label>OPEX - ACHATS INDIRECTS (SERVICES GENERAUX)</label>
+            </value>
+            <value>
+                <fullName>OPEX - TRANSPORT</fullName>
+                <default>false</default>
+                <label>OPEX - TRANSPORT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

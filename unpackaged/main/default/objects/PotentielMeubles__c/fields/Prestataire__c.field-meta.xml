@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prestataire__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Prestataire</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Le prestataire choisi doit être un compte concurrent.</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte Concurrent</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipName>ParcsClientMeubles_Prestataire</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

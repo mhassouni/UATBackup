@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Lingue parlate</label>
+        <name>LanguesParlees__c</name>
+        <picklistValues>
+            <masterLabel>Allemand</masterLabel>
+            <translation>Tedesco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anglais</masterLabel>
+            <translation>Inglese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabe</masterLabel>
+            <translation>Arabo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinois</masterLabel>
+            <translation><!-- Chinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Espagnol</masterLabel>
+            <translation>Spagnolo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Français</masterLabel>
+            <translation>Francese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hongroise</masterLabel>
+            <translation><!-- Hongroise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italien</masterLabel>
+            <translation>Italiano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Néerlandais</masterLabel>
+            <translation>Olandese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polonais</masterLabel>
+            <translation>Polacco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugais</masterLabel>
+            <translation>Portoghese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russe</masterLabel>
+            <translation><!-- Russe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tchèque</masterLabel>
+            <translation>Ceco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turc</masterLabel>
+            <translation><!-- Turc --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

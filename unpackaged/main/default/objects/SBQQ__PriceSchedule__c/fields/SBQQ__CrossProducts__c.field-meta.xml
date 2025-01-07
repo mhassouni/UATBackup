@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__CrossProducts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that indicates whether volume discount calculations should aggregate quantities of all products using this schedule.</description>
+    <inlineHelpText>Sélectionnez la case pour agréger les quantités de tous les produits utilisant ce barème pour le calcul de remise sur volume. Les remises par palier ne peuvent être utilisées pour les remises sur les produits croisés.</inlineHelpText>
+    <label>Cross Products</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

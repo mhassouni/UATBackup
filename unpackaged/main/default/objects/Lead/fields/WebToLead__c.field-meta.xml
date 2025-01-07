@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WebToLead__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Si coché,la piste a été crée via le WebToLead Formulaire</description>
+    <label>WebToLead</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Devis SAP CPQ --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Devis SAP CPQ --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Devis</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- MOTIFS / JUSTIFICATIONS --></label>
+            <section>MOTIFS / JUSTIFICATIONS</section>
+        </sections>
+        <sections>
+            <label><!-- PROFITABILITÉ (Hors Services) --></label>
+            <section>PROFITABILITÉ (Hors Services)</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro du devis --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Modifier devis --></label>
+        <name>Edit_quote_SAP</name>
+    </quickActions>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

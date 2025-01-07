@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Elevé</fullName>
+        <default>false</default>
+        <label>Elevé</label>
+    </customValue>
+    <customValue>
+        <fullName>Faible</fullName>
+        <default>false</default>
+        <label>Faible</label>
+    </customValue>
+    <masterLabel>Risque Stratégique</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

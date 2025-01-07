@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SegmentLabel__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the Column header label associated with this line.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Étiquette de l&#39;en-tête de la colonne associée à cette ligne.</inlineHelpText>
+    <label>Segment Label</label>
+    <length>25</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

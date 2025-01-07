@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeActivite__c</fullName>
+    <inlineHelpText>According to PF classification</inlineHelpText>
+    <label>Type d&#39;activité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administration</fullName>
+                <default>false</default>
+                <label>Administration</label>
+            </value>
+            <value>
+                <fullName>Alimentaire Non Frigorifique</fullName>
+                <default>false</default>
+                <label>Alimentaire Non Frigorifique</label>
+            </value>
+            <value>
+                <fullName>Association</fullName>
+                <default>false</default>
+                <label>Association</label>
+            </value>
+            <value>
+                <fullName>Beurre, Œufs, Fromage</fullName>
+                <default>false</default>
+                <label>Beurre, Œufs, Fromage</label>
+            </value>
+            <value>
+                <fullName>Boulangerie - Pâtisserie</fullName>
+                <default>false</default>
+                <label>Boulangerie - Pâtisserie</label>
+            </value>
+            <value>
+                <fullName>Crèmes Glacées, Surgelés</fullName>
+                <default>false</default>
+                <label>Crèmes Glacées, Surgelés</label>
+            </value>
+            <value>
+                <fullName>Cuisine Centrale</fullName>
+                <default>false</default>
+                <label>Cuisine Centrale</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>Distributeur de boissons</fullName>
+                <default>false</default>
+                <label>Distributeur de boissons</label>
+            </value>
+            <value>
+                <fullName>Distributeur de produits frais et surgelés</fullName>
+                <default>false</default>
+                <label>Distributeur de produits frais et surgelés</label>
+            </value>
+            <value>
+                <fullName>Evenementiel</fullName>
+                <default>false</default>
+                <label>Evenementiel</label>
+            </value>
+            <value>
+                <fullName>Festivités</fullName>
+                <default>false</default>
+                <label>Festivités</label>
+            </value>
+            <value>
+                <fullName>Fleuriste</fullName>
+                <default>false</default>
+                <label>Fleuriste</label>
+            </value>
+            <value>
+                <fullName>Fruits et Légumes</fullName>
+                <default>false</default>
+                <label>Fruits et Légumes</label>
+            </value>
+            <value>
+                <fullName>Grandes et Moyennes Surfaces</fullName>
+                <default>false</default>
+                <label>Grandes et Moyennes Surfaces</label>
+            </value>
+            <value>
+                <fullName>Home Service</fullName>
+                <default>false</default>
+                <label>Home Service</label>
+            </value>
+            <value>
+                <fullName>Hôtelier</fullName>
+                <default>false</default>
+                <label>Hôtelier</label>
+            </value>
+            <value>
+                <fullName>Hygiène</fullName>
+                <default>false</default>
+                <label>Hygiène</label>
+            </value>
+            <value>
+                <fullName>Loueur</fullName>
+                <default>false</default>
+                <label>Loueur</label>
+            </value>
+            <value>
+                <fullName>Marée</fullName>
+                <default>false</default>
+                <label>Marée</label>
+            </value>
+            <value>
+                <fullName>Médicaments / Laboratoires pharma</fullName>
+                <default>false</default>
+                <label>Médicaments / Laboratoires pharma</label>
+            </value>
+            <value>
+                <fullName>Ostréiculteur</fullName>
+                <default>false</default>
+                <label>Ostréiculteur</label>
+            </value>
+            <value>
+                <fullName>Panification (producteur avec distrib. Intégrée)</fullName>
+                <default>false</default>
+                <label>Panification (producteur avec distrib. Intégrée)</label>
+            </value>
+            <value>
+                <fullName>Particulier</fullName>
+                <default>false</default>
+                <label>Particulier</label>
+            </value>
+            <value>
+                <fullName>Portage de repas (CCAS-CPAS etc…)</fullName>
+                <default>false</default>
+                <label>Portage de repas (CCAS-CPAS etc…)</label>
+            </value>
+            <value>
+                <fullName>Producteur</fullName>
+                <default>false</default>
+                <label>Producteur</label>
+            </value>
+            <value>
+                <fullName>Producteurs Industriels</fullName>
+                <default>false</default>
+                <label>Producteurs Industriels</label>
+            </value>
+            <value>
+                <fullName>Restaurateur</fullName>
+                <default>false</default>
+                <label>Restaurateur</label>
+            </value>
+            <value>
+                <fullName>Restauration Collective</fullName>
+                <default>false</default>
+                <label>Restauration Collective</label>
+            </value>
+            <value>
+                <fullName>Restauration Rapide</fullName>
+                <default>false</default>
+                <label>Restauration Rapide</label>
+            </value>
+            <value>
+                <fullName>Salaisons, Plats Préparés</fullName>
+                <default>false</default>
+                <label>Salaisons, Plats Préparés</label>
+            </value>
+            <value>
+                <fullName>Station Service</fullName>
+                <default>false</default>
+                <label>Station Service</label>
+            </value>
+            <value>
+                <fullName>Traiteurs</fullName>
+                <default>false</default>
+                <label>Traiteurs</label>
+            </value>
+            <value>
+                <fullName>Transporteur</fullName>
+                <default>false</default>
+                <label>Transporteur</label>
+            </value>
+            <value>
+                <fullName>Transport Public Frigorifique</fullName>
+                <default>false</default>
+                <label>Transport Public Frigorifique</label>
+            </value>
+            <value>
+                <fullName>Travaux Publics - BTP</fullName>
+                <default>false</default>
+                <label>Travaux Publics - BTP</label>
+            </value>
+            <value>
+                <fullName>Viandes, Volailles</fullName>
+                <default>false</default>
+                <label>Viandes, Volailles</label>
+            </value>
+            <value>
+                <fullName>Viticulteur</fullName>
+                <default>false</default>
+                <label>Viticulteur</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

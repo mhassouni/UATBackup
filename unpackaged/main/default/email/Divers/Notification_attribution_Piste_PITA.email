@@ -1,0 +1,11 @@
+*** Nuovo lead {!Lead.NumeroPiste__c} da elaborare in Greenforce***
+
+La seguente traccia ti è stata assegnata.
+la società : {!Lead.Company}
+Nome della traccia : {!Lead.Name}
+Agenzia di partenza e ritorno : {!Lead.Agence_depart_retour__c}
+codice postale : {!Lead.CodePostal__c}
+città : {!Lead.Ville__c}
+
+
+Clicca sul link per andare direttamente alla pista: {!Lead.Link}

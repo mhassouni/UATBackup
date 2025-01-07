@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X022_DD_Services_Planifi_es_ma_R_gion</fullName>
+    <columns>Name</columns>
+    <columns>Case</columns>
+    <columns>RecordType</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>CreatedDate</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <columns>Account</columns>
+    <columns>Asset</columns>
+    <columns>Statut__c</columns>
+    <columns>Origine_de_la_requete__c</columns>
+    <columns>Organe_controler__c</columns>
+    <columns>Priority</columns>
+    <columns>Travaux_demandes__c</columns>
+    <columns>Ressource_Interne__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Demande_de_service,WorkOrder.Ordre_Reparation</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Earliest_Start_Permitted__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Agence_parc__c</field>
+        <operation>notEqual</operation>
+        <value>999-AGENCE TEST</value>
+    </filters>
+    <label>024-DD Services - Planifiées ma Région</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Organes à contrôler --></label>
+        <name>Organes_controler__c</name>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Kabin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation>Hűtőszekrény karosszéria</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Jármű futómű</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>elektromosság</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe</masterLabel>
+            <translation>Hűtő</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation><!-- Hayon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>gumiabroncs</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

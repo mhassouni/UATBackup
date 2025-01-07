@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Combination</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accounts Combinations</value>
+    </caseValues>
+    
+    
+    
+    
+    <layouts>
+        <layout>Présentation Association du compte</layout>
+        <sections>
+            <label>Customised Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Identifier</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

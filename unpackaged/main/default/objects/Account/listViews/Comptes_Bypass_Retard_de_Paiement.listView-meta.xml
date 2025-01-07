@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comptes_Bypass_Retard_de_Paiement</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>ByPassPaymentLate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ByPassPaymentLate__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Comptes Bypass Retard de Paiement</label>
+</ListView>

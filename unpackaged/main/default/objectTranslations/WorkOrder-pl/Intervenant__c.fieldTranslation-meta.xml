@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Wykonawca</label>
+        <name>Intervenant__c</name>
+        <picklistValues>
+            <masterLabel>Externe</masterLabel>
+            <translation>Wewnętrzny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interne</masterLabel>
+            <translation>Zewnętrzny</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

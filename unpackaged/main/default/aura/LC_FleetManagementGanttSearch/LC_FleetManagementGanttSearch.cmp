@@ -1,0 +1,412 @@
+<aura:component
+  controller="FleetManagementController"
+  implements="flexipage:availableForAllPageTypes"
+>
+  <!-- LIBRARIES -->
+  <ltng:require
+    styles="{!$Resource.fullCalendar + '/node_modules/fullcalendar/dist/fullcalendar.min.css'}"
+    scripts="{!join(',',
+                           $Resource.fullCalendar + '/node_modules/jquery/dist/jquery.min.js',
+                           $Resource.fullCalendar + '/node_modules/moment/min/moment.min.js',
+                           $Resource.fullCalendar + '/node_modules/jquery-ui-dist/jquery-ui.min.js',
+                           $Resource.fullCalendar + '/node_modules/fullcalendar/dist/fullcalendar.min.js')}"
+    afterScriptsLoaded="{!c.jsLoaded}"
+  />
+
+  <!-- METHODS -->
+  <aura:method name="refresh" action="{!c.doRefresh}" />
+
+  <!-- ATTRIBUTES -->
+  <aura:attribute name="assetId" type="String" access="global" />
+  <aura:attribute name="searchKey" type="String" default="" />
+  <aura:attribute name="searchResults" type="List" />
+  <aura:attribute name="reservationsValuesMap" type="List" />
+  <aura:attribute name="assetReservations" type="List" />
+  <aura:attribute
+    name="sObjectTypeConfig"
+    type="String"
+    default="Reservation__c"
+  />
+  <aura:attribute name="paginationMax" type="Integer" default="5" />
+  <aura:attribute name="currentPageMax" type="Integer" default="5" />
+  <aura:attribute name="currentPageMin" type="Integer" default="0" />
+  <aura:attribute name="selectedReservations" type="List" default="[]" />
+
+  <aura:attribute name="spinner" type="Boolean" default="false" />
+
+
+  <!-- EVENT REGISTRATIONS -->
+  <aura:registerEvent name="notifyGanttParent" type="c:NotifyGanttParent" />
+
+  <!-- CALLED FROM PARENT -->
+  <aura:method name="reload" action="{!c.reload}" access="PUBLIC" />
+
+  <!-- BODY -->
+  <div class="slds slds-box slds-m-around--small">
+    <!-- SPINNER -->
+    <aura:if isTrue="{!v.spinner}">
+      <lightning:spinner alternativeText="Loading" />
+    </aura:if>
+    <!-- /SPINNER -->
+
+    <br />
+    <div aura:id="external-events" id="{!globalId + 'external-events'}">
+      <ul>
+        <lightning:badge
+          label="{!v.reservationsValuesMap.length + ' Réservation(s)'}"
+          class="badge"
+        />
+        <aura:if isTrue="{!v.reservationsValuesMap.length == 30}">
+          <div class="info-notif">
+            <lightning:icon
+              iconName="utility:warning"
+              alternativeText=""
+              size="x-small"
+              class=""
+            />
+            <span>
+              Affichage des 30 premières Réservations. Merci de choisir des
+              filtres plus restrictifs.</span
+            >
+          </div>
+        </aura:if>
+        <div class="check-all-container">
+          <input
+            type="checkbox"
+            id="check-all"
+            onchange="{!c.onCheckAllReservations}"
+          />
+          <label>Séléctionner tout</label>
+        </div>
+        <aura:iteration
+          items="{!v.reservationsValuesMap}"
+          var="reservation"
+          indexVar="key"
+        >
+          <aura:if
+            isTrue="{!and(lessthan(key,v.currentPageMax), greaterthan((key +1),v.currentPageMin)) }"
+          >
+            <aura:if
+              isTrue="{!reservation.record[9].value != 'En attente de planification' || reservation.record[8].value == 'Location'}"
+            >
+              <li
+                class="slds-item disabled-card fc-event"
+                aura:id="{!reservation.id}"
+                id="{!reservation.id}"
+                data-sfid="{!reservation.id}"
+              >
+                <ul class="slds-has-dividers--around-space">
+                  <li class="slds-item inside-li">
+                    <div>
+                      <aura:iteration
+                        items="{!reservation.record}"
+                        var="record"
+                        indexVar="field"
+                      >
+                        <aura:if isTrue="{!record.field.apiName == 'Name'}">
+                          <h2 class="result-title">
+                            <a href="{! '/' + reservation.id}" target="_blank"
+                              >{!record.value}</a
+                            >
+                          </h2>
+                          <aura:set attribute="else">
+                            <aura:if isTrue="{! and(record.field.apiName == 'TECH_OrderHTMLOuput__c', record.value != '') }">
+                              <p class="black-txt">
+                                &nbsp; <aura:unescapedHtml value="{!record.value}"/>
+                              </p>
+                            <aura:set attribute="else">
+                              <aura:if isTrue="{!record.field.apiName != 'Description_Gantt__c'}">
+                                <aura:if
+                                  isTrue="{! and(
+                                    record.field.apiName != 'Record_Type_Name__c',
+                                    and(
+                                      record.field.apiName != 'Date_de_debut__c', 
+                                      record.field.apiName != 'Date_de_fin__c'
+                                      )
+                                    )}"
+                                >
+                                  <p class="black-txt">&nbsp; {!record.value}</p>
+                                </aura:if>
+                              </aura:if>
+                            </aura:set>
+                            </aura:if>
+                          </aura:set>
+                        </aura:if>
+                      </aura:iteration>
+                    </div>
+                    <div>
+                      <aura:iteration
+                        items="{!reservation.record}"
+                        var="record"
+                        indexVar="field"
+                      >
+                        <aura:if
+                          isTrue="{!record.field.apiName == 'Record_Type_Name__c'}"
+                        >
+                          <span
+                            style="display: none"
+                            id="{!'color' + reservation.id}"
+                            >{!record.value}</span
+                          >
+                        </aura:if>
+                        <aura:if
+                          isTrue="{!record.field.apiName == 'Description_Gantt__c'}"
+                        >
+                          <span
+                            style="display: none"
+                            id="{!'description' + reservation.id}"
+                            >{!record.value}</span
+                          >
+                        </aura:if>
+                        <aura:if
+                          isTrue="{!record.field.apiName == 'Date_de_debut__c'}"
+                        >
+                          <div style="display: flex; align-items: center">
+                            <lightning:icon
+                              iconName="utility:date_input"
+                              alternativeText=""
+                              size="x-small"
+                              class=""
+                              style="
+                                padding-right: 3px;
+                                transform: translateY(-1px);
+                              "
+                            />
+                            <p class="black-txt">
+                              <lightning:formattedDateTime
+                                value="{!record.value}"
+                                year="numeric"
+                                month="numeric"
+                                day="numeric"
+                                aura:id="{!'Date_de_debut' + reservation.id}"
+                                id="{!'Date_de_debut' + reservation.id}"
+                              />
+                            </p>
+                          </div>
+                        </aura:if>
+                        <aura:if
+                          isTrue="{!record.field.apiName == 'Date_de_fin__c'}"
+                        >
+                          <div class="date-line"></div>
+                          <div style="display: flex; align-items: center;">
+                            <lightning:icon
+                              iconName="utility:date_input"
+                              alternativeText=""
+                              size="x-small"
+                              class=""
+                              style="
+                                padding-right: 3px;
+                                transform: translateY(-1px);
+                              "
+                            />
+                            <p class="black-txt">
+                              <lightning:formattedDateTime
+                                value="{!record.value}"
+                                year="numeric"
+                                month="numeric"
+                                day="numeric"
+                                aura:id="{!'Date_de_fin' + reservation.id}"
+                                id="{!'Date_de_fin' + reservation.id}"
+                              />
+                            </p>
+                          </div>
+                        </aura:if>
+                      </aura:iteration>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <aura:set attribute="else">
+                <li
+                  class="slds-item fc-event"
+                  aura:id="{!reservation.id}"
+                  id="{!reservation.id}"
+                  data-sfid="{!reservation.id}"
+                >
+                  <ul class="slds-has-dividers--around-space">
+                    <li class="slds-item inside-li">
+                      <div>
+                        <aura:iteration
+                          items="{!reservation.record}"
+                          var="record"
+                          indexVar="field"
+                        >
+                          <aura:if isTrue="{!record.field.apiName == 'Name'}">
+                            <h2 class="result-title">
+                              <input
+                                aura:id="reservation_checkbox"
+                                type="checkbox"
+                                value="{!reservation.id}"
+                                onchange="{!c.onCheckReservation}"
+                              />
+                              <a
+                                href="{! '/' + reservation.id}"
+                                target="_blank"
+                                id="{! reservation.id + '-name'}"
+                                >{!record.value}</a
+                              >
+                            </h2>
+                            <aura:set attribute="else">
+                              <aura:if isTrue="{! and(record.field.apiName == 'TECH_OrderHTMLOuput__c', record.value != '') }">
+                                <p class="black-txt">
+                                  &nbsp; <aura:unescapedHtml value="{!record.value}"/>
+                                </p>
+                                <aura:set attribute="else">
+                                    <aura:if isTrue="{!record.field.apiName != 'Description_Gantt__c'}">
+                                      
+                                      <aura:if isTrue="{! and(
+                                                            record.field.apiName != 'Record_Type_Name__c',
+                                                            and(
+                                                              record.field.apiName != 'Date_de_debut__c', 
+                                                              record.field.apiName != 'Date_de_fin__c'
+                                                              )
+                                                            )}"
+                                        >
+                                        <p class="black-txt">
+                                          &nbsp; {!record.value}
+                                        </p>
+                                      </aura:if>
+                                    </aura:if>
+                                </aura:set>
+                              </aura:if>
+                              
+                            </aura:set>
+                          </aura:if>
+                        </aura:iteration>
+                      </div>
+                      <div>
+                        <aura:iteration
+                          items="{!reservation.record}"
+                          var="record"
+                          indexVar="field"
+                        >
+                          <aura:if
+                            isTrue="{!record.field.apiName == 'Record_Type_Name__c'}"
+                          >
+                            <span
+                              style="display: none"
+                              id="{!'color' + reservation.id}"
+                              >{!record.value}</span
+                            >
+                          </aura:if>
+                          <aura:if
+                            isTrue="{!record.field.apiName == 'Status__c'}"
+                          >
+                            <span
+                              style="display: none"
+                              id="{!'status' + reservation.id}"
+                              >{!record.value}</span
+                            >
+                          </aura:if>
+                          <aura:if
+                            isTrue="{!record.field.apiName == 'Description_Gantt__c'}"
+                          >
+                            <span
+                              style="display: none"
+                              id="{!'description' + reservation.id}"
+                              >{!record.value}</span
+                            >
+                          </aura:if>
+                          <aura:if
+                            isTrue="{!record.field.apiName == 'Date_de_debut__c'}"
+                          >
+                            <div style="display: flex">
+                              <lightning:icon
+                                iconName="utility:date_input"
+                                alternativeText=""
+                                size="x-small"
+                                class=""
+                                style="
+                                  padding-right: 3px;
+                                  transform: translateY(-1px);
+                                "
+                              />
+                              <p class="black-txt">
+                                <lightning:formattedDateTime
+                                  value="{!record.value}"
+                                  year="numeric"
+                                  month="numeric"
+                                  day="numeric"
+                                  aura:id="{!'Date_de_debut' + reservation.id}"
+                                  id="{!'Date_de_debut' + reservation.id}"
+                                />
+                              </p>
+                            </div>
+                          </aura:if>
+                          <aura:if
+                            isTrue="{!record.field.apiName == 'Date_de_fin__c'}"
+                          >
+                            <div class="date-line"></div>
+                            <div style="display: flex">
+                              <lightning:icon
+                                iconName="utility:date_input"
+                                alternativeText=""
+                                size="x-small"
+                                class=""
+                                style="
+                                  padding-right: 3px;
+                                  transform: translateY(-1px);
+                                "
+                              />
+                              <p class="black-txt">
+                                <lightning:formattedDateTime
+                                  value="{!record.value}"
+                                  year="numeric"
+                                  month="numeric"
+                                  day="numeric"
+                                  aura:id="{!'Date_de_fin' + reservation.id}"
+                                  id="{!'Date_de_fin' + reservation.id}"
+                                />
+                              </p>
+                            </div>
+                          </aura:if>
+                        </aura:iteration>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </aura:set>
+            </aura:if>
+          </aura:if>
+        </aura:iteration>
+      </ul>
+
+      <div class="custom-footer">
+        <aura:if isTrue="{!greaterthan(v.reservationsValuesMap.length,5) }">
+          <div class="paginationBtns">
+            <aura:if isTrue="{!greaterthan(v.currentPageMin,4) }">
+              <button onclick="{!c.pageDown}">«</button>
+              <aura:set attribute="else">
+                <button disabled="true">«</button>
+              </aura:set>
+            </aura:if>
+            <aura:if
+              isTrue="{!lessthan(v.currentPageMax,v.reservationsValuesMap.length) }"
+            >
+              <button onclick="{!c.pageUp}">»</button>
+              <aura:set attribute="else">
+                <button disabled="true">»</button>
+              </aura:set>
+            </aura:if>
+          </div>
+        </aura:if>
+        <aura:if isTrue="{!v.selectedReservations.length > 0}">
+          <lightning:button
+            variant="brand"
+            label="Confirmer"
+            title="Confirmer"
+            onclick="{!c.handleConfirm}"
+          />
+          <aura:set attribute="else">
+            <lightning:button
+              variant="brand"
+              label="Confirmer"
+              disabled="true"
+              title="Confirmer"
+            />
+          </aura:set>
+        </aura:if>
+      </div>
+    </div>
+  </div>
+</aura:component>

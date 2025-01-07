@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03_TousGrandsComptes</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CategorieCompte__c</columns>
+    <columns>Statut__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Noeud</value>
+    </filters>
+    <filters>
+        <field>Grand_Compte__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>03- Grands Comptes / Key Accounts</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

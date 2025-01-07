@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anomalie__c</fullName>
+    <description>anomalie</description>
+    <label>Anomalie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>type_OE__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accastillage</fullName>
+                <default>false</default>
+                <label>Accastillage</label>
+            </value>
+            <value>
+                <fullName>Accessoires (enregistreur, contacteur de porte, sonde piqueuse, etc)</fullName>
+                <default>false</default>
+                <label>Accessoires (enregistreur, contacteur de porte, sonde piqueuse, etc)</label>
+            </value>
+            <value>
+                <fullName>AEBS</fullName>
+                <default>false</default>
+                <label>AEBS</label>
+            </value>
+            <value>
+                <fullName>Alarme personne enfermée</fullName>
+                <default>false</default>
+                <label>Alarme personne enfermée</label>
+            </value>
+            <value>
+                <fullName>Alimentation</fullName>
+                <default>false</default>
+                <label>Alimentation</label>
+            </value>
+            <value>
+                <fullName>Alimentation Carburant</fullName>
+                <default>false</default>
+                <label>Alimentation Carburant</label>
+            </value>
+            <value>
+                <fullName>Alimentation électrique</fullName>
+                <default>false</default>
+                <label>Alimentation électrique</label>
+            </value>
+            <value>
+                <fullName>Alternateur</fullName>
+                <default>false</default>
+                <label>Alternateur</label>
+            </value>
+            <value>
+                <fullName>Amortisseur</fullName>
+                <default>false</default>
+                <label>Amortisseur</label>
+            </value>
+            <value>
+                <fullName>Auvent</fullName>
+                <default>false</default>
+                <label>Auvent</label>
+            </value>
+            <value>
+                <fullName>Axes grippés</fullName>
+                <default>false</default>
+                <label>Axes grippés</label>
+            </value>
+            <value>
+                <fullName>Batterie Déchargée</fullName>
+                <default>false</default>
+                <label>Batterie Déchargée</label>
+            </value>
+            <value>
+                <fullName>Batterie De Puissance Groupe Électrique</fullName>
+                <default>false</default>
+                <label>Batterie De Puissance Groupe Électrique</label>
+            </value>
+            <value>
+                <fullName>Batterie De Traction Véhicule Électrique</fullName>
+                <default>false</default>
+                <label>Batterie De Traction Véhicule Électrique</label>
+            </value>
+            <value>
+                <fullName>Batterie Frigo</fullName>
+                <default>false</default>
+                <label>Batterie Frigo</label>
+            </value>
+            <value>
+                <fullName>Batterie Hayon</fullName>
+                <default>false</default>
+                <label>Batterie Hayon</label>
+            </value>
+            <value>
+                <fullName>Bloc Moteur (Trous/Fuite)</fullName>
+                <default>false</default>
+                <label>Bloc Moteur (Trous/Fuite)</label>
+            </value>
+            <value>
+                <fullName>Bloque (Serrage Moteur)</fullName>
+                <default>false</default>
+                <label>Bloque (Serrage Moteur)</label>
+            </value>
+            <value>
+                <fullName>Bouteilles d&#39;air</fullName>
+                <default>false</default>
+                <label>Bouteilles d&#39;air</label>
+            </value>
+            <value>
+                <fullName>BV bloquée</fullName>
+                <default>false</default>
+                <label>BV bloquée</label>
+            </value>
+            <value>
+                <fullName>Cabine / équipements</fullName>
+                <default>false</default>
+                <label>Cabine / équipements</label>
+            </value>
+            <value>
+                <fullName>Cabine / Multimédia</fullName>
+                <default>false</default>
+                <label>Cabine / Multimédia</label>
+            </value>
+            <value>
+                <fullName>Cadre</fullName>
+                <default>false</default>
+                <label>Cadre</label>
+            </value>
+            <value>
+                <fullName>Calage</fullName>
+                <default>false</default>
+                <label>Calage</label>
+            </value>
+            <value>
+                <fullName>Calandre</fullName>
+                <default>false</default>
+                <label>Calandre</label>
+            </value>
+            <value>
+                <fullName>Capteur D&#39;usure</fullName>
+                <default>false</default>
+                <label>Capteur D&#39;usure</label>
+            </value>
+            <value>
+                <fullName>Chargeur Hayon</fullName>
+                <default>false</default>
+                <label>Chargeur Hayon</label>
+            </value>
+            <value>
+                <fullName>Choc caisse</fullName>
+                <default>false</default>
+                <label>Choc caisse</label>
+            </value>
+            <value>
+                <fullName>Choc Carrosserie Ou Pare-brise</fullName>
+                <default>false</default>
+                <label>Choc Carrosserie Ou Pare-brise</label>
+            </value>
+            <value>
+                <fullName>Choc Cellule Isotherme (Caisse)</fullName>
+                <default>false</default>
+                <label>Choc Cellule Isotherme (Caisse)</label>
+            </value>
+            <value>
+                <fullName>Choc En Hauteur</fullName>
+                <default>false</default>
+                <label>Choc En Hauteur</label>
+            </value>
+            <value>
+                <fullName>Choc groupe</fullName>
+                <default>false</default>
+                <label>Choc groupe</label>
+            </value>
+            <value>
+                <fullName>Choc Pare-choc Ou Éclairage</fullName>
+                <default>false</default>
+                <label>Choc Pare-choc Ou Éclairage</label>
+            </value>
+            <value>
+                <fullName>Choc Piece Mecanique (Radiateur, Compresseur, Etc)</fullName>
+                <default>false</default>
+                <label>Choc Piece Mecanique (Radiateur, Compresseur, Etc)</label>
+            </value>
+            <value>
+                <fullName>Choc Rétroviseur</fullName>
+                <default>false</default>
+                <label>Choc Rétroviseur</label>
+            </value>
+            <value>
+                <fullName>Choc trottoir</fullName>
+                <default>false</default>
+                <label>Choc trottoir</label>
+            </value>
+            <value>
+                <fullName>Chronotachygraphe</fullName>
+                <default>false</default>
+                <label>Chronotachygraphe</label>
+            </value>
+            <value>
+                <fullName>Circuit électrique</fullName>
+                <default>false</default>
+                <label>Circuit électrique</label>
+            </value>
+            <value>
+                <fullName>Claquement</fullName>
+                <default>false</default>
+                <label>Claquement</label>
+            </value>
+            <value>
+                <fullName>Cloison</fullName>
+                <default>false</default>
+                <label>Cloison</label>
+            </value>
+            <value>
+                <fullName>Code clé</fullName>
+                <default>false</default>
+                <label>Code clé</label>
+            </value>
+            <value>
+                <fullName>Commande</fullName>
+                <default>false</default>
+                <label>Commande</label>
+            </value>
+            <value>
+                <fullName>Commande ( micro, cartes etc..)</fullName>
+                <default>false</default>
+                <label>Commande ( micro, cartes etc..)</label>
+            </value>
+            <value>
+                <fullName>Commandes</fullName>
+                <default>false</default>
+                <label>Commandes</label>
+            </value>
+            <value>
+                <fullName>Commandes Bv</fullName>
+                <default>false</default>
+                <label>Commandes Bv</label>
+            </value>
+            <value>
+                <fullName>Compresseur</fullName>
+                <default>false</default>
+                <label>Compresseur</label>
+            </value>
+            <value>
+                <fullName>Compresseur Pneumatique</fullName>
+                <default>false</default>
+                <label>Compresseur Pneumatique</label>
+            </value>
+            <value>
+                <fullName>Compresseur route</fullName>
+                <default>false</default>
+                <label>Compresseur route</label>
+            </value>
+            <value>
+                <fullName>Compresseur secteur</fullName>
+                <default>false</default>
+                <label>Compresseur secteur</label>
+            </value>
+            <value>
+                <fullName>Courroie</fullName>
+                <default>false</default>
+                <label>Courroie</label>
+            </value>
+            <value>
+                <fullName>Courroies / Galet</fullName>
+                <default>false</default>
+                <label>Courroies / Galet</label>
+            </value>
+            <value>
+                <fullName>Crémone grippée</fullName>
+                <default>false</default>
+                <label>Crémone grippée</label>
+            </value>
+            <value>
+                <fullName>Crevaison</fullName>
+                <default>false</default>
+                <label>Crevaison</label>
+            </value>
+            <value>
+                <fullName>Démarrage du groupe</fullName>
+                <default>false</default>
+                <label>Démarrage du groupe</label>
+            </value>
+            <value>
+                <fullName>Démarrage mode ROUTE</fullName>
+                <default>false</default>
+                <label>Démarrage mode ROUTE</label>
+            </value>
+            <value>
+                <fullName>Démarrage mode SECTEUR</fullName>
+                <default>false</default>
+                <label>Démarrage mode SECTEUR</label>
+            </value>
+            <value>
+                <fullName>Démarrage Par Câbles</fullName>
+                <default>false</default>
+                <label>Démarrage Par Câbles</label>
+            </value>
+            <value>
+                <fullName>Démarreur</fullName>
+                <default>false</default>
+                <label>Démarreur</label>
+            </value>
+            <value>
+                <fullName>Détendeur</fullName>
+                <default>false</default>
+                <label>Détendeur</label>
+            </value>
+            <value>
+                <fullName>Direction</fullName>
+                <default>false</default>
+                <label>Direction</label>
+            </value>
+            <value>
+                <fullName>Disjoncteur</fullName>
+                <default>false</default>
+                <label>Disjoncteur</label>
+            </value>
+            <value>
+                <fullName>Disques</fullName>
+                <default>false</default>
+                <label>Disques</label>
+            </value>
+            <value>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+                <label>Distribution</label>
+            </value>
+            <value>
+                <fullName>Echangeurs (Condenseur, Évaporateur)</fullName>
+                <default>false</default>
+                <label>Echangeurs (Condenseur, Évaporateur)</label>
+            </value>
+            <value>
+                <fullName>Echappement</fullName>
+                <default>false</default>
+                <label>Echappement</label>
+            </value>
+            <value>
+                <fullName>Echauffement</fullName>
+                <default>false</default>
+                <label>Echauffement</label>
+            </value>
+            <value>
+                <fullName>Eclairage</fullName>
+                <default>false</default>
+                <label>Eclairage</label>
+            </value>
+            <value>
+                <fullName>ECU (Calculateur)</fullName>
+                <default>false</default>
+                <label>ECU (Calculateur)</label>
+            </value>
+            <value>
+                <fullName>Electricité</fullName>
+                <default>false</default>
+                <label>Electricité</label>
+            </value>
+            <value>
+                <fullName>Electricité 12v / 24v</fullName>
+                <default>false</default>
+                <label>Electricité 12v / 24v</label>
+            </value>
+            <value>
+                <fullName>Electrovanne</fullName>
+                <default>false</default>
+                <label>Electrovanne</label>
+            </value>
+            <value>
+                <fullName>Embrayage</fullName>
+                <default>false</default>
+                <label>Embrayage</label>
+            </value>
+            <value>
+                <fullName>Emetteur</fullName>
+                <default>false</default>
+                <label>Emetteur</label>
+            </value>
+            <value>
+                <fullName>Enregistreur électronique</fullName>
+                <default>false</default>
+                <label>Enregistreur électronique</label>
+            </value>
+            <value>
+                <fullName>Equipement ( Climatisation, Etc…)</fullName>
+                <default>false</default>
+                <label>Equipement ( Climatisation, Etc…)</label>
+            </value>
+            <value>
+                <fullName>Equipements</fullName>
+                <default>false</default>
+                <label>Equipements</label>
+            </value>
+            <value>
+                <fullName>Essuie-glace / Moteur Essuie-glace</fullName>
+                <default>false</default>
+                <label>Essuie-glace / Moteur Essuie-glace</label>
+            </value>
+            <value>
+                <fullName>Etancheité</fullName>
+                <default>false</default>
+                <label>Etancheité</label>
+            </value>
+            <value>
+                <fullName>Etriers</fullName>
+                <default>false</default>
+                <label>Etriers</label>
+            </value>
+            <value>
+                <fullName>Face Avant</fullName>
+                <default>false</default>
+                <label>Face Avant</label>
+            </value>
+            <value>
+                <fullName>Faisceau Electrique</fullName>
+                <default>false</default>
+                <label>Faisceau Electrique</label>
+            </value>
+            <value>
+                <fullName>Faisceaux</fullName>
+                <default>false</default>
+                <label>Faisceaux</label>
+            </value>
+            <value>
+                <fullName>Faux - châssis</fullName>
+                <default>false</default>
+                <label>Faux - châssis</label>
+            </value>
+            <value>
+                <fullName>Filtre à particules</fullName>
+                <default>false</default>
+                <label>Filtre à particules</label>
+            </value>
+            <value>
+                <fullName>Fissure châssis</fullName>
+                <default>false</default>
+                <label>Fissure châssis</label>
+            </value>
+            <value>
+                <fullName>Frein A Main</fullName>
+                <default>false</default>
+                <label>Frein A Main</label>
+            </value>
+            <value>
+                <fullName>Fuite Au Circuit Hydraulique</fullName>
+                <default>false</default>
+                <label>Fuite Au Circuit Hydraulique</label>
+            </value>
+            <value>
+                <fullName>Fuite D&#39;air</fullName>
+                <default>false</default>
+                <label>Fuite D&#39;air</label>
+            </value>
+            <value>
+                <fullName>Fuite D&#39;huile</fullName>
+                <default>false</default>
+                <label>Fuite D&#39;huile</label>
+            </value>
+            <value>
+                <fullName>Fuite De Carburant</fullName>
+                <default>false</default>
+                <label>Fuite De Carburant</label>
+            </value>
+            <value>
+                <fullName>Fuite de fluide</fullName>
+                <default>false</default>
+                <label>Fuite de fluide</label>
+            </value>
+            <value>
+                <fullName>Fuite huile</fullName>
+                <default>false</default>
+                <label>Fuite huile</label>
+            </value>
+            <value>
+                <fullName>Fuite liquide de frein</fullName>
+                <default>false</default>
+                <label>Fuite liquide de frein</label>
+            </value>
+            <value>
+                <fullName>Fuite liquide de refroidissement</fullName>
+                <default>false</default>
+                <label>Fuite liquide de refroidissement</label>
+            </value>
+            <value>
+                <fullName>Fuite Pont Arrière</fullName>
+                <default>false</default>
+                <label>Fuite Pont Arrière</label>
+            </value>
+            <value>
+                <fullName>Fusible</fullName>
+                <default>false</default>
+                <label>Fusible</label>
+            </value>
+            <value>
+                <fullName>Génératrice</fullName>
+                <default>false</default>
+                <label>Génératrice</label>
+            </value>
+            <value>
+                <fullName>Géométrie train AV/ARR</fullName>
+                <default>false</default>
+                <label>Géométrie train AV/ARR</label>
+            </value>
+            <value>
+                <fullName>Groupe froid / échangeurs</fullName>
+                <default>false</default>
+                <label>Groupe froid / échangeurs</label>
+            </value>
+            <value>
+                <fullName>Hayon / Fuite au circuit hydrau</fullName>
+                <default>false</default>
+                <label>Hayon / Fuite au circuit hydrau</label>
+            </value>
+            <value>
+                <fullName>Incendie</fullName>
+                <default>false</default>
+                <label>Incendie</label>
+            </value>
+            <value>
+                <fullName>Injection</fullName>
+                <default>false</default>
+                <label>Injection</label>
+            </value>
+            <value>
+                <fullName>Interrupteur</fullName>
+                <default>false</default>
+                <label>Interrupteur</label>
+            </value>
+            <value>
+                <fullName>Jante</fullName>
+                <default>false</default>
+                <label>Jante</label>
+            </value>
+            <value>
+                <fullName>Joint</fullName>
+                <default>false</default>
+                <label>Joint</label>
+            </value>
+            <value>
+                <fullName>Kit poulie - moteur</fullName>
+                <default>false</default>
+                <label>Kit poulie - moteur</label>
+            </value>
+            <value>
+                <fullName>LDWS</fullName>
+                <default>false</default>
+                <label>LDWS</label>
+            </value>
+            <value>
+                <fullName>Liquide de refroidissement</fullName>
+                <default>false</default>
+                <label>Liquide de refroidissement</label>
+            </value>
+            <value>
+                <fullName>Marchepied</fullName>
+                <default>false</default>
+                <label>Marchepied</label>
+            </value>
+            <value>
+                <fullName>Mauvais branchement du container</fullName>
+                <default>false</default>
+                <label>Mauvais branchement du container</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique)</fullName>
+                <default>false</default>
+                <label>Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique)</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation / Niveau Lave Glace</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation / Niveau Lave Glace</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation / Niveau Liquide Refroidissement</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation / Niveau Liquide Refroidissement</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation / Panne Carburant</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation / Panne Carburant</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation Commande Frigo</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation Commande Frigo</label>
+            </value>
+            <value>
+                <fullName>Mauvaise utilisation groupe</fullName>
+                <default>false</default>
+                <label>Mauvaise utilisation groupe</label>
+            </value>
+            <value>
+                <fullName>Mauvaise Utilisation Hayon</fullName>
+                <default>false</default>
+                <label>Mauvaise Utilisation Hayon</label>
+            </value>
+            <value>
+                <fullName>Micro / Carte imprimée</fullName>
+                <default>false</default>
+                <label>Micro / Carte imprimée</label>
+            </value>
+            <value>
+                <fullName>Montage</fullName>
+                <default>false</default>
+                <label>Montage</label>
+            </value>
+            <value>
+                <fullName>Moteur</fullName>
+                <default>false</default>
+                <label>Moteur</label>
+            </value>
+            <value>
+                <fullName>Moteur électrique</fullName>
+                <default>false</default>
+                <label>Moteur électrique</label>
+            </value>
+            <value>
+                <fullName>Moteur thermique</fullName>
+                <default>false</default>
+                <label>Moteur thermique</label>
+            </value>
+            <value>
+                <fullName>Moteur Véhicule Électrique</fullName>
+                <default>false</default>
+                <label>Moteur Véhicule Électrique</label>
+            </value>
+            <value>
+                <fullName>Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite)</fullName>
+                <default>false</default>
+                <label>Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite)</label>
+            </value>
+            <value>
+                <fullName>Neiman</fullName>
+                <default>false</default>
+                <label>Neiman</label>
+            </value>
+            <value>
+                <fullName>Niveau D&#39;huile (Niveau Bas)</fullName>
+                <default>false</default>
+                <label>Niveau D&#39;huile (Niveau Bas)</label>
+            </value>
+            <value>
+                <fullName>Niveau d’huile</fullName>
+                <default>false</default>
+                <label>Niveau d’huile</label>
+            </value>
+            <value>
+                <fullName>Niveau Liquide De Refroidissement</fullName>
+                <default>false</default>
+                <label>Niveau Liquide De Refroidissement</label>
+            </value>
+            <value>
+                <fullName>Niveau Liquide Lave-glace</fullName>
+                <default>false</default>
+                <label>Niveau Liquide Lave-glace</label>
+            </value>
+            <value>
+                <fullName>Ouverture/Fermeture</fullName>
+                <default>false</default>
+                <label>Ouverture/Fermeture</label>
+            </value>
+            <value>
+                <fullName>Paliers</fullName>
+                <default>false</default>
+                <label>Paliers</label>
+            </value>
+            <value>
+                <fullName>Panne Adblue</fullName>
+                <default>false</default>
+                <label>Panne Adblue</label>
+            </value>
+            <value>
+                <fullName>Panneau latéral</fullName>
+                <default>false</default>
+                <label>Panneau latéral</label>
+            </value>
+            <value>
+                <fullName>Panne batterie Hayon</fullName>
+                <default>false</default>
+                <label>Panne batterie Hayon</label>
+            </value>
+            <value>
+                <fullName>Panne Carburant</fullName>
+                <default>false</default>
+                <label>Panne Carburant</label>
+            </value>
+            <value>
+                <fullName>Panne De Carburant</fullName>
+                <default>false</default>
+                <label>Panne De Carburant</label>
+            </value>
+            <value>
+                <fullName>Pare - chocs</fullName>
+                <default>false</default>
+                <label>Pare - chocs</label>
+            </value>
+            <value>
+                <fullName>Pavillon</fullName>
+                <default>false</default>
+                <label>Pavillon</label>
+            </value>
+            <value>
+                <fullName>Perte de clé</fullName>
+                <default>false</default>
+                <label>Perte / casse de clé</label>
+            </value>
+            <value>
+                <fullName>Perte clé de hayon</fullName>
+                <default>false</default>
+                <label>Perte clé de hayon</label>
+            </value>
+            <value>
+                <fullName>Perte de puissance</fullName>
+                <default>false</default>
+                <label>Perte de puissance</label>
+            </value>
+            <value>
+                <fullName>Perte de roue</fullName>
+                <default>false</default>
+                <label>Perte de roue</label>
+            </value>
+            <value>
+                <fullName>Pièce électrique (condensateur, pont de diode, VEM, etc)</fullName>
+                <default>false</default>
+                <label>Pièce électrique (condensateur, pont de diode, VEM, etc)</label>
+            </value>
+            <value>
+                <fullName>Plancher</fullName>
+                <default>false</default>
+                <label>Plancher</label>
+            </value>
+            <value>
+                <fullName>Plaquettes</fullName>
+                <default>false</default>
+                <label>Plaquettes</label>
+            </value>
+            <value>
+                <fullName>Plateforme / Portique</fullName>
+                <default>false</default>
+                <label>Plateforme / Portique</label>
+            </value>
+            <value>
+                <fullName>Pneumatiques / Crevaison</fullName>
+                <default>false</default>
+                <label>Pneumatiques / Crevaison</label>
+            </value>
+            <value>
+                <fullName>Pompe A Eau</fullName>
+                <default>false</default>
+                <label>Pompe A Eau</label>
+            </value>
+            <value>
+                <fullName>Pompe Direction Assistée</fullName>
+                <default>false</default>
+                <label>Pompe Direction Assistée</label>
+            </value>
+            <value>
+                <fullName>Porte Arrière</fullName>
+                <default>false</default>
+                <label>Porte Arrière</label>
+            </value>
+            <value>
+                <fullName>Porte ARR relevante</fullName>
+                <default>false</default>
+                <label>Porte ARR relevante</label>
+            </value>
+            <value>
+                <fullName>Porte latérale</fullName>
+                <default>false</default>
+                <label>Porte latérale</label>
+            </value>
+            <value>
+                <fullName>Portes ARR</fullName>
+                <default>false</default>
+                <label>Portes ARR</label>
+            </value>
+            <value>
+                <fullName>Poumon De Frein</fullName>
+                <default>false</default>
+                <label>Poumon De Frein</label>
+            </value>
+            <value>
+                <fullName>Prise de courant (option)</fullName>
+                <default>false</default>
+                <label>Prise de courant (option)</label>
+            </value>
+            <value>
+                <fullName>Prise en glace</fullName>
+                <default>false</default>
+                <label>Prise en glace</label>
+            </value>
+            <value>
+                <fullName>Prise En Glace Évaporateur</fullName>
+                <default>false</default>
+                <label>Prise En Glace Évaporateur</label>
+            </value>
+            <value>
+                <fullName>Problème batterie suite négligence client</fullName>
+                <default>false</default>
+                <label>Problème batterie suite négligence client</label>
+            </value>
+            <value>
+                <fullName>Problème de démarrage</fullName>
+                <default>false</default>
+                <label>Problème de démarrage</label>
+            </value>
+            <value>
+                <fullName>Rail/crémone grippé</fullName>
+                <default>false</default>
+                <label>Rail/crémone grippé</label>
+            </value>
+            <value>
+                <fullName>Rallonge/ Prise Électrique 230 / 380v</fullName>
+                <default>false</default>
+                <label>Rallonge/ Prise Électrique 230 / 380v</label>
+            </value>
+            <value>
+                <fullName>Rallonge/ Prise Électrique 230/380v Client</fullName>
+                <default>false</default>
+                <label>Rallonge/ Prise Électrique 230/380v Client</label>
+            </value>
+            <value>
+                <fullName>Rallonge électrique</fullName>
+                <default>false</default>
+                <label>Rallonge électrique</label>
+            </value>
+            <value>
+                <fullName>Réamorçage Gasoil</fullName>
+                <default>false</default>
+                <label>Réamorçage Gasoil</label>
+            </value>
+            <value>
+                <fullName>Récepteur</fullName>
+                <default>false</default>
+                <label>Récepteur</label>
+            </value>
+            <value>
+                <fullName>Remplacement Batterie</fullName>
+                <default>false</default>
+                <label>Remplacement Batterie</label>
+            </value>
+            <value>
+                <fullName>Réservoir Ad Blue</fullName>
+                <default>false</default>
+                <label>Réservoir Ad Blue</label>
+            </value>
+            <value>
+                <fullName>Réservoir gazole</fullName>
+                <default>false</default>
+                <label>Réservoir gazole</label>
+            </value>
+            <value>
+                <fullName>Resistance chauffante</fullName>
+                <default>false</default>
+                <label>Resistance chauffante</label>
+            </value>
+            <value>
+                <fullName>Robot de commande</fullName>
+                <default>false</default>
+                <label>Robot de commande</label>
+            </value>
+            <value>
+                <fullName>Roue Desserrée</fullName>
+                <default>false</default>
+                <label>Roue Desserrée</label>
+            </value>
+            <value>
+                <fullName>Roulements</fullName>
+                <default>false</default>
+                <label>Roulements</label>
+            </value>
+            <value>
+                <fullName>Sellerie</fullName>
+                <default>false</default>
+                <label>Sellerie</label>
+            </value>
+            <value>
+                <fullName>Sellette</fullName>
+                <default>false</default>
+                <label>Sellette</label>
+            </value>
+            <value>
+                <fullName>Solénoïde</fullName>
+                <default>false</default>
+                <label>Solénoïde</label>
+            </value>
+            <value>
+                <fullName>Sonde / Capteur</fullName>
+                <default>false</default>
+                <label>Sonde / Capteur</label>
+            </value>
+            <value>
+                <fullName>Sonde/Pressostats/Sécurité</fullName>
+                <default>false</default>
+                <label>Sonde/Pressostats/Sécurité</label>
+            </value>
+            <value>
+                <fullName>Surcharge Véhicule</fullName>
+                <default>false</default>
+                <label>Surcharge Véhicule</label>
+            </value>
+            <value>
+                <fullName>Surchauffe Moteur</fullName>
+                <default>false</default>
+                <label>Surchauffe Moteur</label>
+            </value>
+            <value>
+                <fullName>Suspension</fullName>
+                <default>false</default>
+                <label>Suspension</label>
+            </value>
+            <value>
+                <fullName>Synchros</fullName>
+                <default>false</default>
+                <label>Synchros</label>
+            </value>
+            <value>
+                <fullName>Système EGR</fullName>
+                <default>false</default>
+                <label>Système EGR</label>
+            </value>
+            <value>
+                <fullName>Tableau De Bord</fullName>
+                <default>false</default>
+                <label>Tableau De Bord</label>
+            </value>
+            <value>
+                <fullName>Télécommande</fullName>
+                <default>false</default>
+                <label>Télécommande</label>
+            </value>
+            <value>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+                <label>Transmission</label>
+            </value>
+            <value>
+                <fullName>Tringlerie</fullName>
+                <default>false</default>
+                <label>Tringlerie</label>
+            </value>
+            <value>
+                <fullName>Turbo</fullName>
+                <default>false</default>
+                <label>Turbo</label>
+            </value>
+            <value>
+                <fullName>Usure</fullName>
+                <default>false</default>
+                <label>Usure</label>
+            </value>
+            <value>
+                <fullName>Utilisation roue de secours</fullName>
+                <default>false</default>
+                <label>Utilisation roue de secours</label>
+            </value>
+            <value>
+                <fullName>Vandalisme</fullName>
+                <default>false</default>
+                <label>Vandalisme</label>
+            </value>
+            <value>
+                <fullName>Véhicule embourbé</fullName>
+                <default>false</default>
+                <label>Véhicule embourbé</label>
+            </value>
+            <value>
+                <fullName>Ventilation</fullName>
+                <default>false</default>
+                <label>Ventilation</label>
+            </value>
+            <value>
+                <fullName>Ventilations condenseur</fullName>
+                <default>false</default>
+                <label>Ventilations condenseur</label>
+            </value>
+            <value>
+                <fullName>Ventilations évaporateur</fullName>
+                <default>false</default>
+                <label>Ventilations évaporateur</label>
+            </value>
+            <value>
+                <fullName>Vérins</fullName>
+                <default>false</default>
+                <label>Vérins</label>
+            </value>
+            <value>
+                <fullName>Verrouillage cabine</fullName>
+                <default>false</default>
+                <label>Verrouillage cabine</label>
+            </value>
+            <value>
+                <fullName>Vitesse Saute / Craquement</fullName>
+                <default>false</default>
+                <label>Vitesse Saute / Craquement</label>
+            </value>
+            <value>
+                <fullName>Vitrages</fullName>
+                <default>false</default>
+                <label>Vitrages</label>
+            </value>
+            <value>
+                <fullName>Vol</fullName>
+                <default>false</default>
+                <label>Vol</label>
+            </value>
+            <value>
+                <fullName>Vol (véhicule ou accessoire)</fullName>
+                <default>false</default>
+                <label>Vol (véhicule ou accessoire)</label>
+            </value>
+            <value>
+                <fullName>Volant Moteur</fullName>
+                <default>false</default>
+                <label>Volant Moteur</label>
+            </value>
+            <value>
+                <fullName>Voyant ABS allumé</fullName>
+                <default>false</default>
+                <label>Voyant ABS allumé</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Crevaison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Jante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Perte de roue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Roue Desserrée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Usure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pneumatiques</controllingFieldValue>
+            <valueName>Utilisation roue de secours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Amortisseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Direction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Fuite Pont Arrière</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Géométrie train AV/ARR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Paliers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Pneumatiques / Crevaison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Roulements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Suspension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pont/Essieu/Transmission</controllingFieldValue>
+            <valueName>Transmission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Accastillage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Auvent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Cadre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Cloison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Crémone grippée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Eclairage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Electricité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Electricité 12v / 24v</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Equipements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Face Avant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Faux - châssis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Joint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Ouverture/Fermeture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Panneau latéral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Pavillon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Porte ARR relevante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Porte latérale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Portes ARR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrosserie/Cellule Isotherme</controllingFieldValue>
+            <valueName>Rail/crémone grippé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Alimentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Axes grippés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Batterie Hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Chargeur Hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Circuit électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Commandes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Electrovanne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Fuite Au Circuit Hydraulique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Fusible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Hayon / Fuite au circuit hydrau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Montage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Moteur électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Niveau d’huile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Plateforme / Portique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Télécommande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hayon/Portique</controllingFieldValue>
+            <valueName>Vérins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Batterie Déchargée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Code clé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvais branchement du container</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise Charge Du Véhicule / Groupe (Véhicule Electrique)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise Utilisation / Niveau Lave Glace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise Utilisation / Niveau Liquide Refroidissement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise Utilisation Commande Frigo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise utilisation groupe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Mauvaise Utilisation Hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Niveau D&#39;huile (Niveau Bas)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Niveau Liquide De Refroidissement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Niveau Liquide Lave-glace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Panne Adblue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Panne batterie Hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Panne Carburant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Perte de clé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Perte clé de hayon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Prise En Glace Évaporateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Problème batterie suite négligence client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Rallonge/ Prise Électrique 230/380v Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Surcharge Véhicule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mauvaise Utilisation / Négligence</controllingFieldValue>
+            <valueName>Véhicule embourbé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc caisse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc Carrosserie Ou Pare-brise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc Cellule Isotherme (Caisse)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc En Hauteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc groupe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc Pare-choc Ou Éclairage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc Piece Mecanique (Radiateur, Compresseur, Etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc Rétroviseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Choc trottoir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Incendie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Vandalisme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Vol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinistre / Dégâts</controllingFieldValue>
+            <valueName>Vol (véhicule ou accessoire)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>BV bloquée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Commandes Bv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Embrayage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Emetteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Fuite D&#39;huile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Récepteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Robot de commande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Tringlerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Vitesse Saute / Craquement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boite de vitesse</controllingFieldValue>
+            <valueName>Volant Moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Cabine / équipements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Calandre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Equipement ( Climatisation, Etc…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Essuie-glace / Moteur Essuie-glace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Marchepied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Multimédia ( Autoradio, Camera, Ecran, Géolocalisation, Connectivite)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Pare - chocs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Sellerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Tableau De Bord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Verrouillage cabine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabine</controllingFieldValue>
+            <valueName>Vitrages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Bouteilles d&#39;air</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Compresseur Pneumatique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Fissure châssis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Fuite D&#39;air</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Réservoir Ad Blue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Réservoir gazole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Châssis</controllingFieldValue>
+            <valueName>Sellette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Alternateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Batterie De Traction Véhicule Électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Cabine / Multimédia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Chronotachygraphe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Démarrage Par Câbles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Démarreur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Faisceaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>LDWS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Neiman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité Véhicule</controllingFieldValue>
+            <valueName>Remplacement Batterie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>AEBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Capteur D&#39;usure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Commande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Disques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Echauffement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Etriers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Frein A Main</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Fuite liquide de frein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Plaquettes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Poumon De Frein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freinage</controllingFieldValue>
+            <valueName>Voyant ABS allumé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Accessoires (enregistreur, contacteur de porte, sonde piqueuse, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Alimentation électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Batterie De Puissance Groupe Électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Batterie Frigo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Commande ( micro, cartes etc..)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Compresseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Compresseur route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Compresseur secteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Courroie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Démarrage du groupe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Démarrage mode ROUTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Démarrage mode SECTEUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Détendeur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Echangeurs (Condenseur, Évaporateur)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Faisceau Electrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Fuite de fluide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Génératrice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Groupe froid / échangeurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Kit poulie - moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Liquide de refroidissement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Micro / Carte imprimée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Moteur thermique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Pièce électrique (condensateur, pont de diode, VEM, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Prise en glace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Rallonge/ Prise Électrique 230 / 380v</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Rallonge électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Réamorçage Gasoil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Solénoïde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Sonde/Pressostats/Sécurité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Ventilation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Ventilations condenseur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe Froid</controllingFieldValue>
+            <valueName>Ventilations évaporateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Calage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Etancheité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>Porte Arrière</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Alimentation Carburant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Bloc Moteur (Trous/Fuite)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Bloque (Serrage Moteur)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Claquement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Courroies / Galet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Echappement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>ECU (Calculateur)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Filtre à particules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Fuite De Carburant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Fuite huile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Fuite liquide de refroidissement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Injection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Moteur Véhicule Électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Perte de puissance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Pompe A Eau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Pompe Direction Assistée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Problème de démarrage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Surchauffe Moteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Système EGR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moteur</controllingFieldValue>
+            <valueName>Turbo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Alarme personne enfermée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Disjoncteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Enregistreur électronique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Interrupteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Prise de courant (option)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Resistance chauffante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electricité</controllingFieldValue>
+            <valueName>Sonde / Capteur</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

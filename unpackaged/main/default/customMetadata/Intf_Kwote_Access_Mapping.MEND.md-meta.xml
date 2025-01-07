@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>MEND</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Legal_Entity__c</field>
+        <value xsi:type="xsd:string">MEND</value>
+    </values>
+    <values>
+        <field>api_access__c</field>
+        <value xsi:type="xsd:string">d79fa8376b5b4be1b1900ad258dd6876</value>
+    </values>
+    <values>
+        <field>api_key__c</field>
+        <value xsi:type="xsd:string">ac2057c3-ba42-11ec-92c0-fa163e2e1b93</value>
+    </values>
+</CustomMetadata>

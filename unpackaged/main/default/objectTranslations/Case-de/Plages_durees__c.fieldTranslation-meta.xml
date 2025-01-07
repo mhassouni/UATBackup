@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Zeitspanne</label>
+        <name>Plages_durees__c</name>
+        <picklistValues>
+            <masterLabel>1h - 2h</masterLabel>
+            <translation>zwischen 1 und 2 Stunden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2h - 3h</masterLabel>
+            <translation>zwischen 2 und 3 Stunden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moins d&#39;une heure</masterLabel>
+            <translation>weniger als 1 Stunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 3 heures</masterLabel>
+            <translation>über 3 Stunden</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

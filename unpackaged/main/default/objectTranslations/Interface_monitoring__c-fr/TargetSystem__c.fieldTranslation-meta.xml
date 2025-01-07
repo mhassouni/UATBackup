@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Target System --></label>
+        <name>TargetSystem__c</name>
+        <picklistValues>
+            <masterLabel>IGLOO</masterLabel>
+            <translation><!-- IGLOO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

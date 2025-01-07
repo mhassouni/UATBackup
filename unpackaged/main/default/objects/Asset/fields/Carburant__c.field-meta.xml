@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carburant__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( text(Energie__c) , 
+&#39;Électrique&#39;,  IMAGE(&#39;/resource/1673515210000/Icon_Electrique?&#39;, &#39;&#39;, 64, 64) , 
+&#39;Biogazole B100&#39;,IMAGE(&#39;/resource/1673515242000/Icon_B100?&#39;, &#39;&#39; , 45, 45),
+&#39;GNV&#39;,IMAGE(&#39;/resource/1673515167000/Icon_CNG&#39;, &#39;&#39; , 64, 64),
+null
+
+)</formula>
+    <label>Energie</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Categoría</label>
+        <name>Categorie__c</name>
+        <picklistValues>
+            <masterLabel>ARM PV</masterLabel>
+            <translation><!-- ARM PV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTRE</masterLabel>
+            <translation><!-- AUTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC 100</masterLabel>
+            <translation><!-- BAC 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC 150</masterLabel>
+            <translation><!-- BAC 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC 200</masterLabel>
+            <translation><!-- BAC 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC SERVA</masterLabel>
+            <translation><!-- BAC SERVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF10</masterLabel>
+            <translation><!-- CF10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF110</masterLabel>
+            <translation><!-- CF110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF25</masterLabel>
+            <translation><!-- CF25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF30</masterLabel>
+            <translation><!-- CF30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF35</masterLabel>
+            <translation><!-- CF35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF50</masterLabel>
+            <translation><!-- CF50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF55</masterLabel>
+            <translation><!-- CF55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF85</masterLabel>
+            <translation><!-- CF85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLET</masterLabel>
+            <translation><!-- COMPLET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EFAS</masterLabel>
+            <translation><!-- EFAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIT</masterLabel>
+            <translation><!-- KIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0 (Frigo)</masterLabel>
+            <translation><!-- P0 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P0 (Sec)</masterLabel>
+            <translation><!-- P0 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10 (Frigo)</masterLabel>
+            <translation><!-- P10 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P10 (Sec)</masterLabel>
+            <translation><!-- P10 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15 (Frigo)</masterLabel>
+            <translation><!-- P15 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P15 (Sec)</masterLabel>
+            <translation><!-- P15 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18 (Frigo)</masterLabel>
+            <translation><!-- P18 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P18 (Sec)</masterLabel>
+            <translation><!-- P18 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21 (Frigo)</masterLabel>
+            <translation><!-- P21 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P21 (Sec)</masterLabel>
+            <translation><!-- P21 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23 (Frigo)</masterLabel>
+            <translation><!-- P23 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P23 (Sec)</masterLabel>
+            <translation><!-- P23 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6 (Frigo)</masterLabel>
+            <translation><!-- P6 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P6 (Sec)</masterLabel>
+            <translation><!-- P6 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8 (Frigo)</masterLabel>
+            <translation><!-- P8 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P8 (Sec)</masterLabel>
+            <translation><!-- P8 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R4</masterLabel>
+            <translation><!-- R4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R9</masterLabel>
+            <translation><!-- R9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1 (Frigo)</masterLabel>
+            <translation><!-- S1 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2 (Frigo)</masterLabel>
+            <translation><!-- S2 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Frigo)</masterLabel>
+            <translation><!-- T (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Sec)</masterLabel>
+            <translation><!-- T (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAIT 130</masterLabel>
+            <translation><!-- TRAIT 130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAIT 200</masterLabel>
+            <translation><!-- TRAIT 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V1</masterLabel>
+            <translation><!-- V1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11 (Frigo)</masterLabel>
+            <translation><!-- V11 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V11 (Sec)</masterLabel>
+            <translation><!-- V11 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15 (Frigo)</masterLabel>
+            <translation><!-- V15 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V15 (Sec)</masterLabel>
+            <translation><!-- V15 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20 (Frigo)</masterLabel>
+            <translation><!-- V20 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V20 (Sec)</masterLabel>
+            <translation><!-- V20 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3 (Frigo)</masterLabel>
+            <translation><!-- V3 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3 (Sec)</masterLabel>
+            <translation><!-- V3 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5 (Frigo)</masterLabel>
+            <translation><!-- V5 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V5 (Sec)</masterLabel>
+            <translation><!-- V5 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9 (Frigo)</masterLabel>
+            <translation><!-- V9 (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V9 (Sec)</masterLabel>
+            <translation><!-- V9 (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 050</masterLabel>
+            <translation><!-- VITR 050 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 070</masterLabel>
+            <translation><!-- VITR 070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 090</masterLabel>
+            <translation><!-- VITR 090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 100</masterLabel>
+            <translation><!-- VITR 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 120</masterLabel>
+            <translation><!-- VITR 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 130</masterLabel>
+            <translation><!-- VITR 130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR 190</masterLabel>
+            <translation><!-- VITR 190 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR SV 070</masterLabel>
+            <translation><!-- VITR SV 070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR SV 100</masterLabel>
+            <translation><!-- VITR SV 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR SV 130</masterLabel>
+            <translation><!-- VITR SV 130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITR SV 155</masterLabel>
+            <translation><!-- VITR SV 155 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

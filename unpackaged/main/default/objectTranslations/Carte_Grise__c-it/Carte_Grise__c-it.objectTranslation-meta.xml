@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Carte Grise --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>Présentation Carte Grise</layout>
+        <sections>
+            <label>libretto di circolazione.</label>
+            <section>Carte grise</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Veicolo</label>
+            <section>Vehicule</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Carte Grise - Community</layout>
+        <sections>
+            <label><!-- Carte grise --></label>
+            <section>Carte grise</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicule --></label>
+            <section>Vehicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro de Carte Grise --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <webLinks>
+        <label><!-- T_l_charger_carte_grise --></label>
+        <name>T_l_charger_carte_grise</name>
+    </webLinks>
+</CustomObjectTranslation>

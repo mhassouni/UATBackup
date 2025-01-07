@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DepotGarantieCDNouveauClient__c</fullName>
+    <inlineHelpText>Montant par défaut à reporter :
+
+Dépôt de garantie &quot;VL&quot;: 1500€​​.
+Dépôt de garantie &quot;Poids-lourds&quot; : 2500€​​.
+Dépôt de garantie &quot;Container&quot; : 0€.</inlineHelpText>
+    <label>Depot de garantie CD - client non LD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

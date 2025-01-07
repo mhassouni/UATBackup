@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marchandise_transportee__c</fullName>
+    <label>Marchandise transportée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Produits frais</fullName>
+                <default>false</default>
+                <label>Produits frais</label>
+            </value>
+            <value>
+                <fullName>Produits surgelés</fullName>
+                <default>false</default>
+                <label>Produits surgelés</label>
+            </value>
+            <value>
+                <fullName>Produits frais et surgelés</fullName>
+                <default>false</default>
+                <label>Produits frais et surgelés</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

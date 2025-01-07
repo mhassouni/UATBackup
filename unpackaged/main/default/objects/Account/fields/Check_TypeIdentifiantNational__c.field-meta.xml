@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_TypeIdentifiantNational__c</fullName>
+    <formula>if
+(
+LEN( text(TypeIdentifiantNational__c ))&lt;=80
+,
+true
+,
+false)</formula>
+    <label>Check_TypeIdentifiantNational</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

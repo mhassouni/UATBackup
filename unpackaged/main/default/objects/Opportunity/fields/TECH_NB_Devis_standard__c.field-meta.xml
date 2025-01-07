@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NB_Devis_standard__c</fullName>
+    <description>1 si un devis standard est synchronisé sinon 0</description>
+    <label>TECH_NB_Devis_standard</label>
+    <summaryFilterItems>
+        <field>Quote.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Quote LD - Standard</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.Synchronise__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

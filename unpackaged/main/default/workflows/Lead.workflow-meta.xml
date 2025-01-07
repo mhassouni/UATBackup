@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_alert_Lead_Owner</fullName>
+        <description>Email alert for new Lead owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Divers/Notification_attribution_Piste</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>PST_CodePostalMajuscule</fullName>
+        <field>CodePostal__c</field>
+        <formula>UPPER(CodePostal__c)</formula>
+        <name>PST_CodePostalMajuscule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PST_EnleverEspacesDeLIdentifiant</fullName>
+        <field>IdentifiantNational__c</field>
+        <formula>SUBSTITUTE(IdentifiantNational__c, &quot; &quot;, &quot;&quot;)</formula>
+        <name>PST_EnleverEspacesDeLIdentifiant</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PST_RaisonSocialeMajuscule</fullName>
+        <field>Company</field>
+        <formula>UPPER(Company)</formula>
+        <name>PST_RaisonSocialeMajuscule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PST_VilleMajuscule</fullName>
+        <field>Ville__c</field>
+        <formula>UPPER(Ville__c)</formula>
+        <name>PST_VilleMajuscule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>PST_WF02_CodePostalMajuscule</fullName>
+        <actions>
+            <name>PST_CodePostalMajuscule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(CodePostal__c)),$Setup.Bypass__c.BypassWorkflowRules__c = false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PST_WF03_VilleMajuscule</fullName>
+        <actions>
+            <name>PST_VilleMajuscule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Ville__c)),$Setup.Bypass__c.BypassWorkflowRules__c = false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PST_WF04_RaisonSocialeMajuscule</fullName>
+        <actions>
+            <name>PST_RaisonSocialeMajuscule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Company)),$Setup.Bypass__c.BypassWorkflowRules__c = false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Dokon_en_e_en_pot</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>Nom_Commercial_Client__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Agence_proprietaire__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Terminee</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Depannage_Container,Case.Depannage_Vehicule</value>
+    </filters>
+    <filters>
+        <field>Nom_Commercial_Client__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Community-Dokončené řešení potíží</label>
+    <sharedTo>
+        <group>Utilisateurs_Portail_Client_CZ</group>
+    </sharedTo>
+</ListView>

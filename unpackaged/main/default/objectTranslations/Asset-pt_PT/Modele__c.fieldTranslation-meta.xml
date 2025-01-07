@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Modelo</label>
+        <name>Modele__c</name>
+        <picklistValues>
+            <masterLabel>159</masterLabel>
+            <translation><!-- 159 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>159 SW</masterLabel>
+            <translation><!-- 159 SW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2008</masterLabel>
+            <translation><!-- 2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>205</masterLabel>
+            <translation><!-- 205 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>206</masterLabel>
+            <translation><!-- 206 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>306</masterLabel>
+            <translation><!-- 306 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>307</masterLabel>
+            <translation><!-- 307 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>406</masterLabel>
+            <translation><!-- 406 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5008</masterLabel>
+            <translation><!-- 5008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>605</masterLabel>
+            <translation><!-- 605 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>607</masterLabel>
+            <translation><!-- 607 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACTROS</masterLabel>
+            <translation><!-- ACTROS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTOS</masterLabel>
+            <translation><!-- ANTOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCA</masterLabel>
+            <translation><!-- ASCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATEGO</masterLabel>
+            <translation><!-- ATEGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATEGOLOURD</masterLabel>
+            <translation><!-- ATEGOLOURD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATLEON</masterLabel>
+            <translation><!-- ATLEON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AXOR</masterLabel>
+            <translation><!-- AXOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AXOR DISTRIB</masterLabel>
+            <translation><!-- AXOR DISTRIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BERLINGO</masterLabel>
+            <translation><!-- BERLINGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BORA</masterLabel>
+            <translation><!-- BORA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOXER</masterLabel>
+            <translation><!-- BOXER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRAVO</masterLabel>
+            <translation><!-- BRAVO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C15</masterLabel>
+            <translation><!-- C15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C220 BREACK</masterLabel>
+            <translation><!-- C220 BREACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C25</masterLabel>
+            <translation><!-- C25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3</masterLabel>
+            <translation><!-- C3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3 PICASSO</masterLabel>
+            <translation><!-- C3 PICASSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C35</masterLabel>
+            <translation><!-- C35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4</masterLabel>
+            <translation><!-- C4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4 GRAND PICASSO</masterLabel>
+            <translation><!-- C4 GRAND PICASSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4 PICASSO</masterLabel>
+            <translation><!-- C4 PICASSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C5</masterLabel>
+            <translation><!-- C5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C5 TOURER</masterLabel>
+            <translation><!-- C5 TOURER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CABSTAR</masterLabel>
+            <translation><!-- CABSTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CADDY</masterLabel>
+            <translation><!-- CADDY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANTER</masterLabel>
+            <translation><!-- CANTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPTUR</masterLabel>
+            <translation><!-- CAPTUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF10</masterLabel>
+            <translation><!-- CF10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF100</masterLabel>
+            <translation><!-- CF100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF10B</masterLabel>
+            <translation><!-- CF10B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF110</masterLabel>
+            <translation><!-- CF110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF20</masterLabel>
+            <translation><!-- CF20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF25</masterLabel>
+            <translation><!-- CF25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF30</masterLabel>
+            <translation><!-- CF30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF35</masterLabel>
+            <translation><!-- CF35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF50</masterLabel>
+            <translation><!-- CF50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF55</masterLabel>
+            <translation><!-- CF55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF75.250-19</masterLabel>
+            <translation><!-- CF75.250-19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF85</masterLabel>
+            <translation><!-- CF85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITAN</masterLabel>
+            <translation><!-- CITAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLASSE</masterLabel>
+            <translation><!-- CLASSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIO</masterLabel>
+            <translation><!-- CLIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM10S</masterLabel>
+            <translation><!-- CM10S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM25S</masterLabel>
+            <translation><!-- CM25S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM25SF</masterLabel>
+            <translation><!-- CM25SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM55B</masterLabel>
+            <translation><!-- CM55B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM55S</masterLabel>
+            <translation><!-- CM55S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM90S</masterLabel>
+            <translation><!-- CM90S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBO</masterLabel>
+            <translation><!-- COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR35.110</masterLabel>
+            <translation><!-- CR35.110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR35.130</masterLabel>
+            <translation><!-- CR35.130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR55.110</masterLabel>
+            <translation><!-- CR55.110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR55.150</masterLabel>
+            <translation><!-- CR55.150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR72.120</masterLabel>
+            <translation><!-- CR72.120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR75.120</masterLabel>
+            <translation><!-- CR75.120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR75.150</masterLabel>
+            <translation><!-- CR75.150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRAFTER</masterLabel>
+            <translation><!-- CRAFTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAILY</masterLabel>
+            <translation><!-- DAILY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELTA</masterLabel>
+            <translation><!-- DELTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIVERS</masterLabel>
+            <translation><!-- DIVERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOBLO</masterLabel>
+            <translation><!-- DOBLO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DS3</masterLabel>
+            <translation><!-- DS3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DS5</masterLabel>
+            <translation><!-- DS5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUCATO</masterLabel>
+            <translation><!-- DUCATO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E220</masterLabel>
+            <translation><!-- E220 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPACE</masterLabel>
+            <translation><!-- ESPACE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUROCARGO</masterLabel>
+            <translation><!-- EUROCARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVASION</masterLabel>
+            <translation><!-- EVASION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPERT</masterLabel>
+            <translation><!-- EXPERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPRESS</masterLabel>
+            <translation><!-- EXPRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FA</masterLabel>
+            <translation><!-- FA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FABIA COMB 1.4 TDI (80)</masterLabel>
+            <translation><!-- FABIA COMB 1.4 TDI (80) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIESTA</masterLabel>
+            <translation><!-- FIESTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIGHTER</masterLabel>
+            <translation><!-- FIGHTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIORINO</masterLabel>
+            <translation><!-- FIORINO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOCUS</masterLabel>
+            <translation><!-- FOCUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREEMONT</masterLabel>
+            <translation><!-- FREEMONT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FT</masterLabel>
+            <translation><!-- FT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSO</masterLabel>
+            <translation><!-- FUSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G</masterLabel>
+            <translation><!-- G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIULIETTA</masterLabel>
+            <translation><!-- GIULIETTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLE</masterLabel>
+            <translation><!-- GLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOLF</masterLabel>
+            <translation><!-- GOLF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND CHEROKEE</masterLabel>
+            <translation><!-- GRAND CHEROKEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRANDE PUNTO</masterLabel>
+            <translation><!-- GRANDE PUNTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROSSE</masterLabel>
+            <translation><!-- GROSSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H100</masterLabel>
+            <translation><!-- H100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HONDA</masterLabel>
+            <translation><!-- HONDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERSTAR</masterLabel>
+            <translation><!-- INTERSTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JUMPER</masterLabel>
+            <translation><!-- JUMPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JUMPY</masterLabel>
+            <translation><!-- JUMPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K2500</masterLabel>
+            <translation><!-- K2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K2700.32</masterLabel>
+            <translation><!-- K2700.32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANGOO</masterLabel>
+            <translation><!-- KANGOO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KUBISTAR</masterLabel>
+            <translation><!-- KUBISTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAGUNA</masterLabel>
+            <translation><!-- LAGUNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF</masterLabel>
+            <translation><!-- LF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF280.19</masterLabel>
+            <translation><!-- LF280.19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LN</masterLabel>
+            <translation><!-- LN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LS</masterLabel>
+            <translation><!-- LS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT</masterLabel>
+            <translation><!-- LT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAGNUM</masterLabel>
+            <translation><!-- MAGNUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANAGER</masterLabel>
+            <translation><!-- MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASCOTT</masterLabel>
+            <translation><!-- MASCOTT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASTER</masterLabel>
+            <translation><!-- MASTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAXITY</masterLabel>
+            <translation><!-- MAXITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEGANE</masterLabel>
+            <translation><!-- MEGANE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDLUM</masterLabel>
+            <translation><!-- MIDLUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINI</masterLabel>
+            <translation><!-- MINI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MITO</masterLabel>
+            <translation><!-- MITO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOVANO</masterLabel>
+            <translation><!-- MOVANO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPR150.75</masterLabel>
+            <translation><!-- NPR150.75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQR.120.08</masterLabel>
+            <translation><!-- NQR.120.08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQR71RL</masterLabel>
+            <translation><!-- NQR71RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NT500</masterLabel>
+            <translation><!-- NT500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANDA</masterLabel>
+            <translation><!-- PANDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARTNER</masterLabel>
+            <translation><!-- PARTNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASSAT</masterLabel>
+            <translation><!-- PASSAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHEDRA</masterLabel>
+            <translation><!-- PHEDRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL MIDLINER</masterLabel>
+            <translation><!-- PL MIDLINER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLMESSENGER</masterLabel>
+            <translation><!-- PLMESSENGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLO</masterLabel>
+            <translation><!-- POLO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTER</masterLabel>
+            <translation><!-- PORTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POWERLINER</masterLabel>
+            <translation><!-- POWERLINER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREMIUM</masterLabel>
+            <translation><!-- PREMIUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRIMASTAR</masterLabel>
+            <translation><!-- PRIMASTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRIUS</masterLabel>
+            <translation><!-- PRIUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PULSE 4</masterLabel>
+            <translation><!-- PULSE 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNTO</masterLabel>
+            <translation><!-- PUNTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNTO EVO</masterLabel>
+            <translation><!-- PUNTO EVO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q3</masterLabel>
+            <translation><!-- Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q5</masterLabel>
+            <translation><!-- Q5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q7</masterLabel>
+            <translation><!-- Q7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAV</masterLabel>
+            <translation><!-- RAV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REM</masterLabel>
+            <translation><!-- REM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REMORQUE</masterLabel>
+            <translation><!-- REMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S 350</masterLabel>
+            <translation><!-- S 350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S 420</masterLabel>
+            <translation><!-- S 420 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S 500</masterLabel>
+            <translation><!-- S 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S 560</masterLabel>
+            <translation><!-- S 560 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAFRANE</masterLabel>
+            <translation><!-- SAFRANE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAXO</masterLabel>
+            <translation><!-- SAXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCUDO</masterLabel>
+            <translation><!-- SCUDO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEMCF</masterLabel>
+            <translation><!-- SEMCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEMI</masterLabel>
+            <translation><!-- SEMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEMIREMORQUE</masterLabel>
+            <translation><!-- SEMIREMORQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHARAN</masterLabel>
+            <translation><!-- SHARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRINTER</masterLabel>
+            <translation><!-- SPRINTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SREM</masterLabel>
+            <translation><!-- SREM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STRALIS</masterLabel>
+            <translation><!-- STRALIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sportage</masterLabel>
+            <translation><!-- Sportage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TALENTO</masterLabel>
+            <translation><!-- TALENTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TARO</masterLabel>
+            <translation><!-- TARO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TF</masterLabel>
+            <translation><!-- TF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGE</masterLabel>
+            <translation><!-- TGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGL</masterLabel>
+            <translation><!-- TGL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGM</masterLabel>
+            <translation><!-- TGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGX</masterLabel>
+            <translation><!-- TGX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIGUAN</masterLabel>
+            <translation><!-- TIGUAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIPO</masterLabel>
+            <translation><!-- TIPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUAREG</masterLabel>
+            <translation><!-- TOUAREG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOURAN</masterLabel>
+            <translation><!-- TOURAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRADE</masterLabel>
+            <translation><!-- TRADE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAFIC</masterLabel>
+            <translation><!-- TRAFIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT</masterLabel>
+            <translation><!-- TRANSIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT CONNECT</masterLabel>
+            <translation><!-- TRANSIT CONNECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSPORTER</masterLabel>
+            <translation><!-- TRANSPORTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRICYCLE</masterLabel>
+            <translation><!-- TRICYCLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWINGO</masterLabel>
+            <translation><!-- TWINGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TWIZY</masterLabel>
+            <translation><!-- TWIZY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VARIO</masterLabel>
+            <translation><!-- VARIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VEHICULE</masterLabel>
+            <translation><!-- VEHICULE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VELDHUIZEN</masterLabel>
+            <translation><!-- VELDHUIZEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VELSATIS</masterLabel>
+            <translation><!-- VELSATIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISA</masterLabel>
+            <translation><!-- VISA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITO</masterLabel>
+            <translation><!-- VITO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIVARO</masterLabel>
+            <translation><!-- VIVARO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VLMESSENGER</masterLabel>
+            <translation><!-- VLMESSENGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOITURE</masterLabel>
+            <translation><!-- VOITURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X TRAIL</masterLabel>
+            <translation><!-- X TRAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XF</masterLabel>
+            <translation><!-- XF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XSARA</masterLabel>
+            <translation><!-- XSARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XSARA PICASSO</masterLabel>
+            <translation><!-- XSARA PICASSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YARIS</masterLabel>
+            <translation><!-- YARIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YJ85130</masterLabel>
+            <translation><!-- YJ85130 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

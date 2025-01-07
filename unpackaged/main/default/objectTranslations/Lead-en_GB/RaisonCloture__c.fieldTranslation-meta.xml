@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Closing reason</label>
+        <name>RaisonCloture__c</name>
+        <picklistValues>
+            <masterLabel>Agence trop éloignée</masterLabel>
+            <translation>Depot too far away</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aucun potentiel</masterLabel>
+            <translation><!-- Aucun potentiel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changement d’avis</masterLabel>
+            <translation>Changed is mind</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client injoignable</masterLabel>
+            <translation>Customer not answering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte existant</masterLabel>
+            <translation>Existing account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte non identifié</masterLabel>
+            <translation>Unidentified account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditions de locations non retenues</masterLabel>
+            <translation>Rental T&amp;C&#39;s issue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Délai de réponse trop important</masterLabel>
+            <translation>Response Delay too long</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montant de la caution trop élevé</masterLabel>
+            <translation>Amount of the deposit too high</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas de réponse client</masterLabel>
+            <translation>No customer response</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix de location trop élevé</masterLabel>
+            <translation>Rental Price Too high</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix trop élevés</masterLabel>
+            <translation>Prices too high</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produit non disponible en stock</masterLabel>
+            <translation>Product not available in stock</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet du client annulé ou reporté</masterLabel>
+            <translation>Project Postponed</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect écarté pour raisons financières</masterLabel>
+            <translation>Prospect discarded for financial reasons</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution alternative sans frais</masterLabel>
+            <translation>Alternative Solution</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

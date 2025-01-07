@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Partage_France</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage France</label>
+        <sharedTo>
+            <group>GroupePartage_FRANCE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DRO IDF 2,DRO SUD 4,DRO NORD 1,DRO SUD 5,DRO NORD 2,DRO SUD 6,DRO NORD 3,DRO SUD 7,DROM,DRO NORD 4,DRO NORD 5,DRO NORD 6,DRO NORD 7,DRO SUD 1,DRO SUD 2,DRO IDF 1,DRO SUD 3</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PFM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PFM</label>
+        <sharedTo>
+            <group>GroupePartage_PFM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PFM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PITA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PITA</label>
+        <sharedTo>
+            <group>GroupePartage_PITA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PITA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_STFR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage STFR</label>
+        <sharedTo>
+            <group>GroupePartage_Zefirent</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>STFR3,STFR1,STFR4,STFR2,STFR5</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_SV_noleggio</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage SV noleggio</label>
+        <sharedTo>
+            <group>GroupePartage_SVNOLEGGIO</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>SV Noleggio</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Reways</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing opp Reways with group Reways</description>
+        <label>Sharing Reways</label>
+        <sharedTo>
+            <group>GroupePartage_Reways</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>Reways</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

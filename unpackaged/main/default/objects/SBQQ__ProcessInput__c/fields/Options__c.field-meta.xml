@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Options__c</fullName>
+    <label>Options</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Étagères,</fullName>
+                <default>false</default>
+                <label>Étagères,</label>
+            </value>
+            <value>
+                <fullName>Cloison matelassée</fullName>
+                <default>false</default>
+                <label>Cloison matelassée</label>
+            </value>
+            <value>
+                <fullName>Surcharge</fullName>
+                <default>false</default>
+                <label>Surcharge</label>
+            </value>
+            <value>
+                <fullName>Climatisation</fullName>
+                <default>false</default>
+                <label>Climatisation</label>
+            </value>
+            <value>
+                <fullName>Enregistreur tº</fullName>
+                <default>false</default>
+                <label>Enregistreur tº</label>
+            </value>
+            <value>
+                <fullName>Ralentisseur</fullName>
+                <default>false</default>
+                <label>Ralentisseur</label>
+            </value>
+            <value>
+                <fullName>Boîte automatique</fullName>
+                <default>false</default>
+                <label>Boîte automatique</label>
+            </value>
+            <value>
+                <fullName>Porte latérale</fullName>
+                <default>false</default>
+                <label>Porte latérale</label>
+            </value>
+            <value>
+                <fullName>Étagères</fullName>
+                <default>false</default>
+                <label>Étagères</label>
+            </value>
+            <value>
+                <fullName>Caméra de recul</fullName>
+                <default>false</default>
+                <label>Caméra de recul</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>Rideau à lanières/d&#39;air</fullName>
+                <default>false</default>
+                <label>Rideau à lanières/d&#39;air</label>
+            </value>
+            <value>
+                <fullName>Déflecteur</fullName>
+                <default>false</default>
+                <label>Déflecteur</label>
+            </value>
+            <value>
+                <fullName>Suspension pneumatique</fullName>
+                <default>false</default>
+                <label>Suspension pneumatique</label>
+            </value>
+            <value>
+                <fullName>Réservoir groupe indépendant</fullName>
+                <default>false</default>
+                <label>Réservoir groupe indépendant</label>
+            </value>
+            <value>
+                <fullName>Blocage différentiel</fullName>
+                <default>false</default>
+                <label>Blocage différentiel</label>
+            </value>
+            <value>
+                <fullName>Rideau FIT</fullName>
+                <default>false</default>
+                <label>Rideau FIT</label>
+            </value>
+            <value>
+                <fullName>Rideau arrière relevable</fullName>
+                <default>false</default>
+                <label>Rideau arrière relevable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

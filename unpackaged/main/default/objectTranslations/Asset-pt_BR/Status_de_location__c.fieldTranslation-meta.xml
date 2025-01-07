@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut de Réservation --></label>
+        <name>Status_de_location__c</name>
+        <picklistValues>
+            <masterLabel>Cession</masterLabel>
+            <translation><!-- Cession --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disponible</masterLabel>
+            <translation><!-- Disponible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Atelier</masterLabel>
+            <translation><!-- En Atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Fabrication</masterLabel>
+            <translation><!-- En Fabrication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Location</masterLabel>
+            <translation><!-- En Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Transport</masterLabel>
+            <translation><!-- En Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magasin (Service)</masterLabel>
+            <translation><!-- Magasin (Service) --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

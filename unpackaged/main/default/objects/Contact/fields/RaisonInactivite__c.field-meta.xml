@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RaisonInactivite__c</fullName>
+    <label>Raison d&#39;inactivité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Statut__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Changement société</fullName>
+                <default>false</default>
+                <label>Changement société</label>
+            </value>
+            <value>
+                <fullName>Décès</fullName>
+                <default>false</default>
+                <label>Décès</label>
+            </value>
+            <value>
+                <fullName>Désactivation</fullName>
+                <default>false</default>
+                <label>Désactivation</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <label>Doublon</label>
+            </value>
+            <value>
+                <fullName>Retraite</fullName>
+                <default>false</default>
+                <label>Retraite</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Inactif</controllingFieldValue>
+            <valueName>Changement société</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif</controllingFieldValue>
+            <valueName>Décès</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif</controllingFieldValue>
+            <valueName>Désactivation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif</controllingFieldValue>
+            <valueName>Doublon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inactif</controllingFieldValue>
+            <valueName>Retraite</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

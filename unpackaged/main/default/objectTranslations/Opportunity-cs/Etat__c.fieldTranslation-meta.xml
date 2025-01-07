@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Vert : Plus d&apos;une semaine avant la date de clôture prévue /
+Jaune : Moins d&apos;une semaine avant la date de clôture prévue /
+Rouge : Date de clôture dépassée /
+Cadena : Opportunité clôturée. --></help>
+        <label>Stát</label>
+        <name>Etat__c</name>
+    </CustomFieldTranslation>

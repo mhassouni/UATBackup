@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_Pistes_CoolEvent_En_cours</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>Agence_PF__c</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>Besoin__c</columns>
+    <columns>Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsCoolEnergiesWebsite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Mes Pistes CoolEvent - En cours</label>
+    <sharedTo>
+        <group>Groupe_Salons</group>
+    </sharedTo>
+</ListView>

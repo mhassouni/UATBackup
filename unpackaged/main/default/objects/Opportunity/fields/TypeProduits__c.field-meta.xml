@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeProduits__c</fullName>
+    <inlineHelpText>Famille</inlineHelpText>
+    <label>Type de Produit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PaysRegionPF__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carrosseries</fullName>
+                <default>false</default>
+                <label>Carrosseries</label>
+            </value>
+            <value>
+                <fullName>Containers</fullName>
+                <color>#FF9900</color>
+                <default>false</default>
+                <label>Containers</label>
+            </value>
+            <value>
+                <fullName>Meubles</fullName>
+                <color>#33CCFF</color>
+                <default>false</default>
+                <label>Meubles</label>
+            </value>
+            <value>
+                <fullName>Véhicules Frigorifiques</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Véhicules Frigorifiques</label>
+            </value>
+            <value>
+                <fullName>Véhicules Secs</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Véhicules Secs</label>
+            </value>
+            <value>
+                <fullName>Refrigerated vehicle</fullName>
+                <default>false</default>
+                <label>Refrigerated vehicle</label>
+            </value>
+            <value>
+                <fullName>Dry vehicle</fullName>
+                <default>false</default>
+                <label>Dry vehicle</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Refrigerated vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Dry vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>PIHU</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>CONSTANTIN</controllingFieldValue>
+            <controllingFieldValue>DION</controllingFieldValue>
+            <controllingFieldValue>DRACULA</controllingFieldValue>
+            <controllingFieldValue>LEGO</controllingFieldValue>
+            <controllingFieldValue>Zone Dev 1</controllingFieldValue>
+            <controllingFieldValue>ZEUS</controllingFieldValue>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>Carrosseries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>PIHU</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>CONSTANTIN</controllingFieldValue>
+            <controllingFieldValue>DION</controllingFieldValue>
+            <controllingFieldValue>DRACULA</controllingFieldValue>
+            <controllingFieldValue>LEGO</controllingFieldValue>
+            <controllingFieldValue>Zone Dev 1</controllingFieldValue>
+            <controllingFieldValue>ZEUS</controllingFieldValue>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>Containers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>PIHU</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>CONSTANTIN</controllingFieldValue>
+            <controllingFieldValue>DION</controllingFieldValue>
+            <controllingFieldValue>DRACULA</controllingFieldValue>
+            <controllingFieldValue>LEGO</controllingFieldValue>
+            <controllingFieldValue>Zone Dev 1</controllingFieldValue>
+            <controllingFieldValue>ZEUS</controllingFieldValue>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>Meubles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>PIHU</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>CONSTANTIN</controllingFieldValue>
+            <controllingFieldValue>DION</controllingFieldValue>
+            <controllingFieldValue>DRACULA</controllingFieldValue>
+            <controllingFieldValue>LEGO</controllingFieldValue>
+            <controllingFieldValue>Zone Dev 1</controllingFieldValue>
+            <controllingFieldValue>ZEUS</controllingFieldValue>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>Véhicules Frigorifiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>PIHU</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>CONSTANTIN</controllingFieldValue>
+            <controllingFieldValue>DION</controllingFieldValue>
+            <controllingFieldValue>DRACULA</controllingFieldValue>
+            <controllingFieldValue>LEGO</controllingFieldValue>
+            <controllingFieldValue>Zone Dev 1</controllingFieldValue>
+            <controllingFieldValue>ZEUS</controllingFieldValue>
+            <controllingFieldValue>PFM</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>Véhicules Secs</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

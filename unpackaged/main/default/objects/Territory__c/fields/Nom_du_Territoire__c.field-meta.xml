@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_du_Territoire__c</fullName>
+    <externalId>false</externalId>
+    <formula>LEFT( Organisation_Commerciale__r.Name +&quot; &quot;+&quot;-&quot;+&quot; &quot;+  Code_Postal__c +&quot; &quot;+&quot;-&quot;+&quot; &quot;+ Secteur__r.Name ,80)</formula>
+    <label>Nom</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

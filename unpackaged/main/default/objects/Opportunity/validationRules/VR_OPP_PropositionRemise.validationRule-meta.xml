@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_OPP_PropositionRemise</fullName>
+    <active>true</active>
+    <description>Statut 2 → 3</description>
+    <errorConditionFormula>AND(
+Text(PaysRegionPF__c)&lt;&gt; &#39;Reways&#39;,
+PRIORVALUE(StageName) = $Label.OPP_StageName_OpportuniteQualifiee,
+ISPICKVAL(StageName,&#39;$Label.OPP_StageName_PropositionRemise&#39;),
+ISCHANGED(StageName),
+NbDevisSynchronis_s__c = 0
+)</errorConditionFormula>
+    <errorMessage>Veuillez synchroniser un devis.</errorMessage>
+</ValidationRule>

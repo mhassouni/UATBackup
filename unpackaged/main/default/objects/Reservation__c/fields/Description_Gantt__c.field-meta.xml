@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_Gantt__c</fullName>
+    <description>Used for Fleet Management Gantt</description>
+    <externalId>false</externalId>
+    <formula>&#39;&lt;p&gt;&#39; &amp;  IF(TEXT(Status__c) != null, TEXT(Status__c), &#39;&#39;) &amp; &#39;&lt;/p&gt;&#39; 
+&amp; &#39;&lt;p&gt;&#39; &amp; Type__c &amp; &#39;&lt;/p&gt;&#39;
+&amp; &#39;&lt;p&gt;&#39; &amp; IF(Type_de_conteneur__c != null, Type_de_conteneur__r.Name, &#39;&#39;) &amp; &#39;&lt;/p&gt;&#39; 
+&amp; &#39;&lt;p&gt;&#39; &amp;  Shipping_City__c &amp; &#39;&lt;/p&gt;&#39;</formula>
+    <label>Description (Gantt)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

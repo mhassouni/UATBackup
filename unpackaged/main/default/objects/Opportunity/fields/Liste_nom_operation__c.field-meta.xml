@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liste_nom_operation__c</fullName>
+    <description>Sélection de l&#39;opération commerciale ayant permis de générer l&#39;Opportunité</description>
+    <inlineHelpText>Sélectionner de l&#39;opération commerciale ayant permis de générer l&#39;Opportunité</inlineHelpText>
+    <label>Nom de l&#39;opération</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>100% Client PF</fullName>
+                <default>false</default>
+                <label>100% Client PF</label>
+            </value>
+            <value>
+                <fullName>100% FRAIKIN</fullName>
+                <default>false</default>
+                <label>100% FRAIKIN</label>
+            </value>
+            <value>
+                <fullName>ANUGA 2021 - Cologne</fullName>
+                <default>false</default>
+                <label>ANUGA 2021 - Cologne</label>
+            </value>
+            <value>
+                <fullName>BDD ALIMARKET</fullName>
+                <default>false</default>
+                <label>BDD Alimarket</label>
+            </value>
+            <value>
+                <fullName>FEDEREC</fullName>
+                <default>false</default>
+                <label>FEDEREC</label>
+            </value>
+            <value>
+                <fullName>FFF</fullName>
+                <default>false</default>
+                <label>FFF</label>
+            </value>
+            <value>
+                <fullName>Fichier AAA</fullName>
+                <default>false</default>
+                <label>Fichier AAA</label>
+            </value>
+            <value>
+                <fullName>FRIGORENT CUSTOMER</fullName>
+                <default>false</default>
+                <label>FRIGORENT CUSTOMER</label>
+            </value>
+            <value>
+                <fullName>GROSSMARKT HAMBURG</fullName>
+                <default>false</default>
+                <label>GROSSMARKT HAMBURG</label>
+            </value>
+            <value>
+                <fullName>INTEREST FOR CONTAINERS/COLSTORE</fullName>
+                <default>false</default>
+                <label>INTEREST FOR CONTAINERS/COLSTORE</label>
+            </value>
+            <value>
+                <fullName>ORESTO</fullName>
+                <default>false</default>
+                <label>ORESTO</label>
+            </value>
+            <value>
+                <fullName>PIBELUX Comptes N&#39;ICE</fullName>
+                <default>false</default>
+                <label>PIBELUX Comptes N&#39;ICE</label>
+            </value>
+            <value>
+                <fullName>PICH Zürich Engrosmarkt</fullName>
+                <default>false</default>
+                <label>PICH Zürich Engrosmarkt</label>
+            </value>
+            <value>
+                <fullName>RESTART AFTER COVID-19</fullName>
+                <default>false</default>
+                <label>RESTART AFTER COVID-19</label>
+            </value>
+            <value>
+                <fullName>SEMI-MARATHON</fullName>
+                <default>false</default>
+                <label>SEMI-MARATHON</label>
+            </value>
+            <value>
+                <fullName>Serbotel 2021</fullName>
+                <default>false</default>
+                <label>Serbotel 2021</label>
+            </value>
+            <value>
+                <fullName>Sirha 2023</fullName>
+                <default>false</default>
+                <label>Sirha 2023</label>
+            </value>
+            <value>
+                <fullName>SNIPER</fullName>
+                <default>false</default>
+                <label>SNIPER</label>
+            </value>
+            <value>
+                <fullName>VOLTA TRUCKS CANDIDATE</fullName>
+                <default>false</default>
+                <label>VOLTA TRUCKS CANDIDATE</label>
+            </value>
+            <value>
+                <fullName>ZEFIRENT BELUX</fullName>
+                <default>false</default>
+                <label>ZEFIRENT BELUX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

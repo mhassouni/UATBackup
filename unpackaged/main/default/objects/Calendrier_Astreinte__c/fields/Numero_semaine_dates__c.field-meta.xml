@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numero_semaine_dates__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Semaine &quot; &amp; text(N_semaine__c)&amp; &quot;&quot; 
+&amp; &quot; - &quot; &amp;&quot;Du &quot;&amp; Text(Day(Date_de_debut__c)) &amp; &quot;/&quot; &amp; text(month(Date_de_debut__c)) &amp; &quot;/&quot; &amp; text(YEAR(Date_de_debut__c))
+&amp;&quot; Au &quot; &amp; text(Day(Date_de_fin__c)) &amp; &quot;/&quot; &amp; text(month(Date_de_fin__c)) &amp; &quot;/&quot; &amp; text(YEAR(Date_de_fin__c))</formula>
+    <label>Numéro semaine - dates</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

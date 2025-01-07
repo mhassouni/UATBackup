@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type Transaction --></label>
+        <name>Type_Transaction__c</name>
+        <picklistValues>
+            <masterLabel>HT</masterLabel>
+            <translation><!-- HT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TTC</masterLabel>
+            <translation><!-- TTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVA</masterLabel>
+            <translation><!-- TVA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

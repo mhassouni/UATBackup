@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Annulée</masterLabel>
+            <translation><!-- Annulée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmée</masterLabel>
+            <translation><!-- Confirmée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente de planification</masterLabel>
+            <translation><!-- En attente de planification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planifiée</masterLabel>
+            <translation><!-- Planifiée --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

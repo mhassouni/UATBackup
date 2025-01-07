@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrôle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contrôles</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout Contrôle</layout>
+        <sections>
+            <label><!-- Informations - Contrôle --></label>
+            <section>Informations - Contrôle</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Contrôle  - Community</layout>
+        <sections>
+            <label><!-- Informations - Contrôle --></label>
+            <section>Informations - Contrôle</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Contrôle &amp; Entretien</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Contrôle --></label>
+        <name>Controle</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Telecharger_le_document --></label>
+        <name>Telecharger_le_document</name>
+    </webLinks>
+</CustomObjectTranslation>

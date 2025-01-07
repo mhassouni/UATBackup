@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PotentielVehiculesSecs__c</fullName>
+    <inlineHelpText>Dry vehicle quantity to be included to Customer fleet</inlineHelpText>
+    <label>Potentiel - Véhicules Secs</label>
+    <summarizedField>PotentielVehiculesSecs__c.Quantite__c</summarizedField>
+    <summaryForeignKey>PotentielVehiculesSecs__c.CompteRaisonSociale__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

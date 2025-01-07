@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeIdentifiantNational__c</fullName>
+    <label>Type d&#39;identifiant national</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PaysRegionPF__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CIF</fullName>
+                <default>false</default>
+                <label>CIF</label>
+            </value>
+            <value>
+                <fullName>CNIE</fullName>
+                <default>false</default>
+                <label>CNIE</label>
+            </value>
+            <value>
+                <fullName>COCCH</fullName>
+                <default>false</default>
+                <label>COCCH</label>
+            </value>
+            <value>
+                <fullName>CRO</fullName>
+                <default>false</default>
+                <label>CRO</label>
+            </value>
+            <value>
+                <fullName>IBLC</fullName>
+                <default>false</default>
+                <label>IBLC</label>
+            </value>
+            <value>
+                <fullName>ICO</fullName>
+                <default>false</default>
+                <label>ICO</label>
+            </value>
+            <value>
+                <fullName>KVK</fullName>
+                <default>false</default>
+                <label>KVK</label>
+            </value>
+            <value>
+                <fullName>NIPC</fullName>
+                <default>false</default>
+                <label>NIPC</label>
+            </value>
+            <value>
+                <fullName>P.IVA</fullName>
+                <default>false</default>
+                <label>P.IVA</label>
+            </value>
+            <value>
+                <fullName>RNMA</fullName>
+                <default>false</default>
+                <label>RNMA</label>
+            </value>
+            <value>
+                <fullName>SIREN</fullName>
+                <default>false</default>
+                <label>SIREN</label>
+            </value>
+            <value>
+                <fullName>TVABE</fullName>
+                <default>false</default>
+                <label>TVABE</label>
+            </value>
+            <value>
+                <fullName>TVADE</fullName>
+                <default>false</default>
+                <label>TVADE</label>
+            </value>
+            <value>
+                <fullName>TVAPL</fullName>
+                <default>false</default>
+                <label>TVAPL</label>
+            </value>
+            <value>
+                <fullName>En création</fullName>
+                <default>false</default>
+                <label>En création</label>
+            </value>
+            <value>
+                <fullName>FN</fullName>
+                <default>false</default>
+                <label>FN</label>
+            </value>
+            <value>
+                <fullName>PRISMA</fullName>
+                <default>false</default>
+                <label>PRISMA</label>
+            </value>
+            <value>
+                <fullName>RCRO</fullName>
+                <default>false</default>
+                <label>RCRO</label>
+            </value>
+            <value>
+                <fullName>COC</fullName>
+                <default>false</default>
+                <label>COC</label>
+            </value>
+            <value>
+                <fullName>RNHU</fullName>
+                <default>false</default>
+                <label>RNHU</label>
+            </value>
+            <value>
+                <fullName>VATHU</fullName>
+                <default>false</default>
+                <label>VATHU</label>
+            </value>
+            <value>
+                <fullName>COFIS</fullName>
+                <default>false</default>
+                <label>COFIS</label>
+            </value>
+            <value>
+                <fullName>TVAIT</fullName>
+                <default>false</default>
+                <label>TVAIT</label>
+            </value>
+            <value>
+                <fullName>DUNS</fullName>
+                <default>false</default>
+                <label>DUNS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>PIZA</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PIAE</controllingFieldValue>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <valueName>En création</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <valueName>FN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIAT</controllingFieldValue>
+            <valueName>PRISMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STFR3</controllingFieldValue>
+            <controllingFieldValue>DROM</controllingFieldValue>
+            <controllingFieldValue>STFR4</controllingFieldValue>
+            <controllingFieldValue>STFR5</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 1</controllingFieldValue>
+            <controllingFieldValue>DRO IDF 2</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 1</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 2</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 3</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 4</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 5</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 6</controllingFieldValue>
+            <controllingFieldValue>DRO NORD 7</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 1</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 2</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 3</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 4</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 5</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 6</controllingFieldValue>
+            <controllingFieldValue>DRO SUD 7</controllingFieldValue>
+            <controllingFieldValue>STFR1</controllingFieldValue>
+            <controllingFieldValue>STFR2</controllingFieldValue>
+            <valueName>SIREN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PFUK</controllingFieldValue>
+            <valueName>CRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIPL</controllingFieldValue>
+            <valueName>TVAPL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PICH</controllingFieldValue>
+            <valueName>COCCH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIMA</controllingFieldValue>
+            <valueName>RNMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIRO</controllingFieldValue>
+            <valueName>RCRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PISK</controllingFieldValue>
+            <controllingFieldValue>PICZ</controllingFieldValue>
+            <valueName>ICO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIES</controllingFieldValue>
+            <valueName>CIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PITA</controllingFieldValue>
+            <valueName>P.IVA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIPT</controllingFieldValue>
+            <valueName>NIPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIBE</controllingFieldValue>
+            <valueName>TVABE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PILU</controllingFieldValue>
+            <valueName>IBLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIND</controllingFieldValue>
+            <valueName>KVK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIDE</controllingFieldValue>
+            <valueName>TVADE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PIRL</controllingFieldValue>
+            <valueName>CNIE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>DUNS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

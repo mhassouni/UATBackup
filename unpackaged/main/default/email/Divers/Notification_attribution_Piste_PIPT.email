@@ -1,0 +1,11 @@
+*** Novo lead {!Lead.NumeroPiste__c}  para processo no Greenforce ***
+
+A seguinte faixa foi atribuída a você.
+Sociedade: {!Lead.Company}
+Nome da faixa: {!Lead.Name}
+Agência de partida e retorno : {!Lead.Agence_depart_retour__c}
+Código postal : {!Lead.CodePostal__c}
+Cidade : {!Lead.Ville__c}
+
+
+Clique no link para ir direto para a faixa: {!Lead.Link}

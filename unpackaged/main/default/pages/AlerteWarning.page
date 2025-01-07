@@ -1,0 +1,13 @@
+<apex:page lightningStylesheets="true" standardController="Asset">
+   <style>
+    body{background-color: #F5F4F4;font-weight: bold;color:#c22823; }
+   </style>
+    <center ><img src="{!$Resource.Icon_Flag_Null}"/></center><br/>
+    <center>
+        <apex:outputText value="{0, number, ###,###,###,##0}"><apex:param value="{!Asset.nb_alertes_non_traitees__c}" /></apex:outputText>
+       {!$Label.Asset_Alerte_message}<br/>
+           "TEST EN COURS - NE PAS PRENDRE EN COMPTE"
+
+    </center> 
+     
+</apex:page>

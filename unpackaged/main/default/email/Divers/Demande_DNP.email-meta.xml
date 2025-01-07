@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demande DNP</name>
+    <style>none</style>
+    <subject>Demande de validation de N° de Parc</subject>
+    <textOnly>Bonjour
+
+Vous avez reçu une nouvelle demande de validation de N° Parc.
+
+{!Opportunity.Name}
+
+{!Opportunity.Commentaire__c}
+
+{!ApprovalRequest.Comments}
+
+Lien vers l&#39;opportunité</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

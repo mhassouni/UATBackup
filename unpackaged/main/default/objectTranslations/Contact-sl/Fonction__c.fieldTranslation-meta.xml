@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Function as defined in the PF qualification --></help>
+        <label>Funcţie</label>
+        <name>Fonction__c</name>
+        <picklistValues>
+            <masterLabel>AGENT D&#39;EXPLOITATION</masterLabel>
+            <translation><!-- AGENT D&apos;EXPLOITATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIDE EXPLOITANT</masterLabel>
+            <translation><!-- AIDE EXPLOITANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI CARROSSIER</masterLabel>
+            <translation><!-- APPRENTI CARROSSIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI CARROSSIER PEINTRE</masterLabel>
+            <translation><!-- APPRENTI CARROSSIER PEINTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI COMMERCIAL</masterLabel>
+            <translation><!-- APPRENTI COMMERCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI EXPLOITANT</masterLabel>
+            <translation><!-- APPRENTI EXPLOITANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI FRIGORISTE</masterLabel>
+            <translation><!-- APPRENTI FRIGORISTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTI MECANICIEN</masterLabel>
+            <translation><!-- APPRENTI MECANICIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPRENTIE SECRETAIRE</masterLabel>
+            <translation><!-- APPRENTIE SECRETAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSIST REGIONAL ASSURANCE RE</masterLabel>
+            <translation><!-- ASSIST REGIONAL ASSURANCE RE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANCE DAGENCE</masterLabel>
+            <translation><!-- ASSISTANCE DAGENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT COMMERCIAL</masterLabel>
+            <translation><!-- ASSISTANT COMMERCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT EXPLOITATION</masterLabel>
+            <translation><!-- ASSISTANT EXPLOITATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT REGIONAL ASSURANCE</masterLabel>
+            <translation><!-- ASSISTANT REGIONAL ASSURANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT REGIONAL EXPLOITATION</masterLabel>
+            <translation><!-- ASSISTANT REGIONAL EXPLOITATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE ADMINISTRATIVE</masterLabel>
+            <translation><!-- ASSISTANTE ADMINISTRATIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE COMMERCIALE</masterLabel>
+            <translation><!-- ASSISTANTE COMMERCIALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE COMMERCIALE REGIONAL</masterLabel>
+            <translation><!-- ASSISTANTE COMMERCIALE REGIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE FACTURATION</masterLabel>
+            <translation><!-- ASSISTANTE FACTURATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE REGIONALE ASSURANCE</masterLabel>
+            <translation><!-- ASSISTANTE REGIONALE ASSURANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANTE REGIONALE RECOUVREMENT</masterLabel>
+            <translation><!-- ASSISTANTE REGIONALE RECOUVREMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrateur</masterLabel>
+            <translation><!-- Administrateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant</masterLabel>
+            <translation><!-- Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C PROF ASSISTANTE DE GESTION</masterLabel>
+            <translation><!-- C PROF ASSISTANTE DE GESTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C PROF CARROSSIER</masterLabel>
+            <translation><!-- C PROF CARROSSIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C PROF COMMERCIAL</masterLabel>
+            <translation><!-- C PROF COMMERCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C PROF EXPLOITANT</masterLabel>
+            <translation><!-- C PROF EXPLOITANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C PROF SECRETAIRE</masterLabel>
+            <translation><!-- C PROF SECRETAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C. PROF MECANICIEN</masterLabel>
+            <translation><!-- C. PROF MECANICIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C.PROF SECRETAIRE</masterLabel>
+            <translation><!-- C.PROF SECRETAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARROSSIER</masterLabel>
+            <translation><!-- CARROSSIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARROSSIER PEINTRE</masterLabel>
+            <translation><!-- CARROSSIER PEINTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARGEE DE RECOUVREMENT</masterLabel>
+            <translation><!-- CHARGEE DE RECOUVREMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAUFFEUR MECANICIEN</masterLabel>
+            <translation><!-- CHAUFFEUR MECANICIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAUFFEUR PL LONGUE DISTANCE</masterLabel>
+            <translation><!-- CHAUFFEUR PL LONGUE DISTANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF ATELIER FROID</masterLabel>
+            <translation><!-- CHEF ATELIER FROID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF D&#39;ATELIER CADRE</masterLabel>
+            <translation><!-- CHEF D&apos;ATELIER CADRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF D&#39;ATELIER CARROSSERIE</masterLabel>
+            <translation><!-- CHEF D&apos;ATELIER CARROSSERIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF D&#39;EQUIPE</masterLabel>
+            <translation><!-- CHEF D&apos;EQUIPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF D&#39;EQUIPE CAROSSERIE</masterLabel>
+            <translation><!-- CHEF D&apos;EQUIPE CAROSSERIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF DES VENTES</masterLabel>
+            <translation><!-- CHEF DES VENTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIAL TERRITORIAL SENIOR</masterLabel>
+            <translation><!-- CIAL TERRITORIAL SENIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMERCIAL SUIVI CLIENTS</masterLabel>
+            <translation><!-- COMMERCIAL SUIVI CLIENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMERCIAL TERRITORIAL</masterLabel>
+            <translation><!-- COMMERCIAL TERRITORIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMERCIAL TERRITORIAL SENIOR</masterLabel>
+            <translation><!-- COMMERCIAL TERRITORIAL SENIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONDUCTEUR PL</masterLabel>
+            <translation><!-- CONDUCTEUR PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSEILLER TECHNIQUE REGIONAL</masterLabel>
+            <translation><!-- CONSEILLER TECHNIQUE REGIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR</masterLabel>
+            <translation><!-- CONVOYEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR PL SPL</masterLabel>
+            <translation><!-- CONVOYEUR PL SPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR PREP DE VEHICULES</masterLabel>
+            <translation><!-- CONVOYEUR PREP DE VEHICULES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR PREPARATEUR</masterLabel>
+            <translation><!-- CONVOYEUR PREPARATEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR REGIONAL</masterLabel>
+            <translation><!-- CONVOYEUR REGIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR REGIONAL L.DISTANCE</masterLabel>
+            <translation><!-- CONVOYEUR REGIONAL L.DISTANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVOYEUR VL PL</masterLabel>
+            <translation><!-- CONVOYEUR VL PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef d&#39;atelier</masterLabel>
+            <translation><!-- Chef d&apos;atelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTEUR DE SITE</masterLabel>
+            <translation><!-- DIRECTEUR DE SITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTEUR DE ZONE</masterLabel>
+            <translation><!-- DIRECTEUR DE ZONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTEUR FRANCE</masterLabel>
+            <translation><!-- DIRECTEUR FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECTEUR OPERATIONS</masterLabel>
+            <translation><!-- DIRECTEUR OPERATIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directeur</masterLabel>
+            <translation><!-- Directeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPLOITANT</masterLabel>
+            <translation><!-- EXPLOITANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPLOITANT REGIONAL</masterLabel>
+            <translation><!-- EXPLOITANT REGIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employé</masterLabel>
+            <translation><!-- Employé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGORISTE</masterLabel>
+            <translation><!-- FRIGORISTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGORISTE REGIONAL</masterLabel>
+            <translation><!-- FRIGORISTE REGIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGORISTE REGIONAL ITINERANT</masterLabel>
+            <translation><!-- FRIGORISTE REGIONAL ITINERANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gérant</masterLabel>
+            <translation><!-- Gérant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAVEUR PREPARATEUR</masterLabel>
+            <translation><!-- LAVEUR PREPARATEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECANICIEN</masterLabel>
+            <translation><!-- MECANICIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECANICIEN FRIGORISTE</masterLabel>
+            <translation><!-- MECANICIEN FRIGORISTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECANICIEN PL</masterLabel>
+            <translation><!-- MECANICIEN PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECANICIEN PL VL</masterLabel>
+            <translation><!-- MECANICIEN PL VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECANICIEN PL VL CONVOYEUR</masterLabel>
+            <translation><!-- MECANICIEN PL VL CONVOYEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREPARATEUR CONVOYEUR</masterLabel>
+            <translation><!-- PREPARATEUR CONVOYEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREPARATEUR DE VEHICULES</masterLabel>
+            <translation><!-- PREPARATEUR DE VEHICULES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREPARATEUR DE VEHICULES LAVEU</masterLabel>
+            <translation><!-- PREPARATEUR DE VEHICULES LAVEU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Particulier</masterLabel>
+            <translation><!-- Particulier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriétaire</masterLabel>
+            <translation><!-- Propriétaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFERENT FROID</masterLabel>
+            <translation><!-- REFERENT FROID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFERENT TECHNIQUE FROID</masterLabel>
+            <translation><!-- REFERENT TECHNIQUE FROID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFERENT TECHNIQUE FROID REGIO</masterLabel>
+            <translation><!-- REFERENT TECHNIQUE FROID REGIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFERENT TECHNIQUE PNEUMATIQUE</masterLabel>
+            <translation><!-- REFERENT TECHNIQUE PNEUMATIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFERENT TECHNIQUE POMONA RPF1</masterLabel>
+            <translation><!-- REFERENT TECHNIQUE POMONA RPF1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE ASSURANCES REGIONA</masterLabel>
+            <translation><!-- RESPONSABLE ASSURANCES REGIONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE D EXPLOITATION</masterLabel>
+            <translation><!-- RESPONSABLE D EXPLOITATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE DE SITE</masterLabel>
+            <translation><!-- RESPONSABLE DE SITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE DE SITES</masterLabel>
+            <translation><!-- RESPONSABLE DE SITES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE RECOUVREMENT REGIO</masterLabel>
+            <translation><!-- RESPONSABLE RECOUVREMENT REGIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESPONSABLE SUIVI CLIENTS</masterLabel>
+            <translation><!-- RESPONSABLE SUIVI CLIENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsable</masterLabel>
+            <translation><!-- Responsable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECRETAIRE</masterLabel>
+            <translation><!-- SECRETAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECRETAIRE D&#39;AGENCE</masterLabel>
+            <translation><!-- SECRETAIRE D&apos;AGENCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECRETAIRE DE REGION</masterLabel>
+            <translation><!-- SECRETAIRE DE REGION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECRETAIRE REGIONALE COMMERCIAL</masterLabel>
+            <translation><!-- SECRETAIRE REGIONALE COMMERCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOLIER CARROSSIER</masterLabel>
+            <translation><!-- TOLIER CARROSSIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technicien</masterLabel>
+            <translation><!-- Technicien --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaVueCommercialeClient__c</fullName>
+    <description>Coche la case si le user connecté est le commercial assigné à la vue commerciale client du compte</description>
+    <formula>$User.Id =  TerritorialCommercial__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ma vue commerciale client</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

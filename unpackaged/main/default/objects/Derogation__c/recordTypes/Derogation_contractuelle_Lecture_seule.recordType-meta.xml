@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derogation_contractuelle_Lecture_seule</fullName>
+    <active>true</active>
+    <label>Dérogation contractuelle - Lecture seule</label>
+    <picklistValues>
+        <picklist>Conditions_de_paiement__c</picklist>
+        <values>
+            <fullName>Debut_de_mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fin_de_mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_de_reglement__c</picklist>
+        <values>
+            <fullName>Chèque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nb_de_mois_de_caution__c</picklist>
+        <values>
+            <fullName>0 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_Derogation__c</picklist>
+        <values>
+            <fullName>Approuvée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente DG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejetée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Acceptée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amendée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crée</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Demandée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Racines_des_hi_rarchies_de_compte_externe</fullName>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Parent</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Racines des hiérarchies de compte externe</label>
+</ListView>

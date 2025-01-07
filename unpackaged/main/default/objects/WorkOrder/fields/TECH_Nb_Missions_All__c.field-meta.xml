@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Nb_Missions_All__c</fullName>
+    <description>Nombre total des missions</description>
+    <label>TECH_Nb_Missions_All</label>
+    <summaryForeignKey>WorkOrderLineItem.WorkOrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

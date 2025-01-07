@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECHChatterNotification__c</fullName>
+    <externalId>false</externalId>
+    <formula>$Label.CON_ChatterNotif_ContactDesctive 
++ &quot;:&quot; 
++ SUBSTITUTE($Label.NewLine,&quot;-&quot;,&quot;&quot;) 
++ $Label.VFP_Contact 
++ &quot;: &quot; 
++ FirstName 
++ &quot; &quot; 
++ LastName 
++ SUBSTITUTE($Label.NewLine,&quot;-&quot;,&quot;&quot;) 
++ $Label.VFP_CompteRaisonSocial 
++ &quot;: &quot; 
++ Account.Name 
++ SUBSTITUTE($Label.NewLine,&quot;-&quot;,&quot;&quot;) 
++ $Label.VFP_Link 
++ &quot;: &quot; 
++ TECHLienSF__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Chatter Notification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

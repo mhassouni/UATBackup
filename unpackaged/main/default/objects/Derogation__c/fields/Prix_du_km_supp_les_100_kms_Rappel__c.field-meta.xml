@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prix_du_km_supp_les_100_kms_Rappel__c</fullName>
+    <formula>Devis__r.Prix_du_km_supplementaire_les_100_kms__c</formula>
+    <label>Prix du km supp les 100 kms (Rappel)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

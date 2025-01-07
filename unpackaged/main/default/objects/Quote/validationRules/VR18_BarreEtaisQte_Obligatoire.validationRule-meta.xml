@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR18_BarreEtaisQte_Obligatoire</fullName>
+    <active>true</active>
+    <description>Si Barre étais != Aucun, le champ “Barre étais (Qté)” doit être non vide</description>
+    <errorConditionFormula>AND
+(
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISPICKVAL( Barre_tais__c ,&quot;&quot;))
+,
+ISBLANK( Barre_etais_Qte__c )
+)</errorConditionFormula>
+    <errorDisplayField>Barre_etais_Qte__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner &quot;Barre étais (Qté)&quot; si &quot;Barre étai (Type)&quot; est renseigné</errorMessage>
+</ValidationRule>

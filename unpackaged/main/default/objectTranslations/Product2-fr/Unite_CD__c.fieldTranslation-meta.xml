@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Unité CD --></label>
+        <name>Unite_CD__c</name>
+        <picklistValues>
+            <masterLabel>Forfait</masterLabel>
+            <translation><!-- Forfait --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inclus</masterLabel>
+            <translation><!-- Inclus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalier</masterLabel>
+            <translation><!-- Journalier --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

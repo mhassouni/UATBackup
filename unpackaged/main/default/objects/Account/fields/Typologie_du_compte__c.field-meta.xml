@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Typologie_du_compte__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+OR(
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusSiteAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusUltimateAccount,
+$User.ProfileId == $Label.USR_ProfileId_PFCommunityPlusClientAccount)
+,
+IF
+(
+RecordTypeId ==  $Label.CPT_RecordTypeId_CompteNoeud
+,
+IMAGE(&quot;/client/resource/1580562712000/Icon_Account_Noeud?&quot;,&quot;Noeud&quot;,32,32)
+,
+IF
+(
+OR(RecordTypeId == $Label.CPT_RecordTypeId_CompteClient,RecordTypeId == $Label.ACC_RecordTypeId_CompteProspect)
+,
+IMAGE(&quot;/client/resource/1580562712000/Icon_Acocunt_Client?&quot;,&quot;Client&quot;,32,32)
+,
+IF
+(
+RecordTypeId == $Label.CPT_RecordTypeId_CompteSite
+,
+IMAGE(&quot;/client/resource/1580562712000/Icon_Account_site?&quot;,&quot;Site&quot;,32,32)
+,
+IMAGE(&quot;/client/resource/1553003889000/Icon_Account?&quot;,&quot;Compte&quot;,32,32)
+
+)
+))
+
+
+,
+IF
+(
+RecordTypeId ==  $Label.CPT_RecordTypeId_CompteNoeud
+,
+IMAGE(&quot;/resource/1580562712000/Icon_Account_Noeud?&quot;,&quot;Noeud&quot;,32,32)
+,
+IF
+(
+RecordTypeId == $Label.CPT_RecordTypeId_CompteClient
+,
+IMAGE(&quot;/resource/1580562712000/Icon_Acocunt_Client?&quot;,&quot;Client&quot;,32,32)
+,
+IF
+(
+RecordTypeId == $Label.CPT_RecordTypeId_CompteSite
+,
+IMAGE(&quot;/resource/1580562712000/Icon_Account_site?&quot;,&quot;Site&quot;,32,32)
+,
+if(RecordTypeId ==  LEFT($Label.CPT_RecordTypeId_AgencePF,15)
+,
+IMAGE(&quot;/resource/1717602372000/Icon_Account_Agence?&quot;,&quot;Noeud&quot;,32,32)
+,
+if(RecordTypeId ==  LEFT($Label.ACC_RecordTypeId_CompteParticulierB2C,15)
+,
+IMAGE(&quot;/resource/1717602372000/Icon_Account_B2C?&quot;,&quot;Noeud&quot;,32,32)
+,
+if(RecordTypeId ==  LEFT($Label.ACC_RecordTypeId_CompteProspect,15)
+,
+IMAGE(&quot;/resource/1580562712000/Icon_Acocunt_Client?&quot;,&quot;Prospect&quot;,32,32)
+,
+IMAGE(&quot;/resource/1553003889000/Icon_Account?&quot;,&quot;Compte&quot;,32,32))
+)
+)
+)
+)
+
+)
+
+
+)</formula>
+    <label>Typologie du compte</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lisse_de_protection__c</fullName>
+    <label>Lisse de protection sup. (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>LISSE ACIER 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>LISSE ACIER 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>LISSE ACIER 3 FACES</fullName>
+                <default>false</default>
+                <label>LISSE ACIER 3 FACES</label>
+            </value>
+            <value>
+                <fullName>LISSE ACIER CÔTÉ D</fullName>
+                <default>false</default>
+                <label>LISSE ACIER CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>LISSE ACIER CÔTÉ G</fullName>
+                <default>false</default>
+                <label>LISSE ACIER CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>LISSE ACIER FACE AV</fullName>
+                <default>false</default>
+                <label>LISSE ACIER FACE AV</label>
+            </value>
+            <value>
+                <fullName>LISSE ALUMINIUM 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>LISSE ALUMINIUM 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>LISSE ALUMINIUM 3 FACES</fullName>
+                <default>false</default>
+                <label>LISSE ALUMINIUM 3 FACES</label>
+            </value>
+            <value>
+                <fullName>LISSE ALUMINIUM CÔTÉ D</fullName>
+                <default>false</default>
+                <label>LISSE ALUMINIUM CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>LISSE ALUMINIUM CÔTÉ G</fullName>
+                <default>false</default>
+                <label>LISSE ALUMINIUM CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>LISSE ALUMINIUM FACE AV</fullName>
+                <default>false</default>
+                <label>LISSE ALUMINIUM FACE AV</label>
+            </value>
+            <value>
+                <fullName>LISSE INOX 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>LISSE INOX 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>LISSE INOX 3 FACES</fullName>
+                <default>false</default>
+                <label>LISSE INOX 3 FACES</label>
+            </value>
+            <value>
+                <fullName>LISSE INOX CÔTÉ D</fullName>
+                <default>false</default>
+                <label>LISSE INOX CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>LISSE INOX CÔTÉ G</fullName>
+                <default>false</default>
+                <label>LISSE INOX CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>LISSE INOX FACE AV</fullName>
+                <default>false</default>
+                <label>LISSE INOX FACE AV</label>
+            </value>
+            <value>
+                <fullName>LISSE PVC 2 FACES D + G</fullName>
+                <default>false</default>
+                <label>LISSE PVC 2 FACES D + G</label>
+            </value>
+            <value>
+                <fullName>LISSE PVC 3 FACES</fullName>
+                <default>false</default>
+                <label>LISSE PVC 3 FACES</label>
+            </value>
+            <value>
+                <fullName>LISSE PVC CÔTÉ D</fullName>
+                <default>false</default>
+                <label>LISSE PVC CÔTÉ D</label>
+            </value>
+            <value>
+                <fullName>LISSE PVC CÔTÉ G</fullName>
+                <default>false</default>
+                <label>LISSE PVC CÔTÉ G</label>
+            </value>
+            <value>
+                <fullName>LISSE PVC FACE AV</fullName>
+                <default>false</default>
+                <label>LISSE PVC FACE AV</label>
+            </value>
+            <value>
+                <fullName>LISSE SOUS RAILS</fullName>
+                <default>false</default>
+                <label>LISSE SOUS RAILS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

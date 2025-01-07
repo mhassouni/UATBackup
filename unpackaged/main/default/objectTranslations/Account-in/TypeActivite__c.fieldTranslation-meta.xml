@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- According to PF classification --></help>
+        <label><!-- Type d&apos;activité --></label>
+        <name>TypeActivite__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alimentaire Non Frigorifique</masterLabel>
+            <translation><!-- Alimentaire Non Frigorifique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beurre, Œufs, Fromage</masterLabel>
+            <translation><!-- Beurre, Œufs, Fromage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boulangerie - Pâtisserie</masterLabel>
+            <translation><!-- Boulangerie - Pâtisserie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crèmes Glacées, Surgelés</masterLabel>
+            <translation><!-- Crèmes Glacées, Surgelés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuisine Centrale</masterLabel>
+            <translation><!-- Cuisine Centrale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de boissons</masterLabel>
+            <translation><!-- Distributeur de boissons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributeur de produits frais et surgelés</masterLabel>
+            <translation><!-- Distributeur de produits frais et surgelés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Déménagement</masterLabel>
+            <translation><!-- Déménagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evenementiel</masterLabel>
+            <translation><!-- Evenementiel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivités</masterLabel>
+            <translation><!-- Festivités --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleuriste</masterLabel>
+            <translation><!-- Fleuriste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fruits et Légumes</masterLabel>
+            <translation><!-- Fruits et Légumes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandes et Moyennes Surfaces</masterLabel>
+            <translation><!-- Grandes et Moyennes Surfaces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Service</masterLabel>
+            <translation><!-- Home Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation><!-- Hygiène --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôtelier</masterLabel>
+            <translation><!-- Hôtelier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loueur</masterLabel>
+            <translation><!-- Loueur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marée</masterLabel>
+            <translation><!-- Marée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médicaments / Laboratoires pharma</masterLabel>
+            <translation><!-- Médicaments / Laboratoires pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ostréiculteur</masterLabel>
+            <translation><!-- Ostréiculteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panification (producteur avec distrib. Intégrée)</masterLabel>
+            <translation><!-- Panification (producteur avec distrib. Intégrée) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Particulier</masterLabel>
+            <translation><!-- Particulier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portage de repas (CCAS-CPAS etc…)</masterLabel>
+            <translation><!-- Portage de repas (CCAS-CPAS etc…) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteur</masterLabel>
+            <translation><!-- Producteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producteurs Industriels</masterLabel>
+            <translation><!-- Producteurs Industriels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurateur</masterLabel>
+            <translation><!-- Restaurateur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Collective</masterLabel>
+            <translation><!-- Restauration Collective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restauration Rapide</masterLabel>
+            <translation><!-- Restauration Rapide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salaisons, Plats Préparés</masterLabel>
+            <translation><!-- Salaisons, Plats Préparés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Station Service</masterLabel>
+            <translation><!-- Station Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traiteurs</masterLabel>
+            <translation><!-- Traiteurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Public Frigorifique</masterLabel>
+            <translation><!-- Transport Public Frigorifique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur</masterLabel>
+            <translation><!-- Transporteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travaux Publics - BTP</masterLabel>
+            <translation><!-- Travaux Publics - BTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viandes, Volailles</masterLabel>
+            <translation><!-- Viandes, Volailles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viticulteur</masterLabel>
+            <translation><!-- Viticulteur --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

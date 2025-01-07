@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QLG_Similar_End_Date</fullName>
+    <active>false</active>
+    <description>Validation Rule créé pour respecter le standard Salesforce de contracting method.
+Toutes les lignes de devis avec la même end date sont merge sur le même contrat.
+Ils font donc empêcher la création de groupe de ligne de devis avec la même End Date.</description>
+    <errorConditionFormula>AND(
+				Opportunity_type__c  &lt;&gt; &quot;PRG&quot;,
+				ISCHANGED(SBQQ__Status__c),
+				QLGWithSameEndDate__c = TRUE
+				)</errorConditionFormula>
+    <errorMessage>Les groupes de ligne de devis ne peuvent pas avoir la même date de fin.
+Si c&#39;est le cas, merci de créer un devis pour chaque groupe de ligne de devis.
+Cela permettra la création d&#39;un contrat unique pour chaque groupe.</errorMessage>
+</ValidationRule>

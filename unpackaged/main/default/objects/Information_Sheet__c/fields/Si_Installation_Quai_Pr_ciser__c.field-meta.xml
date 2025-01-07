@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Si_Installation_Quai_Pr_ciser__c</fullName>
+    <label>Si Installation à Quai, Préciser</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mise à quai sur les gueuses</fullName>
+                <default>false</default>
+                <label>Mise à quai sur les gueuses</label>
+            </value>
+            <value>
+                <fullName>Mise à quai sur béquilles</fullName>
+                <default>false</default>
+                <label>Mise à quai sur béquilles</label>
+            </value>
+            <value>
+                <fullName>Mise à quai réalisée par le client</fullName>
+                <default>false</default>
+                <label>Mise à quai réalisée par le client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Approval_Pourcentage_Negocie__c</fullName>
+    <formula>IF(
+				 Negociated_Rate__c &lt;&gt;  Tech_Negociated_Rate__c,
+				TRUE,
+				FALSE
+				)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech Approval Pourcentage Négocié</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__QuoteProcess__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Quote process used with this group.</description>
+    <inlineHelpText>Processus de devis utilisé avec ce groupe. Remplace le champ de niveau du devis.</inlineHelpText>
+    <label>Quote Process</label>
+    <referenceTo>SBQQ__QuoteProcess__c</referenceTo>
+    <relationshipLabel>Quote Line Groups</relationshipLabel>
+    <relationshipName>QuoteLineGroups</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

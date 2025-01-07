@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type d&apos;objet --></label>
+        <name>TypeObjet__c</name>
+        <picklistValues>
+            <masterLabel>Compte</masterLabel>
+            <translation>Account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunité</masterLabel>
+            <translation>Opportunità</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produit</masterLabel>
+            <translation>Prodotto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposition Commerciale</masterLabel>
+            <translation>Proposta commerciale</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

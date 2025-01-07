@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR02_Lead_Statut_Qualifiee</fullName>
+    <active>true</active>
+    <description>Bloquée le changement manuel du statut a Qualifiée</description>
+    <errorConditionFormula>AND
+(
+OR( 
+RecordType.Id = LEFT($Label.Lead_RecordTypeId_PF,15),
+RecordType.Id = LEFT($Label.Lead_RecordTypeId_PF_Lecture_Seule,15),
+RecordType.Id = LEFT($Label.Lead_RecordTypeId_PF_En_cours,15),
+RecordType.Id = LEFT($Label.Lead_RecordTypeId_PF_Lecture_Seule,15)
+),
+BayPass_Lead_ValidationRule__c  = FALSE,
+
+ISCHANGED(Status),
+ISPICKVAL(PRIORVALUE( Status ),&quot;Créée&quot;),
+ISPICKVAL(Status, &quot;Qualifiée&quot;)
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas changer le statut de la piste a Qualifiée manuellement.</errorMessage>
+</ValidationRule>

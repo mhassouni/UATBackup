@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR2_OptionTelematique_Cameras</fullName>
+    <active>true</active>
+    <description>GFC-1166</description>
+    <errorConditionFormula>if(
+AND(
+NOT(ISPICKVAL( Cameras__c,&quot;&quot;))
+,
+text( Nom_du_pack__c ) &lt;&gt; &#39;Télématique - Pack Italie&#39;
+,
+text( Nom_du_pack__c ) &lt;&gt; &#39;Télématique - Pack UK&#39;
+
+)
+,
+true
+,
+false
+)</errorConditionFormula>
+    <errorDisplayField>Cameras__c</errorDisplayField>
+    <errorMessage>Les caméras ne peuvent être sélectionnées que pour les Pack UK et Pack Italie</errorMessage>
+</ValidationRule>

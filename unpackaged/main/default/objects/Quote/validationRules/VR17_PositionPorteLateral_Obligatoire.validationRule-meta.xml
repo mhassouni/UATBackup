@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR17_PositionPorteLateral_Obligatoire</fullName>
+    <active>true</active>
+    <description>Position(s) porte(s) latérale(s), Qté ouv. latérale (Position à préciser) et Dimension ouverture latérale (mm) Obligatoire si Ouverture latérale est non null</description>
+    <errorConditionFormula>AND
+(
+OR
+(
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_Draft_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandard_15
+,
+RecordType.Id =  $Label.Quote_RecordTypeId_HorsStandardLectureSeule_15
+)
+,
+NOT(ISPICKVAL(Ouverture_laterale__c,&quot;&quot;))
+,
+OR
+(
+ISBLANK( Position_s_porte_s_lat_rale_s__c )
+,
+ISBLANK( Qte_ouv_laterale_position_preciser__c )
+,
+ISPICKVAL( Dimension_ouverture_laterale_mm__c, &quot;&quot; )
+)
+,
+CreatedDate &gt; DATETIMEVALUE( &quot;2022-11-21 00:00:00&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Ouverture_laterale__c</errorDisplayField>
+    <errorMessage>Vous devez renseigner &quot;Ouverture latérale (Position)&quot;,&quot;Ouverture latérale (Qté)&quot; et &quot;Largeur utile ouverture latérale (mm)&quot; si &quot;Ouverture latérale (Type)&quot; est renseigné</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="GenDocQuoteFromQuote" showQuickActionVfHeader="false">
+
+    <apex:iframe id="myFrame" src="{!URLFOR(IF($Site.prefix == '/s','/apex/dfsle__gendocumentgenerator',
+    $Site.Prefix +'/apex/dfsle__gendocumentgenerator'), null,
+     [sId = quote.id, templateId = quote.templateId__c,
+      recordId=quote.id, title = 'Generate Quote'])}"   />
+
+</apex:page>

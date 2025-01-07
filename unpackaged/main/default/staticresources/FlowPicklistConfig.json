@@ -1,0 +1,349 @@
+[ {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Contact",
+    "optionLabel" : "Contact",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Contact?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Véhicule Frigorifique",
+    "optionLabel" : "Potentiel Véhicule Frigorifique",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Car_Green?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Véhicule Sec",
+    "optionLabel" : "Potentiel Véhicule Sec",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Car_Red?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Meuble",
+    "optionLabel" : "Potentiel Meuble",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Container",
+    "optionLabel" : "Potentiel Container",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Container?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Terminer",
+    "optionLabel" : "Terminer",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Confirmation?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "abc__c",
+  "fieldName" : "Account_picklist__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Inutile",
+    "optionLabel" : "Inutile",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1630075004000/Icon_Flag_Black?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Basse",
+    "optionLabel" : "Basse",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1630075004000/Icon_Flag_Green?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Moyenne",
+    "optionLabel" : "Moyenne",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1630075004000/Icon_Flag_Yellow?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Critique",
+    "optionLabel" : "Critique",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1630075004000/Icon_Flag_Red?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Alerte__c",
+  "fieldName" : "Priorite__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Chambre froide",
+    "optionLabel" : "Chambre froide",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147626000/Icon_Container",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Containers",
+    "optionLabel" : "Containers",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147626000/Icon_Container",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Meuble réfrigéré",
+    "optionLabel" : "Meuble réfrigéré",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147711000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Meubles",
+    "optionLabel" : "Meubles",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147711000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicule frigorifique",
+    "optionLabel" : "Véhicule frigorifique",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147694000/Icon_Car_Green?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicule Sec",
+    "optionLabel" : "Véhicule Sec",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630147668000/Icon_Car_Red?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Lead",
+  "fieldName" : "Produits__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Télématique",
+    "optionLabel" : "Télématique",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_Telematique?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "RSE",
+    "optionLabel" : "RSE",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_RSE?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Energies alternatives",
+    "optionLabel" : "Energies alternatives",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_Energy?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Innovation",
+    "optionLabel" : "Innovation",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_innovation?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Full service",
+    "optionLabel" : "Full service",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_fullservice?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Lead",
+  "fieldName" : "Services__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Chaud",
+    "optionLabel" : "Chaud",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_Hot",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Froid",
+    "optionLabel" : "Froid",
+    "imageUrl" : "https://greenforce--uat--c.sandbox.vf.force.com/resource/1630146412000/Icon_Cold?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Lead",
+  "fieldName" : "Degre_d_interet__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Contact",
+    "optionLabel" : "Contact",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Contact?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Véhicule Frigorifique",
+    "optionLabel" : "Potentiel Véhicule Frigorifique",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Car_Green?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Véhicule Sec",
+    "optionLabel" : "Potentiel Véhicule Sec",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Car_Red?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Meuble",
+    "optionLabel" : "Potentiel Meuble",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Potentiel Container",
+    "optionLabel" : "Potentiel Container",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Container?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Terminer",
+    "optionLabel" : "Terminer",
+    "imageUrl" : "https://greenforce--c.visualforce.com/resource/1580562712000/Icon_Confirmation?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Account",
+  "fieldName" : "Account_picklist__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Cabine",
+    "optionLabel" : "Cabine",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Cabine?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Caisse",
+    "optionLabel" : "Caisse",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Caisse?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Châssis",
+    "optionLabel" : "Châssis",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Chassis?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Electricité",
+    "optionLabel" : "Electricité",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Electricite?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Hayon",
+    "optionLabel" : "Hayon",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Hayon?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Groupe",
+    "optionLabel" : "Groupe",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Groupe_Froid?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Pneumatiques",
+    "optionLabel" : "Pneumatiques",
+    "imageUrl" : "/client/resource/1642088205000/Picto_Pneumatique?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "WorkOrder",
+  "fieldName" : "Organe_flux__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Gestion du portail",
+    "optionLabel" : "Gestion du portail",
+    "imageUrl" : "https://greenforce.lightning.force.com/resource/1663069952000/FlowImage_Flux_Service_Community_Support?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Demande de service",
+    "optionLabel" : "Demande de service",
+    "imageUrl" : "https://greenforce.lightning.force.com/resource/1663069952000/FlowImage_Flux_Service_Community_DDS?",
+    "iconName" : "https://greenforce--c.visualforce.com/resource/1663069952000/FlowImage_Flux_Service_Community_DDS?"
+  } ],
+  "objectName" : "Case",
+  "fieldName" : "Type_Demande_Service_Flux__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Frigorifique",
+    "optionLabel" : "Véhicules Frigorifique",
+    "imageUrl" : "/resource/1708944464000/Icon_Car_Green?\t",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Sec",
+    "optionLabel" : "Véhicules Sec",
+    "imageUrl" : "/resource/1708944510000/Icon_Car_Red?\t",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Meuble",
+    "optionLabel" : "Meuble",
+    "imageUrl" : "/resource/1708944581000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Container",
+    "optionLabel" : "Container",
+    "imageUrl" : "/resource/1708944546000/Icon_Container?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Opportunity",
+  "fieldName" : "Flow_Type_produit__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "1",
+    "optionLabel" : "Créer un nouveau rôle de contact",
+    "imageUrl" : "/resource/1709905249000/Icon_Contact?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "2",
+    "optionLabel" : "Terminer",
+    "imageUrl" : "/resource/1709905249000/Icon_Terminer?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "RoleContact__c",
+  "fieldName" : "EndChoice_flow__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Frigorifiques",
+    "optionLabel" : "Véhicules Frigorifiques",
+    "imageUrl" : "/resource/1708944464000/Icon_Car_Green?\t",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Secs",
+    "optionLabel" : "Véhicules Secs",
+    "imageUrl" : "/resource/1708944510000/Icon_Car_Red?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Opportunity",
+  "fieldName" : "Flow_type_produit_B2C__c"
+}, {
+  "picklistValues" : [ {
+    "useIcon" : "false",
+    "optionValue" : "Containers",
+    "optionLabel" : "Containers",
+    "imageUrl" : "/resource/1708944546000/Icon_Container?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Meubles",
+    "optionLabel" : "Meubles",
+    "imageUrl" : "/resource/1708944581000/Icon_Meuble?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Frigorifiques",
+    "optionLabel" : "Véhicules Frigorifiques",
+    "imageUrl" : "/resource/1708944464000/Icon_Car_Green?",
+    "iconName" : "standard:default"
+  }, {
+    "useIcon" : "false",
+    "optionValue" : "Véhicules Secs",
+    "optionLabel" : "Véhicules Secs",
+    "imageUrl" : "/resource/1708944510000/Icon_Car_Red?",
+    "iconName" : "standard:default"
+  } ],
+  "objectName" : "Opportunity",
+  "fieldName" : "Flow_Type_de_produit_B2B__c"
+} ]

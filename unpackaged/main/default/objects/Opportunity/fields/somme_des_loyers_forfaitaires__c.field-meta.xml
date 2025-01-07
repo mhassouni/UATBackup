@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>somme_des_loyers_forfaitaires__c</fullName>
+    <description>Devis principal</description>
+    <label>somme des loyers forfaitaires</label>
+    <summarizedField>Quote__c.Loyer_forfaitaire_mensuel__c</summarizedField>
+    <summaryFilterItems>
+        <field>Quote__c.Primary__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote__c.Statut__c</field>
+        <operation>equals</operation>
+        <value>Autorisé, Devis Envoyé, Devis validé, Contrat envoyé, Contrat signé</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Quote__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

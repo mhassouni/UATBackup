@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_RW_01_Parent_Ultimate</fullName>
+    <active>true</active>
+    <errorConditionFormula>if
+(
+AND
+(
+$User.ProfileId &lt;&gt;  $Label.USR_ProfileId_PFAdministrateurSysteme 
+,
+OR(ISCHANGED( UltimateAccount__c ),ISCHANGED( ParentId ))
+)
+,
+TRUE,
+FALSE)</errorConditionFormula>
+    <errorMessage>Vous n&#39;avez pas les droits de modification de la hiérarchie</errorMessage>
+</ValidationRule>

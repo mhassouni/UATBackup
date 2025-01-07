@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Dla rodzaju działalności &quot;wynajem&quot;</help>
+        <label>Obecny najemca</label>
+        <lookupFilter>
+            <errorMessage><!-- Veuillez choisir un compte de type &quot;Concurrent&quot;. --></errorMessage>
+        </lookupFilter>
+        <name>LoueurActuel__c</name>
+        <relationshipLabel>Opportunity (Aktualny najemca)</relationshipLabel>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Modo di creazione</label>
+        <name>ModeCreation__c</name>
+        <picklistValues>
+            <masterLabel>Création manuelle</masterLabel>
+            <translation>Creazione manuale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import en masse</masterLabel>
+            <translation>Importazione di massa</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

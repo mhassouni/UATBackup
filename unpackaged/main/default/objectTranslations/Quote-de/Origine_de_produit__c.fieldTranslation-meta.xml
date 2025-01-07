@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>A = NEUE / B = RENOVIERT / C = FLOTTE / D = ABGESCHLOSSEN/VERMIETUNG ZURÜCK ZUM SELBEN KUNDEN / E = GEKAUFT VON UND VERMIETET ZURÜCK ZUM SELBEN KUNDEN / F =UNZUGETEILT BAUEN</help>
+        <label>Herkunft des Fahrzeugs</label>
+        <name>Origine_de_produit__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation>A (Neufahrzeug)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation>B (renoviertes Fahrzeug)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>C (Bestandsfahrzeug)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation>D (gekündigt und wieder an selben Kunden vermietet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation>E (zurückgekauft und an selben Kunden vermietet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>F (neues Bestandsfahrzeug)</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

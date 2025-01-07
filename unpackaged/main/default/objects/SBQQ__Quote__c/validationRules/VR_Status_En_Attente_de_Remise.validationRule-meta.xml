@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Status_En_Attente_de_Remise</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( TechStatusApprovalProcess__c = FALSE,
+OR(
+ISPICKVAL(SBQQ__Status__c, &quot;En Attente Remise&quot;),
+ISPICKVAL(SBQQ__Status__c, &quot;Remise Accordée&quot;)))</errorConditionFormula>
+    <errorMessage>Vous n&#39;êtes pas autorisé à passer ce devis à &quot;En attente de remise&quot; ou &quot;Remise Accordée&quot; manuellement.</errorMessage>
+</ValidationRule>

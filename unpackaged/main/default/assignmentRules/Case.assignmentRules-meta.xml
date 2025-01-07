@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>1</fullName>
+        <active>false</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Gestion du portail</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Direction_Relation_Client</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Gestion du portail</value>
+            </criteriaItems>
+            <template>Community/Notification_Creation_Requete_Community</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

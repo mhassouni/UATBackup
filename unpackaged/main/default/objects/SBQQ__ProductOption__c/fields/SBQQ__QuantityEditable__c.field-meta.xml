@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__QuantityEditable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that determines whether option quantity is editable regardless of Quantity being specified.</description>
+    <inlineHelpText>Sélectionnez cette case pour autoriser la modification de la quantité, même lorsque cela est spécifié sur l&#39;option.</inlineHelpText>
+    <label>Quantity Editable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

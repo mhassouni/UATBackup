@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Periodika Futásszabályozás</label>
+        <name>PeriodiciteRegulationKilometrique__c</name>
+        <picklistValues>
+            <masterLabel>Annuelle</masterLabel>
+            <translation>Évi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mensuelle</masterLabel>
+            <translation>Havi</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

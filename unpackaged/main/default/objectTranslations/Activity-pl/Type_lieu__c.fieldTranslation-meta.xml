@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>&quot;Jeśli sposób komunikacji to &quot;&quot;Spotkanie&quot;&quot;, proszę wybrać treść z listy poniżej&quot;</help>
+        <label>Treść</label>
+        <name>Type_lieu__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Inny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation>Konferencja</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Client</masterLabel>
+            <translation>Impreza firmowa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Culturel</masterLabel>
+            <translation>Wydarzenia kulturalne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement PF</masterLabel>
+            <translation>Impreza PF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Sportif</masterLabel>
+            <translation>Impreza sportowa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation>Restauracja</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation>Targi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Client</masterLabel>
+            <translation>U klienta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation>Agencja PF</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

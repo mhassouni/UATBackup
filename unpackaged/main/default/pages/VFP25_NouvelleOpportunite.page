@@ -1,0 +1,16 @@
+<apex:page standardController="Opportunity" extensions="VFE23_RoleContactIntermediaire">
+<head><apex:includeScript value="{!URLFOR($Resource.jquery11)}"/> </head>
+<script>
+$(document).ready(function(){
+        if( (typeof sforce != 'undefined') && (sforce != null) ) 
+        {    
+            sforce.one.createRecord("Opportunity",'{!$Label.Opp_RecordTypeId_MonoProduit}');
+        }
+        else{
+        
+            window.open("/apex/VFP19_OpportunityPrefillRelatedList?parentOppId={!a.Id}",'_top');
+        
+        }
+});
+</script>
+</apex:page>

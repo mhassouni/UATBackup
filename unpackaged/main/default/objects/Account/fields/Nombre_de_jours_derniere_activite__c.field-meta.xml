@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_de_jours_derniere_activite__c</fullName>
+    <description>GFC-814</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(LastActivityDate),null,TODAY() -  LastActivityDate)</formula>
+    <label>Nombre de jours dernière activité</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

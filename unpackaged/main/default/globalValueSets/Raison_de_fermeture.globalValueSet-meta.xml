@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Véhicule inaccessible</fullName>
+        <default>false</default>
+        <label>Véhicule inaccessible</label>
+    </customValue>
+    <customValue>
+        <fullName>Véhicule non présent</fullName>
+        <default>false</default>
+        <label>Véhicule non présent</label>
+    </customValue>
+    <masterLabel>Raison de fermeture</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

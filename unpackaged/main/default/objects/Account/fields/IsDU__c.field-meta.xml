@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsDU__c</fullName>
+    <formula>IF(AND(DB_DUNS_Number__c =  DB_DUNS_DU__c ,DB_DUNS_Number__c &lt;&gt;null,DB_DUNS_DU__c&lt;&gt;null,DB_DUNS_Number__c &lt;&gt;DB_DUNS_GU__c ), TRUE,FALSE)</formula>
+    <label>IsDU</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

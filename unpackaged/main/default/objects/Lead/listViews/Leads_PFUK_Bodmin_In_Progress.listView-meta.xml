@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Bodmin_In_Progress</fullName>
+    <booleanFilter>1 AND 5 AND (2 OR 3 OR 4)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>EX1,EX2,EX3,EX4,EX5,EX6,EX7,EX8,EX9,EX10,EX11,EX12,EX13,EX14,EX15,EX16,EX17,EX18,EX19,EX20,EX21,EX22,EX23,EX24,EX31,EX32,EX33,EX34,EX35,EX36,EX37,EX38,EX39</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>PL1,PL2,PL3,PL4,PL5,PL6,PL7,PL8,PL9,PL95,PL10,PL11,PL12,PL13,PL14,PL15,PL16,PL17,PL18,PL19,PL20,PL21,PL22,PL23,PL24,PL25,PL26,PL27,PL28,PL29,PL30,PL31,PL32,PL33,PL34,PL35</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>TQ1,TQ2,TQ3,TQ4,TQ5,TQ6,TQ7,TQ8,TQ9,TQ10,TQ11,TQ12,TQ13,TQ14,TR1,TR2,TR3,TR4,TR5,TR6,TR7,TR8,TR9,TR10,TR11,TR12,TR13,TR14,TR15,TR16,TR17,TR18,TR19,TR20,TR21,TR22,TR23,TR24,TR25,TR26,TR27</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>Leads PFUK Bodmin - In Progress</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

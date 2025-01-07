@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grille négociée - Détail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grilles négociées - Détails</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Key Account Pricing Table Layout</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouveaux prix --></label>
+            <section>Nouveaux prix</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This account is not a key account. --></errorMessage>
+        <name>Not_Key_Account</name>
+    </validationRules>
+</CustomObjectTranslation>

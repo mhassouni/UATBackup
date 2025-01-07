@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Livraison</fullName>
+    <active>false</active>
+    <description>This Validation rule has been created to capture the right delivery date</description>
+    <errorConditionFormula>PF_Date_de_livraison_du_conteneur__c - TODAY() &lt; 0</errorConditionFormula>
+    <errorMessage>Veuillez sélectionner la date d&#39;aujourd&#39;hui ou bien une date dans le futur</errorMessage>
+</ValidationRule>

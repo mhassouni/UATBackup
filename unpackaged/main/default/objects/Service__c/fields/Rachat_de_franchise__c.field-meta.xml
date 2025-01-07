@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rachat_de_franchise__c</fullName>
+    <formula>if(
+OR(ispickval(Formule__c,&#39;Smart Protect&#39;),ispickval(Formule__c,&#39;Smart Protect +&#39;),ispickval(Formule__c,&#39;Sérénité&#39;),ispickval(Formule__c,&#39;Sérénité +&#39;))
+,
+TRUE,
+FALSE
+
+
+
+
+)</formula>
+    <label>Rachat de franchise</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

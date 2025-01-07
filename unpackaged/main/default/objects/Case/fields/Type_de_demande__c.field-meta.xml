@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_demande__c</fullName>
+    <label>Type de demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modifier mes coordonnées</fullName>
+                <default>false</default>
+                <label>Modifier mes coordonnées</label>
+            </value>
+            <value>
+                <fullName>Demander la création d’un compte</fullName>
+                <default>false</default>
+                <label>Demander la création d’un compte</label>
+            </value>
+            <value>
+                <fullName>Désactiver l’accès d’un ancien collaborateur</fullName>
+                <default>false</default>
+                <label>Désactiver l’accès d’un ancien collaborateur</label>
+            </value>
+            <value>
+                <fullName>Rectifier la visibilité de mes parcs ou de mes sites</fullName>
+                <default>false</default>
+                <label>Rectifier la visibilité de mes parcs ou de mes sites</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

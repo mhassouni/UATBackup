@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>MD guarantee deposit (Grade 1 to 6)</label>
+        <name>DepotGarantieMD__c</name>
+        <picklistValues>
+            <masterLabel>1 mois</masterLabel>
+            <translation><!-- 1 mois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 mois</masterLabel>
+            <translation><!-- 2 mois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 mois</masterLabel>
+            <translation><!-- 3 mois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispensé</masterLabel>
+            <translation><!-- Dispensé --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

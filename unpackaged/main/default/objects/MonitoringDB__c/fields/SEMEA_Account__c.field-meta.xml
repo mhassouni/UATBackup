@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEMEA_Account__c</fullName>
+    <formula>OR(
+    PaysRegion_PF__c= &#39;PIES&#39;,
+				PaysRegion_PF__c= &#39;PITA&#39;,
+				PaysRegion_PF__c= &#39;PIMA&#39;,
+				PaysRegion_PF__c= &#39;PIZA&#39;,
+				PaysRegion_PF__c= &#39;PIAE&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SEMEA Account</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

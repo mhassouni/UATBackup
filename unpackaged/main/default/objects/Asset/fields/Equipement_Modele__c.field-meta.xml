@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_Modele__c</fullName>
+    <label>Modele</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Equipement_Sous_Famille__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>ADVANCER</fullName>
+                <default>false</default>
+                <label>ADVANCER</label>
+            </value>
+            <value>
+                <fullName>AIRBUS</fullName>
+                <default>false</default>
+                <label>AIRBUS</label>
+            </value>
+            <value>
+                <fullName>ALASKA</fullName>
+                <default>false</default>
+                <label>ALASKA</label>
+            </value>
+            <value>
+                <fullName>CB</fullName>
+                <default>false</default>
+                <label>CB</label>
+            </value>
+            <value>
+                <fullName>CD 2</fullName>
+                <default>false</default>
+                <label>CD 2</label>
+            </value>
+            <value>
+                <fullName>CD1</fullName>
+                <default>false</default>
+                <label>CD1</label>
+            </value>
+            <value>
+                <fullName>DFZ</fullName>
+                <default>false</default>
+                <label>DFZ</label>
+            </value>
+            <value>
+                <fullName>DIVERS</fullName>
+                <default>false</default>
+                <label>DIVERS</label>
+            </value>
+            <value>
+                <fullName>GENESIS</fullName>
+                <default>false</default>
+                <label>GENESIS</label>
+            </value>
+            <value>
+                <fullName>KD</fullName>
+                <default>false</default>
+                <label>KD</label>
+            </value>
+            <value>
+                <fullName>MAXIMA</fullName>
+                <default>false</default>
+                <label>MAXIMA</label>
+            </value>
+            <value>
+                <fullName>MD</fullName>
+                <default>false</default>
+                <label>MD</label>
+            </value>
+            <value>
+                <fullName>MISTRAL</fullName>
+                <default>false</default>
+                <label>MISTRAL</label>
+            </value>
+            <value>
+                <fullName>RD</fullName>
+                <default>false</default>
+                <label>RD</label>
+            </value>
+            <value>
+                <fullName>SB</fullName>
+                <default>false</default>
+                <label>SB</label>
+            </value>
+            <value>
+                <fullName>SDZ</fullName>
+                <default>false</default>
+                <label>SDZ</label>
+            </value>
+            <value>
+                <fullName>SIFO</fullName>
+                <default>false</default>
+                <label>SIFO</label>
+            </value>
+            <value>
+                <fullName>SL TCI</fullName>
+                <default>false</default>
+                <label>SL TCI</label>
+            </value>
+            <value>
+                <fullName>SL200 50CS</fullName>
+                <default>false</default>
+                <label>SL200 50CS</label>
+            </value>
+            <value>
+                <fullName>SLK 400.50</fullName>
+                <default>false</default>
+                <label>SLK 400.50</label>
+            </value>
+            <value>
+                <fullName>SLX</fullName>
+                <default>false</default>
+                <label>SLX</label>
+            </value>
+            <value>
+                <fullName>SLX 300.50</fullName>
+                <default>false</default>
+                <label>SLX 300.50</label>
+            </value>
+            <value>
+                <fullName>SPECTRUM</fullName>
+                <default>false</default>
+                <label>SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>SUPRA</fullName>
+                <default>false</default>
+                <label>SUPRA</label>
+            </value>
+            <value>
+                <fullName>T</fullName>
+                <default>false</default>
+                <label>T</label>
+            </value>
+            <value>
+                <fullName>TD</fullName>
+                <default>false</default>
+                <label>TD</label>
+            </value>
+            <value>
+                <fullName>TFV</fullName>
+                <default>false</default>
+                <label>TFV</label>
+            </value>
+            <value>
+                <fullName>TK</fullName>
+                <default>false</default>
+                <label>TK</label>
+            </value>
+            <value>
+                <fullName>TS</fullName>
+                <default>false</default>
+                <label>TS</label>
+            </value>
+            <value>
+                <fullName>VECTOR</fullName>
+                <default>false</default>
+                <label>VECTOR</label>
+            </value>
+            <value>
+                <fullName>XDS</fullName>
+                <default>false</default>
+                <label>XDS</label>
+            </value>
+            <value>
+                <fullName>ZANOTI</fullName>
+                <default>false</default>
+                <label>ZANOTI</label>
+            </value>
+            <value>
+                <fullName>ANTIGUA (GOVI)</fullName>
+                <default>false</default>
+                <label>ANTIGUA (GOVI)</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>BASIC</fullName>
+                <default>false</default>
+                <label>BASIC</label>
+            </value>
+            <value>
+                <fullName>BCV-IB 3096 3 T</fullName>
+                <default>false</default>
+                <label>BCV-IB 3096 3 T</label>
+            </value>
+            <value>
+                <fullName>BCVIF 3074 2T</fullName>
+                <default>false</default>
+                <label>BCVIF 3074 2T</label>
+            </value>
+            <value>
+                <fullName>BCVIF 3074 3T</fullName>
+                <default>false</default>
+                <label>BCVIF 3074 3T</label>
+            </value>
+            <value>
+                <fullName>BLIZARD</fullName>
+                <default>false</default>
+                <label>BLIZARD</label>
+            </value>
+            <value>
+                <fullName>BORA</fullName>
+                <default>false</default>
+                <label>BORA</label>
+            </value>
+            <value>
+                <fullName>COLDWAY</fullName>
+                <default>false</default>
+                <label>COLDWAY</label>
+            </value>
+            <value>
+                <fullName>DC</fullName>
+                <default>false</default>
+                <label>DC</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E</label>
+            </value>
+            <value>
+                <fullName>FIDJI</fullName>
+                <default>false</default>
+                <label>FIDJI</label>
+            </value>
+            <value>
+                <fullName>FUTUNA 2000</fullName>
+                <default>false</default>
+                <label>FUTUNA 2000</label>
+            </value>
+            <value>
+                <fullName>FUTUNA 3000</fullName>
+                <default>false</default>
+                <label>FUTUNA 3000</label>
+            </value>
+            <value>
+                <fullName>INTARCON</fullName>
+                <default>false</default>
+                <label>INTARCON</label>
+            </value>
+            <value>
+                <fullName>KLEUSTER</fullName>
+                <default>false</default>
+                <label>KLEUSTER</label>
+            </value>
+            <value>
+                <fullName>LXE</fullName>
+                <default>false</default>
+                <label>LXE</label>
+            </value>
+            <value>
+                <fullName>MAGNUM</fullName>
+                <default>false</default>
+                <label>MAGNUM</label>
+            </value>
+            <value>
+                <fullName>ND</fullName>
+                <default>false</default>
+                <label>ND</label>
+            </value>
+            <value>
+                <fullName>NEOS</fullName>
+                <default>false</default>
+                <label>NEOS</label>
+            </value>
+            <value>
+                <fullName>NEOS 100</fullName>
+                <default>false</default>
+                <label>NEOS 100</label>
+            </value>
+            <value>
+                <fullName>NT</fullName>
+                <default>false</default>
+                <label>NT</label>
+            </value>
+            <value>
+                <fullName>PORDOI</fullName>
+                <default>false</default>
+                <label>PORDOI</label>
+            </value>
+            <value>
+                <fullName>SAMOA</fullName>
+                <default>false</default>
+                <label>SAMOA</label>
+            </value>
+            <value>
+                <fullName>TONGA</fullName>
+                <default>false</default>
+                <label>TONGA</label>
+            </value>
+            <value>
+                <fullName>TR</fullName>
+                <default>false</default>
+                <label>TR</label>
+            </value>
+            <value>
+                <fullName>VESNA</fullName>
+                <default>false</default>
+                <label>VESNA</label>
+            </value>
+            <value>
+                <fullName>RF2GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF2GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF3GP/PMDC 3700</fullName>
+                <default>false</default>
+                <label>RF3GP/PMDC 3700</label>
+            </value>
+            <value>
+                <fullName>RF3GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF3GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF3GP/PMSC 3700</fullName>
+                <default>false</default>
+                <label>RF3GP/PMSC 3700</label>
+            </value>
+            <value>
+                <fullName>RF3PP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF3PP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF4GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF4GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF5GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF5GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF6GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF6GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF6GPS/PMSC2500</fullName>
+                <default>false</default>
+                <label>RF6GPS/PMSC2500</label>
+            </value>
+            <value>
+                <fullName>RF7GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF7GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF7GPS/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF7GPS/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>RF8GP/PMSC 2500</fullName>
+                <default>false</default>
+                <label>RF8GP/PMSC 2500</label>
+            </value>
+            <value>
+                <fullName>CARLSEN</fullName>
+                <default>false</default>
+                <label>CARLSEN</label>
+            </value>
+            <value>
+                <fullName>F</fullName>
+                <default>false</default>
+                <label>F</label>
+            </value>
+            <value>
+                <fullName>PLAQUES</fullName>
+                <default>false</default>
+                <label>PLAQUES</label>
+            </value>
+            <value>
+                <fullName>TK F3</fullName>
+                <default>false</default>
+                <label>TK F3</label>
+            </value>
+            <value>
+                <fullName>VATNA</fullName>
+                <default>false</default>
+                <label>VATNA</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>GET</fullName>
+                <default>false</default>
+                <label>GET</label>
+            </value>
+            <value>
+                <fullName>TM</fullName>
+                <default>false</default>
+                <label>TM</label>
+            </value>
+            <value>
+                <fullName>ALEX</fullName>
+                <default>false</default>
+                <label>ALEX</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>CE-SERIES</fullName>
+                <default>false</default>
+                <label>CE-SERIES</label>
+            </value>
+            <value>
+                <fullName>CITIMAX</fullName>
+                <default>false</default>
+                <label>CITIMAX</label>
+            </value>
+            <value>
+                <fullName>CORONA</fullName>
+                <default>false</default>
+                <label>CORONA</label>
+            </value>
+            <value>
+                <fullName>CRYOTECH</fullName>
+                <default>false</default>
+                <label>CRYOTECH</label>
+            </value>
+            <value>
+                <fullName>DAVIA</fullName>
+                <default>false</default>
+                <label>DAVIA</label>
+            </value>
+            <value>
+                <fullName>FK</fullName>
+                <default>false</default>
+                <label>FK</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK</label>
+            </value>
+            <value>
+                <fullName>HT</fullName>
+                <default>false</default>
+                <label>HT</label>
+            </value>
+            <value>
+                <fullName>ICELAND</fullName>
+                <default>false</default>
+                <label>ICELAND</label>
+            </value>
+            <value>
+                <fullName>INTEGRA</fullName>
+                <default>false</default>
+                <label>INTEGRA</label>
+            </value>
+            <value>
+                <fullName>KOOLVAN</fullName>
+                <default>false</default>
+                <label>KOOLVAN</label>
+            </value>
+            <value>
+                <fullName>OASIS</fullName>
+                <default>false</default>
+                <label>OASIS</label>
+            </value>
+            <value>
+                <fullName>PMDC</fullName>
+                <default>false</default>
+                <label>PMDC</label>
+            </value>
+            <value>
+                <fullName>PMSC</fullName>
+                <default>false</default>
+                <label>PMSC</label>
+            </value>
+            <value>
+                <fullName>PULSOR</fullName>
+                <default>false</default>
+                <label>PULSOR</label>
+            </value>
+            <value>
+                <fullName>SYBERIA</fullName>
+                <default>false</default>
+                <label>SYBERIA</label>
+            </value>
+            <value>
+                <fullName>TRS</fullName>
+                <default>false</default>
+                <label>TRS</label>
+            </value>
+            <value>
+                <fullName>V</fullName>
+                <default>false</default>
+                <label>V</label>
+            </value>
+            <value>
+                <fullName>VIENTO</fullName>
+                <default>false</default>
+                <label>VIENTO</label>
+            </value>
+            <value>
+                <fullName>VM</fullName>
+                <default>false</default>
+                <label>VM</label>
+            </value>
+            <value>
+                <fullName>XARIOS</fullName>
+                <default>false</default>
+                <label>XARIOS</label>
+            </value>
+            <value>
+                <fullName>Z</fullName>
+                <default>false</default>
+                <label>Z</label>
+            </value>
+            <value>
+                <fullName>ZANOTTI ZER0°</fullName>
+                <default>false</default>
+                <label>ZANOTTI ZER0°</label>
+            </value>
+            <value>
+                <fullName>ZEPHYR</fullName>
+                <default>false</default>
+                <label>ZEPHYR</label>
+            </value>
+            <value>
+                <fullName>1/2 ARG - 350KG</fullName>
+                <default>false</default>
+                <label>1/2 ARG - 350KG</label>
+            </value>
+            <value>
+                <fullName>300KG</fullName>
+                <default>false</default>
+                <label>300KG</label>
+            </value>
+            <value>
+                <fullName>300 KG</fullName>
+                <default>false</default>
+                <label>300 KG</label>
+            </value>
+            <value>
+                <fullName>1000 KG</fullName>
+                <default>false</default>
+                <label>1000 KG</label>
+            </value>
+            <value>
+                <fullName>1500 KG</fullName>
+                <default>false</default>
+                <label>1500 KG</label>
+            </value>
+            <value>
+                <fullName>2000 KG</fullName>
+                <default>false</default>
+                <label>2000 KG</label>
+            </value>
+            <value>
+                <fullName>2500 KG</fullName>
+                <default>false</default>
+                <label>2500 KG</label>
+            </value>
+            <value>
+                <fullName>500 KG</fullName>
+                <default>false</default>
+                <label>500 KG</label>
+            </value>
+            <value>
+                <fullName>750 KG</fullName>
+                <default>false</default>
+                <label>750 KG</label>
+            </value>
+            <value>
+                <fullName>INCONNU</fullName>
+                <default>false</default>
+                <label>INCONNU</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 1000 KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 1000 KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 1000KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 1000KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 500KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 500KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARD - 750KG</fullName>
+                <default>false</default>
+                <label>1/2 ARD - 750KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARG - 1000KG</fullName>
+                <default>false</default>
+                <label>1/2 ARG - 1000KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARG - 1500KG</fullName>
+                <default>false</default>
+                <label>1/2 ARG - 1500KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARG - 500KG</fullName>
+                <default>false</default>
+                <label>1/2 ARG - 500KG</label>
+            </value>
+            <value>
+                <fullName>1/2 ARG - 750KG</fullName>
+                <default>false</default>
+                <label>1/2 ARG - 750KG</label>
+            </value>
+            <value>
+                <fullName>1200KG</fullName>
+                <default>false</default>
+                <label>1200KG</label>
+            </value>
+            <value>
+                <fullName>3000 KG</fullName>
+                <default>false</default>
+                <label>3000 KG</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>HAYON A COLONNES</controllingFieldValue>
+            <valueName>1/2 ARG - 350KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF2GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF3GP/PMDC 3700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF3GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF3GP/PMSC 3700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF3PP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF4GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF5GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF6GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF6GPS/PMSC2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF7GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF7GPS/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECT.+ PM</controllingFieldValue>
+            <valueName>RF8GP/PMSC 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECTIQUE</controllingFieldValue>
+            <valueName>CARLSEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECTIQUE</controllingFieldValue>
+            <valueName>F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECTIQUE</controllingFieldValue>
+            <valueName>PLAQUES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECTIQUE</controllingFieldValue>
+            <valueName>TK F3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE EUTECTIQUE</controllingFieldValue>
+            <valueName>VATNA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE INCONNU</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE INCONNU</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE INCONNU</controllingFieldValue>
+            <valueName>GET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE INCONNU</controllingFieldValue>
+            <valueName>TM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>ALEX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>CITIMAX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>CORONA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>CRYOTECH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>DAVIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>FK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>FRIGOBLOCK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>INTEGRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>OASIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>PMDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>PMSC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>PULSOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>TRS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>V</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>VIENTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>VM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>XARIOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>Z</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE POULIE MOTEUR</controllingFieldValue>
+            <valueName>ZEPHYR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON CASSETTE</controllingFieldValue>
+            <valueName>300KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARD - 1000 KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARD - 1000KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARD - 500KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARD - 750KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARG - 1000KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARG - 1500KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARG - 500KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1/2 ARG - 750KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON RABATTABLE</controllingFieldValue>
+            <valueName>1200KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>AIRBUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>ALASKA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>CB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>CD 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>CD1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>DFZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>GENESIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>KD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>MAXIMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>MD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>MISTRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>RD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SDZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SIFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SL TCI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SL200 50CS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SLK 400.50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SLX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SLX 300.50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SPECTRUM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>SUPRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>TD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>TK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>TS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>VECTOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>XDS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE AUTONOME</controllingFieldValue>
+            <valueName>ZANOTI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>ANTIGUA (GOVI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BASIC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BCV-IB 3096 3 T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BCVIF 3074 2T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BCVIF 3074 3T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BLIZARD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>BORA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>COLDWAY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>FIDJI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>FUTUNA 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>FUTUNA 3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>INTARCON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>KLEUSTER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>LXE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>MAGNUM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>ND</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>NEOS 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>NT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>PORDOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>SAMOA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE ELECTRIQUE</controllingFieldValue>
+            <valueName>VESNA</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

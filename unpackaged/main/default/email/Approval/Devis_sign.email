@@ -1,0 +1,6 @@
+Bonjour,
+
+Le devis {!SBQQ__Quote__c.Name} pour le client {!SBQQ__Quote__c.SBQQ__Account__c} est signé. 
+
+Cliquez sur le lien ci-après pour y accéder :
+{!SBQQ__Quote__c.Link}

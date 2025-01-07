@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derogation_accord_V_grade_insuffissant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Dérogation pour accord Véhicule neuf malgré un grade insuffisant</description>
+    <label>Dérogation accord V grade insuffissant</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

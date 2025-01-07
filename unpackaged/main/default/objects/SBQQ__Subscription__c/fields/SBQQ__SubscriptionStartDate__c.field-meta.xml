@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__SubscriptionStartDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Matches the quote line start date by default. If blank, it will match the contract start date.</description>
+    <inlineHelpText>Correspond à la date de début de la ligne de devis par défaut. Si ce champ est vide, elle correspond à la date de début du contrat.</inlineHelpText>
+    <label>Subscription Start Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

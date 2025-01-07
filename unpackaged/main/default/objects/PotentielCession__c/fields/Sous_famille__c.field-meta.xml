@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_famille__c</fullName>
+    <label>Sous famille</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Famille__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VL</fullName>
+                <default>false</default>
+                <label>VL</label>
+            </value>
+            <value>
+                <fullName>PL</fullName>
+                <default>false</default>
+                <label>PL</label>
+            </value>
+            <value>
+                <fullName>SEM</fullName>
+                <default>false</default>
+                <label>SEM</label>
+            </value>
+            <value>
+                <fullName>TRICYCLE</fullName>
+                <default>false</default>
+                <label>TRICYCLE</label>
+            </value>
+            <value>
+                <fullName>CAISSE FRIGORIFIQUE</fullName>
+                <default>false</default>
+                <label>CAISSE FRIGORIFIQUE</label>
+            </value>
+            <value>
+                <fullName>CAISSE CHASSE</fullName>
+                <default>false</default>
+                <label>CAISSE CHASSE</label>
+            </value>
+            <value>
+                <fullName>CAISSE SEC</fullName>
+                <default>false</default>
+                <label>CAISSE SEC</label>
+            </value>
+            <value>
+                <fullName>CF 10</fullName>
+                <default>false</default>
+                <label>CF 10</label>
+            </value>
+            <value>
+                <fullName>CF 25</fullName>
+                <default>false</default>
+                <label>CF 25</label>
+            </value>
+            <value>
+                <fullName>CF 35</fullName>
+                <default>false</default>
+                <label>CF 35</label>
+            </value>
+            <value>
+                <fullName>CF 50</fullName>
+                <default>false</default>
+                <label>CF 50</label>
+            </value>
+            <value>
+                <fullName>CF 55</fullName>
+                <default>false</default>
+                <label>CF 55</label>
+            </value>
+            <value>
+                <fullName>CF 85</fullName>
+                <default>false</default>
+                <label>CF 85</label>
+            </value>
+            <value>
+                <fullName>MEUBLE POSITIF</fullName>
+                <default>false</default>
+                <label>MEUBLE POSITIF</label>
+            </value>
+            <value>
+                <fullName>MEUBLE NEGATIF</fullName>
+                <default>false</default>
+                <label>MEUBLE NEGATIF</label>
+            </value>
+            <value>
+                <fullName>MEUBLE MULTI</fullName>
+                <default>false</default>
+                <label>MEUBLE MULTI</label>
+            </value>
+            <value>
+                <fullName>MEUBLE AUTRES</fullName>
+                <default>false</default>
+                <label>MEUBLE AUTRES</label>
+            </value>
+            <value>
+                <fullName>TR</fullName>
+                <default>false</default>
+                <label>TR</label>
+            </value>
+            <value>
+                <fullName>GROUPE FRIGORIFIQUE</fullName>
+                <default>false</default>
+                <label>GROUPE FRIGORIFIQUE</label>
+            </value>
+            <value>
+                <fullName>HAYON</fullName>
+                <default>false</default>
+                <label>HAYON</label>
+            </value>
+            <value>
+                <fullName>VPC</fullName>
+                <default>false</default>
+                <label>VPC</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Carrosserie</controllingFieldValue>
+            <valueName>VL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Carrosserie</controllingFieldValue>
+            <valueName>PL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Carrosserie</controllingFieldValue>
+            <valueName>SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Carrosserie</controllingFieldValue>
+            <valueName>TRICYCLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <controllingFieldValue>Pièce détachée Carrosserie</controllingFieldValue>
+            <valueName>TR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Véhicule</controllingFieldValue>
+            <valueName>VPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>CAISSE FRIGORIFIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>CAISSE CHASSE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Caisse</controllingFieldValue>
+            <valueName>CAISSE SEC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 55</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Container</controllingFieldValue>
+            <valueName>CF 85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meuble</controllingFieldValue>
+            <valueName>MEUBLE POSITIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meuble</controllingFieldValue>
+            <valueName>MEUBLE NEGATIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meuble</controllingFieldValue>
+            <valueName>MEUBLE MULTI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meuble</controllingFieldValue>
+            <valueName>MEUBLE AUTRES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <valueName>GROUPE FRIGORIFIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pièce détachée Mécanique</controllingFieldValue>
+            <valueName>HAYON</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

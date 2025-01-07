@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Sjabloon (achterklep)</label>
+        <name>Modele_Hayon__c</name>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE DROIT</masterLabel>
+            <translation><!-- 1/2 HAYON ARRIERE DROIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE GAUCHE</masterLabel>
+            <translation><!-- 1/2 HAYON ARRIERE GAUCHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A CASSETTE</masterLabel>
+            <translation><!-- A CASSETTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A COLONNE (Rabattable manuel)</masterLabel>
+            <translation><!-- A COLONNE (Rabattable manuel) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON 1/2 HAYON</masterLabel>
+            <translation><!-- FOURGON 1/2 HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON HAYON</masterLabel>
+            <translation><!-- FOURGON HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir Aménagement HAYON</masterLabel>
+            <translation><!-- HORS STANDARD - voir Aménagement HAYON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME</masterLabel>
+            <translation><!-- ISOTHERME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE</masterLabel>
+            <translation><!-- RABATTABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE ISOTHERME (classe A)</masterLabel>
+            <translation><!-- RABATTABLE ISOTHERME (classe A) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE</masterLabel>
+            <translation><!-- RETRACTABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE / REPLIABLE</masterLabel>
+            <translation><!-- RETRACTABLE / REPLIABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation><!-- SANS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

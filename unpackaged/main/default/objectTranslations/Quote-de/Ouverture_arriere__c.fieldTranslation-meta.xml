@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Hintere Öffnung</label>
+        <name>Ouverture_arriere__c</name>
+        <picklistValues>
+            <masterLabel>1 PORTE CENTRALE</masterLabel>
+            <translation>1 Hecktür mittig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE CENTRALE ARRIERE</masterLabel>
+            <translation>1 Zentraltüre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE D + 1 RAMPE MANUELLE G</masterLabel>
+            <translation>Seitentür rechts + manuelle Rampe links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTE ARRIERE</masterLabel>
+            <translation>2 Türe hinten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTES (symétrique)</masterLabel>
+            <translation>Doppelflügel-Hecktüren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 VANTAUX  (ouverture totale - symétrique)</masterLabel>
+            <translation>Doppelfügel-Hecktüren über gesamte Breite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 VANTAUX  (ouverture totale - 1 crémone)</masterLabel>
+            <translation>3-teilige Hecktür über die gesamte Breite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUVENT</masterLabel>
+            <translation>Vordach</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CADRE ARRIERE 3 VANTAUX</masterLabel>
+            <translation>hinterer Rahmen 3 Türe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CADRE ARRIÈRE 2 VANTAUX</masterLabel>
+            <translation>hinterer Rahmen 2 Türe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASY ACC&#39;AIR</masterLabel>
+            <translation>Easy Accair Rolltor Heckbereich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FACE PLEINE</masterLabel>
+            <translation><!-- FACE PLEINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON + AUVENT</masterLabel>
+            <translation>Ladebordwand + Vordach</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON FERMETURE TOTALE</masterLabel>
+            <translation>Vollständig schließende Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON ISOLE + AUVENT (Classe A)</masterLabel>
+            <translation>Isolierte Ladebordwand + Vordach (Klasse A)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir aménagements</masterLabel>
+            <translation>Außer Standard - siehe Einrichtung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE 270° (fourgon tolé)</masterLabel>
+            <translation>Öffnungswinkel 270 °</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU FIT</masterLabel>
+            <translation>Fit Vorhang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU ISOTHERME RELEVANT ELECTRIQUE (Classe A)</masterLabel>
+            <translation>Elektrisches isoliertes Rolltor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU ISOTHERME RELEVANT MANUEL (Classe A)</masterLabel>
+            <translation>Manuelles isoliertes Rolltor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU ISOTHERME RELEVANT PNEUMATIQUE (Classe A)</masterLabel>
+            <translation>Isoliertes Rolltor Druckluftbetrieben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT ELECTRIQUE</masterLabel>
+            <translation>Rolltor elektrisch ohne Isolation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT MANUEL</masterLabel>
+            <translation>Manuelles Rolltor ohne Islolation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT MANUEL ALUMINIUM</masterLabel>
+            <translation>Manuelles Rolltor Alu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVANT PNEUMATIQUE</masterLabel>
+            <translation>Rolltor ohne Isolation Druckluftbetrieben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMARTOPEN</masterLabel>
+            <translation>Leichtöffnende Hecktüren</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

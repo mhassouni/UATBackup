@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Module de télésurveillance --></label>
+        <name>Module_de_telesurveillance__c</name>
+        <picklistValues>
+            <masterLabel>EMERSON</masterLabel>
+            <translation><!-- EMERSON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLOBETRACKER</masterLabel>
+            <translation><!-- GLOBETRACKER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JRI</masterLabel>
+            <translation><!-- JRI --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

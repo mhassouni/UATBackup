@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_PF_PAYS__c</fullName>
+    <description>Vrai si le pays de l&#39;agence intervenante de la requête est contenu dans les pays PF de l&#39;utilisateur</description>
+    <formula>IF 
+(
+OR( 
+AND(Contains( $User.PF_Pays__c ,text(Agence_Intervenante__r.PaysRegionPF__c)),NOT(ISBLANK($User.PF_Pays__c)),NOT(ISBLANK(Agence_Intervenante__c))),
+AND(Contains( $User.PF_Pays__c ,text( Agence_proprietaire__r.PaysRegionPF__c )),NOT(ISBLANK($User.PF_Pays__c)),NOT(ISBLANK( Agence_proprietaire__c )))  
+)
+, 
+TRUE 
+, 
+FALSE 
+)</formula>
+    <label>TECH_PF_PAYS</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partida de reembolso (Pago)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partidas de reembolso (Pago)</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Refund Line (Payment) Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de partida de reembolso</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- We can not modify the Refund Amount --></errorMessage>
+        <name>blng__Rule_on_Refund_Amount</name>
+    </validationRules>
+</CustomObjectTranslation>

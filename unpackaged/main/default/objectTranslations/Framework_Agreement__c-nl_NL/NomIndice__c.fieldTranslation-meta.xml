@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Naam van de index</label>
+        <name>NomIndice__c</name>
+        <picklistValues>
+            <masterLabel>CNLB</masterLabel>
+            <translation><!-- CNLB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICP</masterLabel>
+            <translation><!-- ICP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPCN</masterLabel>
+            <translation><!-- IPCN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indice CNL</masterLabel>
+            <translation>CNL-index</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

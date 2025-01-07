@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Changing_Status_to_Posted_is_not_allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( TEXT(blng__CreditNoteSourceAction__c)=&quot;Manual&quot;,  ISCHANGED(PF_Statut_Avoir__c) , ISPICKVAL( PRIORVALUE(PF_Statut_Avoir__c) ,&#39;Brouillon&#39;) ,ISPICKVAL( PF_Statut_Avoir__c,&#39;Publié&#39;))</errorConditionFormula>
+    <errorMessage>Veuillez envoyer cet avoir en approbation. Si l&#39;avoir a été accepté, le statut sera adapté automatiquement</errorMessage>
+</ValidationRule>

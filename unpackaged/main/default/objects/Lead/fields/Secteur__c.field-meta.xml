@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur__c</fullName>
+    <label>Secteur</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture et agroalimentaire</fullName>
+                <default>false</default>
+                <label>Agriculture et agroalimentaire</label>
+            </value>
+            <value>
+                <fullName>Industrie</fullName>
+                <default>false</default>
+                <label>Industrie</label>
+            </value>
+            <value>
+                <fullName>Energie</fullName>
+                <default>false</default>
+                <label>Energie</label>
+            </value>
+            <value>
+                <fullName>Commerce et artisanat</fullName>
+                <default>false</default>
+                <label>Commerce et artisanat</label>
+            </value>
+            <value>
+                <fullName>Tourisme</fullName>
+                <default>false</default>
+                <label>Tourisme</label>
+            </value>
+            <value>
+                <fullName>Télécoms et internet</fullName>
+                <default>false</default>
+                <label>Télécoms et internet</label>
+            </value>
+            <value>
+                <fullName>Santé</fullName>
+                <default>false</default>
+                <label>Santé</label>
+            </value>
+            <value>
+                <fullName>Finance et assurance</fullName>
+                <default>false</default>
+                <label>Finance et assurance</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Énergie</fullName>
+                <default>false</default>
+                <label>Énergie</label>
+            </value>
+            <value>
+                <fullName>- Séléctionner -</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>- Séléctionner -</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

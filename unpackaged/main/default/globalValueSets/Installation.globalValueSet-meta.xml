@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Installation au sol en extérieur</fullName>
+        <default>false</default>
+        <label>Installation au sol en extérieur</label>
+    </customValue>
+    <customValue>
+        <fullName>Mise à quai sur béquilles</fullName>
+        <default>false</default>
+        <label>Mise à quai sur béquilles</label>
+    </customValue>
+    <customValue>
+        <fullName>Mise à quai sur gueuses</fullName>
+        <default>false</default>
+        <label>Mise à quai sur gueuses</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation en intérieur</fullName>
+        <default>false</default>
+        <label>Installation en intérieur</label>
+    </customValue>
+    <customValue>
+        <fullName>Mise à quai réalisé par le client</fullName>
+        <default>false</default>
+        <label>Mise à quai réalisé par le client</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation au sol en extérieur avec calage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Installation au sol en extérieur avec calage</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation à quai</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Installation à quai</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation au sol</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Installation au sol</label>
+    </customValue>
+    <masterLabel>Type Installation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

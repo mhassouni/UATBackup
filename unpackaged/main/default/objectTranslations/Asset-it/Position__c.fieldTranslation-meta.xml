@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Posizione</label>
+        <name>Position__c</name>
+        <picklistValues>
+            <masterLabel>A RETIRER</masterLabel>
+            <translation>DA RITIRARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A VENDRE</masterLabel>
+            <translation>DA VENDERE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADO</masterLabel>
+            <translation>ADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADO-AN</masterLabel>
+            <translation>ADO-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AFFECTATION</masterLabel>
+            <translation>ASSEGNAZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD</masterLabel>
+            <translation>ALD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD-AG</masterLabel>
+            <translation>ALD-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALD-AN</masterLabel>
+            <translation>ALD-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG</masterLabel>
+            <translation>ATE -AAG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG-AG</masterLabel>
+            <translation>ATE -AAG-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE -AAG-ATE</masterLabel>
+            <translation>ATE -AAG-ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM</masterLabel>
+            <translation>ATE CDM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG</masterLabel>
+            <translation>ATE CDM-AAG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG-AG</masterLabel>
+            <translation>ATE CDM-AAG-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE CDM-AAG-ATE</masterLabel>
+            <translation>ATE CDM-AAG-ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT</masterLabel>
+            <translation>ATE EXT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT CDM</masterLabel>
+            <translation>ATE EXT CDM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT LD</masterLabel>
+            <translation>ATE EXT LD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MU</masterLabel>
+            <translation>ATE EXT MU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT MULET</masterLabel>
+            <translation>ATE EXT MULET</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE EXT NEUT</masterLabel>
+            <translation>ATE EXT NEUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD</masterLabel>
+            <translation>ATE LD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG</masterLabel>
+            <translation>ATE LD-AAG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG-AG</masterLabel>
+            <translation>ATE LD-AAG-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE LD-AAG-ATE</masterLabel>
+            <translation>ATE LD-AAG-ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG</masterLabel>
+            <translation>ATE MU-AAG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG-AG</masterLabel>
+            <translation>ATE MU-AAG-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MU-AAG-ATE</masterLabel>
+            <translation>ATE MU-AAG-ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE MULET</masterLabel>
+            <translation>ATE MULET</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT</masterLabel>
+            <translation>ATE NEUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG</masterLabel>
+            <translation>ATE NEUT-AAG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG-AG</masterLabel>
+            <translation>ATE NEUT-AAG-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATE NEUT-AAG-ATE</masterLabel>
+            <translation>ATE NEUT-AAG-ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATELIER</masterLabel>
+            <translation>OFFICINA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation>CD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD MULET</masterLabel>
+            <translation>CD MULET</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation>CDM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO</masterLabel>
+            <translation>CDM DISPO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM DISPO-AN</masterLabel>
+            <translation>CDM DISPO-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM-AG</masterLabel>
+            <translation>CDM-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM-AN</masterLabel>
+            <translation>CDM-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CODE_POSPF</masterLabel>
+            <translation>CODE_POSPF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO</masterLabel>
+            <translation>DISPO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE CDM</masterLabel>
+            <translation><!-- DISPO ATE CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO ATE LD</masterLabel>
+            <translation><!-- DISPO ATE LD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO CLI</masterLabel>
+            <translation>DISPO CLI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO CONT</masterLabel>
+            <translation>DISPO CONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO DEP</masterLabel>
+            <translation>DISPO DEP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO NEUT</masterLabel>
+            <translation>DISPO NEUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO NEUT-AN</masterLabel>
+            <translation>DISPO NEUT-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISPO-AN</masterLabel>
+            <translation>DISPO-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN SERVICE</masterLabel>
+            <translation>IN SERVIZIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV</masterLabel>
+            <translation>FAB AV</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT</masterLabel>
+            <translation>FAB AV EXT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT ATE</masterLabel>
+            <translation>FAB AV EXT ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV EXT ATEEXT</masterLabel>
+            <translation>FAB AV EXT ATEEXT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB AV-AN</masterLabel>
+            <translation>FAB AV-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD</masterLabel>
+            <translation>FAB LD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT</masterLabel>
+            <translation>FAB LD EXT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT ATE</masterLabel>
+            <translation>FAB LD EXT ATE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD EXT ATEEXT</masterLabel>
+            <translation>FAB LD EXT ATEEXT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAB LD-AN</masterLabel>
+            <translation>FAB LD-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIN NEUT</masterLabel>
+            <translation>FIN NEUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS PARC</masterLabel>
+            <translation>FUORI PARCO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HS CLIENT</masterLabel>
+            <translation>FUORI SERV CLIENTE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD</masterLabel>
+            <translation>LD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO</masterLabel>
+            <translation>LD DISPO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD DISPO-AN</masterLabel>
+            <translation>LD DISPO-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD-AG</masterLabel>
+            <translation>LD-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LD-AN</masterLabel>
+            <translation>LD-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET</masterLabel>
+            <translation>MULET</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET-AG</masterLabel>
+            <translation>MULET-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULET-AN</masterLabel>
+            <translation>MULET-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCCASION</masterLabel>
+            <translation>OCCASIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELAIS</masterLabel>
+            <translation>SOSTITUZIONE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELAIS MULET</masterLabel>
+            <translation>RELAIS MULET</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER</masterLabel>
+            <translation>SER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER EXT FAB</masterLabel>
+            <translation>SER EXT FAB</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SER EXT OCC</masterLabel>
+            <translation>SER EXT OCC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CD</masterLabel>
+            <translation>SURLOC CD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM</masterLabel>
+            <translation>SURLOC CDM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM-AG</masterLabel>
+            <translation>SURLOC CDM-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC CDM-AN</masterLabel>
+            <translation>SURLOC CDM-AN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURLOC REL</masterLabel>
+            <translation>SURLOC REL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-AFF</masterLabel>
+            <translation>TRANSIT-AFF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-AG</masterLabel>
+            <translation>TRANSIT-AG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATEA</masterLabel>
+            <translation>TRANSIT-ATEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATEAN</masterLabel>
+            <translation>TRANSIT-ATEAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATER</masterLabel>
+            <translation>TRANSIT-ATER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-ATERN</masterLabel>
+            <translation>TRANSIT-ATERN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-CLI</masterLabel>
+            <translation>TRANSIT-CLI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT-DEP</masterLabel>
+            <translation>TRANSIT-DEP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOL</masterLabel>
+            <translation>VOL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC</masterLabel>
+            <translation>VPC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC EXT FAB</masterLabel>
+            <translation>VPC EXT FAB</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VPC EXT OCC</masterLabel>
+            <translation>VPC EXT OCC</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

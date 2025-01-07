@@ -1,0 +1,11 @@
+*** Nieuwe lead  {!Lead.NumeroPiste__c} naar proces in Greenforce ***
+
+De volgende track is aan u toegewezen.
+Bedrijf: {!Lead.Company}
+Tracknaam : {!Lead.Name}
+Vertrek- en terugkeerbureau : {!Lead.Agence_depart_retour__c}
+Postcode : {!Lead.CodePostal__c}
+de stad : {!Lead.Ville__c}
+
+
+Klik op de link om direct naar de track te gaan: {!Lead.Link}

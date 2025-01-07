@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Services_Droits</fullName>
+    <active>true</active>
+    <description>GFC-1812</description>
+    <errorConditionFormula>AND
+(
+Not(ISNEW())
+,
+OR(
+$User.ProfileId = $Label.USR_ProfileId_PFReseau
+,
+$User.ProfileId = $Label.USR_ProfileId_PFReseauInter
+)
+,
+NOT(ISPICKVAL(Devis__r.Status, &#39;Draft&#39;) )
+)</errorConditionFormula>
+    <errorMessage>Vous n&#39;avez pas le droit de modifier cet enregistrement.</errorMessage>
+</ValidationRule>

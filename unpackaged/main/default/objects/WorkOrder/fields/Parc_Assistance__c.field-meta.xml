@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parc_Assistance__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Parc Assistance</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Asset.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parc</value>
+        </filterItems>
+        <infoMessage>Vous ne pouvez sélectionner que les parcs en position &quot;En service&quot;</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Ordres de Travail (Parc Assistance)</relationshipLabel>
+    <relationshipName>Ordres_de_Travail_Assistance</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

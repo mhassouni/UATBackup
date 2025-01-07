@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Obligatoire - Pour sélectionner plusieurs durées, cliquez sur CTRL+ Clic droit de votre souris --></help>
+        <label><!-- Durée Location (CTRL + clic) * --></label>
+        <name>Duree_Location_Ass__c</name>
+        <picklistValues>
+            <masterLabel>2 ans</masterLabel>
+            <translation><!-- 2 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 ans</masterLabel>
+            <translation><!-- 3 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 ans</masterLabel>
+            <translation><!-- 4 ans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 ans</masterLabel>
+            <translation><!-- 5 ans --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

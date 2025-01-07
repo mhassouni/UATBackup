@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR02_Adresse</fullName>
+    <active>true</active>
+    <description>Adresse obligatoire si lieu d&#39;intervention = &quot;Autre&quot;</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( Ressource_Interne__c )),
+TEXT(Lieu_Intervention__c) = &#39;Autre adresse&#39;,
+OR((ISBLANK( Street)),
+(ISBLANK( City)),
+(ISBLANK( PostalCode)),
+(ISBLANK( Country))
+))</errorConditionFormula>
+    <errorDisplayField>Street</errorDisplayField>
+    <errorMessage>Vous devez renseigner l&#39;adresse si le lieu d&#39;intervention est &quot;Autre adresse&quot;</errorMessage>
+</ValidationRule>

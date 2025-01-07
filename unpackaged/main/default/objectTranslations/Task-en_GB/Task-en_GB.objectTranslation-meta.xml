@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Fieldset SF Maps --></label>
+        <name>Fieldset_SF_Maps</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Log call Maps --></label>
+        <name>Log_call_Maps</name>
+    </fieldSets>
+    <layouts>
+        <layout>Suivi Client NPS</layout>
+        <sections>
+            <label><!-- Associée à --></label>
+            <section>Associée à</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Task Follow-up</label>
+            <section>Suivi de la tâche</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label><!-- Associée à --></label>
+            <section>Associée à</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Task Follow-up</label>
+            <section>Suivi de la tâche</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Defer --></label>
+        <name>Defer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Modifier les commentaires --></label>
+        <name>EditDescription</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdatePriority --></label>
+        <name>UpdatePriority</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- UpdateStatus --></label>
+        <name>UpdateStatus</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Permet de faire le suivi d&apos;un client détracteur suite à l&apos;enquête relationnelle (NPS --></description>
+        <label><!-- Suivi Client NPS --></label>
+        <name>Suivi_Client_NPS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tâche PF --></label>
+        <name>Tache_PF</name>
+    </recordTypes>
+    <webLinks>
+        <label>New task</label>
+        <name>NouvelleTache</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mail vers agence intervenante lors de la fermeture d&#39;une astreinte coldline</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>MOON_Mail clôture astreinte 24/24</name>
+    <style>none</style>
+    <subject>Clôture intervention {!Case.CaseNumber} - {!Case.Asset} - {!Case.Nom_Commercial_Client__c}</subject>
+    <textOnly>Veuillez trouver ici les informations sur l&#39;astreinte réalisée :
+
+Objet de l&#39;intervention : {!Case.Link}
+Réalisation de la mission :  {!Case.TECH_Mission_Lien__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

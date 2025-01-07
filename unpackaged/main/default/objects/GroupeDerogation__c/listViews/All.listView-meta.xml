@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>TypeDerogation__c</columns>
+    <columns>SalesArea__c</columns>
+    <columns>N1Approbateur1__c</columns>
+    <columns>N1Approbateur2__c</columns>
+    <columns>N1Approbateur3__c</columns>
+    <columns>N2Approbateur1__c</columns>
+    <columns>N2Approbateur2__c</columns>
+    <columns>N2Approbateur3__c</columns>
+    <columns>N3Approbateur1__c</columns>
+    <columns>N3Approbateur2__c</columns>
+    <columns>N3Approbateur3__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+</ListView>

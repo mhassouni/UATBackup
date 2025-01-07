@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value><!-- Conditions Financières --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Dero. Fi Layout</layout>
+        <sections>
+            <label>Conditii dorite</label>
+            <section>Conditions souhaitées</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexarea</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dero. Fi Standard Layout</layout>
+        <sections>
+            <label>Termeni</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexarea</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Courte durée</layout>
+        <sections>
+            <label>Termeni</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Moyenne durée</layout>
+        <sections>
+            <label>Termeni</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Dero. Financière Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Container - Depozit Financiar - Specific</label>
+        <name>Specific_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Container - Dero. Financiar – Standard</label>
+        <name>Standard_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehicul – Termen scurt</label>
+        <name>VehiculeCourteDuree</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vehicul - Durată medie</label>
+        <name>VehiculeMoyenneDuree</name>
+    </recordTypes>
+</CustomObjectTranslation>

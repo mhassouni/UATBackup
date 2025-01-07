@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Equipement</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Asset.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Equipement</value>
+        </filterItems>
+        <infoMessage>Ce champs doit être renseigner avec un parc de type equipement</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Ordres de Travail (Equipement)</relationshipLabel>
+    <relationshipName>Ordres_de_Travail_Equipement</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

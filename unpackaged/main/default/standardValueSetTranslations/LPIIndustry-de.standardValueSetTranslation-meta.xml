@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Food and Beverages</masterLabel>
+        <translation><!-- Food and Beverages --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Healthcare</masterLabel>
+        <translation>Gesundheit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Law</masterLabel>
+        <translation><!-- Law --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

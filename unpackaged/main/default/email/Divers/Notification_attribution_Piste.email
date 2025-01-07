@@ -1,0 +1,11 @@
+*** Nouvelle piste {!Lead.NumeroPiste__c} à traiter dans Greenforce *** 
+
+La piste suivante vous a été assignée. 
+Société: {!Lead.Company} 
+Nom Piste: {!Lead.Name} 
+Agence départ & retour : {!Lead.Agence_depart_retour__c}
+Code Postal : {!Lead.CodePostal__c}
+Ville : {!Lead.Ville__c}
+
+
+Cliquez sur le lien pour accéder directement à la piste: {!Lead.Link}

@@ -1,0 +1,6 @@
+<apex:page lightningStylesheets="true">
+   <style>
+    body{background-color: #FF847C;font-weight: bold; }
+   </style>
+    <center styleClass="myFormStyle">{!$Label.Quote_Warning_Message}</center> 
+</apex:page>

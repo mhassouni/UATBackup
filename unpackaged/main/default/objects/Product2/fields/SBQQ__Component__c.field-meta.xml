@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Component__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Marks this product as a component, excluding it from selection in product lookup.</description>
+    <inlineHelpText>Marque ce produit en tant que composant, ce qui l&#39;exclut de la sélection dans la référence produit.</inlineHelpText>
+    <label>Component</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

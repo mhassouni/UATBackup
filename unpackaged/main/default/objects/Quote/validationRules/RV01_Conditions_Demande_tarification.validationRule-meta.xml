@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV01_Conditions_Demande_tarification</fullName>
+    <active>true</active>
+    <description>bloquer la demande de tarification si le nombre de Km, la durée de location, la boite de vitesse et le type de pneumatique ne sont pas renseignés</description>
+    <errorConditionFormula>AND( 
+Text(Status)=&#39;A Tarifer&#39; 
+, 
+Ischanged(Status) 
+, 
+OR 
+( 
+ISNULL(  Kilom_trage__c ) 
+, 
+ISNULL( Duree_de_location__c ) 
+, 
+ISBLANK(Service_tarification__c) 
+
+
+) 
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas envoyer de demande de tarification si le nombre de Km, la durée de location ne sont pas renseignés et un service tarification choisi.</errorMessage>
+</ValidationRule>

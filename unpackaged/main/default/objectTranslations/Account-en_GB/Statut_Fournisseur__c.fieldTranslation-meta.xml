@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Supplier status</label>
+        <name>Statut_Fournisseur__c</name>
+        <picklistValues>
+            <masterLabel>Actif</masterLabel>
+            <translation><!-- Actif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué</masterLabel>
+            <translation><!-- Bloqué --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué en achat</masterLabel>
+            <translation><!-- Bloqué en achat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloqué en paiement</masterLabel>
+            <translation><!-- Bloqué en paiement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Déréférencé</masterLabel>
+            <translation><!-- Déréférencé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sur Consultation achat</masterLabel>
+            <translation><!-- Sur Consultation achat --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

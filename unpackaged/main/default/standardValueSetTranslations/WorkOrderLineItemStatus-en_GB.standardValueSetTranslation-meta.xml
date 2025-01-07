@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>A faire</masterLabel>
+        <translation>To-do</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Crée</masterLabel>
+        <translation>Created</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Impossible de terminer</masterLabel>
+        <translation>Can&#39;t be done</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non contrôlé</masterLabel>
+        <translation>Not checked</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Réalisé</masterLabel>
+        <translation>Completed</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

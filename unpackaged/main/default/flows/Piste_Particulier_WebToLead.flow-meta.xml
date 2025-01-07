@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Piste {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Piste Particulier WebToLead</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_champs</name>
+        <label>Update champs</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>RaisonCloture__c</field>
+            <value>
+                <stringValue>Aucun potentiel</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Abandonnée</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_champs</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND ( 5 OR 6 )</filterLogic>
+        <filters>
+            <field>WebToLead__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Pays__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FRANCE</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Particulier_Professionnel__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Particulier</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <dateTimeValue>2022-06-25T23:00:00.000Z</dateTimeValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Duree_location_souhaitee__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>1 à 30 jours</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Duree_location_souhaitee__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>De 1 à 25 jours</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

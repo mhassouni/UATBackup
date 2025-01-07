@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Nouveau (NCT)</fullName>
+        <default>false</default>
+        <label>Nouveau (NCT)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renouvellement (RNV)</fullName>
+        <default>false</default>
+        <label>Renouvellement (RNV)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplémentaire (SUP)</fullName>
+        <default>false</default>
+        <label>Supplémentaire (SUP)</label>
+    </standardValue>
+</StandardValueSet>

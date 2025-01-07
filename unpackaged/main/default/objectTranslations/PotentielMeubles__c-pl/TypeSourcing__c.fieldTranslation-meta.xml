@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type sourcing --></label>
+        <name>TypeSourcing__c</name>
+        <picklistValues>
+            <masterLabel>Location Meubles</masterLabel>
+            <translation><!-- Location Meubles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation><!-- Location avec chauffeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation><!-- Location sans chauffeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation><!-- Propriété --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur dernier kilomètre</masterLabel>
+            <translation><!-- Transporteur dernier kilomètre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation><!-- Transporteur public --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

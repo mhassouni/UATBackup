@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo</label>
+        <name>type_OE__c</name>
+        <picklistValues>
+            <masterLabel>Boite de vitesse</masterLabel>
+            <translation>Cambio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Cabina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Cellule Isotherme</masterLabel>
+            <translation>Carrozzeria / Cellule isoterma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Telaio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation><!-- Electricité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité Véhicule</masterLabel>
+            <translation>Elettricità veicolo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freinage</masterLabel>
+            <translation>Impianto frenante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Froid</masterLabel>
+            <translation>Gruppo Freddo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/Portique</masterLabel>
+            <translation>Sponda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauvaise Utilisation / Négligence</masterLabel>
+            <translation>negligenza o uso improprio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation>Motore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatiques</masterLabel>
+            <translation>Pneumatici</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pont/Essieu/Transmission</masterLabel>
+            <translation>Ponte / assale / trasmissione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinistre / Dégâts</masterLabel>
+            <translation>Danni e incidenti</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

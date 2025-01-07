@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PIPL</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Legal_Entity__c</field>
+        <value xsi:type="xsd:string">PIPL</value>
+    </values>
+    <values>
+        <field>api_access__c</field>
+        <value xsi:type="xsd:string">44c7bb497ed28dbbe7c32c1b392aeeb9</value>
+    </values>
+    <values>
+        <field>api_key__c</field>
+        <value xsi:type="xsd:string">cb4f1539-ba40-11ec-92c0-fa163e2e1b93</value>
+    </values>
+</CustomMetadata>

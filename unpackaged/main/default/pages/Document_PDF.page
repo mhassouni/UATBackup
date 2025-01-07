@@ -1,0 +1,893 @@
+<apex:page standardController="WorkOrderLineItem"  applyBodyTag="false" applyHtmlTag="false" showHeader="false" renderAs="PDF">
+
+<head>
+    
+    <title>Title</title>
+    <apex:stylesheet value="{!$Resource.reset}"/>
+    <style>
+        @page{
+			margin:0.02in 0.15in;
+		}
+.pdf-body{
+            font-family:"Arial Unicode MS";
+            border: 1px solid #272727;
+        }
+
+        /******* HEADER *******/
+        .pdf-body .header{
+            background-color: #272727;
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 25px;
+            padding: 5px 0 0 0;
+            height: 35px;
+            position: relative;
+        }
+        
+        .pdf-body .header h1{
+            padding: 0px;
+            margin: 0px;
+        }
+        .pdf-body .header img{
+            position: absolute;
+            
+            height: 39px;
+        	width:auto;
+            right: 30px;
+            top: 0;
+        }
+
+        .pdf-body .header.colorGreen{
+            background-color: #00a154;
+        }
+
+        /******* SECTION INFO *******/
+        .section .section_info{
+            width: 100%;
+            background-color: #d3d3d3;
+            font-size: 20px;
+			padding: 5px;
+        }
+        .section .section_info span{
+            font-weight: bold;
+            width: 230px;
+            display: inline-block;
+        }
+        .section .section_info .left, .section .section_info .right {
+            width: 50%;
+        }
+        .section .section_info .right{
+            padding-left: 40px;
+        }
+        .section .section_title{
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /******* SECTION CONTENT *******/
+        .section_content{
+            padding: 10px 15px;
+        }
+        .section_block{
+            margin: 5px 0;
+        }
+        .section_block.first{
+            margin-top: 0px;
+        }
+        .section_row{
+            width: 100%;
+        }
+        .section_row .left,.section_row .right {
+            width: 50%;
+            vertical-align: middle;
+        }
+        .section_row .block{
+            width: 100%;
+            border-collapse: separate;
+            /*border-spacing: 2px;*/
+            border-color: grey;
+        }
+        .section_row .block .block_question{
+            font-weight: bolder;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #272727;
+        }
+        .section_row .block .block_answer{
+            font-style: italic;
+            padding: 2px 5px;
+            vertical-align: middle;
+            border: 1px solid #272727;
+        }
+
+        /****** LEFT COLUMN ******/
+        .section_row .labelLeftIntro{
+            width: 200px;
+        }
+        .section_row .labelLeft{
+            width: 150px;
+        }
+
+        /***** RIGHT COLUMN ******/
+        .section_row .labelRightIntro{
+            width: 50%;
+        }
+        .section_row .labelRight{
+            width: 250px;
+        }
+
+
+        .section_row .min_height56{
+            min-height: 56px;
+        }
+        .section_row .min_height45{
+            min-height: 45px;
+        }
+        .section_row .min_height100{
+            min-height: 100px;
+        }
+        .section_row .min_height150{
+            min-height: 150px;
+        }
+        
+        .min_height100 td{
+           height: 67px!important;
+        }
+        
+        .min_height150 td{
+           height: 100px!important;
+        }
+        
+        .section_row .checkbox{
+            border: 2px solid grey;
+            height: 20px;
+            width: 20px;
+            border-radius: 3px;
+
+        }
+		
+		div.checkbox{
+            border: 2px solid #000;
+            height: 12px;
+            width: 12px;
+            border-radius: 3px;
+			display:inline-block;
+        }
+		
+		td.checkbox p{
+			display:inline-block;
+			vertical-align:text-top;
+		}
+		
+        .section_row .space{
+            width: 35px;
+            display: block;
+        }
+
+        .section .block_question.labelCheckbox,.section .block_answer.labelCheckbox {
+            border: 0px;
+        }
+		
+		.half_section{
+			float:left;
+			width:50%;
+		}
+		
+		.table{
+			overflow:auto;
+		}
+		
+		.td-50{
+			float:left;
+			width:50%;
+		}
+		
+		.row{
+			border:1px solid #000;
+			overflow:auto;
+		}
+		
+		.clear_both{
+			clear:both;
+		}
+		
+		.table_in, .table_in td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		.table_in, table{
+			width:100%;
+		}
+
+		.table_in td{
+			width:50%;
+			vertical-align: middle;
+		}
+        
+        .first .table_in td{
+        	vertical-align:inherit!important;
+        }
+		
+		.width-47{
+			width:47%;
+		}
+		
+		.width-6{
+			width:6%;
+		}
+		
+		.width-23{
+			width:22.95%!important;
+		}
+		
+		.width-77{
+			width:75.05%!important;
+		}
+		
+		.table_in tr td{
+			padding:2px;
+        	text-align:center;
+		}
+        
+        .table_in tr td.first{
+        	text-align:center;
+        }
+		
+		.height-2-4 tr td{
+			height:23px;
+		}
+        
+        .height-4-4 tr td{
+			height:5px;
+		}
+        
+        .height-2-2 tr td{
+			height:inherit;
+		}
+		
+		.no-border, .no-border td{
+			border:none;
+		}
+		
+		.section_info td{
+			text-align:inherit!important;
+		}
+        
+        table p{
+            font-size:12px;
+        }
+		
+		.baseline{
+			vertical-align: baseline!important;
+		}
+        
+        .checkbox .checkbox{
+        	line-height:2px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="pdf-body" >
+    <div class="header colorGreen">
+        <h1>Fiche dépannage</h1>
+        <apex:image id="theImage" value="{!$Resource.Logo_PF}" />
+    </div>
+
+    <div class="section">
+        <div class="section_info">
+			<table>
+				<tr>
+					<td class="width-47">
+						<p>RECEPTION DU DEPANNAGE</p>
+					</td>
+					<td class="width-6"></td>
+					<td class="width-47">
+						<table class="block min_height56 table_in no-border">
+							<tr>
+								<td class="block_question labelLeftIntro first">
+									<p>Responsable PF</p>
+								</td>
+								<td class="block_answer">
+									<p>{!WorkOrderLineItem.WorkOrder.Case.Owner.Name}</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+        <div class="section_content">
+		
+            <div class="section_block first">
+				<table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>N° PARC</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.Name}</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>IMMAT</p>
+									</td>
+									<td class="block_answer ">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.IMMAT__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 height-4-4 table_in">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Catégorie</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.Categorie__c}</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Code PF</p>
+									</td>
+									<td class="block_answer ">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.Code_PF__c}</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Marque</p>
+									</td>
+									<td class="block_answer ">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.Marque__c}</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Catégorie PTC</p>
+									</td>
+									<td class="block_answer ">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Asset.cat_ptc__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>				           
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Agence Dépannage</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.Agence_Intervenante__r.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Agence propriétaire</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Agence_compte__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Client</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Account.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Contact client</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Account.Owner.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Date ouverture</p>
+									</td>
+									<td class="block_answer">
+                                        <p><apex:outputText value="{0,date, dd/MM/yyyy}"> <apex:param value="{!WorkOrderLineItem.WorkOrder.Case.CreatedDate}" /> </apex:outputText></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Transmission dépannage par</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Account.Owner.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Nom Chauffeur</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Nom_Chauffeur__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Téléphone Chauffeur</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.N_Tel_Chauffeur__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table class="block min_height100 table_in height-2-4">
+					<tr>
+						<td class="width-23 first">
+							<p>Lieu d'intervention</p>
+						</td>
+						<td class="width-77">
+							<p>{!WorkOrderLineItem.WorkOrder.Case.Rue_Lieu__c}<br/>{!WorkOrderLineItem.WorkOrder.Case.Code_postal__c} - {!WorkOrderLineItem.WorkOrder.Case.Ville__c}<br/>{!WorkOrderLineItem.WorkOrder.Case.Precision__c}</p>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table class="block min_height100 table_in height-2-4">
+					<tr>
+						<td class="width-23 first">
+							<p>Descriptions incident</p>
+						</td>
+						<td class="width-77">
+							<p>{!WorkOrderLineItem.WorkOrder.Case.Description_incident_client__c}</p>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Qualification</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Qualification__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Détails</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Detail_Pb_Requete__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Marchandise</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Type_de_marchandise__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Quantité en charge</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.WorkOrder.Case.Quantite_en_charge__c}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p>Accident</p>
+										<div class="checkbox" >{!if(WorkOrderLineItem.WorkOrder.Case.Accident__c==true,'x','')}</div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                        <p>Incendie</p>
+										<div class="checkbox">{!if(WorkOrderLineItem.WorkOrder.Case.Incendie__c==true,'x','')}</div>
+                                    </td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p>Vandalisme</p>
+										<div class="checkbox">{!if(WorkOrderLineItem.WorkOrder.Case.Vandalisme__c==true,'x','')}</div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                       
+                                    </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+           <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p class="baseline">Véhicule<br/>Immobilisé</p>
+										<div class="checkbox">{!if(WorkOrderLineItem.WorkOrder.Case.Vehicule_immobilis__c==true,'x','')}</div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                        
+                                    </td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p class="baseline">Relais<br/>Nécessaire</p>
+										<div class="checkbox">{!if(WorkOrderLineItem.WorkOrder.Case.Relais_Necessaire__c==true,'x','')}</div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                        <p class="baseline">Dépannage<br/>Autoroute</p>
+										<div class="checkbox">{!if(WorkOrderLineItem.WorkOrder.Case.Depannage_autoroute__c==true,'x','')}</div>
+                                    </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+        </div>
+		
+        
+		<div class="section_info">
+			<table>
+				<tr>
+					<td class="width-47">
+						<p>RÉALISATION DEPANNAGE</p>
+					</td>
+					<td class="width-6"></td>
+					<td class="width-47">
+						<table class="block min_height56 table_in no-border">
+							<tr>
+								<td class="block_question labelLeftIntro first">
+									<p>Responsable PF</p>
+								</td>
+								<td class="block_answer">
+									<p>{!WorkOrderLineItem.WorkOrder.Case.Owner.name}</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+        <div class="section_content">
+		
+            <div class="section_block first">
+				<table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>N° Parc Intervention</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.Parc_Intervention__r.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>N° Parc Relais</p>
+									</td>
+									<td class="block_answer">
+										<p>{!WorkOrderLineItem.Parc_relais__r.Name}</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>				           
+            </div>
+            <div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Appel Tech.</p>
+									</td>
+									<td class="block_answer">
+                                        <p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_D_appel__c }"> </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Transmission</p>
+									</td>
+									<td class="block_answer">
+										<p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_De_transmission__c}">  </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+			<div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Départ</p>
+									</td>
+									<td class="block_answer">
+										<p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_Depart__c}" > </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Arrivée</p>
+									</td>
+									<td class="block_answer">
+										<p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_Arrivee__c}">  </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+			<div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Fin Intervention</p>
+									</td>
+									<td class="block_answer">
+										<p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_Fin__c}">  </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro first">
+										<p>Heure Retour</p>
+									</td>
+									<td class="block_answer">
+										<p><apex:outputfield value="{!WorkOrderLineItem.Date_Heure_Retour__c}">  </apex:outputfield></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+			<div class="section_block">
+                <table class="block min_height150 table_in height-2-4">
+					<tr>
+						<td class="width-23 first">
+							<p>Travaux</p>
+						</td>
+						<td class="width-77">
+							<p><apex:outputfield value="{!WorkOrderLineItem.Travaux__c}">  </apex:outputfield></p>
+						</td>
+					</tr>
+				</table>
+            </div>
+            <div class="section_block">
+                <table class="block min_height150 table_in height-2-4">
+					<tr>
+						<td class="width-23 first">
+							<p>Résultats</p>
+						</td>
+						<td class="width-77">
+							<p><apex:outputfield value="{!WorkOrderLineItem.Resultats__c}">  </apex:outputfield></p>
+						</td>
+					</tr>
+				</table>
+            </div>
+			<div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p class="baseline">Relais mis à<br/>disposition</p>
+										<div class="checkbox"></div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                        <p class="baseline">Dépannage<br/>Provisoire</p>
+										<div class="checkbox"></div>
+                                    </td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height56 table_in height-2-2 no-border">
+								<tr>
+									<td class="width-50 no-border checkbox">
+                                        <p>Négligence averée</p>
+										<div class="checkbox"></div>
+                                    </td>
+                                    <td class="width-50 no-border checkbox">
+                                        <p>A revoir agence</p>
+										<div class="checkbox"></div>
+                                    </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+			<div class="section_block">
+                <table>
+					<tr>
+						<td class="width-47">
+							<table class="block min_height100 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro">
+										<p>Nom et Signature<br/>Technicien</p>
+									</td>
+									<td class="block_answer">
+									
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="width-6"></td>
+						<td class="width-47">
+							<table class="block min_height100 table_in height-2-4">
+								<tr>
+									<td class="block_question labelLeftIntro">
+										<p>Nom et Signature<br/>Client</p>
+									</td>
+									<td class="block_answer">
+										
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+            </div>
+		</div>
+    </div>
+	
+</div>
+</body>
+
+</apex:page>

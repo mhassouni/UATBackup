@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Alert_CreationAdminOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISNEW()
+,
+ $User.ProfileId &lt;&gt;  $Label.USR_ProfileId_PFAdministrateurSysteme 
+)</errorConditionFormula>
+    <errorMessage>Vous n&#39;étes pas autorisé à créer des alertes.</errorMessage>
+</ValidationRule>

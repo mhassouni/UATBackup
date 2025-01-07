@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract SAP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contracts SAP</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Présentation Contrat SAP</layout>
+        <sections>
+            <label>Adres verzending</label>
+            <section>Adresse d&#39;expédition</section>
+        </sections>
+        <sections>
+            <label>Adres factuur</label>
+            <section>Adresse de facturation</section>
+        </sections>
+        <sections>
+            <label>Contractdata</label>
+            <section>Dates Contrat</section>
+        </sections>
+        <sections>
+            <label>Facturering</label>
+            <section>Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Huurprijzen</label>
+            <section>Loyers</section>
+        </sections>
+        <sections>
+            <label>Wagenpark</label>
+            <section>Parc</section>
+        </sections>
+        <sections>
+            <label>Annulering</label>
+            <section>Résiliation</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Contractnummer SAP</nameFieldLabel>
+</CustomObjectTranslation>

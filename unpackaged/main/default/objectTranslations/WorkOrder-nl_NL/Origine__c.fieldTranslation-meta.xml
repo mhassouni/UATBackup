@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Oorsprong</label>
+        <name>Origine__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation>Klant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation>Technisch</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

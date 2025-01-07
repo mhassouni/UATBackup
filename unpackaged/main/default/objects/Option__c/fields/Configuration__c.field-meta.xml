@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Configuration__c</fullName>
+    <label>Configuration</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Nom_du_pack__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mono-température</fullName>
+                <default>false</default>
+                <label>Mono-température</label>
+            </value>
+            <value>
+                <fullName>Bi-température</fullName>
+                <default>false</default>
+                <label>Bi-température</label>
+            </value>
+            <value>
+                <fullName>Tri-température</fullName>
+                <default>false</default>
+                <label>Tri-température</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Télématique - Pro</controllingFieldValue>
+            <controllingFieldValue>Télématique - Evolution</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack Italie</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack UK</controllingFieldValue>
+            <valueName>Mono-température</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Télématique - Pro</controllingFieldValue>
+            <controllingFieldValue>Télématique - Evolution</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack Italie</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack UK</controllingFieldValue>
+            <valueName>Bi-température</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Télématique - Pro</controllingFieldValue>
+            <controllingFieldValue>Télématique - Evolution</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack Italie</controllingFieldValue>
+            <controllingFieldValue>Télématique - Pack UK</controllingFieldValue>
+            <valueName>Tri-température</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

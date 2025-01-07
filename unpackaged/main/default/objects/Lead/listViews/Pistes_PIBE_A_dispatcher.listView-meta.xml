@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pistes_PIBE_A_dispatcher</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Agence_depart_retour__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>CodePostal__c</columns>
+    <columns>Produits__c</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>Duree_location_souhaitee__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>PIBE</value>
+    </filters>
+    <label>Pistes PIBE - A dispatcher</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIBE_Belgique</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

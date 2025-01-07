@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR46_Bloque</fullName>
+    <active>false</active>
+    <description>Statuts du compte</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(Statut__c), 
+TEXT(Statut__c)=$Label.CPT_Statut_Bloque, 
+NOT(ISCHANGED(TECHWS__c)), 
+OR( 
+TEXT(PRIORVALUE(Statut__c))=$Label.CPT_Statut_Valide, 
+TEXT(PRIORVALUE(Statut__c))=$Label.CPT_Statut_Refuse, 
+TEXT(PRIORVALUE(Statut__c))=$Label.CPT_Statut_Inactif, 
+$User.ProfileId=$Label.USR_ProfileId_PFReseau
+), 
+$Setup.Bypass__c.BypassValidationRules__c = false)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas choisir le statut &quot;Bloqué&quot;.</errorMessage>
+</ValidationRule>

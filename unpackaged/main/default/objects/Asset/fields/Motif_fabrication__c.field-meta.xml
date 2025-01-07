@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_fabrication__c</fullName>
+    <label>Motif fabrication</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FAB CF PREMIUM LECAPITAINE</fullName>
+                <default>false</default>
+                <label>FAB CF PREMIUM LECAPITAINE</label>
+            </value>
+            <value>
+                <fullName>FAB CF PREMIUM LCT</fullName>
+                <default>false</default>
+                <label>FAB CF PREMIUM LCT</label>
+            </value>
+            <value>
+                <fullName>FAB CF MARITIME SPECIAL</fullName>
+                <default>false</default>
+                <label>FAB CF MARITIME SPECIAL</label>
+            </value>
+            <value>
+                <fullName>FAB CF MARITIME ASSEMBLAGE</fullName>
+                <default>false</default>
+                <label>FAB CF MARITIME ASSEMBLAGE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

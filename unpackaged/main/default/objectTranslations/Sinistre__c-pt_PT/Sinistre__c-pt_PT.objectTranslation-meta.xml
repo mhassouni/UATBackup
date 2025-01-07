@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sinistre --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Sinistre --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Feminine --></gender>
+    <layouts>
+        <layout>Présentation Sinistre</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Sinistre --></label>
+            <section>Sinistre</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicule --></label>
+            <section>Vehicule</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sinistre - Community</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Sinistre --></label>
+            <section>Sinistre</section>
+        </sections>
+        <sections>
+            <label><!-- Véhicule --></label>
+            <section>Véhicule</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro sinistre --></nameFieldLabel>
+</CustomObjectTranslation>

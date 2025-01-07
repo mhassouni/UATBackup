@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Modell (Hebebühne)</label>
+        <name>Modele_Hayon__c</name>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE DROIT</masterLabel>
+            <translation>1/2 Heckladebordwand rechts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 HAYON ARRIERE GAUCHE</masterLabel>
+            <translation>1/2 Heckladebordwand links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A CASSETTE</masterLabel>
+            <translation><!-- A CASSETTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A COLONNE (Rabattable manuel)</masterLabel>
+            <translation><!-- A COLONNE (Rabattable manuel) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON 1/2 HAYON</masterLabel>
+            <translation>Kastenwagen 1/2 Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOURGON HAYON</masterLabel>
+            <translation>Kastenwagen Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir Aménagement HAYON</masterLabel>
+            <translation>hinterer Rahmen 3 Türe - siehe Einrichtung Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME</masterLabel>
+            <translation>Isotherm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE</masterLabel>
+            <translation>Klappbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RABATTABLE ISOTHERME (classe A)</masterLabel>
+            <translation>Isotherme Ladebordwand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE</masterLabel>
+            <translation>Unterfahrbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETRACTABLE / REPLIABLE</masterLabel>
+            <translation><!-- RETRACTABLE / REPLIABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

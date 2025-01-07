@@ -1,0 +1,1653 @@
+<apex:page label="Rollup Helper Health Check" controller="rh2.PS_healthCheck_Controller" title="Rollup Helper Health Check" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0" showHeader="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head> 
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
+        <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
+        <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
+        <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" /> 
+        <apex:includeLightning />
+    </head>
+    <style>        
+        .popoverNubbinAlignment{
+            left: -1.26em; 
+            /* top: 0.8em; */
+            top: 20px;
+        }
+        
+        .popoverDefault{
+            display:none;
+            max-height:0px; 
+            overflow:visible;   
+            overflow-y:visible; 
+            position:relative; 
+            white-space:normal;
+            z-index:99;  
+
+        }
+
+        .popoverDefaultAbsolute{
+          display:none;
+          top: 24px;
+          max-height:0px; 
+          overflow:visible;   
+          overflow-y:visible; 
+          position:absolute; 
+          white-space:normal;
+          z-index:99;  
+        }
+    </style>
+    <script>
+      var namespace;
+      var rh = rh || {}
+      rh.j$ = jQuery.noConflict();
+        rh.j$(document).ready(function(){
+            namespace = "{!IF(CONTAINS($CurrentPage.Name, "__"),LEFT($CurrentPage.Name,FIND("__", $CurrentPage.Name)-1),"c")}";
+            var rootPage = sessionStorage.getItem('rootPage') || 'home';
+            
+            selectBreadcrumb_HS();
+            passExceptionLink();
+        });
+        
+
+        function toggleModalAndFixHeader(shouldShow, label) {
+            showModal(shouldShow, label);
+        }
+
+        function createRunningJobsComponent(){
+            $Lightning.use(namespace + ":PS_Health_Check", function() {
+                $Lightning.createComponent(
+                    namespace + ":ps_runningJobs", {
+                        isModalOpen: true
+                    }, 
+                    "rollupHelperJobs", 
+                    function(cmp) {
+                      adjustHelpTextStyling();
+                    });
+            });
+        }
+
+        function adjustHelpTextStyling(){
+            const popupText = document.querySelector("lightning-primitive-bubble");
+            if(popupText){
+                popupText.classList.add("slds-scope");
+            }
+        }
+    </script>
+    <apex:form >
+      <apex:actionFunction action="{!cancelExceptionLifespanChange}" name="callCancelExceptionLifespan" rerender="exceptionLifespanModal,exceptionLifespanInput" status="loading"/>
+      <apex:actionFunction name="passExceptionLink" rerender="viewExceptionsLinks,importViewExceptions,stuckQueueExceptions,importModalFooter">
+        <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+      </apex:actionFunction>
+    </apex:form>
+    <apex:form >
+        <apex:slds />
+        <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
+        <div class="slds-scope" role="main">
+            <div class="slds-card grayBackground">
+                <header class="slds-card__header">
+                    <nav role="navigation">
+                        <ol class="slds-breadcrumb slds-list_horizontal">
+                            <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__Home}</a></li>
+                            <li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__AllRollupSetting}</a></li>
+                        </ol>
+                    </nav>
+                </header>
+            </div>
+            <div class="slds-card grayBackground">
+                <header class="slds-card__header slds-theme_alt-inverse">
+                    <h3 class="slds-text-heading_medium">{!$Label.rh2__RollupHelperHealthCheck}</h3>
+                </header>
+                <section class="slds-card__body">
+                    <apex:outputPanel id="pageWrapper">
+                        <h3 style="margin-left:15px; padding-bottom:15px;display:block;" class="slds-text-heading_small">{!$Label.CurrentRollupHelperStatus}:</h3>
+                        <apex:outputPanel >
+                            <div style="margin-left:15px; width:33%;float:left;" class="{!IF(highRiskExist, 'slds-box slds-box_x-small slds-theme_error', IF(!highRiskExist && (mediumRiskExist || (lowRiskCount > 2)), 'slds-box slds-box_x-small slds-theme_warning', 'slds-box slds-box_x-small slds-theme_success'))}">
+                                <apex:outputPanel rendered="{!if(totalIssueCount > 0, true, false)}" > 
+                                    <apex:outputPanel rendered="{!highRiskExist}">
+                                        {!highRiskCount} {!$Label.rh2__HighRisk} item
+                                        <apex:outputText rendered="{!IF(highRiskCount > 1, true, false)}">s</apex:outputText>
+                                        <apex:outputText rendered="{!AND(mediumRiskExist, lowRiskExist)}">, </apex:outputText>
+                                        <apex:outputText rendered="{!OR(AND(lowRiskExist, !mediumRiskExist), AND(!lowRiskExist, mediumRiskExist))}"> and </apex:outputText>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!mediumRiskExist}">
+                                        {!mediumRiskCount} {!$Label.rh2__MediumRisk} item
+                                        <apex:outputText rendered="{!IF(mediumRiskCount > 1, true, false)}">s</apex:outputText>
+                                        <apex:outputText rendered="{!AND(highRiskExist, lowRiskExist)}">,</apex:outputText>
+                                        <apex:outputText rendered="{!lowRiskExist}"> and </apex:outputText>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!lowRiskExist}">
+                                        {!lowRiskCount} {!$Label.rh2__LowRisk} item
+                                        <apex:outputText rendered="{!IF(lowRiskCount > 1, true, false)}">s</apex:outputText>
+                                    </apex:outputPanel>
+                                    need<apex:outputText rendered="{!IF(totalIssueCount == 1, true, false)}">s</apex:outputText> to be addressed.
+                                </apex:outputPanel>   
+                                <apex:outputPanel rendered="{!if(totalIssueCount == 0, true, false)}">
+                                  {!$Label.rh2__ThereAreCurrentlyZero}!
+                                </apex:outputPanel>
+                            </div>
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" style="margin-right:15px;float:right;" onclick="showModal(true, 'exceptionLifespanModal');" rerender="exceptionLifespanModal" value="{!$Label.rh2__AdjustExceptionLifespan}"/>
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" style="margin-right:15px;float:right;" value="{!$Label.rh2__ConfigureRollupJobs}" onclick="createRunningJobsComponent();" rerender="none"></apex:commandButton>
+                          </apex:outputPanel>
+                          <br/><br/>
+                        <apex:outputPanel rendered="{!IF(totalIssueCount > 0, true, false)}" id="issueWrapper">
+                            <br/>
+                            <table class="slds-table slds-no-row-hover slds-table_bordered slds-table_fixed-layout" style="width:98%; margin-left:auto; margin-right:auto;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 8%;white-space:normal;word-wrap:break-word;">
+                                          <apex:commandLink value="{!$Label.rh2__RiskLevel}" action="{!doSeveritySort}" rerender="issueWrapper"> 
+                                            <apex:outputText value="{!IF(sortVars.sortDirection=='asc', ' ▲', ' ▼')}"/>
+                                          </apex:commandLink>
+                                        </th>
+                                        <th style="width: 40%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__IssueFound}</th>
+                                        <th style="width: 32%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__IssueSummary}</th>
+                                        <th style="width: 20%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__Action}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!issuesToDisplay}" var="i">
+                                        <tr>
+                                            <td>
+                                                {!i.severity}
+                                            </td>
+                                            <td style="white-space:normal;word-wrap:break-word;">
+                                              <apex:outputPanel rendered="{!i.multipleFound}">
+                                                {!i.issueGroupName}
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!!i.multipleFound}">
+                                                {!i.issueName}
+                                              </apex:outputPanel>
+                                            </td>
+                                            <td style="white-space:normal;word-wrap:break-word;vertical-align:center !important;">
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'queue buildup'), true, false)}">
+                                                
+                                                    
+                                                    <p class="slds-text-heading_label">
+                                                    <a onmouseover="rh.j$('#help-queue').toggle();" onmouseout="rh.j$('#help-queue').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.QueueBuildup} </p>
+
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-queue">
+                                                      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                         <div class="slds-popover__body">
+                                                           A queue buildup of at least 500 records has been found.  Since a Rollup Helper queue record represents an asynchronous execution,
+                                                          the accuracy of some of your rollups may be impacted. Errors may also be encountered if the total number of records in the table
+                                                          builds up high enough. Please contact Support to determine the cause of the queue buildup so that we can prevent the issue from reoccurring.
+                                                       </div>
+                                                     </div>
+                                                    </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'stuck queue'), true, false)}">
+                                                    
+                                                    <p class="slds-text-heading_label">
+                                                    <a onmouseover="rh.j$('#help-stuckQueue').toggle();" onmouseout="rh.j$('#help-stuckQueue').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.StuckQueueItems} </p>
+
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-stuckQueue">
+                                                      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                         <div class="slds-popover__body">
+                                                          One or more queue items have been in the 'Processing' stage for over one day. These jobs may have failed due to a row lock on the Rollup Helper custom setting or governor limits being hit by Rollup Helper Apex jobs.
+                                                          Please view the Exceptions page or Apex Jobs page to diagnose and address the cause of the stuck queue items. Once the issue is resolved, you may use the Rollup Queue tab to retry or delete any stuck queue items.
+                                                          If the Queue buildup is too large to clean individually, please feel free to reach out to support@passagetech.com for further assistance.
+                                                       </div>
+                                                     </div>
+                                                    </div>
+
+                                               <br/>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Rollup Helper exceptions'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-exctab').toggle();" onmouseout="rh.j$('#help-exctab').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.ExceptionsFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-exctab">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has encountered one or more exception(s) recently.  Please visit the Rollup Helper Exceptions page for more detailed 
+                                                            information regarding the specific errors. <br/><br/>
+                                                            Rollup Helper provides tools such as Validation Helper and Single Parent Processing to help prevent these exceptions from occurring. <br/><br/>
+                                                            Please note that exceptions created within the limit defined by the Exception Lifespan setting may display even if the relevant issue has been resolved. <br/><br/>
+                                                            If you have any questions regarding a specific exception encountered, please feel free to contact our support team at support@passagetech.com.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'found to be inactive'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-inacUser').toggle();" onmouseout="rh.j$('#help-inacUser').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RunningUserInactive}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-inacUser">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            The current Rollup Helper running user was found to be inactive.  It is recommended that the existing scheduled job 
+                                                            "Rollup Helper Batch Agent - Hourly" be deleted and rescheduled to run as a currently active user.
+
+                                                            For instructions on how to change the running user, please click the "Change Running User" link to the right.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'uses an inaccessible source object'),NOT(i.multipleFound)), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-inacObject-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-inacObject-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!i.rollupObject} {!$Label.ObjectIsInaccessible}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-inacObject-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            One or more active rollups uses an object that may be inaccessible due to permission sets or may be deleted.
+
+                                                            Please review all active rollups to identify which object(s) may be inaccessible.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'uses an inaccessible source object'),i.multipleFound), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-inacObject-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-inacObject-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.Rollups} {!$Label.ObjectsAreInaccessible}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-inacObject-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            One or more active rollups uses an object that may be inaccessible due to permission sets or may be deleted.
+
+                                                            Please review all active rollups to identify which object(s) may be inaccessible.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'field format'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-fieldformat').toggle();" onmouseout="rh.j$('#help-fieldformat').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.FieldFormatExceptionFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-fieldformat">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has encountered one or more exception(s) due to a field formatting issue recently.  Please visit the Rollup Helper Exceptions page 
+                                                            for more detailed information regarding which record(s) are impacted by this error.  
+                                                            
+                                                            A field format issue may be occurring because Rollup Helper is configured to roll up data that does not match a field's correct formatting rules
+                                                            into the field.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to row lock'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-rowlock').toggle();" onmouseout="rh.j$('#help-rowlock').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RowLockExceptionsFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-rowlock">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has failed to update one or more record(s) due to row lock errors recently.  Please visit the Rollup Helper Exceptions page 
+                                                            for more detailed information regarding the specific record(s) that may have failed to update.  
+                                                            
+                                                            Row lock exceptions may be occurring because Rollup Helper attempted to update a record when another process or user was already editing the
+                                                            record.  Single Parent Processing, in the Rollup Helper settings, may be able to help mitigate row locking errors.  Rollup Helper schedule 
+                                                            configuration may also be edited if applicable to mitigate row locking errors.  If you need assistance in resolving these errors, please 
+                                                            contact support@passagetech.com.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to a logical loop'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-infloop').toggle();" onmouseout="rh.j$('#help-infloop').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.TriggerLoopExceptionsFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-infloop">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has failed to update one or more record(s) due to trigger self reference errors recently.  
+                                                            Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s) 
+                                                            that may have failed to update.  
+                                                            
+                                                            Self reference from trigger (logical loop) exceptions typically mean that logic exists on a parent record that
+                                                            updates child record(s) and at the same time logic exists on a child record that updates parent record(s).  If 
+                                                            Child A has a trigger that updates Parent B, when Rollup Helper updates Child A that trigger fires and updates
+                                                            Parent B.  If Parent B then has a trigger that updates Child A in turn, the self reference error is encountered.
+                                                            If you need assistance identifying which trigger(s) or other logic may be involved to cause this error, please 
+                                                            contact support@passagetech.com.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'required field was missing'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-reqfield').toggle();" onmouseout="rh.j$('#help-reqfield').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RequiredFieldExceptionsFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-reqfield">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has failed to update one or more record(s) because of missing required field values recently.  
+                                                            Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s)
+                                                            that may have failed to update.  
+                                                            
+                                                            Required Field Missing errors may have started showing up due to a recent org configuration change.  If a field
+                                                            was recently made required, Rollup Helper will not be able to update any historical records that do not have 
+                                                            a value filled into the newly required field until the record is updated to include a value in the required field.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Process Builder'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-pbflow').toggle();" onmouseout="rh.j$('#help-pbflow').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.ProcessBuilderFlowExceptionsFound}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-pbflow">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper has failed to update one or more record(s) because of a Process Builder / Flow error recently.  
+                                                            Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s)
+                                                            that may have failed to update.  
+                                                            
+                                                            Cannot Execute Flow Trigger errors may have started showing up due to a recent change to a process or flow.  
+                                                            If no recent changes to flows or processes were made, or if you need assistance in determining which flow(s)
+                                                            or process(es) may be encountering an error, please contact support@passagetech.com for assistance.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'unable to import'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-importerr').toggle();" onmouseout="rh.j$('#help-importerr').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RollupCouldNotBeImported}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-importerr">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper was unable to import one or more rollup(s) due to missing or invalid field values. 
+                                                            Please view the PS_Export_Rollups__c exceptions on the Rollup Helper Exceptions page for more detailed information regarding the specific rollup(s) that failed to import.<br/>
+                                                            This issue may occur if a required field is not defined in a rollup, or if the rollup references a field that does not exist in the current org. Please review the rollup information to ensure that all fields are populated and accurate. 
+                                                            If you need assistance in resolving this issue, please contact support@passagetech.com.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+                                             <apex:outputPanel rendered="{!IF(contains(i.issueName, 'impacted by lookup skew'), true, false)}"> 
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-luskew-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-luskew-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.LookupSkewExists}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-luskew-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">Lookup skew exists for one or more rollups using this source object.  Lookup skew means that the number of child records per parent record is disproportionately high and may cause performance impacts to queries run.  The most common remedies for lookup skew are adjusting record scope and implementing more selective filters for each rollup.  Our support team (support@passagetech.com) can assist in both determining specifically which rollups are affected by lookup skew and in adjusting filters and record scope to prevent governor limit errors from being encountered by the rollup query due to lookup skew.</div>
+                                                          </div>
+                                                        </div>
+ 
+                                            
+                                            </apex:outputPanel>  
+                                            
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'We encountered an error attempting'), true, false)}">
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-luskewcalc-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-luskewcalc-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.LookupSkewCalculationFailed}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-luskewcalc-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_large slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body"><p>The Rollup Helper record scope calculator encountered a query exception when attempting to calculate record scope for an object in your environment. You can disregard this message if you have not noticed any issues with a rollup related to data skew, including but not limited to:</p>
+                                                              <ul class="slds-list_dotted">
+                                                                <li>Too many query rows: 50001</li>
+                                                                <li>Rollup results are not accurate</li>
+                                                              </ul>
+                                                              <br/>
+                                                            Contact our support team at support@passagetech.com if you notice any issues.  Our support team can also assist in determining the likelihood that rollups for this object are affected by lookup skew, as well as helping to prevent any errors that may occur due to lookup skew.</div>
+                                                          </div>
+                                                        </div>
+ 
+                                            
+                                            </apex:outputPanel>           
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Exception Monitor'), true, false)}">                                                  
+                                                    <p class="slds-text-heading_label">           
+                                                    <a onmouseover="rh.j$('#help-excMonitor').toggle();" onmouseout="rh.j$('#help-excMonitor').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.ExceptionMonitorJob}</p> 
+            
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-excMonitor">
+                                                      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                        <div class="slds-popover__body">The Rollup Helper Exception Monitor job, which checks for, reports, and cleans up various error conditions in the app, is currently not optimally scheduled.  Please click the 'Schedule Exception Job' link to ensure that the job is scheduled correctly.</div>
+                                                      </div>
+                                                    </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Scope Monitor'), true, false)}">                                       
+                                                    <p class="slds-text-heading_label">           
+                                                    <a onmouseover="rh.j$('#help-scopeMonitor').toggle();" onmouseout="rh.j$('#help-scopeMonitor').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.RecordScopeScheduleJob}</p> 
+            
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-scopeMonitor">
+                                                      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                        <div class="slds-popover__body">The Rollup Helper Record Scope Monitor job, which helps to ensure that there is not a data skew in the app, is currently not optimally scheduled.  Please click the 'Schedule Scope Job' link to ensure that the job is scheduled correctly.</div>
+                                                      </div>
+                                                    </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Schedule Monitor'), true, false)}">                                 
+                                                    <p class="slds-text-heading_label"> 
+                                                    <a onmouseover="rh.j$('#help-schedMonitor').toggle();" onmouseout="rh.j$('#help-schedMonitor').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.ScheduleMonitorJob}</p>       
+
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-schedMonitor">
+                                                      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                        <div class="slds-popover__body">The Rollup Helper Schedule Monitor job, which performs calculations in order to ensure that the 'Run For All Records' schedule setting works correctly, is currently not optimally scheduled.  Please click the 'Recreate Schedule Monitor' link to ensure that the job is scheduled correctly.</div>
+                                                      </div>
+                                                    </div>
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'deactivated'), true, false)}"> 
+
+                                                        <p class="slds-text-heading_label">   
+                                                        <a onmouseover="rh.j$('#help-excroll-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-excroll-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                           
+                                                        </a>{!$Label.RollupDeactivated}</p> 
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-excroll-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">    
+
+                                                                A rollup setting that has been deactivated due to an exception has been found.  This issue is most commonly caused by changes made to 
+                                                                fields or objects that are referenced by the rollup, so please make sure that all relevant fields and objects still exist.
+                                                                
+                                                                Once you have done so, you can try reactivating the rollup.  Once the rollup validation runs again, the exception should be removed 
+                                                                and the rollup should resume functioning.
+                                                                
+                                                                If this does not resolve the issue, please contact support for assistance in troubleshooting the exception.
+
+                                                            </div>
+                                                          </div>
+                                                        </div>   
+ 
+                                                    
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'asynchronous jobs'), true, false)}"> 
+                                                       
+                                                        <p class="slds-text-heading_label">
+                                                        <a onmouseover="rh.j$('#help-jobs').toggle();" onmouseout="rh.j$('#help-jobs').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.NotEnoughAsyncJobs}</p>
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-jobs" >
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper allows the user to designate how many asynchronous jobs of each type Rollup Helper is able to use to handle any 
+                                                            asynchronous rollup processing demands.  
+                                                            
+                                                            Depending on asynchronous processing demand in your environment, too few asynchronous jobs can cause queue buildups or long rollup
+                                                            processing times.
+                                                            
+                                                            The cumulative total of the three Asynchronous Processing settings (Maximum Concurrent Batch, Maximum Concurrent Future, Maximum Jobs Added to the Queue) should equal or exceed 30 jobs. 
+
+                                                            </div>
+                                                          </div>
+                                                        </div>
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Manual Run Only'), true, false)}">
+                                                       
+                                                      <p class="slds-text-heading_label"> 
+                                                      <a onmouseover="rh.j$('#help-manual-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-manual-{!i.uniqueId}').toggle();" >
+                                                      <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                      </a>{!$Label.ManualRunOnlyRollupFound}</p>
+
+                                                      <div class="slds-col popoverDefaultAbsolute" id="help-manual-{!i.uniqueId}">
+                                                        <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                          <div class="slds-popover__body">
+                                                            One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Manual Run Only rollups will never automatically
+                                                            update and will need to be manually rerun any time you wish to see an updated calculation.
+
+                                                            <br/><br/>
+                                                            
+                                                            If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either enable real time for the 
+                                                            rollup or create an active schedule.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+ 
+                                         
+                                            </apex:outputPanel>
+                                            
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run in realtime'), true, false)}">
+                                                       
+                                                    <p class="slds-text-heading_label"> 
+                                                    <a onmouseover="rh.j$('#help-manual-no-trigger-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-manual-no-trigger-{!i.uniqueId}').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.UnableToEnableRealtime}</p>
+                                                    
+                                                    <div class="slds-col popoverDefaultAbsolute" id="help-manual-no-trigger-{!i.uniqueId}">
+                                                         <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                              One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Unfortunately a realtime trigger cannot be created on the source object for this rollup.
+                                                              If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either create a schedule or create a visualforce page trigger.
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                             
+                                            </apex:outputPanel>
+                                            
+                                             <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run upon creation'), true, false)}"> 
+
+                                                        <p class="slds-text-heading_label">
+                                                        <a onmouseover="rh.j$('#help-init-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-init-{!i.uniqueId}').toggle();" >
+                                                            <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RollupNotRun}</p>
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-init-{!i.uniqueId}">
+                                                           <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                             <div class="slds-popover__body">
+                                                             One or more rollup setting(s) in your environment most likely was not run upon creation.
+                                                             Manually running the rollup when it is created ensures that the field is initialized for all records, regardless of whether
+                                                             the record has been recently updated or not.  Without the manual run, historical data may not be correctly rolled up.
+                                                             </div>
+                                                          </div>
+                                                        </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Rollups Per Asynchronous Request'), true, false)}"> 
+
+                                                        <p class="slds-text-heading_label">
+                                                        <a onmouseover="rh.j$('#help-rpar-too-low-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-rpar-too-low-{!i.uniqueId}').toggle();" >
+                                                            <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RollupsPerAsyncRequest}</p>
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-rpar-too-low-{!i.uniqueId}">
+                                                           <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                             <div class="slds-popover__body">
+                                                             The Rollups Per Asynchronous Request setting should be equal to the highest number of rollups on a given relationship.
+                                                             This setting should only be reduced below the ideal value if you are encountering 50,001 Too Many Query Rows errors due to lookup skew that cannot be resolved by lowering the record scope.
+                                                             </div>
+                                                          </div>
+                                                        </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Email Deliverability'), true, false)}">
+                                              <p class="slds-text-heading_label">
+                                              <a onmouseover="rh.j$('#help-emailDeliverability').toggle();" onmouseout="rh.j$('#help-emailDeliverability').toggle();" >
+                                              <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                              </a>{!$Label.EmailsCannotBeSent}</p> 
+      
+                                              <div class="slds-col popoverDefaultAbsolute" id="help-emailDeliverability">
+                                                <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                  <div class="slds-popover__body">Email Deliverability is currently disabled in this org. This prevents Rollup Helper from sending emails to users, including job completion notifications and alerts about recent exceptions.
+                                                  To prevent issues when sending email notifications, please ensure "All Email" is selected under the "Access Level" deliverability setting in Setup.</div>
+                                                </div>
+                                              </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Unused Rollup Helper user settings'), true, false)}"> 
+                                                
+
+                                                        <p class="slds-text-heading_label">
+                                                        <a onmouseover="rh.j$('#help-user-settings-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-user-settings-{!i.uniqueId}').toggle();" >
+                                                            <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.UnusedRollupHelper}</p>
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-user-settings-{!i.uniqueId}">
+                                                           <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                             <div class="slds-popover__body">
+                                                              Unused Rollup Helper settings currently exist in this org and should be cleaned up. 
+                                                              These settings allow validation helper to work correctly. 
+                                                              They are created individually for users when a realtime rollup is triggered, and are probably duplicates of the default org settings. 
+                                                              Users may encounter custom setting limits if many of these settings are created. 
+                                                              If a user has not run a Rollup in over a week, this healthcheck appears and allows the deletion of the custom setting. 
+                                                              Deleting these settings should not cause any issues. 
+                                                              If a custom setting for a user is needed again, then Rollup Helper will automatically recreate it while processing. 
+                                                              You can click Ignore to prevent this healthcheck from appearing again.
+                                                             </div>
+                                                          </div>
+                                                        </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'attempting to validate filter fields'), true, false)}"> 
+                                                
+
+                                                        <p class="slds-text-heading_label">
+                                                        <a onmouseover="rh.j$('#help-filter-field-validation').toggle();" onmouseout="rh.j$('#help-filter-field-validation').toggle();" >
+                                                            <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>Problem Encountered During Filter Validation</p>
+
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-filter-field-validation">
+                                                           <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                             <div class="slds-popover__body">
+                                                             An error was encountered when validating filters.  The error likely was a visibility issue because the 
+                                                             Rollup Helper Exception Monitor job is running as "Rollup Helper".  Please reschedule the job to run 
+                                                             as a user that has visibility to all objects and fields used by rollups and filters to ensure accurate validation.
+                                                             </div>
+                                                          </div>
+                                                        </div>
+
+ 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'not been run since the criteria was edited'), true, false)}">
+                                                
+                                                    
+                                                    <p class="slds-text-heading_label"> 
+                                                      <a onmouseover="rh.j$('#help-editedCrit-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-editedCrit-{!i.uniqueId}').toggle();" >
+                                                      <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                      </a>{!$Label.RollupNotRunSinceCriteria}</p>
+
+                                                      <div class="slds-col popoverDefaultAbsolute" id="help-editedCrit-{!i.uniqueId}">
+                                                        <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                          <div class="slds-popover__body">
+                                                            One or more rollup setting(s) in your environment has not been run since its criteria changed. 
+                                                            
+                                                            To ensure records accurately reflect the criteria of the rollup, please manually run the rollup.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'We were unable'), true, false)}">
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-cdl-luskewcalc').toggle();" onmouseout="rh.j$('#help-cdl-luskewcalc').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.CDLLookupSkewCalculation}</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-cdl-luskewcalc">
+                                                          <div class="slds-popover slds-popover_large slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                              <p>The ContentDocumentLink object has query restrictions that prevent Rollup Helper from calculating the record scope on the object. You can disregard this message if you have not noticed any issues with a rollup related to data skew, including but not limited to:</p>
+                                                              <ul class="slds-list_dotted">
+                                                                <li>Too many query rows: 50001</li>
+                                                                <li>Rollup results are not accurate</li>
+                                                              </ul>
+                                                              <br/>
+                                                              <p>Contact our support team at support@passagetech.com if you notice any issues.  Our support team can also assist in determining the likelihood that rollups for this object are affected by lookup skew, as well as helping to prevent any errors that may occur due to lookup skew.</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'found to not be accessible'), true, false)}"> 
+                   
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="rh.j$('#help-targetFldAccess-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-targetFldAccess-{!i.uniqueId}').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>Target field is not accessible</p>
+                                                        
+                                                        <div class="slds-col popoverDefaultAbsolute" id="help-targetFldAccess-{!i.uniqueId}">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            A target field was found to not have accessibility settings set. Please ensure that target fields are added to all desired layouts and permission sets 
+                                                            to ensure visibility of the target field.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'one filter record was identified to have data incorrectly formatted'), true, false)}">
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-filterCleanup').toggle();" onmouseout="rh.j$('#help-filterCleanup').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.FilterRecordsNeedCleaning}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-filterCleanup">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more filter records were found to have incorrect data to be stored in one of their fields. This internal data is used to process filters and may prevent filters from being able to be saved or rollups with filters to run correctly. Please click the 'Adjust Filters' link to automatically ensure that all filters have correctly formatted data.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'one rollup was identified to have data incorrectly formatted'), true, false)}">
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-rollupCleanup').toggle();" onmouseout="rh.j$('#help-rollupCleanup').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupsNeedCleaning}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-rollupCleanup">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup configurations were found to have incorrect data to be stored in at least one of their fields. This internal data is used to process rollups and may rollups from being able to be saved or run correctly. Please click the 'Adjust Rollups' link to automatically ensure that all rollup have correctly formatted data.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a child filter that no longer exists'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-filterReference-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-filterReference-{!i.uniqueId}').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupReferencesInvalidFilter}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-filterReference-{!i.uniqueId}">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup setting(s) in your environment reference a child filter that does not exist in your org. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a parent filter that no longer exists'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">                                  
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-parentFilterReference-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-parentFilterReference-{!i.uniqueId}').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupReferencesInvalidFilter}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-parentFilterReference-{!i.uniqueId}">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup setting(s) in your environment reference a parent filter that does not exist in your org. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a child filter that is on the incorrect object'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-filterObjReference-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-filterObjReference-{!i.uniqueId}').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupFiltersIncorrectObject}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-filterObjReference-{!i.uniqueId}">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup setting(s) in your environment reference a child filter on an object that is not the rollup's source object. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a parent filter that is on the incorrect object'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">                                  
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="rh.j$('#help-parentFilterObjReference-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-parentFilterObjReference-{!i.uniqueId}').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupFiltersIncorrectObject}</p> 
+          
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-parentFilterObjReference-{!i.uniqueId}">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup setting(s) in your environment reference a parent filter on an object that is not the rollup's target object. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.</div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to archived records'), true, false)}">                                                  
+                                                <p class="slds-text-heading_label">           
+                                                <a onmouseover="rh.j$('#help-archivedReference-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-archivedReference-{!i.uniqueId}').toggle();" >
+                                                <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                </a>{!$Label.CannotRetrieveArchivedRecords}</p> 
+        
+                                                <div class="slds-col popoverDefaultAbsolute" id="help-archivedReference-{!i.uniqueId}">
+                                                  <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                    <div class="slds-popover__body">One or more rollup setting(s) in your environment reference Task or Event as their foreign key source object, but do not have 'Query Archived Records' enabled. These rollup(s) may encounter errors during processing if a source record references an archived Task or Event. Please click the 'Edit Rollup' link to view the rollup and enable 'Query Archived Records' under the 'Advanced Configuration' section.</div>
+                                                  </div>
+                                                </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'returns over 20,000 child records'), true, false)}">                                                
+                                                <p class="slds-text-heading_label">           
+                                                <a onmouseover="rh.j$('#help-over20kRecs-{!i.uniqueId}').toggle();" onmouseout="rh.j$('#help-over20kRecs-{!i.uniqueId}').toggle();" >
+                                                <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                </a>{!$Label.RollupReturnsOver20kChildRecords}</p> 
+        
+                                                <div class="slds-col popoverDefaultAbsolute" id="help-over20kRecs-{!i.uniqueId}">
+                                                  <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                    <div class="slds-popover__body">One or more rollup setting(s) in your environment returns over 20,000 child records. It is strongly recommended that these rollups be filtered to reduce processing time and ensure accurate results. Please edit the rollup to utilize a child filter, or edit the existing child filter to further exclude unnecessary records. Click 'Reset Value' to temporarily remove the child record count flag for this rollup, or click 'Ignore' to permanently prevent the child record count issue displaying for this rollup.</div>
+                                                  </div>
+                                                </div>
+                                            </apex:outputPanel>
+
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'active DLRS'), true, false)}">
+                                                <p class="slds-text-heading_label">
+                                                  <a onmouseover="rh.j$('#help-convertDLRS').toggle();" onmouseout="rh.j$('#help-convertDLRS').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.ActiveDLRS}</p>
+
+                                                <div class="slds-col popoverDefaultAbsolute" id="help-convertDLRS">
+                                                  <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                    <div class="slds-popover__body">
+                                                      One or more DLRS settings were found to be active in your org. 
+                                                      Active DLRS settings may cause issues with rollups that update the same field.
+                                                      Please visit the Convert Rollups page to view and convert active DLRS settings into rollup settings.
+                                                      Converted DLRS settings will deactivate on rollup save, or they can be deactivated from within DLRS.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </apex:outputPanel>
+
+                                          <apex:outputPanel rendered="{!IF(contains(i.issueName, 'deprecated filters'), true, false)}">
+                                                  <p class="slds-text-heading_label"> 
+                                                  <a onmouseover="rh.j$('#help-convert-filters').toggle();" onmouseout="rh.j$('#help-convert-filters').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.DeprecatedFiltersIdentified}</p>
+                                                  
+                                                  <div class="slds-col popoverDefaultAbsolute" id="help-convert-filters">
+                                                    <div class="slds-popover slds-popover_large slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">
+                                                        One or more deprecated filters were identified in your org. 
+                                                        Deprecated filters cannot be used in Rollup Helper and will need to be converted.
+                                                        Please Note: Batch jobs may take a few minutes to execute. 
+                                                        The Apex Jobs page will open in a new tab to display the status of the filter conversion.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </apex:outputPanel>
+                                          </td>
+                                          <td style="white-space:normal;word-wrap:break-word;">
+                                            <apex:outputPanel rendered="{!i.multipleFound}">
+                                              <apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__ViewIssues}" action="{!populateSelectedValues}" oncomplete="showModal(true, 'issueDisplayModal');" rerender="issueDisplayContainer" status="loading">
+                                                <apex:param name="issueName" value="{!i.issueName}" />
+                                                <apex:param name="issueCategory" value="{!i.issueCategory}" />
+                                              </apex:commandButton>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!!i.multipleFound}">
+                                              <apex:outputPanel id="viewRollupLinks" rendered="{!IF(AND(NOT(ISBLANK(i.rollupName)), i.action != 'Edit Rollup'), true, false)}">
+                                                <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}"  value="{!i.lightningRollupTypeLink}">{!$Label.rh2__ViewRollup}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=i.rollupName])}">{!$Label.rh2__ViewRollup}</apex:outputLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!AND(NOT(ISBLANK(i.rollupName)), OR(i.action == 'View Exceptions', i.action == 'Run Rollup', i.action == 'Adjust Accessibility Settings', i.action == 'Contact Support', i.action == 'Invalid Realtime', i.action == 'Enable Realtime', i.action == 'Review Rollups', i.action == 'Record Count'))}">
+                                                &nbsp;|&nbsp;
+                                              </apex:outputPanel>
+                                              <apex:outputPanel id="viewExceptionsLinks">
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND($User.UIThemeDisplayed != 'Theme3', i.action == 'View Exceptions', NOT(CONTAINS(i.issueName, 'unable to import'))), true, false)}" value="{!LightningExceptionLink}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND($User.UIThemeDisplayed == 'Theme3', i.action == 'View Exceptions', NOT(CONTAINS(i.issueName, 'unable to import'))), true, false)}" value="{!ClassicExceptionLink}">{!i.action}</apex:outputLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!IF(AND(i.action == 'View Exceptions', CONTAINS(i.issueName, 'unable to import')), true, false)}">  
+                                                <apex:outputPanel id="importViewExceptions">
+                                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!LightningExceptionLink}">{!i.action}</apex:outputLink>
+                                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!ClassicExceptionLink}">{!i.action}</apex:outputLink>&nbsp;|&nbsp;
+                                                </apex:outputPanel>
+                                                <apex:commandLink value="{!$Label.rh2__RetryImport}" action="{!doRetryRollupImport}" status="loading" oncomplete="showModal(true, 'retryImportModal');" rerender="importModalHeading, importModalBody, importModalFooter">
+                                                  <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                                </apex:commandLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!IF(i.action == 'Queue Buildup', true, false)}">
+                                                <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupQueue)}">{!$Label.rh2__CheckQueue}</apex:outputLink>&nbsp;|&nbsp;
+                                                <apex:outputLink value="mailto:support@passagetech.com">{!$Label.rh2__ContactSupport}</apex:outputLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!IF(i.action == 'Stuck Queue', true, false)}">
+                                                  <apex:outputPanel id="stuckQueueExceptions">
+                                                    <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!LightningExceptionLink}">{!$Label.rh2__ViewExceptions}</apex:outputLink>
+                                                    <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!ClassicExceptionLink}">{!$Label.rh2__ViewExceptions}</apex:outputLink>&nbsp;|&nbsp;
+                                                  </apex:outputPanel>
+                                                  <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupQueue)}">{!$Label.rh2__CheckQueue}</apex:outputLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!IF(AND(i.action == 'Contact Support', NOT(CONTAINS(i.issueName, 'deactivated'))), true, false)}">
+                                                  <apex:commandLink onclick="showModal(true, 'recalculateRecordScopeModal')" reRender="scopeModalContainer" value="{!$Label.rh2__Recalculate}">
+                                                    <apex:param name="rollupObject" assignTo="{!selectedObjectName}" value="{!i.rollupObject}"/>
+                                                  </apex:commandLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:outputLink target="_blank" value="mailto:support@passagetech.com">
+                                                    {!i.action}
+                                                  </apex:outputLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreDataSkewCalculationIssue}" value="{!$Label.rh2__Ignore}">
+                                                          <apex:param name="rollupObject" assignTo="{!selectedObjectName}" value="{!i.rollupObject}"/>
+                                                  </apex:commandLink>                                                  
+                                              </apex:outputPanel>       
+                                              <apex:outputPanel rendered="{!IF(AND(i.action == 'Contact Support', CONTAINS(i.issueName, 'deactivated')), true, false)}">
+                                                  <apex:outputLink target="_blank" value="mailto:support@passagetech.com">
+                                                    {!i.action}
+                                                  </apex:outputLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="deactivated"/>
+                                                  </apex:commandLink>
+                                              </apex:outputPanel>
+                                              <apex:outputPanel rendered="{!IF(i.action == 'Adjust Accessibility Settings', true, false)}">
+                                                <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!i.lightingFieldAccessibilityLink}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!i.classicFieldAccessibilityLink}">{!i.action}</apex:outputLink>
+                                              </apex:outputPanel>                                               
+                                              <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Update Settings', $User.UIThemeDisplayed != 'Theme3'), true, false )}" value="{!i.lightningSetupLink}">{!i.action}</apex:outputLink>
+                                              <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Update Settings', $User.UIThemeDisplayed == 'Theme3'), true, false )}" value="/setup/ui/editCustomSettingsData.apexp?id={!orgDefaults.Id}&isOrg=1">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Review Rollups', $User.UIThemeDisplayed != 'Theme3'), true, false)}" value="{!LightningAllSettingsLink}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Review Rollups', $User.UIThemeDisplayed == 'Theme3'), true, false)}" value="{!URLFOR($Page.rh2__PS_AllSettings)}">{!i.action}</apex:outputLink>
+                                                <apex:outputPanel rendered="{!i.action == 'Enable Realtime'}">
+                                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!i.lightningManageTriggerLink}">{!i.action}</apex:outputLink>
+                                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!URLFOR($Page.rh2__PS_Manage_Trigger, null, [mast=i.rollupObject])}">{!i.action}</apex:outputLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                                  </apex:commandLink>
+                                                </apex:outputPanel>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Schedule Rollup', $User.UIThemeDisplayed != 'Theme3'), true, false)}" value="{!i.lightningJobLink}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'Schedule Rollup', $User.UIThemeDisplayed == 'Theme3'), true, false)}" value="URLFOR($Page.PS_Job, null, [s=i.rollupName])">{!i.action}</apex:outputLink>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Run Rollup', true, false)}">
+                                                  <apex:commandLink rendered="{!$User.UIThemeDisplayed == 'Theme3'}" target="_blank" action="{!goToRollupRun}">
+                                                    <apex:param name="s" value="{!i.rollupName}"/>
+                                                    {!i.action}
+                                                  </apex:commandLink>
+                                                  <apex:outputLink rendered="{!$User.UIThemeDisplayed != 'Theme3'}" target="_blank" value="{!i.lightningRunLink}">{!i.action}</apex:outputLink> 
+                                                  &nbsp;|&nbsp;
+                                                  <apex:outputPanel rendered="{!IF(contains(i.issueName, 'not been run since the criteria was edited'), true, false)}">
+                                                    <apex:commandLink action="{!ignoreSettingNotRunAfterCritChange}" value="{!$Label.rh2__Ignore}">
+                                                      <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                    </apex:commandLink>
+                                                  </apex:outputPanel>
+                                                  <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run upon creation'), true, false)}">
+                                                    <apex:commandLink action="{!ignoreSettingNotRun}" value="{!$Label.rh2__Ignore}">
+                                                      <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                    </apex:commandLink>
+                                                  </apex:outputPanel>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!i.action == 'Invalid Realtime'}">
+                                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!i.lightningJobLink}">{!$Label.rh2__Schedule}</apex:outputLink>
+                                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!URLFOR($Page.rh2__PS_Job, null, [s=i.rollupName])}">{!$Label.rh2__Schedule}</apex:outputLink>&nbsp;|&nbsp;
+                                                  <apex:outputLink target="_blank" value="https://docs.google.com/document/d/1wJFq4FP6d3wz55J41j4YF8-wXNpIlX5Geh1cCwE92b4/view#heading=h.km36w3b2jste">Create Visualforce Trigger</apex:outputLink>&nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                                      <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                      <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                                  </apex:commandLink> 
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!i.action == 'Record Count'}">
+                                                  <apex:commandLink action="{!removeChildRecordCountFlag}" value="{!$Label.rh2__ResetFlag}">
+                                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                  </apex:commandLink>&nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreChildRecordCountIssue}" value="{!$Label.rh2__Ignore}">
+                                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                                  </apex:commandLink>
+                                                </apex:outputPanel>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Change Running User', true, false)}" onclick="showModal(true, 'runUserModal');" reRender="none">{!$Label.rh2__ChangeRunningUser}</apex:commandLink>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Schedule Job', true, false)}" value="{!$Label.rh2__ScheduleJob}" action="{!doRescheduleExceptionMonitor}" oncomplete="location.reload();"/>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Schedule Scope Job', true, false)}">
+                                                  <apex:commandLink value="{!$Label.rh2__ScheduleScopeJob}" action="{!doRescheduleRecordScope}" oncomplete="location.reload();"/>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreRecordScopeMonitorIssue}" value="{!$Label.rh2__Ignore}"/>
+                                                </apex:outputPanel>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Recreate Schedule Monitor', true, false)}" value="{!$Label.rh2__RecreateScheduleMonitor}"
+                                                action="{!doRescheduleScheduleMonitor}" oncomplete="location.reload();"/>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Cleanup Unused User Settings', true, false)}">
+                                                    <apex:commandLink value="{!$Label.rh2__View} {!$Label.rh2__UnusedUserSettings}" onclick="showModal(true, 'unusedSettingsModal');" reRender="none"/>&nbsp;|&nbsp;
+                                                    <apex:commandLink value="{!$Label.rh2__CleanupUnusedUserSettings}"
+                                                    action="{!cleanupUnusedSettings}" oncomplete="location.reload();"/>
+                                                    &nbsp;|&nbsp;
+                                                    <apex:commandLink action="{!ignoreUnusedCustomSettingIssue}" value="{!$Label.rh2__Ignore}"/>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Raise RPAR', true, false)}">
+                                                  <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!i.lightningSetupLink}">{!i.action}</apex:outputLink>
+                                                  <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed == 'Theme3', true, false)}" value="/setup/ui/editCustomSettingsData.apexp?setupid=CustomSettings&id={!orgDefaults.Id}">{!i.action}</apex:outputLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreRollupsPerAsynchronousRequestIssue}" value="{!$Label.rh2__Ignore}"/>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Update Email Settings', true, false)}">
+                                                  <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!i.lightningEmailSettingsLink}">{!i.action}</apex:outputLink>
+                                                  <apex:outputLink target="_blank" rendered="{!IF($User.UIThemeDisplayed == 'Theme3', true, false)}" value="/email-admin/editOrgEmailSettings.apexp">{!i.action}</apex:outputLink>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreEmailDeliverabilityIssue}" value="{!$Label.rh2__Ignore}"/>
+                                                </apex:outputPanel>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Adjust Filters' && userHasPermissionSet, true, false)}" oncomplete="location.reload();" action="{!cleanupFilterRecNames}">{!i.action}</apex:commandLink>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Adjust Filters' && !userHasPermissionSet, true, false)}" onclick="showModal(true, 'assignPermissionSetModal');" reRender="permissionSetModal">{!i.action}</apex:commandLink>
+                                                <apex:commandLink rendered="{!IF(i.action == 'Adjust Rollups', true, false)}" oncomplete="location.reload();" action="{!cleanupRollupConfig}">{!i.action}</apex:commandLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Edit Rollup' && $User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=i.rollupName])}">{!$Label.rh2__EditRollup}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Edit Rollup' && $User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!i.lightningRollupTypeLink}">{!$Label.rh2__EditRollup}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'View Convert Rollups page' && $User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!LightningConvertRollupsLink}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'View Convert Rollups page' && $User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!URLFOR($Page.rh2__PS_Convert_Rollups)}">{!i.action}</apex:outputLink>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Convert Filters', true, false)}">
+                                                  <apex:commandLink onClick="showModal(true, 'convertDeprecatedFiltersModal');" reRender="validationTextContainer">{!i.action}</apex:commandLink>&nbsp;|&nbsp;
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Convert Filters', true, false)}">
+                                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!i.lightingFieldAccessibilityLink}">View Apex Jobs</apex:outputLink>
+                                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!i.classicFieldAccessibilityLink}">View Apex Jobs</apex:outputLink>
+                                                </apex:outputPanel>
+                                            </apex:outputPanel>
+                                            </td>
+                                        </tr> 
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                            
+                            
+                        </apex:outputPanel>
+                    
+                    </apex:outputPanel>  
+                </section>
+                <footer class="slds-card__footer slds-text-align_left"><h3 class="slds-text-heading_label">If you have any questions...</h3>
+                    <p>If you have any questions or are experiencing an issue that is not addressed by this page, please feel free to <a href="mailto:support@passagetech.com">Contact Support</a> at any time for assistance.</p>
+                    <h3 class="slds-text-heading_label">If would like to receive notifications...</h3>
+                    <apex:commandLink action="{!createNotificationJob}" rendered="{!NOT(healthCheckNotificationsEnabled)}" value="{!$Label.rh2__EnableNotifications}" styleClass="slds-button slds-button_brand" style="margin-top:10px;" oncomplete="location.reload();"/> 
+                    <apex:outputText rendered="{!healthCheckNotificationsEnabled}">Health Check notifications are currently enabled for this environment.  To disable, navigate to the Scheduled Jobs page and abort the job "Rollup Helper Health Check."</apex:outputText></footer>
+            </div>
+
+            <div id="exceptionLifespanModal" style="display:none">
+              <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                  <div class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">{!$Label.rh2__AdjustExceptionLifespan}</h2>
+                    <button type="button" onclick="callCancelExceptionLifespan();showModal(false, 'exceptionLifespanModal');" class="slds-button slds-button_icon-inverse slds-modal__close">
+                      <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="slds-modal__content slds-p-around_medium">
+                    <apex:outputText >{!$Label.rh2__ExceptionLifespanCustomSetting}</apex:outputText>
+                    <br/><br/>
+                    <apex:outputText >{!$Label.rh2__PleaseNoteExceptionMonitor}</apex:outputText>
+                    <br/><br/>
+                    <apex:outputText >{!$Label.rh2__PleaseEnter1To99}</apex:outputText><br/>
+                    <apex:inputText id="exceptionLifespanInput" value="{!exceptionLifespan}" styleClass="slds-input" style="width:8%;" maxlength="2" onkeypress="return limitNumberInput(event);"/>
+                    <apex:outputText > {!$Label.rh2__Days}</apex:outputText>
+                  </div>
+                  <div class="slds-modal__footer">
+                    <apex:outputPanel id="exceptionLifespanFooter">
+                      <apex:commandButton styleClass="slds-button slds-button_brand slds-button_small slds-m-button_x-small" value="{!$Label.rh2__Update}" action="{!updateExceptionLifespan}" oncomplete="showModal(false, 'exceptionLifespanModal');" rerender="exceptionLifespanModal,exceptionLifespanInput" status="loading"/>
+                      <apex:commandButton styleClass="slds-button slds-button_neutral slds-button_small slds-m-button_x-small" value="{!$Label.rh2__Cancel}" action="{!cancelExceptionLifespanChange}" onclick="showModal(false, 'exceptionLifespanModal');" rerender="exceptionLifespanModal,exceptionLifespanInput" status="loading"/>
+                    </apex:outputPanel>
+                  </div>
+                </div>
+              </div>
+              <div class="slds-backdrop slds-backdrop_open"/>
+            </div>
+            <div id="assignPermissionSetModal" style="display:none;">
+              <apex:outputPanel id="permissionSetModal">
+              <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                  <div class="slds-modal__header">
+                    <button type="button" onclick="showModal(false, 'assignPermissionSetModal')" class="slds-button slds-button_icon-inverse slds-modal__close">
+                      <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                        <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="slds-modal__content slds-p-around_medium slds-text-align_center">
+                    {!$Label.GetCorrectPermission}
+                  </div>
+                  <div class="slds-modal__footer">
+                    <apex:commandButton value="{!$Label.rh2__Cancel}" onclick="showModal(false, 'assignPermissionSetModal')" styleClass="slds-button slds-button_neutral" style="margin-left:12px;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="slds-backdrop slds-backdrop--open"/>
+            </apex:outputPanel>
+            </div>
+            <div id="recalculateRecordScopeModal" style="display:none;">
+              <apex:outputPanel id="scopeModalContainer">
+                <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                  <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                      <button type="button" onclick="showModal(false, 'recalculateRecordScopeModal')" class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                          <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium slds-text-align_center">
+                      {!$Label.ReschedulingRecordScope}
+                    </div>
+                    <div class="slds-modal__footer">
+                      <apex:commandLink styleClass="slds-button slds-button_brand" action="{!doRecalculateRecordScope}" oncomplete="location.reload();" value="{!$Label.rh2__RecalculateScope}"/>
+                      <apex:commandButton value="{!$Label.rh2__Cancel}" onclick="showModal(false, 'recalculateRecordScopeModal')" styleClass="slds-button slds-button_neutral" style="margin-left:12px;"/>      
+                    </div>
+                  </div>
+                </div>
+              </apex:outputPanel>
+              <div class="slds-backdrop slds-backdrop_open"/>
+            </div>
+
+            <div id="issueDisplayModal" style="display:none;">
+                <apex:outputPanel id="issueDisplayContainer">
+                <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                  <div class="slds-modal__container" style="width:65% !important; max-width:65%;">
+                    <div class="slds-modal__header">
+                      <apex:outputPanel rendered="{!NOT(contains(selectedIssueCategory, 'Exceptions'))}">
+                        <h2 class="slds-text-heading_medium">List of {!selectedIssueCategory} Issues</h2>
+                      </apex:outputPanel>
+                      <apex:outputPanel rendered="{!contains(selectedIssueCategory, 'Exceptions')}">
+                        <h2 class="slds-text-heading_medium">List of {!selectedIssueCategory}</h2>
+                      </apex:outputPanel>
+                      <button type="button" onclick="showModal(false, 'issueDisplayModal')" class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                          <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="slds-modal__content">
+                      <div style="margin:1% 1%;padding:2% 2%;">
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'uses an inaccessible source object'), true, false)}">
+                          One or more active rollups uses an object that may be inaccessible due to permission sets or may be deleted.
+
+                          Please review all active rollups to identify which object(s) may be inaccessible.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'field format'), true, false)}">
+                          Rollup Helper has encountered one or more exception(s) due to a field formatting issue recently.  Please visit the Rollup Helper Exceptions page 
+                          for more detailed information regarding which record(s) are impacted by this error.  
+                          
+                          A field format issue may be occurring because Rollup Helper is configured to roll up data that does not match a field's correct formatting rules
+                          into the field.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'due to row lock'), true, false)}">
+                          Rollup Helper has failed to update one or more record(s) due to row lock errors recently.  Please visit the Rollup Helper Exceptions page 
+                          for more detailed information regarding the specific record(s) that may have failed to update.  
+                          
+                          Row lock exceptions may be occurring because Rollup Helper attempted to update a record when another process or user was already editing the
+                          record.  Single Parent Processing, in the Rollup Helper settings, may be able to help mitigate row locking errors.  Rollup Helper schedule 
+                          configuration may also be edited if applicable to mitigate row locking errors.  If you need assistance in resolving these errors, please 
+                          contact support@passagetech.com.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'due to a logical loop'), true, false)}">
+                          Rollup Helper has failed to update one or more record(s) due to trigger self reference errors recently.  
+                          Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s) 
+                          that may have failed to update.  
+                          
+                          Self reference from trigger (logical loop) exceptions typically mean that logic exists on a parent record that
+                          updates child record(s) and at the same time logic exists on a child record that updates parent record(s).  If 
+                          Child A has a trigger that updates Parent B, when Rollup Helper updates Child A that trigger fires and updates
+                          Parent B.  If Parent B then has a trigger that updates Child A in turn, the self reference error is encountered.
+                          If you need assistance identifying which trigger(s) or other logic may be involved to cause this error, please 
+                          contact support@passagetech.com.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'required field was missing'), true, false)}">
+                          Rollup Helper has failed to update one or more record(s) because of missing required field values recently.  
+                          Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s)
+                          that may have failed to update.  
+                          
+                          Required Field Missing errors may have started showing up due to a recent org configuration change.  If a field
+                          was recently made required, Rollup Helper will not be able to update any historical records that do not have 
+                          a value filled into the newly required field until the record is updated to include a value in the required field.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'Process Builder'), true, false)}">
+                          Rollup Helper has failed to update one or more record(s) because of a Process Builder / Flow error recently.  
+                          Please visit the Rollup Helper Exceptions page for more detailed information regarding the specific record(s)
+                          that may have failed to update.  
+                          
+                          Cannot Execute Flow Trigger errors may have started showing up due to a recent change to a process or flow.  
+                          If no recent changes to flows or processes were made, or if you need assistance in determining which flow(s)
+                          or process(es) may be encountering an error, please contact support@passagetech.com for assistance.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'unable to import'), true, false)}">
+                          Rollup Helper was unable to import one or more rollup(s) due to missing or invalid field values. 
+                          Please view the PS_Export_Rollups__c exceptions on the Rollup Helper Exceptions page for more detailed information regarding the specific rollup(s) that failed to import.<br/>
+                          This issue may occur if a required field is not defined in a rollup, or if the rollup references a field that does not exist in the current org. Please review the rollup information to ensure that all fields are populated and accurate. 
+                          If you need assistance in resolving this issue, please contact support@passagetech.com.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'impacted by lookup skew'), true, false)}">
+                          Lookup skew exists for one or more rollups using this source object.  Lookup skew means that the number of child records per parent record is disproportionately high and may cause performance impacts to queries run.  The most common remedies for lookup skew are adjusting record scope and implementing more selective filters for each rollup.  Our support team (support@passagetech.com) can assist in both determining specifically which rollups are affected by lookup skew and in adjusting filters and record scope to prevent governor limit errors from being encountered by the rollup query due to lookup skew.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'We encountered an error attempting'), true, false)}">
+                          <p>The Rollup Helper record scope calculator encountered a query exception when attempting to calculate record scope for an object in your environment. You can disregard this message if you have not noticed any issues with a rollup related to data skew, including but not limited to:</p>
+                          <ul class="slds-list_dotted">
+                            <li>Too many query rows: 50001</li>
+                            <li>Rollup results are not accurate</li>
+                          </ul>
+                          <br/>
+                          Contact our support team at support@passagetech.com if you notice any issues.  Our support team can also assist in determining the likelihood that rollups for this object are affected by lookup skew, as well as helping to prevent any errors that may occur due to lookup skew.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'deactivated'), true, false)}">
+                          A rollup setting that has been deactivated due to an exception has been found.  This issue is most commonly caused by changes made to 
+                          fields or objects that are referenced by the rollup, so please make sure that all relevant fields and objects still exist.
+                          
+                          Once you have done so, you can try reactivating the rollup.  Once the rollup validation runs again, the exception should be removed 
+                          and the rollup should resume functioning.
+                          
+                          If this does not resolve the issue, please contact support for assistance in troubleshooting the exception.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'Manual Run Only'), true, false)}">
+                          One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Manual Run Only rollups will never automatically
+                          update and will need to be manually rerun any time you wish to see an updated calculation.
+
+                          <br/><br/>
+                          
+                          If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either enable real time for the 
+                          rollup or create an active schedule.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'run in realtime'), true, false)}">
+                          One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Unfortunately a realtime trigger cannot be created on the source object for this rollup.
+                          If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either create a schedule or create a visualforce page trigger.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'run upon creation'), true, false)}">
+                          One or more rollup setting(s) in your environment most likely was not run upon creation.
+                          Manually running the rollup when it is created ensures that the field is initialized for all records, regardless of whether
+                          the record has been recently updated or not.  Without the manual run, historical data may not be correctly rolled up.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'not been run since the criteria was edited'), true, false)}">
+                          One or more rollup setting(s) in your environment has not been run since its criteria changed. 
+                          
+                          To ensure records accurately reflect the criteria of the rollup, please manually run the rollup.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'We were unable'), true, false)}">
+                          <p>The ContentDocumentLink object has query restrictions that prevent Rollup Helper from calculating the record scope on the object. You can disregard this message if you have not noticed any issues with a rollup related to data skew, including but not limited to:</p>
+                          <ul class="slds-list_dotted">
+                            <li>Too many query rows: 50001</li>
+                            <li>Rollup results are not accurate</li>
+                          </ul>
+                          <br/>
+                          <p>Contact our support team at support@passagetech.com if you notice any issues.  Our support team can also assist in determining the likelihood that rollups for this object are affected by lookup skew, as well as helping to prevent any errors that may occur due to lookup skew.</p>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'found to not be accessible'), true, false)}">
+                          A target field was found to not have accessibility settings set. Please ensure that target fields are added to all desired layouts and permission sets 
+                          to ensure visibility of the target field.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(AND(contains(selectedIssueName, 'references a child filter that no longer exists'), NOT(contains(selectedIssueName, 'encountered the exception'))), true, false)}">
+                          One or more rollup setting(s) in your environment reference a child filter that does not exist in your org. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(AND(contains(selectedIssueName, 'references a parent filter that no longer exists'), NOT(contains(selectedIssueName, 'encountered the exception'))), true, false)}">
+                          One or more rollup setting(s) in your environment reference a parent filter that does not exist in your org. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(AND(contains(selectedIssueName, 'references a child filter that is on the incorrect object'), NOT(contains(selectedIssueName, 'encountered the exception'))), true, false)}">
+                          One or more rollup setting(s) in your environment reference a child filter on an object that is not the rollup's source object. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(AND(contains(selectedIssueName, 'references a parent filter that is on the incorrect object'), NOT(contains(selectedIssueName, 'encountered the exception'))), true, false)}">
+                          One or more rollup setting(s) in your environment reference a parent filter on an object that is not the rollup's target object. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'due to archived records'), true, false)}">
+                          One or more rollup setting(s) in your environment reference Task or Event as their foreign key source object, but do not have 'Query Archived Records' enabled. These rollup(s) may encounter errors during processing if a source record references an archived Task or Event. Please click the 'Edit Rollup' link to view the rollup and enable 'Query Archived Records' under the 'Advanced Configuration' section.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'active DLRS'), true, false)}">
+                          One or more DLRS settings were found to be active in your org. 
+                          Active DLRS settings may cause issues with rollups that update the same field.
+                          Please visit the Convert Rollups page to view and convert active DLRS settings into rollup settings.
+                          Converted DLRS settings will deactivate on rollup save, or they can be deactivated from within DLRS.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'deprecated filters'), true, false)}">
+                          One or more deprecated filters were identified in your org. 
+                          Deprecated filters cannot be used in Rollup Helper and will need to be converted.
+                          Please Note: Batch jobs may take a few minutes to execute. 
+                          The Apex Jobs page will open in a new tab to display the status of the filter conversion.
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(contains(selectedIssueName, 'returns over 20,000 child records'), true, false)}">
+                          One or more rollup setting(s) in your environment returns over 20,000 child records. It is strongly recommended that these rollups be filtered to reduce processing time and ensure accurate results. Please edit the rollup to utilize a child filter, or edit the existing child filter to further exclude unnecessary records. Click 'Reset Value' to temporarily remove the child record count flag for this rollup, or click 'Ignore' to permanently prevent the child record count issue displaying for this rollup.
+                        </apex:outputPanel>
+                      </div>
+                      <apex:commandLink style="float:right;margin-right:12px;margin-bottom:6px;" rendered="{!IF(OR(contains(selectedIssueName, 'run upon creation'),contains(selectedIssueName, 'run in realtime'),contains(selectedIssueName, 'Manual Run Only'), contains(selectedIssueName, 'has been deactivated'), contains(selectedIssueName, 'returns over 20,000 child records'), contains(selectedIssueName, 'not been run since the criteria was edited')), true, false)}" action="{!ignoreAllIssues}" value="{!$Label.rh2__IgnoreAll}"></apex:commandLink>
+                      <apex:outputText value="{!filteredIssueCount} {!filteredIssueSeverity} Risk Issues" style="float:right;margin-right:12px;margin-bottom:6px;"/>
+                      <table class="slds-table slds-no-row-hover slds-table_bordered slds-table_fixed-layout" style="margin-left:auto; margin-right:auto;">
+                        <thead>
+                          <tr>
+                            <th style="width: 6%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__RiskLevel}</th>
+                            <th style="width: 34%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__IssueFound}</th>
+                            <th style="width: 30%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__IssueSummary}</th>
+                            <th style="width: 30%;white-space:normal;word-wrap:break-word;">{!$Label.rh2__Action}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <apex:repeat value="{!filteredIssues}" var="i">
+                            <tr>
+                              <td>
+                                {!i.severity}
+                              </td>
+                              <td title="{!i.issueName}" class="slds-truncate" style="word-wrap:break-word;white-space:normal;">
+                                  {!i.issueName}
+                              </td>
+                              <td style="white-space:normal;word-wrap:break-word;width: 30%;">
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'uses an inaccessible source object'), true, false)}"> 
+                                  <p class="slds-text-heading_label"> {!i.rollupObject} {!$Label.rh2__ObjectIsInaccessible}</p>        
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'field format'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__FieldFormatExceptionFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to row lock'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RowLockExceptionsFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to a logical loop'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__TriggerLoopExceptionsFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'required field was missing'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RequiredFieldExceptionsFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Process Builder'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__ProcessBuilderFlowExceptionsFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'unable to import'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupCouldNotBeImported}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'impacted by lookup skew'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__LookupSkewExists}</p>
+                                </apex:outputPanel>  
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'We encountered an error attempting'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__LookupSkewCalculationFailed}</p>
+                                </apex:outputPanel>           
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'deactivated'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupDeactivated}</p> 
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Manual Run Only'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__ManualRunOnlyRollupFound}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run in realtime'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__UnableToEnableRealtime}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run upon creation'), true, false)}"> 
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupNotRun}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'not been run since the criteria was edited'), true, false)}">
+                                  <p class="slds-text-heading_label"> {!$Label.rh2__RollupNotRunSinceCriteria}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'We were unable'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__CDLLookupSkewCalculation}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'found to not be accessible'), true, false)}"> 
+                                  <p class="slds-text-heading_label">Target field is not accessible</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a child filter that no longer exists'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupReferencesInvalidFilter}</p> 
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a parent filter that no longer exists'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                  <p>{!$Label.rh2__RollupReferencesInvalidFilter}</p>
+                                </apex:outputPanel> 
+                                <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a child filter that is on the incorrect object'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupFiltersIncorrectObject}</p> 
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a parent filter that is on the incorrect object'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                  <p>{!$Label.rh2__RollupFiltersIncorrectObject}</p>
+                                </apex:outputPanel> 
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'due to archived records'), true, false)}">                                              
+                                  <p class="slds-text-heading_label">
+                                    {!$Label.rh2__CannotRetrieveArchivedRecords}
+                                  </p> 
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'active DLRS'), true, false)}">
+                                  <p class="slds-text-heading_label">
+                                    {!$Label.rh2__ActiveDLRS}
+                                  </p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'deprecated filters'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__DeprecatedFiltersIdentified}</p>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(contains(i.issueName, 'returns over 20,000 child records'), true, false)}">
+                                  <p class="slds-text-heading_label">{!$Label.rh2__RollupReturnsOver20kChildRecords}</p>
+                                </apex:outputPanel>
+                              </td>
+                              <td>
+                                <apex:outputPanel id="viewRollupLinks" rendered="{!IF(AND(NOT(ISBLANK(i.rollupName)), i.action != 'Edit Rollup'), true, false)}">
+                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!i.lightningRollupTypeLink}">{!$Label.rh2__ViewRollup}</apex:outputLink>
+                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=i.rollupName])}">{!$Label.rh2__ViewRollup}</apex:outputLink>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!AND(NOT(ISBLANK(i.rollupName)), OR(i.action == 'View Exceptions', i.action == 'Run Rollup', i.action == 'Adjust Accessibility Settings', i.action == 'Contact Support', i.action == 'Enable Realtime', i.action == 'Review Rollups', i.action == 'Record Count', i.action == 'Invalid Realtime'))}">
+                                  &nbsp;|&nbsp;
+                                </apex:outputPanel>
+                                <apex:outputPanel id="viewExceptionsLinks">
+                                  <apex:outputLink target="_blank" rendered="{!IF(AND($User.UIThemeDisplayed != 'Theme3', i.action == 'View Exceptions', NOT(CONTAINS(i.issueName, 'unable to import'))), true, false)}" value="{!LightningExceptionLink}">{!i.action}
+                                    <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                  </apex:outputLink>
+                                  <apex:outputLink target="_blank" rendered="{!IF(AND($User.UIThemeDisplayed == 'Theme3', i.action == 'View Exceptions', NOT(CONTAINS(i.issueName, 'unable to import'))), true, false)}" value="{!ClassicExceptionLink}">{!i.action}
+                                    <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                  </apex:outputLink>
+                                </apex:outputPanel>
+
+                                <apex:outputPanel rendered="{!IF(AND(i.action == 'View Exceptions', CONTAINS(i.issueName, 'unable to import')), true, false)}">  
+                                  <apex:outputPanel id="importViewExceptions">
+                                    <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!LightningExceptionLink}">{!i.action}
+                                      <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                    </apex:outputLink>
+                                    <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!ClassicExceptionLink}">{!i.action}
+                                      <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                    </apex:outputLink>
+                                    &nbsp;|&nbsp;
+                                  </apex:outputPanel>
+                                  <apex:commandLink value="{!$Label.rh2__RetryImport}" action="{!doRetryRollupImport}" status="loading" oncomplete="showModal(true, 'retryImportModal');" rerender="importModalHeading, importModalBody, importModalFooter">
+                                    <apex:param name="exceptionLink" value="{!URLFOR($Page.rh2__PS_viewExceptions)}"/>
+                                  </apex:commandLink>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(AND(i.action == 'Contact Support', NOT(CONTAINS(i.issueName, 'deactivated'))), true, false)}">
+                                  <apex:outputPanel rendered="{!IF(NOT(ISBLANK(i.rollupObject)),true, false)}">
+                                    <apex:commandLink onclick="showModal(true, 'recalculateRecordScopeModal')" reRender="scopeModalContainer" value="{!$Label.rh2__Recalculate}">
+                                      <apex:param name="rollupObject" assignTo="{!selectedObjectName}" value="{!i.rollupObject}"/>
+                                    </apex:commandLink>
+                                    &nbsp;|&nbsp;
+                                  </apex:outputPanel>
+                                  <apex:outputLink target="_blank" value="mailto:support@passagetech.com">
+                                    {!i.action}
+                                  </apex:outputLink>
+                                  &nbsp;|&nbsp;
+                                  <apex:commandLink action="{!ignoreDataSkewCalculationIssue}" value="{!$Label.rh2__Ignore}">
+                                    <apex:param name="rollupObject" assignTo="{!selectedObjectName}" value="{!i.rollupObject}"/>
+                                  </apex:commandLink>                                                  
+                                </apex:outputPanel>       
+                                <apex:outputPanel rendered="{!IF(AND(i.action == 'Contact Support', CONTAINS(i.issueName, 'deactivated')), true, false)}">
+                                  <apex:outputLink target="_blank" value="mailto:support@passagetech.com">
+                                    {!i.action}
+                                  </apex:outputLink>
+                                  &nbsp;|&nbsp;
+                                  <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="deactivated"/>
+                                  </apex:commandLink>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!IF(i.action == 'Adjust Accessibility Settings', true, false)}">
+                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!i.lightingFieldAccessibilityLink}">{!i.action}</apex:outputLink>
+                                  <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!i.classicFieldAccessibilityLink}">{!i.action}</apex:outputLink>
+                                </apex:outputPanel>      
+                                <apex:outputPanel rendered="{!i.action == 'Enable Realtime'}">
+                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!i.lightningManageTriggerLink}">{!i.action}</apex:outputLink>
+                                  <apex:outputLink target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!URLFOR($Page.rh2__PS_Manage_Trigger, null, [mast=i.rollupObject])}">{!i.action}</apex:outputLink>
+                                  &nbsp;|&nbsp;
+                                  <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                  </apex:commandLink>
+                                </apex:outputPanel>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Schedule Rollup' && $User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!i.lightningJobLink}">{!i.action}</apex:outputLink>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Schedule Rollup' && $User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!URLFOR($Page.rh2__PS_Job, null, [s=i.rollupName])}">{!i.action}</apex:outputLink>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Review Rollups' && $User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!LightningAllSettingsLink}">{!i.action}</apex:outputLink>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Review Rollups' && $User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!URLFOR($Page.rh2__PS_AllSettings)}">{!i.action}</apex:outputLink>
+                                <apex:outputPanel rendered="{!IF(i.action == 'Run Rollup', true, false)}">
+                                  <apex:commandLink rendered="{!$User.UIThemeDisplayed == 'Theme3'}" target="_blank" action="{!goToRollupRun}">
+                                    <apex:param name="s" value="{!i.rollupName}"/>
+                                    {!i.action}
+                                  </apex:commandLink>
+                                  <apex:outputLink rendered="{!$User.UIThemeDisplayed != 'Theme3'}" target="_blank" value="{!i.lightningRunLink}">{!i.action}</apex:outputLink> 
+                                  &nbsp;|&nbsp;
+                                  <apex:outputPanel rendered="{!IF(contains(i.issueName, 'not been run since the criteria was edited'), true, false)}">
+                                    <apex:commandLink action="{!ignoreSettingNotRunAfterCritChange}" value="{!$Label.rh2__Ignore}">
+                                      <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                    </apex:commandLink>
+                                  </apex:outputPanel>
+                                  <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run upon creation'), true, false)}">
+                                    <apex:commandLink action="{!ignoreSettingNotRun}" value="{!$Label.rh2__Ignore}">
+                                      <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                    </apex:commandLink>
+                                  </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!i.action == 'Invalid Realtime'}">
+                                    <apex:commandLink rendered="{!$User.UIThemeDisplayed == 'Theme3'}" target="_blank" action="{!goToRollupSchedule}">
+                                        <apex:param name="s" value="{!i.rollupName}"/>
+                                        {!$Label.rh2__Schedule}
+                                    </apex:commandLink>
+                                    <apex:outputLink rendered="{!$User.UIThemeDisplayed != 'Theme3'}" target="_blank" value="{!i.lightningJobLink}">{!$Label.rh2__Schedule}</apex:outputLink>&nbsp;|&nbsp;
+                                    <apex:outputLink target="_blank" value="https://docs.google.com/document/d/1wJFq4FP6d3wz55J41j4YF8-wXNpIlX5Geh1cCwE92b4/view#heading=h.km36w3b2jste">Create Visualforce Trigger</apex:outputLink>&nbsp;|&nbsp;
+                                    <apex:commandLink action="{!ignoreSuggestion}" value="{!$Label.rh2__Ignore}">
+                                        <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                        <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                    </apex:commandLink> 
+                                </apex:outputPanel>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Edit Rollup' && $User.UIThemeDisplayed == 'Theme3', true, false)}" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=i.rollupName])}">{!$Label.rh2__EditRollup}</apex:outputLink>
+                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'Edit Rollup' && $User.UIThemeDisplayed != 'Theme3', true, false)}" value="{!i.lightningRollupTypeLink}">{!$Label.rh2__EditRollup}</apex:outputLink>
+                                <apex:outputPanel rendered="{!i.action == 'Record Count'}">
+                                  <apex:commandLink action="{!removeChildRecordCountFlag}" value="{!$Label.rh2__ResetFlag}">
+                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                  </apex:commandLink>&nbsp;|&nbsp;
+                                  <apex:commandLink action="{!ignoreChildRecordCountIssue}" value="{!$Label.rh2__Ignore}">
+                                    <apex:param name="selectedRollupName" assignTo="{!selectedRollupName}" value="{!i.rollupName}"/>
+                                    <apex:param name="selectedSuggestion" assignTo="{!selectedSuggestion}" value="{!i.action}"/>
+                                  </apex:commandLink>
+                                </apex:outputPanel>
+                              </td>
+                            </tr>
+                          </apex:repeat>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="slds-modal__footer">
+                      <apex:commandButton value="{!$Label.rh2__Close}" onclick="showModal(false, 'issueDisplayModal')" styleClass="slds-button slds-button_neutral" rerender="none"/>      
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-backdrop slds-backdrop_open"/>
+                </apex:outputPanel>
+            </div>
+
+            <div id="convertDeprecatedFiltersModal" style="display:none">
+              <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                  <div class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">{!$Label.ConvertDeprecatedFilters}</h2>
+                    <button type="button" onclick="showModal(false, 'convertDeprecatedFiltersModal');" class="slds-button slds-button_icon-inverse slds-modal__close">
+                      <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <apex:outputPanel id="validationTextContainer">
+                    <div class="slds-modal__content slds-p-around_medium">
+                      <apex:outputtext >
+                        Depreciated filters were found in your org. 
+                        The filters will need to be converted in order for Rollup Helper to process records as expected.
+                        Please Note: Batch jobs may take a few minutes to execute. 
+                        The Apex Jobs page will open in a new tab to display the status of the filter conversion.                      
+                      </apex:outputtext>
+                    </div>
+                  </apex:outputPanel>
+                  <div class="slds-modal__footer">
+                      <apex:commandLink action="{!convertDeprecatedFilters}" onclick="showModal(false, 'convertDeprecatedFiltersModal')" rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="Convert" styleClass="slds-button slds-button_brand"/>
+                      <apex:commandLink action="{!convertDeprecatedFilters}" onclick="showModal(false, 'convertDeprecatedFiltersModal')" rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="Convert" styleClass="slds-button slds-button_brand"/>
+                      <apex:commandButton value="{!$Label.rh2__Close}" onclick="showModal(false, 'convertDeprecatedFiltersModal')" styleClass="slds-button slds-button_neutral"/>      
+                  </div>
+                </div>
+              </div>
+              <div class="slds-backdrop slds-backdrop_open"/>
+            </div>
+            <c:PS_Running_Jobs />
+
+            <div id='runUserModal' style="display:none">
+              <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                  <div class="slds-modal__container">
+                      <div class="slds-modal__header">
+                          <h2 class="slds-text-heading_medium">{!$Label.rh2__ChangeRunningUser}</h2>
+                          <button type="button" onclick='showModal(false, "runUserModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                              <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                                  <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                              </svg>
+                          </button>
+                              
+                      </div>
+                      <div class="slds-modal__content slds-p-around_medium">
+                          <apex:outputText >In order to change the running user for Rollup Helper, please take the following steps:</apex:outputText>
+                          <ol class="slds-list_ordered">
+                            <li>Navigate to "Setup"</li>
+                            <li>Search "Setup" for "Scheduled Jobs" (or navigate to it via Monitor > Jobs > Scheduled Jobs in the left-hand column in classic).</li>
+                            <li>Delete the scheduled job named Rollup Batch Agent - Hourly.</li>
+                            <li>While logged in as the desired Run As user, navigate to the All Rollups page. There, open the settings menu with the gear icon at the 
+                                top of the page and click the "Run As..." button at the bottom of the window that pops up.  
+                            </li>
+                            <li>The All Rollups page should now say "Running as [Current User]" at the bottom of the rollup display table, and upon return to the scheduled jobs page, 
+                                 a "Rollup Batch Agent - Hourly" job should exist that was submitted by the current user.
+                            </li>
+                          </ol>
+                      </div>
+                      <div class="slds-modal__footer">
+                          <div class="slds-x-small-buttons_horizontal">
+                             <button type="button" onclick='showModal(false, "runUserModal");' class="slds-button slds-button_neutral slds-button_small slds-m-bottom_x-small">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="slds-backdrop slds-backdrop_open"></div>
+          </div> 
+
+          <div id="retryImportModal" style="display:none;">
+            <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+              <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                  <apex:outputPanel id="importModalHeading">
+                    <apex:outputPanel rendered="{!NOT(hasRollupImportErrors)}"><h2 class="slds-text-heading_medium">{!$Label.rh2__ImportRetrySucceeded}</h2></apex:outputPanel>
+                    <apex:outputPanel rendered="{!hasRollupImportErrors}"><h2 class="slds-text-heading_medium">{!$Label.rh2__ImportRetryFailed}</h2></apex:outputPanel>
+                  </apex:outputPanel>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">
+                  <apex:outputPanel id="importModalBody">
+                    <apex:outputPanel rendered="{!NOT(hasRollupImportErrors)}"><apex:outputText >{!$Label.rh2__AllRollupsImported}</apex:outputText></apex:outputPanel>
+                    <apex:outputPanel rendered="{!hasRollupImportErrors}"><apex:outputText >{!$Label.rh2__UnableToImportRollup}</apex:outputText></apex:outputPanel>
+                  </apex:outputPanel>
+                </div>
+                <div class="slds-modal__footer">
+                  <apex:outputPanel id="importModalFooter">
+                    <apex:outputLink target="_blank" rendered="{!AND(hasRollupImportErrors, $User.UIThemeDisplayed != 'Theme3')}" styleClass="slds-button slds-button_brand slds-button_small slds-m-button_x-small" value="{!LightningExceptionLink}">{!$Label.rh2__ViewExceptions}</apex:outputLink>
+                    <apex:outputLink target="_blank" rendered="{!AND(hasRollupImportErrors, $User.UIThemeDisplayed == 'Theme3')}" styleClass="slds-button slds-button_brand slds-button_small slds-m-button_x-small" value="{!ClassicExceptionLink}">{!$Label.rh2__ViewExceptions}</apex:outputLink>
+                    <apex:commandButton styleClass="slds-button slds-button_neutral slds-button_small slds-m-button_x-small" value="{!$Label.rh2__Close}" onclick="showModal(false, 'retryImportModal');" rerender=""/>
+                  </apex:outputPanel>
+                </div>
+              </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+          </div>
+
+          <div id="unusedSettingsModal" style="display:none;">
+            <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+              <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">{!$Label.UnusedUserSettings}</h2>
+                    <button type="button" onclick='showModal(false, "unusedSettingsModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">
+                  <center>{!$Label.UserSettingsHaveNotBeenUsed}:</center><br/>
+                  <apex:outputPanel id="unusedSettingsTable">
+                    <table class="slds-table slds-table_bordered">
+                      <thead>
+                        <tr>
+                          <th class="slds-text-heading_small" style="max-width:25px;">{!$Label.rh2__Action}</th>
+                          <th class="slds-text-heading_small">{!$Label.rh2__Name}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <apex:repeat value="{!staleSettings}" var="setting">
+                          <tr>
+                            <td style="max-width:25px;">
+                              <apex:commandLink action="{!deleteSingleUserSetting}" value="{!$Label.rh2__Delete}" reRender="unusedSettingsTable" status="loading">
+                                <apex:param name="settingId" value="{!setting.settingId}"/>
+                              </apex:commandLink>
+                            </td>
+                            <td>{!setting.settingName}</td>
+                          </tr>
+                        </apex:repeat>
+                      </tbody>
+                    </table>
+                  </apex:outputPanel>
+                </div>
+                <div class="slds-modal__footer">
+                  <apex:outputPanel id="unusedSettingsFooter">
+                    <apex:commandLink styleClass="slds-button slds-button_brand slds-button_small slds-m-button_x-small" value="{!$Label.rh2__Delete} {!$Label.rh2__All}" action="{!cleanupUnusedSettings}" status="loading"/>
+                    <apex:commandButton styleClass="slds-button slds-button_neutral slds-button_small slds-m-button_x-small" value="{!$Label.rh2__Close}" onclick="showModal(false, 'unusedSettingsModal');" rerender="unusedSettingsModal"/>
+                  </apex:outputPanel>
+                </div>
+              </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+          </div>
+          <div id="rollupHelperJobs">
+
+          </div>
+          <c:Loading_Spinner opacity="1"/>
+        </div>
+        <br/>
+        <c:PS_additionalInformation ></c:PS_additionalInformation>
+          
+    </apex:form>
+    </html>
+</apex:page>

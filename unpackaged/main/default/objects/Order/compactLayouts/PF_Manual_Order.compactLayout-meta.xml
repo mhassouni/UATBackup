@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Manual_Order</fullName>
+    <fields>OrderNumber</fields>
+    <fields>AccountId</fields>
+    <fields>PF_Nom_de_la_commande__c</fields>
+    <fields>Status</fields>
+    <fields>TotalAmount</fields>
+    <fields>Icon_commande__c</fields>
+    <label>Manual Order</label>
+</CompactLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Mail Bienvenue Community</name>
+    <style>none</style>
+    <subject>Bienvenue sur votre espace client Petit Forestier</subject>
+    <textOnly>Bienvenue sur votre espace client Petit Forestier Retrouvez toutes les informations nécessaires à la bonne gestion de votre flotte.
+
+L’espace client Petit Forestier est votre partenaire privilégié dans le suivi des interventions.
+
+Identifiant de connexion
+Nom d’utilisateur
+{!Receiving_User.Username}
+
+Pour faciliter vos futures connexions, nous vous conseillons d’enregistrer le lien suivant dans vos favoris : {!Community_Url}
+
+Nous vous remercions de votre confiance et restons plus que jamais engagés à vos côtés.
+
+Le Service Relations Clients
+
+Trouver une agence Demander un devis 0 800 100 296 petitforestier.com
+
+Ce message vous est envoyé par un automate. Merci de ne pas y répondre.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

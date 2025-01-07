@@ -1,0 +1,156 @@
+<aura:component controller ="PRG_AlertGoogleController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    
+<aura:attribute name="startDatetime" type="Datetime" />
+<aura:attribute name="recordId" type="String"/>    
+<aura:attribute name="fields" type="Object" />
+<aura:attribute name="error" type="String"/>
+    
+<force:recordData aura:id="forceRecordCmp" recordId="{! v.recordId }" layoutType="FULL"
+    fields="Type_Alerte__c" mode="VIEW" targetFields="{!v.fields}" targetError="{!v.error}" />
+
+<lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Alerte__c">
+
+    
+    <aura:if isTrue="{! v.fields.Type_Alerte__c == 'Tension batterie basse'}">
+        <div class="exampleHolder">
+        	<lightning:spinner aura:id="mySpinner"  class="slds-hide"/>
+    	</div>
+
+       <div class="slds-grid slds-wrap">        
+        
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Tension_batterie_2H__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Tension_Batterie_2H_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Nb_Demarrages_12H__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Nb_Demarrages_12H_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Nb_Kilometres_12H__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Nb_Kilometres_12H_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Niveau_batterie_actuel__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Niveau_Batterie_Actuel_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Temperature_Exterieure__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Temperature_Exterieure_Update__c" />
+            </div>            
+           <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Dernier_Etat_Moteur__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Dernier_Etat_Moteur_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Date_Dernier_Etat_Moteur__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Date_Dernier_Etat_Moteur_Update__c" />
+            </div>
+           <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Vitesse_Du_Vehicule__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Vitesse_Du_Vehicule_Update__c" />
+            </div>
+           	<div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Code_defaut_alternateur__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Code_defaut_alternateur_update__c" />
+            </div>
+           	<div class="slds-col slds-size_1-of-2">
+            <div class="slds-col slds-size_1-of-1">
+                <lightning:outputField fieldName="Occurrences__c" />
+            </div>
+        	</div>           	
+           	<div class="slds-col slds-size_1-of-2" style="text-align: right; margin-top:3px;">
+            	<lightning:button label="Refresh" title="Non-primary action" onclick="{!c.RefreshBatterie}" class="slds-button" >Refresh</lightning:button>
+                <aura:if isTrue="{!v.startDatetime}">
+                	<span>&nbsp;&nbsp;Mis à jour  : </span> <ui:outputText value="{!v.startDatetime}" />
+               	</aura:if>
+        	</div>                     
+      </div>
+    </aura:if>
+    
+    <aura:if isTrue="{! v.fields.Type_Alerte__c == 'Voyant moteur'}">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_sujet__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_sujet_update__c" />
+            </div>            
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_description__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_description_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_allume_depuis__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_allume_depuis_update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Occurrences__c" />
+            </div>
+            <!--<div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_protocole__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Voyant_moteur_protocole_Update__c" />
+            </div>-->            
+            <div class="slds-col slds-size_1-of-1" style="text-align: right; margin-top:3px;">
+            	<lightning:button label="Refresh" title="Non-primary action" onclick="{!c.RefreshBatterie}" class="slds-button" >Refresh</lightning:button>
+                <aura:if isTrue="{!v.startDatetime}">
+                	<span>&nbsp;&nbsp;Mis à jour  : </span> <ui:outputText value="{!v.startDatetime}" />
+               	</aura:if>
+        	</div>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{! OR(v.fields.Type_Alerte__c == 'Coupure basse pression A01', 
+                     v.fields.Type_Alerte__c == 'Coupure basse pression')}">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Sujet__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Sujet_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Description__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Description_Update__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:outputField fieldName="Occurrences__c" />
+            </div>
+            
+            <div class="slds-col slds-size_1-of-1" style="text-align: right; margin-top:3px;">
+            	<lightning:button label="Refresh" title="Non-primary action" onclick="{!c.RefreshBatterie}" class="slds-button" >Refresh</lightning:button>
+                <aura:if isTrue="{!v.startDatetime}">
+                	<span>&nbsp;&nbsp;Mis à jour  : </span> <ui:outputText value="{!v.startDatetime}" />
+               	</aura:if>
+        	</div>
+        </div>
+    </aura:if>
+    
+</lightning:recordViewForm>
+</aura:component>

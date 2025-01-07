@@ -1,0 +1,33 @@
+<apex:page controller="rh2.PS_FilterManagement_Controller" title="View Filters" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0" showHeader="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head> 
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <apex:includeLightning />
+    </head>
+
+    <style>
+        .slds-button_icon-border, .borderedButton > button {
+            border: 1px solid rgb(201, 201, 201) !important;
+        }
+
+        td .slds-button_icon-border {
+            margin-right: 12px !important;
+        }
+    </style>
+
+    <script>
+        let namespace = "{!IF(CONTAINS($CurrentPage.Name, "__"),LEFT($CurrentPage.Name,FIND("__", $CurrentPage.Name)-1),"c")}";
+        $Lightning.use( namespace + ":PS_Filter_Management", function() {
+            $Lightning.createComponent( namespace + ":ps_filterManagement",
+                                       {},
+                                       "filterManagementLwc", function(cmp) {}
+                                      );  
+        });
+
+        document.addEventListener('lightning__showtoast', event => {
+            sforce.one.showToast(event.toastAttributes);
+        });
+    </script>
+    <div id="filterManagementLwc"></div>
+    </html>
+</apex:page>

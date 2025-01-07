@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DRV__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( 
+PaysRegionPF__c ,
+ 
+&quot;DRO Nord 1&quot;,
+&quot;DRV Nord&quot;,
+&quot;DRO Nord 7&quot;, 
+&quot;DRV Nord&quot;,
+
+&quot;DRO Nord 4&quot;,
+&quot;DRV Nord Ouest&quot;,
+&quot;DRO Nord 5&quot;,
+&quot;DRV Nord Ouest&quot;,
+&quot;DRO Nord 6&quot;, 
+&quot;DRV Nord Ouest&quot;,
+
+&quot;DRO Nord 2&quot; ,
+&quot;DRV Nord Est&quot;,
+&quot;DRO Nord 3&quot;, 
+&quot;DRV Nord Est&quot;,
+
+&quot;DRO IDF 1&quot;,
+&quot;DRV IDF&quot;,
+&quot;DRO IDF 2&quot;, 
+&quot;DRV IDF&quot;,
+
+&quot;DRO Sud 5&quot;,
+&quot;RV Sud Ouest&quot;, 
+&quot;DRO Sud 6&quot;, 
+&quot;RV Sud Ouest&quot;, 
+
+&quot;DRO Sud 1&quot;,
+&quot;DRV Sud Centre&quot;,
+&quot;DRO Sud 4&quot;,
+&quot;DRV Sud Centre&quot;, 
+&quot;DRO Sud 7&quot;, 
+&quot;DRV Sud Centre&quot;, 
+
+&quot;DRO Sud 3&quot;,
+&quot;DRV Sud Est&quot;, 
+&quot;DRO Sud 2&quot;, 
+&quot;DRV Sud Est&quot;, 
+
+&quot;-&quot;)</formula>
+    <label>DRV</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

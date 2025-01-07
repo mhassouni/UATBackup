@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaxBundleDuration</fullName>
+    <inlineHelpText>S&#39;applique uniquement aux réductions d&#39;agrégation. Saisissez la durée maximum du paquet, en minutes, calculée en faisant la somme des membres du paquet après la réduction.</inlineHelpText>
+</CustomField>

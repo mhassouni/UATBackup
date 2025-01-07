@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsThereVFSAD__c</fullName>
+    <formula>IF(AND(Account__r.Qte_Opp_Signees_VF__c &gt;0, ISPICKVAL(PFRegion__c,&#39;PITA&#39;)),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsThereVFSAD</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

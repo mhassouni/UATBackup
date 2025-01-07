@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_FirstNameRequired</fullName>
+    <active>true</active>
+    <description>Prénom obligatoire</description>
+    <errorConditionFormula>AND(
+				ISBLANK(FirstName),
+				RecordType.Name=&#39;Contact - Commercial&#39;,
+				$Profile.Name &lt;&gt; &quot;PF Administrateur Système&quot;,
+				$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+				)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Le prénom est obligatoire</errorMessage>
+</ValidationRule>

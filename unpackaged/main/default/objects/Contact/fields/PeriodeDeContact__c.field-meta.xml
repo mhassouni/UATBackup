@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PeriodeDeContact__c</fullName>
+    <label>Période de contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Début de semaine</fullName>
+                <default>false</default>
+                <label>Début de semaine</label>
+            </value>
+            <value>
+                <fullName>Milieu de semaine</fullName>
+                <default>false</default>
+                <label>Milieu de semaine</label>
+            </value>
+            <value>
+                <fullName>Fin de semaine</fullName>
+                <default>false</default>
+                <label>Fin de semaine</label>
+            </value>
+            <value>
+                <fullName>Indifférent</fullName>
+                <default>false</default>
+                <label>Indifférent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

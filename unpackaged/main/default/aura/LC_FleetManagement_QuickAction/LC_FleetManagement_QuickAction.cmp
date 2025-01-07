@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+                access="global" >
+
+    <!-- EVENT HANDLER -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="pageReference" type="Object"/>
+    <aura:attribute name="fields" type="String[]" default="['OrderNumber', 'Status', 'StartDate__c', 'EndDate__c']" />
+    <!-- /ATTRIBUTES -->
+    
+    
+    <!-- CONTENT -->
+    <lightning:navigation aura:id="navService"/>
+
+    <lightning:recordForm recordId="{!v.recordId}" 
+                          objectApiName="Order"
+                          mode="readonly"
+                          fields="{!v.fields}"/>
+    <!-- /CONTENT -->
+	
+</aura:component>

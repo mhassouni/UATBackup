@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Druh stavu km</label>
+        <name>Type_Miseajour__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fin de mois</masterLabel>
+            <translation><!-- Fin de mois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Géolocalisation</masterLabel>
+            <translation><!-- Géolocalisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mouvement</masterLabel>
+            <translation><!-- Mouvement --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

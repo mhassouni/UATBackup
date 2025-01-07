@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Periodo di noleggio desiderato</label>
+        <name>Duree_location_souhaitee__c</name>
+        <picklistValues>
+            <masterLabel>1 à 11 mois</masterLabel>
+            <translation>1 a 11 mesi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 à 30 jours</masterLabel>
+            <translation>1 a 30 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 12 mois</masterLabel>
+            <translation>1 a 12 mesi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>De 1 à 25 jours</masterLabel>
+            <translation>1 a 25 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longue durée</masterLabel>
+            <translation><!-- Longue durée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus de 12 mois</masterLabel>
+            <translation>Più di 12 mesi</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

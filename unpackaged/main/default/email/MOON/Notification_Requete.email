@@ -1,0 +1,10 @@
+<p>Bonjour,</p>
+<p><br />Une nouvelle requête vient de vous être affectée <a href="{!Case.Link} " target="_blank" rel="noopener">Lien requête</a></p>
+<ul>
+<li>Créateur : {!Case.OwnerFullName}</li>
+<li>Type : {!Case.Type}</li>
+<li>Numéro de parc :{!Case.Asset}</li>
+<li>Chauffeur : {!Case.Nom_Chauffeur__c}  - {!Case.N_Tel_Chauffeur__c}</li>
+<li>Lieu d'intervention : {!Case.Rue_Lieu__c} {!Case.Code_postal__c}  {!Case.Ville__c} {!Case.Pays__c}</li>
+<li>Demande concernant : {!Case.Description_incident_client__c} </li>
+</ul>

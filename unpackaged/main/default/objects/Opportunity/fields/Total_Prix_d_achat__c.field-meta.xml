@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Prix_d_achat__c</fullName>
+    <description>Somme des ‘Montant total d’achat&#39; de produit d’opp, dont le type de prestation = produit</description>
+    <label>Total Prix d&#39;achat</label>
+    <summarizedField>OpportunityLineItem.Montant_total_achat__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.ProductCode__c</field>
+        <operation>contains</operation>
+        <value>Produit</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_de_communication__c</fullName>
+    <label>Mode de communication</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RDV</fullName>
+                <default>false</default>
+                <label>RDV</label>
+            </value>
+            <value>
+                <fullName>Visio</fullName>
+                <default>false</default>
+                <label>Visio</label>
+            </value>
+            <value>
+                <fullName>Visite</fullName>
+                <default>false</default>
+                <label>Visite</label>
+            </value>
+            <value>
+                <fullName>Tel</fullName>
+                <default>false</default>
+                <label>Tel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

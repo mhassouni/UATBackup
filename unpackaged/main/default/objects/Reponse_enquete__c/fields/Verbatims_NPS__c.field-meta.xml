@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verbatims_NPS__c</fullName>
+    <description>Stocke le commentaire lié à la question NPS de l&#39;enquête relationnelle</description>
+    <label>Verbatims NPS</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CGLPrecedente__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>CGL Précédente</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Organisation_Commerciale__c</field>
+            <operation>equals</operation>
+            <valueField>Framework_Agreement__c.Organisation_Commerciale__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Framework_Agreement__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Conditions_Generales_de_Location</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Active__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Framework_Agreement__c</referenceTo>
+    <relationshipLabel>CGL Suivant</relationshipLabel>
+    <relationshipName>Accords_Cadres</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quote</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Chemin Quote LD - Parc - Draft</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Quote_LD_Parc_Draft</recordTypeName>
+</PathAssistant>

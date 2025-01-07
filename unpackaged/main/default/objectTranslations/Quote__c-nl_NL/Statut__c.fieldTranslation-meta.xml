@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Status</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Autorisé</masterLabel>
+            <translation>Geautoriseerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon</masterLabel>
+            <translation>Ontwerp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon - étude HS en cours</masterLabel>
+            <translation>Ontwerp - HS studie in uitvoering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brouillon - étude HS validée</masterLabel>
+            <translation>Ontwerp - HS studie gevalideerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat envoyé</masterLabel>
+            <translation>Contract verzonden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat signé</masterLabel>
+            <translation>Contract getekend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat validé</masterLabel>
+            <translation>Contract gevalideerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Création de contrat en cours</masterLabel>
+            <translation>Contractcreatie wordt uitgevoerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis Envoyé</masterLabel>
+            <translation>Offerte verzonden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis annulé</masterLabel>
+            <translation>Offerte geannuleerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis refusé</masterLabel>
+            <translation>Offerte geweigerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis validé</masterLabel>
+            <translation>Offerte gevalideerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devis échu</masterLabel>
+            <translation>Offerte verlopen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echec de la création du contrat</masterLabel>
+            <translation>Kan contract niet maken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente approbation</masterLabel>
+            <translation>In afwachting van goedkeuring</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Autorisé</masterLabel>
+            <translation>Niet toegestaan</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Sub-family</label>
+        <name>SousFamille__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE</masterLabel>
+            <translation>OTHER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC</masterLabel>
+            <translation>CHILLER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A (Carrosseries)</masterLabel>
+            <translation>N/A (body)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A (Containers)</masterLabel>
+            <translation>N/A (containers)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Frigo)</masterLabel>
+            <translation>P (Refrigerated)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Sec)</masterLabel>
+            <translation>P (Dry)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S (Frigo)</masterLabel>
+            <translation>S (Refrigerated)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Frigo)</masterLabel>
+            <translation>T (Refrigerated)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Sec)</masterLabel>
+            <translation>T (Dry)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Frigo)</masterLabel>
+            <translation>V (Refrigerated)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Sec)</masterLabel>
+            <translation>V (Dry)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITRINE</masterLabel>
+            <translation>FREEZER</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

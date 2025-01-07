@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Status</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Annulée</masterLabel>
+            <translation>Anulowano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Effectuée</masterLabel>
+            <translation>Wykonano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours</masterLabel>
+            <translation>W trakcie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reportée</masterLabel>
+            <translation>Odroczony</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

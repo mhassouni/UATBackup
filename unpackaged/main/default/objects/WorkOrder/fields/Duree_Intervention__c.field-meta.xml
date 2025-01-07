@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_Intervention__c</fullName>
+    <externalId>false</externalId>
+    <formula>if
+(
+ OR(RecordType.Id =  LEFT($Label.OT_RecordTypeID_DDR,15),RecordType.Id =  left($Label.OT_RecordTypeID_DDS,15))
+,
+if 
+( 
+AND(NOT(ISBLANK( EndDate )),NOT(ISBLANK( StartDate)) ,EndDate&gt;StartDate) 
+, 
+(EndDate - StartDate)*24*60 
+, 
+NULL 
+)
+,
+if 
+( 
+AND(NOT(ISBLANK( Date_Heure_Fin__c )) ,NOT(ISBLANK( Date_Heure_Depart__c )) ,Date_Heure_Fin__c&gt;Date_Heure_Depart__c ) 
+, 
+(Date_Heure_Fin__c - Date_Heure_Depart__c)*24*60 
+, 
+NULL 
+)
+)</formula>
+    <label>Durée Intervention(Minutes)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RYF_demand__c</fullName>
+    <formula>if
+(  
+OR
+(
+ISBLANK(KM_demande__c)
+,
+ISNULL(KM_demande__c)
+)
+,
+(  Loyer_demande__c  / ( Devis__r.Prix_0_kms__c  +(Km_rappel__c   * (  Devis__r.Prix_des_kms_inclus_les_100_kms__c  /100 ) ) ) -1)
+,
+(  Loyer_demande__c  / ( Devis__r.Prix_0_kms__c  +(KM_demande__c  * (  Devis__r.Prix_des_kms_inclus_les_100_kms__c  /100 ) ) ) -1)
+)</formula>
+    <label>RYF demandé (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

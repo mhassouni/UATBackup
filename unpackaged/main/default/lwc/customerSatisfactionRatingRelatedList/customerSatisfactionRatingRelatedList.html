@@ -1,0 +1,171 @@
+<template>
+    <div if:true={showSpinner}>
+        <c-spinner-with-text help-text="Loading..." size="medium" variant="brand" show-spinner={showSpinner}></c-spinner-with-text>
+    </div>
+    <template if:true={VarFalse}>
+
+    <div class="custom-related-list">
+        <div class="slds-grid slds-align-middle" onclick={CustomerProfileToggle}>
+            <div class="slds-p-around_xx-small">
+                <span class="my-icon slds-p-around_xx-small" style="font-size: 1.5em; display: inline-flex; align-items: center;"></span>
+            </div>
+            <div class="slds-grid slds-grid_vertical-align-center slds-p-around_xx-small">
+                <span class="title">Profil client</span>
+
+            </div>
+
+            <div class="slds-grid slds-grid_align-end slds-p-around_xx-small">
+                <lightning-icon icon-name="utility:chevronleft" size="x-small" class="slds-p-around_xx-small" if:false={IsCustomerProfileVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+                <lightning-icon icon-name="utility:chevrondown" size="x-small" class="slds-p-around_xx-small" if:true={IsCustomerProfileVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+            </div>
+        </div>
+        <div if:true={showLoading} class="loading">
+            <span>Loading...</span>
+        </div>
+        <div  class="content CustomerProfileContainer">
+                <div class="slds-box">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input type="text" value={NbContractYTD} disabled="true" label="Nombre de contrats YTD"></lightning-input>
+                            <lightning-input type="text" value={NbContractN1FY} disabled="true" label="Nombre de contrats N-1 FY"></lightning-input>
+                        <!-- <lightning-input type="text" value={NbContractN1FY} disabled="true" label="Segmentation"></lightning-input>-->
+                        </div>
+                        <!--
+                        <div class="slds-col slds-size_1-of-2">
+                            <label class="slds-form-element__label" for="TypedeproduitYTD">Type(s) de produit(s) YTD</label>
+                                <div>
+                                    <ul class="slds-listbox slds-listbox_horizontal" role="listbox" aria-label="Selected Options:" aria-orientation="horizontal" aria-describedby="listbox-pill-with-avatar">
+                                        <template for:each={pillItems} for:item="pill" for:index="index">
+                                            <li key={pill.label} class="slds-listbox-item slds-p-around_xx-small" role="presentation">
+                                                <span class={pill.class} role="option" tabindex="0" aria-selected="true" >
+                                                    <span class="slds-pill__label" title={pill.label} style="color: white; font-weight: bold;">
+                                                        {pill.label}
+                                                        <span class="slds-icon_container slds-pill__remove" title="Remove">
+                                                            <lightning-icon variant="inverse" icon-name={pill.iconName} alternative-text={pill.label} size="x-small"></lightning-icon>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                        <label class="slds-form-element__label" for="TypedeproduitN-1FY">Type(s) de produit(s) N-1 FY</label>
+                        <div>
+                            <ul class="slds-listbox slds-listbox_horizontal" role="listbox" aria-label="Selected Options:" aria-orientation="horizontal" aria-describedby="listbox-pill-with-avatar">
+                                <template for:each={pillItems} for:item="pill" for:index="index">
+                                    <li key={pill.label} class="slds-listbox-item slds-p-around_xx-small" role="presentation">
+                                        <span class={pill.class} role="option" tabindex="0" aria-selected="true" >
+                                            <span class="slds-pill__label" title={pill.label} style="color: white; font-weight: bold;">
+                                                {pill.label}
+                                                <span class="slds-icon_container slds-pill__remove" title="Remove">
+                                                    <lightning-icon variant="inverse" icon-name={pill.iconName} alternative-text={pill.label} size="x-small"></lightning-icon>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                       
+                        </div>
+                         -->
+                    </div>
+                </div>
+                <lightning-card>
+                    <div class="slds-m-around_medium">
+                       <table lwc:dom="manual"
+                          class="CustomerProfile slds-table slds-table_cell-buffer slds-table_bordered" 
+                          style="width:100%">
+                       </table>
+                    </div>
+                 </lightning-card>
+                </div>
+            </div>
+        </template>
+        <template if:true={VarFalse}>
+
+    <div class="custom-related-list">
+        <div class="slds-grid slds-align-middle" onclick={ActiveContractsToggle}>
+            <div class="slds-p-around_xx-small">
+                <span class="my-icon slds-p-around_xx-small" style="font-size: 1.5em; display: inline-flex; align-items: center;"></span>
+            </div>
+            <div class="slds-grid slds-grid_vertical-align-center slds-p-around_xx-small">
+                <span class="title">Nombre de contrats actifs</span>
+            </div>
+            <div class="slds-grid slds-grid_align-end slds-p-around_xx-small">
+                <lightning-icon icon-name="utility:chevronleft" size="x-small" class="slds-p-around_xx-small" if:false={IsActiveContractsVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+                <lightning-icon icon-name="utility:chevrondown" size="x-small" class="slds-p-around_xx-small" if:true={IsActiveContractsVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+            </div>
+        </div>
+        <div if:true={showLoading} class="loading">
+            <span>Loading...</span>
+        </div>
+        <div class="content ActiveContractsContainer">
+            <lightning-card>
+                <div class="slds-m-around_medium">
+                    <div class="table-wrapper">
+                   <table lwc:dom="manual"
+                      class="ActiveContractsTable ActiveContracts slds-table slds-table_cell-buffer slds-table_bordered" 
+                      style="width:100%">
+                   </table>
+                </div>
+
+                </div>
+             </lightning-card>
+        </div>
+    </div>
+</template>
+    <div class="custom-related-list">
+        <div class="slds-grid slds-align-middle" onclick={CustomerSatisfactionToggle}>
+            <div class="slds-p-around_xx-small">
+                <span class="my-icon slds-p-around_xx-small" style="font-size: 1.5em; display: inline-flex; align-items: center;"></span>
+            </div>
+            <div class="slds-grid slds-grid_vertical-align-center slds-p-around_xx-small">
+                <span class="title">Satisfaction Client</span>
+            </div>
+            <div class="slds-grid slds-grid_align-end slds-p-around_xx-small">
+                <lightning-icon icon-name="utility:chevronleft" size="x-small" class="slds-p-around_xx-small" if:false={IsCustomerSatisfactionVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+                <lightning-icon icon-name="utility:chevrondown" size="x-small" class="slds-p-around_xx-small" if:true={IsCustomerSatisfactionVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+            </div>
+        </div>
+        <div if:true={showLoading} class="loading">
+            <span>Loading...</span>
+        </div>
+
+        <div  class="content CustomerSatisfactionContainer">
+            <c-data-table-wrapper object-name={objectNameToSend} fields-to-query={fieldNamesToSend} filters={filtersToSend} field-to-order = {fieldToOrderToSend} records-per-page={recordsPerPageToSend} disable-sort={disableSortToSend} disable-search={disableSearchToSend}></c-data-table-wrapper>
+        </div>
+
+    </div>
+    <template if:true={VarFalse}>
+
+    <div class="custom-related-list">
+        <div class="slds-grid slds-align-middle" onclick={ExpiringContractsToggle}>
+            <div class="slds-p-around_xx-small">
+                <span class="my-icon slds-p-around_xx-small" style="font-size: 1.5em; display: inline-flex; align-items: center;"></span>
+            </div>
+            <div class="slds-grid slds-grid_vertical-align-center slds-p-around_xx-small">
+                <span class="title">Contrats arrivant à échéance</span>
+            </div>
+            <div class="slds-grid slds-grid_align-end slds-p-around_xx-small">
+                <lightning-icon icon-name="utility:chevronleft" size="x-small" class="slds-p-around_xx-small" if:false={IsExpiringContractsVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+                <lightning-icon icon-name="utility:chevrondown" size="x-small" class="slds-p-around_xx-small" if:true={IsExpiringContractsVisible} style="font-size: 1.5em; display: inline-flex; align-items: center;"></lightning-icon>
+            </div>
+        </div>
+        
+        <div if:true={showLoading} class="loading">
+            <span>Loading...</span>
+        </div>
+        <div  class="content ExpiringContractsContainer">
+            <lightning-card >
+                <div class="slds-m-around_medium">
+                   <table lwc:dom="manual"
+                      class="ExpiringContracts slds-table slds-table_cell-buffer slds-table_bordered" 
+                      style="width:100%">
+                   </table>
+                </div>
+             </lightning-card>
+        </div>
+    </div>
+</template>
+</template>

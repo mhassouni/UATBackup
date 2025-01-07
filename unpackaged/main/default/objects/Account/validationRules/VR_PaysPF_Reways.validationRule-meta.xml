@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_PaysPF_Reways</fullName>
+    <active>true</active>
+    <description>Empecher un user de créer un compte paysRegion = Reways et Pays PF</description>
+    <errorConditionFormula>AND(
+    TEXT(PaysRegionPF__c) = &#39;Reways&#39;,
+    OR(
+        TEXT(Pays__c) = &#39;AFRIQUE DU SUD&#39;,
+        TEXT(Pays__c) = &#39;ALLEMAGNE&#39;,
+        TEXT(Pays__c) = &#39;AUTRICHE&#39;,
+        TEXT(Pays__c) = &#39;BELGIQUE&#39;,
+        TEXT(Pays__c) = &#39;EMIRATS ARABES&#39;,
+        TEXT(Pays__c) = &#39;ESPAGNE&#39;,
+        TEXT(Pays__c) = &quot;ETATS UNIS D&#39;AMERIQUE&quot;,
+        TEXT(Pays__c) = &#39;FRANCE&#39;,
+        TEXT(Pays__c) = &#39;HONGRIE&#39;,
+        TEXT(Pays__c) = &#39;IRLANDE&#39;,
+        TEXT(Pays__c) = &#39;ITALIE&#39;,
+        TEXT(Pays__c) = &#39;LUXEMBOURG&#39;,
+        TEXT(Pays__c) = &#39;MAROC&#39;,
+        TEXT(Pays__c) = &#39;MONACO&#39;,
+        TEXT(Pays__c) = &#39;PAYS - BAS&#39;,
+        TEXT(Pays__c) = &#39;POLOGNE&#39;,
+        TEXT(Pays__c) = &#39;PORTUGAL&#39;,
+        TEXT(Pays__c) = &#39;REPUBLIQUE TCHEQUE&#39;,
+        TEXT(Pays__c) = &#39;REUNION&#39;,
+        TEXT(Pays__c) = &#39;ROYAUME UNI&#39;,
+        TEXT(Pays__c) = &#39;SUISSE&#39;,
+        TEXT(Pays__c) = &#39;MAURITIUS&#39;,
+        TEXT(Pays__c) = &#39;GUADELOUPE&#39;,
+        TEXT(Pays__c) = &#39;MARTINIQUE&#39;
+    )
+)</errorConditionFormula>
+    <errorMessage>Veuillez sélectionner le “Pays / Région PF” qui correspond au “Pays” du compte en cours de création</errorMessage>
+</ValidationRule>

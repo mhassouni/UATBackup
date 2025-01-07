@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrancheEffectif</fullName>
+    <active>true</active>
+    <label>Tranche d’effectif</label>
+    <picklistValues>
+        <picklist>BusinessLine__c</picklist>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meubles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Frigorifiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules Secs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

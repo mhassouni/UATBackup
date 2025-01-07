@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Produits__c</fullName>
+    <label>Produits</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Chambre froide</fullName>
+                <default>false</default>
+                <label>Chambre froide</label>
+            </value>
+            <value>
+                <fullName>Containers</fullName>
+                <default>false</default>
+                <label>Containers</label>
+            </value>
+            <value>
+                <fullName>Meuble réfrigéré</fullName>
+                <default>false</default>
+                <label>Meuble réfrigéré</label>
+            </value>
+            <value>
+                <fullName>Meubles</fullName>
+                <default>false</default>
+                <label>Meubles</label>
+            </value>
+            <value>
+                <fullName>Véhicule frigorifique</fullName>
+                <default>false</default>
+                <label>Véhicule frigorifique</label>
+            </value>
+            <value>
+                <fullName>Véhicule Sec</fullName>
+                <default>false</default>
+                <label>Véhicule Sec</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortOrder</fullName>
+    <inlineHelpText>Définit la priorité qui détermine la méthode de génération d&#39;ordres de travail quand un plan de maintenance ou un actif de maintenance a deux règles de travail de maintenance ou plus générant un ordre de travail à la même date. La valeur d&#39;ordre de tri inférieure est prioritaire.
+        </inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

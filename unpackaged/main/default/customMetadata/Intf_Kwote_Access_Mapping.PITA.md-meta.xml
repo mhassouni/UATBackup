@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PITA</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Legal_Entity__c</field>
+        <value xsi:type="xsd:string">PITA</value>
+    </values>
+    <values>
+        <field>api_access__c</field>
+        <value xsi:type="xsd:string">f3d87a2c1a0fa8ce28dd4f2fe3794106</value>
+    </values>
+    <values>
+        <field>api_key__c</field>
+        <value xsi:type="xsd:string">c178ec05-79d5-11ec-8f61-fa163e2e1b93</value>
+    </values>
+</CustomMetadata>

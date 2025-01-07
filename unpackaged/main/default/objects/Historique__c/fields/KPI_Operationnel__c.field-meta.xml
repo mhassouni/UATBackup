@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_Operationnel__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+Type_miseAdisposition__c ,
+&#39;ALD&#39;,1,
+&#39;CD&#39;,1,
+&#39;CDM&#39;,1,
+&#39;CDM DISPO&#39;,1,
+&#39;DISPO CLI&#39;,1,
+&#39;LD&#39;,1,
+&#39;LD DISPO&#39;,1,
+&#39;SURLOC CD&#39;,1,
+&#39;SURLOC CDM&#39;,1,
+0
+)</formula>
+    <label>KPI_Operationnel</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

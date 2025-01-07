@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Energie</label>
+        <name>Energie__c</name>
+        <picklistValues>
+            <masterLabel>Biogazole B100</masterLabel>
+            <translation><!-- Biogazole B100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essence</masterLabel>
+            <translation>Benzine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNV</masterLabel>
+            <translation>CNG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPL</masterLabel>
+            <translation>LPG</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gazole</masterLabel>
+            <translation>Dieselolie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybride G/E</masterLabel>
+            <translation>Hybride D/E</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Électrique</masterLabel>
+            <translation>Elektriciteit</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

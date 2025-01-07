@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_Segmentation__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+   AND(
+   Not(ISBLANK(Compte_Parent_legal__r.NoteEntreprise__c)),
+   Compte_Parent_legal__r.Note_globale_secteur__c &gt;0
+   ),
+   Compte_Parent_legal__r.NoteEntreprise__c * Compte_Parent_legal__r.Note_globale_secteur__c,
+   IF(
+      Note_globale_secteur__c &gt; 0,
+      NoteEntreprise__c * Note_globale_secteur__c,
+      NoteEntreprise__c
+      )
+)</formula>
+    <label>Note Segmentation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

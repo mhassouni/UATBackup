@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Account picklist --></label>
+        <name>Account_picklist__c</name>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potentiel Container</masterLabel>
+            <translation>Customer fleet (Container)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potentiel Meuble</masterLabel>
+            <translation>Customer fleet (Unit display)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potentiel Véhicule Frigorifique</masterLabel>
+            <translation>Customer fleet (Refregirated vehicle)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potentiel Véhicule Sec</masterLabel>
+            <translation>Customer fleet (Dry vehicle)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminer</masterLabel>
+            <translation>Finish</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

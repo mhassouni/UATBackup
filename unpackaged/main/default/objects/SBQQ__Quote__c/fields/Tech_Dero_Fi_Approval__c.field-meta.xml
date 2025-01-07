@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Dero_Fi_Approval__c</fullName>
+    <formula>IF(
+OR(
+Tech_Approval_Mode_facturation__c = true,
+Tech_Approval_delai_reglement__c = true,
+Tech_Approval_Mode_reglement__c = true),
+true,
+if(
+AND(
+ISPICKVAL(Type_de_location__c, &quot;Courte Durée&quot;),
+Tech_Approval_Paiement_en_avance__c = true),
+True,
+IF(
+AND( ISPICKVAL(Type_de_location__c, &quot;Moyenne Durée&quot;),
+OR(
+Tech_Approval_Autres_Precisez__c = true,
+Tech_Approval_depot_garantie__c = true,
+Tech_Approval_Pourcentage_Negocie__c = true,
+Tech_Approval_Indexation__c = true)),
+True,
+IF(
+AND( ISPICKVAL(Type_de_location__c, &quot;Longue Durée&quot;),
+OR(
+Tech_Approval_Autres_Precisez__c = true,
+Tech_Approval_Caution__c = true,
+Tech_Approval_Pourcentage_Negocie__c = true,
+Tech_Approval_Indexation__c = true)),
+True,
+False))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech Dero Fi Approval</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

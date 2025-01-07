@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Skrzynia biegów</label>
+        <name>Boite_de_vitesse__c</name>
+        <picklistValues>
+            <masterLabel>Automatique Robotisée</masterLabel>
+            <translation>Automatyczna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORS STANDARD - voir Aménagements</masterLabel>
+            <translation>Poza standardem - zobacz wyposażenie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hi-Matic</masterLabel>
+            <translation><!-- Hi-Matic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manuelle</masterLabel>
+            <translation>Manualna</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

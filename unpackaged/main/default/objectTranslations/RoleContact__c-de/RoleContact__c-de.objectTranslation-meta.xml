@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Rolle des Kontaktes</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Rolle der Kontakte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Rolle des Kontaktes</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Rolle der Kontakte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Rolle des Kontaktes</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Rolle der Kontakte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Rolle des Kontaktes</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Rolle der Kontakte</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Rôle de contact</layout>
+        <sections>
+            <label>Kommentare</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label>benutzerdefinierte Links</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>
+        
+    </nameFieldLabel>
+    <validationRules>
+        <errorMessage>ZWANGSZELLEN MÜSSEN AUSGEFÜLLT WERDEN.</errorMessage>
+        <name>RDC_RV01_RequiredImport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>DER ACCOUNT MUSS MIT DEM ACCOUNT DER OPPORTUNITÄT ÜBEREINSTIMMEN.</errorMessage>
+        <name>RDC_RV03_CompteDeLopportunite</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>DIESE STATUSÄNDERUNG IST AUF DEM ACCOUNT NICHT ERLAUBT.</errorMessage>
+        <name>RDC_VR02_CompteInactif</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas créer une fonction &quot;PV&quot; ou &quot;Relance KM&quot; pour containers --></errorMessage>
+        <name>VR_restrictions_containers</name>
+    </validationRules>
+    <webLinks>
+        <label>Kontakt hinzufügen</label>
+        <name>AjouterContact</name>
+    </webLinks>
+</CustomObjectTranslation>

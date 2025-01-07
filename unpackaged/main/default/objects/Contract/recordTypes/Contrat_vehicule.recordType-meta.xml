@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrat_vehicule</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Layout_compacte_Contrat_Vehicule</compactLayoutAssignment>
+    <label>Contrat véhicule</label>
+    <picklistValues>
+        <picklist>Acces_Camion__c</picklist>
+        <values>
+            <fullName>Accès Semi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porteur obligatoire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agence_PF__c</picklist>
+        <values>
+            <fullName>000 - SIEGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>001 - VILLEPINTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>002 - BORDEAUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>003 - ROUEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>004 - RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>005 - TOULOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>006 - NANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>007 - PAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>008 - DIJON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>009 - TOURS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010 - LYON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>011 - PLAISIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>012 - CAEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>014 - LILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>015 - NIORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>016 - NÎMES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>017 - ANGERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>018 - METZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>019 - ORLEANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020 - REIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>021 - RENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>022 - CLERMONT-FERRAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>023 - LE HAVRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>024 - MARSEILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>025 - ANNECY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>026 - MULHOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>027 - LUXEMBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>028 - BEZONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>029 - PERPIGNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030 - LIÈGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>031 - QUIMPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>032 - LIMOGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>033 - CHILLY MAZARIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>034 - BRUXELLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>035 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>036 - GRENOBLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>037 - BOURGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>038 - AMIENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>039 - ST BRIEUC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040 - TOULON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>041 - TROYES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>042 - BAYONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>043 - STRASBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>044 - LE MANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>045 - ROTTERDAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>046 - BARCELONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>047 - RODEZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>048 - CHAMBERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>049 - ELOYES EPINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050 - MONTPELLIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>051 - BOULOGNE SUR MER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>052 - DIEPPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>054 - VALENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>055 - NANCY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>056 - MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>057 - EMERAINVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>058 - CANNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>059 - BREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060 - SAINT-ETIENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>061 - M%2EI%2EN%2E DE RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>062 - EVREUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>063 - AVIGNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>065 - ANTWERPEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>066 - LETCHWORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>068 - KINGSBURY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>069 - SOUTH LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070 - CARDIFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071 - MANCHESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>072 - GLASGOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>073 - BIRMINGHAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>074 - DURHAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>075 - BESANCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>076 - CHOLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>077 - LA ROCHE SUR YON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>078 - MACON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>079 - SISTERON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>081 - BASTIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>082 - CENTRAL LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>083 - AGEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>084 - CORNWALL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>085 - CHARTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>086 - BILBAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>087 - EMERAINVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>088 - ORLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>089 - CHILLY MAZARIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090 - RUNGIS MIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>092 - VILLENEUVE LA GARENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>093 - MONTREUIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>094 - RUNGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>095 - BEZONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>096 - ALENCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>097 - VANNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>099 - MONT DE MARSAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 - POITIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101 - TARBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>102 - SOUTHAMPTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>103 - MONTIGNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>104 - VALENCIENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>105 - STRASBOURG MIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>106 - VALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>107 - WEST LONDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>108 - BRISTOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>109 - CREIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110 - MAASTRICHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>111 - AUXERRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>112 - VARSOVIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>113 - LEEDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>114 - ANNEMASSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>115 - ROUEN MIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>116 - LAUSANNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>118 - MELESSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>119 - ROCHEFORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120 - LISBONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>121 - ESTREES-MONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>122 - LIVERPOOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>124 - LISIEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>125 - FREJUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>126 - VITROLLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>127 - AJACCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>128 - BRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>129 - TERESIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>130 - RUDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>131 - MONTELIMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>132 - THIAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>133 - ANGOULEME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>134 - CARCASSONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>135 - LENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>136 - COLMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 - GRENAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>145 - NANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>146 - MALAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>147 - CARHAIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>148 - COURCOURONNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>149 - TORINO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 - MILANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>151 - GENOVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>153 - ROMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>156 - PISTOIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>157 - SPICHEREN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>158 - DUBLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160 - ZURICH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>161 - ST OUEN L%E2%80%99AUMÔNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>164 - PORTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>165 - CASABLANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>166 - CORDOBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>167 - ST OUEN L%27AUMONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>171 - SAN SEBASTIAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>172 - PIERRELATTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>174 - TOURNAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>175 - WARRINGTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>176 - GIRONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>177 - LIEUSAINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>178 - MURCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>179 - WARSZAWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180 - BRUXELLES - LCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>183 - LODZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>184 - POZNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>185 - AUCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>186 - MONTMARAULT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>187 - BEZIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>188 - ZARAGOZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>189 - PERIGUEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190 - LISSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>191 - GIRONA TALLER CENTRAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>192 - LAVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>193 - MALLORCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>194 - BEGLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>195 - GENEVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>199 - GLOUCESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 - KÖLN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>201 - BORDEAUX LE HAILLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>202 - DAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>203 - LE HAILLAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>204 - MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>204 - PFM MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>205 - LORIENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>206 - MARSEILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>207 - TARRAGONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>208 - GDANSK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>209 - AMSTERDAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>210 - SEVILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>211 - WROCLAW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>212 - BRUGGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>213 - LYON BRIGNAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>214 - AUBAGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>215 - BRIGNAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>216 - MARTIGNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>218 - CORUÑA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>219 - LONS LE SAUNIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>220 - SANTANDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>221 - FRIBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>222 - BELFAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>223 - ALICANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>224 - LEIPZIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>225 - BICESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>226 - TOULOUSE PORTET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>228 - STRASBOURG ENTZHEIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>229 - RUNGIS CIRCULAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>230 - FARO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>231 - GRANOLLERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>233 - EINDHOVEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>234 - NAMUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>235 - LA REUNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>236 - TOULOUSE CONTAINERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>237 - PRAHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>238 - PAMPLONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>239 - MÜNCHEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>240 - SAINT-LO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>242 - VALLADOLID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>244 - CADIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>245 - SARREGUEMINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>246 - NANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>247 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>248 - LAS PALMAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>249 - IBIZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>250 - CASTELNAUDARY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>251 - BLOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>252 - TENERIFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>253 - COIMBRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>254 - BERLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>255 - FRANKFURT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>256 - MONZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>257 - VILLEPINTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>258 - SAINT-NAZAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>259 - WIEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>260 - POINTE A PITRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>262 - HASSELT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>263 - BUDAPEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>264 - LIÈGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>265 - ESSEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>266 - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>267 - LYON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>268 - JOHANNESBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>269 - ALBI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>270 - BOLOGNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>271 - LUBLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>272 - KRAKÓW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275 - DURBAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>278 - HAMBURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>281 - LILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>289 %2F NY - BROOKLYN KINGSLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>290 %2F NY - BRONX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>291 %2F NY - BROOKLYN FOSTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>292 %2F NY - NEWARK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>293 %2F NY - LONG ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>294 %2F NY - LAKEWOOD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>297 - PADOVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>299 - DUBAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 - BORDEAUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>302 - SECLIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>305 - CAVAILLON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>306 %2F MADRID - COSLADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>309 - BIALYSTOCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>311 - ROUEN STRICHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>312 - MADRID CONTAINERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>314 - MERIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>315 - BRUSSELS NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>321 - ZABKI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>322 - FORT DE FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>325 - LLEIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEL - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRATISLAVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUCAREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHE - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEU - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESP - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRA - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBR - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRL - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITA - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUX - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAR - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NLD - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POL - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRT - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPT - HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOFIA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Auvent__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_de_reglement__c</picklist>
+        <values>
+            <fullName>Carte Bleue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espèces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandat Administratif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Duree_contrat_type__c</picklist>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Exterieur__c</picklist>
+        <values>
+            <fullName>Calage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type Terrain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Facturation__c</picklist>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Format_de_facture__c</picklist>
+        <values>
+            <fullName>Chorus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDI_ITALIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDF signé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDF_SIGNES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Horaire_souhaite__c</picklist>
+        <values>
+            <fullName>Après-midi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation__c</picklist>
+        <values>
+            <fullName>Installation au sol en extérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation en intérieur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai réalisé par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur béquilles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à quai sur gueuses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interieur__c</picklist>
+        <values>
+            <fullName>Bouche égouts %28ou autres%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distance Roulage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hauteur Hangar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type sol</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Obstacles__c</picklist>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Câbles électriques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grillage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palissade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Probabilite_signature__c</picklist>
+        <values>
+            <fullName>20%25 %28Peu probable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 %28Probable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%25 %28Très probable%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonEndOfContract__c</picklist>
+        <values>
+            <fullName>Achat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cessation Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cessation Relation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parc Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réduction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AmendmentRenewalBehavior__c</picklist>
+        <values>
+            <fullName>Earliest End Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latest End Date</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__MDQRenewalBehavior__c</picklist>
+        <values>
+            <fullName>De-segmented</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Contrat Envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transport_et_Manutention__c</picklist>
+        <values>
+            <fullName>Organisé par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organisé par nos soins</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeOpportunite__c</picklist>
+        <values>
+            <fullName>NCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RNV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_location__c</picklist>
+        <values>
+            <fullName>Courte Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Longue Durée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne Durée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Uplift_Mode__c</picklist>
+        <values>
+            <fullName>Indexation selon indice en vigueur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas d%27indexation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pourcentage de l%27indice négocié</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pourcentage fixe négocié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

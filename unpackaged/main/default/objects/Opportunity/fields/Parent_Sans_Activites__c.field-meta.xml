@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Sans_Activites__c</fullName>
+    <formula>if
+(
+AND(
+ OpportuniteParent__r.Id &lt;&gt;null,
+ OpportuniteParent__r.Sans_Activites_En_Cours__c == true,
+ OpportuniteParent__r.Sans_Activites_Terminees__c == true
+)
+,
+true,
+false
+)</formula>
+    <label>Parent Sans Activités</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

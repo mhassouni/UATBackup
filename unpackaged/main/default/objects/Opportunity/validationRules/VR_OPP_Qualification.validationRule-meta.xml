@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_OPP_Qualification</fullName>
+    <active>true</active>
+    <description>Statut 1 → 2</description>
+    <errorConditionFormula>AND(
+text(PaysRegionPF__c)&lt;&gt;&#39;Reways&#39;,
+ PRIORVALUE(StageName) =  $Label.OPP_StageName_OpportuniteCreee,
+ ISPICKVAL(StageName,&#39;$Label.OPP_StageName_OpportuniteQualifiee&#39;),   
+ ISCHANGED(StageName),
+ NbDevisQualifi_s__c = 0
+   )</errorConditionFormula>
+    <errorMessage>Vous n’avez aucun devis qualifié lié à cette opportunité.Vous ne pouvez pas la passer en statut 2.</errorMessage>
+</ValidationRule>

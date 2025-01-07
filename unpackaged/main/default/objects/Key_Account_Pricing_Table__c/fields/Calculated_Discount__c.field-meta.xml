@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculated_Discount__c</fullName>
+    <description>Si Prix &lt;&gt; vide, calcule le discount par rapport au prix standard, sinon applique la valeur saisie dans Discount.</description>
+    <formula>IF(List_Price__r.Price__c =0,NULL,if( AND(Not(ISBLANK(Discount__c)),Not(Discount__c=0)),Discount__c,1-(Price__c/List_Price__r.Price__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Si Prix &lt;&gt; vide, calcule le discount par rapport au prix standard, sinon applique la valeur saisie dans Discount.</inlineHelpText>
+    <label>Calculated Discount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

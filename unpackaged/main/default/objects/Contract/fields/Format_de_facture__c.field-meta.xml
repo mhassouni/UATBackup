@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Format_de_facture__c</fullName>
+    <label>Format de facture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PDF signé</fullName>
+                <default>false</default>
+                <label>PDF signé</label>
+            </value>
+            <value>
+                <fullName>Chorus</fullName>
+                <default>false</default>
+                <label>Chorus</label>
+            </value>
+            <value>
+                <fullName>EDI</fullName>
+                <default>false</default>
+                <label>EDI</label>
+            </value>
+            <value>
+                <fullName>DEMAT</fullName>
+                <default>false</default>
+                <label>DEMAT</label>
+            </value>
+            <value>
+                <fullName>EDI_ITALIE</fullName>
+                <default>false</default>
+                <label>EDI_ITALIE</label>
+            </value>
+            <value>
+                <fullName>NON</fullName>
+                <default>false</default>
+                <label>NON</label>
+            </value>
+            <value>
+                <fullName>PDF_SIGNES</fullName>
+                <default>false</default>
+                <label>PDF_SIGNES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

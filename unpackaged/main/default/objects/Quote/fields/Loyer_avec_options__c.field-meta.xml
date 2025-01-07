@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loyer_avec_options__c</fullName>
+    <description>Loyer + Somme des prix des options retenues</description>
+    <formula>Loyer__c +  Somme_des_prix_options__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Loyer + Somme des prix des options retenues</inlineHelpText>
+    <label>Loyer avec options</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

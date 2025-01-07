@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montant_total_assurances__c</fullName>
+    <label>Montant total assurance affinitaire</label>
+    <summarizedField>Quote.Montant_total_assurances__c</summarizedField>
+    <summaryFilterItems>
+        <field>Quote.Synchronise__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

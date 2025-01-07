@@ -1,0 +1,12 @@
+<messaging:emailTemplate subject="Transfert event" recipientType="User" relatedToType="event" >
+<messaging:htmlEmailBody >
+<apex:image url="http://www.petitforestier.fr/fr/picts/LogoGroupePF.png" width="200" height="125" style="display: block; margin-left: auto; margin-right: auto;"/>
+<p>Hi ,</p>
+<p>This event has been scheduled in Salesforce. Please open the Event.ics file attached to this email in order to add it to your Google Calendar.<br />In case of Event uptdate, please open the Event.ics file and save the modifications.</p>
+<p>----</p>
+<p>Bonjour,</p>
+<p>Cet événement a été planifié dans Salesforce. Ouvrez le fichier Event.ics ci-joint pour ajouter l'événement dans votre agenda Google.<br />En cas de modification de l'événement, ouvrez le fichier Event.ics et enregistrez les modifications.</p>
+ 
+<button style="margin:20px auto;background-color: #009933; text-align:center; display:block; width:120px;"><a href="https://www.google.com/calendar/render?cid={relatedTo.id}&action=TEMPLATE&text={!relatedTo.Subject}:{!relatedTo.What.Name}&dates={!SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(TEXT(relatedTo.StartDateTime),':',''),'-',''),' ','T')}/{!SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(TEXT(relatedTo.EndDateTime),':',''),'-',''),' ','T')}&location={!relatedTo.Location}&sprop=name:Name&sprop=website:EventWebite&details=https://cs18.salesforce.com/{!relatedTo.id}&sf=false&output=xml" style="color:white;" >Add to Google Calendar</a></button>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

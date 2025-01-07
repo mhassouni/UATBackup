@@ -1,0 +1,12 @@
+<apex:page standardController="Account" extensions="GenDocInvoicesFromAccount"  showQuickActionVfHeader="false">
+    
+    <apex:repeat value="{!invoices}" var="invoice" id="theRepeat">
+		 <apex:iframe rendered="{!NOT(invoice.Facture_Genere__c)}" id="myFrame" src="{!URLFOR(IF($Site.prefix == '/s','/apex/dfsle__gendocumentgenerator',
+                                       $Site.Prefix +'/apex/dfsle__gendocumentgenerator'), null, [sId = invoice.id, templateId = invoice.templateId__c, recordId=invoice.id, title = 'Generate Assembly Invoice'])}"   />
+	</apex:repeat>
+    <apex:outputPanel rendered="{!allDocsAlreadyGenerated}" >
+        	<div style="text-align:center;font-size: 40px;margin-top:200px;">
+               <apex:outputText value="Toutes les factures sont dèja générées" /> 
+           </div>
+    </apex:outputPanel>
+</apex:page>

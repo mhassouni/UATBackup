@@ -1,0 +1,12 @@
+***  Sie haben eine neue Anfrage {!Lead.NumeroPiste__c} , die Sie in Greenforce bearbeiten können*** 
+
+Die folgende Anfrage wurde Ihnen zugeteilt..
+
+Firma : {!Lead.Company} 
+Name des Anfragenden : {!Lead.Name} 
+Ab- und Rückfahrt Niederlassung : {!Lead.Agence_depart_retour__c}
+Postleitzahl : {!Lead.CodePostal__c}
+Stadt : {!Lead.Ville__c}
+
+
+Klicken Sie auf den Link, um direkt zum Track zu gelangen : {!Lead.Link}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Case_1</name>
+        <label>Case 1 : Hors Parc</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Km_Compteur_Igloo_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Hors_Parc</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Position__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HORS PARC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Actif</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Parc_Inactif</targetReference>
+            </connector>
+            <label>Hors Parc</label>
+        </rules>
+        <rules>
+            <name>Not_Hors_Parc</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Position__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>HORS PARC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Inactif</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Parc_Actif</targetReference>
+            </connector>
+            <label>Not Hors Parc</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Km_Compteur_Igloo_changed</name>
+        <label>Km Compteur Igloo changed?</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>KMCompteurIgloo_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.KmCompteurIgloo__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.KmCompteurIgloo__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>TDP_UpdateWOKm</targetReference>
+            </connector>
+            <label>KMCompteurIgloo changed</label>
+        </rules>
+    </decisions>
+    <description>Case 1 : Gestion Statut Hors Parc
+Case 2 : Mettre à jour les OTs avec KmCompteurIgloo</description>
+    <environments>Default</environments>
+    <interviewLabel>FlowTrigger_Asset {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_Asset</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Parc_Actif</name>
+        <label>Update Parc Actif</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Km_Compteur_Igloo_changed</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Actif</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Parc_Inactif</name>
+        <label>Update Parc Inactif</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Km_Compteur_Igloo_changed</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Inactif</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Case_1</targetReference>
+        </connector>
+        <object>Asset</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <subflows>
+        <name>TDP_UpdateWOKm</name>
+        <label>TDP_UpdateWOKm</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <flowName>TDP_UpdateWOKm</flowName>
+        <inputAssignments>
+            <name>Id</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

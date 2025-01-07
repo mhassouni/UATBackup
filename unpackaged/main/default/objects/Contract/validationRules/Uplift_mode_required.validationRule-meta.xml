@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uplift_mode_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				text( Status ) = &#39;Contract Generation&#39;,
+				ISPICKVAL(Uplift_Mode__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Uplift_Mode__c</errorDisplayField>
+    <errorMessage>Merci de remplir le mode d&#39;indexation.</errorMessage>
+</ValidationRule>

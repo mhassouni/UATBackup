@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Duree__c</columns>
+    <columns>Kilometrage__c</columns>
+    <columns>Loyer__c</columns>
+    <columns>Flow_Display__c</columns>
+    <columns>RYF__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Loyer__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Tout</label>
+</ListView>

@@ -1,0 +1,17 @@
+<aura:component controller="PRG_AlertGoogleController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+<!-- <aura:attribute name="recordId" type="String"/> -->
+<aura:attribute name="recordId" type="String"/>
+<aura:attribute name="zoomLevel" type="Integer" />
+<aura:attribute name="mapMarkers" type="Object[]"/>
+<!--   
+<aura:handler name="init" value="{! this }" action="{! c.init }"/>  
+--> 
+
+<aura:handler name="init" value="{! this }" action="{! c.initLocation }"/>
+	<div class="slds-col slds-size_1-of-1" style="text-align: right; margin:1px;">
+            	<lightning:button label="Refresh" title="Non-primary action" onclick="{!c.initLocation}" class="slds-button" >Refresh</lightning:button>                
+    </div>
+<lightning:map mapMarkers="{! v.mapMarkers }" listView="hidden" 
+               zoomLevel="{!v.zoomLevel}" center="{!v.center}" />
+
+</aura:component>

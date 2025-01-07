@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Courte Durée</fullName>
+        <default>false</default>
+        <label>Courte Durée</label>
+    </customValue>
+    <customValue>
+        <fullName>Moyenne Durée</fullName>
+        <default>false</default>
+        <label>Moyenne Durée</label>
+    </customValue>
+    <customValue>
+        <fullName>Longue Durée</fullName>
+        <default>false</default>
+        <label>Longue Durée</label>
+    </customValue>
+    <description>Type de Location (CD, CMD, LD)</description>
+    <masterLabel>Type Location</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

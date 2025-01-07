@@ -1,0 +1,7 @@
+<!--
+ - Created by ruthy on 2019-11-28.
+ -->
+
+<apex:page id="BonDeCommande" standardController="WorkOrder"  action="{!process}" extensions="BDCController" showHeader="false">
+    <apex:pageMessages id="messages"/>
+</apex:page>

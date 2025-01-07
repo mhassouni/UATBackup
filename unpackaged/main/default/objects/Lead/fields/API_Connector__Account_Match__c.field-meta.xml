@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__Account_Match__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Account Match Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+                <label>Not Matched</label>
+            </value>
+            <value>
+                <fullName>Matched</fullName>
+                <default>false</default>
+                <label>Matched</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,71 @@
+<apex:page standardController="Opportunity" extensions="VFE12_OpportunityPrefill">
+    <head><apex:includeScript value="{!URLFOR($Resource.jquery11)}"/> </head>
+    
+<style>
+table#Table1, table#Table1 tr, table#Table1 td, table#Table1 th {
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table#Table1 th {
+    background-color: #f2f2f2;
+}
+</style>
+    
+    
+    <apex:sectionHeader title="{!$Label.VFP_New_Opportunity}"  subtitle="{!$Label.VFP_SelectTypeOpportunity}" rendered="{!isBrowser}"/>
+    <apex:form id="MyForms">
+        <apex:pageBlock title="{!$Label.VFP_MiniSelectType}" mode="edit" id="MyBlocks">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="{!$Label.VFP_Continue}" rendered="{!isBrowser}" action="{!prefillOpportunity}"/>
+                <apex:commandButton value="{!$Label.VFP_Cancel}" action="{!Cancel}" rendered="{!isBrowser}"/>
+                <input class ="button" type="button" value="{!$Label.VFP_Continue_SF1}" onclick="redir();"/>
+            </apex:pageBlockButtons>
+            <apex:pageblockSection columns="1" id="MyPBSections">
+                <apex:pageBlockSectionItem id="MyPBSItems" >
+                    <apex:outputLabel value="{!$Label.VFP_RecordType}"/>
+                        <apex:inputfield value="{!a.RecordTypeId}" required="true" id="MyFields"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <br/>
+
+    <h2>{!$Label.VFP_AvailableRecordTypes}</h2>
+    <br/>
+    <br/>
+<table id="Table1" class="table">
+    <thead>
+    <tr>
+        <th>{!$Label.VFP_RecordTypeName}</th>
+        <th>{!$Label.VFP_Description}</th>
+    </tr>
+    </thead>
+    <tbody>
+        <apex:repeat value="{!RecordTypes}" var="rt">
+         <tr>
+             <td>{!rt.Name}</td>
+             <td>{!rt.Description}</td>
+         </tr>
+         </apex:repeat>
+    </tbody>
+</table>
+<script>
+var a = document.getElementById("theme");
+if(!( (typeof sforce != 'undefined') && (sforce != null) ))
+{
+    $(".button").hide();
+}   
+function redir(){
+        
+        var t =  document.getElementById("{!$Component.MyForms.MyBlocks.MyPBSections.MyPBSItems.MyFields}");
+        if( (typeof sforce != 'undefined') && (sforce != null) ){
+            sforce.one.createRecord("Opportunity",t.value);
+            //sforce.one.navigateToURL("/setup/ui/recordtypeselect.jsp?ent=Account&retURL=%2F001%2Fo%3Fnooverride%3D1&save_new_url=%2F001%2Fe%3FretURL%3D%252F001%252Fo%253Fnooverride%253D1");
+            //window.location.href='https://www.google.com';
+            //window.open("/001/e?00N20000009Ufw2=PIBE&00N20000009UWSC=Belgique&00N20000009UX1W=Belgique&acc24=EUR&ent=Account&nooverride=1&RecordType=01220000000K1DLAA0&retURL=%2F001%2Fo%3Fnooverride%3D1","_self");
+       }
+};
+</script>
+</apex:page>

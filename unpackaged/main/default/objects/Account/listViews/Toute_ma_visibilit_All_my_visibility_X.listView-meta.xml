@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toute_ma_visibilit_All_my_visibility_X</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NomCommercial__c</columns>
+    <columns>Classification_Client__c</columns>
+    <columns>CodePostalExploitation__c</columns>
+    <columns>VilleExploitation__c</columns>
+    <columns>Typologie_du_compte__c</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>CotationPF__c</columns>
+    <columns>Statut__c</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>ScoreSegmentation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>LUXEMBOURG</value>
+    </filters>
+    <label>Toute ma visibilité / All my visibility</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

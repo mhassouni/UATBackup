@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Type_de_prestations__c</fullName>
+    <description>This field has been created to capture the type of product</description>
+    <label>Type de prestations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Autres prestations</fullName>
+                <default>false</default>
+                <label>Autres prestations</label>
+            </value>
+            <value>
+                <fullName>Caution</fullName>
+                <default>false</default>
+                <label>Caution</label>
+            </value>
+            <value>
+                <fullName>Indemnités de résiliation</fullName>
+                <default>false</default>
+                <label>Indemnités de résiliation</label>
+            </value>
+            <value>
+                <fullName>Lavage</fullName>
+                <default>false</default>
+                <label>Lavage</label>
+            </value>
+            <value>
+                <fullName>Loyer</fullName>
+                <default>false</default>
+                <label>Loyer</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Manutention</fullName>
+                <default>false</default>
+                <label>Manutention</label>
+            </value>
+            <value>
+                <fullName>Options</fullName>
+                <default>false</default>
+                <label>Options</label>
+            </value>
+            <value>
+                <fullName>Remise en état</fullName>
+                <default>false</default>
+                <label>Remise en état</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

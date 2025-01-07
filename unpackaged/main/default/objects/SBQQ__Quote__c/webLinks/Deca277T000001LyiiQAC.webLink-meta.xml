@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deca277T000001LyiiQAC</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Envoyer MA &amp; Contrats en signature</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &#39;/s&#39;,&#39;/apex/dfsle__sending&#39;, $Site.Prefix +&#39;/apex/dfsle__sending&#39;), null, [sId = SBQQ__Quote__c.Id, sendingExperience = &#39;edit&#39;, isEmbedded = false, templateId = &#39;a277T000001LyiiQAC&#39;, recordId = SBQQ__Quote__c.Id, title = &#39;Envoyer Contrats en signature&#39;])}</url>
+</WebLink>

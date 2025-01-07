@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_picklist__c</fullName>
+    <label>Account picklist</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Potentiel Véhicule Frigorifique</fullName>
+                <default>false</default>
+                <label>Potentiel Véhicule Frigorifique</label>
+            </value>
+            <value>
+                <fullName>Potentiel Véhicule Sec</fullName>
+                <default>false</default>
+                <label>Potentiel Véhicule Sec</label>
+            </value>
+            <value>
+                <fullName>Potentiel Meuble</fullName>
+                <default>false</default>
+                <label>Potentiel Meuble</label>
+            </value>
+            <value>
+                <fullName>Potentiel Container</fullName>
+                <default>false</default>
+                <label>Potentiel Container</label>
+            </value>
+            <value>
+                <fullName>Terminer</fullName>
+                <default>false</default>
+                <label>Terminer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

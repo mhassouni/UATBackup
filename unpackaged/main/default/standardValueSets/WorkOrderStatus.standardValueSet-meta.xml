@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groupingStringEnum>WorkStatusCategory</groupingStringEnum>
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Nouveau</fullName>
+        <default>true</default>
+        <label>Nouveau</label>
+        <groupingString>New</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>En cours</fullName>
+        <default>false</default>
+        <label>En cours</label>
+        <groupingString>InProgress</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminé</fullName>
+        <default>false</default>
+        <label>Terminé</label>
+        <groupingString>Closed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Annulé</fullName>
+        <default>false</default>
+        <label>Annulé</label>
+        <groupingString>Canceled</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Provisoire</fullName>
+        <default>false</default>
+        <label>Provisoire</label>
+        <groupingString>Closed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Non abouti</fullName>
+        <default>false</default>
+        <label>Non abouti</label>
+        <groupingString>Closed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>À replanifier</fullName>
+        <default>false</default>
+        <label>À replanifier</label>
+        <groupingString>InProgress</groupingString>
+    </standardValue>
+</StandardValueSet>

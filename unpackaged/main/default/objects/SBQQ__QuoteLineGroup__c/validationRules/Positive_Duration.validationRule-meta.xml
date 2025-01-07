@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Positive_Duration</fullName>
+    <active>true</active>
+    <description>La durée de location doit être supérieure à 0 jours.</description>
+    <errorConditionFormula>Duree_location__c &lt;=0</errorConditionFormula>
+    <errorDisplayField>SBQQ__EndDate__c</errorDisplayField>
+    <errorMessage>La durée de location doit être supérieure à 0.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<apex:page standardController="RoleContact__c" extensions="VFE23_RoleContactIntermediaire" lightningStylesheets="true">
+<head><apex:includeScript value="{!URLFOR($Resource.jquery11)}"/> </head>
+<script>
+$(document).ready(function(){
+    if( (typeof sforce != 'undefined') && (sforce != null) ) 
+    {    
+        sforce.one.createRecord("RoleContact__c");
+    }
+    else{
+    
+         window.open("/apex/VFP13_ContactRole?{!$Label.RCN_OppName_Id}={!a.Name}&{!$Label.RCN_OppId_Id}={!a.Id}&scontrolCaching=1&retURL=%2F{!a.Id}&sfdc.override=1",'_top');
+    
+    }
+});
+</script>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__IndueD_Portfolio_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to store the date related to the Inuded portfolio Service step 1.</description>
+    <inlineHelpText>This field is used to store the date related to the Inuded portfolio Service step 1.</inlineHelpText>
+    <label>indueD Portfolio Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

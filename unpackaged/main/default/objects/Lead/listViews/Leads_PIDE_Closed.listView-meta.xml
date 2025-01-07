@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PIDE_Closed</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Produits__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CA_estime__c</columns>
+    <columns>RaisonCloture__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ALLEMAGNE</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Convertie,Clôturée,Abandonnée,Gagnée</value>
+    </filters>
+    <label>Leads PIDE - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIDE_Allemagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

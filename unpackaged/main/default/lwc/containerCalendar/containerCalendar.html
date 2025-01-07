@@ -1,0 +1,63 @@
+<template>
+  <!-- SPINNER -->
+  <template if:true={isLoading}>
+    <div class="spinner-container">
+      <lightning-spinner
+        alternative-text="Loading"
+        size="medium"
+      ></lightning-spinner>
+    </div>
+  </template>
+  <!-- /SPINNER -->
+  <!-- PLANIFIER -->
+  <button class="planify-btn" onclick={handlePlanifyClick}>
+    <lightning-icon
+      class="slds-m-right_x-small"
+      variant="inverse"
+      size="x-small"
+      icon-name="utility:event"
+      title="Planifier"
+    ></lightning-icon>
+    Planifier
+  </button>
+  <!-- /PLANIFIER -->
+
+  <!-- FULL CALENDAR -->
+  <div style="width: 100%">
+    <div class="calendar" id="calendar" lwc:dom="manual"></div>
+  </div>
+  <!-- /FULL CALENDAR -->
+
+  <!-- LEGEND -->
+  <section class="legend-section">
+    <div class="legends">
+      <div class="legend">
+        <div class="color-box" style="background-color: #ef7e33"></div>
+        <div class="record-type">Atelier</div>
+      </div>
+      <div class="legend">
+        <div class="color-box" style="background-color: #01af50"></div>
+        <div class="record-type">Transport</div>
+      </div>
+      <div class="legend">
+        <div class="color-box" style="background-color: #0170c1"></div>
+        <div class="record-type">Location</div>
+      </div>
+    </div>
+    <div class="legends">
+      <div class="legend">
+        <div class="color-box atelierP"></div>
+        <div class="record-type">Atelier - Planifiée</div>
+      </div>
+      <div class="legend">
+        <div class="color-box transportP"></div>
+        <div class="record-type">Transport - Planifiée</div>
+      </div>
+      <div class="legend">
+        <div class="color-box locationP"></div>
+        <div class="record-type">Location - Planifiée</div>
+      </div>
+    </div>
+  </section>
+  <!-- /LEGEND -->
+</template>

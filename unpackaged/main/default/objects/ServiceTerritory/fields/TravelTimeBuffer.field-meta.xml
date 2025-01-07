@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TravelTimeBuffer</fullName>
+    <inlineHelpText>Ajoutez un temps supplémentaire au temps de trajet, par exemple pour rechercher une place de parking ou marcher jusqu’au site. Cette valeur remplace le Tampon du temps de trajet défini dans Paramètres Field Service | Planification | Acheminement</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

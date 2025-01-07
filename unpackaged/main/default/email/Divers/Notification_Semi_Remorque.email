@@ -1,0 +1,13 @@
+<h4>&nbsp;</h4>
+<table style="height: 153px; margin-left: auto; margin-right: auto;" border="0" width="400">
+<tbody>
+<tr style="height: 97.2188px;">
+<td style="width: 250px; height: 97.2188px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://greenforce--c.eu9.content.force.com/servlet/servlet.ImageServer?id=0150O000004DunR&amp;oid=00D20000000nspZ" width="178" height="89" /></td>
+<td style="width: 182px; height: 97.2188px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://greenforce--c.eu9.content.force.com/servlet/servlet.ImageServer?id=0150O000004Dunb&amp;oid=00D20000000nspZ" width="182" height="114" /></td>
+</tr>
+</tbody>
+</table>
+<h4 style="text-align: center;">Bonjour&nbsp;</h4>
+<p style="text-align: center;">Une nouvelle opportunit&eacute; Semi-remorque vient d'&ecirc;tre cr&eacute;e.</p>
+<p style="text-align: center;">{!Opportunity.Name}</p>
+<p style="text-align: center;"><a href="{!Opportunity.Link}"> Lien vers l'opportunit&eacute;</a></p>

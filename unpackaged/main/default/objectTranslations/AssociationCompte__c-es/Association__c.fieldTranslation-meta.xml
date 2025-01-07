@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Asociación</label>
+        <lookupFilter>
+            <errorMessage>La cuenta elegida tiene que ser una asociación</errorMessage>
+        </lookupFilter>
+        <name>Association__c</name>
+        <relationshipLabel>Cuentas socios</relationshipLabel>
+    </CustomFieldTranslation>

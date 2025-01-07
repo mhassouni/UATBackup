@@ -1,0 +1,3224 @@
+<form name="creteriaForm">
+
+    <div ng-if="duplicateCheckAccount">
+
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="on"
+                        ng-model="objDuplicate.IsAccount" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Account_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-around_none">
+                            <div class="slds-truncate " title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in accCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-around_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputLeadFields"
+                                            ng-change="updateField(record.Field, 'Account', record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator !='changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <!-- filter logic-->
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && duplicateCheckAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="accFilterlogic.Name" name="accountCk" />
+                        <span ng-show="(invalidLogic && duplicateCheckAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div ng-if="duplicateCheckContact">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objDuplicate.IsContact" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate " title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in conCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputLeadFields"
+                                            ng-change="updateField(record.Field,'Lead',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && duplicateCheckContact">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="conFilterlogic.Name" name="contactCk" />
+                        <span ng-show="(invalidLogic && duplicateCheckContact)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="creditCheck">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objCredit.IsCheckCredit" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Credit_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in creditCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && creditCheck">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="creditFilterlogic.Name" name="creditCk" />
+                        <span ng-show="(invalidLogic && creditCheck)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Toolkit management-->
+    <div ng-if="toolkitErpManagement">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objToolkitEnterprise.IsActiveToolkit" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Credit_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in toolkitCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && toolkitErpManagement">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="toolkitFilterlogic.Name" name="toolkit" />
+                        <span ng-show="(invalidLogic && toolkitErpManagement)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Toolkit Quick Check-->
+    <div ng-if="toolkitQuickCheck">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objToolkitQuickCheck.IsActiveToolkit" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Credit_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in toolkitQCCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && toolkitQuickCheck">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="toolkitQCFilterlogic.Name" name="toolkit" />
+                        <span ng-show="(invalidLogic && toolkitQuickCheck)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-if="vatCheck">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off" ng-model="objVat.IsCheckVat" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Account_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+
+        <!--Comment for lighting table-->
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in vatCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-02" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon"
+                                    ng-click="($event.which !== 13)?OpenPopupWindow(record):0">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && vatCheck">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" name="vat" class="slds-input"
+                            placeholder="Ex. (1 AND 2) OR 3" ng-model="vatFilterlogic.Name" />
+                        <span ng-show="(invalidLogic && vatCheck)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Dutch chamber Account -->
+    <div ng-if="accountKvk">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="on"
+                        ng-model="objDuplicate.IsAccountKvk" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Account_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in accountKvkCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator !='changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <!-- filter logic-->
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && accountKvk">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="accountKvkFilterlogic.Name" name="accountCk" />
+                        <span ng-show="(invalidLogic && accountKvk)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Dutch chamber lead-->
+    <div ng-if="leadKvk">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="on"
+                        ng-model="objDuplicate.IsLeadKvk" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Account_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in leadKvkCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputLeadFields"
+                                            ng-change="updateField(record.Field,'Lead',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Operator !='changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <!-- filter logic-->
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && leadKvk">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="leadKvkFilterlogic.Name" name="accountCk" />
+                        <span ng-show="(invalidLogic && leadKvk)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- lighting model-->
+    <div class="demo-only" style="height: 640px;" id="myModal" ng-show="showModel">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close">
+                        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
+                        </svg>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        {{customLabel.Modal_Header}}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div>
+                        <div ng-show="IsPicklist">
+                            <ul>
+                                <li ng-repeat="record in recordPicklist">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-checkbox">
+                                                <input type="checkbox" name="record.Name" id="{{record.Name}}"
+                                                    value="record.Name" ng-model="record.selected"
+                                                    ng-change="uncheckMultiRecord(recordPicklist,record)" />
+                                                <label class="slds-checkbox__label" for="{{record.Name}}">
+                                                    <span class="slds-checkbox_faux"></span>
+                                                    <span class="slds-form-element__label">{{record.Name}}</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div ng-show="IsBoolean">
+                            <fieldset class="slds-form-element">
+
+                                <div class="slds-form-element__control">
+                                    <span class="slds-radio">
+                                        <input type="radio" id="radio-3" name="options" ng-model="IsChecked.Name"
+                                            value="True" />
+                                        <label class="slds-radio__label" for="radio-3">
+                                            <span class="slds-radio_faux"></span>
+                                            <span class="slds-form-element__label">{{customLabel.Yes}}</span>
+                                        </label>
+                                    </span>
+                                    <span class="slds-radio">
+                                        <input type="radio" id="radio-4" name="options" ng-model="IsChecked.Name"
+                                            value="False" />
+                                        <label class="slds-radio__label" for="radio-4">
+                                            <span class="slds-radio_faux"></span>
+                                            <span class="slds-form-element__label">{{customLabel.No}}</span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral"
+                        ng-click="closeModel()">{{customLabel.Cancel}}</button>
+                    <button class="slds-button slds-button_brand"
+                        ng-click="pushLookUpValue()">{{customLabel.Save}}</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+
+    <div ng-if="leadGlobal">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objLeadGlobal.IsLeadGlobalMatchTrigger" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in leadGlobalCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputLeadFields"
+                                            ng-change="updateField(record.Field,'Lead',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && leadGlobal">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="leadGlobalFilterlogic.Name" name="leadGlobal" />
+                        <span ng-show="(invalidLogic && leadGlobal)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--start GDM Service-->
+    <div ng-if="gdmServiceAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objGDMService.IsAccountGDMActive" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in accountGDMCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && gdmServiceAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="accountGDMFilterlogic.Name" name="gdmServiceAccount" />
+                        <span ng-show="(invalidLogic && gdmServiceAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end GDM Service-->
+
+    <!--Start IWS Advanced Address Service -->
+    <div ng-if="iwsAdvancedAddressServiceAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIwsAdvancedAddressService.IsActiveIWSAdvancedAddress" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsAdvancedAddressCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && iwsAdvancedAddressServiceAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="IWSAdvancedFilterlogic.Name" name="iwsAdvancedAddressServiceAccount" />
+                        <span ng-show="(invalidLogic && iwsAdvancedAddressServiceAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Start IWS Bankruptcy Information Service-->
+    <div ng-if="iwsBankruptcyInfoServiceAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIwsBankruptcyInfoService.IsActiveIWSBankruptcyInfo" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsBankruptcyInfoCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && iwsBankruptcyInfoServiceAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="IWSBankruptcyInfoFilterlogic.Name" name="iwsBankruptcyInfoServiceAccount" />
+                        <span ng-show="(invalidLogic && iwsBankruptcyInfoServiceAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Bankruptcy Information Service -->
+
+    <!--Start Risk Datablock Service-->
+    <div ng-if="riskDatablocksServiceAccount ">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objRiskDatablockService.IsActiveRiskDatablock" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in riskDatablockServiceCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && riskDatablocksServiceAccount ">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="riskDatablockServiceFilterlogic.Name" name="riskDatablocksServiceAccount " />
+                        <span ng-show="(invalidLogic && riskDatablocksServiceAccount )"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Risk Datablock Service -->
+
+    <!--Start Company Report Service-->
+    <div ng-if="companyReportServiceAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objCompanyReportService.IsActiveCompanyReport" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in companyReportServiceCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && companyReportServiceAccount ">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="companyReportServiceFilterlogic.Name" name="companyReportServiceAccount " />
+                        <span ng-show="(invalidLogic && companyReportServiceAccount )"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Company Report Service -->
+
+    <!--IWS Service-->
+    <div ng-if="iwsServiceAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIwsService.IsActiveIWS" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && iwsServiceAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="IWSFilterlogic.Name" name="iwsServiceAccount" />
+                        <span ng-show="(invalidLogic && iwsServiceAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Service -->
+    <div ng-if="accountGlobalMatch">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objAccountGlobal.IsAccountGlobalMatchTrigger" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in accountGlobalCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && accountGlobalMatch">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="accountGlobalFilterlogic.Name" name="accountGlobalMatch" />
+                        <span ng-show="(invalidLogic && accountGlobalMatch)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="accountTradeCredit">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objAccountTradeCredit.IsAccountTradeCreditTrigger" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in accountTradeCreditCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && accountTradeCredit">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="accountTradeCreditFilterlogic.Name" name="accountTradeCredit" />
+                        <span ng-show="(invalidLogic && accountTradeCredit)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--IWS Paydex Information Service -->
+    <div ng-if="isIWSPaydexInfoServiceForAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIWSPaydexInfoService.IsActiveIWS" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsPaydexInfoCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && isIWSPaydexInfoServiceForAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="iwsPaydexInfoFilterlogic.Name" name="isIWSPaydexInfoServiceForAccount" />
+                        <span ng-show="(invalidLogic && isIWSPaydexInfoServiceForAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Paydex Information Service -->
+
+    <!--IWS Balance Sheet Service -->
+    <div ng-if="isIWSBalanceSheetServiceForAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIWSBalanceSheetService.IsActiveIWS" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsBalanceSheetCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && isIWSBalanceSheetServiceForAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="iwsBalanceSheetFilterlogic.Name" name="isIWSBalanceSheetServiceForAccount" />
+                        <span ng-show="(invalidLogic && isIWSBalanceSheetServiceForAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Balance Information Service -->
+
+    <!--IWS Standred Address Information Service -->
+    <div ng-if="isIWSStdAddInfoServiceForAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIWSStdAddInfoService.IsActiveIWS" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsStdAddInfoCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && isIWSStdAddInfoServiceForAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="iwsStdAddInfoFilterlogic.Name" name="isIWSStdAddInfoServiceForAccount" />
+                        <span ng-show="(invalidLogic && isIWSStdAddInfoServiceForAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Standred Address Information Service -->
+
+    <!--IWS Risk Information Service-->
+    <div ng-if="isIWSRiskInfoServiceForAccount">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objIWSRiskInfoService.IsActiveIWS" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in iwsRiskInfoCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && isIWSRiskInfoServiceForAccount">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="iwsRiskInfoFilterLogic.Name" name="isIWSRiskInfoServiceForAccount" />
+                        <span ng-show="(invalidLogic && isIWSRiskInfoServiceForAccount)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IWS Risk Information Service-->
+
+
+    <!--IndueD Service-->
+    <div ng-if="induedService">
+        <div class="slds-form-element" style="padding-bottom: 20px;">
+            <div class="slds-form-element__control">
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="off"
+                        ng-model="objInduedService.IsActiveDueDiligenceService" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{customLabel.Contact_Check_Trigger}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col" class="width-1 slds-p-left_none">
+                            <div class="slds-truncate" title="SrNo">{{customLabel.Serial_Number}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Field">{{customLabel.Field}}</div>
+                        </th>
+                        <th scope="col" class="width-20">
+                            <div class="slds-truncate" title="Operator">{{customLabel.Operator}}</div>
+                        </th>
+                        <th scope="col" class="width-40">
+                            <div class="slds-truncate" title="Value">{{customLabel.Value}}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="record in indueDserviceCriteriaArray track by $index">
+                        <td data-label="SrNo" class="slds-p-left_none">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-align_absolute-center slds-p-top_xx-small">{{record.Id}}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Field">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Field"
+                                            ng-options="item.Name as item.Name for item in inputAccountFields"
+                                            ng-change="updateField(record.Field,'Account',record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Operator">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01" ng-model="record.Operator"
+                                            ng-options="item.Name as item.Name for item in lstOperator"
+                                            ng-change="updateRecordOperator(record)"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td data-label="Value">
+                            <div ng-if="record.Type =='date' || record.Type =='datetime-local'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value"
+                                            value="{{record.Value}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="record.Type !='date' && record.Type !='datetime-local' && record.Type !='changed' && record.Operator != 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="{{record.Type}}" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="record.Operator == 'changed'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-1" class="slds-input"
+                                            placeholder="Enter Value" ng-model="record.Value" ng-disabled="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td ng-show="record.IsReference && record.Operator != 'changed'">
+                            <div class="slds-form-element__control" style="margin-top: 35% ! important;">
+                                <button class="slds-button slds-button_icon" ng-click="OpenPopupWindow(record)">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                    </svg>
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                        </td>
+                        <td ng-if="record.IsError">
+                            <div class="slds-form-element__control">
+                                <p style="color:red;">{{customLabel.Required_Field_Error}}</p>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="" ng-click="showFilterLogic('Add')" ng-show="!IsFilterLogic">
+                    {{customLabel.Add_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+                <a href="" ng-click="showFilterLogic('Remove')" ng-show="IsFilterLogic">
+                    {{customLabel.Remove_Filter_Logic}}
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/apexpages/slds/latest/assets/icons/action-sprite/svg/symbols.svg#filter" />
+                    </svg>
+                </a>
+            </div>
+            <div ng-show="IsFilterLogic && induedService">
+                <div
+                    class="slds-form-element slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" class="slds-input" placeholder="Ex. (1 AND 2) OR 3"
+                            ng-model="indueDServiceFilterlogic.Name" name="induedService" />
+                        <span ng-show="(invalidLogic && induedService)"
+                            style="color:red">{{customLabel.Enter_Valid_Expression_Only}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End IndueD Service-->
+</form>

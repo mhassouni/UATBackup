@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Reden van sluiting</label>
+        <name>Raison_de_fermeture__c</name>
+        <picklistValues>
+            <masterLabel>Client dépanné</masterLabel>
+            <translation>Probleem klant verholpen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client relayé</masterLabel>
+            <translation>Klant afgelost</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Résolu par téléphone</masterLabel>
+            <translation>Opgelost per telefoon</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

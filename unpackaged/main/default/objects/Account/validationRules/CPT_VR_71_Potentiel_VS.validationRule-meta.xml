@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR_71_Potentiel_VS</fullName>
+    <active>true</active>
+    <description>Cocher &quot;Exclusif&quot; uniquement si TOUT le parc du client est fourni par PETIT FORESTIER (Pas de propriété,pas d&#39;autre loueur,...)</description>
+    <errorConditionFormula>AND 
+( 
+ISCHANGED( Exclusif_VS__c ) , 
+PRIORVALUE(Exclusif_VS__c ) = FALSE, 
+Exclusif_VS__c = TRUE, 
+PotentielVehiculesSecs__c != 0 
+)</errorConditionFormula>
+    <errorDisplayField>Exclusif_VS__c</errorDisplayField>
+    <errorMessage>Cocher &quot;Exclusif&quot; uniquement si TOUT le parc du client (Véhicules Secs) est fourni par PETIT FORESTIER (Pas de propriété,pas d&#39;autre loueur,...)</errorMessage>
+</ValidationRule>

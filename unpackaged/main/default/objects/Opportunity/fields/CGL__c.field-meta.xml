@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CGL__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Conditions Générales de Location</label>
+    <referenceTo>Framework_Agreement__c</referenceTo>
+    <relationshipLabel>Opportunités (Conditions Générales de Location)</relationshipLabel>
+    <relationshipName>Opportunity_CGL</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

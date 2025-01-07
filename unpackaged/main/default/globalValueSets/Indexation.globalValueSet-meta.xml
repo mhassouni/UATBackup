@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Indexation selon indice en vigueur</fullName>
+        <default>true</default>
+        <label>Indexation selon indice en vigueur</label>
+    </customValue>
+    <customValue>
+        <fullName>Pas d&#39;indexation</fullName>
+        <default>false</default>
+        <label>Pas d&#39;indexation</label>
+    </customValue>
+    <customValue>
+        <fullName>Pourcentage fixe négocié</fullName>
+        <default>false</default>
+        <label>Pourcentage fixe négocié</label>
+    </customValue>
+    <customValue>
+        <fullName>Pourcentage de l&#39;indice négocié</fullName>
+        <default>false</default>
+        <label>Pourcentage de l&#39;indice négocié</label>
+    </customValue>
+    <masterLabel>Indexation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

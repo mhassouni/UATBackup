@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Wenn die Tätigkeitstyp &quot;Termin&quot; ist, sollen Sie einen Kontaxt auswählen</help>
+        <label>Kontext</label>
+        <name>Type_lieu__c</name>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Andere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conférence</masterLabel>
+            <translation>Konferenz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Client</masterLabel>
+            <translation>Kundenveranstaltung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Culturel</masterLabel>
+            <translation>Kulturveranstaltung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement PF</masterLabel>
+            <translation>PF-Veranstaltung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evénement Sportif</masterLabel>
+            <translation>Sportveranstaltung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation>Messe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Client</masterLabel>
+            <translation>Kundenstandort</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation>PF-Standort</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

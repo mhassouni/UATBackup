@@ -1,0 +1,30 @@
+<apex:page standardcontroller="Account" extensions="Synoptic.SynopticAccountView" action="{!displaySynopticAccountView}">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', {packages:['orgchart']});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var i=0;
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Account');
+            data.addColumn('string', 'Parent Account');
+            <apex:repeat value="{!listSynopticAccounts}" var="acc">
+                data.addRow([{v:'{!acc.oAccount.Id}', f:'<div style="min-width:{!IF(acc.sNodeInfo=='',"100px","200px")};max-width:250px;font-family:Arial;font-size:small {!IF(acc.oAccount.Id==sAccountId,";font-weight:bold","")}"><a href="/{!acc.oAccount.Id}" id="{!acc.oAccount.Id}" onblur="LookupHoverDetail.getHover(\'{!acc.oAccount.Id}\').hide();" onfocus="LookupHoverDetail.getHover(\'{!acc.oAccount.Id}\', \'/{!acc.oAccount.Id}/m?retURL=%2F{!acc.oAccount.Id}&isAjaxRequest=1\').show();" onmouseout="LookupHoverDetail.getHover(\'{!acc.oAccount.Id}\').hide();" onmouseover="LookupHoverDetail.getHover(\'{!acc.oAccount.Id}\', \'/{!acc.oAccount.Id}/m?retURL=%2F{!acc.oAccount.Id}&isAjaxRequest=1\').show();">{!JSINHTMLENCODE(acc.oAccount.Name)}</a>{!JSENCODE(acc.sNodeInfo)}</div>'}, '{!acc.oAccount.ParentId}']);
+                data.setRowProperty(i, 'style', '{!IF(acc.oAccount.Id==sAccountId,"border: 2px solid #236FBD","")}');
+                i++;
+            </apex:repeat>
+            var chart = new google.visualization.OrgChart(document.getElementById('synopticAccount_div'));
+            chart.draw(data, {allowHtml:true});
+        }
+        setTimeout("drawChart();",200);
+    </script>
+    <apex:form >
+        <table width="95%">
+            <tr>
+                <td><apex:commandlink value="{!$Label.Synoptic__SynopticView_Back}" action="/{!sAccountId}"/></td>
+                <td><div id="synopticAccount_div"></div></td>
+                <td><div align="right"><img src="{!URLFOR($Resource.Synoptic_Resources,'Synoptic_Icon.png')}" alt="{!$Label.SynopticAccountView_Title}"/></div></td>    
+            </tr>
+        </table>
+    </apex:form>
+</apex:page>

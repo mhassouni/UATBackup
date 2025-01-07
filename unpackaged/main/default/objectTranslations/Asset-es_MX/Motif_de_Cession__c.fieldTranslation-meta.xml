@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif de Cession --></label>
+        <name>Motif_de_Cession__c</name>
+        <picklistValues>
+            <masterLabel>Destruction</masterLabel>
+            <translation><!-- Destruction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte Totale</masterLabel>
+            <translation><!-- Perte Totale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vente</masterLabel>
+            <translation><!-- Vente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vol</masterLabel>
+            <translation><!-- Vol --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

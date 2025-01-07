@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Marchandise transportée --></label>
+        <name>Marchandise_transportee__c</name>
+        <picklistValues>
+            <masterLabel>Produits frais</masterLabel>
+            <translation>Frischeprodukte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produits frais et surgelés</masterLabel>
+            <translation>Tiefkühlprodukte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produits surgelés</masterLabel>
+            <translation>Frische- und Tiefkühlprodukte</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Resa__c</fullName>
+    <formula>IF( AND (
+				    ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c,&quot;Renewal&quot;),
+        ISPICKVAL(Opportunity.TypeOpportunite__c,&quot;PRG&quot;)),False,True)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Need Reservation ?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

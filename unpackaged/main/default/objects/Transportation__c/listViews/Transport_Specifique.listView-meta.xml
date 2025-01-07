@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transport_Specifique</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Country__c</columns>
+    <columns>Account__c</columns>
+    <columns>Product__c</columns>
+    <columns>Sector__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>Frais_Transport__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>SIFL</value>
+    </filters>
+    <label>Transport Spécifique</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

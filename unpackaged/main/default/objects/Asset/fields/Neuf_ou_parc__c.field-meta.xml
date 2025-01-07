@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Neuf_ou_parc__c</fullName>
+    <label>Neuf ou parc</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Neuf</fullName>
+                <default>false</default>
+                <label>Neuf</label>
+            </value>
+            <value>
+                <fullName>Parc</fullName>
+                <default>false</default>
+                <label>Parc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

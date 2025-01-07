@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Satisfaction_client_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+CASE( Satisfaction_client__c  ,
+&#39;Excellent&#39;, &quot;/resource/1591862440000/Note_4??&quot;,
+&#39;Bon&#39;, &quot;/resource/1591862425000/Note_3?&quot;,
+&#39;Moyen&#39;, &quot;/resource/1591862411000/Note_2?&quot;,
+&#39;Insuffisant&#39;, &quot;/resource/1591862398000/Note_1?&quot;,
+
+
+&quot;/resource/1591862384000/Note_0?&quot;), &quot;&quot;, 40, 150)</formula>
+    <label>Satisfaction client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

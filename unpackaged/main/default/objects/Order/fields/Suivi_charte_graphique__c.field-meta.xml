@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suivi_charte_graphique__c</fullName>
+    <label>Suivi charte graphique</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En attente charte graphique client</fullName>
+                <default>false</default>
+                <label>En attente charte graphique client</label>
+            </value>
+            <value>
+                <fullName>Charte graphique transmise </fullName>
+                <default>false</default>
+                <label>Charte graphique transmise </label>
+            </value>
+            <value>
+                <fullName>Maquette en cours de réalisation</fullName>
+                <default>false</default>
+                <label>Maquette en cours de réalisation</label>
+            </value>
+            <value>
+                <fullName>Maquette en attente validation client</fullName>
+                <default>false</default>
+                <label>Maquette en attente validation client</label>
+            </value>
+            <value>
+                <fullName>Maquette en cours de modification</fullName>
+                <default>false</default>
+                <label>Maquette en cours de modification</label>
+            </value>
+            <value>
+                <fullName>Maquette validée / BAT</fullName>
+                <default>false</default>
+                <label>Maquette validée / BAT</label>
+            </value>
+            <value>
+                <fullName>Projet annulé / réalisé en local</fullName>
+                <default>false</default>
+                <label>Projet annulé / réalisé en local</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

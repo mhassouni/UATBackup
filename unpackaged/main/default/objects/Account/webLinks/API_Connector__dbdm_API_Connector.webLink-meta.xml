@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__dbdm_API_Connector</fullName>
+    <availability>online</availability>
+    <description>This button is used to make Global Decision Maker Service(GDM)  callout and populate fetched information as per output field mapping.</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>D&amp;B Decision Maker</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&#39;//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&#39;)}
+{!REQUIRESCRIPT(&#39;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js&#39;)}
+{!REQUIRESCRIPT(&quot;/support/console/43.0/integration.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/43.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/43.0/apex.js&quot;)}
+
+try{
+showConfirmation();
+}
+catch(e){
+alert(&#39;An Error has Occured. Error: &#39; + e);
+}
+
+function showConfirmation(){
+jQuery(function() {
+jQuery(&#39;head&#39;).append(&#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/start/jquery-ui.css&quot; type=&quot;text/css&quot; /&gt;&#39;);
+
+var html =
+&#39;&lt;div id=&quot;gdmDialog&quot; title=&quot;Global Decision Maker Service&quot; &gt;&lt;p&gt;Are you sure to check this record for Global Decision Maker Service?&lt;/p&gt;&lt;/div&gt;&#39;;
+if(!jQuery(&#39;[id=gdmDialog]&#39;).size()){
+jQuery(&#39;body&#39;).append(html);
+}
+jQuery( &quot;#gdmDialog&quot; ).dialog({
+width: 339,
+modal: true,
+show: {
+effect: &quot;drop&quot;,
+direction : &quot;up&quot;,
+duration: 700
+},
+buttons: {
+&quot;Yes&quot;: function() {
+jQuery( this ).dialog( &quot;close&quot; );
+validate();
+},
+&quot;No&quot;: function() {
+jQuery( this ).dialog( &quot;close&quot; );
+}
+}
+});
+});
+}
+
+function validate(){
+try{
+showErrorDialog(&quot;Please wait till record get processed&quot;, false, &quot;Global Decision Maker Service&quot;);
+var accountId = &#39;{!Account.Id}&#39;;
+var response= sforce.apex.execute(&quot;API_Connector.ServiceCallOuts&quot;, &quot;webServiceCallouts&quot;, {&quot;objectId&quot;:accountId, &quot;serviceName&quot;:&quot;Global Decision Maker Service&quot;});
+console.log(&#39;res==&#39;+result );
+var result = JSON.parse(response);
+if(result &amp;&amp; result.success &amp;&amp; result.message.toLowerCase().includes(&quot;please wait&quot;)){
+setTimeout(function(){
+location.reload();
+}, 100);
+}else{
+$(&quot;.ui-dialog-content&quot;).dialog(&quot;close&quot;);
+showErrorDialog(result.message,true,&quot;Validation Failed&quot;);
+}
+}catch(e){
+jQuery( this ).dialog( &quot;close&quot; );
+alert(&#39;An Exception has Occurred. Exception : &#39; + e);
+}
+}
+
+function showErrorDialog(msg,showButton,title) {
+jQuery(function () {
+jQuery(&#39;head&#39;).append(&#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/start/jquery-ui.css&quot; type=&quot;text/css&quot; /&gt;&#39;);
+$(&quot;#errorMessage&quot;).remove();
+jQuery(&#39;body&#39;).append(&#39;&lt;div id=&quot;errorMessage&quot; &gt;&lt;p&gt;&#39; + msg + &#39;&lt;/p&gt;&lt;/div&gt;&#39;);
+
+var obj = {
+title : title,
+modal: true,
+draggable: false
+}
+if(showButton){
+obj[&quot;buttons&quot;] = {
+OK: function () {
+jQuery(this).dialog(&quot;close&quot;);
+}
+};
+}
+
+jQuery(&quot;#errorMessage&quot;).dialog(obj);
+});
+}</url>
+</WebLink>

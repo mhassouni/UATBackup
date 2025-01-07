@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Presença de veículo</label>
+        <name>Presence_Vehicule__c</name>
+        <picklistValues>
+            <masterLabel>Non</masterLabel>
+            <translation><!-- Non --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oui</masterLabel>
+            <translation><!-- Oui --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

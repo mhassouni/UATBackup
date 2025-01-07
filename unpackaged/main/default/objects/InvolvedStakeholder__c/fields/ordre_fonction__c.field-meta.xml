@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ordre_fonction__c</fullName>
+    <description>Défini l&#39;ordre d&#39;affichage sur la related list des opportunités</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Role__c, &#39;Payeur&#39;), 1,
+IF(CONTAINS(TEXT(Role__c),&#39;Donneur&#39;), 2,
+IF(ISPICKVAL(Role__c, &#39;Facturé&#39;), 3,
+IF(ISPICKVAL(Role__c, &#39;Livré&#39;), 4,
+IF(ISPICKVAL(Role__c, &#39;PV&#39;), 5, null)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>#</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Options_telematiques__c</fullName>
+    <description>GFC-1166</description>
+    <externalId>false</externalId>
+    <formula>IF( RecordType.Id == LEFT($Label.Option_Telematique_RecordtypeId,15),
+$Label.Option_Capteurs_de_porte &amp; &#39; : &#39; &amp;if(Option_capteurs_de_porte__c==true,$Label.Option_Oui,$Label.Option_Non)&amp; &#39; - Quantité : &#39; &amp;  text(Quantity_capteurs_de_porte__c) &amp; BR()&amp;
+$Label.Option_sondes_piqueuses &amp; &#39; : &#39; &amp;if(Option_sonde_piqueuse__c==true,$Label.Option_Oui,$Label.Option_Non)&amp; &#39; - Quantité : &#39; &amp;  text(Quantity_sonde_piqueuse__c) &amp; BR()&amp;
+$Label.Option_Cameras &amp; &#39; : &#39; &amp;if(NOT(ISPICKVAL(Cameras__c,&#39;&#39;)), text(Cameras__c),$Label.Option_Non) &amp; BR()&amp;
+$Label.Option_Bouton_Alarme &amp; &#39; : &#39; &amp;if(Bouton_alarme__c==true,$Label.Option_Oui,$Label.Option_Non)&amp; BR()&amp;
+$Label.Option_Vie_Prive &amp; &#39; : &#39; &amp;if(Bouton_vie_privee__c==true,$Label.Option_Oui,$Label.Option_Non)&amp; BR()&amp;
+$Label.Option_Antidemarreur &amp; &#39; : &#39; &amp;if(Antidemarreur__c==true,$Label.Option_Oui,$Label.Option_Non)&amp; BR()
+,
+NULL
+)</formula>
+    <label>Options télématiques</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

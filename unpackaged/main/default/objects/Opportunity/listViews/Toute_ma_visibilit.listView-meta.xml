@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toute_ma_visibilit</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>DateClotureEffective__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>TypeProduits__c</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PIBE,PILU</value>
+    </filters>
+    <filters>
+        <field>Opportunite_Grand_Compte__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Type_enregistrement__c</field>
+        <operation>contains</operation>
+        <value>CPQ</value>
+    </filters>
+    <label>Toute ma visibilité</label>
+</ListView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notification Chiffrage - Equipe Assemblage -</name>
+    <style>none</style>
+    <subject>Demande de Chiffrage</subject>
+    <textOnly>Bonjour,
+
+
+Merci de traiter la demande de chiffrage pour le client {!SBQQ__Quote__c.Account_Name__c} :
+
+
+- Lien {!SBQQ__Quote__c.Name}
+
+
+Cordialement,
+
+
+Commercial : {!SBQQ__Quote__c.OwnerFullName}
+
+Adresse mail : {!SBQQ__Quote__c.OwnerEmail}
+
+Téléphone : {!SBQQ__Quote__c.OwnerPhone}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

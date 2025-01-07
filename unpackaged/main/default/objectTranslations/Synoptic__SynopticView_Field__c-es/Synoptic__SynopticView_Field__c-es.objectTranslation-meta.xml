@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Synoptic View Field --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Synoptic View Field --></value>
+    </caseValues>
+    
+    
+    
+    <gender><!-- Feminine --></gender>
+    <layouts>
+        <layout>Synoptic View Field Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Auto Number --></nameFieldLabel>
+</CustomObjectTranslation>

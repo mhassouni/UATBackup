@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- A : Non Echue 
+B : Echue moins de 8 jours 
+C : Echue plus de 8 jours --></help>
+        <label><!-- Echue --></label>
+        <name>Echue__c</name>
+    </CustomFieldTranslation>

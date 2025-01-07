@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeAppelOffre__c</fullName>
+    <label>Type d&#39;appel d&#39;offre</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Divers</fullName>
+                <default>false</default>
+                <label>Divers</label>
+            </value>
+            <value>
+                <fullName>Négocié</fullName>
+                <default>false</default>
+                <label>Négocié</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

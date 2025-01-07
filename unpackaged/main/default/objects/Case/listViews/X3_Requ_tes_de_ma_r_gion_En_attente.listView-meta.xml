@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_Requ_tes_de_ma_r_gion_En_attente</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Statut__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Agence_proprietaire__c</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Agence_Intervenante__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Requete_en_attente__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>03 - Requêtes de ma région - En attente</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

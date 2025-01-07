@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RV05_Conditions_Sync_Devis_Opportunity</fullName>
+    <active>true</active>
+    <description>Champs obligatoires pour synchroniser un devis.</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Synchronise__c )
+,
+Synchronise__c ==true 
+,
+OR
+(
+ISPICKVAL(Type_de_produit__c , &#39;&#39;)
+,
+ISPICKVAL( Sous_famille__c ,&#39;&#39;)
+,
+ISPICKVAL( Categorie__c,&#39;&#39; )
+,
+ISPICKVAL(Sous_Categorie__c ,&#39;&#39;)
+,
+ISBLANK( Quantite__c)
+,
+ISBLANK( Duree__c)
+,
+ISBLANK( Loyer__c )
+,
+ISBLANK( KM__c)
+,
+ISPICKVAL( Origine_de_produit__c,&#39;&#39;)
+,
+ISBLANK( Prix_du_km_supplementaire_les_100_kms__c )
+,
+Statut_compte__c == &#39;Attente Validation CM&#39;
+)
+)</errorConditionFormula>
+    <errorMessage>Renseigner tous les champs [Type de produit / Sous-Famille / Catégorie / Sous-Catégorie / Quantité / Durée / KM / Loyer / Prix du km supplémentaire les 100kms ] avant de synchroniser le devis.Le compte de votre opportunité/devis doit être validé.</errorMessage>
+</ValidationRule>

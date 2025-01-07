@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Demandes_d_agr_ments_en_cours</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Agrement__c</columns>
+    <columns>Agrement_demande__c</columns>
+    <columns>Credit_Management__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Quantite__c</columns>
+    <columns>DureeContrat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>DO1A,DO1B,DO2A,DO2B,DO3A,DO3B,DO4A,DO4B,DO5A,DO5B</value>
+    </filters>
+    <filters>
+        <field>Statut_demande_agrement__c</field>
+        <operation>equals</operation>
+        <value>En cours</value>
+    </filters>
+    <label>CM - Demandes d&#39;agréments en cours</label>
+    <sharedTo>
+        <group>CreditManagement</group>
+    </sharedTo>
+</ListView>

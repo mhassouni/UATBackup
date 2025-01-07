@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <description>PF Create Manual Order from Account object</description>
+    <interviewLabel>PF Create Manual Order from Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PF Create Manual Order from Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PF_Create_Manual_Order_from_Account</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>PF_Create_Manual_Order_from_Account</name>
+        <label>PF Create Manual Order from Account</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <flowName>PF_Create_Manual_Order_SubFlow</flowName>
+        <inputAssignments>
+            <name>varAccountId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Pack name</label>
+        <name>Nom_du_pack__c</name>
+        <picklistValues>
+            <masterLabel>Télématique - Access</masterLabel>
+            <translation><!-- Télématique - Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télématique - Evolution</masterLabel>
+            <translation><!-- Télématique - Evolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télématique - Pack Italie</masterLabel>
+            <translation><!-- Télématique - Pack Italie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télématique - Pack UK</masterLabel>
+            <translation><!-- Télématique - Pack UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télématique - Pro</masterLabel>
+            <translation><!-- Télématique - Pro --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_transport__c</fullName>
+    <label>Type de transport</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transport Aller vers client</fullName>
+                <default>false</default>
+                <label>Transport Aller vers client</label>
+            </value>
+            <value>
+                <fullName>Transport Retour vers atelier</fullName>
+                <default>false</default>
+                <label>Transport Retour vers le dépôt</label>
+            </value>
+            <value>
+                <fullName>Intersites</fullName>
+                <default>false</default>
+                <label>Intersites</label>
+            </value>
+            <value>
+                <fullName>Fabrication</fullName>
+                <default>false</default>
+                <label>Fabrication</label>
+            </value>
+            <value>
+                <fullName>Echange technique</fullName>
+                <default>false</default>
+                <label>Echange technique</label>
+            </value>
+            <value>
+                <fullName>Déplacement container client</fullName>
+                <default>false</default>
+                <label>Déplacement container client</label>
+            </value>
+            <value>
+                <fullName>Transport divers</fullName>
+                <default>false</default>
+                <label>Transport divers</label>
+            </value>
+            <value>
+                <fullName>Transport inutile</fullName>
+                <default>false</default>
+                <label>Transport inutile</label>
+            </value>
+            <value>
+                <fullName>Transport Amont</fullName>
+                <default>false</default>
+                <label>Transport Amont</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>LIEFERANT</label>
+        <lookupFilter>
+            <errorMessage>DER GEWÄHLTE DIENSTANBIETER MUSS EIN MITBEWERBER-ACCOUNT SEIN.</errorMessage>
+        </lookupFilter>
+        <name>Prestataire__c</name>
+        <relationshipLabel>KÜHLMÖBEL KUNDEFLOTTE (LIEFERANT)</relationshipLabel>
+    </CustomFieldTranslation>

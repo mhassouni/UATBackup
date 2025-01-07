@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Signature PF</name>
+    <pageDevName>test</pageDevName>
+    <style>none</style>
+    <textOnly>Mail Body
+
+Cordialement,
+
+{{{Sender.Name}}}
+
+{{{Sender.Title}}}
+
+{{{Sender.Email}}}
+
+https://petitforestiergroup.com</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

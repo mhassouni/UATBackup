@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>V3</fullName>
+        <default>false</default>
+        <label>V3</label>
+    </customValue>
+    <customValue>
+        <fullName>V6</fullName>
+        <default>false</default>
+        <label>V6</label>
+    </customValue>
+    <customValue>
+        <fullName>V9</fullName>
+        <default>false</default>
+        <label>V9</label>
+    </customValue>
+    <customValue>
+        <fullName>V11</fullName>
+        <default>false</default>
+        <label>V11</label>
+    </customValue>
+    <customValue>
+        <fullName>V15</fullName>
+        <default>false</default>
+        <label>V15</label>
+    </customValue>
+    <customValue>
+        <fullName>P21</fullName>
+        <default>false</default>
+        <label>P21</label>
+    </customValue>
+    <masterLabel>Catégorie de véhicule</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

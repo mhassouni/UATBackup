@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Conteneur__c</fullName>
+    <description>Position du conteneur</description>
+    <label>Position Conteneur</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Exploitable</fullName>
+                <color>#66FF99</color>
+                <default>true</default>
+                <label>Exploitable</label>
+            </value>
+            <value>
+                <fullName>Non Exploitable</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Non-Exploitable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

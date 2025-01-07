@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ouverture_arriere__c</fullName>
+    <label>Ouverture arrière (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 PORTE CENTRALE</fullName>
+                <default>false</default>
+                <label>1 PORTE CENTRALE</label>
+            </value>
+            <value>
+                <fullName>1 PORTE CENTRALE ARRIERE</fullName>
+                <default>false</default>
+                <label>1 PORTE CENTRALE ARRIERE</label>
+            </value>
+            <value>
+                <fullName>1 PORTE D + 1 RAMPE MANUELLE G</fullName>
+                <default>false</default>
+                <label>1 PORTE D + 1 RAMPE MANUELLE G</label>
+            </value>
+            <value>
+                <fullName>2 PORTE ARRIERE</fullName>
+                <default>false</default>
+                <label>2 PORTE ARRIERE</label>
+            </value>
+            <value>
+                <fullName>2 PORTES (symétrique)</fullName>
+                <default>false</default>
+                <label>2 PORTES (symétrique)</label>
+            </value>
+            <value>
+                <fullName>2 VANTAUX  (ouverture totale - symétrique)</fullName>
+                <default>false</default>
+                <label>2 VANTAUX  (ouverture totale - symétrique)</label>
+            </value>
+            <value>
+                <fullName>3 VANTAUX  (ouverture totale - 1 crémone)</fullName>
+                <default>false</default>
+                <label>3 VANTAUX  (ouverture totale - 1 crémone)</label>
+            </value>
+            <value>
+                <fullName>AUVENT</fullName>
+                <default>false</default>
+                <label>AUVENT</label>
+            </value>
+            <value>
+                <fullName>CADRE ARRIERE 2 VANTAUX</fullName>
+                <default>false</default>
+                <label>CADRE ARRIÈRE 2 VANTAUX</label>
+            </value>
+            <value>
+                <fullName>CADRE ARRIERE 3 VANTAUX</fullName>
+                <default>false</default>
+                <label>CADRE ARRIERE 3 VANTAUX</label>
+            </value>
+            <value>
+                <fullName>EASY ACC&#39;AIR</fullName>
+                <default>false</default>
+                <label>EASY ACC&#39;AIR</label>
+            </value>
+            <value>
+                <fullName>FACE PLEINE</fullName>
+                <default>false</default>
+                <label>FACE PLEINE</label>
+            </value>
+            <value>
+                <fullName>HAYON + AUVENT</fullName>
+                <default>false</default>
+                <label>HAYON + AUVENT</label>
+            </value>
+            <value>
+                <fullName>HAYON FERMETURE TOTALE</fullName>
+                <default>false</default>
+                <label>HAYON FERMETURE TOTALE</label>
+            </value>
+            <value>
+                <fullName>HAYON ISOLE + AUVENT (Classe A)</fullName>
+                <default>false</default>
+                <label>HAYON ISOLE + AUVENT (Classe A)</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE 270° (fourgon tolé)</fullName>
+                <default>false</default>
+                <label>OUVERTURE 270° (fourgon tolé)</label>
+            </value>
+            <value>
+                <fullName>RIDEAU FIT</fullName>
+                <default>false</default>
+                <label>RIDEAU FIT</label>
+            </value>
+            <value>
+                <fullName>RIDEAU ISOTHERME RELEVANT ELECTRIQUE (Classe A)</fullName>
+                <default>false</default>
+                <label>RIDEAU ISOTHERME RELEVANT ELECTRIQUE (Classe A)</label>
+            </value>
+            <value>
+                <fullName>RIDEAU ISOTHERME RELEVANT MANUEL (Classe A)</fullName>
+                <default>false</default>
+                <label>RIDEAU ISOTHERME RELEVANT MANUEL (Classe A)</label>
+            </value>
+            <value>
+                <fullName>RIDEAU ISOTHERME RELEVANT PNEUMATIQUE (Classe A)</fullName>
+                <default>false</default>
+                <label>RIDEAU ISOTHERME RELEVANT PNEUMATIQUE (Classe A)</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVANT ELECTRIQUE</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVANT ELECTRIQUE</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVANT MANUEL</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVANT MANUEL</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVANT MANUEL ALUMINIUM</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVANT MANUEL ALUMINIUM</label>
+            </value>
+            <value>
+                <fullName>RIDEAU RELEVANT PNEUMATIQUE</fullName>
+                <default>false</default>
+                <label>RIDEAU RELEVANT PNEUMATIQUE</label>
+            </value>
+            <value>
+                <fullName>SMARTOPEN</fullName>
+                <default>false</default>
+                <label>SMARTOPEN</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

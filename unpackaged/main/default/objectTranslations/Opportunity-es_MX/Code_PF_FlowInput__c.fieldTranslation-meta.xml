@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- CODE PF --></label>
+        <name>Code_PF_FlowInput__c</name>
+        <picklistValues>
+            <masterLabel>100E19 CF</masterLabel>
+            <translation><!-- 100E19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E19 CH</masterLabel>
+            <translation><!-- 100E19 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E19 CH KALHYGE</masterLabel>
+            <translation><!-- 100E19 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E19 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 100E19 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E19 CS</masterLabel>
+            <translation><!-- 100E19 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E21 CF</masterLabel>
+            <translation><!-- 100E21 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E21 CH</masterLabel>
+            <translation><!-- 100E21 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100E21 CS</masterLabel>
+            <translation><!-- 100E21 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1018 CF</masterLabel>
+            <translation><!-- 1018 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1018 CH</masterLabel>
+            <translation><!-- 1018 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1018 CS</masterLabel>
+            <translation><!-- 1018 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1021 CF</masterLabel>
+            <translation><!-- 1021 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1021 CS</masterLabel>
+            <translation><!-- 1021 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CB</masterLabel>
+            <translation><!-- 120E19 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CBL</masterLabel>
+            <translation><!-- 120E19 CBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CB_LIB</masterLabel>
+            <translation><!-- 120E19 CB_LIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CF</masterLabel>
+            <translation><!-- 120E19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CH</masterLabel>
+            <translation><!-- 120E19 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CH KALHYGE</masterLabel>
+            <translation><!-- 120E19 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 120E19 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E19 CS</masterLabel>
+            <translation><!-- 120E19 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E21 CB</masterLabel>
+            <translation><!-- 120E21 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E21 CF</masterLabel>
+            <translation><!-- 120E21 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E21 CH</masterLabel>
+            <translation><!-- 120E21 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E21 CS</masterLabel>
+            <translation><!-- 120E21 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E22 CF</masterLabel>
+            <translation><!-- 120E22 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120E22 CS</masterLabel>
+            <translation><!-- 120E22 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120EL21 G CB</masterLabel>
+            <translation><!-- 120EL21 G CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120EL21 G CBL</masterLabel>
+            <translation><!-- 120EL21 G CBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120EL21 G CF</masterLabel>
+            <translation><!-- 120EL21 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120EL21 G CH</masterLabel>
+            <translation><!-- 120EL21 G CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120EL21 G CS</masterLabel>
+            <translation><!-- 120EL21 G CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1218 CF</masterLabel>
+            <translation><!-- 1218 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1218 CH</masterLabel>
+            <translation><!-- 1218 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1218 CS</masterLabel>
+            <translation><!-- 1218 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1221 CF</masterLabel>
+            <translation><!-- 1221 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1221 CS</masterLabel>
+            <translation><!-- 1221 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1318 CB - FRANCE BOISSONS - LIBNER</masterLabel>
+            <translation><!-- 1318 CB - FRANCE BOISSONS - LIBNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1318 CF</masterLabel>
+            <translation><!-- 1318 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1321 CB - FRANCE BOISSONS - LIBNER</masterLabel>
+            <translation><!-- 1321 CB - FRANCE BOISSONS - LIBNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1321 CF</masterLabel>
+            <translation><!-- 1321 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E19 CB</masterLabel>
+            <translation><!-- 140E19 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E19 CB_LIB</masterLabel>
+            <translation><!-- 140E19 CB_LIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E19 CF</masterLabel>
+            <translation><!-- 140E19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E21 CB</masterLabel>
+            <translation><!-- 140E21 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E21 CF</masterLabel>
+            <translation><!-- 140E21 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E21 CH KALHYGE</masterLabel>
+            <translation><!-- 140E21 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E21 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 140E21 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140E22 CF</masterLabel>
+            <translation><!-- 140E22 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1518 CF</masterLabel>
+            <translation><!-- 1518 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1521 CF</masterLabel>
+            <translation><!-- 1521 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 CF</masterLabel>
+            <translation><!-- 160E21 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 CH</masterLabel>
+            <translation><!-- 160E21 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 CS</masterLabel>
+            <translation><!-- 160E21 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 G CF</masterLabel>
+            <translation><!-- 160E21 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 G CH</masterLabel>
+            <translation><!-- 160E21 G CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E21 G CS</masterLabel>
+            <translation><!-- 160E21 G CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E22 CF</masterLabel>
+            <translation><!-- 160E22 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E22 CH</masterLabel>
+            <translation><!-- 160E22 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E22 CS</masterLabel>
+            <translation><!-- 160E22 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160E25 CF</masterLabel>
+            <translation><!-- 160E25 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180E25 CF</masterLabel>
+            <translation><!-- 180E25 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180E28 CF</masterLabel>
+            <translation><!-- 180E28 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180EL25 CF</masterLabel>
+            <translation><!-- 180EL25 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180EL28 CF</masterLabel>
+            <translation><!-- 180EL28 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1824 CF</masterLabel>
+            <translation><!-- 1824 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1827 CF</masterLabel>
+            <translation><!-- 1827 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1827 CS</masterLabel>
+            <translation><!-- 1827 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1830 CF</masterLabel>
+            <translation><!-- 1830 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1830 CS</masterLabel>
+            <translation><!-- 1830 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1840 TR</masterLabel>
+            <translation><!-- 1840 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1843 TR</masterLabel>
+            <translation><!-- 1843 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL25 CF</masterLabel>
+            <translation><!-- 190EL25 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL28 CBL</masterLabel>
+            <translation><!-- 190EL28 CBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL28 CF</masterLabel>
+            <translation><!-- 190EL28 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL28 CH KALHYGE</masterLabel>
+            <translation><!-- 190EL28 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL28 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 190EL28 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL28 CS</masterLabel>
+            <translation><!-- 190EL28 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL32 CF</masterLabel>
+            <translation><!-- 190EL32 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190EL32 CS</masterLabel>
+            <translation><!-- 190EL32 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2532 CF</masterLabel>
+            <translation><!-- 2532 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 CF</masterLabel>
+            <translation><!-- 314 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FF</masterLabel>
+            <translation><!-- 314 FF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FF (CCM)</masterLabel>
+            <translation><!-- 314 FF (CCM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FF (L1H1)</masterLabel>
+            <translation><!-- 314 FF (L1H1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FF (L2H1)</masterLabel>
+            <translation><!-- 314 FF (L2H1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FF (L2H1-CCM)</masterLabel>
+            <translation><!-- 314 FF (L2H1-CCM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FI</masterLabel>
+            <translation><!-- 314 FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FI (CCM)</masterLabel>
+            <translation><!-- 314 FI (CCM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FI (L1H1)</masterLabel>
+            <translation><!-- 314 FI (L1H1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FI (L2H1)</masterLabel>
+            <translation><!-- 314 FI (L2H1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>314 FI (L2H1-CCM)</masterLabel>
+            <translation><!-- 314 FI (L2H1-CCM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 BEN</masterLabel>
+            <translation><!-- 35C14 BEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CB</masterLabel>
+            <translation><!-- 35C14 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CBL</masterLabel>
+            <translation><!-- 35C14 CBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF</masterLabel>
+            <translation><!-- 35C14 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF - BV-Manuelle - Cloison Longitudinale ELIOR</masterLabel>
+            <translation><!-- 35C14 CF - BV-Manuelle - Cloison Longitudinale ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF - BV-Manuelle - ELIOR</masterLabel>
+            <translation><!-- 35C14 CF - BV-Manuelle - ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF API</masterLabel>
+            <translation><!-- 35C14 CF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF API - B.V. Manuelle</masterLabel>
+            <translation><!-- 35C14 CF API - B.V. Manuelle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF COMPASS</masterLabel>
+            <translation><!-- 35C14 CF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF Cloison Longitudinale ELIOR</masterLabel>
+            <translation><!-- 35C14 CF Cloison Longitudinale ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF Cloison Longitudinale ELIOR - AO 2020</masterLabel>
+            <translation><!-- 35C14 CF Cloison Longitudinale ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF Cloison Longitudinale ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- 35C14 CF Cloison Longitudinale ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF Dpt Rest</masterLabel>
+            <translation><!-- 35C14 CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF Dpt Rest - BV.MATIC</masterLabel>
+            <translation><!-- 35C14 CF Dpt Rest - BV.MATIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF ELIOR</masterLabel>
+            <translation><!-- 35C14 CF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF ELIOR - AO 2020</masterLabel>
+            <translation><!-- 35C14 CF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- 35C14 CF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF LONG Dpt Rest</masterLabel>
+            <translation><!-- 35C14 CF LONG Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF LONG Dpt Rest - BV.MATIC</masterLabel>
+            <translation><!-- 35C14 CF LONG Dpt Rest - BV.MATIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CF SODEXO</masterLabel>
+            <translation><!-- 35C14 CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CH</masterLabel>
+            <translation><!-- 35C14 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CH KALHYGE</masterLabel>
+            <translation><!-- 35C14 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 35C14 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CI</masterLabel>
+            <translation><!-- 35C14 CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CR</masterLabel>
+            <translation><!-- 35C14 CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 CS</masterLabel>
+            <translation><!-- 35C14 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 FF</masterLabel>
+            <translation><!-- 35C14 FF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 FI</masterLabel>
+            <translation><!-- 35C14 FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 FS</masterLabel>
+            <translation><!-- 35C14 FS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C14 G CF</masterLabel>
+            <translation><!-- 35C14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16 CB</masterLabel>
+            <translation><!-- 35C16 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16 CF</masterLabel>
+            <translation><!-- 35C16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16 CH</masterLabel>
+            <translation><!-- 35C16 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16 CS</masterLabel>
+            <translation><!-- 35C16 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16-3L CB</masterLabel>
+            <translation><!-- 35C16-3L CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16-3L CF</masterLabel>
+            <translation><!-- 35C16-3L CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16-3L CH</masterLabel>
+            <translation><!-- 35C16-3L CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C16-3L CS</masterLabel>
+            <translation><!-- 35C16-3L CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C18 TR Maxicargo</masterLabel>
+            <translation><!-- 35C18 TR Maxicargo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35C18 TR Maxicargo Dpt Rest</masterLabel>
+            <translation><!-- 35C18 TR Maxicargo Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF</masterLabel>
+            <translation><!-- 35S14 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF - BV-Manuelle - ELIOR</masterLabel>
+            <translation><!-- 35S14 CF - BV-Manuelle - ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF ELIOR</masterLabel>
+            <translation><!-- 35S14 CF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF ELIOR - AO 2020</masterLabel>
+            <translation><!-- 35S14 CF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- 35S14 CF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF ELIOR / B.V. Hi-Matic</masterLabel>
+            <translation><!-- 35S14 CF ELIOR / B.V. Hi-Matic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CF SODEXO</masterLabel>
+            <translation><!-- 35S14 CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CH</masterLabel>
+            <translation><!-- 35S14 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CI</masterLabel>
+            <translation><!-- 35S14 CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 CR</masterLabel>
+            <translation><!-- 35S14 CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 FF</masterLabel>
+            <translation><!-- 35S14 FF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 FI</masterLabel>
+            <translation><!-- 35S14 FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S14 FS</masterLabel>
+            <translation><!-- 35S14 FS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S16 CH</masterLabel>
+            <translation><!-- 35S16 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35S16-3L CH</masterLabel>
+            <translation><!-- 35S16-3L CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38S14 G CF</masterLabel>
+            <translation><!-- 38S14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38S14 G FS</masterLabel>
+            <translation><!-- 38S14 G FS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CB</masterLabel>
+            <translation><!-- 40C14 G CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CBL</masterLabel>
+            <translation><!-- 40C14 G CBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF</masterLabel>
+            <translation><!-- 40C14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF - BV-Manuelle - ELIOR</masterLabel>
+            <translation><!-- 40C14 G CF - BV-Manuelle - ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF API</masterLabel>
+            <translation><!-- 40C14 G CF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF API - B.V. Manuelle</masterLabel>
+            <translation><!-- 40C14 G CF API - B.V. Manuelle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF COMPASS</masterLabel>
+            <translation><!-- 40C14 G CF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF Dpt Rest</masterLabel>
+            <translation><!-- 40C14 G CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF Dpt Rest - BV.MATIC</masterLabel>
+            <translation><!-- 40C14 G CF Dpt Rest - BV.MATIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF ELIOR</masterLabel>
+            <translation><!-- 40C14 G CF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF ELIOR - AO 2020</masterLabel>
+            <translation><!-- 40C14 G CF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- 40C14 G CF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF LONG Dpt Rest</masterLabel>
+            <translation><!-- 40C14 G CF LONG Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF LONG Dpt Rest - BV.MATIC</masterLabel>
+            <translation><!-- 40C14 G CF LONG Dpt Rest - BV.MATIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CF SODEXO</masterLabel>
+            <translation><!-- 40C14 G CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CH</masterLabel>
+            <translation><!-- 40C14 G CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CH KALHYGE</masterLabel>
+            <translation><!-- 40C14 G CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 40C14 G CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G CS</masterLabel>
+            <translation><!-- 40C14 G CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40C14 G FS</masterLabel>
+            <translation><!-- 40C14 G FS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C14 G CF</masterLabel>
+            <translation><!-- 50C14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C16 CF</masterLabel>
+            <translation><!-- 50C16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C16 CF Dpt Rest</masterLabel>
+            <translation><!-- 50C16 CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C16 CF SODEXO</masterLabel>
+            <translation><!-- 50C16 CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C16 CI</masterLabel>
+            <translation><!-- 50C16 CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C16 LONG Dpt Rest</masterLabel>
+            <translation><!-- 50C16 LONG Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50C18 CF</masterLabel>
+            <translation><!-- 50C18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>514 CF</masterLabel>
+            <translation><!-- 514 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>514 FF</masterLabel>
+            <translation><!-- 514 FF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>514 FI</masterLabel>
+            <translation><!-- 514 FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60C16 CF</masterLabel>
+            <translation><!-- 60C16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60C16 CR</masterLabel>
+            <translation><!-- 60C16 CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65C14 G CF</masterLabel>
+            <translation><!-- 65C14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65C14 G CH</masterLabel>
+            <translation><!-- 65C14 G CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65C14 G CS</masterLabel>
+            <translation><!-- 65C14 G CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70C18 CF</masterLabel>
+            <translation><!-- 70C18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70C18 CF SODEXO</masterLabel>
+            <translation><!-- 70C18 CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70C18 CI</masterLabel>
+            <translation><!-- 70C18 CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70C18 FF</masterLabel>
+            <translation><!-- 70C18 FF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C14 G CF</masterLabel>
+            <translation><!-- 72C14 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CF</masterLabel>
+            <translation><!-- 72C18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CH</masterLabel>
+            <translation><!-- 72C18 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CH KALHYGE</masterLabel>
+            <translation><!-- 72C18 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 72C18 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CI</masterLabel>
+            <translation><!-- 72C18 CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72C18 CS</masterLabel>
+            <translation><!-- 72C18 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E16 CF</masterLabel>
+            <translation><!-- 75E16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E16 CH</masterLabel>
+            <translation><!-- 75E16 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E16 CH KALHYGE</masterLabel>
+            <translation><!-- 75E16 CH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E16 CH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- 75E16 CH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E16 CS</masterLabel>
+            <translation><!-- 75E16 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E19 CF</masterLabel>
+            <translation><!-- 75E19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E19 CH</masterLabel>
+            <translation><!-- 75E19 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75E19 CS</masterLabel>
+            <translation><!-- 75E19 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7C15 CF</masterLabel>
+            <translation><!-- 7C15 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7C18 CF</masterLabel>
+            <translation><!-- 7C18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80E19 CF</masterLabel>
+            <translation><!-- 80E19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80E21 CF</masterLabel>
+            <translation><!-- 80E21 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>816-75 CF</masterLabel>
+            <translation><!-- 816-75 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>816-75 CH</masterLabel>
+            <translation><!-- 816-75 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>816-75 CS</masterLabel>
+            <translation><!-- 816-75 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>816-85 CF</masterLabel>
+            <translation><!-- 816-85 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>818-75 CF</masterLabel>
+            <translation><!-- 818-75 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>818-75 CS</masterLabel>
+            <translation><!-- 818-75 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>818-85 CF</masterLabel>
+            <translation><!-- 818-85 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AD260S31 CF</masterLabel>
+            <translation><!-- AD260S31 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AD260S33 CF</masterLabel>
+            <translation><!-- AD260S33 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT440S46 TR</masterLabel>
+            <translation><!-- AT440S46 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRCF</masterLabel>
+            <translation><!-- BRCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF320.26 CF</masterLabel>
+            <translation><!-- CF320.26 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF340.26 CF</masterLabel>
+            <translation><!-- CF340.26 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF450.19 TR</masterLabel>
+            <translation><!-- CF450.19 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR65.140CF</masterLabel>
+            <translation><!-- CR65.140CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.210 CF</masterLabel>
+            <translation><!-- D10.210 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.210 CH</masterLabel>
+            <translation><!-- D10.210 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.210 CS</masterLabel>
+            <translation><!-- D10.210 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.240 CF</masterLabel>
+            <translation><!-- D10.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.240 CH</masterLabel>
+            <translation><!-- D10.240 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D10.240 CS</masterLabel>
+            <translation><!-- D10.240 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.210 CB</masterLabel>
+            <translation><!-- D12.210 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.210 CF</masterLabel>
+            <translation><!-- D12.210 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.210 CH</masterLabel>
+            <translation><!-- D12.210 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.210 CS</masterLabel>
+            <translation><!-- D12.210 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.240 CB</masterLabel>
+            <translation><!-- D12.240 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.240 CF</masterLabel>
+            <translation><!-- D12.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.240 CH</masterLabel>
+            <translation><!-- D12.240 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D12.240 CS</masterLabel>
+            <translation><!-- D12.240 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.210 CB</masterLabel>
+            <translation><!-- D14.210 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.210 CF</masterLabel>
+            <translation><!-- D14.210 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.210 CF Dpt Rest</masterLabel>
+            <translation><!-- D14.210 CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.210 CF Dpt Rest_Clim</masterLabel>
+            <translation><!-- D14.210 CF Dpt Rest_Clim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.240 CB</masterLabel>
+            <translation><!-- D14.240 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D14.240 CF</masterLabel>
+            <translation><!-- D14.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.210 CF</masterLabel>
+            <translation><!-- D16.210 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.210 CF Dpt Rest</masterLabel>
+            <translation><!-- D16.210 CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.210 CF Dpt Rest_Clim</masterLabel>
+            <translation><!-- D16.210 CF Dpt Rest_Clim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.210 CH</masterLabel>
+            <translation><!-- D16.210 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.210 CS</masterLabel>
+            <translation><!-- D16.210 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.240 CF</masterLabel>
+            <translation><!-- D16.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.240 CH</masterLabel>
+            <translation><!-- D16.240 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.240 CS</masterLabel>
+            <translation><!-- D16.240 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D16.250 CF</masterLabel>
+            <translation><!-- D16.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D18.250 CF</masterLabel>
+            <translation><!-- D18.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D18.280 CF</masterLabel>
+            <translation><!-- D18.280 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D18.320 CF</masterLabel>
+            <translation><!-- D18.320 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.250 CF</masterLabel>
+            <translation><!-- D19.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.280 CF</masterLabel>
+            <translation><!-- D19.280 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.280 CF Dpt Rest</masterLabel>
+            <translation><!-- D19.280 CF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.280 CF Dpt Rest_Clim</masterLabel>
+            <translation><!-- D19.280 CF Dpt Rest_Clim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.280 CS</masterLabel>
+            <translation><!-- D19.280 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.320 CF</masterLabel>
+            <translation><!-- D19.320 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.320 CS</masterLabel>
+            <translation><!-- D19.320 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D19.320 G CF</masterLabel>
+            <translation><!-- D19.320 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D26.320 CF</masterLabel>
+            <translation><!-- D26.320 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D26.320 G CF</masterLabel>
+            <translation><!-- D26.320 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D7,5.210 CF</masterLabel>
+            <translation><!-- D7,5.210 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D7,5.210 CH</masterLabel>
+            <translation><!-- D7,5.210 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D7,5.210 CS</masterLabel>
+            <translation><!-- D7,5.210 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D7,5.240 CF</masterLabel>
+            <translation><!-- D7,5.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF</masterLabel>
+            <translation><!-- DBOCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF API</masterLabel>
+            <translation><!-- DBOCF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF COMPASS</masterLabel>
+            <translation><!-- DBOCF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF Dpt Rest</masterLabel>
+            <translation><!-- DBOCF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF ELIOR</masterLabel>
+            <translation><!-- DBOCF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF ELIOR - AO 2020</masterLabel>
+            <translation><!-- DBOCF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DBOCF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCF SODEXO</masterLabel>
+            <translation><!-- DBOCF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI</masterLabel>
+            <translation><!-- DBOCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI COMPASS</masterLabel>
+            <translation><!-- DBOCI COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI ELIOR</masterLabel>
+            <translation><!-- DBOCI ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI ELIOR - AO 2020</masterLabel>
+            <translation><!-- DBOCI ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DBOCI ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOCI SODEXO</masterLabel>
+            <translation><!-- DBOCI SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF</masterLabel>
+            <translation><!-- DBOFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF - X200</masterLabel>
+            <translation><!-- DBOFF - X200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF API</masterLabel>
+            <translation><!-- DBOFF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF COMPASS</masterLabel>
+            <translation><!-- DBOFF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF Dpt Rest</masterLabel>
+            <translation><!-- DBOFF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF ELIOR</masterLabel>
+            <translation><!-- DBOFF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF ELIOR - AO 2020</masterLabel>
+            <translation><!-- DBOFF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DBOFF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFF SODEXO</masterLabel>
+            <translation><!-- DBOFF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI</masterLabel>
+            <translation><!-- DBOFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI API</masterLabel>
+            <translation><!-- DBOFI API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI COMPASS</masterLabel>
+            <translation><!-- DBOFI COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI Dpt Rest</masterLabel>
+            <translation><!-- DBOFI Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI ELIOR</masterLabel>
+            <translation><!-- DBOFI ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI ELIOR - AO 2020</masterLabel>
+            <translation><!-- DBOFI ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DBOFI ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFI SODEXO</masterLabel>
+            <translation><!-- DBOFI SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFS</masterLabel>
+            <translation><!-- DBOFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFS ES</masterLabel>
+            <translation><!-- DBOFS ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBOFS G</masterLabel>
+            <translation><!-- DBOFS G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOATE</masterLabel>
+            <translation><!-- DCOATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF</masterLabel>
+            <translation><!-- DCOCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF API</masterLabel>
+            <translation><!-- DCOCF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF CC</masterLabel>
+            <translation><!-- DCOCF CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF COMPASS</masterLabel>
+            <translation><!-- DCOCF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF Dpt Rest</masterLabel>
+            <translation><!-- DCOCF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF ELIOR</masterLabel>
+            <translation><!-- DCOCF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF ELIOR - AO 2020</masterLabel>
+            <translation><!-- DCOCF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DCOCF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF EUROT RANSPHARMA</masterLabel>
+            <translation><!-- DCOCF EUROT RANSPHARMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF G</masterLabel>
+            <translation><!-- DCOCF G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCF SODEXO</masterLabel>
+            <translation><!-- DCOCF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCH</masterLabel>
+            <translation><!-- DCOCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCH G</masterLabel>
+            <translation><!-- DCOCH G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCH-CC SOLIGHT</masterLabel>
+            <translation><!-- DCOCH-CC SOLIGHT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCI</masterLabel>
+            <translation><!-- DCOCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCI G</masterLabel>
+            <translation><!-- DCOCI G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCS</masterLabel>
+            <translation><!-- DCOCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOCS G</masterLabel>
+            <translation><!-- DCOCS G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF</masterLabel>
+            <translation><!-- DCOFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF API</masterLabel>
+            <translation><!-- DCOFF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF COMPASS</masterLabel>
+            <translation><!-- DCOFF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF G</masterLabel>
+            <translation><!-- DCOFF G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF G SODEXO</masterLabel>
+            <translation><!-- DCOFF G SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF-3T5</masterLabel>
+            <translation><!-- DCOFF-3T5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF-LECAP API</masterLabel>
+            <translation><!-- DCOFF-LECAP API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF-LECAP COMPASS</masterLabel>
+            <translation><!-- DCOFF-LECAP COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFF-LECAP SODEXO</masterLabel>
+            <translation><!-- DCOFF-LECAP SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFH</masterLabel>
+            <translation><!-- DCOFH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFH G</masterLabel>
+            <translation><!-- DCOFH G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI</masterLabel>
+            <translation><!-- DCOFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI COMPASS</masterLabel>
+            <translation><!-- DCOFI COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI ELIOR</masterLabel>
+            <translation><!-- DCOFI ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI ELIOR - AO 2020</masterLabel>
+            <translation><!-- DCOFI ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DCOFI ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI G</masterLabel>
+            <translation><!-- DCOFI G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI G ELIOR</masterLabel>
+            <translation><!-- DCOFI G ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI G ELIOR - AO 2020</masterLabel>
+            <translation><!-- DCOFI G ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI G ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- DCOFI G ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI-3T5</masterLabel>
+            <translation><!-- DCOFI-3T5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI-LECAP COMPASS</masterLabel>
+            <translation><!-- DCOFI-LECAP COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI-LECAP G ELIOR</masterLabel>
+            <translation><!-- DCOFI-LECAP G ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFI-LECAP SODEXO</masterLabel>
+            <translation><!-- DCOFI-LECAP SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS</masterLabel>
+            <translation><!-- DCOFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS G</masterLabel>
+            <translation><!-- DCOFS G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.3T-CH1</masterLabel>
+            <translation><!-- DCOFS-3.3T-CH1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.3T-CH2</masterLabel>
+            <translation><!-- DCOFS-3.3T-CH2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.3T-LH2</masterLabel>
+            <translation><!-- DCOFS-3.3T-LH2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.3T-MH1</masterLabel>
+            <translation><!-- DCOFS-3.3T-MH1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.5T-LH3</masterLabel>
+            <translation><!-- DCOFS-3.5T-LH3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.5T-MH2</masterLabel>
+            <translation><!-- DCOFS-3.5T-MH2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.5T-XLH2</masterLabel>
+            <translation><!-- DCOFS-3.5T-XLH2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3.5T-XLH3</masterLabel>
+            <translation><!-- DCOFS-3.5T-XLH3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3T-CH2</masterLabel>
+            <translation><!-- DCOFS-3T-CH2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-3T-MH1</masterLabel>
+            <translation><!-- DCOFS-3T-MH1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-LH3 G</masterLabel>
+            <translation><!-- DCOFS-LH3 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-XLH2 G</masterLabel>
+            <translation><!-- DCOFS-XLH2 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCOFS-XLH3 G</masterLabel>
+            <translation><!-- DCOFS-XLH3 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DYNA CF</masterLabel>
+            <translation><!-- DYNA CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FGSCF</masterLabel>
+            <translation><!-- FGSCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FT850.240 CF</masterLabel>
+            <translation><!-- FT850.240 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF</masterLabel>
+            <translation><!-- G4CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF API</masterLabel>
+            <translation><!-- G4CF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF ELIOR</masterLabel>
+            <translation><!-- G4CF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF ELIOR - AO 2020</masterLabel>
+            <translation><!-- G4CF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- G4CF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CF SODEXO</masterLabel>
+            <translation><!-- G4CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G4CI</masterLabel>
+            <translation><!-- G4CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF</masterLabel>
+            <translation><!-- G5CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF API</masterLabel>
+            <translation><!-- G5CF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF ELIOR</masterLabel>
+            <translation><!-- G5CF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF ELIOR - AO 2020</masterLabel>
+            <translation><!-- G5CF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- G5CF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CF SODEXO</masterLabel>
+            <translation><!-- G5CF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5CI</masterLabel>
+            <translation><!-- G5CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H195 CF</masterLabel>
+            <translation><!-- H195 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H258 CF</masterLabel>
+            <translation><!-- H258 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H338 CF</masterLabel>
+            <translation><!-- H338 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCEFF</masterLabel>
+            <translation><!-- HCEFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JYCF ELIOR - AO 2020</masterLabel>
+            <translation><!-- JYCF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JYCF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- JYCF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF</masterLabel>
+            <translation><!-- KOFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E</masterLabel>
+            <translation><!-- KOFF E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E API</masterLabel>
+            <translation><!-- KOFF E API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E COMPASS</masterLabel>
+            <translation><!-- KOFF E COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E Dpt Rest</masterLabel>
+            <translation><!-- KOFF E Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E ELIOR</masterLabel>
+            <translation><!-- KOFF E ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E ELIOR - AO 2020</masterLabel>
+            <translation><!-- KOFF E ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- KOFF E ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFF E SODEXO</masterLabel>
+            <translation><!-- KOFF E SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI</masterLabel>
+            <translation><!-- KOFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E</masterLabel>
+            <translation><!-- KOFI E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E API</masterLabel>
+            <translation><!-- KOFI E API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E COMPASS</masterLabel>
+            <translation><!-- KOFI E COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E ELIOR</masterLabel>
+            <translation><!-- KOFI E ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E ELIOR - AO 2020</masterLabel>
+            <translation><!-- KOFI E ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- KOFI E ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFI E SODEXO</masterLabel>
+            <translation><!-- KOFI E SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFS</masterLabel>
+            <translation><!-- KOFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOFS E</masterLabel>
+            <translation><!-- KOFS E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L200CF</masterLabel>
+            <translation><!-- L200CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF150.08-75 CF</masterLabel>
+            <translation><!-- LF150.08-75 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF150.08-75 CH</masterLabel>
+            <translation><!-- LF150.08-75 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF150.08-75 CS</masterLabel>
+            <translation><!-- LF150.08-75 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF170.08-75 CF</masterLabel>
+            <translation><!-- LF170.08-75 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF170.08-75 CH</masterLabel>
+            <translation><!-- LF170.08-75 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF170.08-75 CS</masterLabel>
+            <translation><!-- LF170.08-75 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.08-75 CF</masterLabel>
+            <translation><!-- LF180.08-75 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.10 CF</masterLabel>
+            <translation><!-- LF180.10 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.10 CH</masterLabel>
+            <translation><!-- LF180.10 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.10 CS</masterLabel>
+            <translation><!-- LF180.10 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.12 CB</masterLabel>
+            <translation><!-- LF180.12 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.12 CF</masterLabel>
+            <translation><!-- LF180.12 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.12 CH</masterLabel>
+            <translation><!-- LF180.12 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.12 CS</masterLabel>
+            <translation><!-- LF180.12 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.14 CB - FRANCE BOISSONS - LIBNER</masterLabel>
+            <translation><!-- LF180.14 CB - FRANCE BOISSONS - LIBNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF180.14 CF</masterLabel>
+            <translation><!-- LF180.14 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.10 CF</masterLabel>
+            <translation><!-- LF210.10 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.10 CH</masterLabel>
+            <translation><!-- LF210.10 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.10 CS</masterLabel>
+            <translation><!-- LF210.10 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.12 CB</masterLabel>
+            <translation><!-- LF210.12 CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.12 CF</masterLabel>
+            <translation><!-- LF210.12 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.12 CH</masterLabel>
+            <translation><!-- LF210.12 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.12 CS</masterLabel>
+            <translation><!-- LF210.12 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.14 CB - FRANCE BOISSONS - LIBNER</masterLabel>
+            <translation><!-- LF210.14 CB - FRANCE BOISSONS - LIBNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.14 CF</masterLabel>
+            <translation><!-- LF210.14 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.16 CF</masterLabel>
+            <translation><!-- LF210.16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.16 CH</masterLabel>
+            <translation><!-- LF210.16 CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF210.16 CS</masterLabel>
+            <translation><!-- LF210.16 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF230.18 CF</masterLabel>
+            <translation><!-- LF230.18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF260.16 CF</masterLabel>
+            <translation><!-- LF260.16 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF260.16 CS</masterLabel>
+            <translation><!-- LF260.16 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF260.18 CF</masterLabel>
+            <translation><!-- LF260.18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF260.19 CF</masterLabel>
+            <translation><!-- LF260.19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF290.18 CF</masterLabel>
+            <translation><!-- LF290.18 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF290.19 CF</masterLabel>
+            <translation><!-- LF290.19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF290.19 CS</masterLabel>
+            <translation><!-- LF290.19 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF320.19 CF</masterLabel>
+            <translation><!-- LF320.19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LF320.19 CS</masterLabel>
+            <translation><!-- LF320.19 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M2106 CF</masterLabel>
+            <translation><!-- M2106 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M2112 CF</masterLabel>
+            <translation><!-- M2112 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF</masterLabel>
+            <translation><!-- MRCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E</masterLabel>
+            <translation><!-- MRCF E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E API</masterLabel>
+            <translation><!-- MRCF E API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E ELIOR</masterLabel>
+            <translation><!-- MRCF E ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E ELIOR - AO 2020</masterLabel>
+            <translation><!-- MRCF E ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- MRCF E ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCF E SODEXO</masterLabel>
+            <translation><!-- MRCF E SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCH</masterLabel>
+            <translation><!-- MRCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCH KALHYGE</masterLabel>
+            <translation><!-- MRCH KALHYGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCH KALHYGE - OPTIONS</masterLabel>
+            <translation><!-- MRCH KALHYGE - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCS</masterLabel>
+            <translation><!-- MRCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRCS E</masterLabel>
+            <translation><!-- MRCS E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFF</masterLabel>
+            <translation><!-- MRFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFH</masterLabel>
+            <translation><!-- MRFH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFH E</masterLabel>
+            <translation><!-- MRFH E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS</masterLabel>
+            <translation><!-- MRFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS E</masterLabel>
+            <translation><!-- MRFS E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.3T-L1H2</masterLabel>
+            <translation><!-- MRFS-3.3T-L1H2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L1H1</masterLabel>
+            <translation><!-- MRFS-3.5T-L1H1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L1H2</masterLabel>
+            <translation><!-- MRFS-3.5T-L1H2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L2H2</masterLabel>
+            <translation><!-- MRFS-3.5T-L2H2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L2H3</masterLabel>
+            <translation><!-- MRFS-3.5T-L2H3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L3H2-Propulsion RJ</masterLabel>
+            <translation><!-- MRFS-3.5T-L3H2-Propulsion RJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L3H2-Propulsion RS</masterLabel>
+            <translation><!-- MRFS-3.5T-L3H2-Propulsion RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L3H3</masterLabel>
+            <translation><!-- MRFS-3.5T-L3H3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L3H3-Propulsion RJ</masterLabel>
+            <translation><!-- MRFS-3.5T-L3H3-Propulsion RJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L3H3-Propulsion RS</masterLabel>
+            <translation><!-- MRFS-3.5T-L3H3-Propulsion RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L4H2-Propulsion RJ</masterLabel>
+            <translation><!-- MRFS-3.5T-L4H2-Propulsion RJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L4H2-Propulsion RS</masterLabel>
+            <translation><!-- MRFS-3.5T-L4H2-Propulsion RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L4H3-Propulsion RJ</masterLabel>
+            <translation><!-- MRFS-3.5T-L4H3-Propulsion RJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRFS-3.5T-L4H3-Propulsion RS</masterLabel>
+            <translation><!-- MRFS-3.5T-L4H3-Propulsion RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N75.150 CF</masterLabel>
+            <translation><!-- N75.150 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPR130.65 CF</masterLabel>
+            <translation><!-- NPR130.65 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NQR500.150 CF</masterLabel>
+            <translation><!-- NQR500.150 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PKE 250.250 CF</masterLabel>
+            <translation><!-- PKE 250.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE M CF Maxicargo</masterLabel>
+            <translation><!-- RE M CF Maxicargo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE M CF Maxicargo Dpt Rest</masterLabel>
+            <translation><!-- RE M CF Maxicargo Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP 250 DB 19 CF</masterLabel>
+            <translation><!-- SCP 250 DB 19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP 280 DB 19 CF</masterLabel>
+            <translation><!-- SCP 280 DB 19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP 280 DB 19 G CF</masterLabel>
+            <translation><!-- SCP 280 DB 19 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP 320 DB 19 CF</masterLabel>
+            <translation><!-- SCP 320 DB 19 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP 340 DB 19 G CF</masterLabel>
+            <translation><!-- SCP 340 DB 19 G CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCR450LA TR</masterLabel>
+            <translation><!-- SCR450LA TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM CF</masterLabel>
+            <translation><!-- SEM CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM CF CARGO</masterLabel>
+            <translation><!-- SEM CF CARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T19.430 TR</masterLabel>
+            <translation><!-- T19.430 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T19.460 TR</masterLabel>
+            <translation><!-- T19.460 TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCCF</masterLabel>
+            <translation><!-- TCCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCCF Dpt Rest</masterLabel>
+            <translation><!-- TCCF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCCI</masterLabel>
+            <translation><!-- TCCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFF</masterLabel>
+            <translation><!-- TCFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFF EDC - ECP</masterLabel>
+            <translation><!-- TCFF EDC - ECP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFI</masterLabel>
+            <translation><!-- TCFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFI EDC</masterLabel>
+            <translation><!-- TCFI EDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFI EDC - ECP</masterLabel>
+            <translation><!-- TCFI EDC - ECP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFS</masterLabel>
+            <translation><!-- TCFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCFS-EDC</masterLabel>
+            <translation><!-- TCFS-EDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGM 15.250 CF</masterLabel>
+            <translation><!-- TGM 15.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TGM 18.250 CF</masterLabel>
+            <translation><!-- TGM 18.250 CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF</masterLabel>
+            <translation><!-- TLOCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF API</masterLabel>
+            <translation><!-- TLOCF API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF COMPASS</masterLabel>
+            <translation><!-- TLOCF COMPASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF Dpt Rest</masterLabel>
+            <translation><!-- TLOCF Dpt Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF ELIOR</masterLabel>
+            <translation><!-- TLOCF ELIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF ELIOR - AO 2020</masterLabel>
+            <translation><!-- TLOCF ELIOR - AO 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF ELIOR - AO 2020 - OPTIONS</masterLabel>
+            <translation><!-- TLOCF ELIOR - AO 2020 - OPTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCF SODEXO</masterLabel>
+            <translation><!-- TLOCF SODEXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOCI</masterLabel>
+            <translation><!-- TLOCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOFF</masterLabel>
+            <translation><!-- TLOFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOFI</masterLabel>
+            <translation><!-- TLOFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TLOFS</masterLabel>
+            <translation><!-- TLOFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TTFF</masterLabel>
+            <translation><!-- TTFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TTFFCONNECT</masterLabel>
+            <translation><!-- TTFFCONNECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TTFFCUSTOM</masterLabel>
+            <translation><!-- TTFFCUSTOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UVNFF</masterLabel>
+            <translation><!-- UVNFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOFS</masterLabel>
+            <translation><!-- VOFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOFS BVA</masterLabel>
+            <translation><!-- VOFS BVA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

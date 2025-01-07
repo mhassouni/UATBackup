@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BundleStatusesToPropagate</fullName>
+    <inlineHelpText>Sélectionnez les statuts de rendez-vous de service du paquet qui sont ajoutés au rendez-vous de service du membre du paquet. Utilisez une valeur vide pour propager tous les statuts.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

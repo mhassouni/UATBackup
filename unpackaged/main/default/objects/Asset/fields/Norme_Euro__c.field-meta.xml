@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Norme_Euro__c</fullName>
+    <label>Norme Euro</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>5+</fullName>
+                <default>false</default>
+                <label>5+</label>
+            </value>
+            <value>
+                <fullName>EEV</fullName>
+                <default>false</default>
+                <label>EEV</label>
+            </value>
+            <value>
+                <fullName>EURO 1</fullName>
+                <default>false</default>
+                <label>EURO 1</label>
+            </value>
+            <value>
+                <fullName>EURO 2</fullName>
+                <default>false</default>
+                <label>EURO 2</label>
+            </value>
+            <value>
+                <fullName>EURO 3</fullName>
+                <default>false</default>
+                <label>EURO 3</label>
+            </value>
+            <value>
+                <fullName>EURO 4</fullName>
+                <default>false</default>
+                <label>EURO 4</label>
+            </value>
+            <value>
+                <fullName>EURO 5</fullName>
+                <default>false</default>
+                <label>EURO 5</label>
+            </value>
+            <value>
+                <fullName>EURO 6</fullName>
+                <default>false</default>
+                <label>EURO 6</label>
+            </value>
+            <value>
+                <fullName>EURO 6-B</fullName>
+                <default>false</default>
+                <label>EURO 6-B</label>
+            </value>
+            <value>
+                <fullName>EURO 6-C</fullName>
+                <default>false</default>
+                <label>EURO 6-C</label>
+            </value>
+            <value>
+                <fullName>EURO 6-D</fullName>
+                <default>false</default>
+                <label>EURO 6-D</label>
+            </value>
+            <value>
+                <fullName>EURO 6-D-FULL</fullName>
+                <default>false</default>
+                <label>EURO 6-D-FULL</label>
+            </value>
+            <value>
+                <fullName>EURO 6-D-TEMP</fullName>
+                <default>false</default>
+                <label>EURO 6-D-TEMP</label>
+            </value>
+            <value>
+                <fullName>EURO 6-E</fullName>
+                <default>false</default>
+                <label>EURO 6-E</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

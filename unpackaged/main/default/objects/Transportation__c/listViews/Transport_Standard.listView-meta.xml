@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transport_Standard</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Country__c</columns>
+    <columns>Product__c</columns>
+    <columns>Type_Location__c</columns>
+    <columns>Sector__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>Category__c</columns>
+    <columns>Location_Jour__c</columns>
+    <columns>Location_Jour_Sup__c</columns>
+    <columns>Frais_Transport__c</columns>
+    <columns>Short_term__c</columns>
+    <columns>POR__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Transportation__c.Transport_Classique</value>
+    </filters>
+    <filters>
+        <field>Sector__c</field>
+        <operation>equals</operation>
+        <value>Forfait 7 jours,Forfait 14 jours,Forfait 21 jours</value>
+    </filters>
+    <label>Transport Classique</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

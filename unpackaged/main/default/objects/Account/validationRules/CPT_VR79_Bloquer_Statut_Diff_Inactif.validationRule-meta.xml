@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR79_Bloquer_Statut_Diff_Inactif</fullName>
+    <active>true</active>
+    <description>Les users dont le profil PF Réseau ne doivent pas avoir accès à toutes les valeurs disponibles dans la liste de sélection, comme la possibilité de marquer un compte comme &quot;Validé CM&quot; ou toute autre valeur portée par le champ, sauf accès à Inactif</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Statut__c)
+, 
+TEXT(Statut__c)&lt;&gt;$Label.CPT_Statut_Inactif
+,
+NOT(ISCHANGED(TECHWS__c))
+,
+$User.ProfileId=$Label.USR_ProfileId_PFReseau
+,
+$Setup.Bypass__c.BypassValidationRules__c = false
+)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Modification du statut non autorisée. Seul le statut &#39;Inactif&#39; est disponible</errorMessage>
+</ValidationRule>

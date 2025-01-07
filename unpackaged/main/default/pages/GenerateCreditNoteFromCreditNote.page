@@ -1,0 +1,6 @@
+<apex:page standardController="blng__CreditNote__c" extensions="GenDocCreditNoteFromCreditNote" showQuickActionVfHeader="false">
+    
+	<apex:iframe id="myFrame" src="{!URLFOR(IF($Site.prefix == '/s','/apex/dfsle__gendocumentgenerator',
+        $Site.Prefix +'/apex/dfsle__gendocumentgenerator'), null, [sId = cr.id, templateId = cr.templateId__c, recordId=cr.id, title = 'Generate creditNote'])}"   />
+
+</apex:page>

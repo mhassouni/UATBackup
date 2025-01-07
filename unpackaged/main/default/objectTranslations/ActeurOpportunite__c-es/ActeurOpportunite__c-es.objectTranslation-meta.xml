@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actor de la oportunidad</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actores de la oportunidad</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Acteur de l&#39;opportunité</layout>
+        <sections>
+            <label>Comentarios</label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Numéro --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Rellena los campos obligatorios.</errorMessage>
+        <name>ACO_VR01_RequiredImport</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Los estados &quot;Validado&quot; o &quot;Validado CM&quot; son los únicos que pueden ser elegidos como actor en la oportunidad</errorMessage>
+        <name>ACO_VR02_CompteDraftRefuseInactf</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>la cuenta seleccionada debe operar en el mismo países  de la cuenta del opportunidad</errorMessage>
+        <name>ACO_VR03_Compte_pays_operation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Debe elegir una cuenta de competidor que ofrece el producto de su oportunidad</errorMessage>
+        <name>ACO_VR04_ProduitsConcurrent</name>
+    </validationRules>
+    <webLinks>
+        <label>Añadir una cuenta</label>
+        <name>AjouterCompte</name>
+    </webLinks>
+</CustomObjectTranslation>

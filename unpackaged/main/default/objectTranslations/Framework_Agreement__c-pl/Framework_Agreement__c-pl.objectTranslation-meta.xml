@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value><!-- Accord - Cadre --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>Présentation AC - Container</layout>
+        <sections>
+            <label><!-- Balance kilométrique --></label>
+            <section>Balance kilométrique</section>
+        </sections>
+        <sections>
+            <label><!-- Compensation kilométrique --></label>
+            <section>Compensation kilométrique</section>
+        </sections>
+        <sections>
+            <label><!-- Conditions financières --></label>
+            <section>Conditions financières</section>
+        </sections>
+        <sections>
+            <label><!-- Contrat de location - Porte de sortie --></label>
+            <section>Contrat de location - Porte de sortie</section>
+        </sections>
+        <sections>
+            <label><!-- Contrat de location - Remise pied de facture --></label>
+            <section>Contrat de location - Remise pied de facture</section>
+        </sections>
+        <sections>
+            <label><!-- Durée --></label>
+            <section>Durée</section>
+        </sections>
+        <sections>
+            <label><!-- Grille --></label>
+            <section>Grille</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Lieu d&apos;exploitation --></label>
+            <section>Lieu d&#39;exploitation</section>
+        </sections>
+        <sections>
+            <label><!-- Livraison véhicule neuf --></label>
+            <section>Livraison véhicule neuf</section>
+        </sections>
+        <sections>
+            <label><!-- Neutralisation de la facturation --></label>
+            <section>Neutralisation de la facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Opérationnelle --></label>
+            <section>Opérationnelle</section>
+        </sections>
+        <sections>
+            <label><!-- Portail client - Extranet --></label>
+            <section>Portail client - Extranet</section>
+        </sections>
+        <sections>
+            <label><!-- Régulation kilométrique --></label>
+            <section>Régulation kilométrique</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Accord - Cadre</layout>
+        <sections>
+            <label><!-- Assurance --></label>
+            <section>Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Balance kilométrique --></label>
+            <section>Balance kilométrique</section>
+        </sections>
+        <sections>
+            <label><!-- Compensation kilométrique --></label>
+            <section>Compensation kilométrique</section>
+        </sections>
+        <sections>
+            <label><!-- Conditions financières --></label>
+            <section>Conditions financières</section>
+        </sections>
+        <sections>
+            <label><!-- Contrat de location - Porte de sortie --></label>
+            <section>Contrat de location - Porte de sortie</section>
+        </sections>
+        <sections>
+            <label><!-- Contrat de location - Remise pied de facture --></label>
+            <section>Contrat de location - Remise pied de facture</section>
+        </sections>
+        <sections>
+            <label><!-- Durée --></label>
+            <section>Durée</section>
+        </sections>
+        <sections>
+            <label><!-- Grille --></label>
+            <section>Grille</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Lieu d&apos;exploitation --></label>
+            <section>Lieu d&#39;exploitation</section>
+        </sections>
+        <sections>
+            <label><!-- Livraison véhicule neuf --></label>
+            <section>Livraison véhicule neuf</section>
+        </sections>
+        <sections>
+            <label><!-- Neutralisation de la facturation --></label>
+            <section>Neutralisation de la facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Opérationnelle --></label>
+            <section>Opérationnelle</section>
+        </sections>
+        <sections>
+            <label><!-- Personnel conducteur --></label>
+            <section>Personnel conducteur</section>
+        </sections>
+        <sections>
+            <label><!-- Portail client - Extranet --></label>
+            <section>Portail client - Extranet</section>
+        </sections>
+        <sections>
+            <label><!-- Régulation kilométrique --></label>
+            <section>Régulation kilométrique</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom du contrat de référence --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Mettre à jour la accord - cadre --></label>
+        <name>AccordCadrePrevious</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer Accord Cadre --></label>
+        <name>Creer_Accord_Cadre</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Utwórz umowę ramową</label>
+        <name>Creer_Accord_Cadre_ScreenFlow</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Zmodyfikuj CGL</label>
+        <name>ModifyCGL</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Modifier l&apos;Accord-Cadre --></label>
+        <name>ModifyFrameworkAgreement</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Accord - Cadre - CD/MD --></label>
+        <name>AC_CD_MD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - LD --></label>
+        <name>AC_LD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Container --></label>
+        <name>AccordCadre_Container</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Poids Lourd --></label>
+        <name>AccordCadre_PL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Remorque --></label>
+        <name>AccordCadre_Remorque</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Semi-remorque --></label>
+        <name>AccordCadre_SR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Véhicule Electrique --></label>
+        <name>AccordCadre_VE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accord - Cadre - Véhicule Léger --></label>
+        <name>AccordCadre_VL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accords - Cadres Meubles --></label>
+        <name>Accords_CadresMeubles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Container --></label>
+        <name>CGLContainer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Poids Lourd --></label>
+        <name>CGLPL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Remorque --></label>
+        <name>CGLR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Semi-remorque --></label>
+        <name>CGLSR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Véhicule Electrique --></label>
+        <name>CGLVE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - Véhicule Léger --></label>
+        <name>CGLVL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - CD/MD --></label>
+        <name>CGL_CD_MD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conditions Générales de Location - LD --></label>
+        <name>CGL_LD</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Lors de la création d&apos;un accord-cadre, il est nécessaire que le Compte OU le Groupement soit renseigné. --></errorMessage>
+        <name>VR_01_FrameworkAgreement_LookupnotNULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- L&apos;organisation commerciale est obligatoire lors de la création d&apos;une CGL. --></errorMessage>
+        <name>VR_01_FrameworkAgreement_OrgComCGL</name>
+    </validationRules>
+</CustomObjectTranslation>

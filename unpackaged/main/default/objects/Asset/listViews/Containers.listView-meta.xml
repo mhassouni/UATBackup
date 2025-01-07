@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Containers</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>Date_IMMAT__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Agence__c</columns>
+    <columns>IMMAT__c</columns>
+    <columns>Position__c</columns>
+    <columns>Nb_Palettes__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>Agence_Localisation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Parc</value>
+    </filters>
+    <filters>
+        <field>Agence__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Containers</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

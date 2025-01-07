@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>wijze van communicatie</label>
+        <name>Mode_de_communication__c</name>
+        <picklistValues>
+            <masterLabel>RDV</masterLabel>
+            <translation><!-- RDV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tel</masterLabel>
+            <translation><!-- Tel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visio</masterLabel>
+            <translation><!-- Visio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite</masterLabel>
+            <translation><!-- Visite --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CategorieProduit__c</fullName>
+    <label>Catégorie Produit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARM PV</fullName>
+                <default>false</default>
+                <label>ARM PV</label>
+            </value>
+            <value>
+                <fullName>BAC 100</fullName>
+                <default>false</default>
+                <label>BAC 100</label>
+            </value>
+            <value>
+                <fullName>BAC 150</fullName>
+                <default>false</default>
+                <label>BAC 150</label>
+            </value>
+            <value>
+                <fullName>BAC 200</fullName>
+                <default>false</default>
+                <label>BAC 200</label>
+            </value>
+            <value>
+                <fullName>BAC SERVA</fullName>
+                <default>false</default>
+                <label>BAC SERVA</label>
+            </value>
+            <value>
+                <fullName>TRAIT 100</fullName>
+                <default>false</default>
+                <label>TRAIT 100</label>
+            </value>
+            <value>
+                <fullName>TRAIT 130</fullName>
+                <default>false</default>
+                <label>TRAIT 130</label>
+            </value>
+            <value>
+                <fullName>VITR 050</fullName>
+                <default>false</default>
+                <label>VITR 050</label>
+            </value>
+            <value>
+                <fullName>VITR 070</fullName>
+                <default>false</default>
+                <label>VITR 070</label>
+            </value>
+            <value>
+                <fullName>VITR 090</fullName>
+                <default>false</default>
+                <label>VITR 090</label>
+            </value>
+            <value>
+                <fullName>VITR 100</fullName>
+                <default>false</default>
+                <label>VITR 100</label>
+            </value>
+            <value>
+                <fullName>VITR 120</fullName>
+                <default>false</default>
+                <label>VITR 120</label>
+            </value>
+            <value>
+                <fullName>VITR 130</fullName>
+                <default>false</default>
+                <label>VITR 130</label>
+            </value>
+            <value>
+                <fullName>VITR 190</fullName>
+                <default>false</default>
+                <label>VITR 190</label>
+            </value>
+            <value>
+                <fullName>VITR SV 070</fullName>
+                <default>false</default>
+                <label>VITR SV 070</label>
+            </value>
+            <value>
+                <fullName>VITR SV 100</fullName>
+                <default>false</default>
+                <label>VITR SV 100</label>
+            </value>
+            <value>
+                <fullName>VITR SV 130</fullName>
+                <default>false</default>
+                <label>VITR SV 130</label>
+            </value>
+            <value>
+                <fullName>VITR SV 155</fullName>
+                <default>false</default>
+                <label>VITR SV 155</label>
+            </value>
+            <value>
+                <fullName>AUTRE</fullName>
+                <default>false</default>
+                <label>AUTRE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

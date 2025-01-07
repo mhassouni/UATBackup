@@ -1,0 +1,96 @@
+<template>
+    <template if:true={hasMessage}>
+        <!--<div class="testpageMessageParentDivClass" >
+            <span class="slds-p-around_medium" title={messageTitle}>
+                ⭐ 
+            </span>
+            <h2>{messageSummary}</h2>
+        </div>-->
+    </template>
+    <template if:true={hasRecords}>
+        <div >
+
+            <div>
+                <lightning-input class="slds-p-around_medium" type="text" placeholder="Saisir le texte de recherche..." slot="actions" onchange={handleSearchText} disabled={disableSearch} style="flex: 1;"></lightning-input>
+            </div>
+           <div >
+                <template if:false={disableSort}>
+                    <lightning-datatable
+                            key-field="Id"
+                            columns={columns}
+                            data={viewRecords}
+                            default-sort-direction={defaultSortDirection}
+                            sorted-direction={sortDirection}
+                            sorted-by={sortedBy}
+                            onsort={onHandleSort}
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            hide-checkbox-column = "true"
+                            hide-row-number-column="true">
+                    </lightning-datatable>
+                </template>
+                <template if:true={disableSort}>
+                    <lightning-datatable
+                            key-field="Id"
+                            columns={columns}
+                            data={viewRecords}
+                            onsave={handleSave}
+                            draft-values={draftValues}
+                            hide-checkbox-column = "true"
+                            hide-row-number-column="true">
+                    </lightning-datatable>
+                </template>
+            </div>
+            <div>
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <div class="slds-m-top_medium slds-grid slds-align_absolute-center">
+                        <div class="slds-p-around_xx-small">
+
+                            <button class="slds-p-around_xx-small custom-button"  onclick={goToFirst} disabled={disableBack}>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronleft" alternative-text="left"></lightning-icon>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronleft" alternative-text="left"></lightning-icon>
+                            </button>
+                        </div>
+                            <div class="slds-p-around_xx-small">
+
+                            <button class="slds-p-around_xx-small custom-button"  onclick={goToPrevious} disabled={disableBack}>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronleft" alternative-text="left"></lightning-icon>
+                            </button>
+                            </div>
+                        <span class="slds-p-around_small">
+                            <button class="slds-p-around_xx-small custom-button"  onclick={handleRefresh} >
+                                <lightning-icon size="xx-small" icon-name="utility:refresh" ></lightning-icon>
+                             </button>
+                        </span>
+                            
+                            <div class="slds-p-around_xx-small">
+                            <button class="slds-p-around_xx-small custom-button"  onclick={goToNext} disabled={disableForward}>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronright" alternative-text="right"></lightning-icon>
+                            </button>
+                            </div>
+                            <div class="slds-p-around_xx-small">
+                            <button class="slds-p-around_xx-small custom-button"  onclick={goToLast} disabled={disableForward}>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronright" alternative-text="right"></lightning-icon>
+                                <lightning-icon size="xx-small" icon-name="utility:chevronright" alternative-text="right"></lightning-icon>
+                            </button>
+                            </div>
+                    </div>
+                    
+                </div>
+
+
+                  <div class="slds-align_absolute-center">
+                    <div class="slds-grid slds-align_absolute-center">
+                        <div >
+
+                <span >
+                    Page {currentPage} de {totalPages} / ( {recordCount} Enregistrements )
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

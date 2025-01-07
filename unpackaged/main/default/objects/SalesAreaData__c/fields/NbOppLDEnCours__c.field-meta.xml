@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbOppLDEnCours__c</fullName>
+    <description>Alimenté par l&#39;appexchange Salesforce Declarative Rollup
+Calcul le nombre d&#39;opportunité LD &#39;en cours&#39; associées à cette SAD</description>
+    <externalId>false</externalId>
+    <label>Nb Opportunité LD en cours</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

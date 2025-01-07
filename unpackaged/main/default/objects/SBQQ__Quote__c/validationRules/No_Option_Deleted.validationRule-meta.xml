@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Option_Deleted</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF (AND( $Profile.Name = &quot;PF Réseau&quot;, ISPICKVAL(Quote_Type__c,&quot;Assembly Quote&quot;) , Prix_definis__c = TRUE, text(Tech_PR_Line_Item__c) &lt;&gt; text(Tech_Line_Items__c)), TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>Les prix ont été définis, l&#39;édition du devis est désormais bloquée. Vous ne pouvez plus modifier les options et les quantités.</errorMessage>
+</ValidationRule>

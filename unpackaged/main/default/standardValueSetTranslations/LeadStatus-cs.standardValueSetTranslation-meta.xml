@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonnée</masterLabel>
+        <translation>Opuštěný</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clôturée</masterLabel>
+        <translation>ZAVŘENO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Convertie</masterLabel>
+        <translation>Převedeno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Créée</masterLabel>
+        <translation>Vytvořeno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gagnée</masterLabel>
+        <translation>Vyhrál</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualifiée</masterLabel>
+        <translation>Kvalifikovaný</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

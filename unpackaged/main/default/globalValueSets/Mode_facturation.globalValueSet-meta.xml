@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Début de mois</fullName>
+        <default>true</default>
+        <label>Début de mois</label>
+    </customValue>
+    <customValue>
+        <fullName>Fin de mois</fullName>
+        <default>false</default>
+        <label>Fin de mois</label>
+    </customValue>
+    <customValue>
+        <fullName>100 % avant départ</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>100 % avant départ</label>
+    </customValue>
+    <customValue>
+        <fullName>50% au préalable / 30% à la livraison / 20% après l&#39;événement</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>50% au préalable / 30% à la livraison / 20% après l&#39;événement</label>
+    </customValue>
+    <masterLabel>Mode de facturation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

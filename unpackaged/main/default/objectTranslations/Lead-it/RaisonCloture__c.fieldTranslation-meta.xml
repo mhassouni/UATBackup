@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Motivazione della chiusura</label>
+        <name>RaisonCloture__c</name>
+        <picklistValues>
+            <masterLabel>Agence trop éloignée</masterLabel>
+            <translation>Agenzia troppo lontana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aucun potentiel</masterLabel>
+            <translation><!-- Aucun potentiel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changement d’avis</masterLabel>
+            <translation>Cambio di opinione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client injoignable</masterLabel>
+            <translation>Cliente non raggiungibile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte existant</masterLabel>
+            <translation>Account esistente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte non identifié</masterLabel>
+            <translation>Account non identificato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditions de locations non retenues</masterLabel>
+            <translation>Condizioni di noleggio non selezionate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Délai de réponse trop important</masterLabel>
+            <translation>Tempo di risposta troppo lungo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montant de la caution trop élevé</masterLabel>
+            <translation>Importo del deposito troppo alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas de réponse client</masterLabel>
+            <translation>Nessuna risposta del cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix de location trop élevé</masterLabel>
+            <translation>Prezzo del noleggio troppo alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix trop élevés</masterLabel>
+            <translation>Prezzi troppo alti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produit non disponible en stock</masterLabel>
+            <translation>Prodotto non disponibile in stock</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet du client annulé ou reporté</masterLabel>
+            <translation>Progetto del cliente annullato o posticipato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect écarté pour raisons financières</masterLabel>
+            <translation>Cattivo pagatore/storico finanziario non idoneo al noleggio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution alternative sans frais</masterLabel>
+            <translation>Soluzione alternativa senza costi</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

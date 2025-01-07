@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planficateurs_Facturation</fullName>
+    <columns>NAME</columns>
+    <columns>blng__InvoiceBatches__c</columns>
+    <columns>blng__StartDateTime__c</columns>
+    <columns>blng__TargetDate__c</columns>
+    <columns>blng__Type__c</columns>
+    <columns>blng__AutomaticallyPostInvoices__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Planficateurs Facturation</label>
+</ListView>

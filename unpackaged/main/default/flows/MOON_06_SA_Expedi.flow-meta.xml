@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Statut_Expedie</name>
+        <label>Statut Expedié</label>
+        <locationX>605</locationX>
+        <locationY>316</locationY>
+        <assignmentItems>
+            <assignToReference>SA.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Expédié</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UDPATE_SA</targetReference>
+        </connector>
+    </assignments>
+    <description>Passer SA en Expédié</description>
+    <interviewLabel>MOON_06_SA_Expedié {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MOON_06_SA_Expedié</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Passer le statut de SA en Expedié</description>
+        <name>MOON_06_SA_Expedie</name>
+        <label>MOON_06_SA_Expedié</label>
+        <locationX>605</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Statut_Expedie</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OT_ID</elementReference>
+            </value>
+        </filters>
+        <object>ServiceAppointment</object>
+        <outputReference>SA</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Status</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>UDPATE_SA</name>
+        <label>UDPATE SA</label>
+        <locationX>604</locationX>
+        <locationY>554</locationY>
+        <inputReference>SA</inputReference>
+    </recordUpdates>
+    <startElementReference>MOON_06_SA_Expedie</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>OT_ID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SA</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+</Flow>

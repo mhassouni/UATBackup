@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextOccurrenceField</fullName>
+    <inlineHelpText>La valeur de ce champ est comparée au champ Utilisation afin de déterminer si la règle est vraie.</inlineHelpText>
+</CustomField>

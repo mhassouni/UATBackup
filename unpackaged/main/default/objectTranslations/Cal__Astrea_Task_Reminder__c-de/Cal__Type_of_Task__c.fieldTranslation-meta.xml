@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type of Task --></label>
+        <name>Cal__Type_of_Task__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation>Anruf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation>Treffen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Andere</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

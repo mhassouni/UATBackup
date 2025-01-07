@@ -1,0 +1,30 @@
+[
+    {
+        "Name": "--None--",
+        "Path": "--None--"
+    },
+    {
+        "Name": "Date de valeur",
+        "Path": "/getPaiementsResponse/return/myInfo/dateValeurPaiement"
+    },
+    {
+        "Name": "Retard paiement constaté",
+        "Path": "/getPaiementsResponse/return/myInfo/commentaireRetardPaiement"
+    },
+    {
+        "Name": "Encours échus",
+        "Path": "/getPaiementsResponse/return/myInfo/encoursEchus"
+    },
+    {
+        "Name": "Encours étudiés",
+        "Path": "/getPaiementsResponse/return/myInfo/encoursEtudies"
+    },
+    {
+        "Name": "Nbre Fournisseurs analysés",
+        "Path": "/getPaiementsResponse/return/myInfo/nbFournisseur"
+    },
+    {
+        "Name": "Nbre de jours de retard constatés",
+        "Path": "/getPaiementsResponse/return/myInfo/nbRetardPaiement"
+    }
+]

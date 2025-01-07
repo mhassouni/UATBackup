@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Entreprise individuelle</masterLabel>
+        <translation><!-- Entreprise individuelle --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Partenariat</masterLabel>
+        <translation><!-- Partenariat --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SARL</masterLabel>
+        <translation><!-- SARL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Société</masterLabel>
+        <translation>Firma</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

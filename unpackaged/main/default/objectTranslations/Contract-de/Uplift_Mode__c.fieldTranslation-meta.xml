@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mode d&apos;indexation --></label>
+        <name>Uplift_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Indexation selon indice en vigueur</masterLabel>
+            <translation><!-- Indexation selon indice en vigueur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas d&#39;indexation</masterLabel>
+            <translation><!-- Pas d&apos;indexation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pourcentage de l&#39;indice négocié</masterLabel>
+            <translation><!-- Pourcentage de l&apos;indice négocié --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pourcentage fixe négocié</masterLabel>
+            <translation><!-- Pourcentage fixe négocié --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

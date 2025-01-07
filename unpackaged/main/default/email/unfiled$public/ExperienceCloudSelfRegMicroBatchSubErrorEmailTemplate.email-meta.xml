@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ce modèle d&#39;e-mail s&#39;applique après la soumission des requêtes d&#39;auto-inscription traitées par lots. L&#39;utilisateur reçoit cet e-mail en cas d&#39;erreur lors du traitement de sa requête d&#39;auto-inscription.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Cloud : E-mail utilisateur en cas d&#39;erreur de soumission d&#39;un petit lot d&#39;auto-inscription</name>
+    <style>none</style>
+    <subject>Votre inscription à {!Community_Name} a échoué</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

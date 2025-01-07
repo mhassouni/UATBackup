@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Cloture_OTSEncours</fullName>
+    <active>true</active>
+    <description>GFS-354 : Contrôle clôture requête manuelle : OT tous terminés / Annulé</description>
+    <errorConditionFormula>AND
+(
+
+Text(Status) = &#39;Terminee&#39;
+,
+ischanged(Status) = true
+,
+TECH_NB_OT_EnCours__c&gt;0
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>&#39;Merci de clôturer le ou les ordres de travail associé(s) avant de clôturer l&#39;intervention&quot;</errorMessage>
+</ValidationRule>

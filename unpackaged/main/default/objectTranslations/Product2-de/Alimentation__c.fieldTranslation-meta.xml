@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Alimentation --></label>
+        <name>Alimentation__c</name>
+        <picklistValues>
+            <masterLabel>230 V Mono - 32 A</masterLabel>
+            <translation><!-- 230 V Mono - 32 A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380 V + T32 A + 220 V 16 A</masterLabel>
+            <translation><!-- 380 V + T32 A + 220 V 16 A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380 V Tri + Terre + Neutre - 16 A</masterLabel>
+            <translation><!-- 380 V Tri + Terre + Neutre - 16 A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380 V Tri + Terre + Neutre - 32 A - 12 kW</masterLabel>
+            <translation><!-- 380 V Tri + Terre + Neutre - 32 A - 12 kW --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

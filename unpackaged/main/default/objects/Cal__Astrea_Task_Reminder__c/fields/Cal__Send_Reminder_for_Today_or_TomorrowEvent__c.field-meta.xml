@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cal__Send_Reminder_for_Today_or_TomorrowEvent__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Send Reminder On</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Day Of Meeting</fullName>
+                <default>false</default>
+                <label>Day Of Meeting</label>
+            </value>
+            <value>
+                <fullName>Day Before Meeting</fullName>
+                <default>false</default>
+                <label>Day Before Meeting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

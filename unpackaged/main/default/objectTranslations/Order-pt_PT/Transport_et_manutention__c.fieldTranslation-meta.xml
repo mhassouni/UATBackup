@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Transport et Manutention --></label>
+        <name>Transport_et_manutention__c</name>
+        <picklistValues>
+            <masterLabel>Organisé par le client</masterLabel>
+            <translation><!-- Organisé par le client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisé par nos soins</masterLabel>
+            <translation><!-- Organisé par nos soins --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

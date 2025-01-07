@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>A faire</masterLabel>
+        <translation>Ausstehend</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Crée</masterLabel>
+        <translation>Erstellt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Impossible de terminer</masterLabel>
+        <translation>unmöglich zu beenden</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Non contrôlé</masterLabel>
+        <translation>Kontrolle nicht durchgeführt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Réalisé</masterLabel>
+        <translation>Ausgeführt</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

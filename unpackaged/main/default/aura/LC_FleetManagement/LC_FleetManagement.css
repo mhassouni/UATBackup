@@ -1,0 +1,193 @@
+.THIS .custom-background{
+    background-color: white;
+}
+
+.THIS .slds-button_brand{
+    background-color:#05954f;
+    border-color : #05954f;
+}
+
+.THIS .slds-button_neutral{
+    color:#05954f;
+    border-color : #05954f;
+}
+
+.THIS a{
+    color:#05954f;
+}
+
+.THIS .fieldset {    
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+    display: block;   
+    min-height: 350px;
+}
+
+.THIS .fieldsetLegend {    
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    display: block;
+}
+
+.THIS .badge{
+    margin: 10px;
+}
+
+.THIS .result_reservation {    
+    padding: 10px;
+    overflow: scroll;
+    height: 560px;
+ }
+
+
+.THIS .result_container {    
+    padding: 10px;
+    overflow: scroll;
+    height: 560px;
+ }
+
+.THIS .slds-size_4-of-7,
+.THIS .slds-size_3-of-7{
+	margin-bottom: 20px;
+}
+
+ .THIS .details_reservation{
+     padding: 8px;
+ }
+
+.THIS .details_container{
+    padding: 10px;
+}
+
+.THIS .input-container{
+    width: 48%;
+}
+.THIS .input-container.input-container-multi {
+    width: 100%;
+}
+
+.THIS .input-container.input-32{
+    width: 31%;
+    margin: 0 1%;
+}
+
+.THIS .input-container .input-container.input-container-multi .slds-size_small,
+.THIS .input-container .input-container.input-container-multi .slds-size--small,
+.THIS .formReservations .input-container.input-container-multi .slds-size_small,
+.THIS .formReservations .input-container.input-container-multi .slds-size--small,
+.THIS .slds-combobox_container.slds-size_small{
+    width: 100% !important;
+}
+
+.THIS .slds-combobox_container.slds-size_small{
+    padding-left: 0.25rem;
+}
+
+.THIS .formReservations .input-container.input-container-multi {
+    width: 48%;
+}
+
+.THIS .formAssetes .slds-clearfix.slds-p-top_medium.btn-bottom-container{
+    position: static;
+    bottom: -64px;
+}
+
+.THIS .slds-hidden{
+	height: 0;
+}
+
+.THIS label{
+    font-size: 12px !important;
+    color: #383838 !important;
+}
+
+.THIS .slds-form-element__label{
+    display: block;
+    margin-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 1%;
+}
+
+.THIS form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.THIS .formReservations form{
+	justify-content: space-between;
+}
+
+.THIS .result-title{
+    font-size: 15px;
+}
+
+.THIS .details-reservation,
+.THIS .head-containers{
+	display: flex;
+    justify-content: space-between;
+}
+
+.THIS .info-notif{
+    font-size: 12px;
+    color: red;
+    padding: 10px;
+}
+
+.THIS .info-notif svg{
+    fill: red;
+}
+
+.THIS .date-line{
+    width: 1px;
+    height: 20px;
+    background: #8a8a8a;
+    margin: 2px auto;
+}
+
+.THIS .edit-reservation{
+    margin-bottom: 7px;
+    text-align: end;
+}
+
+.THIS .edit-reservation lightning-primitive-icon{
+    color: #05954f;
+}
+
+.THIS .slds-button:focus{
+    box-shadow: none !important;
+}
+
+.THIS .slds-button_neutral:focus{
+    border-color: #05954f;
+}
+
+.THIS .edit-reservation .slds-button_neutral{
+    padding-right: 15px !important;
+    padding-left: 20px !important;
+}
+
+.THIS .status_En_Atelier svg{
+    fill : #ef7e33;
+}
+
+.THIS .status_En_Transport svg{
+    fill : #01af50;
+}
+
+.THIS .status_En_Location svg{
+    fill : #0170c1;
+}
+
+.THIS .status_Disponible svg{
+    fill : green;
+}
+
+.THIS .status_Non_Disponible svg{
+    fill : gray;
+}

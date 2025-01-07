@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <name>Do_not_Set_an_invoice_batch</name>
+        <label>Do not Set an invoice batch</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.blng__InvoiceBatch__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Other</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Location_type_on_Order</name>
+        <label>Set Location type on Order</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.AgencePF__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Quote__r.Agence_PF__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Which_Location_Type_has_been_selected</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_The_Invoice_Batch_to_Courte_Dur_e</name>
+        <label>Set The Invoice Batch to &quot;Courte Durée&quot;</label>
+        <locationX>50</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.blng__InvoiceBatch__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Short Term</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Order_from_Quote_or_Standalone</name>
+        <label>Order from Quote or Standalone</label>
+        <locationX>380</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Order_from_Quote</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Quote__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Location_type_on_Order</targetReference>
+            </connector>
+            <label>Order from Quote</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Which_Location_Type_has_been_selected</name>
+        <label>Which Location Type has been selected?</label>
+        <locationX>182</locationX>
+        <locationY>551</locationY>
+        <defaultConnector>
+            <targetReference>Do_not_Set_an_invoice_batch</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Short_Term_Location_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Quote__r.SBQQ__Opportunity2__r.Type_Location__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Courte Durée</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_The_Invoice_Batch_to_Courte_Dur_e</targetReference>
+            </connector>
+            <label>Short Term Location Type</label>
+        </rules>
+    </decisions>
+    <description>Update Invoice Batch - Replace &quot;false&quot; with &quot;Other&quot;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varlocationtype</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.SBQQ__Quote__r.Type_de_location__c})</expression>
+    </formulas>
+    <interviewLabel>Order {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order Create Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Order_from_Quote_or_Standalone</targetReference>
+        </connector>
+        <object>Order</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

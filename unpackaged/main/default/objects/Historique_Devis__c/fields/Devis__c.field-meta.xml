@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devis__c</fullName>
+    <description>Utilisateur à l’origine de la modification</description>
+    <label>Devis</label>
+    <referenceTo>Quote</referenceTo>
+    <relationshipLabel>Historiques Devis</relationshipLabel>
+    <relationshipName>Historiques_Devis</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

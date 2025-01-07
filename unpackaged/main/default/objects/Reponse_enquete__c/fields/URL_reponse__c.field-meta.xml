@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL_reponse__c</fullName>
+    <description>Stocke la réponse à l&#39;enquête. Sans avoir d&#39;accès à l&#39;outil Qualtrics, la réponse est accessible</description>
+    <label>URL de la réponse</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

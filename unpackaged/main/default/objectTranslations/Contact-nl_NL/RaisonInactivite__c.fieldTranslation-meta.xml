@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Reden non-activiteit</label>
+        <name>RaisonInactivite__c</name>
+        <picklistValues>
+            <masterLabel>Changement société</masterLabel>
+            <translation>Wijziging firma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doublon</masterLabel>
+            <translation>Dubbele info</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Décès</masterLabel>
+            <translation>Overleden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Désactivation</masterLabel>
+            <translation><!-- Désactivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retraite</masterLabel>
+            <translation>Gepensioneerd</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

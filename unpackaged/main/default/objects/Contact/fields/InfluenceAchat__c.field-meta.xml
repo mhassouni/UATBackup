@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InfluenceAchat__c</fullName>
+    <label>Influence d&#39;achat</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Décideur économique</fullName>
+                <default>false</default>
+                <label>Décideur économique</label>
+            </value>
+            <value>
+                <fullName>Décideur technique</fullName>
+                <default>false</default>
+                <label>Décideur technique</label>
+            </value>
+            <value>
+                <fullName>Sans influence</fullName>
+                <default>false</default>
+                <label>Sans influence</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Créditer</masterLabel>
+        <translation>Kreditieren</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rembourser</masterLabel>
+        <translation>Zurückerstatten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Remplacer</masterLabel>
+        <translation>Ersetzen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retourner</masterLabel>
+        <translation>Zurückbringen</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

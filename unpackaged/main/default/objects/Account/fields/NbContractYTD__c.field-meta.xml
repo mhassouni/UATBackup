@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbContractYTD__c</fullName>
+    <description>Somme des contrats qui ont été signés sur l&#39;année en cours YTD tous produits</description>
+    <externalId>false</externalId>
+    <label>Nombre de contrats YTD</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X04_All_of_my_Quote_Tout_Mes_Devis</fullName>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>QUOTE.RECORDTYPE</columns>
+    <columns>QUOTE.STATUS</columns>
+    <columns>Date_Heure_Demande_de_tarification__c</columns>
+    <columns>Statut_opportunite__c</columns>
+    <columns>N_Parc__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>04 - All of my Quote / Tout Mes Devis</label>
+</ListView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR15_DeValideANonInactif</fullName>
+    <active>true</active>
+    <description>CPT-RG-007</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Statut__c ), 
+TEXT(PRIORVALUE(Statut__c))= $Label.CPT_Statut_Valide , 
+OR(
+TEXT(Statut__c)= $Label.CPT_Statut_Draft,
+TEXT(Statut__c)= $Label.CPT_Statut_Refuse
+) 
+, 
+$Profile.Id != LEFT($Label.USR_ProfileId_AdministrateurSysteme,15),
+$Profile.Id != LEFT($Label.USR_ProfileId_PFAdministrateurSysteme,15),
+$Profile.Id != LEFT($Label.USR_ProfileId_PFCreditManagement,15)
+)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Un compte « Validé » ne peut pas repasser en « Draft » ou « Refusé ».</errorMessage>
+</ValidationRule>

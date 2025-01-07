@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>WFC_Autopopulate_Devis</name>
+        <label>WFC Autopopulate Devis</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Opp</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OpportunityId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Quote_Type_De_Produit</targetReference>
+            </connector>
+            <label>Opp</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>WFC_Autopopulate_Devis {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_WFC Autopopulate Devis</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Quote_Type_De_Produit</name>
+        <label>Update Quote : Type De Produit / SAD</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>SalesAreaData__c</field>
+            <value>
+                <elementReference>$Record.Opportunity.SalesAreaData__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_produit__c</field>
+            <value>
+                <elementReference>$Record.Opportunity.TypeProduits__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>WFC_Autopopulate_Devis</targetReference>
+        </connector>
+        <object>Quote</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

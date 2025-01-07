@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Green: More than a week before the scheduled closing date  Yellow: Less than a week before the scheduled closing date  Red: Closing date exceeded Padlock: Opportunity closed.</help>
+        <label>State</label>
+        <name>Etat__c</name>
+    </CustomFieldTranslation>

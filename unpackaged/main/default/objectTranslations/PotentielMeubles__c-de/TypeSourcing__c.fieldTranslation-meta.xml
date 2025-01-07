@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>WIE WURDE DIE OPPORTUNITÄT GENERIERT ?</label>
+        <name>TypeSourcing__c</name>
+        <picklistValues>
+            <masterLabel>Location Meubles</masterLabel>
+            <translation>&quot;Vermietung von Kühlmöbel Kühlmöbelvermietung&quot;</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation>Vermietung mit Fahrer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation>Vermietung ohne Fahrer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation>Eigentum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur dernier kilomètre</masterLabel>
+            <translation>Feinverteilung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation>Transportunternehmen / Spediteur</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

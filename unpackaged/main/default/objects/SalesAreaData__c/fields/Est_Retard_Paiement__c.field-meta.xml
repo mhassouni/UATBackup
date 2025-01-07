@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Est_Retard_Paiement__c</fullName>
+    <formula>if (
+AND
+(
+LatePayment__c &gt; 0 ,NOT(ISBLANK(LatePayment__c ))
+)
+
+, true, false)</formula>
+    <label>Est Retard Paiement</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

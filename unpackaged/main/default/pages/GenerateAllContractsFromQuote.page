@@ -1,0 +1,7 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="GenDocContractsFromQuote"  showQuickActionVfHeader="false">
+    
+    <apex:repeat value="{!contracts}" var="contract" id="theRepeat">
+		 <apex:iframe id="myFrame" src="{!URLFOR(IF($Site.prefix == '/s','/apex/dfsle__gendocumentgenerator',
+                                       $Site.Prefix +'/apex/dfsle__gendocumentgenerator'), null, [sId = contract.id, templateId = contract.templateId__c, recordId=contract.id, title = 'Generate Assembly Quote'])}"   />
+	</apex:repeat>
+</apex:page>

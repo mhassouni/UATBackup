@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Atelier__c</fullName>
+    <label>Type d&#39;Atelier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Avant location</fullName>
+                <default>false</default>
+                <label>Préparation départ container | PTI</label>
+            </value>
+            <value>
+                <fullName>Apres location</fullName>
+                <default>false</default>
+                <label>Retour location (Estimation)</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Réparation</fullName>
+                <default>false</default>
+                <label>Réparation</label>
+            </value>
+            <value>
+                <fullName>Gros Travaux</fullName>
+                <default>false</default>
+                <label>Gros Travaux</label>
+            </value>
+            <value>
+                <fullName>Préparation Saison</fullName>
+                <default>false</default>
+                <label>Préparation Saison</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

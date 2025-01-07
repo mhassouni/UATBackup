@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Fleet Management Result Fields --></label>
+        <name>Fleet_Management_Result_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fleet Management Search Fields --></label>
+        <name>Fleet_Management_Search_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Filters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Results --></label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <layouts>
+        <layout>Asset Container layout</layout>
+        <sections>
+            <label>Dimensioni e capacità</label>
+            <section>Dimensions &amp; contenance</section>
+        </sections>
+        <sections>
+            <label>Informazioni contratto</label>
+            <section>Informations Contrat</section>
+        </sections>
+        <sections>
+            <label>Informazioni complementari</label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Position et Statut --></label>
+            <section>Position et Statut</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Container layout - Hybrid</layout>
+        <sections>
+            <label><!-- Dimensions &amp; contenance --></label>
+            <section>Dimensions &amp; contenance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Contrat --></label>
+            <section>Informations Contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Informations complémentaires --></label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Equipement layout</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Apparecchiature</label>
+            <section>Equipement</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Equipement layout - Community</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Apparecchiature</label>
+            <section>Equipement</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Layout</layout>
+        <sections>
+            <label>Descrizione</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Dimensioni e Capacità</label>
+            <section>Dimensions &amp; Contenance</section>
+        </sections>
+        <sections>
+            <label>Immatricolazione</label>
+            <section>Immatriculation</section>
+        </sections>
+        <sections>
+            <label>Informazioni contratto</label>
+            <section>Informations Contrat</section>
+        </sections>
+        <sections>
+            <label>Informazioni complementari</label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Informazioni contachilometri</label>
+            <section>Informations kilomètres compteur</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Layout - Communauté</layout>
+        <sections>
+            <label>Immatricolazione</label>
+            <section>Immatriculation</section>
+        </sections>
+        <sections>
+            <label>Informazioni contratto</label>
+            <section>Informations Contrat</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Layout - Hybrid</layout>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Dimensions &amp; Contenance --></label>
+            <section>Dimensions &amp; Contenance</section>
+        </sections>
+        <sections>
+            <label><!-- Immatriculation --></label>
+            <section>Immatriculation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Contrat --></label>
+            <section>Informations Contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Informations complémentaires --></label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Informations kilomètres compteur --></label>
+            <section>Informations kilomètres compteur</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Tour de parc --></label>
+            <section>Tour de parc</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Mettre à jour Equipement --></label>
+        <name>Mettre_jour_Equipement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mettre à jour l&apos;parc --></label>
+        <name>Modifier</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Modifier Container --></label>
+        <name>Modifier_Container</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nuovo Ordine di Lavoro</label>
+        <name>Nouvel_Ordre_de_Travail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mettre à jour l&apos;parc --></label>
+        <name>Options</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nuova richiesta</label>
+        <name>Services</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Equipement Alerte --></label>
+        <name>Update_Equipement_Alerte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Parc Alerte --></label>
+        <name>Update_Parc_Alerte</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Equipement --></label>
+        <name>Equipement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parc --></label>
+        <name>Parc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parc - Container --></label>
+        <name>Parc_Container</name>
+    </recordTypes>
+    <webLinks>
+        <label>Nuova richiesta</label>
+        <name>Creer_depannage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label>Nuova richiesta</label>
+        <name>Nouvelle_Requete</name>
+    </webLinks>
+    <webLinks>
+        <label>Scaricare certificato di immatricolazione</label>
+        <name>Telecharger_carte_grise</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Voir_Gantt --></label>
+        <name>Voir_Gantt</name>
+    </webLinks>
+</CustomObjectTranslation>

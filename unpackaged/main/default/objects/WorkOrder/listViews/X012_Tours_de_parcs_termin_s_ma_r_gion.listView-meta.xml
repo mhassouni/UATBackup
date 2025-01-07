@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X012_Tours_de_parcs_termin_s_ma_r_gion</fullName>
+    <columns>CreatedDate</columns>
+    <columns>Name</columns>
+    <columns>Nom_commercial__c</columns>
+    <columns>Agence_Intervenante__c</columns>
+    <columns>Earliest_Start_Permitted__c</columns>
+    <columns>Date_de_realisation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Terminé,Annulé,Provisoire,Non abouti</value>
+    </filters>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Tour_de_parc_Chapeau</value>
+    </filters>
+    <filters>
+        <field>TECH_PF_REGION__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Agence_Intervenante__c</field>
+        <operation>notContain</operation>
+        <value>999 - AGENCE TEST</value>
+    </filters>
+    <label>012-Tours de parcs terminés ma région</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

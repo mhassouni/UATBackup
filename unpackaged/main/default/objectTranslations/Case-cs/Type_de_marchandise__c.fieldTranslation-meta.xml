@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Typ zboží</label>
+        <name>Type_de_marchandise__c</name>
+        <picklistValues>
+            <masterLabel>Frais</masterLabel>
+            <translation>Čerstvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frais &amp; Surgelé</masterLabel>
+            <translation>Čerstvé a mražené</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sec</masterLabel>
+            <translation>Suché</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgelé</masterLabel>
+            <translation>Mražené</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

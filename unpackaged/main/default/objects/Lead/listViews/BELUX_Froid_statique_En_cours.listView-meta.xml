@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BELUX_Froid_statique_En_cours</fullName>
+    <columns>Message__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Produits__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CA_estime__c</columns>
+    <columns>RaisonCloture__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>BELGIQUE,LUXEMBOURG</value>
+    </filters>
+    <filters>
+        <field>Produits__c</field>
+        <operation>equals</operation>
+        <value>Chambre froide,Containers,Meuble réfrigéré,Meubles</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Créée,Qualifiée</value>
+    </filters>
+    <label>BELUX Froid statique - En cours</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIBE_Belgique</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

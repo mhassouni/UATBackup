@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Analyse</masterLabel>
+            <translation><!-- Analyse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attente offres</masterLabel>
+            <translation><!-- Attente offres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractualisation ou Abandon</masterLabel>
+            <translation><!-- Contractualisation ou Abandon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Création</masterLabel>
+            <translation><!-- Création --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Négociation</masterLabel>
+            <translation><!-- Négociation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourcing</masterLabel>
+            <translation><!-- Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Élaboration CDC</masterLabel>
+            <translation><!-- Élaboration CDC --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

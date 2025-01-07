@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GenerationTimeframe</fullName>
+    <inlineHelpText>Le délai de génération anticipée des ordres de travail dans chaque lot. L&#39;unité est spécifiée dans Type de période de génération.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Activé</fullName>
+        <default>false</default>
+        <label>Activé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Désactivé</fullName>
+        <default>false</default>
+        <label>Désactivé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Avertissement</fullName>
+        <default>false</default>
+        <label>Avertissement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Erreur</fullName>
+        <default>false</default>
+        <label>Erreur</label>
+    </standardValue>
+</StandardValueSet>

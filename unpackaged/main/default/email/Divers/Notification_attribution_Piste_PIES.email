@@ -1,0 +1,11 @@
+***Nuevo Pista {!Lead.NumeroPiste__c} para procesar en Greenforce ***
+
+Se te ha asignado la siguiente pista.
+Compañía : {!Lead.Company}
+Nombre de la pista : {!Lead.Name}
+Agencia de ida y vuelta : {!Lead.Agence_depart_retour__c}
+Código postal : {!Lead.CodePostal__c}
+Ciudad : {!Lead.Ville__c}
+
+
+Haga clic en el enlace para ir directamente a la pista: {!Lead.Link}

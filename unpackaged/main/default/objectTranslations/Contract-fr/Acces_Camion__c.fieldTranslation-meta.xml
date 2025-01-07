@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Accès Camion --></label>
+        <name>Acces_Camion__c</name>
+        <picklistValues>
+            <masterLabel>Accès Semi</masterLabel>
+            <translation><!-- Accès Semi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porteur obligatoire</masterLabel>
+            <translation><!-- Porteur obligatoire --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

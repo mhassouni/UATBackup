@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_CNE_Comptes_attente_validation_CM</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>Type_compte__c</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>CotationPF__c</columns>
+    <columns>DateCotationPF__c</columns>
+    <columns>AgrementSFAC__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Attente Validation CM</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PIBE,PIDE,PILU,PIND</value>
+    </filters>
+    <label>CM - CNE - Comptes attente validation CM</label>
+    <sharedTo>
+        <group>CreditManagement</group>
+    </sharedTo>
+</ListView>

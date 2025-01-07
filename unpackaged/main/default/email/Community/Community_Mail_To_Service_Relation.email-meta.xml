@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Community Mail To Service Relation</name>
+    <style>none</style>
+    <subject>Une demande de gestion de support : Vous avez une nouvelle demande de gestion de support</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

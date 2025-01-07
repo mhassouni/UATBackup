@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activities_indicators__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+( 
+AND(Sans_Activites_En_Cours__c =true, Sans_Activites_Terminees__c =true)
+,
+&quot;WITHOUT&quot;
+,
+IF(OR(Sans_Activites_En_Cours__c =true, Sans_Activites_Terminees__c =true)
+,
+&quot;WITH&quot;
+,IF
+(
+AND(Sans_Activites_En_Cours__c =False, Sans_Activites_Terminees__c =False)
+,
+&quot;WITH&quot;
+,
+&quot;--&quot;
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Activities indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

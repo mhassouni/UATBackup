@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quote</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Chemin Quote LD - Standard</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Accepté</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Annulé</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Présenté</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Refusé</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Quote_LD_Standard</recordTypeName>
+</PathAssistant>

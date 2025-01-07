@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puissance_Plateforme__c</fullName>
+    <label>Puissance Plateforme (Kg)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>300 kg</fullName>
+                <default>false</default>
+                <label>300 kg</label>
+            </value>
+            <value>
+                <fullName>500 kg</fullName>
+                <default>false</default>
+                <label>500 kg</label>
+            </value>
+            <value>
+                <fullName>750 KGS</fullName>
+                <default>false</default>
+                <label>750 KGS</label>
+            </value>
+            <value>
+                <fullName>1000 KGS</fullName>
+                <default>false</default>
+                <label>1000 KGS</label>
+            </value>
+            <value>
+                <fullName>1200 KGS</fullName>
+                <default>false</default>
+                <label>1200 KGS</label>
+            </value>
+            <value>
+                <fullName>1500 KGS</fullName>
+                <default>false</default>
+                <label>1500 KGS</label>
+            </value>
+            <value>
+                <fullName>2000 KGS</fullName>
+                <default>false</default>
+                <label>2000 KGS</label>
+            </value>
+            <value>
+                <fullName>2500 kg</fullName>
+                <default>false</default>
+                <label>2500 kg</label>
+            </value>
+            <value>
+                <fullName>3000 kg</fullName>
+                <default>false</default>
+                <label>3000 kg</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir Aménagement HAYON</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir Aménagement HAYON</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

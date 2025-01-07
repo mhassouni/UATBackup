@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__TerminatedDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date on which this subscription terminated.</description>
+    <inlineHelpText>La date à laquelle l&#39;abonnement se termine. Automatiquement renseignée lors de la mise à niveau de la ressource couverte.</inlineHelpText>
+    <label>Terminated Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

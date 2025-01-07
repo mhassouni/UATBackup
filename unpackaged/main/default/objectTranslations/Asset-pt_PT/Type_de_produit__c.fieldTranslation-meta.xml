@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Tipo de Produto</label>
+        <name>Type_de_produit__c</name>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remorque</masterLabel>
+            <translation><!-- Remorque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-remorque</masterLabel>
+            <translation><!-- Semi-remorque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracteur</masterLabel>
+            <translation><!-- Tracteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

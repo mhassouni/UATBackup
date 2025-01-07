@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fonction__c</fullName>
+    <inlineHelpText>Function as defined in the PF qualification</inlineHelpText>
+    <label>Fonction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrateur</fullName>
+                <default>false</default>
+                <label>Administrateur</label>
+            </value>
+            <value>
+                <fullName>Assistant</fullName>
+                <default>false</default>
+                <label>Assistant</label>
+            </value>
+            <value>
+                <fullName>Directeur</fullName>
+                <default>false</default>
+                <label>Directeur</label>
+            </value>
+            <value>
+                <fullName>Employé</fullName>
+                <default>false</default>
+                <label>Employé</label>
+            </value>
+            <value>
+                <fullName>Gérant</fullName>
+                <default>false</default>
+                <label>Gérant</label>
+            </value>
+            <value>
+                <fullName>Particulier</fullName>
+                <default>false</default>
+                <label>Particulier</label>
+            </value>
+            <value>
+                <fullName>Propriétaire</fullName>
+                <default>false</default>
+                <label>Propriétaire</label>
+            </value>
+            <value>
+                <fullName>Responsable</fullName>
+                <default>false</default>
+                <label>Responsable</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Technicien</fullName>
+                <default>false</default>
+                <label>Technicien</label>
+            </value>
+            <value>
+                <fullName>Chef d&#39;atelier</fullName>
+                <default>false</default>
+                <label>Chef d&#39;atelier</label>
+            </value>
+            <value>
+                <fullName>DIRECTEUR DE SITE</fullName>
+                <default>false</default>
+                <label>DIRECTEUR DE SITE</label>
+            </value>
+            <value>
+                <fullName>AGENT D&#39;EXPLOITATION</fullName>
+                <default>false</default>
+                <label>AGENT D&#39;EXPLOITATION</label>
+            </value>
+            <value>
+                <fullName>AIDE EXPLOITANT</fullName>
+                <default>false</default>
+                <label>AIDE EXPLOITANT</label>
+            </value>
+            <value>
+                <fullName>APPRENTI CARROSSIER</fullName>
+                <default>false</default>
+                <label>APPRENTI CARROSSIER</label>
+            </value>
+            <value>
+                <fullName>APPRENTI CARROSSIER PEINTRE</fullName>
+                <default>false</default>
+                <label>APPRENTI CARROSSIER PEINTRE</label>
+            </value>
+            <value>
+                <fullName>APPRENTI COMMERCIAL</fullName>
+                <default>false</default>
+                <label>APPRENTI COMMERCIAL</label>
+            </value>
+            <value>
+                <fullName>APPRENTI EXPLOITANT</fullName>
+                <default>false</default>
+                <label>APPRENTI EXPLOITANT</label>
+            </value>
+            <value>
+                <fullName>APPRENTI FRIGORISTE</fullName>
+                <default>false</default>
+                <label>APPRENTI FRIGORISTE</label>
+            </value>
+            <value>
+                <fullName>APPRENTI MECANICIEN</fullName>
+                <default>false</default>
+                <label>APPRENTI MECANICIEN</label>
+            </value>
+            <value>
+                <fullName>APPRENTIE SECRETAIRE</fullName>
+                <default>false</default>
+                <label>APPRENTIE SECRETAIRE</label>
+            </value>
+            <value>
+                <fullName>ASSIST REGIONAL ASSURANCE RE</fullName>
+                <default>false</default>
+                <label>ASSIST REGIONAL ASSURANCE RE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANCE DAGENCE</fullName>
+                <default>false</default>
+                <label>ASSISTANCE DAGENCE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANT COMMERCIAL</fullName>
+                <default>false</default>
+                <label>ASSISTANT COMMERCIAL</label>
+            </value>
+            <value>
+                <fullName>ASSISTANT EXPLOITATION</fullName>
+                <default>false</default>
+                <label>ASSISTANT EXPLOITATION</label>
+            </value>
+            <value>
+                <fullName>ASSISTANT REGIONAL ASSURANCE</fullName>
+                <default>false</default>
+                <label>ASSISTANT REGIONAL ASSURANCE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANT REGIONAL EXPLOITATION</fullName>
+                <default>false</default>
+                <label>ASSISTANT REGIONAL EXPLOITATION</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE ADMINISTRATIVE</fullName>
+                <default>false</default>
+                <label>ASSISTANTE ADMINISTRATIVE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE COMMERCIALE</fullName>
+                <default>false</default>
+                <label>ASSISTANTE COMMERCIALE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE COMMERCIALE REGIONAL</fullName>
+                <default>false</default>
+                <label>ASSISTANTE COMMERCIALE REGIONAL</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE FACTURATION</fullName>
+                <default>false</default>
+                <label>ASSISTANTE FACTURATION</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE REGIONALE ASSURANCE</fullName>
+                <default>false</default>
+                <label>ASSISTANTE REGIONALE ASSURANCE</label>
+            </value>
+            <value>
+                <fullName>ASSISTANTE REGIONALE RECOUVREMENT</fullName>
+                <default>false</default>
+                <label>ASSISTANTE REGIONALE RECOUVREMENT</label>
+            </value>
+            <value>
+                <fullName>C PROF ASSISTANTE DE GESTION</fullName>
+                <default>false</default>
+                <label>C PROF ASSISTANTE DE GESTION</label>
+            </value>
+            <value>
+                <fullName>C PROF CARROSSIER</fullName>
+                <default>false</default>
+                <label>C PROF CARROSSIER</label>
+            </value>
+            <value>
+                <fullName>C PROF COMMERCIAL</fullName>
+                <default>false</default>
+                <label>C PROF COMMERCIAL</label>
+            </value>
+            <value>
+                <fullName>C PROF EXPLOITANT</fullName>
+                <default>false</default>
+                <label>C PROF EXPLOITANT</label>
+            </value>
+            <value>
+                <fullName>C PROF SECRETAIRE</fullName>
+                <default>false</default>
+                <label>C PROF SECRETAIRE</label>
+            </value>
+            <value>
+                <fullName>C. PROF MECANICIEN</fullName>
+                <default>false</default>
+                <label>C. PROF MECANICIEN</label>
+            </value>
+            <value>
+                <fullName>C.PROF SECRETAIRE</fullName>
+                <default>false</default>
+                <label>C.PROF SECRETAIRE</label>
+            </value>
+            <value>
+                <fullName>CARROSSIER</fullName>
+                <default>false</default>
+                <label>CARROSSIER</label>
+            </value>
+            <value>
+                <fullName>CARROSSIER PEINTRE</fullName>
+                <default>false</default>
+                <label>CARROSSIER PEINTRE</label>
+            </value>
+            <value>
+                <fullName>CHARGEE DE RECOUVREMENT</fullName>
+                <default>false</default>
+                <label>CHARGEE DE RECOUVREMENT</label>
+            </value>
+            <value>
+                <fullName>CHAUFFEUR MECANICIEN</fullName>
+                <default>false</default>
+                <label>CHAUFFEUR MECANICIEN</label>
+            </value>
+            <value>
+                <fullName>CHAUFFEUR PL LONGUE DISTANCE</fullName>
+                <default>false</default>
+                <label>CHAUFFEUR PL LONGUE DISTANCE</label>
+            </value>
+            <value>
+                <fullName>CHEF ATELIER FROID</fullName>
+                <default>false</default>
+                <label>CHEF ATELIER FROID</label>
+            </value>
+            <value>
+                <fullName>CHEF D&#39;ATELIER CADRE</fullName>
+                <default>false</default>
+                <label>CHEF D&#39;ATELIER CADRE</label>
+            </value>
+            <value>
+                <fullName>CHEF D&#39;ATELIER CARROSSERIE</fullName>
+                <default>false</default>
+                <label>CHEF D&#39;ATELIER CARROSSERIE</label>
+            </value>
+            <value>
+                <fullName>CHEF D&#39;EQUIPE</fullName>
+                <default>false</default>
+                <label>CHEF D&#39;EQUIPE</label>
+            </value>
+            <value>
+                <fullName>CHEF D&#39;EQUIPE CAROSSERIE</fullName>
+                <default>false</default>
+                <label>CHEF D&#39;EQUIPE CAROSSERIE</label>
+            </value>
+            <value>
+                <fullName>CHEF DES VENTES</fullName>
+                <default>false</default>
+                <label>CHEF DES VENTES</label>
+            </value>
+            <value>
+                <fullName>CIAL TERRITORIAL SENIOR</fullName>
+                <default>false</default>
+                <label>CIAL TERRITORIAL SENIOR</label>
+            </value>
+            <value>
+                <fullName>COMMERCIAL SUIVI CLIENTS</fullName>
+                <default>false</default>
+                <label>COMMERCIAL SUIVI CLIENTS</label>
+            </value>
+            <value>
+                <fullName>COMMERCIAL TERRITORIAL</fullName>
+                <default>false</default>
+                <label>COMMERCIAL TERRITORIAL</label>
+            </value>
+            <value>
+                <fullName>COMMERCIAL TERRITORIAL SENIOR</fullName>
+                <default>false</default>
+                <label>COMMERCIAL TERRITORIAL SENIOR</label>
+            </value>
+            <value>
+                <fullName>CONDUCTEUR PL</fullName>
+                <default>false</default>
+                <label>CONDUCTEUR PL</label>
+            </value>
+            <value>
+                <fullName>CONSEILLER TECHNIQUE REGIONAL</fullName>
+                <default>false</default>
+                <label>CONSEILLER TECHNIQUE REGIONAL</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR</fullName>
+                <default>false</default>
+                <label>CONVOYEUR</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR PL SPL</fullName>
+                <default>false</default>
+                <label>CONVOYEUR PL SPL</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR PREP DE VEHICULES</fullName>
+                <default>false</default>
+                <label>CONVOYEUR PREP DE VEHICULES</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR PREPARATEUR</fullName>
+                <default>false</default>
+                <label>CONVOYEUR PREPARATEUR</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR REGIONAL</fullName>
+                <default>false</default>
+                <label>CONVOYEUR REGIONAL</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR REGIONAL L.DISTANCE</fullName>
+                <default>false</default>
+                <label>CONVOYEUR REGIONAL L.DISTANCE</label>
+            </value>
+            <value>
+                <fullName>CONVOYEUR VL PL</fullName>
+                <default>false</default>
+                <label>CONVOYEUR VL PL</label>
+            </value>
+            <value>
+                <fullName>DIRECTEUR DE ZONE</fullName>
+                <default>false</default>
+                <label>DIRECTEUR DE ZONE</label>
+            </value>
+            <value>
+                <fullName>DIRECTEUR FRANCE</fullName>
+                <default>false</default>
+                <label>DIRECTEUR FRANCE</label>
+            </value>
+            <value>
+                <fullName>DIRECTEUR OPERATIONS</fullName>
+                <default>false</default>
+                <label>DIRECTEUR OPERATIONS</label>
+            </value>
+            <value>
+                <fullName>EXPLOITANT</fullName>
+                <default>false</default>
+                <label>EXPLOITANT</label>
+            </value>
+            <value>
+                <fullName>EXPLOITANT REGIONAL</fullName>
+                <default>false</default>
+                <label>EXPLOITANT REGIONAL</label>
+            </value>
+            <value>
+                <fullName>FRIGORISTE</fullName>
+                <default>false</default>
+                <label>FRIGORISTE</label>
+            </value>
+            <value>
+                <fullName>FRIGORISTE REGIONAL</fullName>
+                <default>false</default>
+                <label>FRIGORISTE REGIONAL</label>
+            </value>
+            <value>
+                <fullName>FRIGORISTE REGIONAL ITINERANT</fullName>
+                <default>false</default>
+                <label>FRIGORISTE REGIONAL ITINERANT</label>
+            </value>
+            <value>
+                <fullName>LAVEUR PREPARATEUR</fullName>
+                <default>false</default>
+                <label>LAVEUR PREPARATEUR</label>
+            </value>
+            <value>
+                <fullName>MECANICIEN</fullName>
+                <default>false</default>
+                <label>MECANICIEN</label>
+            </value>
+            <value>
+                <fullName>MECANICIEN FRIGORISTE</fullName>
+                <default>false</default>
+                <label>MECANICIEN FRIGORISTE</label>
+            </value>
+            <value>
+                <fullName>MECANICIEN PL</fullName>
+                <default>false</default>
+                <label>MECANICIEN PL</label>
+            </value>
+            <value>
+                <fullName>MECANICIEN PL VL CONVOYEUR</fullName>
+                <default>false</default>
+                <label>MECANICIEN PL VL CONVOYEUR</label>
+            </value>
+            <value>
+                <fullName>MECANICIEN PL VL</fullName>
+                <default>false</default>
+                <label>MECANICIEN PL VL</label>
+            </value>
+            <value>
+                <fullName>PREPARATEUR CONVOYEUR</fullName>
+                <default>false</default>
+                <label>PREPARATEUR CONVOYEUR</label>
+            </value>
+            <value>
+                <fullName>PREPARATEUR DE VEHICULES</fullName>
+                <default>false</default>
+                <label>PREPARATEUR DE VEHICULES</label>
+            </value>
+            <value>
+                <fullName>PREPARATEUR DE VEHICULES LAVEU</fullName>
+                <default>false</default>
+                <label>PREPARATEUR DE VEHICULES LAVEU</label>
+            </value>
+            <value>
+                <fullName>REFERENT FROID</fullName>
+                <default>false</default>
+                <label>REFERENT FROID</label>
+            </value>
+            <value>
+                <fullName>REFERENT TECHNIQUE FROID</fullName>
+                <default>false</default>
+                <label>REFERENT TECHNIQUE FROID</label>
+            </value>
+            <value>
+                <fullName>REFERENT TECHNIQUE FROID REGIO</fullName>
+                <default>false</default>
+                <label>REFERENT TECHNIQUE FROID REGIO</label>
+            </value>
+            <value>
+                <fullName>REFERENT TECHNIQUE PNEUMATIQUE</fullName>
+                <default>false</default>
+                <label>REFERENT TECHNIQUE PNEUMATIQUE</label>
+            </value>
+            <value>
+                <fullName>REFERENT TECHNIQUE POMONA RPF1</fullName>
+                <default>false</default>
+                <label>REFERENT TECHNIQUE POMONA RPF1</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE ASSURANCES REGIONA</fullName>
+                <default>false</default>
+                <label>RESPONSABLE ASSURANCES REGIONA</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE D EXPLOITATION</fullName>
+                <default>false</default>
+                <label>RESPONSABLE D EXPLOITATION</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE DE SITE</fullName>
+                <default>false</default>
+                <label>RESPONSABLE DE SITE</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE DE SITES</fullName>
+                <default>false</default>
+                <label>RESPONSABLE DE SITES</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE RECOUVREMENT REGIO</fullName>
+                <default>false</default>
+                <label>RESPONSABLE RECOUVREMENT REGIO</label>
+            </value>
+            <value>
+                <fullName>RESPONSABLE SUIVI CLIENTS</fullName>
+                <default>false</default>
+                <label>RESPONSABLE SUIVI CLIENTS</label>
+            </value>
+            <value>
+                <fullName>SECRETAIRE</fullName>
+                <default>false</default>
+                <label>SECRETAIRE</label>
+            </value>
+            <value>
+                <fullName>SECRETAIRE D&#39;AGENCE</fullName>
+                <default>false</default>
+                <label>SECRETAIRE D&#39;AGENCE</label>
+            </value>
+            <value>
+                <fullName>SECRETAIRE DE REGION</fullName>
+                <default>false</default>
+                <label>SECRETAIRE DE REGION</label>
+            </value>
+            <value>
+                <fullName>SECRETAIRE REGIONALE COMMERCIAL</fullName>
+                <default>false</default>
+                <label>SECRETAIRE REGIONALE COMMERCIAL</label>
+            </value>
+            <value>
+                <fullName>TOLIER CARROSSIER</fullName>
+                <default>false</default>
+                <label>TOLIER CARROSSIER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

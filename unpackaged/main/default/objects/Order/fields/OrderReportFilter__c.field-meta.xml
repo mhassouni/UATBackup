@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderReportFilter__c</fullName>
+    <formula>OR
+( AND( MONTH( StartDate__c) &lt;= MONTH(TODAY())+1,YEAR(StartDate__c) = YEAR (TODAY()) ),
+YEAR(StartDate__c) &lt; YEAR (TODAY())
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OrderReportFilter</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

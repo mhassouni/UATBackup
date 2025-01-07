@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrancheHoraireContact__c</fullName>
+    <label>Tranche Horaire de contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Indifférent</fullName>
+                <default>false</default>
+                <label>Indifférent</label>
+            </value>
+            <value>
+                <fullName>Début de Matinée</fullName>
+                <default>false</default>
+                <label>Début de Matinée</label>
+            </value>
+            <value>
+                <fullName>Fin de Matinée</fullName>
+                <default>false</default>
+                <label>Fin de Matinée</label>
+            </value>
+            <value>
+                <fullName>Midi</fullName>
+                <default>false</default>
+                <label>Midi</label>
+            </value>
+            <value>
+                <fullName>Après-midi</fullName>
+                <default>false</default>
+                <label>Après-midi</label>
+            </value>
+            <value>
+                <fullName>Soirée</fullName>
+                <default>false</default>
+                <label>Soirée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

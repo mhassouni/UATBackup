@@ -1,0 +1,147 @@
+.THIS::-webkit-scrollbar {
+  width: 6px;
+}
+
+.THIS::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.THIS::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.THIS::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.THIS .slds-icon_container.slds-icon-utility-search {
+  top: 40%;
+}
+
+.THIS .result-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.THIS .result-title a {
+  color: #05954f;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.THIS .result-title input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.THIS .inside-li {
+  background: white;
+  border-color: #575858;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px 7px;
+}
+
+.THIS .black-txt {
+  color: black;
+  font-size: 0.7rem;
+  margin: 5px 0;
+}
+
+.THIS .date-line {
+  width: 1px;
+  height: 12px;
+  background: #8a8a8a;
+  margin: 2px auto;
+}
+
+.THIS .badge {
+  margin: 0 5px 12px;
+}
+
+.THIS .fc-event {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.THIS.slds.slds-box.slds-m-around--small {
+  padding: 0 4px 15px !important;
+  background: white;
+}
+
+.THIS .paginationBtns {
+  text-align: center;
+}
+
+.THIS .paginationBtns button {
+  width: 35px;
+  height: 30px;
+  margin: 0 5px;
+  font-size: 20px;
+  padding-bottom: 33px;
+}
+
+.THIS .info-notif {
+  font-size: 12px;
+  color: red;
+  padding: 0 10px;
+}
+
+.THIS .info-notif .slds-icon_container {
+  margin-right: 4px;
+}
+/* FILTER */
+
+/* FOOTER */
+
+.THIS .custom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.THIS .custom-footer .slds-button {
+  font-weight: 500;
+}
+/* /FOOTER */
+
+/* Checkbox : Select ALL */
+.THIS .check-all-container {
+  margin-top: 0.5rem;
+  padding-left: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  margin-left: 0.67rem;
+}
+.THIS .check-all-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+.THIS .check-all-container label {
+  color: #1f1f1f;
+  font-weight: 500;
+  margin-left: 0.4rem;
+}
+/* /Checkbox : Select ALL */
+
+.THIS.slds.slds-box.slds-m-around--small {
+  position: sticky;
+}
+
+.THIS .disabled-card {
+  pointer-events: none !important;
+}
+
+.THIS .disabled-card input[type="checkbox"] {
+  background-color: rgb(245 241 241);
+}
+
+.THIS .disabled-card .slds-item.inside-li {
+  background: rgb(245 241 241) !important;
+  border-color: #f7a73e !important;
+}

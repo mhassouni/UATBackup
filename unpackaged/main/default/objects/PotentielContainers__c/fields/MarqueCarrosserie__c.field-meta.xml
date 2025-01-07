@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MarqueCarrosserie__c</fullName>
+    <label>Marque Carrosserie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AC. Plast Robbiese</fullName>
+                <default>false</default>
+                <label>AC. Plast Robbiese</label>
+            </value>
+            <value>
+                <fullName>Aubineau</fullName>
+                <default>false</default>
+                <label>Aubineau</label>
+            </value>
+            <value>
+                <fullName>Cazaux</fullName>
+                <default>false</default>
+                <label>Cazaux</label>
+            </value>
+            <value>
+                <fullName>Chereau</fullName>
+                <default>false</default>
+                <label>Chereau</label>
+            </value>
+            <value>
+                <fullName>Cold Car</fullName>
+                <default>false</default>
+                <label>Cold Car</label>
+            </value>
+            <value>
+                <fullName>Coolertech</fullName>
+                <default>false</default>
+                <label>Coolertech</label>
+            </value>
+            <value>
+                <fullName>Coolfreeze</fullName>
+                <default>false</default>
+                <label>Coolfreeze</label>
+            </value>
+            <value>
+                <fullName>Coolkit</fullName>
+                <default>false</default>
+                <label>Coolkit</label>
+            </value>
+            <value>
+                <fullName>Corsin</fullName>
+                <default>false</default>
+                <label>Corsin</label>
+            </value>
+            <value>
+                <fullName>ECP</fullName>
+                <default>false</default>
+                <label>ECP</label>
+            </value>
+            <value>
+                <fullName>Framec Trade</fullName>
+                <default>false</default>
+                <label>Framec Trade</label>
+            </value>
+            <value>
+                <fullName>Frappa</fullName>
+                <default>false</default>
+                <label>Frappa</label>
+            </value>
+            <value>
+                <fullName>Grey and Adams</fullName>
+                <default>false</default>
+                <label>Grey and Adams</label>
+            </value>
+            <value>
+                <fullName>Gruau</fullName>
+                <default>false</default>
+                <label>Gruau</label>
+            </value>
+            <value>
+                <fullName>GVS</fullName>
+                <default>false</default>
+                <label>GVS</label>
+            </value>
+            <value>
+                <fullName>Honorio</fullName>
+                <default>false</default>
+                <label>Honorio</label>
+            </value>
+            <value>
+                <fullName>Iglocar</fullName>
+                <default>false</default>
+                <label>Iglocar</label>
+            </value>
+            <value>
+                <fullName>JDK</fullName>
+                <default>false</default>
+                <label>JDK</label>
+            </value>
+            <value>
+                <fullName>Kiesling Fahrzeugbau</fullName>
+                <default>false</default>
+                <label>Kiesling Fahrzeugbau</label>
+            </value>
+            <value>
+                <fullName>Krone</fullName>
+                <default>false</default>
+                <label>Krone</label>
+            </value>
+            <value>
+                <fullName>Lamberet</fullName>
+                <default>false</default>
+                <label>Lamberet</label>
+            </value>
+            <value>
+                <fullName>Lambert</fullName>
+                <default>false</default>
+                <label>Lambert</label>
+            </value>
+            <value>
+                <fullName>Lecapitaine</fullName>
+                <default>false</default>
+                <label>Lecapitaine</label>
+            </value>
+            <value>
+                <fullName>Marais</fullName>
+                <default>false</default>
+                <label>Marais</label>
+            </value>
+            <value>
+                <fullName>Montracon</fullName>
+                <default>false</default>
+                <label>Montracon</label>
+            </value>
+            <value>
+                <fullName>Norpoli</fullName>
+                <default>false</default>
+                <label>Norpoli</label>
+            </value>
+            <value>
+                <fullName>Paneltex</fullName>
+                <default>false</default>
+                <label>Paneltex</label>
+            </value>
+            <value>
+                <fullName>Peters Koelwagens</fullName>
+                <default>false</default>
+                <label>Peters Koelwagens</label>
+            </value>
+            <value>
+                <fullName>Ribbiocar</fullName>
+                <default>false</default>
+                <label>Ribbiocar</label>
+            </value>
+            <value>
+                <fullName>Romu</fullName>
+                <default>false</default>
+                <label>Romu</label>
+            </value>
+            <value>
+                <fullName>Schmitz</fullName>
+                <default>false</default>
+                <label>Schmitz</label>
+            </value>
+            <value>
+                <fullName>Solomon Commercials</fullName>
+                <default>false</default>
+                <label>Solomon Commercials</label>
+            </value>
+            <value>
+                <fullName>Sor Iberica</fullName>
+                <default>false</default>
+                <label>Sor Iberica</label>
+            </value>
+            <value>
+                <fullName>Tecnove Fiberglass</fullName>
+                <default>false</default>
+                <label>Tecnove Fiberglass</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

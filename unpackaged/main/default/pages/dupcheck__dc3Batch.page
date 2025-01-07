@@ -1,0 +1,28 @@
+<apex:page docType="html-5.0"
+    sidebar="false"
+    controller="dupcheck.dc3ControllerBatch"
+    extensions="dupcheck.plautiWebVfEntry"
+    title="Batch - Duplicate Check for Salesforce"
+    action="{!janitor}"
+    lightningStylesheets="false"
+    standardStylesheets="false"
+    tabstyle="dcBatch__tab"
+>
+    <apex:outputPanel layout="none" id="jobPageNew">
+        <div id="app"></div>
+        <script type="module" src="{!URLFOR($Resource.dcUiPages,'')}/index.js" />
+        <apex:stylesheet value="{!URLFOR($Resource.dupcheck__dcUiPages,'')}/index.css" />
+
+        <apex:form style="display: none; visibliity: hidden;">
+            <apex:commandButton action="{!redirectToScheduledJobs}" id="redirectToScheduledJobs"></apex:commandButton>
+        </apex:form>
+
+        <script>
+            window.__PLAUTI_KOALA_LANG = "{!TEXT($User.LanguageLocaleKey)}";
+            window.__PLAUTI_KOALA_TZ = "{!TEXT($User.TimeZoneSidKey)}";
+            window.addEventListener("goToScheduled", function () {
+                document.querySelector("[id*='redirectToScheduledJobs']").click();
+            });
+        </script>
+    </apex:outputPanel>
+</apex:page>

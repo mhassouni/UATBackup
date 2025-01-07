@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Sans_Activites_En_cours__c</fullName>
+    <description>Les false (donc les avec activités) soient composés des :
+
+- Opportunités mono avec activités qui n&#39;ont pas d&#39;opportunité multi
+- Opportunités mono sans activité qui ont une opportunité multi avec activités
+
+   Les true (donc les sans activité) soient composés des :
+
+- Opportunités mono sans activité qui n&#39;ont pas d&#39;opportunité multi
+- Opportunités mono sans activité qui ont une opportunité multi sans activité</description>
+    <formula>IF
+(
+OR
+(
+   Sans_Activites_En_Cours__c == FALSE
+   ,
+   AND
+   ( 
+    Sans_Activites_En_Cours__c == FALSE
+    , 
+    OpportuniteParent__r.Sans_Activites_En_Cours__c ==FALSE
+    ) 
+)
+,
+FALSE
+,
+IF
+(
+OR
+(
+   AND
+   ( 
+    Sans_Activites_En_Cours__c ==TRUE
+    , 
+    ISBLANK(OpportuniteParent__c)
+   )
+,
+   AND 
+   (
+    Sans_Activites_En_Cours__c == TRUE
+    , 
+    OpportuniteParent__r.Sans_Activites_En_Cours__c ==TRUE
+   )
+)
+,
+TRUE
+,
+NULL
+)
+)</formula>
+    <label>Sans Activités En cours</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

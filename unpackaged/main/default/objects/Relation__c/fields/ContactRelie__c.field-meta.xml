@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactRelie__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>est en relation avec</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Un contact ne peut pas être en relation avec lui-même.</errorMessage>
+        <filterItems>
+            <field>$Source.ContactPrincipal__c</field>
+            <operation>notEqual</operation>
+            <valueField>Contact.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Réseau du contact (2)</relationshipLabel>
+    <relationshipName>ContactsPrincipaux</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

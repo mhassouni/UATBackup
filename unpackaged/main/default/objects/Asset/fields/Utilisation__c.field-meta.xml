@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utilisation__c</fullName>
+    <label>Utilisation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>VPC</fullName>
+                <default>false</default>
+                <label>VPC</label>
+            </value>
+            <value>
+                <fullName>CONT</fullName>
+                <default>false</default>
+                <label>CONT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

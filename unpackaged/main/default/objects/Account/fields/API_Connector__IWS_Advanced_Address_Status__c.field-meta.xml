@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>API_Connector__IWS_Advanced_Address_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to store the status related to the IWS Advanced Address service.</description>
+    <externalId>false</externalId>
+    <label>IWS Advanced Address Information Status</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

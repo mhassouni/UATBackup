@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur__c</fullName>
+    <label>Secteur</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>220 V Monophasé</fullName>
+                <default>false</default>
+                <label>220 V Monophasé</label>
+            </value>
+            <value>
+                <fullName>380 V Triphasé</fullName>
+                <default>false</default>
+                <label>380 V Triphasé</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements GROUPE</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements GROUPE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derogations_valides</fullName>
+    <columns>NAME</columns>
+    <columns>Client__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>PAT_Devis__c</columns>
+    <columns>RYF_initial__c</columns>
+    <columns>RYF_demande__c</columns>
+    <columns>Loyer_demande__c</columns>
+    <columns>KM_demande__c</columns>
+    <columns>Duree_Mois__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Acceptée</value>
+    </filters>
+    <label>Dérogations validées</label>
+</ListView>

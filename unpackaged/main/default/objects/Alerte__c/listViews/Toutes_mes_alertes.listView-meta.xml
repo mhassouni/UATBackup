@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_mes_alertes</fullName>
+    <columns>NAME</columns>
+    <columns>Agence_propietaire__c</columns>
+    <columns>Parc__c</columns>
+    <columns>Nom_Commercial_Client_LookUp__c</columns>
+    <columns>Statut__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Priorite_CAT__c</columns>
+    <columns>Commentaires_CAT__c</columns>
+    <columns>Etat__c</columns>
+    <columns>Priorite__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_PF_ALERTES_AGENCES__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours</value>
+    </filters>
+    <label>Toutes mes alertes</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

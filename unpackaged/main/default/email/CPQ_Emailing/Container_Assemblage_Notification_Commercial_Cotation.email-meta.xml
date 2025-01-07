@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Container_Assemblage_Notification_Commercial_Cotation</name>
+    <style>none</style>
+    <subject>Demande assemblage chiffrée</subject>
+    <textOnly>Bonjour,  
+
+Merci de traiter le besoin Hors Standard pour le client  {!SBQQ__Quote__c.Account_Name__c} :  {!SBQQ__Quote__c.Link}  
+
+Cordialement,  
+
+{!SBQQ__Quote__c.OwnerFullName} 
+{!SBQQ__Quote__c.OwnerEmail} 
+{!SBQQ__Quote__c.OwnerPhone}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

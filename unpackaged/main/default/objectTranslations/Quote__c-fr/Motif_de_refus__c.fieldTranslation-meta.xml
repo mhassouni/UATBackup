@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Motif de refus --></label>
+        <name>Motif_de_refus__c</name>
+        <picklistValues>
+            <masterLabel>Agence trop éloignée</masterLabel>
+            <translation><!-- Agence trop éloignée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aucun potentiel</masterLabel>
+            <translation><!-- Aucun potentiel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client injoignable</masterLabel>
+            <translation><!-- Client injoignable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditions de location non retenues</masterLabel>
+            <translation><!-- Conditions de location non retenues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditions de location nor tenues</masterLabel>
+            <translation><!-- Conditions de location nor tenues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Délai de réponse trop important</masterLabel>
+            <translation><!-- Délai de réponse trop important --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Echu</masterLabel>
+            <translation><!-- Echu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etude Hors standard refusée</masterLabel>
+            <translation><!-- Etude Hors standard refusée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montant de la caution trop élevé</masterLabel>
+            <translation><!-- Montant de la caution trop élevé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix de location trop élevé</masterLabel>
+            <translation><!-- Prix de location trop élevé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produit non disponible en stock</masterLabel>
+            <translation><!-- Produit non disponible en stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet du client annulé ou reporté</masterLabel>
+            <translation><!-- Projet du client annulé ou reporté --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect écarté pour raisons financières</masterLabel>
+            <translation><!-- Prospect écarté pour raisons financières --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution alternative sans frais</masterLabel>
+            <translation><!-- Solution alternative sans frais --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

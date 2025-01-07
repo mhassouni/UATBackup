@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Derogation__c</entityName>
+    <fieldName>Statut__c</fieldName>
+    <masterLabel>Chemin dérogation - Lecture Seule</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Acceptée</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Amendée</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Demandée</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Refusée</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Derogation_Lecture_seule</recordTypeName>
+</PathAssistant>

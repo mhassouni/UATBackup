@@ -1,0 +1,77 @@
+.custom-button {
+    background-color: white;
+    border-color: black;
+    color: black; /* Couleur du texte */
+    padding: 0.25rem; /* Ajustement du padding pour réduire la taille du bouton */
+    border-radius: 0.25rem; /* Pour arrondir les coins des boutons */
+    display: flex;
+    align-items: center;
+}
+
+.custom-button:hover {
+    border-color: rgb(168, 185, 255);
+
+}
+.custom-button:disabled {
+    background-color: white; /* Changement de la couleur de fond pour les boutons désactivés */
+    color: grey; /* Changement de la couleur du texte pour les boutons désactivés */
+    pointer-events: none; /* Désactive les événements de souris sur les boutons désactivés */
+}
+
+
+.custom-button:disabled lightning-icon {
+    fill: grey; /* Changement de la couleur de l'icône pour les boutons désactivés */
+}
+
+.custom-button lightning-icon {
+    fill: black; /* Couleur de l'icône */
+    margin: 0 auto; /* Centre l'icône dans le bouton */
+}
+
+
+
+
+
+
+
+.testpageMessageParentDivClass {
+    background-color: white;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition en douceur */
+    max-height: 10%; /* Limite la hauteur à 10% de la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centre le texte à l'intérieur */
+    font-size: 2em; /* Augmente la taille du texte */
+}
+
+.testpageMessageParentDivClass span,
+.testpageMessageParentDivClass h2 {
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.custom-refresh-button {
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-refresh-button:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+
+.custom-button {
+    font-size: 12px; /* Taille de la police pour les boutons */
+}
+
+.small-icon {
+    --sds-c-icon-size_x-small: 14px; /* Taille personnalisée pour les icônes */
+}

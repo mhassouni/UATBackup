@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Kvalifikace problému</label>
+        <name>Qualification__c</name>
+        <picklistValues>
+            <masterLabel>Branchement</masterLabel>
+            <translation><!-- Branchement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation><!-- Caisse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrosserie/Caisse/Cellule isotherme</masterLabel>
+            <translation>Skříň</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Podvozek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erreur D&#39;utilisation / Casse / Accident</masterLabel>
+            <translation>Použití</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe Frigo</masterLabel>
+            <translation>Chladicí skupina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Zvedací plošina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon/système de levage</masterLabel>
+            <translation><!-- Hayon/système de levage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moteur</masterLabel>
+            <translation><!-- Moteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>Pneumatická</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

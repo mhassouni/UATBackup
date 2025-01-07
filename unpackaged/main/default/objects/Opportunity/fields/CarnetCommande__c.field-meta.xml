@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CarnetCommande__c</fullName>
+    <description>Hors process CPQ</description>
+    <formula>if(text(PaysRegionPF__c)=&#39;Reways&#39;, Quantite__c *  prix_de_vente__c ,
+if
+(
+
+text(TypeProduits__c) = $Label.PRD_Famille_Meubles
+,
+(Quantite__c * LoyerMensuel__c * DureeContrat__c) + (TECH_Frais_PLV__c + TECH_Frais_Transport__c)
+,
+if
+(
+AND( text(TypeProduits__c) = $Label.PRD_Famille_Containers, NOT( CONTAINS(RecordType.Name, &#39;INTER&#39;) ))
+,
+Montant_remise__c
+,
+(LoyerMensuel__c * Quantite__c * DureeContrat__c) + (Montant_total_assurances__c * DureeContrat__c)
+
+
+)
+)
+)</formula>
+    <label>Carnet de commande</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

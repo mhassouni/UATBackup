@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Gamme --></label>
+        <name>Gamme__c</name>
+        <picklistValues>
+            <masterLabel>-70ºC</masterLabel>
+            <translation><!-- -70ºC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divers</masterLabel>
+            <translation><!-- Divers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hors Standard</masterLabel>
+            <translation><!-- Hors Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxi-Special</masterLabel>
+            <translation><!-- Maxi-Special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option</masterLabel>
+            <translation><!-- Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option assemblage</masterLabel>
+            <translation><!-- Option assemblage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special</masterLabel>
+            <translation><!-- Special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport</masterLabel>
+            <translation><!-- Transport --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

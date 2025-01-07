@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Analyse</masterLabel>
+            <translation>Analyse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attente offres</masterLabel>
+            <translation>Warten auf Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractualisation ou Abandon</masterLabel>
+            <translation>Vertragserstellung oder Abbruch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Création</masterLabel>
+            <translation>Gründung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Négociation</masterLabel>
+            <translation>Verhandlung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourcing</masterLabel>
+            <translation><!-- Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Élaboration CDC</masterLabel>
+            <translation>Erstellung Lestungsverzeichnis</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

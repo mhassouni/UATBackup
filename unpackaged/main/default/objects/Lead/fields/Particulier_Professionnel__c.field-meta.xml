@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Particulier_Professionnel__c</fullName>
+    <label>Particulier / Professionnel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Particulier</fullName>
+                <default>false</default>
+                <label>Particulier</label>
+            </value>
+            <value>
+                <fullName>Professionnel</fullName>
+                <default>false</default>
+                <label>Professionnel</label>
+            </value>
+            <value>
+                <fullName>Evénementiel</fullName>
+                <default>false</default>
+                <label>Evénementiel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

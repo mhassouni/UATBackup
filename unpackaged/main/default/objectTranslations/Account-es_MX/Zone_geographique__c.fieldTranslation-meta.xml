@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Zone géographique --></label>
+        <name>Zone_geographique__c</name>
+        <picklistValues>
+            <masterLabel>D01 – Atelier Villepinte</masterLabel>
+            <translation><!-- D01 – Atelier Villepinte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D05 – Hub le Hallain</masterLabel>
+            <translation><!-- D05 – Hub le Hallain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D197 – Atelier Pierrelate</masterLabel>
+            <translation><!-- D197 – Atelier Pierrelate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D236 – Hub Toulouse St Sauveur</masterLabel>
+            <translation><!-- D236 – Hub Toulouse St Sauveur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D261 – Hub Sarreguemines</masterLabel>
+            <translation><!-- D261 – Hub Sarreguemines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D295 – Hub Macon</masterLabel>
+            <translation><!-- D295 – Hub Macon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D296 – Hub Chartres</masterLabel>
+            <translation><!-- D296 – Hub Chartres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D301 – Atelier St Nazaire</masterLabel>
+            <translation><!-- D301 – Atelier St Nazaire --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

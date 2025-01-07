@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>For &quot;Hire&quot; activity</help>
+        <label>Current renter</label>
+        <lookupFilter>
+            <errorMessage>Please select  competitor</errorMessage>
+        </lookupFilter>
+        <name>LoueurActuel__c</name>
+        <relationshipLabel>Opportunities (Current rental company)</relationshipLabel>
+    </CustomFieldTranslation>

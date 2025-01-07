@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector__c</fullName>
+    <label>Secteur</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Forfait 7 jours</fullName>
+                <default>false</default>
+                <label>Forfait 7 jours</label>
+            </value>
+            <value>
+                <fullName>Forfait 14 jours</fullName>
+                <default>false</default>
+                <label>Forfait 14 jours</label>
+            </value>
+            <value>
+                <fullName>IDF</fullName>
+                <default>false</default>
+                <label>IDF</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>Région Nord / Normandie</fullName>
+                <default>false</default>
+                <label>Région Nord / Normandie</label>
+            </value>
+            <value>
+                <fullName>Région Bretagne / Pays de Loire</fullName>
+                <default>false</default>
+                <label>Région Bretagne / Pays de Loire</label>
+            </value>
+            <value>
+                <fullName>Région Centre / Aquitaine / Midi Pyrénées</fullName>
+                <default>false</default>
+                <label>Région Centre / Aquitaine / Midi Pyrénées</label>
+            </value>
+            <value>
+                <fullName>Région Paca</fullName>
+                <default>false</default>
+                <label>Région Paca</label>
+            </value>
+            <value>
+                <fullName>Région Est</fullName>
+                <default>false</default>
+                <label>Région Est</label>
+            </value>
+            <value>
+                <fullName>Région Rhônes Alpes</fullName>
+                <default>false</default>
+                <label>Région Rhônes Alpes</label>
+            </value>
+            <value>
+                <fullName>Région Ile de France</fullName>
+                <default>false</default>
+                <label>Région Ile de France</label>
+            </value>
+            <value>
+                <fullName>Corse</fullName>
+                <default>false</default>
+                <label>Corse</label>
+            </value>
+            <value>
+                <fullName>Forfait 21 jours</fullName>
+                <default>false</default>
+                <label>Forfait 21 jours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

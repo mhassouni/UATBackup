@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Barre_tais__c</fullName>
+    <label>Barre étai (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Horizontale</fullName>
+                <default>false</default>
+                <label>Horizontale</label>
+            </value>
+            <value>
+                <fullName>Verticale</fullName>
+                <default>false</default>
+                <label>Verticale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

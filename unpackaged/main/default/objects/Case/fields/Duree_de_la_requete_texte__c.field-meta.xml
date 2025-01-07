@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_de_la_requete_texte__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(FLOOR( Duree_de_la_requete__c  /24))&amp;&quot; Jours &quot;&amp;TEXT(MOD(FLOOR(Duree_de_la_requete__c ),24)) &amp;&quot; Hrs &quot;
+&amp;TEXT(FLOOR(VALUE(TEXT(VALUE(RIGHT(TEXT(Duree_de_la_requete__c),2))/100*60))))&amp;&quot; Minutes&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Durée de la requête</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

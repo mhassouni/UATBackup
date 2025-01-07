@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat__c</fullName>
+    <label>Résultat</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Annulation</fullName>
+                <default>false</default>
+                <label>Annulation</label>
+            </value>
+            <value>
+                <fullName>A recontacter</fullName>
+                <default>false</default>
+                <label>A recontacter</label>
+            </value>
+            <value>
+                <fullName>Commande</fullName>
+                <default>false</default>
+                <label>Commande</label>
+            </value>
+            <value>
+                <fullName>Devis Containers</fullName>
+                <default>false</default>
+                <label>Devis Containers</label>
+            </value>
+            <value>
+                <fullName>Devis Meubles</fullName>
+                <default>false</default>
+                <label>Devis Meubles</label>
+            </value>
+            <value>
+                <fullName>Devis Multi-produits</fullName>
+                <default>false</default>
+                <label>Devis Multi-produits</label>
+            </value>
+            <value>
+                <fullName>Devis Vehicules</fullName>
+                <default>false</default>
+                <label>Devis Vehicules</label>
+            </value>
+            <value>
+                <fullName>Echec</fullName>
+                <default>false</default>
+                <label>Echec</label>
+            </value>
+            <value>
+                <fullName>NRP</fullName>
+                <default>false</default>
+                <label>NRP</label>
+            </value>
+            <value>
+                <fullName>Pas intéressé</fullName>
+                <default>false</default>
+                <label>Pas intéressé</label>
+            </value>
+            <value>
+                <fullName>Présentation</fullName>
+                <default>false</default>
+                <label>Présentation</label>
+            </value>
+            <value>
+                <fullName>RDV</fullName>
+                <default>false</default>
+                <label>RDV</label>
+            </value>
+            <value>
+                <fullName>Réussite</fullName>
+                <default>false</default>
+                <label>Réussite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

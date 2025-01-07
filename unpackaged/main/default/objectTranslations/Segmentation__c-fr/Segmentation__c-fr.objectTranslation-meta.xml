@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Segmentation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Segmentations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Note des codes NACE</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Poids du C.A Secteur</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Potentiel d&#39;extension</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tranche d&#39;effectif</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Note des Codes NACE --></label>
+        <name>NoteCodesNACE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Poids du CA secteur --></label>
+        <name>PoidsCASecteur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Potentiel d’extension --></label>
+        <name>PotentielExtension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tranche d’effectif --></label>
+        <name>TrancheEffectif</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

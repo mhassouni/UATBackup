@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demande DNP Rejetée</name>
+    <style>none</style>
+    <subject>{!$Label.DNP_Subject_rejected}</subject>
+    <textOnly>Bonjour
+
+Votre demande de N° parc de l&#39;opportunité  {!Opportunity.Name} est rejetée.
+
+Commentaires : {!ApprovalRequest.Comments}
+
+Lien vers l&#39;opportunité</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

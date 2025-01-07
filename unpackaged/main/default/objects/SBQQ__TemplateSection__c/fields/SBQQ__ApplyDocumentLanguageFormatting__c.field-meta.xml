@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__ApplyDocumentLanguageFormatting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag that determines whether document language formatting is applied to this section. Only applies to sections pointing to template content of type &quot;HTML&quot;.</description>
+    <inlineHelpText>Sélectionnez cette case à cocher pour appliquer la mise en forme de la langue du document. Applicable uniquement aux sections qui pointent vers un contenu de modèle de type « HTML ».</inlineHelpText>
+    <label>Apply Document Language Formatting</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

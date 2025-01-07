@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chatter Settings --></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Language And Locale Settings --></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Profil de l&#39;utilisateur</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label>All&#39;incirca</label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label>Contatto</label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Filtres --></label>
+            <section>Filtres</section>
+        </sections>
+        <sections>
+            <label><!-- Flags --></label>
+            <section>Flags</section>
+        </sections>
+        <sections>
+            <label><!-- KPIs --></label>
+            <section>KPIs</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Obbiettivi: Attività</label>
+            <section>Objectifs: Activités</section>
+        </sections>
+        <sections>
+            <label>Obbiettivi: Containers</label>
+            <section>Objectifs: Containers</section>
+        </sections>
+        <sections>
+            <label>Obbiettivi: Mobili</label>
+            <section>Objectifs: Meubles</section>
+        </sections>
+        <sections>
+            <label>Obbiettivi: Veicoli</label>
+            <section>Objectifs: Véhicules</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout - Admin</layout>
+        <sections>
+            <label><!-- Filtres --></label>
+            <section>Filtres</section>
+        </sections>
+        <sections>
+            <label><!-- Flags --></label>
+            <section>Flags</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Objectifs: Activités --></label>
+            <section>Objectifs: Activités</section>
+        </sections>
+        <sections>
+            <label><!-- Objectifs: Containers --></label>
+            <section>Objectifs: Containers</section>
+        </sections>
+        <sections>
+            <label><!-- Objectifs: Meubles --></label>
+            <section>Objectifs: Meubles</section>
+        </sections>
+        <sections>
+            <label><!-- Objectifs: Véhicules --></label>
+            <section>Objectifs: Véhicules</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout Public</layout>
+        <sections>
+            <label><!-- Filtres --></label>
+            <section>Filtres</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

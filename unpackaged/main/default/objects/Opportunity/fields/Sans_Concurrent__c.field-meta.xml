@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sans_Concurrent__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Aucun concurrent identifié sur cette oppportunité</description>
+    <inlineHelpText>Cochez cette case si aucun concurrent n&#39;est identifié sur cette opportunité</inlineHelpText>
+    <label>Aucun concurrent identifié</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compte_de_facturation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Compte de facturation</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>2 AND (1 OR 3)</booleanFilter>
+        <filterItems>
+            <field>$Source.UltimateAccount__c</field>
+            <operation>equals</operation>
+            <valueField>Account.UltimateAccount__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte - Client</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.UltimateAccount__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Compte_de_facturation__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Comptes (Adresse de facturation)</relationshipLabel>
+    <relationshipName>Sites_Exploitation</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

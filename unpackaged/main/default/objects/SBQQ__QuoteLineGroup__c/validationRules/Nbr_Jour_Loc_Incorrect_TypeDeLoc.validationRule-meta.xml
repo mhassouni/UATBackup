@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nbr_Jour_Loc_Incorrect_TypeDeLoc</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+					AND(
+									ISPICKVAL(SBQQ__Quote__r.Type_de_location__c, &quot;Courte Durée&quot;) ,
+									Duree_location__c&gt; 30
+									),
+					TRUE,
+					IF(
+									AND(
+													ISPICKVAL(SBQQ__Quote__r.Type_de_location__c, &quot;Moyenne Durée&quot;) ,
+													OR(
+																	Duree_location__c &lt; 30,
+																	Duree_location__c &gt;364
+																	)
+													),
+									TRUE,
+									IF(		
+													AND(
+									ISPICKVAL(SBQQ__Quote__r.Type_de_location__c, &quot;Longue Durée&quot;) ,
+									Duree_location__c &lt; 365
+									),
+													TRUE,
+													FALSE
+													)
+									)
+				)</errorConditionFormula>
+    <errorDisplayField>Acces_Camion__c</errorDisplayField>
+    <errorMessage>Le nombre de jour de location ne correspond pas au type de location choisi.
+Si courte durée &lt; 30 jours
+Si Moyenne durée &gt; 30 jours et &lt; 365 jours
+Si Longue durée &gt; 365 Jours</errorMessage>
+</ValidationRule>

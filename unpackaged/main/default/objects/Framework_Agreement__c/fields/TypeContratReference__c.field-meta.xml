@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeContratReference__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( LEFT(RecordType.DeveloperName, 2) = &#39;AC&#39;, &#39;Accord-cadre&#39;, &#39;CGL&#39; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type de contrat de référence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

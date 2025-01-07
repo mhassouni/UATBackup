@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Activation de commande</masterLabel>
+        <translation><!-- Activation de commande --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Approbation de commande</masterLabel>
+        <translation><!-- Approbation de commande --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Exécution</masterLabel>
+        <translation><!-- Exécution --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facturation</masterLabel>
+        <translation>Abrechnung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Paiement</masterLabel>
+        <translation><!-- Paiement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Place Order</masterLabel>
+        <translation><!-- Place Order --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

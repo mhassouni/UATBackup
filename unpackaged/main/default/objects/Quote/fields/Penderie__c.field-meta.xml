@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penderie__c</fullName>
+    <label>Penderie  / Porte cintre (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BARRE PORTE CINTRES</fullName>
+                <default>false</default>
+                <label>BARRE PORTE CINTRES</label>
+            </value>
+            <value>
+                <fullName>BI-RAIL ALU</fullName>
+                <default>false</default>
+                <label>BI-RAIL ALU</label>
+            </value>
+            <value>
+                <fullName>DENT DE LOUP</fullName>
+                <default>false</default>
+                <label>DENT DE LOUP</label>
+            </value>
+            <value>
+                <fullName>RAIL FURGOCAR</fullName>
+                <default>false</default>
+                <label>RAIL FURGOCAR</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A DROITE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A DROITE</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A GAUCHE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE INOX DIAM 50 - CHAISE A GAUCHE</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A DROITE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A DROITE</label>
+            </value>
+            <value>
+                <fullName>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A GAUCHE</fullName>
+                <default>false</default>
+                <label>RAIL TUBULAIRE INOX DIAM 60 - CHAISE A GAUCHE</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

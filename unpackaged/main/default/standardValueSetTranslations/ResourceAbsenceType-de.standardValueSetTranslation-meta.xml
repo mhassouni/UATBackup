@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Congés</masterLabel>
+        <translation>Urlaub</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Formation</masterLabel>
+        <translation>Weiterbildung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Maladie</masterLabel>
+        <translation>Krankheit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Réunion</masterLabel>
+        <translation>berufliches Treffen</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

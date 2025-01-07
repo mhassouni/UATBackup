@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_Compacte_Equipement</fullName>
+    <fields>Name</fields>
+    <fields>Equipement_Num_Serie__c</fields>
+    <fields>Equipement_Famille__c</fields>
+    <fields>Equipement_Sous_Famille__c</fields>
+    <fields>Equipement_Article__c</fields>
+    <fields>Equipement_Debut_garantie__c</fields>
+    <fields>Equipement_Fin_garantie__c</fields>
+    <label>Presentation Compacte Equipement</label>
+</CompactLayout>

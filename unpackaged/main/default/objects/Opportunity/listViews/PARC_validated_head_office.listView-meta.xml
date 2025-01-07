@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PARC_validated_head_office</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) and 6</booleanFilter>
+    <columns>DNP_Date_Approbation__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>TypeProduit__c</columns>
+    <columns>SousCategorie__c</columns>
+    <columns>CodePF__c</columns>
+    <columns>Kilometrage__c</columns>
+    <columns>DureeContrat__c</columns>
+    <columns>N_Parc_pressenti__c</columns>
+    <columns>N_Parc__c</columns>
+    <columns>N_Parc_s_attribu_s__c</columns>
+    <columns>N_Parc_renouvele__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DNP_Statut__c</field>
+        <operation>equals</operation>
+        <value>Approuvée</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>notEqual</operation>
+        <value>USA</value>
+    </filters>
+    <filters>
+        <field>DNP_Nom_Approbteur__c</field>
+        <operation>contains</operation>
+        <value>FORESTIER</value>
+    </filters>
+    <filters>
+        <field>DNP_Nom_Approbteur__c</field>
+        <operation>contains</operation>
+        <value>payet</value>
+    </filters>
+    <filters>
+        <field>DNP_Nom_Approbteur__c</field>
+        <operation>contains</operation>
+        <value>Helder Ribeiro</value>
+    </filters>
+    <filters>
+        <field>TypeProduit__c</field>
+        <operation>equals</operation>
+        <value>B,C,D,F</value>
+    </filters>
+    <label>PARC validated head office</label>
+    <sharedTo>
+        <role>DirectionGenerale</role>
+    </sharedTo>
+</ListView>

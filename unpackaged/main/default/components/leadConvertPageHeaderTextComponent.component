@@ -1,0 +1,11 @@
+<!-- This text appears at the top of the Lead Convert page. Customize to meet business requirements. -->
+<!-- Questions? Reach out to us @DIChicago or www.dichicago.com -->
+
+<apex:component >
+
+{!$Label.PST_leadConvertPageHeaderTextComponent_HeaderText}
+<br/>
+<br/>
+<br/>
+
+</apex:component>

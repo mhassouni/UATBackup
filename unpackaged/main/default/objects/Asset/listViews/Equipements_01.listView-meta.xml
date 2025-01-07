@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipements_01</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.PARENT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.LAST_UPDATE</columns>
+    <columns>Equipement_Famille__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.Equipement</value>
+    </filters>
+    <label>Equipements</label>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

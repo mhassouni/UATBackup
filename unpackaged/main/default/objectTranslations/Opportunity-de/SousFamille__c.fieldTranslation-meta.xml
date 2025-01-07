@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Unterfamilie</label>
+        <name>SousFamille__c</name>
+        <picklistValues>
+            <masterLabel>BAC</masterLabel>
+            <translation>CHILLER</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>C (Bestandsfahrzeug)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C (Dry)</masterLabel>
+            <translation><!-- C (Dry) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L (Dry)</masterLabel>
+            <translation><!-- L (Dry) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDFOOD</masterLabel>
+            <translation><!-- MEDFOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A (Carrosseries)</masterLabel>
+            <translation>N/A (KOFFER/KASTEN)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Frigo)</masterLabel>
+            <translation>P (GEKÜHLTER)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Sec)</masterLabel>
+            <translation>P (TROCKEN)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S (Dry)</masterLabel>
+            <translation><!-- S (Dry) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S (Frigo)</masterLabel>
+            <translation>S (GEKÜHLTER)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALON</masterLabel>
+            <translation>ANDERE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation><!-- T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Frigo)</masterLabel>
+            <translation>T (GEKÜHLTER)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Sec)</masterLabel>
+            <translation>T (TROCKEN)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Dry)</masterLabel>
+            <translation><!-- V (Dry) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Frigo)</masterLabel>
+            <translation>V (GEKÜHLTER)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Sec)</masterLabel>
+            <translation>V (TROCKEN)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITRINE</masterLabel>
+            <translation>GEFRIERSCHRANK</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

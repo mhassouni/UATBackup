@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Community_Notification Création Requête Community</name>
+    <style>none</style>
+    <subject>Ouverture Intervention Client N° {!Case.CaseNumber} - {!Case.Asset} - {!Case.Nom_Commercial_Client__c}</subject>
+    <textOnly>Date d&#39;ouverture = {!Case.CreatedDate}
+
+
+Veuillez trouver ici les informations sur la demande ouverte par le client :
+
+Objet de l&#39;intervention : {!Case.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

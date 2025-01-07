@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_PFUK_Bristol_Closed</fullName>
+    <booleanFilter>1 AND 9 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+    <columns>AgencePF__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Attente_Client__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Pick_up_Date__c</columns>
+    <columns>Produits__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pays__c</field>
+        <operation>equals</operation>
+        <value>ROYAUME UNI</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BA1,BA2,BA3,BA4,BA5,BA6,BA7,BA8,BA9,BA10,BA11,BA12,BA13,BA14,BA15,BA16,BA20,BA21,BA22,BH1,BH2,BH3,BH4,BH5,BH6,BH7,BH8,BH9,BH10,BH11,BS0,BS1,BS2,BS3,BS4,BS5,BS6,BS7,BS8,BS9,BS10,BS11,BS12,BS13,BS14,BS15,BS16,BS30,BS31,BS32</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>BS34,BS35,BS36,BS37,BS39,BS40,BS41,BS48,BS49,BS80,BS98,BS99,BS21,BS22,BS23,BS24,BS25,BS26,BS27,BS28,BS29</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>CF3,CF5,CF10,CF11,CF14,CF15,CF23,CF24,CF30,CF91,CF95,CF99,CF31,CF32,CF33,CF35,CF34,CF36,CF37,CF38,CF39,CF40,CF41,CF42,CF43,CF44,CF45,CF46,CF47,CF48,CF61,CF71,CF62,CF63,CF64,CF72,CF81,CF82,CF83</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>DT1,DT2,DT3,DT4,DT5,DT6,DT7,DT8,DT9,DT10,DT11,GL1,GL2,GL3,GL4,GL19,GL5,GL6,GL7,GL8,GL9,GL10,GL11,GL12,GL13,GL14,GL15,GL16,GL17,GL18,GL20,GL50,GL51,GL52,GL53,GL54,GL55,GL56</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>NP4,NP7,NP8,NP10,NP11,NP18,NP19,NP20,NP12,NP13,NP15,NP16,NP22,NP23,NP24,NP25,NP26,NP44,SA1,SA2,SA3,SA4,SA5,SA6,SA7,SA8,SA9,SA80,SA99,SA10,SA11,SA12,SA13,SA14,SA15,SA16,SA17,SA18,SA19,SA20,SA31,SA32,SA33,SA34,SA35,SA36,SA37,SA38,SA39</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>SA40,SA41,SA42,SA43,SA44,SA45,SA46,SA48,SA47,SA61,SA62,SA63,SA64,SA65,SA66,SA67,SA68,SA69,SA70,SA71,SA72,SA73,SN1,SN2,SN3,SN4,SN5,SN6,SN25,SN26,SN38,SN99,SN7,SN8,SN9,SN10,SN11,SN12,SN13,SN15,SN14,SN16</value>
+    </filters>
+    <filters>
+        <field>CodePostal__c</field>
+        <operation>startsWith</operation>
+        <value>TA1,TA2,TA3,TA4,TA5,TA6,TA7,TA8,TA9,TA10,TA11,TA12,TA13,TA14,TA15,TA16,TA17,TA18,TA19,TA20,TA21,TA22,TA23,TA24,LD1,LD2,LD3,LD4,LD5,LD6,LD7,LD8,LD9</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Gagnée,Abandonnée,Clôturée</value>
+    </filters>
+    <label>Leads PFUK Bristol - Closed</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionPays_PFUK_Grande_Bretagne</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

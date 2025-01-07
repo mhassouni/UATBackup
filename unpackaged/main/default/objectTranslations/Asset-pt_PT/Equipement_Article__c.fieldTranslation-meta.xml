@@ -1,0 +1,2853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Artigo</label>
+        <name>Equipement_Article__c</name>
+        <picklistValues>
+            <masterLabel>1 PASSERELLE 1/2 CABINE</masterLabel>
+            <translation><!-- 1 PASSERELLE 1/2 CABINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE</masterLabel>
+            <translation><!-- 1 PORTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE 1,30 D</masterLabel>
+            <translation><!-- 1 PORTE 1,30 D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE 1,30 G</masterLabel>
+            <translation><!-- 1 PORTE 1,30 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE AR D</masterLabel>
+            <translation><!-- 1 PORTE AR D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE AR G</masterLabel>
+            <translation><!-- 1 PORTE AR G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE AV D</masterLabel>
+            <translation><!-- 1 PORTE AV D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 PORTE AV G</masterLabel>
+            <translation><!-- 1 PORTE AV G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.00 DROITE</masterLabel>
+            <translation><!-- 1.00 DROITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.00 GAUCHE</masterLabel>
+            <translation><!-- 1.00 GAUCHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 ARD - 1000 KG</masterLabel>
+            <translation><!-- 1/2 ARD - 1000 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 ARD - 1000KG</masterLabel>
+            <translation><!-- 1/2 ARD - 1000KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1/2 ARD - 1300 mm</masterLabel>
+            <translation><!-- 1/2 ARD - 1300 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000 MM</masterLabel>
+            <translation><!-- 1000 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1200 MM</masterLabel>
+            <translation><!-- 1200 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1250 MM</masterLabel>
+            <translation><!-- 1250 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1280 MM</masterLabel>
+            <translation><!-- 1280 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13 G</masterLabel>
+            <translation><!-- 13 G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1300 MM</masterLabel>
+            <translation><!-- 1300 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1400 MM</masterLabel>
+            <translation><!-- 1400 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1450 MM</masterLabel>
+            <translation><!-- 1450 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1500 MM</masterLabel>
+            <translation><!-- 1500 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1550 MM</masterLabel>
+            <translation><!-- 1550 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1600 MM</masterLabel>
+            <translation><!-- 1600 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1600MM</masterLabel>
+            <translation><!-- 1600MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1650 MM</masterLabel>
+            <translation><!-- 1650 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1700 MM</masterLabel>
+            <translation><!-- 1700 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1750 mm</masterLabel>
+            <translation><!-- 1750 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1800 MM</masterLabel>
+            <translation><!-- 1800 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1850 mm</masterLabel>
+            <translation><!-- 1850 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1900 MM</masterLabel>
+            <translation><!-- 1900 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1950 MM</masterLabel>
+            <translation><!-- 1950 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PASSERELLES 1/2 CABINE</masterLabel>
+            <translation><!-- 2 PASSERELLES 1/2 CABINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PLAQUES EUTECTIQUE FACE AV + 1 AU PAVILLON</masterLabel>
+            <translation><!-- 2 PLAQUES EUTECTIQUE FACE AV + 1 AU PAVILLON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTES</masterLabel>
+            <translation><!-- 2 PORTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTES AV D+G</masterLabel>
+            <translation><!-- 2 PORTES AV D+G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTES D AV+AR</masterLabel>
+            <translation><!-- 2 PORTES D AV+AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 PORTES G AV+AR</masterLabel>
+            <translation><!-- 2 PORTES G AV+AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200</masterLabel>
+            <translation><!-- 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 H + 4 PLAQUES EUTECTIQUES</masterLabel>
+            <translation><!-- 200 H + 4 PLAQUES EUTECTIQUES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2000 MM</masterLabel>
+            <translation><!-- 2000 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2000MM</masterLabel>
+            <translation><!-- 2000MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>204 B</masterLabel>
+            <translation><!-- 204 B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2050 MM</masterLabel>
+            <translation><!-- 2050 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2100 mm</masterLabel>
+            <translation><!-- 2100 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2100MM</masterLabel>
+            <translation><!-- 2100MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2150 MM</masterLabel>
+            <translation><!-- 2150 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2200 MM</masterLabel>
+            <translation><!-- 2200 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2250 MM</masterLabel>
+            <translation><!-- 2250 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2300 MM</masterLabel>
+            <translation><!-- 2300 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2350 mm</masterLabel>
+            <translation><!-- 2350 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2500 mm</masterLabel>
+            <translation><!-- 2500 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2550 mm</masterLabel>
+            <translation><!-- 2550 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2700 MM</masterLabel>
+            <translation><!-- 2700 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2750 mm</masterLabel>
+            <translation><!-- 2750 mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2800 MM</masterLabel>
+            <translation><!-- 2800 MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300</masterLabel>
+            <translation><!-- 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3000 KG</masterLabel>
+            <translation><!-- 3000 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30i INTEGRE</masterLabel>
+            <translation><!-- 30i INTEGRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350</masterLabel>
+            <translation><!-- 350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350 MT</masterLabel>
+            <translation><!-- 350 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>400</masterLabel>
+            <translation><!-- 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>400 MT</masterLabel>
+            <translation><!-- 400 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4000/10-R134</masterLabel>
+            <translation><!-- 4000/10-R134 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>450</masterLabel>
+            <translation><!-- 450 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500</masterLabel>
+            <translation><!-- 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 T</masterLabel>
+            <translation><!-- 500 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>550 INSONORISEE</masterLabel>
+            <translation><!-- 550 INSONORISEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600</masterLabel>
+            <translation><!-- 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600 MT</masterLabel>
+            <translation><!-- 600 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>600 T MT</masterLabel>
+            <translation><!-- 600 T MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>850-S</masterLabel>
+            <translation><!-- 850-S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>850-S MT</masterLabel>
+            <translation><!-- 850-S MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A QUALIFIER</masterLabel>
+            <translation><!-- A QUALIFIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A01-134A</masterLabel>
+            <translation><!-- A01-134A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIGUILLAGE</masterLabel>
+            <translation><!-- AIGUILLAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIRBUS 320 L</masterLabel>
+            <translation><!-- AIRBUS 320 L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALARME</masterLabel>
+            <translation><!-- ALARME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA 333</masterLabel>
+            <translation><!-- ALASKA 333 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMENAGEMENT SPECIAL</masterLabel>
+            <translation><!-- AMENAGEMENT SPECIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTIGUA</masterLabel>
+            <translation><!-- ANTIGUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR 1 PORTE CENTRALE</masterLabel>
+            <translation><!-- AR 1 PORTE CENTRALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR 2 VANTAUX</masterLabel>
+            <translation><!-- AR 2 VANTAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR RÉTRACTABLE</masterLabel>
+            <translation><!-- AR RÉTRACTABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARMOIRE MOBILE</masterLabel>
+            <translation><!-- ARMOIRE MOBILE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUVENT</masterLabel>
+            <translation><!-- AUVENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUVENT RELEVABLE</masterLabel>
+            <translation><!-- AUVENT RELEVABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVEC ALARME</masterLabel>
+            <translation><!-- AVEC ALARME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVEC PORTE</masterLabel>
+            <translation><!-- AVEC PORTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B100</masterLabel>
+            <translation><!-- B100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALANCE</masterLabel>
+            <translation><!-- BALANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALANCE AVEC IMPRIMANTE</masterLabel>
+            <translation><!-- BALANCE AVEC IMPRIMANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARRE A DENTS FIXE</masterLabel>
+            <translation><!-- BARRE A DENTS FIXE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARRE PORTE CINTRE LONGITUDINALE</masterLabel>
+            <translation><!-- BARRE PORTE CINTRE LONGITUDINALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCV-IB3096 3T</masterLabel>
+            <translation><!-- BCV-IB3096 3T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCVIF 3074 2T</masterLabel>
+            <translation><!-- BCVIF 3074 2T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCVIF 3074 3T</masterLabel>
+            <translation><!-- BCVIF 3074 3T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BENNES BASCULANTE</masterLabel>
+            <translation><!-- BENNES BASCULANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI-RAILS</masterLabel>
+            <translation><!-- BI-RAILS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLOC CENTRAL</masterLabel>
+            <translation><!-- BLOC CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLOCKSHAFT XVAN</masterLabel>
+            <translation><!-- BLOCKSHAFT XVAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLUE TREE SYSTEM</masterLabel>
+            <translation><!-- BLUE TREE SYSTEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRAS HYDRAULIQUE</masterLabel>
+            <translation><!-- BRAS HYDRAULIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUZZER DE MARCHE ARRIERE</masterLabel>
+            <translation><!-- BUZZER DE MARCHE ARRIERE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C33</masterLabel>
+            <translation><!-- C33 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C33 C525</masterLabel>
+            <translation><!-- C33 C525 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CABINE COUCHETTE</masterLabel>
+            <translation><!-- CABINE COUCHETTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAILLEBOTIS PLASTIQUE</masterLabel>
+            <translation><!-- CAILLEBOTIS PLASTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSON AMOVIBLE</masterLabel>
+            <translation><!-- CAISSON AMOVIBLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSON ANTI BRUIT</masterLabel>
+            <translation><!-- CAISSON ANTI BRUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSON AR</masterLabel>
+            <translation><!-- CAISSON AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISSON AV</masterLabel>
+            <translation><!-- CAISSON AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAMERA DE RECUL</masterLabel>
+            <translation><!-- CAMERA DE RECUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPITONS</masterLabel>
+            <translation><!-- CAPITONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPUCINE</masterLabel>
+            <translation><!-- CAPUCINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAR TRACK</masterLabel>
+            <translation><!-- CAR TRACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARLSEN</masterLabel>
+            <translation><!-- CARLSEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER 520.H</masterLabel>
+            <translation><!-- CARRIER 520.H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER A.930</masterLabel>
+            <translation><!-- CARRIER A.930 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BASIC 600</masterLabel>
+            <translation><!-- CARRIER BASIC 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BASIC 700 R</masterLabel>
+            <translation><!-- CARRIER BASIC 700 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BASIC 700 RS</masterLabel>
+            <translation><!-- CARRIER BASIC 700 RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BLIZARD 240</masterLabel>
+            <translation><!-- CARRIER BLIZARD 240 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BLIZARD 340</masterLabel>
+            <translation><!-- CARRIER BLIZARD 340 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BLIZARD 440</masterLabel>
+            <translation><!-- CARRIER BLIZARD 440 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER BLIZARD 590</masterLabel>
+            <translation><!-- CARRIER BLIZARD 590 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS B50</masterLabel>
+            <translation><!-- CARRIER GENESIS B50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS B80</masterLabel>
+            <translation><!-- CARRIER GENESIS B80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS B80 BI</masterLabel>
+            <translation><!-- CARRIER GENESIS B80 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS R70</masterLabel>
+            <translation><!-- CARRIER GENESIS R70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS R80</masterLabel>
+            <translation><!-- CARRIER GENESIS R80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS R90</masterLabel>
+            <translation><!-- CARRIER GENESIS R90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER GENESIS TM 800</masterLabel>
+            <translation><!-- CARRIER GENESIS TM 800 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER INTEGRA 20S</masterLabel>
+            <translation><!-- CARRIER INTEGRA 20S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MAXIMA</masterLabel>
+            <translation><!-- CARRIER MAXIMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MAXIMA 1200</masterLabel>
+            <translation><!-- CARRIER MAXIMA 1200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MAXIMA 1300</masterLabel>
+            <translation><!-- CARRIER MAXIMA 1300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MAXIMA 2</masterLabel>
+            <translation><!-- CARRIER MAXIMA 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 310</masterLabel>
+            <translation><!-- CARRIER MISTRAL 310 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 400</masterLabel>
+            <translation><!-- CARRIER MISTRAL 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 405</masterLabel>
+            <translation><!-- CARRIER MISTRAL 405 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 410</masterLabel>
+            <translation><!-- CARRIER MISTRAL 410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 410 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 410 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 500</masterLabel>
+            <translation><!-- CARRIER MISTRAL 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 600</masterLabel>
+            <translation><!-- CARRIER MISTRAL 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 605</masterLabel>
+            <translation><!-- CARRIER MISTRAL 605 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 610</masterLabel>
+            <translation><!-- CARRIER MISTRAL 610 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 610 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 610 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 700</masterLabel>
+            <translation><!-- CARRIER MISTRAL 700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 700 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 700 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 710</masterLabel>
+            <translation><!-- CARRIER MISTRAL 710 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 710 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 710 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 800</masterLabel>
+            <translation><!-- CARRIER MISTRAL 800 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 800 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 800 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 900</masterLabel>
+            <translation><!-- CARRIER MISTRAL 900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER MISTRAL 900 BI</masterLabel>
+            <translation><!-- CARRIER MISTRAL 900 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ND</masterLabel>
+            <translation><!-- CARRIER ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER NT</masterLabel>
+            <translation><!-- CARRIER NT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 322</masterLabel>
+            <translation><!-- CARRIER SUPRA 322 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 422</masterLabel>
+            <translation><!-- CARRIER SUPRA 422 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 444</masterLabel>
+            <translation><!-- CARRIER SUPRA 444 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 450</masterLabel>
+            <translation><!-- CARRIER SUPRA 450 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 522</masterLabel>
+            <translation><!-- CARRIER SUPRA 522 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 522 BI</masterLabel>
+            <translation><!-- CARRIER SUPRA 522 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 544</masterLabel>
+            <translation><!-- CARRIER SUPRA 544 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 550</masterLabel>
+            <translation><!-- CARRIER SUPRA 550 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 722</masterLabel>
+            <translation><!-- CARRIER SUPRA 722 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 744</masterLabel>
+            <translation><!-- CARRIER SUPRA 744 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 750</masterLabel>
+            <translation><!-- CARRIER SUPRA 750 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 750 MT</masterLabel>
+            <translation><!-- CARRIER SUPRA 750 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 822</masterLabel>
+            <translation><!-- CARRIER SUPRA 822 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 822 BI</masterLabel>
+            <translation><!-- CARRIER SUPRA 822 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 844</masterLabel>
+            <translation><!-- CARRIER SUPRA 844 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 850</masterLabel>
+            <translation><!-- CARRIER SUPRA 850 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 850 MT</masterLabel>
+            <translation><!-- CARRIER SUPRA 850 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 922</masterLabel>
+            <translation><!-- CARRIER SUPRA 922 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 944</masterLabel>
+            <translation><!-- CARRIER SUPRA 944 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 944U</masterLabel>
+            <translation><!-- CARRIER SUPRA 944U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 950</masterLabel>
+            <translation><!-- CARRIER SUPRA 950 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 950 MT</masterLabel>
+            <translation><!-- CARRIER SUPRA 950 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER SUPRA 950U</masterLabel>
+            <translation><!-- CARRIER SUPRA 950U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER TM 800</masterLabel>
+            <translation><!-- CARRIER TM 800 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER VECTOR</masterLabel>
+            <translation><!-- CARRIER VECTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER VECTOR MT</masterLabel>
+            <translation><!-- CARRIER VECTOR MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 150</masterLabel>
+            <translation><!-- CARRIER XARIOS 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 200</masterLabel>
+            <translation><!-- CARRIER XARIOS 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 200 T</masterLabel>
+            <translation><!-- CARRIER XARIOS 200 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 300</masterLabel>
+            <translation><!-- CARRIER XARIOS 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 350</masterLabel>
+            <translation><!-- CARRIER XARIOS 350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 350 MT</masterLabel>
+            <translation><!-- CARRIER XARIOS 350 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 350 T</masterLabel>
+            <translation><!-- CARRIER XARIOS 350 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 400</masterLabel>
+            <translation><!-- CARRIER XARIOS 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 500</masterLabel>
+            <translation><!-- CARRIER XARIOS 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 500 MT</masterLabel>
+            <translation><!-- CARRIER XARIOS 500 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 600</masterLabel>
+            <translation><!-- CARRIER XARIOS 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER XARIOS 600 MT</masterLabel>
+            <translation><!-- CARRIER XARIOS 600 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 180</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 180 R</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 180 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 180H</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 180H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 200</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 20S</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 20S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 300</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 300 BI</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 300 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 30S</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 30S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARRIER ZEPHYR 540</masterLabel>
+            <translation><!-- CARRIER ZEPHYR 540 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARSEN 400V</masterLabel>
+            <translation><!-- CARSEN 400V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CENTREE</masterLabel>
+            <translation><!-- CENTREE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAINAGE AUTOMATIQUE</masterLabel>
+            <translation><!-- CHAINAGE AUTOMATIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDELLE</masterLabel>
+            <translation><!-- CHANDELLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHASSIS REHAUSSE TYPE CAPECURES</masterLabel>
+            <translation><!-- CHASSIS REHAUSSE TYPE CAPECURES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAUFFAGE AUTONOME</masterLabel>
+            <translation><!-- CHAUFFAGE AUTONOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITIMAX 280</masterLabel>
+            <translation><!-- CITIMAX 280 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITIMAX 350</masterLabel>
+            <translation><!-- CITIMAX 350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITIMAX 400</masterLabel>
+            <translation><!-- CITIMAX 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CITY 1000 Z</masterLabel>
+            <translation><!-- CITY 1000 Z --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLASSIQUE</masterLabel>
+            <translation><!-- CLASSIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON 2 PARTIES</masterLabel>
+            <translation><!-- CLOISON 2 PARTIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON FIXE LONGITUDINALE</masterLabel>
+            <translation><!-- CLOISON FIXE LONGITUDINALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON FIXE TRANSVERSALE</masterLabel>
+            <translation><!-- CLOISON FIXE TRANSVERSALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON MATELAS</masterLabel>
+            <translation><!-- CLOISON MATELAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON MOBILE</masterLabel>
+            <translation><!-- CLOISON MOBILE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLOISON SOUPLE</masterLabel>
+            <translation><!-- CLOISON SOUPLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COFFRE À PALETTES</masterLabel>
+            <translation><!-- COFFRE À PALETTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COFI</masterLabel>
+            <translation><!-- COFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLD CAR</masterLabel>
+            <translation><!-- COLD CAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLD CAR 6P</masterLabel>
+            <translation><!-- COLD CAR 6P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLD CAR CC/20T3</masterLabel>
+            <translation><!-- COLD CAR CC/20T3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMARK</masterLabel>
+            <translation><!-- COMARK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AR +</masterLabel>
+            <translation><!-- COMPARTIMENT AR + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AR -</masterLabel>
+            <translation><!-- COMPARTIMENT AR - --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AR I</masterLabel>
+            <translation><!-- COMPARTIMENT AR I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AV +</masterLabel>
+            <translation><!-- COMPARTIMENT AV + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AV -</masterLabel>
+            <translation><!-- COMPARTIMENT AV - --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT AV I</masterLabel>
+            <translation><!-- COMPARTIMENT AV I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPARTIMENT LONGITUDINAL</masterLabel>
+            <translation><!-- COMPARTIMENT LONGITUDINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRAT DE MAINTENANCE</masterLabel>
+            <translation><!-- CONTRAT DE MAINTENANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORONA 350MT</masterLabel>
+            <translation><!-- CORONA 350MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORONA 500</masterLabel>
+            <translation><!-- CORONA 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORONA C4</masterLabel>
+            <translation><!-- CORONA C4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CROCHET ATTELAGE</masterLabel>
+            <translation><!-- CROCHET ATTELAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRYOTECH CT 10</masterLabel>
+            <translation><!-- CRYOTECH CT 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATA COLD 100</masterLabel>
+            <translation><!-- DATA COLD 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATA COLD 300</masterLabel>
+            <translation><!-- DATA COLD 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATA COLD 600</masterLabel>
+            <translation><!-- DATA COLD 600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD</masterLabel>
+            <translation><!-- DATACOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATACOLD 650 R AVEC IMPRIMANTE</masterLabel>
+            <translation><!-- DATACOLD 650 R AVEC IMPRIMANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEFLECTEUR DE TOIT</masterLabel>
+            <translation><!-- DEFLECTEUR DE TOIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEFLECTEURS LATERAUX</masterLabel>
+            <translation><!-- DEFLECTEURS LATERAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DH-P1.03</masterLabel>
+            <translation><!-- DH-P1.03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PLANCHER</masterLabel>
+            <translation><!-- DOUBLE PLANCHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE 100 CM</masterLabel>
+            <translation><!-- DOUBLE PORTE 100 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE 120 CM</masterLabel>
+            <translation><!-- DOUBLE PORTE 120 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE 80 CM</masterLabel>
+            <translation><!-- DOUBLE PORTE 80 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PORTE RAPIDE</masterLabel>
+            <translation><!-- DOUBLE PORTE RAPIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBLE PÉDALE</masterLabel>
+            <translation><!-- DOUBLE PÉDALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DROITE</masterLabel>
+            <translation><!-- DROITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DÉFLECTEUR DE TOIT</masterLabel>
+            <translation><!-- DÉFLECTEUR DE TOIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDT TRANSC BORA 450</masterLabel>
+            <translation><!-- EDT TRANSC BORA 450 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDT TRANSC FIDJI 810</masterLabel>
+            <translation><!-- EDT TRANSC FIDJI 810 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDT TRANSC SAMOA 1610</masterLabel>
+            <translation><!-- EDT TRANSC SAMOA 1610 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDT TRANSC TONGA 1210</masterLabel>
+            <translation><!-- EDT TRANSC TONGA 1210 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDT TRANSC TONGA 1260</masterLabel>
+            <translation><!-- EDT TRANSC TONGA 1260 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELEVATEUR A VIANDE</masterLabel>
+            <translation><!-- ELEVATEUR A VIANDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENREGISTREUR A DISQUE</masterLabel>
+            <translation><!-- ENREGISTREUR A DISQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_TEMP.ENR.TEMP.ELECTRONIQUE.ESCO.ESCO</masterLabel>
+            <translation><!-- ENR_TEMP.ENR.TEMP.ELECTRONIQUE.ESCO.ESCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPI</masterLabel>
+            <translation><!-- EPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESCABEAU COULISSANT</masterLabel>
+            <translation><!-- ESCABEAU COULISSANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES CONTAINERS</masterLabel>
+            <translation><!-- ETAGERES CONTAINERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES FIXES AV</masterLabel>
+            <translation><!-- ETAGERES FIXES AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES FIXES D</masterLabel>
+            <translation><!-- ETAGERES FIXES D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES FIXES D+G</masterLabel>
+            <translation><!-- ETAGERES FIXES D+G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES FIXES G</masterLabel>
+            <translation><!-- ETAGERES FIXES G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES RELEVABLES AV</masterLabel>
+            <translation><!-- ETAGERES RELEVABLES AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES RELEVABLES D</masterLabel>
+            <translation><!-- ETAGERES RELEVABLES D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES RELEVABLES D+G</masterLabel>
+            <translation><!-- ETAGERES RELEVABLES D+G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAGERES RELEVABLES G</masterLabel>
+            <translation><!-- ETAGERES RELEVABLES G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER 3 MARCHES TÉLÉSCOPIQUE AVEC BUZZER</masterLabel>
+            <translation><!-- ETRIER 3 MARCHES TÉLÉSCOPIQUE AVEC BUZZER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER ARR</masterLabel>
+            <translation><!-- ETRIER ARR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER COULISS</masterLabel>
+            <translation><!-- ETRIER COULISS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER COULISSANT</masterLabel>
+            <translation><!-- ETRIER COULISSANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETRIER COULISSANT ET TÉLESCOPIQUE</masterLabel>
+            <translation><!-- ETRIER COULISSANT ET TÉLESCOPIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUROFRIGO 2500 XTS</masterLabel>
+            <translation><!-- EUROFRIGO 2500 XTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUROFRIGO C3500 S</masterLabel>
+            <translation><!-- EUROFRIGO C3500 S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUROSCAN</masterLabel>
+            <translation><!-- EUROSCAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINSAM 1</masterLabel>
+            <translation><!-- FINSAM 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINSAM 2</masterLabel>
+            <translation><!-- FINSAM 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINSAM 3</masterLabel>
+            <translation><!-- FINSAM 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIXE LATERAL+BI-RAIL C CENTRAL</masterLabel>
+            <translation><!-- FIXE LATERAL+BI-RAIL C CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIXE LATERAL+RAIL C CENTRAL</masterLabel>
+            <translation><!-- FIXE LATERAL+RAIL C CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIXE LATERAL+RAIL TUBE CENTRAL</masterLabel>
+            <translation><!-- FIXE LATERAL+RAIL TUBE CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FK 24 / 25</masterLabel>
+            <translation><!-- FK 24 / 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FK13</masterLabel>
+            <translation><!-- FK13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FK25SL</masterLabel>
+            <translation><!-- FK25SL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGIPLATE 4</masterLabel>
+            <translation><!-- FRIGIPLATE 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGOBLOCK MONO</masterLabel>
+            <translation><!-- FRIGOBLOCK MONO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRIGOBLOCK MT</masterLabel>
+            <translation><!-- FRIGOBLOCK MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUTUNA 2000</masterLabel>
+            <translation><!-- FUTUNA 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUTUNA 3000</masterLabel>
+            <translation><!-- FUTUNA 3000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FZ248</masterLabel>
+            <translation><!-- FZ248 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAS HEATING</masterLabel>
+            <translation><!-- GAS HEATING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPRS</masterLabel>
+            <translation><!-- GPRS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPS COUPLE À L&#39;ÉCRAN DE LA CAMÉRA DE RECUL</masterLabel>
+            <translation><!-- GPS COUPLE À L&apos;ÉCRAN DE LA CAMÉRA DE RECUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPS INTÉGRÉ</masterLabel>
+            <translation><!-- GPS INTÉGRÉ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRILLE DE SEPARATION</masterLabel>
+            <translation><!-- GRILLE DE SEPARATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE BI-TEMPERATURE 220 VOLT</masterLabel>
+            <translation><!-- GROUPE BI-TEMPERATURE 220 VOLT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE BI-TEMPERATURE 380 VOLT</masterLabel>
+            <translation><!-- GROUPE BI-TEMPERATURE 380 VOLT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE FRIGO MONOPHASE</masterLabel>
+            <translation><!-- GROUPE FRIGO MONOPHASE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE MONO TEMPERATURE 220 VO</masterLabel>
+            <translation><!-- GROUPE MONO TEMPERATURE 220 VO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE MONO TEMPERATURE 380 VO</masterLabel>
+            <translation><!-- GROUPE MONO TEMPERATURE 380 VO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE MULTI TEMPERATURE 220V</masterLabel>
+            <translation><!-- GROUPE MULTI TEMPERATURE 220V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE MULTI TEMPERATURE 380 V</masterLabel>
+            <translation><!-- GROUPE MULTI TEMPERATURE 380 V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE TRI TEMPERATURE 380 VOL</masterLabel>
+            <translation><!-- GROUPE TRI TEMPERATURE 380 VOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 1/2 AR</masterLabel>
+            <translation><!-- HAYON 1/2 AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 1/2 ARD</masterLabel>
+            <translation><!-- HAYON 1/2 ARD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 1/2 ARG</masterLabel>
+            <translation><!-- HAYON 1/2 ARG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 1000 KG</masterLabel>
+            <translation><!-- HAYON 1000 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 1500 KG</masterLabel>
+            <translation><!-- HAYON 1500 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 2000 KG</masterLabel>
+            <translation><!-- HAYON 2000 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 2500 KG</masterLabel>
+            <translation><!-- HAYON 2500 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 500 KG</masterLabel>
+            <translation><!-- HAYON 500 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAYON 750 KG</masterLabel>
+            <translation><!-- HAYON 750 KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERIEUR BOIS FOURGON</masterLabel>
+            <translation><!-- INTERIEUR BOIS FOURGON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME</masterLabel>
+            <translation><!-- ISOTHERME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME + FRIGO</masterLabel>
+            <translation><!-- ISOTHERME + FRIGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME 1000 / 1800</masterLabel>
+            <translation><!-- ISOTHERME 1000 / 1800 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME 1500 / 1600</masterLabel>
+            <translation><!-- ISOTHERME 1500 / 1600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME 1500 / 1800</masterLabel>
+            <translation><!-- ISOTHERME 1500 / 1800 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOTHERME 750 / 1600</masterLabel>
+            <translation><!-- ISOTHERME 750 / 1600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JRI</masterLabel>
+            <translation><!-- JRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABEL PHARMA</masterLabel>
+            <translation><!-- LABEL PHARMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMPE AIR STERIL</masterLabel>
+            <translation><!-- LAMPE AIR STERIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATERAL</masterLabel>
+            <translation><!-- LATERAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LXE 10 E</masterLabel>
+            <translation><!-- LXE 10 E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAGNUM PLUS</masterLabel>
+            <translation><!-- MAGNUM PLUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARCHEPIED BASCULANT</masterLabel>
+            <translation><!-- MARCHEPIED BASCULANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARCHEPIED FIXE</masterLabel>
+            <translation><!-- MARCHEPIED FIXE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU2</masterLabel>
+            <translation><!-- MCU2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU2 + 1 PIQ.</masterLabel>
+            <translation><!-- MCU2 + 1 PIQ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU2 + 2 PIQ.</masterLabel>
+            <translation><!-- MCU2 + 2 PIQ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU3</masterLabel>
+            <translation><!-- MCU3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU3 + 1 PIQ.</masterLabel>
+            <translation><!-- MCU3 + 1 PIQ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCU3 + 2 PIQ.</masterLabel>
+            <translation><!-- MCU3 + 2 PIQ. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD 200.50</masterLabel>
+            <translation><!-- MD 200.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD 250.50</masterLabel>
+            <translation><!-- MD 250.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE COMPAS A GAZ</masterLabel>
+            <translation><!-- MOBILE COMPAS A GAZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTI TEMP 332 LV</masterLabel>
+            <translation><!-- MULTI TEMP 332 LV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTI TEMPERATURE</masterLabel>
+            <translation><!-- MULTI TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUXY</masterLabel>
+            <translation><!-- MUXY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MVC-IF-1024</masterLabel>
+            <translation><!-- MVC-IF-1024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEOS 100</masterLabel>
+            <translation><!-- NEOS 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEOS 100 S</masterLabel>
+            <translation><!-- NEOS 100 S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEOS 100 T</masterLabel>
+            <translation><!-- NEOS 100 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OASIS 250</masterLabel>
+            <translation><!-- OASIS 250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTIFLEET</masterLabel>
+            <translation><!-- OPTIFLEET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTION ANCIENNETE</masterLabel>
+            <translation><!-- OPTION ANCIENNETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORIGINAL</masterLabel>
+            <translation><!-- ORIGINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE AR DROIT</masterLabel>
+            <translation><!-- OUVERTURE AR DROIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE ARR 270°</masterLabel>
+            <translation><!-- OUVERTURE ARR 270° --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OUVERTURE TOTALE</masterLabel>
+            <translation><!-- OUVERTURE TOTALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALETTES</masterLabel>
+            <translation><!-- PALETTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAROIS STRATIFIEES FOURGON</masterLabel>
+            <translation><!-- PAROIS STRATIFIEES FOURGON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASSERELLE COMPLETE</masterLabel>
+            <translation><!-- PASSERELLE COMPLETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAVILLON POLYESTER OPAQUE</masterLabel>
+            <translation><!-- PAVILLON POLYESTER OPAQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAVILLON POLYESTER TRANSLUCIDE</masterLabel>
+            <translation><!-- PAVILLON POLYESTER TRANSLUCIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDERIES</masterLabel>
+            <translation><!-- PENDERIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETTER</masterLabel>
+            <translation><!-- PETTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER ALU</masterLabel>
+            <translation><!-- PLANCHER ALU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER ANTI DERAPANT</masterLabel>
+            <translation><!-- PLANCHER ANTI DERAPANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER CAILLEBOTIS</masterLabel>
+            <translation><!-- PLANCHER CAILLEBOTIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER INTERMEDIAIRE 1/2 DE LA LONGUEUR</masterLabel>
+            <translation><!-- PLANCHER INTERMEDIAIRE 1/2 DE LA LONGUEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER INTERMEDIAIRE COMPLET</masterLabel>
+            <translation><!-- PLANCHER INTERMEDIAIRE COMPLET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER LISSE</masterLabel>
+            <translation><!-- PLANCHER LISSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER PLAT</masterLabel>
+            <translation><!-- PLANCHER PLAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER STRATIFIE</masterLabel>
+            <translation><!-- PLANCHER STRATIFIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLANCHER TYPE FRET AERIEN</masterLabel>
+            <translation><!-- PLANCHER TYPE FRET AERIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLAQUES</masterLabel>
+            <translation><!-- PLAQUES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLAQUES EUTECTIQUES</masterLabel>
+            <translation><!-- PLAQUES EUTECTIQUES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATEAU</masterLabel>
+            <translation><!-- PLATEAU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE</masterLabel>
+            <translation><!-- PORTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE AR</masterLabel>
+            <translation><!-- PORTE AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE AV</masterLabel>
+            <translation><!-- PORTE AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE 2 VANTAUX AR</masterLabel>
+            <translation><!-- PORTE BATTANTE 2 VANTAUX AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE BATTANTE 2 VANTAUX AV</masterLabel>
+            <translation><!-- PORTE BATTANTE 2 VANTAUX AV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE CENTRALE 70 CM</masterLabel>
+            <translation><!-- PORTE CENTRALE 70 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE CENTRALE 80 CM</masterLabel>
+            <translation><!-- PORTE CENTRALE 80 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE CENTRALE 90 CM</masterLabel>
+            <translation><!-- PORTE CENTRALE 90 CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE LATERALE</masterLabel>
+            <translation><!-- PORTE LATERALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTE PALETTES</masterLabel>
+            <translation><!-- PORTE PALETTES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTILLON D</masterLabel>
+            <translation><!-- PORTILLON D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORTILLON G</masterLabel>
+            <translation><!-- PORTILLON G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-1234YF</masterLabel>
+            <translation><!-- R-1234YF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-134A</masterLabel>
+            <translation><!-- R-134A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-22</masterLabel>
+            <translation><!-- R-22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-290</masterLabel>
+            <translation><!-- R-290 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-404A</masterLabel>
+            <translation><!-- R-404A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-407A</masterLabel>
+            <translation><!-- R-407A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-410A</masterLabel>
+            <translation><!-- R-410A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-442A</masterLabel>
+            <translation><!-- R-442A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-448A</masterLabel>
+            <translation><!-- R-448A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-449A</masterLabel>
+            <translation><!-- R-449A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-452A</masterLabel>
+            <translation><!-- R-452A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-507</masterLabel>
+            <translation><!-- R-507 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-600</masterLabel>
+            <translation><!-- R-600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R-744</masterLabel>
+            <translation><!-- R-744 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R134A 3000</masterLabel>
+            <translation><!-- R134A 3000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R404A</masterLabel>
+            <translation><!-- R404A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RADAR DE RECUL</masterLabel>
+            <translation><!-- RADAR DE RECUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RADAR DE RECUL + BUZZER M AR</masterLabel>
+            <translation><!-- RADAR DE RECUL + BUZZER M AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RADAR DE RECUL + CAMÉRA DE RECUL</masterLabel>
+            <translation><!-- RADAR DE RECUL + CAMÉRA DE RECUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL ARRIMAGE</masterLabel>
+            <translation><!-- RAIL ARRIMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL C</masterLabel>
+            <translation><!-- RAIL C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL D ARRIMAGE</masterLabel>
+            <translation><!-- RAIL D ARRIMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL D&#39;ARRIMAGE DROIT</masterLabel>
+            <translation><!-- RAIL D&apos;ARRIMAGE DROIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL D&#39;ARRIMAGE FACE AVANT</masterLabel>
+            <translation><!-- RAIL D&apos;ARRIMAGE FACE AVANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL D&#39;ARRIMAGE GAUCHE</masterLabel>
+            <translation><!-- RAIL D&apos;ARRIMAGE GAUCHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIL TUBULAIRE</masterLabel>
+            <translation><!-- RAIL TUBULAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE</masterLabel>
+            <translation><!-- RAMPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPE D&#39;ACCES</masterLabel>
+            <translation><!-- RAMPE D&apos;ACCES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC 4PL</masterLabel>
+            <translation><!-- RELEC 4PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC 5PL</masterLabel>
+            <translation><!-- RELEC 5PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC FROID TR 21</masterLabel>
+            <translation><!-- RELEC FROID TR 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC FROID TR 31</masterLabel>
+            <translation><!-- RELEC FROID TR 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF2GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF2GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF3GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF3GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF3GP/PMSC 3700</masterLabel>
+            <translation><!-- RELEC MIXTE RF3GP/PMSC 3700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF3PP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF3PP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF4GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF4GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF5GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF5GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF6GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF6GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF6GPS/PMSC2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF6GPS/PMSC2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF7GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF7GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF7GPS/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF7GPS/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC MIXTE RF8GP/PMSC 2500</masterLabel>
+            <translation><!-- RELEC MIXTE RF8GP/PMSC 2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES</masterLabel>
+            <translation><!-- RELEC PLAQUES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF2GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF2GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF2GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF2GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF2PPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF2PPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF3GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF3GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF3GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF3GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF3PP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF3PP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF3PPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF3PPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF4GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF4GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF4GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF4GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF5GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF5GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF5GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF5GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF5PP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF5PP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF5PPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF5PPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF6GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF6GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF6GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF6GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF7GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF7GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF7GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF7GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF7PPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF7PPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF8GP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF8GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF8GPS</masterLabel>
+            <translation><!-- RELEC PLAQUES RF8GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PLAQUES RF8PP</masterLabel>
+            <translation><!-- RELEC PLAQUES RF8PP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMDC 4700</masterLabel>
+            <translation><!-- RELEC PMDC 4700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMDC3500</masterLabel>
+            <translation><!-- RELEC PMDC3500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMDC3700</masterLabel>
+            <translation><!-- RELEC PMDC3700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMSC2300</masterLabel>
+            <translation><!-- RELEC PMSC2300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMSC2500</masterLabel>
+            <translation><!-- RELEC PMSC2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC PMSC3700</masterLabel>
+            <translation><!-- RELEC PMSC3700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC RF3GP</masterLabel>
+            <translation><!-- RELEC RF3GP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC RF3GP/PMDC 3700</masterLabel>
+            <translation><!-- RELEC RF3GP/PMDC 3700 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR 10</masterLabel>
+            <translation><!-- RELEC TR 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR 22</masterLabel>
+            <translation><!-- RELEC TR 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR10</masterLabel>
+            <translation><!-- RELEC TR10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR15</masterLabel>
+            <translation><!-- RELEC TR15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR16</masterLabel>
+            <translation><!-- RELEC TR16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR30</masterLabel>
+            <translation><!-- RELEC TR30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR32</masterLabel>
+            <translation><!-- RELEC TR32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RELEC TR36</masterLabel>
+            <translation><!-- RELEC TR36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU ALU AVD</masterLabel>
+            <translation><!-- RIDEAU ALU AVD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU COULISSANT</masterLabel>
+            <translation><!-- RIDEAU COULISSANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU D&#39;AIR AR + AIR LAT</masterLabel>
+            <translation><!-- RIDEAU D&apos;AIR AR + AIR LAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU D&#39;AIR ARR</masterLabel>
+            <translation><!-- RIDEAU D&apos;AIR ARR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU D&#39;AIR LAT</masterLabel>
+            <translation><!-- RIDEAU D&apos;AIR LAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU EASY ACC&#39;AIR</masterLabel>
+            <translation><!-- RIDEAU EASY ACC&apos;AIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU FIT ELECTRIQUE</masterLabel>
+            <translation><!-- RIDEAU FIT ELECTRIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU FIT MANUEL</masterLabel>
+            <translation><!-- RIDEAU FIT MANUEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU FIT PNEUMATIQUE</masterLabel>
+            <translation><!-- RIDEAU FIT PNEUMATIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAU RELEVABLE ISOTHERME</masterLabel>
+            <translation><!-- RIDEAU RELEVABLE ISOTHERME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAUX AIR AR + LANIÈRE LAT</masterLabel>
+            <translation><!-- RIDEAUX AIR AR + LANIÈRE LAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAUX À LANIÈRES ARR</masterLabel>
+            <translation><!-- RIDEAUX À LANIÈRES ARR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAUX À LANIÈRES ARR + LATÉRALE</masterLabel>
+            <translation><!-- RIDEAUX À LANIÈRES ARR + LATÉRALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDEAUX À LANIÈRES LAT</masterLabel>
+            <translation><!-- RIDEAUX À LANIÈRES LAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMMW</masterLabel>
+            <translation><!-- RMMW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS PAROI LATERALE D</masterLabel>
+            <translation><!-- SANS PAROI LATERALE D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS PAROI LATERALE G</masterLabel>
+            <translation><!-- SANS PAROI LATERALE G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANS PAROIS LATERALES D+G</masterLabel>
+            <translation><!-- SANS PAROIS LATERALES D+G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECTEUR ELECTRIQUE</masterLabel>
+            <translation><!-- SECTEUR ELECTRIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEMI PLANCHER INTERMEDIAIRE</masterLabel>
+            <translation><!-- SEMI PLANCHER INTERMEDIAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIFO SD 80</masterLabel>
+            <translation><!-- SIFO SD 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE PORTE RAPIDE</masterLabel>
+            <translation><!-- SIMPLE PORTE RAPIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIRIUSWEB</masterLabel>
+            <translation><!-- SIRIUSWEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL TCI</masterLabel>
+            <translation><!-- SL TCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL200 50CS</masterLabel>
+            <translation><!-- SL200 50CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLK 400.50</masterLabel>
+            <translation><!-- SLK 400.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLX 300.50</masterLabel>
+            <translation><!-- SLX 300.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLX SPECTRUM</masterLabel>
+            <translation><!-- SLX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLXi-400</masterLabel>
+            <translation><!-- SLXi-400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLXi-SPECTRUM</masterLabel>
+            <translation><!-- SLXi-SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMARTOPEN-C</masterLabel>
+            <translation><!-- SMARTOPEN-C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPECTRUM</masterLabel>
+            <translation><!-- SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPY GREEN</masterLabel>
+            <translation><!-- SPY GREEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1000 MT</masterLabel>
+            <translation><!-- SUPRA 1000 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1000 MT CITY Z</masterLabel>
+            <translation><!-- SUPRA 1000 MT CITY Z --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1050</masterLabel>
+            <translation><!-- SUPRA 1050 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1050 U</masterLabel>
+            <translation><!-- SUPRA 1050 U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1100 U</masterLabel>
+            <translation><!-- SUPRA 1100 U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1150</masterLabel>
+            <translation><!-- SUPRA 1150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1150 MT SILENT</masterLabel>
+            <translation><!-- SUPRA 1150 MT SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1150 MT°</masterLabel>
+            <translation><!-- SUPRA 1150 MT° --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1150 SILENT</masterLabel>
+            <translation><!-- SUPRA 1150 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1150-S MT</masterLabel>
+            <translation><!-- SUPRA 1150-S MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250</masterLabel>
+            <translation><!-- SUPRA 1250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 CITY</masterLabel>
+            <translation><!-- SUPRA 1250 CITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 CITY MT</masterLabel>
+            <translation><!-- SUPRA 1250 CITY MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 MT GAZ</masterLabel>
+            <translation><!-- SUPRA 1250 MT GAZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 MT°</masterLabel>
+            <translation><!-- SUPRA 1250 MT° --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 MT° SILENT</masterLabel>
+            <translation><!-- SUPRA 1250 MT° SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250 SILENT</masterLabel>
+            <translation><!-- SUPRA 1250 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 1250-S MT</masterLabel>
+            <translation><!-- SUPRA 1250-S MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 450 SILENT</masterLabel>
+            <translation><!-- SUPRA 450 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 550 INSONORISEE</masterLabel>
+            <translation><!-- SUPRA 550 INSONORISEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 550 SILENT</masterLabel>
+            <translation><!-- SUPRA 550 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 550-S</masterLabel>
+            <translation><!-- SUPRA 550-S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 750</masterLabel>
+            <translation><!-- SUPRA 750 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 750 MT SILENT</masterLabel>
+            <translation><!-- SUPRA 750 MT SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 750 SILENT</masterLabel>
+            <translation><!-- SUPRA 750 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 850</masterLabel>
+            <translation><!-- SUPRA 850 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 850 MT° SILENT</masterLabel>
+            <translation><!-- SUPRA 850 MT° SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 850 SILENT</masterLabel>
+            <translation><!-- SUPRA 850 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 850 U</masterLabel>
+            <translation><!-- SUPRA 850 U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 950 MT</masterLabel>
+            <translation><!-- SUPRA 950 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA 950 MT° SILENT</masterLabel>
+            <translation><!-- SUPRA 950 MT° SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPRA CITY Z 1250 MT</masterLabel>
+            <translation><!-- SUPRA CITY Z 1250 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYBERIA 11</masterLabel>
+            <translation><!-- SYBERIA 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYBERIA MONO</masterLabel>
+            <translation><!-- SYBERIA MONO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYBERIA TWIN COOL</masterLabel>
+            <translation><!-- SYBERIA TWIN COOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-800R</masterLabel>
+            <translation><!-- T-800R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1000R</masterLabel>
+            <translation><!-- T1000R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1000R SPECTRUM</masterLabel>
+            <translation><!-- T1000R SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1200 SPECTRUM</masterLabel>
+            <translation><!-- T1200 SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1200R</masterLabel>
+            <translation><!-- T1200R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1200R 50 SPECTRUM S3 + S3</masterLabel>
+            <translation><!-- T1200R 50 SPECTRUM S3 + S3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1200R SPECTRUM</masterLabel>
+            <translation><!-- T1200R SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T560R</masterLabel>
+            <translation><!-- T560R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T600R</masterLabel>
+            <translation><!-- T600R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T800R</masterLabel>
+            <translation><!-- T800R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T800R SPECTRUM</masterLabel>
+            <translation><!-- T800R SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TESTO</masterLabel>
+            <translation><!-- TESTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING B 060</masterLabel>
+            <translation><!-- THERMOKING B 060 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING B 065 A</masterLabel>
+            <translation><!-- THERMOKING B 065 A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING B 085 RS</masterLabel>
+            <translation><!-- THERMOKING B 085 RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING B100</masterLabel>
+            <translation><!-- THERMOKING B100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 100</masterLabel>
+            <translation><!-- THERMOKING C 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 150</masterLabel>
+            <translation><!-- THERMOKING C 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 200</masterLabel>
+            <translation><!-- THERMOKING C 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 250 MAX</masterLabel>
+            <translation><!-- THERMOKING C 250 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 350 MAX</masterLabel>
+            <translation><!-- THERMOKING C 350 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING C 450 MAX</masterLabel>
+            <translation><!-- THERMOKING C 450 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING CB MAX</masterLabel>
+            <translation><!-- THERMOKING CB MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING CD1 MAX 50</masterLabel>
+            <translation><!-- THERMOKING CD1 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING F 5 L</masterLabel>
+            <translation><!-- THERMOKING F 5 L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING F3 L</masterLabel>
+            <translation><!-- THERMOKING F3 L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING F4</masterLabel>
+            <translation><!-- THERMOKING F4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD I</masterLabel>
+            <translation><!-- THERMOKING KD I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD I BI</masterLabel>
+            <translation><!-- THERMOKING KD I BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD II</masterLabel>
+            <translation><!-- THERMOKING KD II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD II 25</masterLabel>
+            <translation><!-- THERMOKING KD II 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD II 50</masterLabel>
+            <translation><!-- THERMOKING KD II 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD II BI</masterLabel>
+            <translation><!-- THERMOKING KD II BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING KD II MAX</masterLabel>
+            <translation><!-- THERMOKING KD II MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD 200MT</masterLabel>
+            <translation><!-- THERMOKING MD 200MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD I 30</masterLabel>
+            <translation><!-- THERMOKING MD I 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD I 50</masterLabel>
+            <translation><!-- THERMOKING MD I 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD II</masterLabel>
+            <translation><!-- THERMOKING MD II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD II 25</masterLabel>
+            <translation><!-- THERMOKING MD II 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD II 50</masterLabel>
+            <translation><!-- THERMOKING MD II 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD II MAX</masterLabel>
+            <translation><!-- THERMOKING MD II MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING MD300</masterLabel>
+            <translation><!-- THERMOKING MD300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING RD I 25</masterLabel>
+            <translation><!-- THERMOKING RD I 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING RD I TC 50</masterLabel>
+            <translation><!-- THERMOKING RD I TC 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING RD II</masterLabel>
+            <translation><!-- THERMOKING RD II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING RD II 50</masterLabel>
+            <translation><!-- THERMOKING RD II 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING RD II TC 1</masterLabel>
+            <translation><!-- THERMOKING RD II TC 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING SB II 30</masterLabel>
+            <translation><!-- THERMOKING SB II 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING SB III</masterLabel>
+            <translation><!-- THERMOKING SB III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING SDZ 25</masterLabel>
+            <translation><!-- THERMOKING SDZ 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING SDZ 50</masterLabel>
+            <translation><!-- THERMOKING SDZ 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TD I 30</masterLabel>
+            <translation><!-- THERMOKING TD I 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TD II 50</masterLabel>
+            <translation><!-- THERMOKING TD II 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TD II MAX</masterLabel>
+            <translation><!-- THERMOKING TD II MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TS 200</masterLabel>
+            <translation><!-- THERMOKING TS 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TS 300</masterLabel>
+            <translation><!-- THERMOKING TS 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING TS 500</masterLabel>
+            <translation><!-- THERMOKING TS 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 090</masterLabel>
+            <translation><!-- THERMOKING V 090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 095</masterLabel>
+            <translation><!-- THERMOKING V 095 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 175</masterLabel>
+            <translation><!-- THERMOKING V 175 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 200</masterLabel>
+            <translation><!-- THERMOKING V 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 200 MAX 20</masterLabel>
+            <translation><!-- THERMOKING V 200 MAX 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 200 MAX TC 20</masterLabel>
+            <translation><!-- THERMOKING V 200 MAX TC 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 200 MAX TC 50</masterLabel>
+            <translation><!-- THERMOKING V 200 MAX TC 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 250</masterLabel>
+            <translation><!-- THERMOKING V 250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 400 MAX</masterLabel>
+            <translation><!-- THERMOKING V 400 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V 500 MAX TCi 20</masterLabel>
+            <translation><!-- THERMOKING V 500 MAX TCi 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V300</masterLabel>
+            <translation><!-- THERMOKING V300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V300 MAX TC 20</masterLabel>
+            <translation><!-- THERMOKING V300 MAX TC 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING V300 MAX TCI 20</masterLabel>
+            <translation><!-- THERMOKING V300 MAX TCI 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING VM 305 BI</masterLabel>
+            <translation><!-- THERMOKING VM 305 BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING VM 305 MAX</masterLabel>
+            <translation><!-- THERMOKING VM 305 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING VM 400 MAX</masterLabel>
+            <translation><!-- THERMOKING VM 400 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING VM 400 MAX 20</masterLabel>
+            <translation><!-- THERMOKING VM 400 MAX 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING VM 400 MAX TC 20</masterLabel>
+            <translation><!-- THERMOKING VM 400 MAX TC 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOKING XDS 50SR</masterLabel>
+            <translation><!-- THERMOKING XDS 50SR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THERMOPLUS</masterLabel>
+            <translation><!-- THERMOPLUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK - 1200R 50</masterLabel>
+            <translation><!-- TK - 1200R 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK 1200</masterLabel>
+            <translation><!-- TK 1200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK 800 R</masterLabel>
+            <translation><!-- TK 800 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK CD 2</masterLabel>
+            <translation><!-- TK CD 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK E200 SPECTRUM</masterLabel>
+            <translation><!-- TK E200 SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK SLXE400</masterLabel>
+            <translation><!-- TK SLXE400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK T 1000 R</masterLabel>
+            <translation><!-- TK T 1000 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK T 600 R</masterLabel>
+            <translation><!-- TK T 600 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK T 800 R</masterLabel>
+            <translation><!-- TK T 800 R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V 200 S MAX 50</masterLabel>
+            <translation><!-- TK V 200 S MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V 300 MAX</masterLabel>
+            <translation><!-- TK V 300 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V 300 MAX 50</masterLabel>
+            <translation><!-- TK V 300 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V 500 MAX 50</masterLabel>
+            <translation><!-- TK V 500 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V 500 MAX SPECTRUM 50</masterLabel>
+            <translation><!-- TK V 500 MAX SPECTRUM 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V MAX TC 120</masterLabel>
+            <translation><!-- TK V MAX TC 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V-200s 50</masterLabel>
+            <translation><!-- TK V-200s 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V100</masterLabel>
+            <translation><!-- TK V100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V200 MAX</masterLabel>
+            <translation><!-- TK V200 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V200 MAX SPECTRUM</masterLabel>
+            <translation><!-- TK V200 MAX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V200 MAX SPECTRUM 50</masterLabel>
+            <translation><!-- TK V200 MAX SPECTRUM 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V200S</masterLabel>
+            <translation><!-- TK V200S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V300 MAX 20</masterLabel>
+            <translation><!-- TK V300 MAX 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V300 MAX SPECTRUM</masterLabel>
+            <translation><!-- TK V300 MAX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V300 TC</masterLabel>
+            <translation><!-- TK V300 TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V500</masterLabel>
+            <translation><!-- TK V500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V500 + 1 PLAQUE EUTECTIQUE</masterLabel>
+            <translation><!-- TK V500 + 1 PLAQUE EUTECTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V500 MAX</masterLabel>
+            <translation><!-- TK V500 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V500 MAX SPECTRUM</masterLabel>
+            <translation><!-- TK V500 MAX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V600 + 2 PLAQUES EUTECTIQUES</masterLabel>
+            <translation><!-- TK V600 + 2 PLAQUES EUTECTIQUES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V600 MAX</masterLabel>
+            <translation><!-- TK V600 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V600 MAX + 2 PLAQUES EUTECTIQUE</masterLabel>
+            <translation><!-- TK V600 MAX + 2 PLAQUES EUTECTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V600 MAX 50</masterLabel>
+            <translation><!-- TK V600 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V700 MAX SPECTRUM</masterLabel>
+            <translation><!-- TK V700 MAX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TK V800 MAX SPECTRUM</masterLabel>
+            <translation><!-- TK V800 MAX SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOIT PORTEUR</masterLabel>
+            <translation><!-- TOIT PORTEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TONCA 1210</masterLabel>
+            <translation><!-- TONCA 1210 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TONGA 1210 RS</masterLabel>
+            <translation><!-- TONGA 1210 RS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOTAL</masterLabel>
+            <translation><!-- TOTAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOTALE 2 VANTAUX</masterLabel>
+            <translation><!-- TOTALE 2 VANTAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOTALE 3 VANTAUX</masterLabel>
+            <translation><!-- TOTALE 3 VANTAUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOTALE RIDEAUX FIT</masterLabel>
+            <translation><!-- TOTALE RIDEAUX FIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCH PRINT</masterLabel>
+            <translation><!-- TOUCH PRINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUCH PRINT PREMIUM</masterLabel>
+            <translation><!-- TOUCH PRINT PREMIUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSCAN</masterLabel>
+            <translation><!-- TRANSCAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUBES D&#39;ARRIMAGE</masterLabel>
+            <translation><!-- TUBES D&apos;ARRIMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT-SPECTRUM</masterLabel>
+            <translation><!-- UT-SPECTRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V 100 MAX</masterLabel>
+            <translation><!-- V 100 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V 200 MAX 50</masterLabel>
+            <translation><!-- V 200 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V 500 MAX TC 20</masterLabel>
+            <translation><!-- V 500 MAX TC 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V 800 MAX</masterLabel>
+            <translation><!-- V 800 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V300 MAX 30</masterLabel>
+            <translation><!-- V300 MAX 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V300 MAX 50</masterLabel>
+            <translation><!-- V300 MAX 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V300 MAX SPECTRUM 50</masterLabel>
+            <translation><!-- V300 MAX SPECTRUM 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V300 MAX TC 50</masterLabel>
+            <translation><!-- V300 MAX TC 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V350 MAX TCI</masterLabel>
+            <translation><!-- V350 MAX TCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V3B2 WIFI</masterLabel>
+            <translation><!-- V3B2 WIFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V700 MAX</masterLabel>
+            <translation><!-- V700 MAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 200</masterLabel>
+            <translation><!-- VATNA 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 204</masterLabel>
+            <translation><!-- VATNA 204 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 205</masterLabel>
+            <translation><!-- VATNA 205 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 300</masterLabel>
+            <translation><!-- VATNA 300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 305</masterLabel>
+            <translation><!-- VATNA 305 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 306</masterLabel>
+            <translation><!-- VATNA 306 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 400</masterLabel>
+            <translation><!-- VATNA 400 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VATNA 408</masterLabel>
+            <translation><!-- VATNA 408 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VBOX</masterLabel>
+            <translation><!-- VBOX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1350</masterLabel>
+            <translation><!-- VECTOR 1350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1550 MONO</masterLabel>
+            <translation><!-- VECTOR 1550 MONO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1800 MT</masterLabel>
+            <translation><!-- VECTOR 1800 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1850 MONO</masterLabel>
+            <translation><!-- VECTOR 1850 MONO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1850 MT</masterLabel>
+            <translation><!-- VECTOR 1850 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 INSONORISE</masterLabel>
+            <translation><!-- VECTOR 1950 INSONORISE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 MT</masterLabel>
+            <translation><!-- VECTOR 1950 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 MT INSONORISE</masterLabel>
+            <translation><!-- VECTOR 1950 MT INSONORISE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 MT SILENT</masterLabel>
+            <translation><!-- VECTOR 1950 MT SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 S</masterLabel>
+            <translation><!-- VECTOR 1950 S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 S INSONORISÉ</masterLabel>
+            <translation><!-- VECTOR 1950 S INSONORISÉ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR 1950 SILENT</masterLabel>
+            <translation><!-- VECTOR 1950 SILENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19</masterLabel>
+            <translation><!-- VECTOR HE 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19 CITY</masterLabel>
+            <translation><!-- VECTOR HE 19 CITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19 INSONORISÉ</masterLabel>
+            <translation><!-- VECTOR HE 19 INSONORISÉ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19 MT</masterLabel>
+            <translation><!-- VECTOR HE 19 MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19 MT CITY</masterLabel>
+            <translation><!-- VECTOR HE 19 MT CITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VECTOR HE 19 MT INSONORISÉE</masterLabel>
+            <translation><!-- VECTOR HE 19 MT INSONORISÉE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VEHICULE BACHE</masterLabel>
+            <translation><!-- VEHICULE BACHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VEHICULE BRASSEUR</masterLabel>
+            <translation><!-- VEHICULE BRASSEUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOLETS AERATEURS</masterLabel>
+            <translation><!-- VOLETS AERATEURS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEBASTO OU CHAUFFAGE AUTONOME</masterLabel>
+            <translation><!-- WEBASTO OU CHAUFFAGE AUTONOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XARIOS 200 BI-T</masterLabel>
+            <translation><!-- XARIOS 200 BI-T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XARIOS 300 T</masterLabel>
+            <translation><!-- XARIOS 300 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XARIOS 600 T</masterLabel>
+            <translation><!-- XARIOS 600 T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XARIOS 600 T MT</masterLabel>
+            <translation><!-- XARIOS 600 T MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z35S</masterLabel>
+            <translation><!-- Z35S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZANOTI</masterLabel>
+            <translation><!-- ZANOTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZANOTTI DFZ435</masterLabel>
+            <translation><!-- ZANOTTI DFZ435 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

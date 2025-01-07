@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides administrative access to Salesforce Billing</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>DocuSign Billing Admin</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>blng__Invoice__c.DocuSignBatchStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>blng__Invoice__c.Log__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notification_Mission_ParcIntervention</fullName>
+        <description>Notification Mission ParcIntervention</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Mail_Agence_Loca_Parc_intervention__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>MOON/Notification_OT_ParcAssistance</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_Mission_ParcRelais</fullName>
+        <description>Notification Mission ParcRelais</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Mail_Agence_Loca_Parc_Relais__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>MOON/Notification_OT_ParcRelais</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Date_Heure_Arrivee</fullName>
+        <field>Date_Heure_Arrivee__c</field>
+        <formula>CreatedDate</formula>
+        <name>Date/Heure Arrivée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Heure_Depart</fullName>
+        <field>Date_Heure_Depart__c</field>
+        <formula>CreatedDate</formula>
+        <name>Date/Heure Départ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Heure_Fin</fullName>
+        <field>Date_Heure_Fin__c</field>
+        <formula>CreatedDate</formula>
+        <name>Date/Heure Fin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_Heure_Retour</fullName>
+        <field>Date_Heure_Retour__c</field>
+        <formula>CreatedDate</formula>
+        <name>Date/Heure Retour</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_agence_loca_parc_Relais</fullName>
+        <field>Mail_Agence_Loca_Parc_Relais__c</field>
+        <formula>Parc_Relais__r.Agence_Localisation__r.EmailPrincipal__c</formula>
+        <name>Email agence loca parc Relais</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_agence_loca_parc_intervention</fullName>
+        <description>Élément d&#39;ordre d&#39;exécution : Mail Agence Loca(Parc intervention)</description>
+        <field>Mail_Agence_Loca_Parc_intervention__c</field>
+        <formula>Parc_Intervention__r.Agence_Localisation__r.EmailPrincipal__c</formula>
+        <name>Email agence loca parc intervention</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

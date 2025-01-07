@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reponse_CSAT</fullName>
+    <active>true</active>
+    <description>Type d&#39;enregistrement pour une enquête transactionnelle (CSAT)</description>
+    <label>Réponse CSAT</label>
+    <picklistValues>
+        <picklist>Statut_reponse__c</picklist>
+        <values>
+            <fullName>Non répondu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Répondu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

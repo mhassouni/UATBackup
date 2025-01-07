@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financiële voorwaarden</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financiële voorwaarden</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Dero. Fi Layout</layout>
+        <sections>
+            <label>Voorkeursvoorwaarden</label>
+            <section>Conditions souhaitées</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexatie</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dero. Fi Standard Layout</layout>
+        <sections>
+            <label>Voorwaarden</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Indexering</label>
+            <section>Indexation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Courte durée</layout>
+        <sections>
+            <label>Voorwaarden</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Véhicule - Moyenne durée</layout>
+        <sections>
+            <label>Voorwaarden</label>
+            <section>Conditions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Financiële uitzonderingen naam</nameFieldLabel>
+    <recordTypes>
+        <label>Container - Financiële kwijtschelding - Specifiek</label>
+        <name>Specific_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Container - Derro. Financieel - Standaard</label>
+        <name>Standard_Financial_Conditions</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Voertuig - Korte termijn</label>
+        <name>VehiculeCourteDuree</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Voertuig - Middellange termijn</label>
+        <name>VehiculeMoyenneDuree</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Task or Event Reminder --></label>
+        <name>Cal__Task_or_Event_Remainder__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Beide</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Reminder</masterLabel>
+            <translation>Errinnerung Event</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Nichts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Reminder</masterLabel>
+            <translation>Reinnerung Aufgabe</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

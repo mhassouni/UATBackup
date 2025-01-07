@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_Famille__c</fullName>
+    <label>Famille</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCES</fullName>
+                <default>false</default>
+                <label>ACCES</label>
+            </value>
+            <value>
+                <fullName>ANTIDEMARRAGE</fullName>
+                <default>false</default>
+                <label>ANTIDEMARRAGE</label>
+            </value>
+            <value>
+                <fullName>ARRIMAGE</fullName>
+                <default>false</default>
+                <label>ARRIMAGE</label>
+            </value>
+            <value>
+                <fullName>CAISSE</fullName>
+                <default>false</default>
+                <label>CAISSE</label>
+            </value>
+            <value>
+                <fullName>CHASSIS</fullName>
+                <default>false</default>
+                <label>CHASSIS</label>
+            </value>
+            <value>
+                <fullName>CLOISONS</fullName>
+                <default>false</default>
+                <label>CLOISONS</label>
+            </value>
+            <value>
+                <fullName>ENREGISTREUR TEMPERATURE</fullName>
+                <default>false</default>
+                <label>ENREGISTREUR TEMPERATURE</label>
+            </value>
+            <value>
+                <fullName>ETAGERES</fullName>
+                <default>false</default>
+                <label>ETAGERES</label>
+            </value>
+            <value>
+                <fullName>GEOLOC</fullName>
+                <default>false</default>
+                <label>GEOLOC</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>OPTIONS DE GROUPE</fullName>
+                <default>false</default>
+                <label>OPTIONS DE GROUPE</label>
+            </value>
+            <value>
+                <fullName>GROUPE</fullName>
+                <default>false</default>
+                <label>GROUPE</label>
+            </value>
+            <value>
+                <fullName>HAYON</fullName>
+                <default>false</default>
+                <label>HAYON</label>
+            </value>
+            <value>
+                <fullName>OPTIONS HAYON</fullName>
+                <default>false</default>
+                <label>OPTIONS HAYON</label>
+            </value>
+            <value>
+                <fullName>OUVERTURES</fullName>
+                <default>false</default>
+                <label>OUVERTURES</label>
+            </value>
+            <value>
+                <fullName>PENDERIES</fullName>
+                <default>false</default>
+                <label>PENDERIES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

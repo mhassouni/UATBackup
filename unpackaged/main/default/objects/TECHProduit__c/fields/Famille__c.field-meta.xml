@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Famille__c</fullName>
+    <label>Type de produit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carrosseries</fullName>
+                <default>false</default>
+                <label>Carrosseries</label>
+            </value>
+            <value>
+                <fullName>Containers</fullName>
+                <default>false</default>
+                <label>Containers</label>
+            </value>
+            <value>
+                <fullName>Meubles</fullName>
+                <default>false</default>
+                <label>Meubles</label>
+            </value>
+            <value>
+                <fullName>Véhicules Frigorifiques</fullName>
+                <default>false</default>
+                <label>Véhicules Frigorifiques</label>
+            </value>
+            <value>
+                <fullName>Véhicules Secs</fullName>
+                <default>false</default>
+                <label>Véhicules Secs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Grund der Schließung</label>
+        <name>Raison_de_fermeture__c</name>
+        <picklistValues>
+            <masterLabel>Client dépanné</masterLabel>
+            <translation>Kunden ausgeholfen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client relayé</masterLabel>
+            <translation>Kunde abgelöst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Résolu par téléphone</masterLabel>
+            <translation>Telefonisch gelöst</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

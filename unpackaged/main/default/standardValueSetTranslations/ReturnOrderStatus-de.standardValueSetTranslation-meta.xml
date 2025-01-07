@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Annulé</masterLabel>
+        <translation>Storniert</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Approuvé</masterLabel>
+        <translation>Genehmigt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Brouillon</masterLabel>
+        <translation>Entwurf</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fermé</masterLabel>
+        <translation>Geschlossen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Soumis</masterLabel>
+        <translation>Gesendet</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

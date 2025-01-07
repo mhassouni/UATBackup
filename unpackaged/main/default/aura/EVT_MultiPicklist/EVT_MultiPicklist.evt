@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Use for LC_MultiPicklist">
+    <aura:attribute name="selectedOptions__values" type="String" />
+</aura:event>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommSubscriptionChannelTypeId</fullName>
+    <inlineHelpText>L&#39;enregistrement du type de canal d&#39;abonnement aux communications associé au consentement d&#39;abonnement aux communications.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

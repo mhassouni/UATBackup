@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Extérieur --></label>
+        <name>Exterieur__c</name>
+        <picklistValues>
+            <masterLabel>Aucun</masterLabel>
+            <translation><!-- Aucun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calage</masterLabel>
+            <translation><!-- Calage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roulage</masterLabel>
+            <translation><!-- Roulage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type Terrain</masterLabel>
+            <translation><!-- Type Terrain --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

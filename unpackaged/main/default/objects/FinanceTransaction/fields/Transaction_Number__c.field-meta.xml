@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Number__c</fullName>
+    <description>Used to get the number out of the Invoice/Credit note names. For example:
+from INV-0123 get 123
+from CN-4321 get 4321</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(ReferenceEntityType,&quot;Invoice line&quot;),TEXT(VALUE(MID(Original_Number__c,5,255))), TEXT(VALUE(MID(Original_Number__c,4,255))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Transaction Number</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

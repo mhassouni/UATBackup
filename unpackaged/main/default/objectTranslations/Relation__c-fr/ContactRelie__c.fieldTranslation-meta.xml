@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- est en relation avec --></label>
+        <lookupFilter>
+            <errorMessage><!-- Un contact ne peut pas être en relation avec lui-même. --></errorMessage>
+        </lookupFilter>
+        <name>ContactRelie__c</name>
+        <relationshipLabel><!-- Réseau du contact (2) --></relationshipLabel>
+    </CustomFieldTranslation>

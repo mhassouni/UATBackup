@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_de_jours_prochaine_activite__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL( Date_de_planification_dactivite__c ),0,Datevalue( Date_de_planification_dactivite__c )- TODAY())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nombre de jours prochaine activité</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

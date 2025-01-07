@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandonnée</masterLabel>
+        <translation>Abgebrochen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clôturée</masterLabel>
+        <translation>Geschlossen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Convertie</masterLabel>
+        <translation>Umgewandelt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Créée</masterLabel>
+        <translation>Erstellt</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gagnée</masterLabel>
+        <translation>Gewonnen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualifiée</masterLabel>
+        <translation>Qualifiziert</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

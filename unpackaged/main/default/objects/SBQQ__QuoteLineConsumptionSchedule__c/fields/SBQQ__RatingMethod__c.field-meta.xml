@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__RatingMethod__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Choisissez un cas d&#39;utilisation spécifique pour évaluer l&#39;utilisation par rapport à cette planification. Cette liste de sélection contrôle le champ Type.</inlineHelpText>
+    <label>Rating Method</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier</fullName>
+                <default>false</default>
+                <label>Tier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

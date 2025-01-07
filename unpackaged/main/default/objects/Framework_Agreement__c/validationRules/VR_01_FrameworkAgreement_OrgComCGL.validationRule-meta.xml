@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_01_FrameworkAgreement_OrgComCGL</fullName>
+    <active>true</active>
+    <description>L&#39;organisation Commerciale doit être renseigné pour les CGL</description>
+    <errorConditionFormula>AND(
+     !$Setup.Bypass__c.BypassValidationRules__c,
+      LEFT(RecordType.DeveloperName, 3) = &#39;CGL&#39;,
+      ISBLANK(Organisation_Commerciale__c)    
+)</errorConditionFormula>
+    <errorDisplayField>Organisation_Commerciale__c</errorDisplayField>
+    <errorMessage>L&#39;organisation commerciale est obligatoire lors de la création d&#39;une CGL.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contas</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Emergency Account Fields --></label>
+        <name>FSL__Emergency_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Admin Fields --></label>
+            <section>Admin Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout - Community</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnés --></label>
+            <section>Coordonnés</section>
+        </sections>
+        <sections>
+            <label><!-- Description de l&apos;entreprise --></label>
+            <section>Description de l&#39;entreprise</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agence PF</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Contatto</label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label>Informazione PF Network</label>
+            <section>Informations réseau PF</section>
+        </sections>
+        <sections>
+            <label>Posizione</label>
+            <section>Localisation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agence PF - Admin only</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Communication --></label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label><!-- Informations réseau PF --></label>
+            <section>Informations réseau PF</section>
+        </sections>
+        <sections>
+            <label><!-- Localisation --></label>
+            <section>Localisation</section>
+        </sections>
+        <sections>
+            <label><!-- Réseau --></label>
+            <section>Réseau</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agence PF - Community</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Contatto</label>
+            <section>Communication</section>
+        </sections>
+        <sections>
+            <label>Posizione</label>
+            <section>Localisation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Billing Account Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal/Co-Term Information --></label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Account Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal/Co-Term Information --></label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Compte Concurrent</layout>
+        <sections>
+            <label>Mappa</label>
+            <section>Carte</section>
+        </sections>
+        <sections>
+            <label>Descrizione dell&#39;Azienda</label>
+            <section>Description de l&#39;Entreprise</section>
+        </sections>
+        <sections>
+            <label>Descrizione dettagliata</label>
+            <section>Description détaillée</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label>Nuova sezione</label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label>SWOT del concorrente</label>
+            <section>SWOT du Concurrent</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Compte Fournisseur</layout>
+        <sections>
+            <label><!-- Adresses --></label>
+            <section>Adresses</section>
+        </sections>
+        <sections>
+            <label>Mappa</label>
+            <section>Carte</section>
+        </sections>
+        <sections>
+            <label><!-- Comptabilité --></label>
+            <section>Comptabilité</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Descrizione dettagliata</label>
+            <section>Description détaillée</section>
+        </sections>
+        <sections>
+            <label><!-- Données Achat --></label>
+            <section>Données Achat</section>
+        </sections>
+        <sections>
+            <label><!-- Euler Hermes --></label>
+            <section>Euler Hermes</section>
+        </sections>
+        <sections>
+            <label><!-- Historique --></label>
+            <section>Historique</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label>Informazioni generali</label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- RIB --></label>
+            <section>RIB</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Client</layout>
+        <sections>
+            <label><!-- Assurance Crédit --></label>
+            <section>Assurance Crédit</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance crédit 2 --></label>
+            <section>Assurance crédit 2</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label>Contatto</label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label>Descrizione della compagnia</label>
+            <section>Description de l&#39;entreprise</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Identifiant Euler Hermès --></label>
+            <section>Identifiant Euler Hermès</section>
+        </sections>
+        <sections>
+            <label><!-- Indicateurs --></label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Bancaires --></label>
+            <section>Informations Bancaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Financières --></label>
+            <section>Informations Financières</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse Potentiel --></label>
+            <section>Synthèse Potentiel</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Client - ADMIN</layout>
+        <sections>
+            <label><!-- Adresse exploitation --></label>
+            <section>Adresse exploitation</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance Crédit --></label>
+            <section>Assurance Crédit</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance crédit 2 --></label>
+            <section>Assurance crédit 2</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Classification --></label>
+            <section>Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Description de l&apos;entreprise --></label>
+            <section>Description de l&#39;entreprise</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Identifiant Euler Hermès --></label>
+            <section>Identifiant Euler Hermès</section>
+        </sections>
+        <sections>
+            <label><!-- Indicateurs --></label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label><!-- Information Bancaires --></label>
+            <section>Information Bancaires</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Financières --></label>
+            <section>Informations Financières</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse Potentiel --></label>
+            <section>Synthèse Potentiel</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Noeud</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Information Bancaires --></label>
+            <section>Information Bancaires</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Financières --></label>
+            <section>Informations Financières</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Prospect</layout>
+        <sections>
+            <label><!-- Adresse exploitation --></label>
+            <section>Adresse exploitation</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance Crédit --></label>
+            <section>Assurance Crédit</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance crédit 2 --></label>
+            <section>Assurance crédit 2</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Description de l&apos;entreprise --></label>
+            <section>Description de l&#39;entreprise</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Identifiant Euler Hermès --></label>
+            <section>Identifiant Euler Hermès</section>
+        </sections>
+        <sections>
+            <label><!-- Indicateurs --></label>
+            <section>Indicateurs</section>
+        </sections>
+        <sections>
+            <label><!-- Information Bancaires --></label>
+            <section>Information Bancaires</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Financières --></label>
+            <section>Informations Financières</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Synthèse Potentiel --></label>
+            <section>Synthèse Potentiel</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Site</layout>
+        <sections>
+            <label>Indirizione</label>
+            <section>Adresses</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout - Compte Site - Community</layout>
+        <sections>
+            <label><!-- Adresses --></label>
+            <section>Adresses</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout B2C</layout>
+        <sections>
+            <label><!-- Adresse exploitation --></label>
+            <section>Adresse exploitation</section>
+        </sections>
+        <sections>
+            <label><!-- Assurance crédit 2 --></label>
+            <section>Assurance crédit 2</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Financières --></label>
+            <section>Informations Financières</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Particulier</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label>Volume d&#39;affari (sui 12 mesi trascorsi)</label>
+            <section>CA (sur 12 mois glissants)</section>
+        </sections>
+        <sections>
+            <label>Contratto (sui 12 mesi trascorsi)</label>
+            <section>Contrats (sur 12 mois glissants)</section>
+        </sections>
+        <sections>
+            <label>Squadra di gestione di un conto</label>
+            <section>Equipe Gestion du compte</section>
+        </sections>
+        <sections>
+            <label>Fatturazione</label>
+            <section>Facturation</section>
+        </sections>
+        <sections>
+            <label>Patente &amp; Documento d&#39;identità</label>
+            <section>Permis de conduire &amp; Pièce d&#39;identité</section>
+        </sections>
+        <sections>
+            <label>Sinistro</label>
+            <section>Sinistres</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation du compte personnel</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label>Patente &amp; Documento d&#39;identità</label>
+            <section>Permis de conduire &amp; Pièce d&#39;identité</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- IWS Advanced Address Information --></label>
+        <name>API_Connector__API_Connector_IWS_Advanced_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Balance Sheet Information --></label>
+        <name>API_Connector__API_Connector_IWS_Balance_Sheet</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Bankruptcy Information --></label>
+        <name>API_Connector__API_Connector_IWS_Bankruptcy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Paydex Information --></label>
+        <name>API_Connector__API_Connector_IWS_Paydex</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Risk Information --></label>
+        <name>API_Connector__API_Connector_IWS_Risk</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Standard Address Information --></label>
+        <name>API_Connector__API_Connector_IWS_Standard_Address_Information</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Vind KvK --></label>
+        <name>API_Connector__Account_Kvk_Check</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Company Report --></label>
+        <name>API_Connector__Company_Report</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Credit Check --></label>
+        <name>API_Connector__Credit_Check_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Global Match --></label>
+        <name>API_Connector__Global_Match_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- IWS Customer Identification --></label>
+        <name>API_Connector__IWS_Customer_Identification</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- indueD --></label>
+        <name>API_Connector__IWS_Indued_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Quick Check --></label>
+        <name>API_Connector__Quick_Check_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Arricchimento del rischio</label>
+        <name>API_Connector__Risk_Enrichment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Toolkit Enterprise Management --></label>
+        <name>API_Connector__Toolkit_Enterprise_Management_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Trade Credit Risk --></label>
+        <name>API_Connector__Trade_Credit_Risk</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Validate VAT Number --></label>
+        <name>API_Connector__Validate_VAT_Number_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- D&amp;B Decision Maker --></label>
+        <name>API_Connector__dbdm_API_Connector</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Assegna un raggruppamento</label>
+        <name>Assign_Group</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Manual Order --></label>
+        <name>Create_Manual_Order</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer vue Reways --></label>
+        <name>Creer_vue_Reways</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer vue internationale --></label>
+        <name>Creer_vue_internationale</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Credit Notes --></label>
+        <name>Generate_Credit_Notes</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Invoices --></label>
+        <name>Generate_Invoices</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Grande Account</label>
+        <name>Grand_Compte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mettre à jour le compte --></label>
+        <name>Modifier</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Créer une opportunité --></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouveau Compte TEST --></label>
+        <name>Nouveau_Compte_TEST</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nuovo Evento</label>
+        <name>NouvelEvenement</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nuovo Compito</label>
+        <name>NouvelleTache</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Credit Note --></label>
+        <name>PF_Create_Credit_Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit for Approval (Flow) --></label>
+        <name>Submit_for_Approval_Flow</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Aggiorna voto</label>
+        <name>Update_Grade</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update compte Alerte --></label>
+        <name>Update_compte_Alerte</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Visualizzazione commerciale del cliente</label>
+        <name>Vue_Commerciale_Client</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Agence PF --></label>
+        <name>Agence_PF</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Account concorrente</label>
+        <name>CompteConcurrent</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Account fornitore</label>
+        <name>CompteFournisseur</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Account - Cliente</label>
+        <name>Compte_Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Account - Arco</label>
+        <name>Compte_Noeud</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compte Partenaire --></label>
+        <name>Compte_Partenaire</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Account - Luogo</label>
+        <name>Compte_Site</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Particulier (B2C) --></label>
+        <name>Particulier_B2C</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>Prospect</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;avez pas le droit de modifier le nom de l&apos;agence. --></errorMessage>
+        <name>CPT_78_AgencePF_Name_ReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;avez pas les droits de modification de la hiérarchie --></errorMessage>
+        <name>CPT_RW_01_Parent_Ultimate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un account &quot;Convalidato &quot; non può trasferirsi in &quot;Draft&quot; oppure &quot;Rifiutato &quot;</errorMessage>
+        <name>CPT_VR15_DeValideANonInactif</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bisogna scegliere un raggruppamento se il conto è membro di un gruppo</errorMessage>
+        <name>CPT_VR18_MembreGroupement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non potete scegliere lo stato &quot;Convalidato&quot;</errorMessage>
+        <name>CPT_VR45_Valide</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non potete scegliere lo stato &quot;Bloccato&quot;</errorMessage>
+        <name>CPT_VR46_Bloque</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non potete modificare il tipo di registrazione dell&#39;account</errorMessage>
+        <name>CPT_VR56_CommercialChangeRecordType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas choisir Validé ou Validé CM. --></errorMessage>
+        <name>CPT_VR58_Valider_le_compte_a_la_creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Modification du statut non autorisée. Seul le statut &apos;Inactif&apos; est disponible --></errorMessage>
+        <name>CPT_VR79_Bloquer_Statut_Diff_Inactif</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>selezionare la casella « Esclusivo » solo se tutti la sede del cliente (Veicoli Frigo) appartiene a Petit Forestier (No proprietà, nessun altro noleggiatore)</errorMessage>
+        <name>CPT_VR_70_Potentiel_VF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>selezionare la casella « Esclusivo » solo se tutti la sede del cliente (Veicoli Secchi) appartiene a Petit Forestier (No proprietà, nessun altro noleggiatore)</errorMessage>
+        <name>CPT_VR_71_Potentiel_VS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>selezionare la casella « Esclusivo » solo se tutti la sede del cliente (Mobili) appartiene a Petit Forestier (No proprietà, nessun altro noleggiatore)</errorMessage>
+        <name>CPT_VR_72_Potentiel_Meubles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>selezionare la casella « Esclusivo » solo se tutti la sede del cliente (Containers) appartiene a Petit Forestier (No proprietà, nessun altro noleggiatore)</errorMessage>
+        <name>CPT_VR_73_Potentiel_Containers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pour effectuer une demande de modification d’adresse, merci de contact @Helpdesk Greenforce via Chatter. --></errorMessage>
+        <name>CPT_VR_76_MappingIgloo_Client</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pour effectuer une demande de modification d’adresse, merci de contact @Helpdesk Greenforce via Chatter. --></errorMessage>
+        <name>CPT_VR_77_MappingIgloo_Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veuillez sélectionner le “Pays / Région PF” qui correspond au “Pays” du compte en cours de création --></errorMessage>
+        <name>VR_PaysPF_Reways</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Advanced_Address --></label>
+        <name>API_Connector__API_Connector_IWS_Advanced_Address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Balance_Sheet --></label>
+        <name>API_Connector__API_Connector_IWS_Balance_Sheet</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Bankruptcy --></label>
+        <name>API_Connector__API_Connector_IWS_Bankruptcy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Paydex --></label>
+        <name>API_Connector__API_Connector_IWS_Paydex</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Risk --></label>
+        <name>API_Connector__API_Connector_IWS_Risk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- API_Connector_IWS_Standard_Address_Information --></label>
+        <name>API_Connector__API_Connector_IWS_Standard_Address_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Kvk_Check --></label>
+        <name>API_Connector__Account_Kvk_Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Company_Report --></label>
+        <name>API_Connector__Company_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Credit_Check_API_Connector --></label>
+        <name>API_Connector__Credit_Check_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Global_Match_API_Connector --></label>
+        <name>API_Connector__Global_Match_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IWS_Customer_Identification --></label>
+        <name>API_Connector__IWS_Customer_Identification</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IWS_Indued_API_Connector --></label>
+        <name>API_Connector__IWS_Indued_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Check_API_Connector --></label>
+        <name>API_Connector__Quick_Check_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label>Arricchimento del rischio</label>
+        <name>API_Connector__Risk_Enrichment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Toolkit_Enterprise_Management_API_Connector --></label>
+        <name>API_Connector__Toolkit_Enterprise_Management_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Trade_Credit_Risk --></label>
+        <name>API_Connector__Trade_Credit_Risk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate_VAT_Number_API_Connector --></label>
+        <name>API_Connector__Validate_VAT_Number_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dbdm_API_Connector --></label>
+        <name>API_Connector__dbdm_API_Connector</name>
+    </webLinks>
+    <webLinks>
+        <label>Accedi al Gruppo</label>
+        <name>Acceder_au_groupement</name>
+    </webLinks>
+    <webLinks>
+        <label>Attività &gt; 30 giorni</label>
+        <name>Activite_30_jours</name>
+    </webLinks>
+    <webLinks>
+        <label>Creazione rapida</label>
+        <name>Creation_rapide</name>
+    </webLinks>
+    <webLinks>
+        <label>Trova informazioni su D&amp;B/Altares</label>
+        <name>Find_D_B_Altares_info</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_it --></label>
+        <name>Map_it</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label>Vista sinottica</label>
+        <name>Synoptic__Synoptic_View</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreditCenter --></label>
+        <name>blng__CreditCenter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PaymentVirtualTerminal --></label>
+        <name>blng__PaymentVirtualTerminal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund --></label>
+        <name>blng__Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lookup_companies --></label>
+        <name>dataxess__Lookup_companies</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Check --></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Merge --></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Statut_Valide</fullName>
+    <active>true</active>
+    <description>bloqué le passage au statut 6 si le statut de validation n&#39;est pas en validé</description>
+    <errorConditionFormula>AND
+(
+text(PaysRegionPF__c) &lt;&gt; &#39;Reways&#39;,
+RecordTypeId=$Label.OPP_RecordType_Meuble_15,
+BEGINS(TEXT(StageName ),&#39;6&#39;)
+,
+TEXT( Statut_validation__c  )  &lt;&gt; &#39;Validée&#39;
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas passer l&#39;opportunité en statut 6 - Contrat signé si le statut de Validation n&#39;est pas Validée.</errorMessage>
+</ValidationRule>

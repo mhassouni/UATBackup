@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__TermDiscountSchedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Schedule for discounts based on subscription term. This is useful when you want to show a breakdown of payments in separate groups, for different terms, yet you want to discount reflected for the entire duration of the subscription. Leave Term Discount Level blank if you want discount schedules applied based on the term of each line item.</description>
+    <inlineHelpText>Barème des remises basées sur la durée de l&#39;abon. La valeur Groupe applique le taux de remise à la durée du groupe, alors que la valeur Devis applique le taux de remise à toute la durée du devis, quelles que soient les diff. de durée dans vos groupes.</inlineHelpText>
+    <label>Term Discount Schedule</label>
+    <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+    <relationshipLabel>Quote Lines (Term Discouned)</relationshipLabel>
+    <relationshipName>TermDiscountedQuoteLines</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

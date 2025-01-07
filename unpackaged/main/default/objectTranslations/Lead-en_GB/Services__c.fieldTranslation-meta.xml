@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Services --></label>
+        <name>Services__c</name>
+        <picklistValues>
+            <masterLabel>Energies alternatives</masterLabel>
+            <translation>Alternative energies</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full service</masterLabel>
+            <translation><!-- Full service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovation</masterLabel>
+            <translation><!-- Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSE</masterLabel>
+            <translation><!-- RSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Télématique</masterLabel>
+            <translation>Telematics</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

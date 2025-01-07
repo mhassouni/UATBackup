@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunite_liee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Opportunité liée</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Parcs</relationshipLabel>
+    <relationshipName>Parcs</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

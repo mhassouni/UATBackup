@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Motivo de cierre</label>
+        <name>RaisonCloture__c</name>
+        <picklistValues>
+            <masterLabel>Agence trop éloignée</masterLabel>
+            <translation>Agencia demasiado lejos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aucun potentiel</masterLabel>
+            <translation><!-- Aucun potentiel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changement d’avis</masterLabel>
+            <translation>Cambio de opinion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client injoignable</masterLabel>
+            <translation>No se puede contactar con el cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte existant</masterLabel>
+            <translation>Cuenta existente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compte non identifié</masterLabel>
+            <translation>Cuenta no identificada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditions de locations non retenues</masterLabel>
+            <translation>Condiciones de alquiler no aceptadas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Délai de réponse trop important</masterLabel>
+            <translation>Tiempo de respuesta demasiado largo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montant de la caution trop élevé</masterLabel>
+            <translation>Monto del depósito demasiado alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas de réponse client</masterLabel>
+            <translation>No se puede contactar con el cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix de location trop élevé</masterLabel>
+            <translation>Precio de alquiler demasiado elevado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prix trop élevés</masterLabel>
+            <translation>Precios demasiado altos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produit non disponible en stock</masterLabel>
+            <translation>Producto no disponible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projet du client annulé ou reporté</masterLabel>
+            <translation>Proyecto del cliente anulado o reportado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect écarté pour raisons financières</masterLabel>
+            <translation>Cliente rechazado por motivos económicos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution alternative sans frais</masterLabel>
+            <translation>Solución alternativa sin costes</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

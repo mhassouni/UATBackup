@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Permet d&apos;appliquer une diminution ou une augmentation du prix en %.
+Saisir 1 dans la case revient à appliquer une diminution du prix de 1%.
+Saisir -1 dans la case revient à appliquer une augmenation du prix de 1%. --></help>
+        <label><!-- Discount / Increase --></label>
+        <name>Discount__c</name>
+    </CustomFieldTranslation>

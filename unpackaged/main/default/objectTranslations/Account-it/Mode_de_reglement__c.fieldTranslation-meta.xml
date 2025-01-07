@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mode de règlement --></label>
+        <name>Mode_de_reglement__c</name>
+        <picklistValues>
+            <masterLabel>B00</masterLabel>
+            <translation><!-- B00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB 30 J FDM LE 10C00</masterLabel>
+            <translation><!-- CB 30 J FDM LE 10C00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB COMPTANTB31</masterLabel>
+            <translation><!-- CB COMPTANTB31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEQUE FDM LE 15E00</masterLabel>
+            <translation><!-- CHEQUE FDM LE 15E00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 10 JC15</masterLabel>
+            <translation><!-- CHQ 10 JC15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 15 JC30</masterLabel>
+            <translation><!-- CHQ 15 JC30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 30 J FDM LE 10C3C</masterLabel>
+            <translation><!-- CHQ 30 J FDM LE 10C3C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 30 J FDM LE 15C45</masterLabel>
+            <translation><!-- CHQ 30 J FDM LE 15C45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 30 J FDM LE 5C3F</masterLabel>
+            <translation><!-- CHQ 30 J FDM LE 5C3F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 30 J FDMC3Q</masterLabel>
+            <translation><!-- CHQ 30 J FDMC3Q --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 30 JC31</masterLabel>
+            <translation><!-- CHQ 30 JC31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 45 JC60</masterLabel>
+            <translation><!-- CHQ 45 JC60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 60 J FDM LE 10C6F</masterLabel>
+            <translation><!-- CHQ 60 J FDM LE 10C6F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 60 J FDMCF0</masterLabel>
+            <translation><!-- CHQ 60 J FDMCF0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ 60 JC61</masterLabel>
+            <translation><!-- CHQ 60 JC61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ COMPTANTC10</masterLabel>
+            <translation><!-- CHQ COMPTANTC10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ FDM 45 jCFQ</masterLabel>
+            <translation><!-- CHQ FDM 45 jCFQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHQ FDMCF4</masterLabel>
+            <translation><!-- CHQ FDMCF4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPENSATION 30 J FDM</masterLabel>
+            <translation><!-- COMPENSATION 30 J FDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESP COMPTANTE30</masterLabel>
+            <translation><!-- ESP COMPTANTE30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPECES 30 JM3Q</masterLabel>
+            <translation><!-- ESPECES 30 JM3Q --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANDAT30 J FDM LE 15P00</masterLabel>
+            <translation><!-- MANDAT30 J FDM LE 15P00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 20 JP30</masterLabel>
+            <translation><!-- PLV 20 JP30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 30 J FDM LE 10P3F</masterLabel>
+            <translation><!-- PLV 30 J FDM LE 10P3F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 30 J FDMP45</masterLabel>
+            <translation><!-- PLV 30 J FDMP45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 30 JP31</masterLabel>
+            <translation><!-- PLV 30 JP31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 45 JP60</masterLabel>
+            <translation><!-- PLV 45 JP60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 60 J FDM LE 10P6F</masterLabel>
+            <translation><!-- PLV 60 J FDM LE 10P6F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 60 J FDMP90</masterLabel>
+            <translation><!-- PLV 60 J FDMP90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 60 JP61</masterLabel>
+            <translation><!-- PLV 60 JP61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV 90 JPF0</masterLabel>
+            <translation><!-- PLV 90 JPF0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV COMPTANTP10</masterLabel>
+            <translation><!-- PLV COMPTANTP10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV FDM LE 10PFQ</masterLabel>
+            <translation><!-- PLV FDM LE 10PFQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLV FDMPF1</masterLabel>
+            <translation><!-- PLV FDMPF1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRELEV 10 JP15</masterLabel>
+            <translation><!-- PRELEV 10 JP15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRELEVEMENT 15 JOURSP20</masterLabel>
+            <translation><!-- PRELEVEMENT 15 JOURSP20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRELEVEMENT FDM LE 15V00</masterLabel>
+            <translation><!-- PRELEVEMENT FDM LE 15V00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 120 J FDMV20</masterLabel>
+            <translation><!-- VIR 120 J FDMV20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 J FDM LE 10V3C</masterLabel>
+            <translation><!-- VIR 30 J FDM LE 10V3C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 J FDM LE 15V3V</masterLabel>
+            <translation><!-- VIR 30 J FDM LE 15V3V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 J FDM LE 25V45</masterLabel>
+            <translation><!-- VIR 30 J FDM LE 25V45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 J FDM LE 5V3F</masterLabel>
+            <translation><!-- VIR 30 J FDM LE 5V3F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 J FDMV3Q</masterLabel>
+            <translation><!-- VIR 30 J FDMV3Q --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 30 JV31</masterLabel>
+            <translation><!-- VIR 30 JV31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 45 JV60</masterLabel>
+            <translation><!-- VIR 45 JV60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 60 J FDM LE 10V62</masterLabel>
+            <translation><!-- VIR 60 J FDM LE 10V62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 60 J FDM LE 20V65</masterLabel>
+            <translation><!-- VIR 60 J FDM LE 20V65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 60 J FDM LE 5V6F</masterLabel>
+            <translation><!-- VIR 60 J FDM LE 5V6F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 60 J FDMV90</masterLabel>
+            <translation><!-- VIR 60 J FDMV90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 60 JV61</masterLabel>
+            <translation><!-- VIR 60 JV61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 90 J FDMVF1</masterLabel>
+            <translation><!-- VIR 90 J FDMVF1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR 90 JV9F</masterLabel>
+            <translation><!-- VIR 90 JV9F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR COMPTANTV10</masterLabel>
+            <translation><!-- VIR COMPTANTV10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR FDM 45 jVFQ</masterLabel>
+            <translation><!-- VIR FDM 45 jVFQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIR FDM LE 10VF4</masterLabel>
+            <translation><!-- VIR FDM LE 10VF4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIREMENT 10 JV12</masterLabel>
+            <translation><!-- VIREMENT 10 JV12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIREMENT 120 JV15</masterLabel>
+            <translation><!-- VIREMENT 120 JV15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIREMENT 15 JV1F</masterLabel>
+            <translation><!-- VIREMENT 15 JV1F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIREMENT 20 JV30</masterLabel>
+            <translation><!-- VIREMENT 20 JV30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIREMENT FDM LE 15X3F</masterLabel>
+            <translation><!-- VIREMENT FDM LE 15X3F --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

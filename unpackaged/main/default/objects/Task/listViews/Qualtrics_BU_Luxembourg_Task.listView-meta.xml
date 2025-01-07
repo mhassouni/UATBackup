@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualtrics_BU_Luxembourg_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>BU Luxembourg</label>
+    <queue>Qualtrics_BU_Luxembourg</queue>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

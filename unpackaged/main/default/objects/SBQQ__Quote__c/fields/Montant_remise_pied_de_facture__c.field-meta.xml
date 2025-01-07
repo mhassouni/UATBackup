@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montant_remise_pied_de_facture__c</fullName>
+    <formula>SBQQ__Account__r.UltimateAccount__r.Montant_remise_pied_de_facture__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>non pris en compte dans le calcul des montants affichés</inlineHelpText>
+    <label>Montant remise pied de facture (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

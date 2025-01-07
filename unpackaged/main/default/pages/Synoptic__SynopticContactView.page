@@ -1,0 +1,30 @@
+<apex:page standardcontroller="Contact" extensions="Synoptic.SynopticContactView" action="{!displaySynopticContactView}">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', {packages:['orgchart']});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var i=0;
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Contact');
+            data.addColumn('string', 'Reports To');
+            <apex:repeat value="{!listSynopticContacts}" var="cont">
+                data.addRow([{v:'{!cont.oContact.Id}', f:'<div style="min-width:{!IF(cont.sNodeInfo=='',"100px","200px")};max-width:250px;font-family:Arial;font-size:small {!IF(cont.oContact.Id==sContactId,";font-weight:bold","")}"><a href="/{!cont.oContact.Id}" id="{!cont.oContact.Id}" onblur="LookupHoverDetail.getHover(\'{!cont.oContact.Id}\').hide();" onfocus="LookupHoverDetail.getHover(\'{!cont.oContact.Id}\', \'/{!cont.oContact.Id}/m?retURL=%2F{!cont.oContact.Id}&isAjaxRequest=1\').show();" onmouseout="LookupHoverDetail.getHover(\'{!cont.oContact.Id}\').hide();" onmouseover="LookupHoverDetail.getHover(\'{!cont.oContact.Id}\', \'/{!cont.oContact.Id}/m?retURL=%2F{!cont.oContact.Id}&isAjaxRequest=1\').show();">{!JSINHTMLENCODE(cont.oContact.FirstName)}&nbsp;{!JSINHTMLENCODE(cont.oContact.LastName)}</a>{!JSENCODE(cont.sNodeInfo)}</div>'}, '{!cont.oContact.ReportsToId}']);
+                data.setRowProperty(i, 'style', '{!IF(cont.oContact.Id==sContactId,"border: 2px solid #236FBD","")}');
+                i++;
+            </apex:repeat>
+            var chart = new google.visualization.OrgChart(document.getElementById('synopticContact_div'));
+            chart.draw(data, {allowHtml:true});
+        }
+        setTimeout("drawChart();",200);
+    </script>
+    <apex:form >
+        <table width="95%">
+            <tr>
+                <td><apex:commandlink value="{!$Label.Synoptic__SynopticView_Back}" action="/{!sContactId}"/></td>
+                <td><div id="synopticContact_div"></div></td>
+                <td><div align="right"><img src="{!URLFOR($Resource.Synoptic_Resources,'Synoptic_Icon.png')}" alt="{!$Label.SynopticContactView_Title}"/></div></td>    
+            </tr>
+        </table>
+    </apex:form>
+</apex:page>

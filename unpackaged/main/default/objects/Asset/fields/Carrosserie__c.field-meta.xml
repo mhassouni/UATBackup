@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carrosserie__c</fullName>
+    <label>Carrosserie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A G BRACEY</fullName>
+                <default>false</default>
+                <label>A G BRACEY</label>
+            </value>
+            <value>
+                <fullName>AL-SHIRAW</fullName>
+                <default>false</default>
+                <label>AL-SHIRAW</label>
+            </value>
+            <value>
+                <fullName>ALUVAN</fullName>
+                <default>false</default>
+                <label>ALUVAN</label>
+            </value>
+            <value>
+                <fullName>ASCA</fullName>
+                <default>false</default>
+                <label>ASCA</label>
+            </value>
+            <value>
+                <fullName>AUTO INDUSTRIALE BERGAMASCA S.P.A.</fullName>
+                <default>false</default>
+                <label>AUTO INDUSTRIALE BERGAMASCA S.P.A.</label>
+            </value>
+            <value>
+                <fullName>AUTONADWOZIA MATCZAK</fullName>
+                <default>false</default>
+                <label>AUTONADWOZIA MATCZAK</label>
+            </value>
+            <value>
+                <fullName>BARANYAI MERNOKIRODA KFT</fullName>
+                <default>false</default>
+                <label>BARANYAI MERNOKIRODA KFT</label>
+            </value>
+            <value>
+                <fullName>BAUMGARTNER D.T AG</fullName>
+                <default>false</default>
+                <label>BAUMGARTNER D.T AG</label>
+            </value>
+            <value>
+                <fullName>BCC</fullName>
+                <default>false</default>
+                <label>BCC</label>
+            </value>
+            <value>
+                <fullName>BRH - ROSIER</fullName>
+                <default>false</default>
+                <label>BRH - ROSIER</label>
+            </value>
+            <value>
+                <fullName>CA.VI.ME.</fullName>
+                <default>false</default>
+                <label>CA.VI.ME.</label>
+            </value>
+            <value>
+                <fullName>Carlsen Baltic, UAB</fullName>
+                <default>false</default>
+                <label>Carlsen Baltic, UAB</label>
+            </value>
+            <value>
+                <fullName>CARPOL</fullName>
+                <default>false</default>
+                <label>CARPOL</label>
+            </value>
+            <value>
+                <fullName>CARROSSERIE AUBINEAU</fullName>
+                <default>false</default>
+                <label>CARROSSERIE AUBINEAU</label>
+            </value>
+            <value>
+                <fullName>CARROSSERIE CAZAUX</fullName>
+                <default>false</default>
+                <label>CARROSSERIE CAZAUX</label>
+            </value>
+            <value>
+                <fullName>CARROSSERIE LAMBERT</fullName>
+                <default>false</default>
+                <label>CARROSSERIE LAMBERT</label>
+            </value>
+            <value>
+                <fullName>CARROSSERIE TOUTAIN</fullName>
+                <default>false</default>
+                <label>CARROSSERIE TOUTAIN</label>
+            </value>
+            <value>
+                <fullName>CARROSSIER UK</fullName>
+                <default>false</default>
+                <label>CARROSSIER UK</label>
+            </value>
+            <value>
+                <fullName>CARROZZERIA A.C. PLAST ROBBIESE S.r</fullName>
+                <default>false</default>
+                <label>CARROZZERIA A.C. PLAST ROBBIESE S.r</label>
+            </value>
+            <value>
+                <fullName>CAZAUX</fullName>
+                <default>false</default>
+                <label>CAZAUX</label>
+            </value>
+            <value>
+                <fullName>CECI</fullName>
+                <default>false</default>
+                <label>CECI</label>
+            </value>
+            <value>
+                <fullName>CERIANI GROUP SPA</fullName>
+                <default>false</default>
+                <label>CERIANI GROUP SPA</label>
+            </value>
+            <value>
+                <fullName>CHEREAU</fullName>
+                <default>false</default>
+                <label>CHEREAU</label>
+            </value>
+            <value>
+                <fullName>CIBIN</fullName>
+                <default>false</default>
+                <label>CIBIN</label>
+            </value>
+            <value>
+                <fullName>CITROEN S.A.S. GRAU</fullName>
+                <default>false</default>
+                <label>CITROEN S.A.S. GRAU</label>
+            </value>
+            <value>
+                <fullName>COFI EUROPE</fullName>
+                <default>false</default>
+                <label>COFI EUROPE</label>
+            </value>
+            <value>
+                <fullName>COINPOL</fullName>
+                <default>false</default>
+                <label>COINPOL</label>
+            </value>
+            <value>
+                <fullName>COLD CAR</fullName>
+                <default>false</default>
+                <label>COLD CAR</label>
+            </value>
+            <value>
+                <fullName>COLDWAY</fullName>
+                <default>false</default>
+                <label>COLDWAY</label>
+            </value>
+            <value>
+                <fullName>COOLING VAN</fullName>
+                <default>false</default>
+                <label>COOLING VAN</label>
+            </value>
+            <value>
+                <fullName>ECOFRIGO KFT</fullName>
+                <default>false</default>
+                <label>ECOFRIGO KFT</label>
+            </value>
+            <value>
+                <fullName>ECP</fullName>
+                <default>false</default>
+                <label>ECP</label>
+            </value>
+            <value>
+                <fullName>ECP - EQUIP.CUISINE PROFES.</fullName>
+                <default>false</default>
+                <label>ECP - EQUIP.CUISINE PROFES.</label>
+            </value>
+            <value>
+                <fullName>EGA</fullName>
+                <default>false</default>
+                <label>EGA</label>
+            </value>
+            <value>
+                <fullName>EQUILIBRAGE LAMBERT</fullName>
+                <default>false</default>
+                <label>EQUILIBRAGE LAMBERT</label>
+            </value>
+            <value>
+                <fullName>EURL JEAN CHEREAU</fullName>
+                <default>false</default>
+                <label>EURL JEAN CHEREAU</label>
+            </value>
+            <value>
+                <fullName>F.R.C.I</fullName>
+                <default>false</default>
+                <label>F.R.C.I</label>
+            </value>
+            <value>
+                <fullName>FASSI France</fullName>
+                <default>false</default>
+                <label>FASSI France</label>
+            </value>
+            <value>
+                <fullName>FERSOL</fullName>
+                <default>false</default>
+                <label>FERSOL</label>
+            </value>
+            <value>
+                <fullName>FIAT CENTER ITALIA S.P.A.</fullName>
+                <default>false</default>
+                <label>FIAT CENTER ITALIA S.P.A.</label>
+            </value>
+            <value>
+                <fullName>FIAT GROUP AUTOMOBILES S.P.A.</fullName>
+                <default>false</default>
+                <label>FIAT GROUP AUTOMOBILES S.P.A.</label>
+            </value>
+            <value>
+                <fullName>FOIMA S.A.</fullName>
+                <default>false</default>
+                <label>FOIMA S.A.</label>
+            </value>
+            <value>
+                <fullName>FRAMEC</fullName>
+                <default>false</default>
+                <label>FRAMEC</label>
+            </value>
+            <value>
+                <fullName>FRAMEC S.P.A.</fullName>
+                <default>false</default>
+                <label>FRAMEC S.P.A.</label>
+            </value>
+            <value>
+                <fullName>FRAMEC TRADE S.R.L.</fullName>
+                <default>false</default>
+                <label>FRAMEC TRADE S.R.L.</label>
+            </value>
+            <value>
+                <fullName>FRAPPA</fullName>
+                <default>false</default>
+                <label>FRAPPA</label>
+            </value>
+            <value>
+                <fullName>FRATELLI GIACOMEL S.P.A.</fullName>
+                <default>false</default>
+                <label>FRATELLI GIACOMEL S.P.A.</label>
+            </value>
+            <value>
+                <fullName>FROID GUYADER</fullName>
+                <default>false</default>
+                <label>FROID GUYADER</label>
+            </value>
+            <value>
+                <fullName>G.V.S.</fullName>
+                <default>false</default>
+                <label>G.V.S.</label>
+            </value>
+            <value>
+                <fullName>GENERAL TRAILERS</fullName>
+                <default>false</default>
+                <label>GENERAL TRAILERS</label>
+            </value>
+            <value>
+                <fullName>GORICA</fullName>
+                <default>false</default>
+                <label>GORICA</label>
+            </value>
+            <value>
+                <fullName>GROSSE EQUIPEMENT</fullName>
+                <default>false</default>
+                <label>GROSSE EQUIPEMENT</label>
+            </value>
+            <value>
+                <fullName>GRUAS BARCELONA</fullName>
+                <default>false</default>
+                <label>GRUAS BARCELONA</label>
+            </value>
+            <value>
+                <fullName>GRUAU</fullName>
+                <default>false</default>
+                <label>GRUAU</label>
+            </value>
+            <value>
+                <fullName>GRUAU LE MANS</fullName>
+                <default>false</default>
+                <label>GRUAU LE MANS</label>
+            </value>
+            <value>
+                <fullName>HARDERWIJK</fullName>
+                <default>false</default>
+                <label>HARDERWIJK</label>
+            </value>
+            <value>
+                <fullName>HONORIO</fullName>
+                <default>false</default>
+                <label>HONORIO</label>
+            </value>
+            <value>
+                <fullName>ICECOLD BODIES</fullName>
+                <default>false</default>
+                <label>ICECOLD BODIES</label>
+            </value>
+            <value>
+                <fullName>IGLOOCAR SP. Z.0.0.</fullName>
+                <default>false</default>
+                <label>IGLOOCAR SP. Z.0.0.</label>
+            </value>
+            <value>
+                <fullName>IL FARO S.P.A.</fullName>
+                <default>false</default>
+                <label>IL FARO S.P.A.</label>
+            </value>
+            <value>
+                <fullName>ISONORT</fullName>
+                <default>false</default>
+                <label>ISONORT</label>
+            </value>
+            <value>
+                <fullName>ISOVERSO</fullName>
+                <default>false</default>
+                <label>ISOVERSO</label>
+            </value>
+            <value>
+                <fullName>IVECO S.P.A</fullName>
+                <default>false</default>
+                <label>IVECO S.P.A</label>
+            </value>
+            <value>
+                <fullName>JASIRA S.R.L.</fullName>
+                <default>false</default>
+                <label>JASIRA S.R.L.</label>
+            </value>
+            <value>
+                <fullName>JDK</fullName>
+                <default>false</default>
+                <label>JDK</label>
+            </value>
+            <value>
+                <fullName>KARHOF</fullName>
+                <default>false</default>
+                <label>KARHOF</label>
+            </value>
+            <value>
+                <fullName>KIESLING FAHRZEUGBAU</fullName>
+                <default>false</default>
+                <label>KIESLING FAHRZEUGBAU</label>
+            </value>
+            <value>
+                <fullName>KLEGE-EUROPE DELCROIX SA</fullName>
+                <default>false</default>
+                <label>KLEGE-EUROPE DELCROIX SA</label>
+            </value>
+            <value>
+                <fullName>KOLLE</fullName>
+                <default>false</default>
+                <label>KOLLE</label>
+            </value>
+            <value>
+                <fullName>KRONE</fullName>
+                <default>false</default>
+                <label>KRONE</label>
+            </value>
+            <value>
+                <fullName>KUFA</fullName>
+                <default>false</default>
+                <label>KUFA</label>
+            </value>
+            <value>
+                <fullName>LAMBERET</fullName>
+                <default>false</default>
+                <label>LAMBERET</label>
+            </value>
+            <value>
+                <fullName>LAMBERET C.I.</fullName>
+                <default>false</default>
+                <label>LAMBERET C.I.</label>
+            </value>
+            <value>
+                <fullName>LE ROUIC</fullName>
+                <default>false</default>
+                <label>LE ROUIC</label>
+            </value>
+            <value>
+                <fullName>LECAPITAINE</fullName>
+                <default>false</default>
+                <label>LECAPITAINE</label>
+            </value>
+            <value>
+                <fullName>LIBNER</fullName>
+                <default>false</default>
+                <label>LIBNER</label>
+            </value>
+            <value>
+                <fullName>LIGIER</fullName>
+                <default>false</default>
+                <label>LIGIER</label>
+            </value>
+            <value>
+                <fullName>LOGIPI S.P.A.</fullName>
+                <default>false</default>
+                <label>LOGIPI S.P.A.</label>
+            </value>
+            <value>
+                <fullName>MAGO</fullName>
+                <default>false</default>
+                <label>MAGO</label>
+            </value>
+            <value>
+                <fullName>MARAIS</fullName>
+                <default>false</default>
+                <label>MARAIS</label>
+            </value>
+            <value>
+                <fullName>MARREL</fullName>
+                <default>false</default>
+                <label>MARREL</label>
+            </value>
+            <value>
+                <fullName>MAXICARGO</fullName>
+                <default>false</default>
+                <label>MAXICARGO</label>
+            </value>
+            <value>
+                <fullName>MISAR</fullName>
+                <default>false</default>
+                <label>MISAR</label>
+            </value>
+            <value>
+                <fullName>MODESTO</fullName>
+                <default>false</default>
+                <label>MODESTO</label>
+            </value>
+            <value>
+                <fullName>MOLETTA-OBRADO</fullName>
+                <default>false</default>
+                <label>MOLETTA-OBRADO</label>
+            </value>
+            <value>
+                <fullName>MONTEX</fullName>
+                <default>false</default>
+                <label>MONTEX</label>
+            </value>
+            <value>
+                <fullName>NEW GEL S.R.L.</fullName>
+                <default>false</default>
+                <label>NEW GEL S.R.L.</label>
+            </value>
+            <value>
+                <fullName>NFORCECARGO UNIPESSOAL LDA</fullName>
+                <default>false</default>
+                <label>NFORCECARGO UNIPESSOAL LDA</label>
+            </value>
+            <value>
+                <fullName>NORPOLI</fullName>
+                <default>false</default>
+                <label>NORPOLI</label>
+            </value>
+            <value>
+                <fullName>OSBORNE MOTOR BODIES</fullName>
+                <default>false</default>
+                <label>OSBORNE MOTOR BODIES</label>
+            </value>
+            <value>
+                <fullName>PETERS KOELWAGENS</fullName>
+                <default>false</default>
+                <label>PETERS KOELWAGENS</label>
+            </value>
+            <value>
+                <fullName>PIECHOWIAK</fullName>
+                <default>false</default>
+                <label>PIECHOWIAK</label>
+            </value>
+            <value>
+                <fullName>PLANDEX</fullName>
+                <default>false</default>
+                <label>PLANDEX</label>
+            </value>
+            <value>
+                <fullName>PLANDEX INC SP Zoo</fullName>
+                <default>false</default>
+                <label>PLANDEX INC SP Zoo</label>
+            </value>
+            <value>
+                <fullName>POLARUS</fullName>
+                <default>false</default>
+                <label>POLARUS</label>
+            </value>
+            <value>
+                <fullName>PRAT</fullName>
+                <default>false</default>
+                <label>PRAT</label>
+            </value>
+            <value>
+                <fullName>PROGETTO S.P.A.</fullName>
+                <default>false</default>
+                <label>PROGETTO S.P.A.</label>
+            </value>
+            <value>
+                <fullName>RECAPOL SA</fullName>
+                <default>false</default>
+                <label>RECAPOL SA</label>
+            </value>
+            <value>
+                <fullName>REGNAULT</fullName>
+                <default>false</default>
+                <label>REGNAULT</label>
+            </value>
+            <value>
+                <fullName>REPRISE POLSKA</fullName>
+                <default>false</default>
+                <label>REPRISE POLSKA</label>
+            </value>
+            <value>
+                <fullName>REPRISE STRICHER France</fullName>
+                <default>false</default>
+                <label>REPRISE STRICHER France</label>
+            </value>
+            <value>
+                <fullName>ROBBIOCAR S.R.L</fullName>
+                <default>false</default>
+                <label>ROBBIOCAR S.R.L</label>
+            </value>
+            <value>
+                <fullName>ROMU</fullName>
+                <default>false</default>
+                <label>ROMU</label>
+            </value>
+            <value>
+                <fullName>ROYAL PLASTIC</fullName>
+                <default>false</default>
+                <label>ROYAL PLASTIC</label>
+            </value>
+            <value>
+                <fullName>S.A. ETS CORSIN</fullName>
+                <default>false</default>
+                <label>S.A. ETS CORSIN</label>
+            </value>
+            <value>
+                <fullName>SAMRO</fullName>
+                <default>false</default>
+                <label>SAMRO</label>
+            </value>
+            <value>
+                <fullName>SANCA</fullName>
+                <default>false</default>
+                <label>SANCA</label>
+            </value>
+            <value>
+                <fullName>SARL GARAGE JOEL LAMBERT</fullName>
+                <default>false</default>
+                <label>SARL GARAGE JOEL LAMBERT</label>
+            </value>
+            <value>
+                <fullName>SCHMITZ</fullName>
+                <default>false</default>
+                <label>SCHMITZ</label>
+            </value>
+            <value>
+                <fullName>SD SERVICES</fullName>
+                <default>false</default>
+                <label>SD SERVICES</label>
+            </value>
+            <value>
+                <fullName>SEMICARFRAN</fullName>
+                <default>false</default>
+                <label>SEMICARFRAN</label>
+            </value>
+            <value>
+                <fullName>SERCO</fullName>
+                <default>false</default>
+                <label>SERCO</label>
+            </value>
+            <value>
+                <fullName>SOLIGHT SAS</fullName>
+                <default>false</default>
+                <label>SOLIGHT SAS</label>
+            </value>
+            <value>
+                <fullName>SOR IBERICA SA</fullName>
+                <default>false</default>
+                <label>SOR IBERICA SA</label>
+            </value>
+            <value>
+                <fullName>T SEVEN SPA</fullName>
+                <default>false</default>
+                <label>T SEVEN SPA</label>
+            </value>
+            <value>
+                <fullName>TECNOVE</fullName>
+                <default>false</default>
+                <label>TECNOVE</label>
+            </value>
+            <value>
+                <fullName>TECNOVE FIBERFLASS SL</fullName>
+                <default>false</default>
+                <label>TECNOVE FIBERFLASS SL</label>
+            </value>
+            <value>
+                <fullName>TERMOCUBE</fullName>
+                <default>false</default>
+                <label>TERMOCUBE</label>
+            </value>
+            <value>
+                <fullName>TERMOPLUS</fullName>
+                <default>false</default>
+                <label>TERMOPLUS</label>
+            </value>
+            <value>
+                <fullName>TERRADAS</fullName>
+                <default>false</default>
+                <label>TERRADAS</label>
+            </value>
+            <value>
+                <fullName>THERMOEUROP Portugal LDA</fullName>
+                <default>false</default>
+                <label>THERMOEUROP Portugal LDA</label>
+            </value>
+            <value>
+                <fullName>Trade Circle Technical Industries</fullName>
+                <default>false</default>
+                <label>Trade Circle Technical Industries</label>
+            </value>
+            <value>
+                <fullName>TRANSPOL</fullName>
+                <default>false</default>
+                <label>TRANSPOL</label>
+            </value>
+            <value>
+                <fullName>TRIMA KIT SARL</fullName>
+                <default>false</default>
+                <label>TRIMA KIT SARL</label>
+            </value>
+            <value>
+                <fullName>TROUILLET CARROSSERIE-VEHIXEL</fullName>
+                <default>false</default>
+                <label>TROUILLET CARROSSERIE-VEHIXEL</label>
+            </value>
+            <value>
+                <fullName>TROUILLET SUD SERVICES</fullName>
+                <default>false</default>
+                <label>TROUILLET SUD SERVICES</label>
+            </value>
+            <value>
+                <fullName>V.D. BORNE KUNSTSTOFFEN BV</fullName>
+                <default>false</default>
+                <label>V.D. BORNE KUNSTSTOFFEN BV</label>
+            </value>
+            <value>
+                <fullName>VOW</fullName>
+                <default>false</default>
+                <label>VOW</label>
+            </value>
+            <value>
+                <fullName>WINTER KUHLFAHRZEUGE</fullName>
+                <default>false</default>
+                <label>WINTER KUHLFAHRZEUGE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

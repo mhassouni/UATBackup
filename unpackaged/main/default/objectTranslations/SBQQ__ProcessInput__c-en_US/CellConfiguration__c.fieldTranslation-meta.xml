@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Configuration cellule --></label>
+        <name>CellConfiguration__c</name>
+        <picklistValues>
+            <masterLabel>Brasseur</masterLabel>
+            <translation><!-- Brasseur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Déménagement</masterLabel>
+            <translation><!-- Déménagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environnement</masterLabel>
+            <translation><!-- Environnement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eutectique</masterLabel>
+            <translation><!-- Eutectique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiène</masterLabel>
+            <translation><!-- Hygiène --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isotherme</masterLabel>
+            <translation><!-- Isotherme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Messagerie</masterLabel>
+            <translation><!-- Messagerie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mono</masterLabel>
+            <translation><!-- Mono --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi</masterLabel>
+            <translation><!-- Multi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planification</masterLabel>
+            <translation><!-- Planification --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

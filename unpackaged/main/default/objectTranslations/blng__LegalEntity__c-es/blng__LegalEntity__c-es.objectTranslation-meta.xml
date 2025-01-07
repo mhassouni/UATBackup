@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Legal Entidad</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Legal Entidades</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>PF_Legal Entity Layout</layout>
+        <sections>
+            <label>Información de la dirección</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información legal</label>
+            <section>Informations Juridiques</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de la entidad legal</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generatea3a7Z000000bdeIQAQ</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Generate Mid Term Quote</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &#39;/s&#39;,&#39;/apex/dfsle__gendocumentgenerator&#39;, $Site.Prefix +&#39;/apex/dfsle__gendocumentgenerator&#39;), null, [sId = SBQQ__Quote__c.Id, templateId = &#39;a3a7Z000000bdeIQAQ&#39;, recordId = SBQQ__Quote__c.Id, title = &#39;Generate Mid Term Quote&#39;])}</url>
+</WebLink>

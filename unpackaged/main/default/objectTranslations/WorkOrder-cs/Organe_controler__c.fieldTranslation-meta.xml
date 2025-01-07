@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Organe à contrôler --></label>
+        <name>Organe_controler__c</name>
+        <picklistValues>
+            <masterLabel>Cabine</masterLabel>
+            <translation>Kabina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caisse</masterLabel>
+            <translation>Krabice</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Châssis</masterLabel>
+            <translation>Rám</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricité</masterLabel>
+            <translation>Elektřina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupe frigorifique</masterLabel>
+            <translation>Chladicí agregát</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hayon</masterLabel>
+            <translation>Zadní dveře</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pneumatique</masterLabel>
+            <translation>Pneumatické části</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR08_DDerniRemiseSuperieureDateClotu</fullName>
+    <active>false</active>
+    <description>OPP-RG-002</description>
+    <errorConditionFormula>AND ( 
+text(PaysRegionPF__c) &lt;&gt; &#39;Reways&#39;,
+DateDerniereRemise__c &gt;  DateClotureEffective__c  , $Setup.Bypass__c.BypassValidationRules__c = false
+)</errorConditionFormula>
+    <errorMessage>La &quot;Date clôture effective&quot; doit être supérieure ou égale à la &quot;Date dernière remise&quot;.</errorMessage>
+</ValidationRule>

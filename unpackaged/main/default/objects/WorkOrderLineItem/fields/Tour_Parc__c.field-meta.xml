@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tour_Parc__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Nom_de_la_Mission__c = &quot;MOTEUR&quot; , 
+IF( Moteur_Niveau_huile__c , $Label.TDP_RDS_Niveau_huile, &quot;&quot;) &amp;
+IF( Moteur_direction__c, $Label.TDP_RDS_Direction, &quot;&quot;) &amp;
+IF( Moteur_Refroidissement__c  , $Label.TDP_RDS_Niveau_eau, &quot;&quot;) &amp;
+IF( Moteur_freins_assistance__c , $Label.TDP_RDS_freins_assistance, &quot;&quot;) &amp;
+IF( Moteur_Etat_Courroies__c , $Label.TDP_RDS_Etat_courroies, &quot;&quot;) &amp; 
+IF( Moteur_Transmission_Cadran__c, $Label.TDP_RDS_Etat_transmission_Cardan, &quot;&quot;) , &quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;ECLAIRAGE / BATTERIE&quot; , 
+IF( Eclairage_Eclairages_caisse_cabine__c , $Label.TDP_RDS_Eclairages_caisse_cabine, &quot;&quot;) &amp;
+IF( Eclairage_Etat_des_cosses__c , $Label.TDP_RDS_Etat_des_cosses, &quot;&quot;) &amp; 
+IF( Eclairage_Eclairages_extrieurs__c , $Label.TDP_RDS_Eclairages_exterieurs, &quot;&quot;) &amp;
+IF( Eclairage_Etat_charge__c, $Label.TDP_RDS_Etat_charge, &quot;&quot;) , &quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;CARROSSERIE / PNEUS / FREINS&quot; , 
+IF( Carrosserie_Parechocs_AVAR_anticyclistes__c  ,$Label.TDP_RDS_Pare_chocs, &quot;&quot;) &amp;
+IF( Carrosserie_Etat_carrosserie__c , $Label.TDP_RDS_etat_general_carrosserie, &quot;&quot;) &amp;
+IF( Carrosserie_Etat_porte_battante__c , $Label.TDP_RDS_Etat_porte_battante, &quot;&quot;) &amp;
+IF( Carrosserie_Etat_pneumatiques__c , $Label.TDP_RDS_etat_pneumatiques, &quot;&quot;) &amp;
+IF( Carrosserie_Etat_porte__c , $Label.TDP_RDS_Carrosserie_porte, &quot;&quot;) &amp;
+IF( Carrosserie_Serrage_des_roues__c ,$Label.TDP_RDS_Serrage_des_roues, &quot;&quot;) &amp;
+IF( Carrosserie_Contacteurs_de_porte__c , $Label.TDP_RDS_Contacteurs, &quot;&quot;) &amp;
+IF( Carrosserie_Check_point_PL__c , $Label.TDP_RDS_Check_point_PL, &quot;&quot;) &amp;   
+IF( Carrosserie_Usure_des_freins__c , $Label.TDP_RDS_Usure_des_freins, &quot;&quot;) ,&quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;HAYON&quot; ,
+IF( Hayon_Niveau_huile__c  , $Label.TDP_RDS_Niveau_huile, &quot;&quot;) &amp;
+IF( Hayon_Boitier_commande__c , $Label.TDP_RDS_Boitier_commande, &quot;&quot;) &amp;
+IF( Hayon_Soudurescharnires__c , $Label.TDP_RDS_Soudures, &quot;&quot;) &amp; 
+IF( HAYON_Vignette_VGP_Abaque__c , $Label.TDP_RDS_Vignette_VGP_Abaque, &quot;&quot;) &amp;
+IF( Hayon_Graissage__c , $Label.TDP_RDS_Graissage_graisseur_coulisses, &quot;&quot;) ,&quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;FRIGO / GROUPE&quot; ,
+IF( FrigoGrp_Courroies_Etattension__c , $Label.TDP_RDS_Courroies_Etat_tension, &quot;&quot;) &amp;
+IF( FrigoGrp_Condenseur_tatpropret__c , $Label.TDP_RDS_Condenseur_etat_proprete, &quot;&quot;) &amp;
+IF( FrigoGrp_Calandre_fixation__c , $Label.TDP_RDS_Calandre_fixation, &quot;&quot;) &amp;
+IF( FrigoGrp_Flexible_tuyauterie__c , $Label.TDP_RDS_Flexible_tuyauterie, &quot;&quot;) &amp;
+IF( FrigoGrp_vignette_etancheite__c, $Label.TDP_RDS_Vignette_etancheite, &quot;&quot;) &amp;
+IF( FrigoGrp_LR_huile__c, $Label.TDP_RDS_Niveau_LR, &quot;&quot;) &amp;
+IF( FrigoGrp_Essai_route_secteur__c , $Label.TDP_RDS_Essai_route_secteur, &quot;&quot;) ,&quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;FRIGO / CELLULE&quot; ,
+IF( FrigoCel_Contrle_coulements__c , $Label.TDP_RDS_Controle_ecoulements, &quot;&quot;) &amp;
+IF( FrigoCel_vaporateur_tatpropret__c , $Label.TDP_RDS_evaporateur, &quot;&quot;) &amp;
+IF( FrigoCel_Ventilation__c , $Label.TDP_RDS_Ventilation, &quot;&quot;) &amp;
+IF( FrigoCel_Contacts_de_porte_arrt_groupe__c , $Label.TDP_RDS_Contacteurs, &quot;&quot;) &amp;
+IF( FrigoCel_Etat_prise_380220V__c , $Label.TDP_RDS_Etat_prise_380_220V, &quot;&quot;) &amp; 
+IF( FrigoCel_Rallonge_lectrique__c , $Label.TDP_RDS_Rallonge_Electrique, &quot;&quot;) &amp;
+IF( FrigoCel_Escabeau_Marchepied__c, $Label.TDP_RDS_Escabeau, &quot;&quot;)&amp;
+IF( FrigoCel_Rideau_antidperdition__c , $Label.TDP_RDS_Rideau, &quot;&quot;) ,&quot;&quot;)&amp;
+IF( Nom_de_la_Mission__c = &quot;DOCUMENTS ADMINISTRATIFS&quot; ,
+IF( DocAdm_Plaques_de_tare__c , $Label.TDP_RDS_Plaques_de_tare, &quot;&quot;) &amp;
+IF( DocAdm_Carte_grise__c , $Label.TDP_RDS_Carte_grise, &quot;&quot;) &amp;
+IF( DocAdm_Plaque_constructeur__c , $Label.TDP_RDS_Plaque_constructeur, &quot;&quot;) &amp;
+IF( DocAdm_ATP_marquage__c, $Label.TDP_RDS_Marquage, &quot;&quot;) &amp;
+IF( DocAdm_Carnet_de_maintenance_du_hayon__c, $Label.TDP_RDS_Carnet_hayon, &quot;&quot;) &amp; 
+IF( DocAdm_Attestation_assurance__c , $Label.TDP_RDS_Attestation_assurance, &quot;&quot;) ,&quot;&quot;)</formula>
+    <label>Contrôles en défaut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

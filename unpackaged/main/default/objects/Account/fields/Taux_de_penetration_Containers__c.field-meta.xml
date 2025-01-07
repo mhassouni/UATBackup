@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taux_de_penetration_Containers__c</fullName>
+    <formula>IF
+(
+AND( Qte_Opp_Signees_Containers__c &lt;&gt;0, PotentielContainers__c &lt;&gt;0)
+,
+Qte_Opp_Signees_Containers__c /PotentielContainers__c 
+,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Taux de pénétration - Containers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

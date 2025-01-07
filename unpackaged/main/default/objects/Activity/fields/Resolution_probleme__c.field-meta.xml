@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_probleme__c</fullName>
+    <description>Tache de suivi de détracteur : permet de savoir si suite au rappel du client, son problème est résolu</description>
+    <label>Résolution problème</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Résolu</fullName>
+                <default>false</default>
+                <label>Résolu</label>
+            </value>
+            <value>
+                <fullName>En cours de résolution</fullName>
+                <default>false</default>
+                <label>En cours de résolution</label>
+            </value>
+            <value>
+                <fullName>Escalade Manager</fullName>
+                <default>false</default>
+                <label>Non résolu: escalade manager</label>
+            </value>
+            <value>
+                <fullName>Non résolu</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non résolu</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

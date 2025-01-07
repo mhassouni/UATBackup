@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_actuel__c</fullName>
+    <formula>IF(OR(TerritorialCommercial__r.Id = $User.Id,ManagerCommercial__r.Id = $User.Id),True,False)</formula>
+    <label>User actuel</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

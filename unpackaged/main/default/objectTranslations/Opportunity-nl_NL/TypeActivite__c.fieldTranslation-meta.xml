@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Motief voor de opportuniteit</label>
+        <name>TypeActivite__c</name>
+        <picklistValues>
+            <masterLabel>1- Conquérir une (des) position(s) LD</masterLabel>
+            <translation>1- Een (of meer) positie(s) LD winnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2- Renouveler un (des) contrat(s) existant(s)</masterLabel>
+            <translation>2- Bestaand(e) contract(en) vernieuwen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3- Challenger un loueur concurrent en place</masterLabel>
+            <translation>3- Een bestaande concurrent uitdagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4- Offrir une alternative à l&#39;achat/leasing</masterLabel>
+            <translation>4- Een alternatief bieden voor kopen/leasen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5- Offrir une alternative à la sous-traitance (transporteur, dernier km, location avec chauffeur)</masterLabel>
+            <translation>5- Een alternatief bieden voor uitbesteding (vervoerder, laatste km, verhuur met bestuurder)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Meubles</masterLabel>
+            <translation>Huur meubel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location avec chauffeur</masterLabel>
+            <translation><!-- Location avec chauffeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location sans chauffeur</masterLabel>
+            <translation><!-- Location sans chauffeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nouveau besoin</masterLabel>
+            <translation><!-- Nouveau besoin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propriété</masterLabel>
+            <translation><!-- Propriété --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport dernier kilomètre</masterLabel>
+            <translation><!-- Transport dernier kilomètre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporteur public</masterLabel>
+            <translation><!-- Transporteur public --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

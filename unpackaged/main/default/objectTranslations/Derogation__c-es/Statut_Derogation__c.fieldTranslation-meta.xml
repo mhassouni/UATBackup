@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Estado de excepción</label>
+        <name>Statut_Derogation__c</name>
+        <picklistValues>
+            <masterLabel>Approuvée</masterLabel>
+            <translation><!-- Approuvée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente</masterLabel>
+            <translation><!-- En attente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En attente DG</masterLabel>
+            <translation><!-- En attente DG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejetée</masterLabel>
+            <translation><!-- Rejetée --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

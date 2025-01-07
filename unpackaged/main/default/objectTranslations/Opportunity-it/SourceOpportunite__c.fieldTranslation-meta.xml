@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>Precisare come l&#39;opportunità è stata identificata ed è risalita nella conduttura .</help>
+        <label>Fonte dell&#39;opportunità</label>
+        <name>SourceOpportunite__c</name>
+        <picklistValues>
+            <masterLabel>Achat Fichier</masterLabel>
+            <translation>Scheda acquisto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuaire</masterLabel>
+            <translation>Annuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appel Entrant</masterLabel>
+            <translation>Telefonata entrante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation>Commerciale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mailing</masterLabel>
+            <translation><!-- E-mailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magazine</masterLabel>
+            <translation>Rivista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailing / Courrier</masterLabel>
+            <translation>Mailing / Corriere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opération Prospection</masterLabel>
+            <translation>Operazione Prospezione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pages Jaunes</masterLabel>
+            <translation>Pagine Gialle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repérage</masterLabel>
+            <translation>Localizzazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon</masterLabel>
+            <translation>Salone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site PF</masterLabel>
+            <translation>Sito PF</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

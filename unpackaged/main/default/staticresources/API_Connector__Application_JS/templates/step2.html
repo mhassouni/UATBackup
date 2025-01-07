@@ -1,0 +1,1153 @@
+﻿<div>
+  <form name="detailForm">
+    <!--new account -->
+    <div ng-if="duplicateCheckAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objDuplicate.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objDuplicate.Password" /><a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show</a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide</a>
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.CaseKey}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-casekey" class="slds-input" placeholder="Enter CaseKey"
+                  ng-model="caseKeyRecord.Account" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--new account -->
+    <div ng-if="duplicateCheckContact">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-con-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objDuplicate.ContactUsername" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-con-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objDuplicate.ContactPassword" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.CaseKey}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-con-caseKey" class="slds-input" placeholder="Enter CaseKey"
+                  ng-model="caseKeyRecord.Contact" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--account dutch chamber-->
+
+    <div ng-if="accountKvk">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objDuplicate.AccountKvkUsername" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objDuplicate.AccountKvkPassword" /><a href="#" ng-click="showHidePassword()"
+                  ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.CaseKey}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-casekey" class="slds-input" placeholder="Enter CaseKey"
+                  ng-model="caseKeyRecord.AccountKvk" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--dutch chamber lead-->
+    <div ng-if="leadKvk">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objDuplicate.LeadKvkUsername" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objDuplicate.LeadKvkPassword" /><a href="#" ng-click="showHidePassword()"
+                  ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.CaseKey}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-casekey" class="slds-input" placeholder="Enter CaseKey"
+                  ng-model="caseKeyRecord.LeadKvk" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="creditCheck">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31N/24ym6PTgaSHFqrAYipmwImrow6naJnca7pa2jsH2jno"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-Credit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objCredit.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-Credit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objCredit.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg>Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg>Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="vatCheck">
+      <div style="float:right;">
+        <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31I/QTnABxc0qQxkHB7hPREckVO38248ra6xUlLogwQeAI8"
+          target="_blank" style="font-size: 14px;">
+          {{customLabel.Help_for_this_service}}
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+          </svg>
+        </a>
+      </div>
+      <center>
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+          style="width: 50%;">
+          <span class="slds-assistive-text">{{customLabel.Info}}!</span>
+          <h2>{{customLabel.Credential_Error_Message}}</h2>
+        </div>
+      </center>
+    </div>
+    <div ng-if="toolkitErpManagement">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31N/24ym6PTgaSHFqrAYipmwImrow6naJnca7pa2jsH2jno"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objToolkitEnterprise.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objToolkitEnterprise.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div ng-if="toolkitQuickCheck">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://toolkit-api.dnb.com/unlocked/DataSheet-QuickCheck-Popup.asp?stat_link=noslrn&id=null"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objToolkitQuickCheck.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objToolkitQuickCheck.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div ng-if="leadGlobal">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Consumer_Key}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Key}}" ng-model="objLeadGlobal.Consumer_Key" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Consumer_Secret}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Secret}}" ng-model="objLeadGlobal.Consumer_Secret" /><a
+                  href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="accountGlobalMatch">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Consumer_Key}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Key}}" ng-model="objAccountGlobal.Consumer_Key" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Consumer_Secret}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Secret}}" ng-model="objAccountGlobal.Consumer_Secret" /><a
+                  href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="accountTradeCredit">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Consumer_Key}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Key}}" ng-model="objAccountTradeCredit.Consumer_Key" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Consumer_Secret}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Secret}}"
+                  ng-model="objAccountTradeCredit.Consumer_Secret" /><a href="#" ng-click="showHidePassword()"
+                  ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="iwsServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://iws.altares.com/documentation-iws/" target="_blank"
+              style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIwsService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIwsService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div ng-if="iwsAdvancedAddressServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://iws.altares.com/documentation-iws/" target="_blank"
+              style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIwsAdvancedAddressService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIwsAdvancedAddressService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Start IWS Bankruptcy Information Service-->
+    <div ng-if="iwsBankruptcyInfoServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://iws.altares.com/documentation-iws/" target="_blank"
+              style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIwsBankruptcyInfoService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIwsBankruptcyInfoService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End IWS Bankruptcy Information Service-->
+    <!--start Global Decision Maker Service related to Account-->
+    <div ng-if="gdmServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://toolkit-api.dnb.com/unlocked/DataSheet-GDM-Popup.asp?stat_link=noslrn&id=null"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="gdm-username">{{customLabel.UserId}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="gdm-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objGDMService.UserId" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="gdm-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="gdm-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objGDMService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end Global Decision Maker Service related to Account-->
+    <!-- Start IWS Standard Address Info -->
+    <div ng-if="isIWSStdAddInfoServiceForAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="{{objIWSStdAddInfoService.DocURL}}" target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIWSStdAddInfoService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIWSStdAddInfoService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Start IWS IWS Paydex Information Service -->
+    <div ng-if="isIWSPaydexInfoServiceForAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="{{objIWSPaydexInfoService.DocURL}}" target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIWSPaydexInfoService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIWSPaydexInfoService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End IWS Paydex Information Service-->
+    <!--Start IWS Risk Information Service -->
+    <div ng-if="isIWSRiskInfoServiceForAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="{{objIWSRiskInfoService.DocURL}}" target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIWSRiskInfoService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIWSRiskInfoService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End of IWS Risk Info Service-->
+
+    <!--Start IWS Balance sheet Information Service -->
+    <div ng-if="isIWSBalanceSheetServiceForAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class=" slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="{{objIWSBalanceSheetService.DocURL}}" target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-username">{{customLabel.Username}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-toolkit-username" class="slds-input" placeholder="Enter Username"
+                  ng-model="objIWSBalanceSheetService.Username" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-toolkit-password">{{customLabel.Password}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-toolkit-password" class="slds-input"
+                  placeholder="Enter Password" ng-model="objIWSBalanceSheetService.Password" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End of IWS Balance Info Service-->
+    <!--Start of Risk Datablock Service-->
+    <div ng-if="riskDatablocksServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Consumer_Key}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Key}}" ng-model="objRiskDatablockService.Consumer_Key" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Consumer_Secret}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Secret}}"
+                  ng-model="objRiskDatablockService.Consumer_Secret" /><a href="#" ng-click="showHidePassword()"
+                  ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--End of Risk Datablock Service-->
+
+    <!--Start of Company Report-->
+    <div ng-if="companyReportServiceAccount">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-01">{{customLabel.Consumer_Key}}</label>
+              <div class="slds-form-element__control">
+                <input type="text" id="input-username" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Key}}" ng-model="objCompanyReportService.Consumer_Key" />
+              </div>
+            </div>
+          </li>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Consumer_Secret}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-password" class="slds-input"
+                  placeholder="Enter {{customLabel.Consumer_Secret}}"
+                  ng-model="objCompanyReportService.Consumer_Secret" /><a href="#" ng-click="showHidePassword()"
+                  ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End of Company Report-->
+
+    <!--Start of IndueD Service-->
+    <div ng-if="induedService">
+      <div class="slds-panel__section">
+        <div>
+          <h3 class="slds-text-heading_small slds-m-bottom_medium">
+            {{customLabel.User_Information}}
+            <a href="https://na44.salesforce.com/sfc/p/30000000j4tI/a/0M000000I31S/SYj_nJua9lPZ3POCIg.7ryhpE3fHp.J3nf29Ddy1WMo"
+              target="_blank" style="float: right;font-size: 14px;">
+              {{customLabel.Help_for_this_service}}
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#help" />
+              </svg>
+            </a>
+          </h3>
+        </div>
+        <ul>
+          <li class="slds-form-element slds-hint-parent">
+            <div
+              class="slds-form-element slds-size_1-of-2 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3">
+              <label class="slds-form-element__label" for="input-id-02">{{customLabel.Api_Token}}</label>
+              <div class="slds-form-element__control">
+                <input type="{{typePassword}}" id="input-con-password" class="slds-input" placeholder="Enter Password"
+                  ng-model="objInduedService.api_token" />
+                <a href="#" ng-click="showHidePassword()" ng-show="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Show
+                </a>
+                <a href="#" ng-click="showHidePassword()" ng-hide="IsShowPassword">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#preview" />
+                  </svg> Hide
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End of IndueD Service-->
+  </form>
+</div>

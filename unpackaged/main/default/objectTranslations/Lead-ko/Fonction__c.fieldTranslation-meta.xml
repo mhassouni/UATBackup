@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fonction --></label>
+        <name>Fonction__c</name>
+        <picklistValues>
+            <masterLabel>Achats</masterLabel>
+            <translation><!-- Achats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration / Secrétariat</masterLabel>
+            <translation><!-- Administration / Secrétariat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptabilité / Finance</masterLabel>
+            <translation><!-- Comptabilité / Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informatique</masterLabel>
+            <translation><!-- Informatique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Juridique</masterLabel>
+            <translation><!-- Juridique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistique / Exploitation</masterLabel>
+            <translation><!-- Logistique / Exploitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management</masterLabel>
+            <translation><!-- Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ressource Humaines</masterLabel>
+            <translation><!-- Ressource Humaines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Généraux / Immobilier</masterLabel>
+            <translation><!-- Services Généraux / Immobilier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation><!-- Technique --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

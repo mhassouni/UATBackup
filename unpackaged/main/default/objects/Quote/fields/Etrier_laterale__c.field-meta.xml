@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etrier_laterale__c</fullName>
+    <label>Accès latéral (Type)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FIXE</fullName>
+                <default>false</default>
+                <label>FIXE</label>
+            </value>
+            <value>
+                <fullName>2 MARCHEPIEDS ESCAMOTABLES (EMP) - (Brasseur)</fullName>
+                <default>false</default>
+                <label>2 MARCHEPIEDS ESCAMOTABLES (EMP) - (Brasseur)</label>
+            </value>
+            <value>
+                <fullName>2 MARCHEPIEDS ESCAMOTABLES (PAF AR) - (Brasseur)</fullName>
+                <default>false</default>
+                <label>2 MARCHEPIEDS ESCAMOTABLES (PAF AR) - (Brasseur)</label>
+            </value>
+            <value>
+                <fullName>4 MARCHEPIEDS ESCAMOTABLES (EMP + PAF AR) - (Brasseur)</fullName>
+                <default>false</default>
+                <label>4 MARCHEPIEDS ESCAMOTABLES (EMP + PAF AR) - (Brasseur)</label>
+            </value>
+            <value>
+                <fullName>ÉTRIER 2 MARCHES TÉLESCOPIQUE AVEC BUZZER</fullName>
+                <default>false</default>
+                <label>ÉTRIER 2 MARCHES TÉLESCOPIQUE AVEC BUZZER</label>
+            </value>
+            <value>
+                <fullName>ETRIER 3 MARCHES TELESCOPIQUE AVEC BUZZER</fullName>
+                <default>false</default>
+                <label>ETRIER 3 MARCHES TELESCOPIQUE AVEC BUZZER</label>
+            </value>
+            <value>
+                <fullName>ETRIER FIXE</fullName>
+                <default>false</default>
+                <label>ETRIER FIXE</label>
+            </value>
+            <value>
+                <fullName>ETRIER TELESCOPIQUE 2 MARCHES AVEC BUZZER</fullName>
+                <default>false</default>
+                <label>ETRIER TELESCOPIQUE 2 MARCHES AVEC BUZZER</label>
+            </value>
+            <value>
+                <fullName>ETRIER TELESCOPIQUE 3 MARCHES AVEC BUZZER</fullName>
+                <default>false</default>
+                <label>ETRIER TELESCOPIQUE 3 MARCHES AVEC BUZZER</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Courrier</masterLabel>
+        <translation>Post</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Demande de RdV</masterLabel>
+        <translation>Terminanfrage</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Email</masterLabel>
+        <translation>E-Mail</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Présentation</masterLabel>
+        <translation>Vorstellung</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Relance</masterLabel>
+        <translation><!-- Relance --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Suivi clients DETRACTEURS</masterLabel>
+        <translation>Kundenbetreuung DETRACTORS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Suivi clients PASSIFS</masterLabel>
+        <translation>Kundenbetreuung PASSIVE</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Suivi clients PROMOTEURS</masterLabel>
+        <translation><!-- Suivi clients PROMOTEURS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tel</masterLabel>
+        <translation>Telefonnummer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Visite</masterLabel>
+        <translation>Besuch</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

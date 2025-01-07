@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CLIENT ACTIF</masterLabel>
+        <translation>ACTIEVE KLANT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CLIENT INACTIF</masterLabel>
+        <translation>INACTIEVE KLANT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROSPECT ACTIF</masterLabel>
+        <translation>ACTIEF VOORUITZICHT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PROSPECT INACTIF</masterLabel>
+        <translation>INACTIEF VOORUITZICHT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SUSPECT</masterLabel>
+        <translation>VERDACHTE</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

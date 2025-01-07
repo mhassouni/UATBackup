@@ -1,0 +1,46 @@
+<apex:page Controller="FactureVehiculeToDownloadController" showHeader="false" docType="html-5.0">
+    
+    <apex:stylesheet value="{! $Resource.bootstrapMin }"/>
+    <apex:includeScript value="{! $Resource.jQueryMin }"/>
+    <apex:stylesheet value="{! $Resource.LoaderBootstrap }"/>
+    <apex:includeScript value="{! $Resource.LoaderScript }"/>
+    
+    <script >
+	//Generate Loader Page
+        $(document).ready(function() 
+		{
+            testHoldon('sk-bounce');                   
+            function testHoldon(themeName)
+            {
+                HoldOn.open({
+                theme:themeName,
+                message:"<h4>Merci de patienter, le document est en cours de téléchargement.</h4>"
+                });
+            }
+		//APEX Class Call Using apex:actionFunction            
+            getDocument();
+        });
+    //Close The Loader Page
+        function hideLoader(){
+            HoldOn.close();
+
+		}
+    </script>
+    
+	<div style="overflow: hidden !important; height:100%; width: 100%;">
+        <apex:form >
+            <apex:actionFunction name="getDocument" action="{!getDocument}"  rerender="renderTarget" status="Status_1"  oncomplete="hideLoader();return false;"/>
+        </apex:form>
+        <apex:outputPanel id="renderTarget"  layout="block" >
+            <apex:outputPanel rendered="{!displayLoader}" />
+            <apex:actionStatus id="Status_1" rendered="{!displayDocument}">
+                <apex:facet name="stop" >
+                    <apex:iframe width="100%" height="800" src="data:application/pdf;base64,{!document}" ></apex:iframe>
+                </apex:facet>
+            </apex:actionStatus>
+            <apex:outputPanel layout="block" rendered="{!displayError}">
+            	<apex:iframe src="{!URLFOR($Resource.DocumentIntrouvable)}"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+	</div>
+</apex:page>

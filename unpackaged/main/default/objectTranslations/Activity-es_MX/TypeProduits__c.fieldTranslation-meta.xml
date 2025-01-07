@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de produits --></label>
+        <name>TypeProduits__c</name>
+        <picklistValues>
+            <masterLabel>Carrosseries</masterLabel>
+            <translation><!-- Carrosseries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation><!-- Containers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meubles</masterLabel>
+            <translation><!-- Meubles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Produits</masterLabel>
+            <translation><!-- Multi-Produits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vente</masterLabel>
+            <translation><!-- Vente --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Frigorifiques</masterLabel>
+            <translation><!-- Véhicules Frigorifiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicules Secs</masterLabel>
+            <translation><!-- Véhicules Secs --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<apex:page standardController="Account" extensions="VFE11_CompteReload" action="{!reload}" lightningStylesheets="true">
+    <apex:outputLabel rendered="{!spaces}"><br/><br/><br/></apex:outputLabel>
+    <div style="font-size:{!IF(spaces,12,10)}px">
+    <apex:pageMessages />
+    <apex:form >
+        <div align="center">
+            <apex:commandButton value="{!$Label.VFP_Button_ValidationEH}" action="{!validateAccount}" rendered="{!showValidationButton}" onclick="window.top.location='/{!currentAcc.id}'"/>
+
+        </div>
+    </apex:form>
+    </div>
+    
+</apex:page>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Bloquer_le_passage_au_statut_Demande</fullName>
+    <active>true</active>
+    <description>Bloquer le passage manuel du statut Créé au statut “Demandée”. des Dérogations de type Contractuelle ou Tarifaire,</description>
+    <errorConditionFormula>AND
+(
+$Setup.Bypass__c.BypassValidationRules__c = false,
+OR(
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_contractuelle_DRAFT ,
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_contractuelle_En_cours ,
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_contractuelle_Lecture_seule ,
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_tarifaire_DRAFT ,
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_tarifaire_En_Cours ,
+RecordType.DeveloperName = $Label.Dero_DeveloperName_D_rogation_tarifaire_Lecture_seule)
+,
+ISCHANGED(Statut__c),
+Text(Statut__c) = &#39;Demandée&#39;)</errorConditionFormula>
+    <errorMessage>La demande de dérogation doit se faire via le bouton Soumettre pour approbation</errorMessage>
+</ValidationRule>

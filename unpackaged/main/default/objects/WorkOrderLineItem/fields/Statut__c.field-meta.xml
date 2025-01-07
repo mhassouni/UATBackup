@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+(OR(ISPICKVAL(Status,&quot;Cree&quot;),ISPICKVAL(Status,&quot;Contact_intervenant&quot;),ISPICKVAL(Status,&quot;Transmission_intervenant&quot;)),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536062741000/Mission_1&quot;,&quot;Nouvelle&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Depart_intervenant&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536062994000/Mission_2&quot;,&quot;Attente1&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Debut_intervention&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536063017000/Mission_3&quot;,&quot;En Cours&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Fin_intervention&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536063033000/Mission_4&quot;,&quot;Attente2&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Retour_agence&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536063047000/Mission_5&quot;,&quot;Terminée&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Terminé&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536063062000/Mission_6&quot;,&quot;Clôturée&quot;,20,130), 
+IF 
+(ISPICKVAL(Status,&quot;Non abouti&quot;),IMAGE(&quot;https://greenforce--int--c.visualforce.com/resource/1536063083000/Mission_7&quot;,&quot;Nouvelle&quot;,20,130),
+&quot;Requête sans statut&quot; 
+) 
+) 
+) 
+) 
+)
+)
+)</formula>
+    <label>Statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

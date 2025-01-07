@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_du_pack__c</fullName>
+    <label>Nom du pack</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Télématique - Access</fullName>
+                <default>false</default>
+                <label>Télématique - Access</label>
+            </value>
+            <value>
+                <fullName>Télématique - Pro</fullName>
+                <default>false</default>
+                <label>Télématique - Pro</label>
+            </value>
+            <value>
+                <fullName>Télématique - Evolution</fullName>
+                <default>false</default>
+                <label>Télématique - Evolution</label>
+            </value>
+            <value>
+                <fullName>Télématique - Pack Italie</fullName>
+                <default>false</default>
+                <label>Télématique - Pack Italie</label>
+            </value>
+            <value>
+                <fullName>Télématique - Pack UK</fullName>
+                <default>false</default>
+                <label>Télématique - Pack UK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

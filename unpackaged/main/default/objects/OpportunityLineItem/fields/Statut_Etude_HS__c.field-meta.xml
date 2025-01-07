@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Etude_HS__c</fullName>
+    <label>Statut Etude HS</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Demande d&#39;étude HS envoyée</fullName>
+                <default>false</default>
+                <label>Demande d&#39;étude HS envoyée</label>
+            </value>
+            <value>
+                <fullName>Demande d&#39;étude HS validée</fullName>
+                <default>false</default>
+                <label>Demande d&#39;étude HS validée</label>
+            </value>
+            <value>
+                <fullName>Demande d&#39;étude HS refusée</fullName>
+                <default>false</default>
+                <label>Demande d&#39;étude HS refusée</label>
+            </value>
+            <value>
+                <fullName>Etude HS validée - à tarifer</fullName>
+                <default>false</default>
+                <label>Etude HS validée - à tarifer</label>
+            </value>
+            <value>
+                <fullName>Etude HS refusée</fullName>
+                <default>false</default>
+                <label>Etude HS refusée</label>
+            </value>
+            <value>
+                <fullName>Etude HS validée et tarifée</fullName>
+                <default>false</default>
+                <label>Etude HS validée et tarifée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

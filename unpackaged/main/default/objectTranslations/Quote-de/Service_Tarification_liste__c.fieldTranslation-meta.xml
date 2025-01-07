@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Pricing-Abteilung</label>
+        <name>Service_Tarification_liste__c</name>
+        <picklistValues>
+            <masterLabel>DDT INTERNATIONAL</masterLabel>
+            <translation><!-- DDT INTERNATIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TARIFICATION ES</masterLabel>
+            <translation><!-- TARIFICATION ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TARIFICATION FR</masterLabel>
+            <translation><!-- TARIFICATION FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TARIFICATION PL</masterLabel>
+            <translation><!-- TARIFICATION PL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

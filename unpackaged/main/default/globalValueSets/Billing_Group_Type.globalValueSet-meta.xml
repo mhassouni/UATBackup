@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Facturation Consolidée</fullName>
+        <default>false</default>
+        <label>Facturation Consolidée</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturation par type de contrat</fullName>
+        <default>false</default>
+        <label>Facturation par type de contrat</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturation par numéro de PO</fullName>
+        <default>false</default>
+        <label>Facturation par numéro de PO</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturation par site d&#39;exploitation</fullName>
+        <default>false</default>
+        <label>Facturation par site d&#39;exploitation</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturation par agence</fullName>
+        <default>false</default>
+        <label>Facturation par agence</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturation par numéro de parc (Asset assigné)</fullName>
+        <default>false</default>
+        <label>Facturation par numéro de parc (Asset assigné)</label>
+    </customValue>
+    <masterLabel>Billing Group Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

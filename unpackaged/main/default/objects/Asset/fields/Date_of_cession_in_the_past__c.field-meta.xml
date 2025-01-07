@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_cession_in_the_past__c</fullName>
+    <formula>Date_de_cession__c &lt;= TODAY()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date_of_cession_in_the_past</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

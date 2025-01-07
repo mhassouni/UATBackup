@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Produkty_Ikony</label>
+        <name>Produits_Icons__c</name>
+        <picklistValues>
+            <masterLabel>Container</masterLabel>
+            <translation><!-- Container --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble</masterLabel>
+            <translation><!-- Meuble --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule Sec</masterLabel>
+            <translation><!-- Véhicule Sec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule frigorifique</masterLabel>
+            <translation><!-- Véhicule frigorifique --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

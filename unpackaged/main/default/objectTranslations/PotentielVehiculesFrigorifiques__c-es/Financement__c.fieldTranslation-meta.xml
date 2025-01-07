@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Financiación</label>
+        <name>Financement__c</name>
+        <picklistValues>
+            <masterLabel>Autofinancement</masterLabel>
+            <translation>Autofinanciación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crédit-Bail</masterLabel>
+            <translation>Leasing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emprunt Bancaire</masterLabel>
+            <translation>Prestamo Bancario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

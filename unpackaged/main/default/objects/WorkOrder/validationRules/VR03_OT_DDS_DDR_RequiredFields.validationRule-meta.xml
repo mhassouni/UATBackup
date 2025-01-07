@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR03_OT_DDS_DDR_RequiredFields</fullName>
+    <active>true</active>
+    <description>Renseigner les champs obligatoires avant affectation de la ressource</description>
+    <errorConditionFormula>AND(    OR( 
+          RecordType.DeveloperName = &quot;Demande_de_service&quot;,
+          RecordType.DeveloperName = &quot;Ordre_Reparation&quot;),
+	NOT(ISBLANK( Ressource_Interne__c )),
+	Ischanged(Ressource_Interne__c ),
+	OR(
+	(ISBLANK( Travaux_demandes__c ) ),
+	(ISBLANK( Earliest_Start_Permitted__c )),
+	(ISBLANK( text(Priority ))),
+	(ISBLANK(  text(Lieu_Intervention__c )))	
+)
+)</errorConditionFormula>
+    <errorDisplayField>Ressource_Interne__c</errorDisplayField>
+    <errorMessage>Veuillez remplir le champs suivants avant d&#39;affecter une ressource interne : [Travaux demandés,Date planifiée,Priorité,Lieu d&#39;intervention]</errorMessage>
+</ValidationRule>

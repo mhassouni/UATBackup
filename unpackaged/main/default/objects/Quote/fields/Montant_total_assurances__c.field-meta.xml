@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montant_total_assurances__c</fullName>
+    <label>Montant total assurance affinitaire</label>
+    <summarizedField>Service__c.Prix_total_Assurance__c</summarizedField>
+    <summaryFilterItems>
+        <field>Service__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Assurance Affinitaire, Assurance Affinitaire - Lecture Seule</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Service__c.Assurance_retenue__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Service__c.Devis__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

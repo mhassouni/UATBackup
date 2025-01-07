@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Periodicity Mileage regulation</label>
+        <name>PeriodiciteRegulationKilometrique__c</name>
+        <picklistValues>
+            <masterLabel>Annuelle</masterLabel>
+            <translation>Annual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mensuelle</masterLabel>
+            <translation>Monthly</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

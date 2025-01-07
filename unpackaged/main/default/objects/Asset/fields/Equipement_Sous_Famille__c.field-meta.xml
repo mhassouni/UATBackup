@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_Sous_Famille__c</fullName>
+    <label>Sous Famille</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Equipement_Famille__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCES ARRIERE</fullName>
+                <default>false</default>
+                <label>ACCES ARRIERE</label>
+            </value>
+            <value>
+                <fullName>ACCES AVANT</fullName>
+                <default>false</default>
+                <label>ACCES AVANT</label>
+            </value>
+            <value>
+                <fullName>ACCES LATERAL</fullName>
+                <default>false</default>
+                <label>ACCES LATERAL</label>
+            </value>
+            <value>
+                <fullName>ETHYLOTEST</fullName>
+                <default>false</default>
+                <label>ETHYLOTEST</label>
+            </value>
+            <value>
+                <fullName>ARRIMAGE RAIL</fullName>
+                <default>false</default>
+                <label>ARRIMAGE RAIL</label>
+            </value>
+            <value>
+                <fullName>ARRIMAGE TUBE</fullName>
+                <default>false</default>
+                <label>ARRIMAGE TUBE</label>
+            </value>
+            <value>
+                <fullName>CAISSE INCONNU</fullName>
+                <default>false</default>
+                <label>CAISSE INCONNU</label>
+            </value>
+            <value>
+                <fullName>CHASSIS INCONNU</fullName>
+                <default>false</default>
+                <label>CHASSIS INCONNU</label>
+            </value>
+            <value>
+                <fullName>CLOISON FIXE</fullName>
+                <default>false</default>
+                <label>CLOISON FIXE</label>
+            </value>
+            <value>
+                <fullName>CLOISON MOBILE</fullName>
+                <default>false</default>
+                <label>CLOISON MOBILE</label>
+            </value>
+            <value>
+                <fullName>ENR. TEMP. DISQUE</fullName>
+                <default>false</default>
+                <label>ENR. TEMP. DISQUE</label>
+            </value>
+            <value>
+                <fullName>ENR. TEMP. ELECTRONIQUE</fullName>
+                <default>false</default>
+                <label>ENR. TEMP. ELECTRONIQUE</label>
+            </value>
+            <value>
+                <fullName>ETAGERE AMOVIBLE</fullName>
+                <default>false</default>
+                <label>ETAGERE AMOVIBLE</label>
+            </value>
+            <value>
+                <fullName>ETAGERE FIXE</fullName>
+                <default>false</default>
+                <label>ETAGERE FIXE</label>
+            </value>
+            <value>
+                <fullName>ETAGERE RELEVABLE</fullName>
+                <default>false</default>
+                <label>ETAGERE RELEVABLE</label>
+            </value>
+            <value>
+                <fullName>FROID</fullName>
+                <default>false</default>
+                <label>FROID</label>
+            </value>
+            <value>
+                <fullName>SEC</fullName>
+                <default>false</default>
+                <label>SEC</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>DIVERS_OG</fullName>
+                <default>false</default>
+                <label>DIVERS (OG)</label>
+            </value>
+            <value>
+                <fullName>FLUIDES</fullName>
+                <default>false</default>
+                <label>FLUIDES</label>
+            </value>
+            <value>
+                <fullName>GROUPE AUTONOME</fullName>
+                <default>false</default>
+                <label>GROUPE AUTONOME</label>
+            </value>
+            <value>
+                <fullName>GROUPE ELECTRIQUE</fullName>
+                <default>false</default>
+                <label>GROUPE ELECTRIQUE</label>
+            </value>
+            <value>
+                <fullName>GROUPE EUTECT.+ PM</fullName>
+                <default>false</default>
+                <label>GROUPE EUTECT.+ PM</label>
+            </value>
+            <value>
+                <fullName>GROUPE EUTECTIQUE</fullName>
+                <default>false</default>
+                <label>GROUPE EUTECTIQUE</label>
+            </value>
+            <value>
+                <fullName>GROUPE INCONNU</fullName>
+                <default>false</default>
+                <label>GROUPE INCONNU</label>
+            </value>
+            <value>
+                <fullName>GROUPE POULIE MOTEUR</fullName>
+                <default>false</default>
+                <label>GROUPE POULIE MOTEUR</label>
+            </value>
+            <value>
+                <fullName>HAYON A COLONNES</fullName>
+                <default>false</default>
+                <label>HAYON A COLONNES</label>
+            </value>
+            <value>
+                <fullName>HAYON CASSETTE</fullName>
+                <default>false</default>
+                <label>HAYON CASSETTE</label>
+            </value>
+            <value>
+                <fullName>HAYON INTERNE</fullName>
+                <default>false</default>
+                <label>HAYON INTERNE</label>
+            </value>
+            <value>
+                <fullName>HAYON ISOTHERME</fullName>
+                <default>false</default>
+                <label>HAYON ISOTHERME</label>
+            </value>
+            <value>
+                <fullName>HAYON RABATTABLE</fullName>
+                <default>false</default>
+                <label>HAYON RABATTABLE</label>
+            </value>
+            <value>
+                <fullName>HAYON RETRACTABLE_H</fullName>
+                <default>false</default>
+                <label>HAYON RETRACTABLE (H)</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE ARRIERE</fullName>
+                <default>false</default>
+                <label>OUVERTURE ARRIERE</label>
+            </value>
+            <value>
+                <fullName>OUVERTURE LATERALE</fullName>
+                <default>false</default>
+                <label>OUVERTURE LATERALE</label>
+            </value>
+            <value>
+                <fullName>PENDERIE AIGUILLAGE</fullName>
+                <default>false</default>
+                <label>PENDERIE AIGUILLAGE</label>
+            </value>
+            <value>
+                <fullName>PENDERIE BI-RAILS</fullName>
+                <default>false</default>
+                <label>PENDERIE BI-RAILS</label>
+            </value>
+            <value>
+                <fullName>PENDERIE FIXE</fullName>
+                <default>false</default>
+                <label>PENDERIE FIXE</label>
+            </value>
+            <value>
+                <fullName>PENDERIE RAIL C</fullName>
+                <default>false</default>
+                <label>PENDERIE RAIL C</label>
+            </value>
+            <value>
+                <fullName>PENDERIE TOIT PORTEUR</fullName>
+                <default>false</default>
+                <label>PENDERIE TOIT PORTEUR</label>
+            </value>
+            <value>
+                <fullName>PENDERIE TUBULAIRE</fullName>
+                <default>false</default>
+                <label>PENDERIE TUBULAIRE</label>
+            </value>
+            <value>
+                <fullName>DIVERS (OH)</fullName>
+                <default>false</default>
+                <label>DIVERS (OH)</label>
+            </value>
+            <value>
+                <fullName>HAYON RETRACTABLE (OH)</fullName>
+                <default>false</default>
+                <label>HAYON RETRACTABLE (OH)</label>
+            </value>
+            <value>
+                <fullName>HAYON RETRACTABLE</fullName>
+                <default>false</default>
+                <label>HAYON RETRACTABLE</label>
+            </value>
+            <value>
+                <fullName>ALL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALL</label>
+            </value>
+            <value>
+                <fullName>CARRIER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CARRIER</label>
+            </value>
+            <value>
+                <fullName>DELL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DELL</label>
+            </value>
+            <value>
+                <fullName>DHOLLANDIA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DHOLLANDIA</label>
+            </value>
+            <value>
+                <fullName>EUROFRIGO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EUROFRIGO</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FRIGOBLOCK</label>
+            </value>
+            <value>
+                <fullName>GAH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GAH</label>
+            </value>
+            <value>
+                <fullName>HUBBARD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HUBBARD</label>
+            </value>
+            <value>
+                <fullName>HULSTEINS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HULSTEINS</label>
+            </value>
+            <value>
+                <fullName>MAXON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MAXON</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>RATCLIFFE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RATCLIFFE</label>
+            </value>
+            <value>
+                <fullName>REG HOLMES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>REG HOLMES</label>
+            </value>
+            <value>
+                <fullName>ROSS &amp; BONEYMAN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ROSS &amp; BONEYMAN</label>
+            </value>
+            <value>
+                <fullName>THERMOKING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>THERMOKING</label>
+            </value>
+            <value>
+                <fullName>ZEPRO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ZEPRO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>GEOLOC</controllingFieldValue>
+            <valueName>FROID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEOLOC</controllingFieldValue>
+            <valueName>SEC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GPS</controllingFieldValue>
+            <valueName>GPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPTIONS DE GROUPE</controllingFieldValue>
+            <valueName>DIVERS_OG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPTIONS DE GROUPE</controllingFieldValue>
+            <valueName>FLUIDES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPTIONS HAYON</controllingFieldValue>
+            <valueName>DIVERS (OH)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPTIONS HAYON</controllingFieldValue>
+            <valueName>HAYON RETRACTABLE (OH)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OPTIONS HAYON</controllingFieldValue>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON RETRACTABLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OUVERTURES</controllingFieldValue>
+            <valueName>OUVERTURE ARRIERE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OUVERTURES</controllingFieldValue>
+            <valueName>OUVERTURE LATERALE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE AIGUILLAGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE BI-RAILS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE FIXE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE RAIL C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE TOIT PORTEUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PENDERIES</controllingFieldValue>
+            <valueName>PENDERIE TUBULAIRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE AUTONOME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE ELECTRIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE EUTECT.+ PM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE EUTECTIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE INCONNU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GROUPE</controllingFieldValue>
+            <valueName>GROUPE POULIE MOTEUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON A COLONNES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON CASSETTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON INTERNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON ISOTHERME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON RABATTABLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HAYON</controllingFieldValue>
+            <valueName>HAYON RETRACTABLE_H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACCES</controllingFieldValue>
+            <valueName>ACCES ARRIERE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACCES</controllingFieldValue>
+            <valueName>ACCES AVANT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACCES</controllingFieldValue>
+            <valueName>ACCES LATERAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ANTIDEMARRAGE</controllingFieldValue>
+            <valueName>ETHYLOTEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ARRIMAGE</controllingFieldValue>
+            <valueName>ARRIMAGE RAIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ARRIMAGE</controllingFieldValue>
+            <valueName>ARRIMAGE TUBE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAISSE</controllingFieldValue>
+            <valueName>CAISSE INCONNU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHASSIS</controllingFieldValue>
+            <valueName>CHASSIS INCONNU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLOISONS</controllingFieldValue>
+            <valueName>CLOISON FIXE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLOISONS</controllingFieldValue>
+            <valueName>CLOISON MOBILE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENREGISTREUR TEMPERATURE</controllingFieldValue>
+            <valueName>ENR. TEMP. DISQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENREGISTREUR TEMPERATURE</controllingFieldValue>
+            <valueName>ENR. TEMP. ELECTRONIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ETAGERES</controllingFieldValue>
+            <valueName>ETAGERE AMOVIBLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ETAGERES</controllingFieldValue>
+            <valueName>ETAGERE FIXE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ETAGERES</controllingFieldValue>
+            <valueName>ETAGERE RELEVABLE</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

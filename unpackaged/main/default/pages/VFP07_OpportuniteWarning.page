@@ -1,0 +1,4 @@
+<apex:page standardController="Opportunity" extensions="VFE07_OpportuniteWarning" action="{!alert}">
+    <apex:outputLabel rendered="{!spaces}"><br/><br/></apex:outputLabel>
+  <apex:pageMessages />
+</apex:page>

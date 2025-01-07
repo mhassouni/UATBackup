@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Service/département --></label>
+        <name>ServiceDepartement__c</name>
+        <picklistValues>
+            <masterLabel>Achat</masterLabel>
+            <translation><!-- Achat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administratif</masterLabel>
+            <translation><!-- Administratif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comptabilité</masterLabel>
+            <translation><!-- Comptabilité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuisine</masterLabel>
+            <translation><!-- Cuisine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direction générale</masterLabel>
+            <translation><!-- Direction générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploitation</masterLabel>
+            <translation><!-- Exploitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financier</masterLabel>
+            <translation><!-- Financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistique</masterLabel>
+            <translation><!-- Logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technique</masterLabel>
+            <translation><!-- Technique --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

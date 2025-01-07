@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactB2C_NonConforme__c</fullName>
+    <description>True si l&#39;un des champs n&#39;est pas conforme</description>
+    <formula>if
+(
+OR(
+Check_Ligne1Facturation__c=false
+,
+Check_Ligne2Facturation__c = false
+,
+Check_Ligne3Facturation__c=false
+,
+Check_Ligne1Livraison__c=false
+,
+Check_Ligne2Livraison__c=false
+,
+Check_Ligne3Livraison__c=false
+,
+Check_CodePostalFacturation__c=false
+,
+Check_CodepostalLivraison__c=false
+,
+Check_VilleFacturation__c=false
+,
+Check_VilleLivraison__c =false
+)
+,
+TRUE
+,
+FALSE
+)</formula>
+    <label>ContactB2C_NonConforme</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

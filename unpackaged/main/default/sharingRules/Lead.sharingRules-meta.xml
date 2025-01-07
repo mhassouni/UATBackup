@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Partage_FRANCE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage FRANCE</label>
+        <sharedTo>
+            <group>GroupePartage_FRANCE</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>DRO NORD 6,DRO NORD 7,DRO SUD 1,DRO SUD 2,DRO IDF 1,DRO SUD 3,DRO IDF 2,DRO SUD 4,DRO NORD 1,DRO SUD 5,DRO NORD 2,DRO SUD 6,DRO NORD 3,DRO SUD 7,DRO NORD 4,DRO NORD 5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>FRANCE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PFUK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PFUK</label>
+        <sharedTo>
+            <group>GroupePartage_PFUK</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PFUK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ROYAUME UNI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIAE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIAE</label>
+        <sharedTo>
+            <group>GroupePartage_PIAE</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIAE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>EMIRATS ARABES</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIAT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIAT</label>
+        <sharedTo>
+            <group>GroupePartage_PIAT</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>AUTRICHE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIBE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIBE</label>
+        <sharedTo>
+            <group>GroupePartage_PIBE</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIBE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>BELGIQUE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PICH</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PICH</label>
+        <sharedTo>
+            <group>GroupePartage_PICH</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PICH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>SUISSE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PICZ</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PICZ</label>
+        <sharedTo>
+            <group>GroupePartage_PICZ</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PICZ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>REPUBLIQUE TCHEQUE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIDE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIDE</label>
+        <sharedTo>
+            <group>GroupePartage_PIDE</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIDE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ALLEMAGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIES</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIES</label>
+        <sharedTo>
+            <group>GroupePartage_PIES</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIES</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ESPAGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIHU</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIHU</label>
+        <sharedTo>
+            <group>GroupePartage_PIHU</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIHU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>HONGRIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PILU</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PILU</label>
+        <sharedTo>
+            <group>GroupePartage_PILU</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PILU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>LUXEMBOURG</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIMA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIMA</label>
+        <sharedTo>
+            <group>GroupePartage_PIMA</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIMA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>MAROC</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIND</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIND</label>
+        <sharedTo>
+            <group>GroupePartage_PIND</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIND</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>PAYS - BAS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIPL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIPL</label>
+        <sharedTo>
+            <group>GroupePartage_PIPL</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIPL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>POLOGNE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIPT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIPT</label>
+        <sharedTo>
+            <group>GroupePartage_PIPT</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>PORTUGAL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIRL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Partage piste PIRL</description>
+        <label>Partage PIRL</label>
+        <sharedTo>
+            <group>GroupePartage_PIRL</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIRL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>IRLANDE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIRO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIRO</label>
+        <sharedTo>
+            <group>GroupePartage_PIRO</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIRO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ROUMANIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PISK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PISK</label>
+        <sharedTo>
+            <group>GroupePartage_PISK</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>SLOVAQUIE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PISK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PITA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PITA</label>
+        <sharedTo>
+            <group>GroupePartage_PITA</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PITA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ITALIE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_PIZA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage PIZA</label>
+        <sharedTo>
+            <group>GroupePartage_PIZA</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>PIZA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>AFRIQUE DU SUD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_Stricher</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage Stricher</label>
+        <sharedTo>
+            <group>GroupePartage_Zefirent</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Stricher.com</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partage_USA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage USA</label>
+        <sharedTo>
+            <group>GroupePartage_USA</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>PaysRegionPF__c</field>
+            <operation>equals</operation>
+            <value>USA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pays__c</field>
+            <operation>equals</operation>
+            <value>ETATS UNIS D&#39;AMERIQUE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

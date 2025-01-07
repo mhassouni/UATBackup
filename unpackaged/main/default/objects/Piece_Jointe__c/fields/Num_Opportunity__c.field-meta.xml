@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    NOT(ISBLANK(Devis_SAP_CPQ__c)), 
+    Devis_SAP_CPQ__r.Opportunity__r.NumeroOpportunite__c ,   
+      Devis__r.Opportunity.NumeroOpportunite__c 
+)</formula>
+    <label>Numéro de l&#39;opportunité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

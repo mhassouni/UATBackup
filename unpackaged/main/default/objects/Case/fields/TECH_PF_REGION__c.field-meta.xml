@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_PF_REGION__c</fullName>
+    <description>Vrai si la région de l&#39;agence intervenante de la requête est inclus dans la(s) région(s) de l&#39;utilisateur</description>
+    <formula>IF 
+( 
+OR
+(
+AND(Contains( $User.PF_Region__c , text(Agence_Intervenante__r.Region__c) ),NOT(ISBLANK($User.PF_Region__c )),NOT(ISBLANK(Agence_Intervenante__c)),NOT(ISBLANK(Text(Agence_Intervenante__r.Region__c)))) 
+,
+AND(Contains( $User.PF_Region__c , text( Agence_proprietaire__r.Region__c ) ),NOT(ISBLANK($User.PF_Region__c )),NOT(ISBLANK((Agence_proprietaire__c))),NOT(ISBLANK(Text(Agence_proprietaire__r.Region__c))))
+)
+, 
+TRUE 
+, 
+FALSE 
+)</formula>
+    <label>TECH_PF_REGION</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

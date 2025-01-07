@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toute_ma_visibilit_Sites</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NomCommercial__c</columns>
+    <columns>CodePostalExploitation__c</columns>
+    <columns>VilleExploitation__c</columns>
+    <columns>Typologie_du_compte__c</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>CotationPF__c</columns>
+    <columns>Statut__c</columns>
+    <columns>TypeIdentifiantNational__c</columns>
+    <columns>IdentifiantNational__c</columns>
+    <columns>PC_EMAIL</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Site</value>
+    </filters>
+    <label>Toute ma visibilité (Sites)</label>
+</ListView>

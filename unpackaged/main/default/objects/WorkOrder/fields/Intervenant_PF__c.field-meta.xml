@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervenant_PF__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Intervenant PF contact</description>
+    <label>Intervenant PF</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Vous devez choisir un contact de type &quot;Personnel PF&quot; et appartenant à la même agence intervenante de l&#39;ordre de travail.</errorMessage>
+        <filterItems>
+            <field>$Source.Agence_Intervenante__c</field>
+            <operation>equals</operation>
+            <valueField>Contact.Account.Id</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Contact.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Contact - Personnel PF</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Ordres de Travail (Intervenant PF)</relationshipLabel>
+    <relationshipName>OT_PersonnelPF</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

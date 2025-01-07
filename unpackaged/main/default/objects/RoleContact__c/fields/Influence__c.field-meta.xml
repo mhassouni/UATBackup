@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Influence__c</fullName>
+    <label>Influence</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Indifférent</fullName>
+                <default>false</default>
+                <label>Indifférent</label>
+            </value>
+            <value>
+                <fullName>Détracteur</fullName>
+                <default>false</default>
+                <label>Détracteur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

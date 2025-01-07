@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_DNP_Rejet_Statut6</fullName>
+    <active>true</active>
+    <description>Interdire de passer l&#39;opportuntié en statut 6 si la DNP est rejeté</description>
+    <errorConditionFormula>AND
+(
+Text(PaysRegionPF__c)&lt;&gt;  &#39;Reways&#39;
+,
+BEGINS(TEXT(StageName ),&#39;6&#39;)
+,
+TEXT( DNP_Statut__c ) = &#39;Rejetée&#39;
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas passer l&#39;opportunité en statut 6 - Contrat signé si votre demande de numéro de parc est rejetée.</errorMessage>
+</ValidationRule>

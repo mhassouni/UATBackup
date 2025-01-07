@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auvent_Information_complementaires__c</fullName>
+    <inlineHelpText>Merci de préciser la Hauteur + l’avancée</inlineHelpText>
+    <label>Si oui, précisez la hauteur + profondeur</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

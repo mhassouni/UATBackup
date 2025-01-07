@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liste_Agences__c</fullName>
+    <description>Liste des agences de l&#39;utilisateur séparées par une virgule.
+=&gt; Permet de filtrer les enregistrement affichés dans les vues et les rapports.</description>
+    <inlineHelpText>Renseigner les agences de l&#39;utilisateur séparées de virgule pour filtrer les vues et les rapports.</inlineHelpText>
+    <label>Liste Agences</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospects_to_chase_PIAT</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Ville__c</columns>
+    <columns>Statut__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>TypeActivite__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CotationPF__c</columns>
+    <columns>PotentielVehiculesFrigo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Client,Account.Prospect</value>
+    </filters>
+    <filters>
+        <field>PaysRegionPF__c</field>
+        <operation>equals</operation>
+        <value>PIAT</value>
+    </filters>
+    <label>Prospects to chase - PIAT</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Direction_Pays_PIAT_Autriche</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

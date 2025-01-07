@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NotificationOT_ParcAssistance</name>
+    <style>none</style>
+    <subject>Mobilisation d&#39;un parc assistance par une autre agence</subject>
+    <textOnly>Bonjour,
+
+ 
+Dans le cadre de l&#39;intervention {!WorkOrderLineItem.N_Requete__c} réalisée par l&#39;agence {!WorkOrderLineItem.Agence_Intervenante__c} le {!WorkOrderLineItem.CreatedDate}, le parc N° {!WorkOrderLineItem.Parc_Intervention__c} a été utilisé comme véhicule d&#39;intervention.
+
+ 
+Pour plus d&#39;informations, merci de contacter directement l&#39;agence concernée.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

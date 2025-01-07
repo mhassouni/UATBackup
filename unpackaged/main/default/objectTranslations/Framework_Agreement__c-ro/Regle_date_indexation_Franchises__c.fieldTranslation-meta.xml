@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Règle sur la date indexation franchises --></label>
+        <name>Regle_date_indexation_Franchises__c</name>
+        <picklistValues>
+            <masterLabel>01 Janvier</masterLabel>
+            <translation><!-- 01 Janvier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01 Juillet</masterLabel>
+            <translation><!-- 01 Juillet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>à chaque date anniversaire de mise à disposition du véhicule</masterLabel>
+            <translation>la fiecare dată aniversară a disponibilității vehiculului</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

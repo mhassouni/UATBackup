@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_de_reglement__c</fullName>
+    <label>Mode de règlement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B00</fullName>
+                <default>false</default>
+                <label>B00</label>
+            </value>
+            <value>
+                <fullName>CB COMPTANTB31</fullName>
+                <default>false</default>
+                <label>CB COMPTANTB31</label>
+            </value>
+            <value>
+                <fullName>CB 30 J FDM LE 10C00</fullName>
+                <default>false</default>
+                <label>CB 30 J FDM LE 10C00</label>
+            </value>
+            <value>
+                <fullName>CHQ COMPTANTC10</fullName>
+                <default>false</default>
+                <label>CHQ COMPTANTC10</label>
+            </value>
+            <value>
+                <fullName>CHQ 10 JC15</fullName>
+                <default>false</default>
+                <label>CHQ 10 JC15</label>
+            </value>
+            <value>
+                <fullName>CHQ 15 JC30</fullName>
+                <default>false</default>
+                <label>CHQ 15 JC30</label>
+            </value>
+            <value>
+                <fullName>CHQ 30 JC31</fullName>
+                <default>false</default>
+                <label>CHQ 30 JC31</label>
+            </value>
+            <value>
+                <fullName>CHQ 30 J FDM LE 10C3C</fullName>
+                <default>false</default>
+                <label>CHQ 30 J FDM LE 10C3C</label>
+            </value>
+            <value>
+                <fullName>CHQ 30 J FDM LE 5C3F</fullName>
+                <default>false</default>
+                <label>CHQ 30 J FDM LE 5C3F</label>
+            </value>
+            <value>
+                <fullName>CHQ 30 J FDMC3Q</fullName>
+                <default>false</default>
+                <label>CHQ 30 J FDMC3Q</label>
+            </value>
+            <value>
+                <fullName>CHQ 30 J FDM LE 15C45</fullName>
+                <default>false</default>
+                <label>CHQ 30 J FDM LE 15C45</label>
+            </value>
+            <value>
+                <fullName>CHQ 45 JC60</fullName>
+                <default>false</default>
+                <label>CHQ 45 JC60</label>
+            </value>
+            <value>
+                <fullName>CHQ 60 JC61</fullName>
+                <default>false</default>
+                <label>CHQ 60 JC61</label>
+            </value>
+            <value>
+                <fullName>CHQ 60 J FDM LE 10C6F</fullName>
+                <default>false</default>
+                <label>CHQ 60 J FDM LE 10C6F</label>
+            </value>
+            <value>
+                <fullName>CHQ 60 J FDMCF0</fullName>
+                <default>false</default>
+                <label>CHQ 60 J FDMCF0</label>
+            </value>
+            <value>
+                <fullName>CHQ FDMCF4</fullName>
+                <default>false</default>
+                <label>CHQ FDMCF4</label>
+            </value>
+            <value>
+                <fullName>CHQ FDM 45 jCFQ</fullName>
+                <default>false</default>
+                <label>CHQ FDM 45 jCFQ</label>
+            </value>
+            <value>
+                <fullName>CHEQUE FDM LE 15E00</fullName>
+                <default>false</default>
+                <label>CHEQUE FDM LE 15E00</label>
+            </value>
+            <value>
+                <fullName>ESP COMPTANTE30</fullName>
+                <default>false</default>
+                <label>ESP COMPTANTE30</label>
+            </value>
+            <value>
+                <fullName>ESPECES 30 JM3Q</fullName>
+                <default>false</default>
+                <label>ESPECES 30 JM3Q</label>
+            </value>
+            <value>
+                <fullName>MANDAT30 J FDM LE 15P00</fullName>
+                <default>false</default>
+                <label>MANDAT30 J FDM LE 15P00</label>
+            </value>
+            <value>
+                <fullName>PLV COMPTANTP10</fullName>
+                <default>false</default>
+                <label>PLV COMPTANTP10</label>
+            </value>
+            <value>
+                <fullName>PRELEV 10 JP15</fullName>
+                <default>false</default>
+                <label>PRELEV 10 JP15</label>
+            </value>
+            <value>
+                <fullName>PRELEVEMENT 15 JOURSP20</fullName>
+                <default>false</default>
+                <label>PRELEVEMENT 15 JOURSP20</label>
+            </value>
+            <value>
+                <fullName>PLV 20 JP30</fullName>
+                <default>false</default>
+                <label>PLV 20 JP30</label>
+            </value>
+            <value>
+                <fullName>PLV 30 JP31</fullName>
+                <default>false</default>
+                <label>PLV 30 JP31</label>
+            </value>
+            <value>
+                <fullName>PLV 30 J FDM LE 10P3F</fullName>
+                <default>false</default>
+                <label>PLV 30 J FDM LE 10P3F</label>
+            </value>
+            <value>
+                <fullName>PLV 30 J FDMP45</fullName>
+                <default>false</default>
+                <label>PLV 30 J FDMP45</label>
+            </value>
+            <value>
+                <fullName>PLV 45 JP60</fullName>
+                <default>false</default>
+                <label>PLV 45 JP60</label>
+            </value>
+            <value>
+                <fullName>PLV 60 JP61</fullName>
+                <default>false</default>
+                <label>PLV 60 JP61</label>
+            </value>
+            <value>
+                <fullName>PLV 60 J FDM LE 10P6F</fullName>
+                <default>false</default>
+                <label>PLV 60 J FDM LE 10P6F</label>
+            </value>
+            <value>
+                <fullName>PLV 60 J FDMP90</fullName>
+                <default>false</default>
+                <label>PLV 60 J FDMP90</label>
+            </value>
+            <value>
+                <fullName>PLV 90 JPF0</fullName>
+                <default>false</default>
+                <label>PLV 90 JPF0</label>
+            </value>
+            <value>
+                <fullName>PLV FDMPF1</fullName>
+                <default>false</default>
+                <label>PLV FDMPF1</label>
+            </value>
+            <value>
+                <fullName>PLV FDM LE 10PFQ</fullName>
+                <default>false</default>
+                <label>PLV FDM LE 10PFQ</label>
+            </value>
+            <value>
+                <fullName>PRELEVEMENT FDM LE 15V00</fullName>
+                <default>false</default>
+                <label>PRELEVEMENT FDM LE 15V00</label>
+            </value>
+            <value>
+                <fullName>VIR COMPTANTV10</fullName>
+                <default>false</default>
+                <label>VIR COMPTANTV10</label>
+            </value>
+            <value>
+                <fullName>VIREMENT 10 JV12</fullName>
+                <default>false</default>
+                <label>VIREMENT 10 JV12</label>
+            </value>
+            <value>
+                <fullName>VIREMENT 120 JV15</fullName>
+                <default>false</default>
+                <label>VIREMENT 120 JV15</label>
+            </value>
+            <value>
+                <fullName>VIREMENT 15 JV1F</fullName>
+                <default>false</default>
+                <label>VIREMENT 15 JV1F</label>
+            </value>
+            <value>
+                <fullName>VIR 120 J FDMV20</fullName>
+                <default>false</default>
+                <label>VIR 120 J FDMV20</label>
+            </value>
+            <value>
+                <fullName>VIREMENT 20 JV30</fullName>
+                <default>false</default>
+                <label>VIREMENT 20 JV30</label>
+            </value>
+            <value>
+                <fullName>VIR 30 JV31</fullName>
+                <default>false</default>
+                <label>VIR 30 JV31</label>
+            </value>
+            <value>
+                <fullName>VIR 30 J FDM LE 10V3C</fullName>
+                <default>false</default>
+                <label>VIR 30 J FDM LE 10V3C</label>
+            </value>
+            <value>
+                <fullName>VIR 30 J FDM LE 5V3F</fullName>
+                <default>false</default>
+                <label>VIR 30 J FDM LE 5V3F</label>
+            </value>
+            <value>
+                <fullName>VIR 30 J FDMV3Q</fullName>
+                <default>false</default>
+                <label>VIR 30 J FDMV3Q</label>
+            </value>
+            <value>
+                <fullName>VIR 30 J FDM LE 15V3V</fullName>
+                <default>false</default>
+                <label>VIR 30 J FDM LE 15V3V</label>
+            </value>
+            <value>
+                <fullName>VIR 30 J FDM LE 25V45</fullName>
+                <default>false</default>
+                <label>VIR 30 J FDM LE 25V45</label>
+            </value>
+            <value>
+                <fullName>VIR 45 JV60</fullName>
+                <default>false</default>
+                <label>VIR 45 JV60</label>
+            </value>
+            <value>
+                <fullName>VIR 60 JV61</fullName>
+                <default>false</default>
+                <label>VIR 60 JV61</label>
+            </value>
+            <value>
+                <fullName>VIR 60 J FDM LE 10V62</fullName>
+                <default>false</default>
+                <label>VIR 60 J FDM LE 10V62</label>
+            </value>
+            <value>
+                <fullName>VIR 60 J FDM LE 20V65</fullName>
+                <default>false</default>
+                <label>VIR 60 J FDM LE 20V65</label>
+            </value>
+            <value>
+                <fullName>VIR 60 J FDM LE 5V6F</fullName>
+                <default>false</default>
+                <label>VIR 60 J FDM LE 5V6F</label>
+            </value>
+            <value>
+                <fullName>VIR 60 J FDMV90</fullName>
+                <default>false</default>
+                <label>VIR 60 J FDMV90</label>
+            </value>
+            <value>
+                <fullName>VIR 90 JV9F</fullName>
+                <default>false</default>
+                <label>VIR 90 JV9F</label>
+            </value>
+            <value>
+                <fullName>VIR 90 J FDMVF1</fullName>
+                <default>false</default>
+                <label>VIR 90 J FDMVF1</label>
+            </value>
+            <value>
+                <fullName>VIR FDM LE 10VF4</fullName>
+                <default>false</default>
+                <label>VIR FDM LE 10VF4</label>
+            </value>
+            <value>
+                <fullName>VIR FDM 45 jVFQ</fullName>
+                <default>false</default>
+                <label>VIR FDM 45 jVFQ</label>
+            </value>
+            <value>
+                <fullName>VIREMENT FDM LE 15X3F</fullName>
+                <default>false</default>
+                <label>VIREMENT FDM LE 15X3F</label>
+            </value>
+            <value>
+                <fullName>COMPENSATION 30 J FDM</fullName>
+                <default>false</default>
+                <label>COMPENSATION 30 J FDM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

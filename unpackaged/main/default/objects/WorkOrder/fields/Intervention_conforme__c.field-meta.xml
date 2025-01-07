@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervention_conforme__c</fullName>
+    <formula>if
+(
+AND
+(
+Text(Status) = &#39;Terminé&#39;
+,
+Duree_Intervention__c &lt;&gt; 0
+,
+NOT(ISBLANK(Duree_Intervention__c ))
+,
+NOT(ISBLANK(Date_Heure_Depart__c ))
+,
+NOT(ISBLANK(Date_Heure_Arrivee__c ))
+,
+NOT(ISBLANK(Date_Heure_Fin__c ))
+,
+NOT(ISBLANK(text(Origine__c )))
+,
+NOT(ISBLANK(text(type_OE__c )))
+,
+NOT(ISBLANK(text(Anomalie__c )))
+
+)
+,
+true
+,
+false
+)</formula>
+    <label>Intervention conforme</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

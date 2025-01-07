@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_requ_tes_en_cours</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Statut__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Requete_en_attente__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>09 - Mes Requêtes En Attente</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirectionGenerale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

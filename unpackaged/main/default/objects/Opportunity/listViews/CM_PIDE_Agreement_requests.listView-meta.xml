@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_PIDE_Agreement_requests</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>PaysRegionPF__c</columns>
+    <columns>AgencePF__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Agrement__c</columns>
+    <columns>Agrement_demande__c</columns>
+    <columns>LoyerMensuel__c</columns>
+    <columns>Quantite__c</columns>
+    <columns>DureeContrat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Opportunit_Container_INTER</value>
+    </filters>
+    <label>CM - PIDE - Antrag auf Genehmigung</label>
+    <sharedTo>
+        <group>CreditManagement</group>
+    </sharedTo>
+</ListView>

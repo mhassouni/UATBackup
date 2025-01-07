@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsApprovalNeeded__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( QLGAverageCustomerDiscount__c &lt; 0.05, &quot;Pas d&#39;approbation&quot;, if(AND(QLGAverageCustomerDiscount__c &gt;= 0.05,QLGAverageCustomerDiscount__c &lt;= 0.1),&quot;Manager&quot;, &quot;Directeur&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Niveau d&#39;approbation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

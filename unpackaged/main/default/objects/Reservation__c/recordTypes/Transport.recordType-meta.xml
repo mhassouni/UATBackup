@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transport</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Reservation_Transport</compactLayoutAssignment>
+    <description>Transport (Aller ou Retour)</description>
+    <label>Transport</label>
+    <picklistValues>
+        <picklist>Motif_Transport_inutile__c</picklist>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%27emplacement n%27est pas disponible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le client n%27a pas été informé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le container contient de la marchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le container est encore branché</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le site n%27est pas accessible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manque de matériels pour installation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Annulée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente de planification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planifiée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Atelier__c</picklist>
+        <values>
+            <fullName>Apres location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avant location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_location__c</picklist>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relais</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_transport__c</picklist>
+        <values>
+            <fullName>Déplacement container client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Echange technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabrication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intersites</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Aller vers client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Amont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Retour vers atelier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport divers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport inutile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

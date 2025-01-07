@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_OPP_ContratSigne_N_Client</fullName>
+    <active>true</active>
+    <description>N° Client obligatoire pour passer en staut 6</description>
+    <errorConditionFormula>AND
+(
+$Setup.Bypass__c.BypassValidationRules__c =false,
+ LEFT(text( StageName ), 1) = &#39;6&#39;
+,
+ISBLANK( N_Client__c )
+,
+ TEXT(PaysRegionPF__c) &lt;&gt; &#39;USA&#39;
+,
+ RecordType.Id =  $Label.OPP_RecordType_Vehicule_ENCOURS_15 
+)</errorConditionFormula>
+    <errorDisplayField>N_Client__c</errorDisplayField>
+    <errorMessage>Le numéro de client est obligatoire pour passer en statut 6.</errorMessage>
+</ValidationRule>

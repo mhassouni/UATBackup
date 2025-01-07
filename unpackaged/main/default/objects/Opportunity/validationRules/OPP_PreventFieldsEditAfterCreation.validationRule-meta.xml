@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_PreventFieldsEditAfterCreation</fullName>
+    <active>false</active>
+    <description>Le champ Vue commerciale client est non éditable pour tous les profils sauf admin.</description>
+    <errorConditionFormula>AND(
+$Setup.Bypass__c.BypassValidationRules__c =false,
+    ISCHANGED(SalesAreaData__c),
+    NOT(ISNEW()),
+    NOT($Profile.Name = &quot;PF Administrateur Système&quot;)
+)</errorConditionFormula>
+    <errorMessage>Ce champ ne peut pas être modifié après la création de l&#39;enregistrement.</errorMessage>
+</ValidationRule>

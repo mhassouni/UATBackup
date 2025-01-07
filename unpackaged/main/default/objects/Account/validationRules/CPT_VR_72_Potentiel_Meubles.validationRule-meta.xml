@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR_72_Potentiel_Meubles</fullName>
+    <active>true</active>
+    <description>Cocher &quot;Exclusif&quot; uniquement si TOUT le parc du client est fourni par PETIT FORESTIER (Pas de propriété,pas d&#39;autre loueur,...)</description>
+    <errorConditionFormula>AND 
+( 
+ISCHANGED( Exclusif_Meubles__c ) , 
+PRIORVALUE( Exclusif_Meubles__c ) = FALSE, 
+Exclusif_Meubles__c = TRUE, 
+PotentielMeubles__c != 0 
+)</errorConditionFormula>
+    <errorDisplayField>Exclusif_Meubles__c</errorDisplayField>
+    <errorMessage>Cocher &quot;Exclusif&quot; uniquement si TOUT le parc du client (meubles) est fourni par PETIT FORESTIER (Pas de propriété,pas d&#39;autre loueur,...)</errorMessage>
+</ValidationRule>

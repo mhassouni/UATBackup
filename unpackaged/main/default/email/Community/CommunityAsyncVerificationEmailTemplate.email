@@ -1,0 +1,8 @@
+Bonjour {!Receiving_User.FirstName},
+
+Pour vérifier l'adresse e-mail que vous utilisez avec {!Community.Name}, cliquez sur ce lien :
+
+{!EmailVerify.Url}
+
+Merci,
+{!Organization.Name}

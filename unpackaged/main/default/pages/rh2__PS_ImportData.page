@@ -1,0 +1,220 @@
+<apex:page controller="rh2.PS_ImportDataController" title="Rollup Helper Export"  sidebar="false"  applyBodyTag="false" docType="html-5.0" showHeader="true">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">	 
+	 <head>
+      
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
+	  <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" /> 
+      <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+	  <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
+	  <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" /> 
+    	<style>
+    		.pageNumber {
+				margin: 4px;
+				display: inline;
+			}
+    	</style>
+     </head>
+     
+     <script type="text/javascript">
+    
+        $(document).ready(function(){
+			selectBreadcrumb_HS();
+
+			if(window.localStorage.getItem('expSortField') == null || window.localStorage.getItem('expSortDirection') == null){
+				window.localStorage.setItem('expSortField', 'targetField__c');
+				window.localStorage.setItem('expSortDirection', 'asc');
+			}
+			if(window.localStorage.getItem('encodeUTF8') == null){
+				window.localStorage.setItem('encodeUTF8', 'false');
+			}
+			sortRollups(window.localStorage.getItem('expSortField'), window.localStorage.getItem('expSortDirection'), window.localStorage.getItem('encodeUTF8'));
+        });
+
+        function replacePageRefDL(encodeUTF8){
+			var exportURL = "PS_ExportFile?utf8="+encodeUTF8;
+            if(window.location.replace){     
+                window.location.replace(exportURL);
+            } else { 
+                window.location.href=exportURL;
+            }
+		}   
+				
+		function saveSort(sortField, sortDirection){
+            window.localStorage.setItem('expSortField', sortField);
+            window.localStorage.setItem('expSortDirection', sortDirection);
+		}
+		
+		function saveDownloadPreferences(encodeUTF8){
+			window.localStorage.setItem('encodeUTF8', encodeUTF8);
+		}
+    
+    </script>
+    
+     <body>
+		 <apex:slds />
+    	<apex:form >
+			<apex:actionFunction name="sortRollups" action="{!doSettingSort}" reRender="rollupTable" status="loading">
+				<apex:param name="fieldSort" value="" assignTo="{!sortVars.sortField}"/>
+				<apex:param name="directionSort" value="" assignTo="{!sortVars.sortDirection}"/>
+				<apex:param name="encodeUTF8" value="" assignTo="{!encodeUTF8}"/>
+			</apex:actionFunction>
+		  <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
+		<div class="slds-scope">
+			<apex:pageBlock rendered="{!!hasVisibilityToExportRollupsObject}">
+			<div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+				<span class="slds-assistive-text">error</span>
+				<span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small">
+					<svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+					<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#error"></use>
+					</svg>
+				</span>
+				<apex:outputText >{!$Label.rh2__TheRollupHelperAllAccess}</apex:outputText>
+			</div>
+			</apex:pageBlock>
+		</div>
+	 	<apex:actionFunction action="{!deleteAllExportedRollups}" name="deleteExportedRollupAF" rerender="none;" status="loading"/>
+	 	<div class="slds-scope" role="main"> 	  
+	 		<div class="slds-card grayBackground">
+  				<header class="slds-card__header">
+	       			<nav role="navigation">
+    					<ol class="slds-breadcrumb slds-list_horizontal">
+    						<li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__Home}</a></li>
+                			<li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__AllRollupSetting}</a></li>
+     					</ol>
+        			</nav>
+  				</header>
+			</div>
+
+			<apex:outputPanel id="allAccessPermSetMessage">
+				<apex:outputPanel rendered="{!!currentUserAssignedAllAccessPermissionSet}">
+					<div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+						{!$Label.rh2__ExportRollupWithoutAllAccessPermissionSet}
+					</div>
+					<br/><br/>
+				</apex:outputPanel>
+			</apex:outputPanel>
+
+			<div class="slds-card grayBackground">
+				<header class="slds-card__header slds-grid">
+					<div class="slds-media__body">
+					   <h3 class="slds-text-heading_medium slds-truncate">{!$Label.rh2__SelectRollupsForExport}</h3>
+					 </div>
+				</header>
+				<section class="slds-card__body">
+					<apex:outputPanel id="selectButtons" style="float:right;padding-right:15px;">
+						<apex:outputPanel rendered="{!hasVisibilityToExportRollupsObject}" style="margin-right:50px;">
+							{!$Label.UseUTF8Encoding}&nbsp;&nbsp;
+							<apex:inputCheckbox id="encodeUTF8Checkbox" value="{!encodeUTF8}">
+								<apex:actionSupport event="onchange" oncomplete="saveDownloadPreferences('{!encodeUTF8}');" status="loading" rerender="none"/>
+							</apex:inputCheckbox>
+						</apex:outputPanel>
+						<apex:outputPanel rendered="{!IsDLRSInstalled}">
+							<span title="{!$Label.rh2__ExistingDLRSSettings}">
+								<apex:outputLink value="{!URLFOR($Page.rh2__PS_Convert_Rollups)}" styleClass="slds-button slds-button_brand">
+									{!$Label.rh2__ConvertDLRSToRollups}
+								</apex:outputLink>
+							</span>&nbsp;&nbsp;&nbsp;
+						</apex:outputPanel>
+						<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__ExportSelected}" disabled="{!allSelectedRollups.size = 0}" action="{!regExport}" oncomplete="replacePageRefDL('{!encodeUTF8}');" rerender="none" status="loading" rendered="{!hasVisibilityToExportRollupsObject}"/>
+						&nbsp;
+						<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__ExportAll}"  action="{!allExport}" oncomplete="replacePageRefDL('{!encodeUTF8}');" rerender="none" status="loading" rendered="{!hasVisibilityToExportRollupsObject}"/>
+					</apex:outputPanel>
+					<br/>
+					<apex:outputPanel id="rollupTable">
+						<apex:outputPanel style="width:100%;" id="rollupExport">
+							<div>
+								<c:Paginate pageController="{!rollupPaginateController}" renderedComponent="rollupTable"/>
+							</div>
+						</apex:outputPanel>
+						<table class="slds-table slds-table_bordered hideFullColumn" id="allRollups">
+							<thead>
+								<tr style="width:100%;">
+									<th class="slds-text-heading_label" style="width:5%;">
+										<apex:commandLink action="{!toggleAllSelect}" rerender="rollupTable, selectButtons" status="loading" id="allSelect">
+											<apex:inputCheckbox value="{!allSelectCheck}" />
+											<span class="slds-form-element__label slds-assistive-text">{!$Label.rh2__SelectAll}</span>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__Label}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="RollupLabel__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='RollupLabel__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__RelationshipField}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="relationshipField__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='relationshipField__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__SourceField}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="sourceField__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='sourceField__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+										</th>
+									<th class="slds-text-heading_label" scope="col" style="width:5%;">
+										<apex:commandLink value="{!$Label.rh2__Logic}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="Logic__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='Logic__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__Condition}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="condition__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='condition__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__ParentCondition}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+											<apex:param name="sortField" value="parentCondition__c" assignTo="{!sortVars.sortField}"/>
+											<apex:outputText value="{!IF(sortVars.sortField=='parentCondition__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+									<th class="slds-text-heading_label" scope="col" style="width:15%;">
+										<apex:commandLink value="{!$Label.rh2__TargetField}" action="{! doSettingSort }" oncomplete="saveSort('{!sortVars.sortField}', '{!sortVars.sortDirection}');" rerender="rollupTable" status="loading">
+										<apex:param name="sortField" value="targetField__c" assignTo="{!sortVars.sortField}"/>
+										<apex:outputText value="{!IF(sortVars.sortField=='targetField__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<apex:repeat value="{!paginatedListForRollups}" var="item">
+								<tr> 
+									<td style="width:5%;">
+										<apex:inputCheckbox value="{!item.selected}" id="inputId">
+											<apex:actionSupport event="onchange" rerender="selectButtons"/>
+										</apex:inputCheckbox>
+									</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__Label}" style="width:15%;word-break:break-all;">{! item.ds.rh2__RollupLabel__c}</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__RelationshipField}" style="width:15%;word-break:break-all;">{! item.ds.rh2__relationshipField__c}</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__SourceField}" style="width:15%;word-break:break-all;">{! item.ds.rh2__sourceField__c }</td>
+									<td data-label="{!$Label.rh2__Type}" style="width:5%;word-break:break-all;">{! item.ds.rh2__logic__c }</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__Condition}" style="width:15%;word-break:break-all;">
+										<apex:outputLink value="{!URLFOR($Page.rh2__PS_DefineFilter, null, [f=item.ds.rh2__condition__c])}">
+											{! item.filterLabel }
+										</apex:outputLink>
+									</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__ParentCondition}" style="width:15%;word-break:break-all;">
+										<apex:outputLink value="{!URLFOR($Page.rh2__PS_DefineFilter, null, [f=item.ds.rh2__parentCondition__c])}">
+											{! item.parentFilterLabel }
+										</apex:outputLink>
+									</td>
+									<td class="slds-cell-wrap" data-label="{!$Label.rh2__TargetField}" style="width:15%;word-break:break-all;">{! item.ds.targetField__c }</td>
+								</tr>
+								</apex:repeat>
+							</tbody>
+						</table>
+					</apex:outputPanel>
+				</section>
+			</div>
+			<c:Loading_Spinner opacity="1"/>
+      	</div>
+      	<br/>
+      	<c:PS_additionalInformation ></c:PS_additionalInformation>  
+      	</apex:form>
+      </body>
+</html>
+</apex:page>

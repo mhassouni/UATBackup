@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Caution_dpt_de_garantie_if_CD</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND ( NOT( ISNEW() ),
+				ISPICKVAL(Type_de_location__c, &quot;Courte Durée&quot;),
+			OR(
+							ISCHANGED(Mois_caution__c),
+							ISCHANGED(Dpt_garantie__c),
+							ISCHANGED(Si_autres_precisez__c),
+							ISCHANGED(Indexation__c )))</errorConditionFormula>
+    <errorMessage>Ce devis est &quot;Courte Durée&quot;. Vous n&#39;êtes pas autorisé à modifier les valeurs pour la caution ou le dépot de garantie.</errorMessage>
+</ValidationRule>

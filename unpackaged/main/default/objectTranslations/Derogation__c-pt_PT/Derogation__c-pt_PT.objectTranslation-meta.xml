@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Isenção</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Isenções</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Dérogation contractuelle - DRAFT</layout>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- Franchise et Assurance --></label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- LD Gratuit / Mulet --></label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Règlement et conditions --></label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation contractuelle - En cours</layout>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Franchise et Assurance --></label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- LD Gratuit / Mulet --></label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Règlement et conditions --></label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation contractuelle - Lecture seule</layout>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Franchise et Assurance --></label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- LD Gratuit / Mulet --></label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Règlement et conditions --></label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - DRAFT</layout>
+        <sections>
+            <label><!-- DDT Rate versus Dérogation Rate --></label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - En cours</layout>
+        <sections>
+            <label><!-- Amendement Head Office --></label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label><!-- DDT Rate versus Dérogation Rate --></label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dérogation tarifaire - Lecture seule</layout>
+        <sections>
+            <label><!-- Amendement Head Office --></label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label><!-- DDT Rate versus Dérogation Rate --></label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Dérogation</layout>
+        <sections>
+            <label><!-- Amendement Head Office --></label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- DDT Rate versus Dérogation Rate --></label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Franchise et Assurance --></label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- LD Gratuit / Mulet --></label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Règlement et conditions --></label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Dérogation - Lecture seule</layout>
+        <sections>
+            <label><!-- Amendement Head Office --></label>
+            <section>Amendement Head Office</section>
+        </sections>
+        <sections>
+            <label><!-- Contract terms --></label>
+            <section>Contract terms</section>
+        </sections>
+        <sections>
+            <label><!-- DDT Rate versus Dérogation Rate --></label>
+            <section>DDT Rate versus Dérogation Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Franchise et Assurance --></label>
+            <section>Franchise et Assurance</section>
+        </sections>
+        <sections>
+            <label><!-- Informations de base --></label>
+            <section>Informations de base</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- LD Gratuit / Mulet --></label>
+            <section>LD Gratuit / Mulet</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Nouvelle section --></label>
+            <section>Nouvelle section</section>
+        </sections>
+        <sections>
+            <label><!-- Règlement et conditions --></label>
+            <section>Règlement et conditions</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de isenção</nameFieldLabel>
+    <quickActions>
+        <label><!-- Conditions Déro --></label>
+        <name>Conditions_Dero</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Synchroniser --></label>
+        <name>Synchroniser</name>
+    </quickActions>
+    <recordTypes>
+        <label>Derrogação</label>
+        <name>Derogation</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Derrogação - Somente leitura</label>
+        <name>Derogation_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Derogação contratual - DRAFT</label>
+        <name>Derogation_contractuelle_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dérogation contractuelle - En cours --></label>
+        <name>Derogation_contractuelle_En_cours</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dérogation contractuelle - Lecture seule --></label>
+        <name>Derogation_contractuelle_Lecture_seule</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Derogação tarifária - DRAFT</label>
+        <name>Derogation_tarifaire_DRAFT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dérogation tarifaire - En Cours --></label>
+        <name>Derogation_tarifaire_En_Cours</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dérogation tarifaire - Lecture seule --></label>
+        <name>Derogation_tarifaire_Lecture_seule</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- La demande de dérogation doit se faire via le bouton Soumettre pour approbation --></errorMessage>
+        <name>VR_Bloquer_le_passage_au_statut_Demande</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Un loyer doit être sélectionné avant de créer une dérogation tarifaire --></errorMessage>
+        <name>VR_WFC_Conditions_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous ne pouvez pas synchroniser la dérogation si elle est pas en statut acceptée ou amendée --></errorMessage>
+        <name>VR_WFC_Conditions_Synchro_Dero_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vous n&apos;étes pas autorisé à modifier le statut de la dérogation. --></errorMessage>
+        <name>VR_WFC_Modification_Statut_Bloque</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,1462 @@
+[
+    {
+        "Name": "--None--",
+        "Path": "--None--",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "ISO Alpha 2 Char Country Code",
+        "Path": "organization.countryISOAlpha2Code",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Company Move Indicator",
+        "Path": "organization.hasCompanyMoved",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Primary Business Name",
+        "Path": "organization.primaryName",
+        "isRequired": "No"
+    },
+    {
+        "Name": "D-U-N-S Number",
+        "Path": "organization.duns",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Contracts Indicator",
+        "Path": "organization.awards.hasContracts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Debts Indicator",
+        "Path": "organization.awards.hasDebts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Grants Indicator",
+        "Path": "organization.awards.hasGrants",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Loans Indicator",
+        "Path": "organization.awards.hasLoans",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Contracts Indicator",
+        "Path": "organization.awards.hasOpenContracts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Debts Indicator",
+        "Path": "organization.awards.hasOpenDebts",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Grants Indicator",
+        "Path": "organization.awards.hasOpenGrants",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Loans Indicator",
+        "Path": "organization.awards.hasOpenLoans",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Active Exclusions Indicator",
+        "Path": "organization.exclusions.hasActiveExclusions",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Inactive Exclusions Indicator",
+        "Path": "organization.exclusions.hasInactiveExclusions",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Indicator",
+        "Path": "organization.financingEvents.hasFinancingEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Letter of Agreement Indicator",
+        "Path": "organization.financingEvents.hasLetterOfAgreement",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Letter Of Liability Indicator",
+        "Path": "organization.financingEvents.hasLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Financial Events Indicator",
+        "Path": "organization.financingEvents.hasOpenFinancingEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Letter Of Liability Indicator",
+        "Path": "organization.financingEvents.hasOpenLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Secured Filings Indicator",
+        "Path": "organization.financingEvents.hasOpenSecuredFilings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financing Events Removed Letter of Liability Indicator",
+        "Path": "organization.financingEvents.hasRemovedLetterOfLiability",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Secured Filings Indicator",
+        "Path": "organization.financingEvents.hasSecuredFilings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Bankruptcy Indicator",
+        "Path": "organization.legalEvents.hasBankruptcy",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Claims Indicator",
+        "Path": "organization.legalEvents.hasClaims",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Criminal Proceedings Indicator",
+        "Path": "organization.legalEvents.hasCriminalProceedings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Debarments Indicator",
+        "Path": "organization.legalEvents.hasDebarments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Embarrassment Indicator",
+        "Path": "organization.legalEvents.hasFinancialEmbarrassment",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Legal Events Insolvency Indicator",
+        "Path": "organization.legalEvents.hasInsolvency",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Judgments Indicator",
+        "Path": "organization.legalEvents.hasJudgments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Indicator",
+        "Path": "organization.legalEvents.hasLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Liens Indicator",
+        "Path": "organization.legalEvents.hasLiens",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Liquidation Indicator",
+        "Path": "organization.legalEvents.hasLiquidation",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Open Bankruptcy Indicator",
+        "Path": "organization.legalEvents.hasOpenBankruptcy",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Claims Indicator",
+        "Path": "organization.legalEvents.hasOpenClaims",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Criminal Proceedings Indicator",
+        "Path": "organization.legalEvents.hasOpenCriminalProceedings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Debarments Indicator",
+        "Path": "organization.legalEvents.hasOpenDebarments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Financial Embarrassment Indicator",
+        "Path": "organization.legalEvents.hasOpenFinancialEmbarrassment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Judgments Indicator",
+        "Path": "organization.legalEvents.hasOpenJudgments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Legal Events Indicator",
+        "Path": "organization.legalEvents.hasOpenLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Open Liens Indicator",
+        "Path": "organization.legalEvents.hasOpenLiens",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Open Suits Indicator",
+        "Path": "organization.legalEvents.hasOpenSuits",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Other Legal Events Indicator",
+        "Path": "organization.legalEvents.hasOtherLegalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Suits Indicator",
+        "Path": "organization.legalEvents.hasSuits",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Legal Events Suspension of Payments Indicator",
+        "Path": "organization.legalEvents.hasSuspensionOfPayments",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Burglary Events Indicator",
+        "Path": "organization.significantEvents.hasBurglaryOccured",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Discontinued Indicator",
+        "Path": "organization.significantEvents.hasBusinessDiscontinued",
+        "isRequired": "No"
+    },
+    {
+        "Name": "CEO Change Indicator",
+        "Path": "organization.significantEvents.hasCEOChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Control Change Indicator",
+        "Path": "organization.significantEvents.hasControlChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Disaster Special Events Indicator",
+        "Path": "organization.significantEvents.hasDisastrousEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Fire Events Indicator",
+        "Path": "organization.significantEvents.hasFireOccurred",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Name Change Indicator",
+        "Path": "organization.significantEvents.hasNameChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Operational Special Events Indicator",
+        "Path": "organization.significantEvents.hasOperationalEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Partner Change Indicator",
+        "Path": "organization.significantEvents.hasPartnerChange",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Other Special Events Indicator",
+        "Path": "organization.significantEvents.hasSignificantEvents",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Canada Environmental Agency Violations Indicator",
+        "Path": "organization.violations.hasCAEnvironmentalViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Environmental Protection Agency Violations Indicator",
+        "Path": "organization.violations.hasEPAViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Government Control List Citations Indicator",
+        "Path": "organization.violations.hasGCLCitations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Occupational Safety and Health Administration Violations Indicator",
+        "Path": "organization.violations.hasOSHAViolations",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Accountant Name",
+        "Path": "organization.latestFinancials.accountantName",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Accountant Opinions Description",
+        "Path": "organization.latestFinancials.accountantOpinions[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Accountant Opinions Code",
+        "Path": "organization.latestFinancials.accountantOpinions[0].dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Approval Date",
+        "Path": "organization.latestFinancials.approvalDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Comments Description",
+        "Path": "organization.latestFinancials.comments[0].description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Comments Code",
+        "Path": "organization.latestFinancials.comments[0].dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Currency",
+        "Path": "organization.latestFinancials.currency",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Data Provider Text",
+        "Path": "organization.latestFinancials.dataProvider.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Data Provider Code",
+        "Path": "organization.latestFinancials.dataProvider.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Delivery Method Text",
+        "Path": "organization.latestFinancials.deliveryMethod.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Delivery Method Code",
+        "Path": "organization.latestFinancials.deliveryMethod.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Explanations Text",
+        "Path": "organization.latestFinancials.explanations[0].description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Explanations Code",
+        "Path": "organization.latestFinancials.explanations[0].dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Explanations Description Type",
+        "Path": "organization.latestFinancials.explanations[0].typeDescription",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Explanations Description Type Code",
+        "Path": "organization.latestFinancials.explanations[0].typeDnBCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Filing Date",
+        "Path": "organization.latestFinancials.filingDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Group Level",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.itemGroupLevel",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Key Text",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.itemKey.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Key Code",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.itemKey.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Priority",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.priority",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Industry Rank",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.relativeIndustryRank",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Ratios Statement Item Value",
+        "Path": "organization.latestFinancials.financialRatios.statementItems.value",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financial Statement Duration",
+        "Path": "organization.latestFinancials.financialStatementDuration",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financial Statement From Date",
+        "Path": "organization.latestFinancials.financialStatementFromDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financial Statement To Date",
+        "Path": "organization.latestFinancials.financialStatementToDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Partial Information",
+        "Path": "organization.latestFinancials.hasPartialInformation",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Header Text",
+        "Path": "organization.latestFinancials.headerDescription",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Information Scope Text",
+        "Path": "organization.latestFinancials.informationScope.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Information Scope Code",
+        "Path": "organization.latestFinancials.informationScope.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Information Source Name",
+        "Path": "organization.latestFinancials.informationSourceIndividual.fullName",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Information Source Title",
+        "Path": "organization.latestFinancials.informationSourceIndividual.title",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Audit Unknown indicator",
+        "Path": "organization.latestFinancials.isAuditUnknown",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Audit Indicator",
+        "Path": "organization.latestFinancials.isAudited",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Final Indicator",
+        "Path": "organization.latestFinancials.isFinal",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Fiscal Indicator",
+        "Path": "organization.latestFinancials.isFiscal",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Forecast Indicator",
+        "Path": "organization.latestFinancials.isForecasted",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Interim Indicator",
+        "Path": "organization.latestFinancials.isInterim",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Opening Indicator",
+        "Path": "organization.latestFinancials.isOpening",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Pro forma Indicator",
+        "Path": "organization.latestFinancials.isProforma",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Audit Qualified Indicator",
+        "Path": "organization.latestFinancials.isQualified",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Re-stated Indicator",
+        "Path": "organization.latestFinancials.isRestated",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Signed Indicator",
+        "Path": "organization.latestFinancials.isSigned",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Trial Balance Indicator",
+        "Path": "organization.latestFinancials.isTrialBalance",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Unbalanced Indicator",
+        "Path": "organization.latestFinancials.isUnbalanced",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Last Update Date",
+        "Path": "organization.latestFinancials.lastUpdateDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Management Interview",
+        "Path": "organization.latestFinancials.managementInterview",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Source Text",
+        "Path": "organization.latestFinancials.nonSpecificSource.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Non-Specific Source Code",
+        "Path": "organization.latestFinancials.nonSpecificSource.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Reason Text",
+        "Path": "organization.latestFinancials.notAuditedReason.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Not Audited Reason Code",
+        "Path": "organization.latestFinancials.notAuditedReason.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Accounts Payable",
+        "Path": "organization.latestFinancials.overview.accountsPayable",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Accounts Receivable",
+        "Path": "organization.latestFinancials.overview.accountsReceivable",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Acid Test Ratio",
+        "Path": "organization.latestFinancials.overview.acidTestRatio",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Capital Stock",
+        "Path": "organization.latestFinancials.overview.capitalStock",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Cash and Other Liquid Assets",
+        "Path": "organization.latestFinancials.overview.cashAndLiquidAssets",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Cost of Sales",
+        "Path": "organization.latestFinancials.overview.costOfSales",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Current Liability Over Net Worth",
+        "Path": "organization.latestFinancials.overview.currentLiabilitiesOverNetWorth",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Current Ratio",
+        "Path": "organization.latestFinancials.overview.currentRatio",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Dividends and Withdrawals",
+        "Path": "organization.latestFinancials.overview.dividends",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Fixed Assets",
+        "Path": "organization.latestFinancials.overview.fixedAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Gross Income",
+        "Path": "organization.latestFinancials.overview.grossProfit",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Intangible Assets",
+        "Path": "organization.latestFinancials.overview.intangibleAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Inventory",
+        "Path": "organization.latestFinancials.overview.inventory",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Long Term Debt",
+        "Path": "organization.latestFinancials.overview.longTermDebt",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Net Assets",
+        "Path": "organization.latestFinancials.overview.netAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Net Income",
+        "Path": "organization.latestFinancials.overview.netIncome",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Total Equity Amount",
+        "Path": "organization.latestFinancials.overview.netWorth",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Operating Profit",
+        "Path": "organization.latestFinancials.overview.operatingProfit",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Other Current Liabilities",
+        "Path": "organization.latestFinancials.overview.otherCurrentLiabilities",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Other Receivables",
+        "Path": "organization.latestFinancials.overview.otherReceivables",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Profit or Loss Before Tax",
+        "Path": "organization.latestFinancials.overview.profitBeforeTaxes",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Latest Financials Quick Ratio",
+        "Path": "organization.latestFinancials.overview.quickRatio",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Retained Earnings",
+        "Path": "organization.latestFinancials.overview.retainedEarnings",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Sales Revenue Amount",
+        "Path": "organization.latestFinancials.overview.salesRevenue",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Tangible Assets",
+        "Path": "organization.latestFinancials.overview.tangibleAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Tangible Net Worth Amount",
+        "Path": "organization.latestFinancials.overview.tangibleNetWorth",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Assets Amount",
+        "Path": "organization.latestFinancials.overview.totalAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Current Assets",
+        "Path": "organization.latestFinancials.overview.totalCurrentAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Current Liabilities",
+        "Path": "organization.latestFinancials.overview.totalCurrentLiabilities",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Indebtedness",
+        "Path": "organization.latestFinancials.overview.totalIndebtedness",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Liabilities",
+        "Path": "organization.latestFinancials.overview.totalLiabilities",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Liabilities and Equity",
+        "Path": "organization.latestFinancials.overview.totalLiabilitiesEquity",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Liabilities Over Net Worth",
+        "Path": "organization.latestFinancials.overview.totalLiabilitiesOverNetWorth",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Long Term Assets",
+        "Path": "organization.latestFinancials.overview.totalLongTermAssets",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Total Long Term Liabilities",
+        "Path": "organization.latestFinancials.overview.totalLongTermLiabilities",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Working Capital",
+        "Path": "organization.latestFinancials.overview.workingCapital",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Received Timestamp",
+        "Path": "organization.latestFinancials.overview.receivedTimestamp",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Statement Reliability Text",
+        "Path": "organization.latestFinancials.overview.reliability.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Statement Reliability Code",
+        "Path": "organization.latestFinancials.overview.reliability.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Statement Template Description",
+        "Path": "organization.latestFinancials.overview.statementTemplate.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Statement Template Code",
+        "Path": "organization.latestFinancials.overview.statementTemplate.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Latest Financials Units",
+        "Path": "organization.latestFinancials.units",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms Calculation Date Time",
+        "Path": "organization.delinquencyScoreNorms[0].calculationTimestamp",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms National Percentile Norms Lower Quartile",
+        "Path": "organization.delinquencyScoreNorms[0].industryNorms.nationalPercentileNorms.lowerQuartileScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms National Percentile Norms Median",
+        "Path": "organization.delinquencyScoreNorms[0].industryNorms.nationalPercentileNorms.medianScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms National Percentile Norms Upper Quartile",
+        "Path": "organization.delinquencyScoreNorms[0].industryNorms.nationalPercentileNorms.upperQuartileScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms Date",
+        "Path": "organization.delinquencyScoreNorms[0].industryNorms.normsDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Delinquency Score Norms Key",
+        "Path": "organization.delinquencyScoreNorms[0].industryNorms.normsKey",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Date",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.assessmentDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Assessment Date",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.assessmentDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Currency",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.currency",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Average Value",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.averageRecommendedLimit.value",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Comment Text",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.comment.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Comment Code",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.comment.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Maximum Currency",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.currency",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Credit Limit Recommendation Maximum Value",
+        "Path": "organization.dnbAssessment.creditLimitRecommendation.maximumRecommendedLimit.value",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Class Score",
+        "Path": "organization.dnbAssessment.delinquencyScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Class Score Text",
+        "Path": "organization.dnbAssessment.delinquencyScore.classScoreDescription",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score National Percentile",
+        "Path": "organization.dnbAssessment.delinquencyScore.nationalPercentile",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Raw Score",
+        "Path": "organization.dnbAssessment.delinquencyScore.rawScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Delinquency Score Risk Incidence Percentage",
+        "Path": "organization.dnbAssessment.delinquencyScore.riskIncidencePercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Delinquency Score Commentary Text",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreCommentary[0].description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Delinquency Score Commentary Code",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreCommentary[0].dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Delinquency Score Date",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Model Text",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Model Code",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Override Reasons Description",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Delinquency Score Override Reasons Code",
+        "Path": "organization.dnbAssessment.delinquencyScore.scoreOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Class Score",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Raw Score",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.rawScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Commentary Description",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreCommentary.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Commentary Code",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreCommentary.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Date",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Model Text",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Emerging Market Mediation Score Model Code",
+        "Path": "organization.dnbAssessment.emergingMarketMediationScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Class Score",
+        "Path": "organization.dnbAssessment.failureScore.classScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Class Score Text",
+        "Path": "organization.dnbAssessment.failureScore.classScoreDescription",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score National Percentile",
+        "Path": "organization.dnbAssessment.failureScore.nationalPercentile",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Raw Score",
+        "Path": "organization.dnbAssessment.failureScore.rawScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Failure Score Risk Incidence Percentage",
+        "Path": "organization.dnbAssessment.failureScore.riskIncidencePercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Failure Score Commentary Text",
+        "Path": "organization.dnbAssessment.failureScore.scoreCommentary[0].description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Failure Score Commentary Code",
+        "Path": "organization.dnbAssessment.failureScore.scoreCommentary[0].dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Failure Score Date",
+        "Path": "organization.dnbAssessment.failureScore.scoreDate",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Model Text",
+        "Path": "organization.dnbAssessment.failureScore.scoreModel.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Model Code",
+        "Path": "organization.dnbAssessment.failureScore.scoreModel.dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Override Reasons Description",
+        "Path": "organization.dnbAssessment.failureScore.scoreOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Failure Score Override Reasons Code",
+        "Path": "organization.dnbAssessment.failureScore.scoreOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Financial Condition Description",
+        "Path": "organization.dnbAssessment.financialCondition.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Financial Condition Code Value",
+        "Path": "organization.dnbAssessment.financialCondition.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Severe Negative Indicator",
+        "Path": "organization.dnbAssessment.hasSevereNegativeEvents",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment History Rating Text",
+        "Path": "organization.dnbAssessment.historyRating.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment History Rating Code",
+        "Path": "organization.dnbAssessment.historyRating.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Standard Rating Financial Strength",
+        "Path": "organization.dnbAssessment.standardRating.financialStrength",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Value",
+        "Path": "organization.dnbAssessment.standardRating.rating",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Standard Ratings Override Reasons Description",
+        "Path": "organization.dnbAssessment.standardRating.ratingOverrideReasons[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Ratings Override Reasons Code",
+        "Path": "organization.dnbAssessment.standardRating.ratingOverrideReasons[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Reason Text",
+        "Path": "organization.dnbAssessment.standardRating.ratingReason[0].description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Reason Code",
+        "Path": "organization.dnbAssessment.standardRating.ratingReason[0].dnbCode",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Risk Segment",
+        "Path": "organization.dnbAssessment.standardRating.riskSegment",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Assessment Standard Rating Score Date",
+        "Path": "organization.dnbAssessment.standardRating.scoreDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Standard Rating History Rating",
+        "Path": "organization.dnbAssessment.standardRatingHistory[0].rating",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Standard Rating History Score Date",
+        "Path": "organization.dnbAssessment.standardRatingHistory[0].scoreDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Data Depth Assessment",
+        "Path": "organization.dnbAssessment.viabilityRating.dataDepth.assessment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Data Depth Indicator",
+        "Path": "organization.dnbAssessment.viabilityRating.dataDepth.dataDepthIndicator",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Financial Data Available Indicator",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.isFinancialDataAvailable",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Rating",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.organizationProfileRating",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Organization Size Assessment",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.organizationSize.assessment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Organization Size Category",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.organizationSize.organizationSizeCategory",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Trade Data Availability Assessment",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.tradeDataAvailability.assessment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Trade Data Availability Indicator",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.tradeDataAvailability.isTradeDataAvailable",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Years in Business Assessment",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.yearsInBusiness.assessment",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Organization Profile Years in Business Category",
+        "Path": "organization.dnbAssessment.viabilityRating.organizationProfile.yearsInBusiness.yearsInBusinessCategory",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Score Bad Rate",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.badRate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Class Score",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.classScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Risk Incidence Percentage",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.classScoreIncidencePercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Risk Model Segment Text",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.modelSegment.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Risk Model Segment Code",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.modelSegment.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Risk Level Text",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.riskLevel.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Risk Level Code",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.riskLevel.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Portfolio Comparison Segment Bad Rate",
+        "Path": "organization.dnbAssessment.viabilityRating.portfolioComparisonScore.segmentBadRate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating",
+        "Path": "organization.dnbAssessment.viabilityRating.rating",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Date",
+        "Path": "organization.dnbAssessment.viabilityRating.ratingDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Bad Rate",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.badRate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Class Score",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.classScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Class Score Incidence Percentage",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.classScoreIncidencePercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Overall Bad Rate",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.overallBadRate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Risk Level Text",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.riskLevel.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Assessment Viability Rating Risk Level Code",
+        "Path": "organization.dnbAssessment.viabilityRating.viabilityScore.riskLevel.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms Calculation Date Time",
+        "Path": "organization.failureScoreNorms[0].calculationTimestamp",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms National Percentile Norms Lower Quartile",
+        "Path": "organization.failureScoreNorms[0].industryNorms.nationalPercentileNorms.lowerQuartileScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms National Percentile Norms Median",
+        "Path": "organization.failureScoreNorms[0].industryNorms.nationalPercentileNorms.medianScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms National Percentile Norms Upper Quartile",
+        "Path": "organization.failureScoreNorms[0].industryNorms.nationalPercentileNorms.upperQuartileScore",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms Date",
+        "Path": "organization.failureScoreNorms[0].industryNorms.normsDate",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Failure Score Norms Key",
+        "Path": "organization.failureScoreNorms[0].industryNorms.normsKey",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Deterioration Indicator",
+        "Path": "organization.isDeterioratingBusiness",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "High Risk Indicator",
+        "Path": "organization.isHighRiskBusiness",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Trade Currency Code",
+        "Path": "organization.businessTrading[0].currency",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Average High Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].averageHighCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Average Owing Amount",
+        "Path": "organization.businessTrading[0].summary[0].averageOwingAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Bad Debt Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].badDebtExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Bad Debt Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].badDebtExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Bad Debt Experiences Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].badDebtExperiencesHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Bad Debt Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].badDebtExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Current Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].currentExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Current Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].currentExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Data Coverage Description",
+        "Path": "organization.businessTrading[0].summary[0].dataCoverage.description",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Data Coverage Code",
+        "Path": "organization.businessTrading[0].summary[0].dataCoverage.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary High Credit Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].highCreditExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Maximum High Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].maximumHighCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Amount Owed",
+        "Path": "organization.businessTrading[0].summary[0].maximumOwedAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Amount Past Due",
+        "Path": "organization.businessTrading[0].summary[0].maximumPastDueAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Negative Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].negativeExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Negative Experiences Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].negativeExperiencesHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Negative Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].negativeExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Negative Payments Count",
+        "Path": "organization.businessTrading[0].summary[0].negativePaymentsCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Paydex Score",
+        "Path": "organization.businessTrading[0].summary[0].paydexScore",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Days Quantity",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorDays",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Text",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorResult.description",
+        "isRequired": "Yes"
+    },
+    {
+        "Name": "Payment Behavior Code",
+        "Path": "organization.businessTrading[0].summary[0].paymentBehaviorResult.dnbCode",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Placed For Collection Amount",
+        "Path": "organization.businessTrading[0].summary[0].placedForCollectionAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Placed For Collection Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].placedForCollectionExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Placed For Collection Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].placedForCollectionExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Placed For Collection Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].placedForCollectionHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Satisfactory Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].satisfactoryExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Satisfactory Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].satisfactoryExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Satisfactory Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].satisfactoryExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Slow And Negative Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].slowAndNegativeExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Slow And Negative Experiences Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].slowAndNegativeExperiencesHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Slow Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].slowExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Slow Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].slowExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Slow Experiences Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].slowExperiencesHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Slow Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].slowExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Slow or Negative Payments Count",
+        "Path": "organization.businessTrading[0].summary[0].slowOrNegativePaymentsCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Slow or Negative Payments Percentage",
+        "Path": "organization.businessTrading[0].summary[0].slowOrNegativePaymentsPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Payment Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].totalExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Payment Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].totalExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Summary Total Past Due Amount",
+        "Path": "organization.businessTrading[0].summary[0].totalPastDueAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Total Past Due Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].totalPastDueExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Unfavorable Experiences Amount",
+        "Path": "organization.businessTrading[0].summary[0].unfavorableExperiencesAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Unfavorable Experiences Count",
+        "Path": "organization.businessTrading[0].summary[0].unfavorableExperiencesCount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Unfavorable Experiences Highest Credit Amount",
+        "Path": "organization.businessTrading[0].summary[0].unfavorableExperiencesHighestCreditAmount",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Business Trading Summary Unfavorable Experiences Percentage",
+        "Path": "organization.businessTrading[0].summary[0].unfavorableExperiencesPercentage",
+        "isRequired": "No"
+    },
+    {
+        "Name": "Summary Date",
+        "Path": "organization.businessTrading[0].summaryDate",
+        "isRequired": "No"
+    }
+]

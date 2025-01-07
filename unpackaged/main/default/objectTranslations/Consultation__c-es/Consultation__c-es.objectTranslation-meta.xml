@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Consultation --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Consultation --></value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender><!-- Feminine --></gender>
+    <layouts>
+        <layout>Présentation Consultation</layout>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Détails --></label>
+            <section>Détails</section>
+        </sections>
+        <sections>
+            <label><!-- Gains Attendus --></label>
+            <section>Gains Attendus</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Générales --></label>
+            <section>Informations Générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Suivi de projet --></label>
+            <section>Suivi de projet</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom Consultation --></nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marque_Modele_Groupe__c</fullName>
+    <label>Marque /  Modèle (Groupe)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CARRIER - NEOS 100</fullName>
+                <default>false</default>
+                <label>CARRIER - NEOS 100</label>
+            </value>
+            <value>
+                <fullName>CARRIER - NEOS 100S</fullName>
+                <default>false</default>
+                <label>CARRIER - NEOS 100S</label>
+            </value>
+            <value>
+                <fullName>CARRIER - PULSOR 350</fullName>
+                <default>false</default>
+                <label>CARRIER - PULSOR 350</label>
+            </value>
+            <value>
+                <fullName>CARRIER - PULSOR 400</fullName>
+                <default>false</default>
+                <label>CARRIER - PULSOR 400</label>
+            </value>
+            <value>
+                <fullName>CARRIER - PULSOR 400 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - PULSOR 400 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - PULSOR 500</fullName>
+                <default>false</default>
+                <label>CARRIER - PULSOR 500</label>
+            </value>
+            <value>
+                <fullName>CARRIER - PULSOR 600 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - PULSOR 600 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1150</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1150</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1150 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1150 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1150 MT Silent</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1150 MT Silent</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1150 Silent</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1150 Silent</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250 City</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250 City</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250 MT City</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250 MT City</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250 MT Silent</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250 MT Silent</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 1250 Silent</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 1250 Silent</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 450</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 450</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 550</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 550</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 750</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 750</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 750 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 750 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 850</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 850</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA 850 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA 850 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA GAZ 1250 City</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA GAZ 1250 City</label>
+            </value>
+            <value>
+                <fullName>CARRIER - SUPRA GAZ 1250 MT City</fullName>
+                <default>false</default>
+                <label>CARRIER - SUPRA GAZ 1250 MT City</label>
+            </value>
+            <value>
+                <fullName>CARRIER TRS - ICELAND (Sous châssis)</fullName>
+                <default>false</default>
+                <label>CARRIER TRS - ICELAND (Sous châssis)</label>
+            </value>
+            <value>
+                <fullName>CARRIER TRS - ICELAND TWIN COOL (Sous châssis)</fullName>
+                <default>false</default>
+                <label>CARRIER TRS - ICELAND TWIN COOL (Sous châssis)</label>
+            </value>
+            <value>
+                <fullName>CARRIER TRS - SYBERIA</fullName>
+                <default>false</default>
+                <label>CARRIER TRS - SYBERIA</label>
+            </value>
+            <value>
+                <fullName>CARRIER TRS - SYBERIA TWIN COOL</fullName>
+                <default>false</default>
+                <label>CARRIER TRS - SYBERIA TWIN COOL</label>
+            </value>
+            <value>
+                <fullName>CARRIER - VATNA 204H (Plaques)</fullName>
+                <default>false</default>
+                <label>CARRIER - VATNA 204H (Plaques)</label>
+            </value>
+            <value>
+                <fullName>CARRIER - VECTOR 1550</fullName>
+                <default>false</default>
+                <label>CARRIER - VECTOR 1550</label>
+            </value>
+            <value>
+                <fullName>CARRIER - VECTOR 1950 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - VECTOR 1950 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - VECTOR HE 19</fullName>
+                <default>false</default>
+                <label>CARRIER - VECTOR HE 19</label>
+            </value>
+            <value>
+                <fullName>CARRIER - VECTOR HE 19 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - VECTOR HE 19 MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 200</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 200</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 200T</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 200T</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 350</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 350</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 350T</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 350T</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 350T MT</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 350T MT</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 500</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 500</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 5</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 5</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 600</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 600</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 6</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 6</label>
+            </value>
+            <value>
+                <fullName>CARRIER - XARIOS 600 MT</fullName>
+                <default>false</default>
+                <label>CARRIER - XARIOS 600 MT</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - EK 13 (Sous châssis)</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - EK 13 (Sous châssis)</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - EK 25 (Sous châssis)</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - EK 25 (Sous châssis)</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - EK 25 MT (Sous châssis)</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - EK 25 MT (Sous châssis)</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - FK 13</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - FK 13</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - FK 25</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - FK 25</label>
+            </value>
+            <value>
+                <fullName>FRIGOBLOCK - FK 25 MT</fullName>
+                <default>false</default>
+                <label>FRIGOBLOCK - FK 25 MT</label>
+            </value>
+            <value>
+                <fullName>GROUPE INTEGRE</fullName>
+                <default>false</default>
+                <label>GROUPE INTEGRE</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - B100</fullName>
+                <default>false</default>
+                <label>THERMOKING - B100</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - E200</fullName>
+                <default>false</default>
+                <label>THERMOKING - E200</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - SLXi 300</fullName>
+                <default>false</default>
+                <label>THERMOKING - SLXi 300</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - SLXi 400</fullName>
+                <default>false</default>
+                <label>THERMOKING - SLXi 400</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - SLXi SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - SLXi SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T1000-R</fullName>
+                <default>false</default>
+                <label>THERMOKING - T1000-R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-1000R 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-1000R 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-1000R 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-1000R 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T1000-R SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T1000-R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T1200-R</fullName>
+                <default>false</default>
+                <label>THERMOKING - T1200-R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-1200R 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-1200R 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-1200R 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-1200R 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T1200-R SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T1200-R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T500-R</fullName>
+                <default>false</default>
+                <label>THERMOKING - T500-R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-560R 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-560R 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T600-R</fullName>
+                <default>false</default>
+                <label>THERMOKING - T600-R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-600R 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-600R 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T800-R</fullName>
+                <default>false</default>
+                <label>THERMOKING - T800-R</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-800R 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-800R 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T-800R 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T-800R 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - T800-R SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - T800-R SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V200 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING - V200 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V200 MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - V200 MAX 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V200S MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - V200S MAX 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V300 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING - V300 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V300 MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - V300 MAX 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V300 MAX 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - V300 MAX 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V500 MAX</fullName>
+                <default>false</default>
+                <label>THERMOKING - V500 MAX</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V500 MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - V500 MAX 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V500 MAX SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - V500 MAX SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V600 MAX 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - V600 MAX 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V800 MAX 50</fullName>
+                <default>false</default>
+                <label>THERMOKING - V800 MAX 50</label>
+            </value>
+            <value>
+                <fullName>THERMOKING - V800 MAX 50 SPECTRUM</fullName>
+                <default>false</default>
+                <label>THERMOKING - V800 MAX 50 SPECTRUM</label>
+            </value>
+            <value>
+                <fullName>HORS STANDARD - voir aménagements GROUPE</fullName>
+                <default>false</default>
+                <label>HORS STANDARD - voir aménagements GROUPE</label>
+            </value>
+            <value>
+                <fullName>SANS</fullName>
+                <default>false</default>
+                <label>SANS</label>
+            </value>
+            <value>
+                <fullName>t</fullName>
+                <default>false</default>
+                <label>t</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

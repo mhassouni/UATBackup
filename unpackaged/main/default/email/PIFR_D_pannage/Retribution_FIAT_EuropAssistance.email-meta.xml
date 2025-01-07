@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Rétribution FIAT - EuropAssistance</name>
+    <style>none</style>
+    <subject>EUROP ASSISTANCE - {!WorkOrder.TECH_Parc_NSerie__c} // {!WorkOrder.TECH_Parc_IMMAT__c} //  {!WorkOrder.Asset} // {!WorkOrder.TECH_AgenceIntervenante_Name__c}</subject>
+    <textOnly>Assistance
+
+EUROP ASSISTANCE
+
+Bonjour,
+
+Veuillez trouver ci-joint la fiche dépannage &amp; la copie de carte grise du parc {!WorkOrder.Asset}.
+
+Numéro de série : {!WorkOrder.TECH_Parc_NSerie__c}
+Immatriculation : {!WorkOrder.TECH_Parc_IMMAT__c}
+Numéro de parc : {!WorkOrder.Asset}
+Agence : {!WorkOrder.TECH_AgenceIntervenante_Name__c}
+
+Merci de renvoyer la confirmation du numéro de dossier à fichesdepannages@petitforestier.fr .
+
+En vous souhaitant bonne réception,
+
+Bien cordialement,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

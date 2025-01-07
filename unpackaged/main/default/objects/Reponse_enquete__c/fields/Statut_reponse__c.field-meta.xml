@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_reponse__c</fullName>
+    <description>Permet d&#39;indiquer si une réponse a été reçu. (Permettra dans le futur d&#39;identifier si le client a eu une enquête et qu&#39;il n&#39;a pas répondu)</description>
+    <label>Statut enquête</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non répondu</fullName>
+                <default>false</default>
+                <label>Non répondu</label>
+            </value>
+            <value>
+                <fullName>Répondu</fullName>
+                <default>false</default>
+                <label>Répondu</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

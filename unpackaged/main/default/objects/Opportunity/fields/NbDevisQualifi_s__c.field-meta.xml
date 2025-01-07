@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbDevisQualifi_s__c</fullName>
+    <description>calcule le nombre de devis qualifiés (Partie Produit renseignée)</description>
+    <label>NbDevisQualifiés</label>
+    <summaryFilterItems>
+        <field>Quote.Type_de_produit__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.Sous_famille__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.Categorie__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.Sous_Categorie__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.Quantite__c</field>
+        <operation>notEqual</operation>
+        <value />
+    </summaryFilterItems>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

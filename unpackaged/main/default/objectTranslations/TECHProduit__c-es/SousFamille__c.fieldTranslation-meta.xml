@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Subfamilia</label>
+        <name>SousFamille__c</name>
+        <picklistValues>
+            <masterLabel>AUTRE</masterLabel>
+            <translation><!-- AUTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAC</masterLabel>
+            <translation><!-- BAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A (Carrosseries)</masterLabel>
+            <translation><!-- N/A (Carrosseries) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A (Containers)</masterLabel>
+            <translation><!-- N/A (Containers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Frigo)</masterLabel>
+            <translation><!-- P (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P (Sec)</masterLabel>
+            <translation><!-- P (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S (Frigo)</masterLabel>
+            <translation><!-- S (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Frigo)</masterLabel>
+            <translation><!-- T (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T (Sec)</masterLabel>
+            <translation><!-- T (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Frigo)</masterLabel>
+            <translation><!-- V (Frigo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V (Sec)</masterLabel>
+            <translation><!-- V (Sec) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VITRINE</masterLabel>
+            <translation><!-- VITRINE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

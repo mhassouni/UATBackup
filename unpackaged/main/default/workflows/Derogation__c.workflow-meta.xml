@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_D_rogation_approuv_e</fullName>
+        <description>Alerte Dérogation approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/WFC_Demande_Derogation_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_D_rogation_rejet_e</fullName>
+        <description>Alerte Dérogation rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_Derogation_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Derogation_approuvee</fullName>
+        <description>Alerte Dérogation approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/WFC_Demande_Derogation_Approuve</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerte_Derogation_rejetee</fullName>
+        <description>Alerte Dérogation rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hotline@petitforestier.fr</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WFC/Demande_Derogation_Rejetee</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Annul</fullName>
+        <field>Statut__c</field>
+        <literalValue>Annulée</literalValue>
+        <name>Annulé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Annule</fullName>
+        <field>Statut__c</field>
+        <literalValue>Annulée</literalValue>
+        <name>Annulé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approuv</fullName>
+        <field>Statut__c</field>
+        <literalValue>Acceptée</literalValue>
+        <name>Approuvé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approuvee</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Initiateur_DERO</fullName>
+        <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DERO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_attente</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>En attente</literalValue>
+        <name>En attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_attente_DG</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>En attente DG</literalValue>
+        <name>En attente DG</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>En_attente_Dero</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>En attente</literalValue>
+        <name>En attente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lecture_seule</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Derogation_Lecture_seule</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lecture seule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Dérogation Tarifaire (France)&#39;</formula>
+        <name>Nom processus 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus1</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DERO - CONTRACTUELLE - [FR]&#39;</formula>
+        <name>Nom processus 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus2</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Déro - Tarif - [STFR]&#39;</formula>
+        <name>Nom processus 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus3</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Déro - Contractuelle - [STFR]&#39;</formula>
+        <name>Nom processus 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus4</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Dérogation Tarifaire (International)&#39;</formula>
+        <name>Nom processus 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus5</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Dérogation Contractuelle [Inter]&#39;</formula>
+        <name>Nom processus6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus6</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DERO - STFR - GC&#39;</formula>
+        <name>Nom processus 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus7</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DERO TARIFAIRE - PF - GC&#39;</formula>
+        <name>Nom processus 8</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus9</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;DERO CONTRACTUELLE - PF - GC&#39;</formula>
+        <name>Nom processus 9</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus_DERO_Contractuelle_PL</fullName>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Dérogation Contractuelle PL&#39;</formula>
+        <name>Nom processus DERO Contractuelle PL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Nom_processus_DERO_PL</fullName>
+        <description>Dérogation tarifaire [PIPL]</description>
+        <field>Processus_d_approbation_declenche__c</field>
+        <formula>&#39;Dérogation tarifaire (PIPL)&#39;</formula>
+        <name>Nom processus DERO PL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus_Etape2</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus_Etape3</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refusé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus_Etape4</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus_final</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refus final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Refus_final_Dero</fullName>
+        <field>Statut__c</field>
+        <literalValue>Refusée</literalValue>
+        <name>Refus final</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejet_e</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Rejetée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejetee</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>Rejetée</literalValue>
+        <name>Rejetée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_Approuvee</fullName>
+        <field>Statut_Derogation__c</field>
+        <literalValue>Approuvée</literalValue>
+        <name>Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_Demand</fullName>
+        <field>Statut__c</field>
+        <literalValue>Demandée</literalValue>
+        <name>Statut Demandé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_Demande</fullName>
+        <field>Statut__c</field>
+        <literalValue>Demandée</literalValue>
+        <name>Statut Demandé</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_accepte</fullName>
+        <field>Statut__c</field>
+        <literalValue>Acceptée</literalValue>
+        <name>Statut accepté</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Statut_accepte_Dero</fullName>
+        <field>Statut__c</field>
+        <literalValue>Acceptée</literalValue>
+        <name>Statut accepté</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tech_Email_Initiateur_DERO</fullName>
+        <field>TECH_EMAIL_INITIATEUR_DERO__c</field>
+        <formula>$User.Email</formula>
+        <name>Email Initiateur DERO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

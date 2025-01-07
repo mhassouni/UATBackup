@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Cas_01_Activer_Regle_attribution_requete</name>
+        <label>Cas 01 : Activer la Règle d&#39;attribution de la requête</label>
+        <locationX>728</locationX>
+        <locationY>1355</locationY>
+        <actionName>InvokeCaseAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Verify_Salutaion_is_Null_Case_01</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseIds</name>
+            <value>
+                <elementReference>Get_Case_Case_01.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>InvokeCaseAssignmentRules</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Cas_02_Activer_la_Regle_d_attribution_de_la_requete</name>
+        <label>Cas 02 : Activer la Règle d&#39;attribution de la requête</label>
+        <locationX>1246</locationX>
+        <locationY>1547</locationY>
+        <actionName>InvokeCaseAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Verify_Salutaion_is_Null_Case_01_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseIds</name>
+            <value>
+                <elementReference>Get_Case_Case_02.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>InvokeCaseAssignmentRules</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Cas_03_Activer_la_Regle_d_attribution_de_la_requete</name>
+        <label>Cas 03 : Activer la Règle d&#39;attribution de la requête</label>
+        <locationX>1575</locationX>
+        <locationY>1554</locationY>
+        <actionName>InvokeCaseAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Verify_Salutaion_is_Null_Case_01_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseIds</name>
+            <value>
+                <elementReference>Get_Case_Case_03.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>InvokeCaseAssignmentRules</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Cas_04_Activer_la_Regle_d_attribution_de_la_requete</name>
+        <label>Cas 04 : Activer la Règle d&#39;attribution de la requête</label>
+        <locationX>1818</locationX>
+        <locationY>1354</locationY>
+        <actionName>InvokeCaseAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Verify_Salutaion_is_Null_Case_01_0</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseIds</name>
+            <value>
+                <elementReference>Get_Case_Case_04.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>InvokeCaseAssignmentRules</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Community_Mail_To_Service_Relation</name>
+        <label>Community Mail To Service Relation</label>
+        <locationX>1416</locationX>
+        <locationY>2329</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_Community_Mail_To_Service_Relation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>no-reply@petitforestier.fr</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Loop_Community_Mail_To_Service_Relation</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Var_Community_Mail_To_Service_Relation</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Une demande de gestion de support : Vous avez une nouvelle demande de gestion de support</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Demande_de_support_Mail_Client</name>
+        <label>Demande de support Mail Client</label>
+        <locationX>1271</locationX>
+        <locationY>2204</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_Community_Mail_To_Service_Relation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>no-reply@petitforestier.fr</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Var_CaseInfos.CreatedBy.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Var_Demande_de_support_Mail_Client</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Enregistrement de votre demande</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Add_Case_Infos_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1153</locationX>
+        <locationY>1838</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_02</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetUserContact.Salutation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_01_01</name>
+        <label>Add : Case Infos</label>
+        <locationX>766</locationX>
+        <locationY>1757</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_01</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_01_02</name>
+        <label>Add : Case Infos</label>
+        <locationX>872</locationX>
+        <locationY>1684</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_01</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetUserContact.Salutation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_0_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1507</locationX>
+        <locationY>2017</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_03</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetUserContact.Salutation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_0_0_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1711</locationX>
+        <locationY>1688</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_04</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_0_0_0_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1859</locationX>
+        <locationY>1760</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_04</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetUserContact.Salutation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_0_0_0_0_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1383</locationX>
+        <locationY>1837</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_03</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Case_Infos_0_0_0_0_0_0</name>
+        <label>Add : Case Infos</label>
+        <locationX>1271</locationX>
+        <locationY>1753</locationY>
+        <assignmentItems>
+            <assignToReference>Var_CaseInfos</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Case_02</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Salutation</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Demande_de_support_Mail_Client</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Users_Mail_Collection</name>
+        <label>Add : Users Mail Collection</label>
+        <locationX>1022</locationX>
+        <locationY>608</locationY>
+        <assignmentItems>
+            <assignToReference>Var_MailsCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>GetUser.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Users</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Choix_du_Type_Demande_Support_Compte</name>
+        <label>Choix du Type : Demande Support Compte</label>
+        <locationX>1259</locationX>
+        <locationY>936</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Modifier_mes_coordonnees</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Modifier mes coordonnées</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Cas_01_Modifier_mes_coordonnees</targetReference>
+            </connector>
+            <label>Modifier mes coordonnées</label>
+        </rules>
+        <rules>
+            <name>Demande_de_cr_ation_de_compte_pour_un_nouvel_arrivant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Demander la création d’un compte</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Cas_02_Demande_de_creation_de_compte_pour_un_nouvel_arrivant</targetReference>
+            </connector>
+            <label>Demande de création de compte pour un nouvel arrivant</label>
+        </rules>
+        <rules>
+            <name>D_sactiver_l_acc_s_d_un_ancien_collaborateur</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Désactiver l’accès d’un ancien collaborateur</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Cas_03_Desactiver_acces_ancien_collaborateur</targetReference>
+            </connector>
+            <label>Désactiver l’accès d’un ancien collaborateur</label>
+        </rules>
+        <rules>
+            <name>Modification_de_visibilit_de_mes_parcs_de_mes_sites</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Rectifier la visibilité de mes parcs ou de mes sites</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Cas_04_Modification_de_visibilite</targetReference>
+            </connector>
+            <label>Modification de visibilité de mes parcs, de mes sites</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Choix_du_Type_Demande_Support_Compte_0</name>
+        <label>Choix du Type : Demande Support Compte</label>
+        <locationX>1282</locationX>
+        <locationY>2443</locationY>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Modifier_mes_coordonnees_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Modifier mes coordonnées</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Screen_Success_Case_01</targetReference>
+            </connector>
+            <label>Modifier mes coordonnées</label>
+        </rules>
+        <rules>
+            <name>Demande_de_cr_ation_de_compte_pour_un_nouvel_arrivant_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Demander la création d’un compte</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Screen_Success_Case_02</targetReference>
+            </connector>
+            <label>Demande de création de compte pour un nouvel arrivant</label>
+        </rules>
+        <rules>
+            <name>D_sactiver_l_acc_s_d_un_ancien_collaborateur_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Désactiver l’accès d’un ancien collaborateur</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Screen_Success_Case_03</targetReference>
+            </connector>
+            <label>Désactiver l’accès d’un ancien collaborateur</label>
+        </rules>
+        <rules>
+            <name>Modification_de_visibilit_de_mes_parcs_de_mes_sites_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Type_de_demande</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Rectifier la visibilité de mes parcs ou de mes sites</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Screen_Success_Case_04</targetReference>
+            </connector>
+            <label>Modification de visibilité de mes parcs, de mes sites</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Salutaion_is_Null_Case_01</name>
+        <label>Verify : Salutaion is Null</label>
+        <locationX>918</locationX>
+        <locationY>1405</locationY>
+        <defaultConnector>
+            <targetReference>Add_Case_Infos_01_02</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Is_Null</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue> </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Case_Infos_01_01</targetReference>
+            </connector>
+            <label>Is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Salutaion_is_Null_Case_01_0</name>
+        <label>Verify : Salutaion is Null</label>
+        <locationX>1850</locationX>
+        <locationY>1544</locationY>
+        <defaultConnector>
+            <targetReference>Add_Case_Infos_0_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Is_Null_0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue> </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Case_Infos_0_0_0</targetReference>
+            </connector>
+            <label>Is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Salutaion_is_Null_Case_01_0_0</name>
+        <label>Verify : Salutaion is Null</label>
+        <locationX>1490</locationX>
+        <locationY>1744</locationY>
+        <defaultConnector>
+            <targetReference>Add_Case_Infos_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Is_Null_0_0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue> </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Case_Infos_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Salutaion_is_Null_Case_01_0_0_0</name>
+        <label>Verify : Salutaion is Null</label>
+        <locationX>1052</locationX>
+        <locationY>1619</locationY>
+        <defaultConnector>
+            <targetReference>Add_Case_Infos_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Is_Null_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetUserContact.Salutation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue> </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Case_Infos_0_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Is Null</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>Var_Type_Demande</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Type_de_demande__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>Demande_Support_Client {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow_Demande_Support_Client</label>
+    <loops>
+        <name>Loop_Community_Mail_To_Service_Relation</name>
+        <label>Loop : Community Mail To Service Relation</label>
+        <locationX>1032</locationX>
+        <locationY>2322</locationY>
+        <collectionReference>Var_MailsCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Community_Mail_To_Service_Relation</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Choix_du_Type_Demande_Support_Compte_0</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Users</name>
+        <label>Loop : Users</label>
+        <locationX>1267</locationX>
+        <locationY>501</locationY>
+        <collectionReference>GetUsersOfGroup</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>GetUser</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>EcranTest</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Add_User_to_CaseTeam</name>
+        <label>Add User to CaseTeam</label>
+        <locationX>731</locationX>
+        <locationY>1200</locationY>
+        <connector>
+            <targetReference>Get_Case_Case_01</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MemberId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Case_01_Insert_To_Case</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamRoleId</field>
+            <value>
+                <elementReference>$Label.FlowVar_Service_RoleIdClient</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_User_to_CaseTeam_0</name>
+        <label>Add User to CaseTeam</label>
+        <locationX>1234</locationX>
+        <locationY>1363</locationY>
+        <connector>
+            <targetReference>Get_Case_Case_02</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MemberId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Case_02_Insert_To_Case</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamRoleId</field>
+            <value>
+                <elementReference>$Label.FlowVar_Service_RoleIdClient</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_User_to_CaseTeam_0_0</name>
+        <label>Add User to CaseTeam</label>
+        <locationX>1569</locationX>
+        <locationY>1389</locationY>
+        <connector>
+            <targetReference>Get_Case_Case_03</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MemberId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Case_03_Insert_To_Case</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamRoleId</field>
+            <value>
+                <elementReference>$Label.FlowVar_Service_RoleIdClient</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_User_to_CaseTeam_0_0_0</name>
+        <label>Add User to CaseTeam</label>
+        <locationX>1831</locationX>
+        <locationY>1189</locationY>
+        <connector>
+            <targetReference>Get_Case_Case_04</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MemberId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Case_04_Insert_To_Case</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamRoleId</field>
+            <value>
+                <elementReference>$Label.FlowVar_Service_RoleIdClient</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Case_01_Insert_To_Case</name>
+        <label>Case 01 : Insert To Case</label>
+        <locationX>877</locationX>
+        <locationY>1134</locationY>
+        <connector>
+            <targetReference>Add_User_to_CaseTeam</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>GetUserContact.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>GetUserContact.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Var_Case_01_Informations</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>GetGroup.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Basse</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Case_RecordTypeId_Demande_de_support</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_01</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_demande__c</field>
+            <value>
+                <stringValue>Modifier mes coordonnées</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Case_02_Insert_To_Case</name>
+        <label>Case 02 : Insert To Case</label>
+        <locationX>1106</locationX>
+        <locationY>1324</locationY>
+        <connector>
+            <targetReference>Add_User_to_CaseTeam_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>GetUserContact.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>GetUserContact.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Var_Case_02_Informations</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>GetGroup.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Haute</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Case_RecordTypeId_Demande_de_support</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_02</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_demande__c</field>
+            <value>
+                <stringValue>Demander la création d’un compte</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Case_03_Insert_To_Case</name>
+        <label>Case 03 : Insert To Case</label>
+        <locationX>1438</locationX>
+        <locationY>1331</locationY>
+        <connector>
+            <targetReference>Add_User_to_CaseTeam_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>GetUserContact.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>GetUserContact.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Var_Case_03_Informations</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>GetGroup.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Basse</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Case_RecordTypeId_Demande_de_support</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_03</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_demande__c</field>
+            <value>
+                <stringValue>Désactiver l’accès d’un ancien collaborateur</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Case_04_Insert_To_Case</name>
+        <label>Case 04 : Insert To Case</label>
+        <locationX>1674</locationX>
+        <locationY>1129</locationY>
+        <connector>
+            <targetReference>Add_User_to_CaseTeam_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>GetUserContact.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>GetUserContact.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Var_Case_04_Informations</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>GetGroup.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Haute</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Label.Case_RecordTypeId_Demande_de_support</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_04</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_de_demande__c</field>
+            <value>
+                <stringValue>Rectifier la visibilité de mes parcs ou de mes sites</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Case_Case_01</name>
+        <label>Get Case : Case 01</label>
+        <locationX>878</locationX>
+        <locationY>1267</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Cas_01_Activer_Regle_attribution_requete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case_01_Insert_To_Case</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Case_02</name>
+        <label>Get Case : Case 02</label>
+        <locationX>1106</locationX>
+        <locationY>1461</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Cas_02_Activer_la_Regle_d_attribution_de_la_requete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case_02_Insert_To_Case</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Case_03</name>
+        <label>Get Case : Case 03</label>
+        <locationX>1439</locationX>
+        <locationY>1467</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Cas_03_Activer_la_Regle_d_attribution_de_la_requete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case_03_Insert_To_Case</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Case_04</name>
+        <label>Get Case : Case 04</label>
+        <locationX>1674</locationX>
+        <locationY>1271</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Cas_04_Activer_la_Regle_d_attribution_de_la_requete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case_04_Insert_To_Case</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetGroup</name>
+        <label>GetGroup</label>
+        <locationX>1267</locationX>
+        <locationY>222</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetUsersOfGroup</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Direction Relation Client</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetUser</name>
+        <label>GetUser</label>
+        <locationX>1507</locationX>
+        <locationY>607</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_Users_Mail_Collection</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Users.UserOrGroupId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetUserContact</name>
+        <label>GetUserContact</label>
+        <locationX>1266</locationX>
+        <locationY>802</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Choix_du_Type_Demande_Support_Compte</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetUsersOfGroup</name>
+        <label>GetUsersOfGroup</label>
+        <locationX>1268</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Users</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>GroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetGroup.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>GroupMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>Cas_01_Modifier_mes_coordonnees</name>
+        <label>Cas 01 : Modifier mes coordonnées</label>
+        <locationX>875</locationX>
+        <locationY>993</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Case_01_Insert_To_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Screen_Cas_01_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_02}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Screen_Cas_01_Prenom</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>GetUserContact.FirstName</elementReference>
+            </defaultValue>
+            <fieldText>Prénom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_01_Nom</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>GetUserContact.LastName</elementReference>
+            </defaultValue>
+            <fieldText>Nom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_01_TelephoneMobile</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Téléphone Mobile</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>GetUserContact.MobilePhone</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_01_AdresseMail</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Adresse e-mail</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>GetUserContact.Email</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_01_Commentaire</name>
+            <fieldText>Commentaire(s)</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Cas_02_Demande_de_creation_de_compte_pour_un_nouvel_arrivant</name>
+        <label>Cas 02 : Demande de création de compte pour un nouvel arrivant</label>
+        <locationX>1103</locationX>
+        <locationY>1189</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Case_02_Insert_To_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Screen_Cas_02_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_02}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Prenom</name>
+            <dataType>String</dataType>
+            <fieldText>Prénom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Nom</name>
+            <dataType>String</dataType>
+            <fieldText>Nom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Fonction</name>
+            <dataType>String</dataType>
+            <fieldText>Fonction</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Telephone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Numéro de Téléphone</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Email</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>E-mail</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Commentaire</name>
+            <fieldText>Précisions</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <helpText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_02_Aide}&lt;/strong&gt;&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_02_Text_Information</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_02_Information}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Cas_03_Desactiver_acces_ancien_collaborateur</name>
+        <label>Cas 03 : Désactiver l’accès d’un ancien collaborateur</label>
+        <locationX>1435</locationX>
+        <locationY>1192</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Case_03_Insert_To_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Screen_Cas_03_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_03}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Screen_Cas_03_Prenom</name>
+            <dataType>String</dataType>
+            <fieldText>Prénom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_03_Nom</name>
+            <dataType>String</dataType>
+            <fieldText>Nom</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Screen_Cas_03_Telephone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Numéro de Téléphone</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_03_Mail</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue> E-mail</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Screen_Cas_03_Motif_desactivation</name>
+            <dataType>String</dataType>
+            <fieldText>Motif de la désactivation</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Text_Note_Case_03</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);&quot;&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_03_01}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Cas_04_Modification_de_visibilite</name>
+        <label>Cas 04 : Modification de visibilité</label>
+        <locationX>1673</locationX>
+        <locationY>987</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Case_04_Insert_To_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Screen_Cas_04_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_02}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Cas_04_Modification_de_visibilite_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Cas_04_Modification_de_visibilite_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Screen_Cas_05_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Informations}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Screen_Cas_04_Commentaire</name>
+            <fieldText>Commentaire(s)</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <helpText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Subject_Case_02_Aide}&lt;/b&gt;&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>EcranTest</name>
+        <label>EcranTest</label>
+        <locationX>1268</locationX>
+        <locationY>678</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>GetUserContact</targetReference>
+        </connector>
+        <fields>
+            <name>TextTest</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_01}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Type_de_demande</name>
+            <choiceReferences>Var_Type_Demande</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Type de demande</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_Success_Case_01</name>
+        <label>Screen_Success_Case_01</label>
+        <locationX>1027</locationX>
+        <locationY>2768</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Text_Success_Case_01</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_01} &lt;/strong&gt;&lt;a href=&quot;/{!Case_01_Insert_To_Case}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;N°{!Get_Case_Case_01.CaseNumber}&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_02}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_Success_Case_02</name>
+        <label>Screen_Success_Case_02</label>
+        <locationX>1135</locationX>
+        <locationY>2688</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Text_Success_Case_02</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_01} &lt;/b&gt;&lt;a href=&quot;/{!Case_02_Insert_To_Case}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;N°{!Get_Case_Case_02.CaseNumber}&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_02}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_Success_Case_03</name>
+        <label>Screen_Success_Case_03</label>
+        <locationX>1301</locationX>
+        <locationY>2775</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Text_Success_Case_03</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_01} &lt;/b&gt;&lt;a href=&quot;/{!Case_03_Insert_To_Case}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;N°{!Get_Case_Case_03.CaseNumber}&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_02}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_Success_Case_04</name>
+        <label>Screen_Success_Case_04</label>
+        <locationX>1466</locationX>
+        <locationY>2723</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Text_Success_Case_04</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_01} &lt;/strong&gt;&lt;a href=&quot;/{!Case_04_Insert_To_Case}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;N°{!Get_Case_Case_04.CaseNumber}&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;{!$Label.FlowVar_Flow_Demande_Support_Client_Case_01_02}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>1140</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>GetGroup</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>test</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;ul&gt;&lt;li&gt;test&lt;/li&gt;&lt;li&gt;testtt&lt;/li&gt;&lt;/ul&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Case_01_Informations</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Prénom : {!Screen_Cas_01_Prenom}
+Nom : {!Screen_Cas_01_Nom}
+Téléphone mobile : {!Screen_Cas_01_TelephoneMobile.value}
+Adresse e-mail : {!Screen_Cas_01_AdresseMail.value}
+Commentaire(s) : {!Screen_Cas_01_Commentaire}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Case_02_Informations</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Prénom : {!Screen_Cas_02_Prenom}
+Nom : {!Screen_Cas_02_Nom}
+Fonction : {!Screen_Cas_02_Fonction}
+Téléphone mobile : {!Screen_Cas_02_Telephone.value}
+Adresse e-mail : {!Screen_Cas_02_Email.value}
+Commentaire(s) : {!Screen_Cas_02_Commentaire}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Case_03_Informations</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Prénom : {!Screen_Cas_03_Prenom}
+Nom : {!Screen_Cas_03_Nom}
+Téléphone mobile : {!Screen_Cas_03_Telephone.value}
+Adresse e-mail : {!Screen_Cas_03_Mail.value}
+Motif de la désactivation : {!Screen_Cas_03_Motif_desactivation}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Case_04_Informations</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Commentaire(s) : {!Screen_Cas_04_Commentaire}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_CaseCreationMailTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Vous avez une nouvelle demande de support compte :&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Date de création :&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt; {!Var_CaseInfos.CreatedDate}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Objet :&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt; {!Var_CaseInfos.Subject}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Pour le client :&lt;/u&gt; &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;{!GetUserContact.Account.Name}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Personne a contacter :&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt; {!Var_CaseInfos.CreatedBy.FirstName} {!Var_CaseInfos.CreatedBy.LastName}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Descriptif de la demande :&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt; {!Var_CaseInfos.Description}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;Lien pour consulter la demande :&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;&lt;a href=&quot;https://greenforce.lightning.force.com/lightning/r/Case/{!Var_CaseInfos.Id}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; color: rgb(0, 0, 0);&quot;&gt;https://greenforce.lightning.force.com/lightning/r/Case/{!Var_CaseInfos.Id}/view&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Merci&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Community_Mail_To_Service_Relation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;&lt;/meta&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;style&gt;@media only screen{html{min-height:100%;background:#fafafa}}@media only screen and (max-width:656px){.small-float-center{margin:0 auto!important;float:none!important;text-align:center!important}.small-text-center{text-align:center!important}}@media only screen and (max-width:656px){.menu.small-vertical .menu-item{padding-left:0!important;padding-right:0!important}}@media only screen and (max-width:656px){table.body img{width:auto;height:auto}table.body center{min-width:0!important}table.body .container{width:95%!important}table.body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:16px!important;padding-right:16px!important}table.body .columns .columns{padding-left:0!important;padding-right:0!important}table.body .collapse .columns{padding-left:0!important;padding-right:0!important}th.small-1{display:inline-block!important;width:8.33333%!important}th.small-2{display:inline-block!important;width:16.66667%!important}th.small-5{display:inline-block!important;width:41.66667%!important}th.small-6{display:inline-block!important;width:50%!important}th.small-7{display:inline-block!important;width:58.33333%!important}th.small-9{display:inline-block!important;width:75%!important}th.small-10{display:inline-block!important;width:83.33333%!important}th.small-12{display:inline-block!important;width:100%!important}.columns th.small-12{display:block!important;width:100%!important}table.menu{width:100%!important}table.menu td,table.menu th{width:auto!important;display:inline-block!important}table.menu.small-vertical td,table.menu.small-vertical th,table.menu.vertical td,table.menu.vertical th{display:block!important}table.menu[align=center]{width:auto!important}table.button.small-expanded{width:100%!important}table.button.small-expanded table{width:100%}table.button.small-expanded table a{text-align:center!important;width:100%!important;padding-left:0!important;padding-right:0!important}}@media only screen and (max-width:656px){.logo{width:140px!important}} 
+        .buttonStyle {
+          width: 100%;
+  background-color: #039f4e;
+  color: white;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: &quot;Muli&quot;, sans-serif;
+        font-size: 16px;
+      font-weight: 600;
+}
+
+#ahrefButton:hover, #ahrefButton:active{
+  background-color: green;
+  color: white;
+}
+
+&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body style=&quot;-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;box-sizing:border-box;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;min-width:100%;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;width:100%!important&quot;&gt;
+        &lt;span class=&quot;preheader&quot; style=&quot;color:#fafafa;display:none!important;font-size:1px;line-height:1px;max-height:0;max-width:0;mso-hide:all!important;opacity:0;overflow:hidden;visibility:hidden&quot;&gt;&lt;/span&gt;
+        &lt;table class=&quot;body&quot; style=&quot;Margin:0;background:#fafafa;border-collapse:collapse;border-spacing:0;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;height:100%;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+            &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                &lt;td class=&quot;center&quot; align=&quot;center&quot; valign=&quot;top&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                    &lt;center style=&quot;min-width:640px;width:100%&quot;&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container header float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fafafa;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-12 large-12 columns first last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:0;padding-left:16px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:624px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;https://www.petitforestier.com&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img class=&quot;logo float-center&quot; src=&quot;https://www.petitforestier.com/emailings/assets/img/petit-forestier.png&quot; style=&quot;-ms-interpolation-mode:bicubic;Margin:0 auto;border:none;clear:both;display:block;float:none;margin:0 auto;max-width:100%;outline:0;text-align:center;text-decoration:none;width:140px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                    &lt;th class=&quot;expander&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding:0!important;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;visibility:hidden;width:0;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;32&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:32px;font-weight:400;hyphens:none;line-height:32px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns first&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th &gt;
+                                                       &lt;!-- &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                        &lt;h1 style=&quot;Margin:0;Margin-bottom:0px;color:inherit;font-family:Poppins,sans-serif;font-size:34px;font-weight:700;line-height:1.3;margin:0;margin-bottom:2px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;word-wrap:normal&quot;&gt;Une demande de service : Vous avez une nouvelle demande de service.&lt;/h1&gt;
+                                                                        
+                                                                    &lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;--&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        
+                        &lt;table align=&quot;center&quot; class=&quot;container float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;32&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:32px;font-weight:400;hyphens:none;line-height:32px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns first&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-10 large-10 columns&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:517.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;u&gt; Vous avez une nouvelle demande de gestion de support: &lt;/u&gt;&lt;/b&gt;&lt;/p&gt;
+                                                                       &lt;ul&gt;
+    &lt;li&gt;
+        &lt;b &gt;
+            Date de création :
+        &lt;/b&gt;
+        &lt;span
+            
+        &gt;
+        &lt;/span&gt;
+				{!Var_CaseInfos.CreatedDate}
+
+   &lt;/li&gt;
+    &lt;li&gt;
+        &lt;b&gt;
+            Pour le client :
+        &lt;/b&gt;
+        &lt;span
+            
+        &gt;
+        &lt;/span&gt;
+{!Var_CaseInfos.Account.Name}
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;b &gt;
+            Personne à contacter:
+        &lt;/b&gt;
+        &lt;span
+            
+        &gt;
+        &lt;/span&gt;
+        {!Var_CaseInfos.CreatedBy.FirstName} {!Var_CaseInfos.CreatedBy.LastName}
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;b &gt;
+            Téléphone mobile :
+        &lt;/b&gt;
+        &lt;span
+            
+        &gt;
+        &lt;/span&gt;
+{!Var_CaseInfos.CreatedBy.MobilePhone}
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;b &gt;
+            Objet :
+        &lt;/b&gt;
+        &lt;span
+            
+        &gt;
+        &lt;/span&gt;
+{!Var_CaseInfos.Subject}
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;b &gt;
+            Lien pour consulter la demande :
+        &lt;/b&gt;
+        &lt;span&gt;
+		&lt;a  href=&quot;https://greenforce.lightning.force.com/lightning/r/Case/{!Var_CaseInfos.Id}/view&quot; style=&quot;width: 100%;  color: black;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        font-size: 16px;
+      font-weight: 600;&quot; target=&quot;_blank&quot;&gt;https://greenforce.lightning.force.com/lightning/r/Case/{!Var_CaseInfos.Id}/view&lt;/a&gt;
+    
+        &lt;/span&gt;
+		
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                                    &lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container footer float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fafafa;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-12 large-12 columns first last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:624px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+
+                                                                        &lt;center style=&quot;min-width:592px;width:100%&quot;&gt;
+                                                                            &lt;table align=&quot;center&quot; class=&quot;menu float-center&quot; style=&quot;Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:auto&quot;&gt;
+                                                                                &lt;tbody&gt;
+                                                                                    &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                                        &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                                            &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                                                                &lt;tbody&gt;
+                                                                                                    &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://www.facebook.com/PetitForestier&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/facebook-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://twitter.com/PetitForestier&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/twitter-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;http://www.linkedin.com/company/1102009?trk=tyah&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/linkedin-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCpToq4PjdMsLv0CqBsFWN3w&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/youtube-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                    &lt;/tr&gt;
+                                                                                                &lt;/tbody&gt;
+                                                                                            &lt;/table&gt;
+                                                                                        &lt;/td&gt;
+                                                                                    &lt;/tr&gt;
+                                                                                &lt;/tbody&gt;
+                                                                            &lt;/table&gt;
+                                                                        &lt;/center&gt;
+                                                                        &lt;hr style=&quot;border-bottom:1px solid rgba(0,0,0,.15);border-left:0;border-right:0;border-top:0;clear:both;height:0;margin:20px auto&quot;&gt;&lt;/hr&gt;
+                                                                        &lt;center style=&quot;min-width:592px;width:100%&quot;&gt;Ce message vous est envoyé par un automate. Merci de ne pas y répondre.&lt;/center&gt;
+                                                                    &lt;/th&gt;
+                                                                    &lt;th class=&quot;expander&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding:0!important;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;visibility:hidden;width:0;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    &lt;/center&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;!-- prevent Gmail on iOS font size manipulation --&gt;
+        &lt;div style=&quot;display:none;white-space:nowrap;font:15px courier;line-height:0&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Var_Demande_de_support_Mail_Client</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;/meta&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;&lt;/meta&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;style&gt;@media only screen{html{min-height:100%;background:#fafafa}}@media only screen and (max-width:656px){.small-float-center{margin:0 auto!important;float:none!important;text-align:center!important}.small-text-center{text-align:center!important}}@media only screen and (max-width:656px){.menu.small-vertical .menu-item{padding-left:0!important;padding-right:0!important}}@media only screen and (max-width:656px){table.body img{width:auto;height:auto}table.body center{min-width:0!important}table.body .container{width:95%!important}table.body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:16px!important;padding-right:16px!important}table.body .columns .columns{padding-left:0!important;padding-right:0!important}table.body .collapse .columns{padding-left:0!important;padding-right:0!important}th.small-1{display:inline-block!important;width:8.33333%!important}th.small-2{display:inline-block!important;width:16.66667%!important}th.small-5{display:inline-block!important;width:41.66667%!important}th.small-6{display:inline-block!important;width:50%!important}th.small-7{display:inline-block!important;width:58.33333%!important}th.small-9{display:inline-block!important;width:75%!important}th.small-10{display:inline-block!important;width:83.33333%!important}th.small-12{display:inline-block!important;width:100%!important}.columns th.small-12{display:block!important;width:100%!important}table.menu{width:100%!important}table.menu td,table.menu th{width:auto!important;display:inline-block!important}table.menu.small-vertical td,table.menu.small-vertical th,table.menu.vertical td,table.menu.vertical th{display:block!important}table.menu[align=center]{width:auto!important}table.button.small-expanded{width:100%!important}table.button.small-expanded table{width:100%}table.button.small-expanded table a{text-align:center!important;width:100%!important;padding-left:0!important;padding-right:0!important}}@media only screen and (max-width:656px){.logo{width:140px!important}} 
+        .buttonStyle {
+          width: 100%;
+  background-color: #039f4e;
+  color: white;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: &quot;Muli&quot;, sans-serif;
+        font-size: 16px;
+      font-weight: 600;
+}
+
+#ahrefButton:hover, #ahrefButton:active{
+  background-color: green;
+  color: white;
+}
+
+&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body style=&quot;-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;box-sizing:border-box;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;min-width:100%;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;width:100%!important&quot;&gt;
+        &lt;span class=&quot;preheader&quot; style=&quot;color:#fafafa;display:none!important;font-size:1px;line-height:1px;max-height:0;max-width:0;mso-hide:all!important;opacity:0;overflow:hidden;visibility:hidden&quot;&gt;&lt;/span&gt;
+        &lt;table class=&quot;body&quot; style=&quot;Margin:0;background:#fafafa;border-collapse:collapse;border-spacing:0;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;height:100%;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+            &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                &lt;td class=&quot;center&quot; align=&quot;center&quot; valign=&quot;top&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                    &lt;center style=&quot;min-width:640px;width:100%&quot;&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container header float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fafafa;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-12 large-12 columns first last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:0;padding-left:16px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:624px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;https://www.petitforestier.com&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img class=&quot;logo float-center&quot; src=&quot;https://www.petitforestier.com/emailings/assets/img/petit-forestier.png&quot; style=&quot;-ms-interpolation-mode:bicubic;Margin:0 auto;border:none;clear:both;display:block;float:none;margin:0 auto;max-width:100%;outline:0;text-align:center;text-decoration:none;width:140px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                    &lt;th class=&quot;expander&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding:0!important;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;visibility:hidden;width:0;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;32&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:32px;font-weight:400;hyphens:none;line-height:32px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns first&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-10 large-10 columns&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:0px;padding-left:8px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:517.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                        &lt;h1 style=&quot;Margin:0;Margin-bottom:0px;color:inherit;font-family:Poppins,sans-serif;font-size:34px;font-weight:700;line-height:1.3;margin:0;margin-bottom:2px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;word-wrap:normal&quot;&gt;Votre demande n° &lt;apex:outputlink value=&quot;https://greenforce.my.site.com/client/s/case/{!Case_01_Insert_To_Case}&quot;&gt;{!Var_CaseInfos.CaseNumber}&lt;/apex:outputlink&gt; est&amp;nbsp;enregistrée.&lt;/h1&gt;
+                                                                        
+                                                                    &lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        
+                        &lt;table align=&quot;center&quot; class=&quot;container float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;32&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:32px;font-weight:400;hyphens:none;line-height:32px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns first&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-10 large-10 columns&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:8px;padding-top:0;text-align:left;vertical-align:top;width:517.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Bonjour {!Var_Salutation} {!Var_CaseInfos.CreatedBy.Name}
+&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Nous avons bien enregistré votre {!Var_CaseInfos.Subject}; celle-ci porte le numéro {!Var_CaseInfos.CaseNumber} et sera traitée dans les meilleurs délais.&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Vous pouvez suivre son statut dans l’onglet “Mes interventions”, disponible en page d’accueil de notre Portail Client.&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Sachez que nous nous permettrons de prendre contact avec vous en cas de besoin.&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Nous espérons que ce service répondra à vos attentes et vous remercions pour votre fidélité.&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;Cordialement,&lt;/p&gt;
+                                                                        &lt;p style=&quot;Margin:0;Margin-bottom:10px;color:#212121;font-family:Muli,sans-serif;font-size:14px;font-weight:400;line-height:1.4;margin:0;margin-bottom:10px;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left&quot;&gt;&lt;b&gt;Votre équipe Petit Forestier&lt;/b&gt;&lt;/p&gt;
+                                                                    
+                                                                    &lt;center&gt;&lt;a id=&quot;ahrefButton&quot; href=&quot;https://www.petitforestier.com/&quot; class=&quot;buttonStyle&quot; style=&quot;width: 100%;
+  background-color: #039f4e;
+  color: white;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: &quot;Muli&quot;, sans-serif;
+        font-size: 16px;
+      font-weight: 600;&quot; target=&quot;_blank&quot;&gt;J’accède au Portail Client&lt;/a&gt;&lt;/center&gt;
+                                                                    &lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                    &lt;th class=&quot;small-1 large-1 columns last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:8px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:37.33px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table align=&quot;center&quot; class=&quot;container footer float-center&quot; style=&quot;Margin:0 auto;background:#fefefe;background-color:#fafafa;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:640px&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                    &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;row&quot; style=&quot;border-collapse:collapse;border-spacing:0;display:table;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;position:relative;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;th class=&quot;small-12 large-12 columns first last&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding-bottom:16px;padding-left:16px;padding-right:16px;padding-top:0;text-align:left;vertical-align:top;width:624px;word-wrap:normal&quot;&gt;
+                                                        &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                    &lt;th style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+
+                                                                        &lt;center style=&quot;min-width:592px;width:100%&quot;&gt;
+                                                                            &lt;table align=&quot;center&quot; class=&quot;menu float-center&quot; style=&quot;Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;vertical-align:top;width:auto&quot;&gt;
+                                                                                &lt;tbody&gt;
+                                                                                    &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                                        &lt;td style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;
+                                                                                            &lt;table style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                                                                                &lt;tbody&gt;
+                                                                                                    &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://www.facebook.com/PetitForestier&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/facebook-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://twitter.com/PetitForestier&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/twitter-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;http://www.linkedin.com/company/1102009?trk=tyah&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/linkedin-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                        &lt;th class=&quot;menu-item float-center&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0 auto;border-collapse:collapse!important;color:#212121;float:none;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0 auto;padding:10px;text-align:center;vertical-align:top;word-wrap:normal&quot;&gt;&lt;a href=&quot;undefined&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCpToq4PjdMsLv0CqBsFWN3w&quot; style=&quot;color:#039f4e;font-family:Muli,sans-serif;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none&quot;&gt;&lt;img src=&quot;https://www.petitforestier.com/emailings/assets/img/youtube-brands.png&quot; style=&quot;-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:24px&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/a&gt;&lt;/th&gt;
+                                                                                                    &lt;/tr&gt;
+                                                                                                &lt;/tbody&gt;
+                                                                                            &lt;/table&gt;
+                                                                                        &lt;/td&gt;
+                                                                                    &lt;/tr&gt;
+                                                                                &lt;/tbody&gt;
+                                                                            &lt;/table&gt;
+                                                                        &lt;/center&gt;
+                                                                        &lt;hr style=&quot;border-bottom:1px solid rgba(0,0,0,.15);border-left:0;border-right:0;border-top:0;clear:both;height:0;margin:20px auto&quot;&gt;&lt;/hr&gt;
+                                                                        &lt;center style=&quot;min-width:592px;width:100%&quot;&gt;Ce message vous est envoyé par un automate. Merci de ne pas y répondre.&lt;/center&gt;
+                                                                    &lt;/th&gt;
+                                                                    &lt;th class=&quot;expander&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:13px;font-weight:400;hyphens:none;line-height:1.3;margin:0;padding:0!important;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;visibility:hidden;width:0;word-wrap:normal&quot;&gt;&lt;/th&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                        &lt;table class=&quot;spacer&quot; style=&quot;border-collapse:collapse;border-spacing:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;width:100%&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr style=&quot;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top&quot;&gt;
+                                                    &lt;td height=&quot;16&quot; style=&quot;-moz-hyphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Muli,sans-serif;font-size:16px;font-weight:400;hyphens:none;line-height:16px;margin:0;mso-line-height-rule:exactly;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:left;vertical-align:top;word-wrap:normal&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    &lt;/center&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;!-- prevent Gmail on iOS font size manipulation --&gt;
+        &lt;div style=&quot;display:none;white-space:nowrap;font:15px courier;line-height:0&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>Var_CaseInfos</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>Var_MailsCollection</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Var_Owner_Mail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>Var_CaseInfos.Owner:User.Email</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>Var_Salutation</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

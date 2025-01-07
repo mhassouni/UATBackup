@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__EffectiveDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time.</description>
+    <inlineHelpText>Date à laquelle ce prix par bloc entre en vigueur. Cette valeur est appliquée lorsqu&#39;un instantané de prix par bloc est pris au moment de la création de la commande.</inlineHelpText>
+    <label>Effective Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <customErrors>
+        <name>Suppression_non_autoris</name>
+        <label>Suppression non autorisé</label>
+        <locationX>138</locationX>
+        <locationY>503</locationY>
+        <customErrorMessages>
+            <errorMessage>La suppression des requêtes Web n&#39;est pas autorisé.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Bypass_Admin</name>
+        <label>Bypass Admin</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Suppression_non_autoris</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Profil_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ProfileId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>00e20000001VDN9</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Profil Admin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>OT_trouv_ou_Non</name>
+        <label>OT trouvé ou Non</label>
+        <locationX>534</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Non trouvé</defaultConnectorLabel>
+        <rules>
+            <name>Trouv</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_OT</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Delete_OT</targetReference>
+            </connector>
+            <label>Trouvé</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verify_Recordtype</name>
+        <label>Verify : Recordtype</label>
+        <locationX>292</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Get_OT</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Non</defaultConnectorLabel>
+        <rules>
+            <name>Is_Gestion_Portail</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Gestion du portail</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Bypass_Admin</targetReference>
+            </connector>
+            <label>Is Gestion Portail</label>
+        </rules>
+    </decisions>
+    <description>Bloqué la suppression des Case Web</description>
+    <environments>Default</environments>
+    <interviewLabel>FlowTrigger_Case_Deletion {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowTrigger_Case_Delete_OT</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_OT</name>
+        <label>Delete OT</label>
+        <locationX>402</locationX>
+        <locationY>611</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CaseId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>WorkOrder</object>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_OT</name>
+        <label>Get OT</label>
+        <locationX>534</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>OT_trouv_ou_Non</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CaseId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>WorkOrder</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>166</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Verify_Recordtype</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Var_OT_Record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkOrder</objectType>
+    </variables>
+    <variables>
+        <name>Var_OT_RecordCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkOrder</objectType>
+    </variables>
+</Flow>

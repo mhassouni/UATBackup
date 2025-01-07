@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BypassNewOppProcess__c</fullName>
+    <description>Permet de résoudre les problèmes de visibilité du bouton &quot;nouvelle opportunité&quot;, et de réduire les conditions d&#39;affichage sur la Lightning Page de la SAD</description>
+    <formula>IF(
+    OR(
+        AND(
+            ISPICKVAL(AccountType__c, &#39;Client&#39;),
+            TECH_OpportunityAuthorized__c = TRUE,
+            OR(
+                ISPICKVAL(PFRegion__c, &#39;PIBE&#39;),
+                ISPICKVAL(PFRegion__c, &#39;PILU&#39;),
+																Pays_SA__c = &#39;FRANCE&#39;
+            ),
+            
+                BusinessLine__c = &#39;Meubles&#39;
+        ),
+        AND(
+            ISPICKVAL(PFRegion__c, &#39;PITA&#39;),
+            ISPICKVAL(AccountType__c, &#39;Prospect&#39;),
+            BusinessLine__c = &#39;Véhicules Frigorifiques&#39;,
+            IsThereVFSAD__c = FALSE,
+            SubmitSADForApproval__c = FALSE
+        ),
+        AND(
+            ISPICKVAL(PFRegion__c, &#39;PITA&#39;),
+            TECH_OpportunityAuthorized__c = TRUE,
+            BusinessLine__c &lt;&gt; &#39;Véhicules Frigorifiques&#39;
+        ),
+        AND(
+            ISPICKVAL(PFRegion__c, &#39;PITA&#39;),
+            TECH_OpportunityAuthorized__c = TRUE,
+            BusinessLine__c = &#39;Véhicules Frigorifiques&#39;,
+            ISPICKVAL(AccountType__c, &#39;Client&#39;),
+            SubmitSADForApproval__c = FALSE
+        ),
+        AND(
+            OR(
+                ISPICKVAL(PFRegion__c, &#39;PIBE&#39;),
+                ISPICKVAL(PFRegion__c, &#39;PILU&#39;),
+																Pays_SA__c = &#39;FRANCE&#39;
+            ),
+       
+                BusinessLine__c = &#39;Meubles&#39;
+            
+        )
+    ),
+    TRUE,
+    FALSE
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BypassNewOppProcess</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

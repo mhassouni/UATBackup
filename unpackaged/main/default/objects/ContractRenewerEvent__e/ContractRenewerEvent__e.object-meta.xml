@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Event used to manage renewed quotes status for order and contract creation.</description>
+    <eventType>HighVolume</eventType>
+    <label>ContractRenewerEvent</label>
+    <pluralLabel>ContractRenewerEvents</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

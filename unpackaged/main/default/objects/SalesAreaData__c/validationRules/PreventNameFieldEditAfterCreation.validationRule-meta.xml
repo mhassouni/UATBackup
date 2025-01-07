@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventNameFieldEditAfterCreation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+  OR(
+    ISCHANGED(Name)
+  ),
+  NOT(ISNEW())
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Ce champ ne peut pas être modifié après la création de l&#39;enregistrement.</errorMessage>
+</ValidationRule>

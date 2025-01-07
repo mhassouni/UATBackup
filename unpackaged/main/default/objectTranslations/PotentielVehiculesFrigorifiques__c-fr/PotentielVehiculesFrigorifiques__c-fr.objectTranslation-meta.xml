@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Potentiel Véhicules Frigorifiques</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Potentiel Véhicules Frigorifiques</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Parc Client Véhicules Frigorifiques</layout>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations générales --></label>
+            <section>Informations générales</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Véhicule --></label>
+            <section>Véhicule</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Activite_30_jours --></label>
+        <name>Activite_30_jours</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1 - Opportunité créée</masterLabel>
+        <translation>1 – Příležitost vytvořena</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 - Opportunité qualifiée</masterLabel>
+        <translation>2 – Kvalifikovaná příležitost</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3 - Proposition remise</masterLabel>
+        <translation>3 - Návrh předložen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 - Accord de principe</masterLabel>
+        <translation><!-- 4 - Accord de principe --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 - En négociation</masterLabel>
+        <translation>4 - Ve vyjednávání</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5 - Contrat signé</masterLabel>
+        <translation><!-- 5 - Contrat signé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>5 - Gagnée</masterLabel>
+        <translation>5 - Vyhráno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6 - Contrat signé</masterLabel>
+        <translation>6 - Podepsaná smlouva</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>6 - Gagnée</masterLabel>
+        <translation><!-- 6 - Gagnée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>7 - Perdue</masterLabel>
+        <translation>7 - Ztraceno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>8 - Inactive</masterLabel>
+        <translation>8 - Neaktivní</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fermée Gagnée</masterLabel>
+        <translation><!-- Fermée Gagnée --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fermée Perdue</masterLabel>
+        <translation><!-- Fermée Perdue --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ouverte</masterLabel>
+        <translation><!-- Ouverte --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

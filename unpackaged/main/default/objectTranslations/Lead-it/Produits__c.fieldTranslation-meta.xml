@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Prodotti</label>
+        <name>Produits__c</name>
+        <picklistValues>
+            <masterLabel>Chambre froide</masterLabel>
+            <translation>Cella frigorifera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation><!-- Containers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meuble réfrigéré</masterLabel>
+            <translation>Banco refrigerato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meubles</masterLabel>
+            <translation>Banco frigo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule Sec</masterLabel>
+            <translation><!-- Véhicule Sec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Véhicule frigorifique</masterLabel>
+            <translation>veicolo refrigerato</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

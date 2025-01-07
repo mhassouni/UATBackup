@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Rg__c</fullName>
+    <description>True si le champ Case.Agence_intervenante.Terrotoire == User.Division 
+Utilisation : Vue de liste pour filtrer sur les requêtes de la région utilisateur</description>
+    <formula>if 
+( 
+AND 
+( 
+$User.Division == TEXT(Agence_Intervenante__r.Territoire__c ) , 
+NOT(ISBLANK($User.Division)), 
+NOT(ISBLANK(TEXT(Agence_Intervenante__r.Territoire__c))) 
+) 
+, 
+true 
+, 
+false 
+)</formula>
+    <label>TECH_Rg</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

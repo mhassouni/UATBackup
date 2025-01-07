@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Community__c</fullName>
+    <label>Contact Community</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Opérationnel</fullName>
+                <default>false</default>
+                <label>Opérationnel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

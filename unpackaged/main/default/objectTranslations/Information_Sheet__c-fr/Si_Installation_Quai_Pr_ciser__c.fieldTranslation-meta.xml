@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Si Installation à Quai, Préciser --></label>
+        <name>Si_Installation_Quai_Pr_ciser__c</name>
+        <picklistValues>
+            <masterLabel>Mise à quai réalisée par le client</masterLabel>
+            <translation><!-- Mise à quai réalisée par le client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à quai sur béquilles</masterLabel>
+            <translation><!-- Mise à quai sur béquilles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à quai sur les gueuses</masterLabel>
+            <translation><!-- Mise à quai sur les gueuses --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>
